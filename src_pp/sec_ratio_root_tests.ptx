@@ -352,7 +352,7 @@
           <li>
             <p>
               <m>\inflim \left(\frac{2^n}{n^2}\right)^{1/n} = \inflim \frac{2}{\big(n^{2/n}\big)} = 2</m>.
-	
+ 
 	Since this is greater than 1, we conclude the series diverges. Note: The <xref ref="thm_ratio_test" autoname="title"/> is easy to apply to this series.
             </p>
 
@@ -393,10 +393,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -416,10 +413,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -439,10 +433,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -462,10 +453,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -497,10 +485,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -520,10 +505,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -543,10 +525,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -566,10 +545,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -589,10 +565,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -613,10 +586,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -637,10 +607,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -660,10 +627,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -683,10 +647,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -707,10 +668,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -738,10 +696,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -761,10 +716,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -784,10 +736,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -807,10 +756,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -830,10 +776,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -853,10 +796,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -876,10 +816,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -903,10 +840,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -926,10 +860,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -949,10 +880,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -977,10 +905,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1000,10 +925,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1023,10 +945,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1046,10 +965,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1069,10 +985,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1092,10 +1005,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1115,10 +1025,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1138,10 +1045,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1161,10 +1065,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1184,10 +1085,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

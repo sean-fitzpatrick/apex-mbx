@@ -246,7 +246,7 @@
 <!--         <figure xml:id="fig_sketchline1">
           <caption/>
           <image width="100%">
-            <latex-image-code>
+            <latex-image>
               <![CDATA[
               \begin{tikzpicture}
                 \begin{axis}[numberline,
@@ -264,7 +264,7 @@
                 \end{axis}
               \end{tikzpicture}
               ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         </figure> -->
       <sidebyside xml:id="fig_sketch1" widths="32% 32% 32%">
@@ -274,7 +274,7 @@
             <!-- START figures/fig_sketch1a.tex -->
           <image xml:id="img_sketch1a">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ymin=-5.5,ymax=10.9,xmin=-1.2,xmax=3.2,]
@@ -285,7 +285,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_sketch1a.tex END -->
         </figure>
@@ -295,7 +295,7 @@
             <!-- START figures/fig_sketch1b.tex -->
           <image xml:id="img_sketch1b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ymin=-5.5,ymax=10.9,xmin=-1.2,xmax=3.2,]
@@ -306,7 +306,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_sketch1b.tex END -->
         </figure>
@@ -472,7 +472,7 @@
 <!--         <figure xml:id="fig_sketchline2">
           <caption/>
           <image width="100%">
-            <latex-image-code>
+            <latex-image>
               <![CDATA[
               \begin{tikzpicture}
                 \begin{axis}[numberline,
@@ -491,7 +491,7 @@
                 \end{axis}
               \end{tikzpicture}
               ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         </figure> -->
       <sidebyside xml:id="fig_sketch2" widths="32% 32% 32%">
@@ -501,7 +501,7 @@
             <!-- START figures/fig_sketch2a.tex -->
           <image xml:id="img_sketch2a">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ymin=-5.2,ymax=5.2,xmin=-5.1,xmax=5.1,]
@@ -516,7 +516,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_sketch2a.tex END -->
         </figure>
@@ -526,7 +526,7 @@
             <!-- START figures/fig_sketch2b.tex -->
           <image xml:id="img_sketch2b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ymin=-5.2,ymax=5.2,xmin=-5.1,xmax=5.1,]
@@ -540,7 +540,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_sketch2b.tex END -->
         </figure>
@@ -713,7 +713,7 @@
 <!--           <figure xml:id="fig_sketchline3">
           <caption/>
           <image width="100%">
-            <latex-image-code>
+            <latex-image>
               <![CDATA[
               \begin{tikzpicture}
                 \begin{axis}[numberline,
@@ -736,7 +736,7 @@
                 \end{axis}
               \end{tikzpicture}
               ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         </figure> -->
       <sidebyside xml:id="fig_sketch3" widths="32% 32% 32%">
@@ -746,7 +746,7 @@
             <!-- START figures/fig_sketch3a.tex -->
           <image xml:id="img_sketch3a">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ ymin=-3.1,ymax=8.1,xmin=-7.5,xmax=6.5,]
@@ -761,7 +761,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_sketch3a.tex END -->
         </figure>
@@ -771,7 +771,7 @@
             <!-- START figures/fig_sketch3b.tex -->
           <image xml:id="img_sketch3b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ ymin=-3.1,ymax=8.1,xmin=-7.5,xmax=6.5,]
@@ -786,7 +786,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_sketch3b.tex END -->
         </figure>
@@ -906,10 +906,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -933,10 +930,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -960,10 +954,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -985,10 +976,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -1010,10 +998,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -1348,8 +1333,8 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
-            <var name="$crit"><static></static></var>
-            <var name="$inf"><static></static></var>
+ 
+ 
             <pg-code>
             </pg-code>
           </setup> -->
@@ -1390,8 +1375,8 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
-            <var name="$crit"><static></static></var>
-            <var name="$inf"><static></static></var>
+ 
+ 
             <pg-code>
               $crit=Formula("(a+b)/2");
               $inf=Compute("does not apply");
@@ -1436,8 +1421,8 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
-            <var name="$crit"><static></static></var>
-            <var name="$inf"><static></static></var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Formula("(a+b)/2");
@@ -1481,9 +1466,7 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
-            <var name="">
-              <static></static>
-            </var>
+ 
             <pg-code>
             </pg-code>
           </setup> -->

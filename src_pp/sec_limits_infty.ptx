@@ -35,7 +35,7 @@
       <!-- START figures/fig_oneoverxsquared.tex -->
       <image xml:id="img_oneoverxsquared" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-1.1,xmax=1.1,
@@ -45,7 +45,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_oneoverxsquared.tex END -->
     </figure>
@@ -109,7 +109,7 @@
           <!-- START figures/fig_nolimit2.tex -->
           <image xml:id="img_inflim1" width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-.1,xmax=2.1,
@@ -120,7 +120,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_nolimit2.tex END -->
         </figure>
@@ -181,7 +181,7 @@
           <!-- START figures/fig_oneoverx.tex -->
           <image xml:id="img_oneoverx" width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-1.1,xmax=1.1,
@@ -193,7 +193,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_oneoverx.tex END -->
         </figure>
@@ -243,7 +243,7 @@
           <!-- START figures/fig_multipleasymptotes.tex -->
           <image xml:id="img_multipleasymptotes" width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-6.1,xmax=6.1,
@@ -260,7 +260,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_multipleasymptotes.tex END -->
         </figure>
@@ -294,7 +294,7 @@
       <!-- START figures/fig_noasy.tex -->
       <image xml:id="img_noasy" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-1.2,xmax=2.2,
@@ -304,7 +304,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_noasy.tex END -->
     </figure>
@@ -486,7 +486,7 @@
 
             <image xml:id="img_hzasy1a">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[xmin=-21,xmax=21,
@@ -496,7 +496,7 @@
               \end{axis}
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_hzasy1.tex END -->
           </figure>
@@ -573,7 +573,7 @@
         <!-- START figures/fig_hzasy2.tex -->
         <image xml:id="img_hzasya">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-21,xmax=21,
@@ -582,7 +582,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_hzasy2.tex END -->
       </figure>
@@ -592,7 +592,7 @@
         <!-- START figures/fig_hzasy3.tex -->
         <image xml:id="img_hzasyb">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-21,xmax=21,
@@ -601,7 +601,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_hzasy3.tex END -->
       </figure>
@@ -611,7 +611,7 @@
         <!-- START figures/fig_hzasy4.tex -->
         <image xml:id="img_hzasy4">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[declare function = {func(\x) = (\x != 0) * (sin(x*180/pi)/x) + (\x == 0) * (1);}]
           \begin{axis}[xmin=-21,xmax=21,
@@ -620,7 +620,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_hzasy4.tex END -->
       </figure>
@@ -695,8 +695,8 @@
               <p>
                 If <m>n=m</m>, then
                 <me>
-                  \lim\limits_{x\to\infty} f(x) = \lim\limits_{x\to-\infty} f(x) = \frac{a_n}{b_m}\text{.}
-                </me>
+                  \lim\limits_{x\to\infty} f(x) = \lim\limits_{x\to-\infty} f(x) = \frac{a_n}{b_m}
+                </me>.
               </p>
             </li>
 
@@ -704,8 +704,8 @@
               <p>
                 If <m>n\lt m</m>, then
                 <me>
-                  \lim\limits_{x\to\infty} f(x) = \lim\limits_{x\to-\infty} f(x) = 0\text{.}
-                </me>
+                  \lim\limits_{x\to\infty} f(x) = \lim\limits_{x\to-\infty} f(x) = 0
+                </me>.
               </p>
             </li>
 
@@ -853,7 +853,7 @@
             <!-- START figures/fig_hzasy5.tex -->
             <image xml:id="img_hzasy3a">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[xmin=-41,xmax=2,
@@ -863,7 +863,7 @@
               \end{axis}
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_hzasy5.tex END -->
           </figure>
@@ -873,7 +873,7 @@
             <!-- START figures/fig_hzasy6.tex -->
             <image xml:id="img_hzasy3b">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[xmin=-1,xmax=41,
@@ -884,7 +884,7 @@
               \end{axis}
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_hzasy6.tex END -->
           </figure>
@@ -894,7 +894,7 @@
             <!-- START figures/fig_hzasy7.tex -->
             <image xml:id="img_hzasy3c">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[xmin=-5,xmax=41,
@@ -904,7 +904,7 @@
               \end{axis}
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_hzasy7.tex END -->
           </figure>
@@ -921,8 +921,8 @@
       When <m>x</m> is very large, <m>x^2+1 \approx x^2</m>.
       Thus
       <md>
-        <mrow>\sqrt{x^2+1}\amp\approx \sqrt{x^2}= \abs{x}\amp\frac{x}{\sqrt{x^2+1}}\amp \approx \frac{x}{\abs{x}}\text{.}</mrow>
-      </md>
+        <mrow>\sqrt{x^2+1}\amp\approx \sqrt{x^2}= \abs{x}\amp\frac{x}{\sqrt{x^2+1}}\amp \approx \frac{x}{\abs{x}}</mrow>
+      </md>.
     </p>
 
     <p>
@@ -951,8 +951,8 @@
             <mrow>\amp = \lim\limits_{x\to\infty} \frac{\frac{x}{\abs{x}}}{\sqrt{\frac{x^2+1}{x^2}}}</mrow>
             <mrow>\amp = \lim\limits_{x\to\infty} \frac{1}{\sqrt{1+\frac{1}{x^2}}} \text{ for } x\gt 0</mrow>
             <mrow>\amp =\frac{1}{\sqrt{1+0}}</mrow>
-            <mrow>\amp = 1 \text{.}</mrow>
-          </md>
+            <mrow>\amp = 1 </mrow>
+          </md>.
         </p>
 
         <p>
@@ -978,10 +978,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$truefalse">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'False');
             </pg-code>
@@ -1005,10 +1002,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$truefalse">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'True');
             </pg-code>
@@ -1032,10 +1026,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$truefalse">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'False');
             </pg-code>
@@ -1059,10 +1050,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$truefalse">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'True');
             </pg-code>
@@ -1086,10 +1074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$truefalse">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'True');
             </pg-code>
@@ -1182,26 +1167,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{1}{(x+1)^2}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                -1
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $a=non_zero_random(-3,3,1);
               $b=non_zero_random(-1,1,2);
@@ -1261,51 +1230,15 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{1}{(x-3)(x-5)^2}
-              </static>
-              </var>
-              <var name="$a[0]">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$a[1]">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
-              <var name="$L[3]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[4]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[5]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @a=map{$_+1}NchooseK(9,2);
               if($envir{problemSeed}==1){$a[0]=3;$a[1]=5;};
@@ -1396,31 +1329,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{1}{e^x+1}
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                0.5
-              </static>
-              </var>
-              <var name="$L[3]" category="number">
-              <static>
-                0.5
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $b=random(-1,1,2);
               if($envir{problemSeed}==1){$b=1;};
@@ -1485,36 +1398,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^2\sin(\pi x)
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$L[3]" category="number">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(-5,5,1);
               $n=random(1,4,2);
@@ -1580,21 +1469,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \cos(x)
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f=list_random(Formula("sin(x)"),Formula("cos(x)"));
               if($envir{problemSeed}==1){$f=Formula("cos(x)")};
@@ -1646,21 +1523,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                2^x+10
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                10
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $b=random(1.5,2.5,0.1);
               $c=non_zero_random(-12,12,1);
@@ -1724,96 +1589,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2-1}{x^2-x-6}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                2.9
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                2.99
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                2.999
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                3.1
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                3.01
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                3.001
-              </static>
-              </var>
-              <var name="$y[0]">
-              <static>
-                -15.1224
-              </static>
-              </var>
-              <var name="$y[1]">
-              <static>
-                -159.120
-              </static>
-              </var>
-              <var name="$y[2]">
-              <static>
-                -1599.12
-              </static>
-              </var>
-              <var name="$y[3]">
-              <static>
-                16.8823
-              </static>
-              </var>
-              <var name="$y[4]">
-              <static>
-                160.880
-              </static>
-              </var>
-              <var name="$y[5]">
-              <static>
-                1600.88
-              </static>
-              </var>
-              <var name="$limit">
-              <static>
-                \text{does not exist}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,1,-1,-2);};
@@ -1928,96 +1721,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2+5x-36}{x^3-5x^2+3x+9}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                2.9
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                2.99
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                2.999
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                3.1
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                3.01
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                3.001
-              </static>
-              </var>
-              <var name="$y[0]">
-              <static>
-                -335.641
-              </static>
-              </var>
-              <var name="$y[1]">
-              <static>
-                -30350.6
-              </static>
-              </var>
-              <var name="$y[2]">
-              <static>
-                -3003500
-              </static>
-              </var>
-              <var name="$y[3]">
-              <static>
-                -265.609
-              </static>
-              </var>
-              <var name="$y[4]">
-              <static>
-                -29650.6
-              </static>
-              </var>
-              <var name="$y[5]">
-              <static>
-                -2996500
-              </static>
-              </var>
-              <var name="$limit">
-              <static>
-                \text{is }-\infty
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,4,-9,-1);};
@@ -2132,96 +1853,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2-11x+30}{x^3-4x^2-3x+18}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                2.9
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                2.99
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                2.999
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                3.1
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                3.01
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                3.001
-              </static>
-              </var>
-              <var name="$y[0]">
-              <static>
-                132.857
-              </static>
-              </var>
-              <var name="$y[1]">
-              <static>
-                12124.4
-              </static>
-              </var>
-              <var name="$y[2]">
-              <static>
-                1201240
-              </static>
-              </var>
-              <var name="$y[3]">
-              <static>
-                108.039
-              </static>
-              </var>
-              <var name="$y[4]">
-              <static>
-                11876.4
-              </static>
-              </var>
-              <var name="$y[5]">
-              <static>
-                1198760
-              </static>
-              </var>
-              <var name="$limit">
-              <static>
-                \text{is }\infty
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,5,6,-2);};
@@ -2336,96 +1985,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2-9x+18}{x^2-x-6}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$L[0]" category="number">
-              <static>
-                0.6
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                0.6
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                0.6
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                2.9
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                2.99
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                2.999
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                3.1
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                3.01
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                3.001
-              </static>
-              </var>
-              <var name="$y[0]">
-              <static>
-                -0.632653
-              </static>
-              </var>
-              <var name="$y[1]">
-              <static>
-                -0.603206
-              </static>
-              </var>
-              <var name="$y[2]">
-              <static>
-                -0.600320
-              </static>
-              </var>
-              <var name="$y[3]">
-              <static>
-                -0.568627
-              </static>
-              </var>
-              <var name="$y[4]">
-              <static>
-                -0.596806
-              </static>
-              </var>
-              <var name="$y[5]">
-              <static>
-                -0.599680
-              </static>
-              </var>
-              <var name="$limit">
-              <static>
-                \text{is }-0.6
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,6,-2);};
@@ -2551,16 +2128,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{2 x^2-2 x-4}{x^2+x-20}
-              </static>
-              </var>
-              <var name="$asymptotes">
-              <static>
-                y=2, x=4, x=-5
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               do {$c[0]=random(2,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2578,8 +2147,8 @@
                 Identify the horizontal and vertical asymptotes, if any,
                 of <m>f</m> where
                 <me>
-                  f(x)=<var name="$f" />\text{.}
-                </me>
+                  f(x)=<var name="$f" />
+                </me>.
                 Submit your answer as a list, using commas.
                 Each asymptote is line of the form <c>x=...</c> or <c>y=...</c>.
                 If there are no such asymptotes,
@@ -2601,16 +2170,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{-3 x^2-9 x-6}{5 x^2-10 x-15}
-              </static>
-              </var>
-              <var name="$asymptotes">
-              <static>
-                y=-\frac{3}{5}, x=3
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $c[0]=random(2,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2629,8 +2190,8 @@
                 Identify the horizontal and vertical asymptotes, if any,
                 of <m>f</m> where
                 <me>
-                  f(x)=<var name="$f" />\text{.}
-                </me>
+                  f(x)=<var name="$f" />
+                </me>.
                 Submit your answer as a list, using commas.
                 Each asymptote is line of the form <c>x=...</c> or <c>y=...</c>.
                 If there are no such asymptotes,
@@ -2652,16 +2213,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2+x-12}{7 x^3-14 x^2-21 x}
-              </static>
-              </var>
-              <var name="$asymptotes">
-              <static>
-                y=0, x=0, x=-1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2681,8 +2234,8 @@
                 Identify the horizontal and vertical asymptotes, if any,
                 of <m>f</m> where
                 <me>
-                  f(x)=<var name="$f" />\text{.}
-                </me>
+                  f(x)=<var name="$f" />
+                </me>.
                 Submit your answer as a list, using commas.
                 Each asymptote is line of the form <c>x=...</c> or <c>y=...</c>.
                 If there are no such asymptotes,
@@ -2704,16 +2257,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2-9}{9x-9}
-              </static>
-              </var>
-              <var name="$asymptotes">
-              <static>
-                x=1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2733,8 +2278,8 @@
                 Identify the horizontal and vertical asymptotes, if any,
                 of <m>f</m> where
                 <me>
-                  f(x)=<var name="$f" />\text{.}
-                </me>
+                  f(x)=<var name="$f" />
+                </me>.
                 Submit your answer as a list, using commas.
                 Each asymptote is line of the form <c>x=...</c> or <c>y=...</c>.
                 If there are no such asymptotes,
@@ -2756,16 +2301,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2-9}{9x+27}
-              </static>
-              </var>
-              <var name="$asymptotes">
-              <static>
-                \text{NONE}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2784,8 +2321,8 @@
                 Identify the horizontal and vertical asymptotes, if any,
                 of <m>f</m> where
                 <me>
-                  f(x)=<var name="$f" />\text{.}
-                </me>
+                  f(x)=<var name="$f" />
+                </me>.
                 Submit your answer as a list, using commas.
                 Each asymptote is line of the form <c>x=...</c> or <c>y=...</c>.
                 If there are no such asymptotes,
@@ -2807,16 +2344,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \frac{x^2-1}{-x^2-1}
-              </static>
-              </var>
-              <var name="$asymptotes">
-              <static>
-                y=-1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=random(-5,-1,1);
@@ -2837,8 +2366,8 @@
                 Identify the horizontal and vertical asymptotes, if any,
                 of <m>f</m> where
                 <me>
-                  f(x)=<var name="$f" />\text{.}
-                </me>
+                  f(x)=<var name="$f" />
+                </me>.
                 Submit your answer as a list, using commas.
                 Each asymptote is line of the form <c>x=...</c> or <c>y=...</c>.
                 If there are no such asymptotes,
@@ -2869,21 +2398,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \frac{x^3+2x^2+1}{x-5}
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                \infty
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2904,21 +2421,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                \infty
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \frac{x^3+2x^2+1}{5-x}
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                -\infty
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2939,21 +2444,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \frac{x^3+2x^2+1}{x^2-5}
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                -\infty
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2974,21 +2467,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                -\infty
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \frac{x^3+2x^2+1}{x^2-5}
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                -\infty
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -3058,8 +2539,8 @@
                   <mrow>-\varepsilon\lt 5(x-1)\amp\lt\varepsilon</mrow>
                   <mrow>-\varepsilon\lt 5x-5\amp\lt\varepsilon</mrow>
                   <mrow>-\varepsilon\lt (5x-2)-3\amp\lt\varepsilon</mrow>
-                  <mrow>\abs{(5x-2)-3}\amp\lt\varepsilon\text{.}</mrow>
-                </md>
+                  <mrow>\abs{(5x-2)-3}\amp\lt\varepsilon</mrow>
+                </md>.
                 In other words,
                 <m>\abs{x-1}\lt\delta</m> implies <m>\abs{(5x-2)-3}\lt\varepsilon</m>.
                 This is what we needed to prove.
@@ -3071,41 +2552,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$L[0]">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$L[1]">
-              <static>
-                -1
-              </static>
-              </var>
-              <var name="$L[2]">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$L[3]">
-              <static>
-                -3
-              </static>
-              </var>
-              <var name="$L[4]">
-              <static>
-                -3
-              </static>
-              </var>
-              <var name="$L[5]">
-              <static>
-                \frac{1}{3}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(-9,9,1);
               do{$L[0]=non_zero_random(-9,9,1);$L[1]=non_zero_random(-3,3,1);}until($L[0]!=$L[1]);
@@ -3157,25 +2610,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f[0]">
-              <static>
-                x^2-1
-              </static>
-              </var>
-              <var name="$f[1]">
-              <static>
-                x+5
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$yesno">
-              <set><member correct="yes">\text{yes}</member>
-              <member>\text{no}</member></set>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $b[0]=random(-1,1,1);
               $b[3]=random(-1,1,1);
@@ -3191,7 +2629,7 @@
             </setup>
             <statement>
               <p>
-                Let <m>f(x) = \begin{cases}<var name="$f[0]" />\amp x\lt<var name="$a" />\\<var name="$f[1]" />\amp x\geq<var name="$a" />\end{cases}\text{.}</m> Is <m>f</m> continuous everywhere?
+                Let <m>f(x) = \begin{cases}<var name="$f[0]" />\amp x\lt<var name="$a" />\\<var name="$f[1]" />\amp x\geq<var name="$a" />\end{cases}</m>. Is <m>f</m> continuous everywhere?
                 <var name="$yesno" form="popup" />
               </p>
             </statement>
@@ -3201,11 +2639,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                1
-              </static>
-              </var>
+ 
             <pg-code>
               $L=1;
             </pg-code>

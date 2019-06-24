@@ -111,7 +111,7 @@
 <!-- START figures/fig_multilimit_introa.tex -->
               <image xml:id="img_multilimit_introa">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[>=stealth]
                 \begin{axis}[%
@@ -140,7 +140,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_multilimit_introa.tex END -->
             </figure></cell>
@@ -153,7 +153,7 @@
 <!-- START figures/fig_multilimit_introb.tex -->
               <image xml:id="img_multilimit_introb">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[>=stealth]
                 \begin{axis}[%
@@ -182,7 +182,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_multilimit_introb.tex END -->
             </figure></cell>
@@ -195,7 +195,7 @@
 <!-- START figures/fig_multilimit_introc.tex -->
               <image xml:id="img_multilimit_introc">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[>=stealth]
                 \begin{axis}[%
@@ -228,7 +228,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_multilimit_introc.tex END -->
             </figure></cell>
@@ -292,7 +292,7 @@
           <!-- START figures/fig_multilimit2.tex -->
           <image xml:id="img_multilimit2">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -317,7 +317,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_multilimit2.tex END -->
         </figure>
@@ -738,7 +738,7 @@
               along every line <m>y=mx</m> in the domain of <m>f</m>,
               <m>\lim\limits_{(x,y)\to(0,0)} f(x,y)=0</m>.
 
-	
+ 
 	Now consider the limit along the path <m>y=-\sin(x)</m>:
               <md>
                 <mrow>\lim_{(x,-\sin(x) )\to (0,0)} \frac{\sin\big(-x\sin(x) \big)}{x-\sin(x) } \amp = \lim_{x\to0} \frac{\sin\big(-x\sin(x) \big)}{x-\sin(x) }</mrow>
@@ -1244,10 +1244,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1267,10 +1264,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1292,10 +1286,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1319,10 +1310,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1346,10 +1334,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1373,10 +1358,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1435,10 +1417,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1478,25 +1457,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$bp">
-              <static>
-                (3,9)
-              </static>
-              </var>
-              <var name="$ip">
-              <static>
-                (-5,28)
-              </static>
-              </var>
-              <var name="$ocn">
-              <set><member correct="yes">\text{open}</member>
-              <member>\text{closed}</member>
-              <member>\text{neither}</member></set>
-              </var>
-              <var name="$bu">
-              <set><member>\text{bounded}</member>
-              <member correct="yes">\text{unbounded}</member></set>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $bp=Point("(3,9)");
@@ -1564,10 +1528,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1607,25 +1568,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$bp">
-              <static>
-                (0,0)
-              </static>
-              </var>
-              <var name="$ip">
-              <static>
-                (0,1)
-              </static>
-              </var>
-              <var name="$ocn">
-              <set><member correct="yes">\text{open}</member>
-              <member>\text{closed}</member>
-              <member>\text{neither}</member></set>
-              </var>
-              <var name="$bu">
-              <set><member>\text{bounded}</member>
-              <member correct="yes">\text{unbounded}</member></set>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $bp=Point("(0,0)");
@@ -1724,10 +1670,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1763,10 +1706,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1802,10 +1742,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1841,10 +1778,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1891,10 +1825,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1942,10 +1873,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1982,10 +1910,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2033,10 +1958,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2095,10 +2017,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2157,10 +2076,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

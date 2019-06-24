@@ -123,7 +123,7 @@
 
       <image width="100%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \tikz[]{
         \node[] (integral)
@@ -152,7 +152,7 @@
         \draw[-{latex}] (l5) edge [out=-90, in=0] (constant);
         }
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
 
     </figure>
@@ -813,10 +813,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1549,10 +1546,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $F = Formula("3x-2");
             </pg-code>
@@ -1581,10 +1575,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
 <!--The original problem tells students to graph the function. Seems difficult on WeBWorK -->
             <pg-code>
               $a = Interval(-inf,inf);

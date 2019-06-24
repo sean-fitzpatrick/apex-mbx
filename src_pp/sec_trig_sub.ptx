@@ -111,7 +111,7 @@
             <!-- START figures/fig_trigsub_intro1.tex -->
             <image xml:id="img_trigsub_intro1" width="47%">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
 		\draw [very thick] (0,0) -- node[below,pos=.5] { $\sqrt{a^2-x^2}$} (3,0) -- node [right,pos=.5] { $x$} (3,2) -- node [pos=.5,above] { $a$} (0,0);
@@ -120,7 +120,7 @@
 
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro1.tex END -->
           </p>
@@ -138,7 +138,7 @@
             <!-- START figures/fig_trigsub_intro3.tex -->
             <image xml:id="img_trigsub_intro3" width="47%">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
 		\draw [very thick] (0,0) -- node[below,pos=.5] { $a$} (3,0) -- node [right,pos=.5] { $x$} (3,2) -- node [pos=.5,above,sloped] { $\sqrt{x^2+a^2}$} (0,0);
@@ -147,7 +147,7 @@
 
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro3.tex END -->
           </p>
@@ -168,7 +168,7 @@
             <!-- START figures/fig_trigsub_intro2.tex -->
             <image xml:id="img_trigsub_intro2" width="47%">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
 		\draw [very thick] (0,0) -- node[below,pos=.5] { $a$} (3,0) -- node [right,pos=.5] { $\sqrt{x^2-a^2}$} (3,2) -- node [pos=.5,above] { $x$} (0,0);
@@ -177,7 +177,7 @@
 
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro2.tex END -->
           </p>

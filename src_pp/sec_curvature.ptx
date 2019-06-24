@@ -31,7 +31,7 @@
         <!-- START figures/fig_vvfarc_intro1.tex -->
           <image xml:id="img_vvfarc_intro1">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -63,7 +63,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_vvfarc_intro1.tex END -->
         </figure>
@@ -73,7 +73,7 @@
         <!-- START figures/fig_vvfarc_intro1b.tex -->
           <image xml:id="img_vvfarc_intro1b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -109,7 +109,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_vvfarc_intro1b.tex END -->
         </figure>
@@ -217,7 +217,7 @@
           <!-- START figures/fig_vvfarc1.tex -->
           <image xml:id="img_vvfarc1">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -249,7 +249,7 @@
 					(axis cs: .8,4.4) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=3$}
 					(axis cs: 1.4,5.2) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=4$}
 					(axis cs: 2,6) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=5$};
-					
+ 
 
             \draw (axis cs:-1,2) node [{\colortwo},shift={(10pt,-5pt)}]  {\scriptsize $s=0$};
 
@@ -259,7 +259,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_vvfarc1.tex END -->
         </figure>
@@ -361,7 +361,7 @@
         <!-- START figures/fig_curvature_intro.tex -->
           <image xml:id="img_curvature_intro">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -384,7 +384,7 @@
             \addplot [thick,{\colorone}, smooth,domain=-1:1.5] ({x^2-x+1},{x^3+1});
 
 					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
-					
+ 
 
             %\draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
             %\draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
@@ -402,7 +402,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_curvature_intro.tex END -->
         </figure>
@@ -412,7 +412,7 @@
         <!-- START figures/fig_curvature_introb.tex -->
           <image xml:id="img_curvature_introb">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -435,7 +435,7 @@
             \addplot [thick,{\colorone}, smooth,domain=-1:1.5] ({x^2-x+1},{x^3+1});
 
 					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
-					
+ 
 
             \draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
             \draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
@@ -453,7 +453,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_curvature_introb.tex END -->
         </figure>
@@ -736,7 +736,7 @@
       <!-- START figures/fig_curvature_introc.tex -->
       <image xml:id="img_curvature_osculate">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=stealth]
         \begin{axis}[%
@@ -763,7 +763,7 @@
         \addplot[thick,{\colortwo},smooth,domain=0:360] ({2.17*cos(x)+.99},{2.17*sin(x)+-1.15});
 
 					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
-					
+ 
 
         %\draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
         %\draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
@@ -781,7 +781,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_curvature_introc.tex END -->
     </figure>
@@ -814,7 +814,7 @@
           <!-- START figures/fig_curvature3.tex -->
           <image xml:id="img_curvature3">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -841,7 +841,7 @@
             \addplot[thick,{\colortwo},smooth,domain=0:360,samples=60] ({5.6*cos(x)-4},{5.6*sin(x)+3.5});
 
 					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
-					
+ 
 
             %\draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
             %\draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
@@ -859,7 +859,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_curvature3.tex END -->
         </figure>
@@ -904,7 +904,7 @@
             <!-- START figures/fig_curvature4a.tex -->
               <image xml:id="img_curvature4a">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[>=stealth]
                 \begin{axis}[%
@@ -927,7 +927,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_curvature4a.tex END -->
             </figure>
@@ -1276,10 +1276,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1299,10 +1296,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1323,10 +1317,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1346,10 +1337,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1371,10 +1359,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1394,10 +1379,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1433,10 +1415,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1456,16 +1435,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$s">
-              <static>
-                7t
-              </static>
-              </var>
-              <var name="$rs">
-              <static>
-                \la 7\cos(s/7), 7\sin(s/7)\ra
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(s=>'Real',t=>'Real');
@@ -1497,10 +1468,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1521,16 +1489,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$s">
-              <static>
-                13t
-              </static>
-              </var>
-              <var name="$rs">
-              <static>
-                \la 5\cos(s/13), 13\sin(s/13), 12\cos(s/13)\ra
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(s=>'Real',t=>'Real');
@@ -1592,10 +1552,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1621,26 +1578,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <set><member correct="yes">\text{greater than}</member>
-              <member>\text{equal to}</member>
-              <member>\text{less than}</member></set>
-              </var>
-              <var name="$kappa">
-              <static>
-                \frac{\left(6x^2-2\right)/\left(x^2+1\right)^3}{\left(1+\frac{4x^2}{\left(x^2+1\right)^4}\right)^{3/2}}
-              </static>
-              </var>
-              <var name="$k[0]">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$k[1]">
-              <static>
-                \frac{2750}{641^{3/2}}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $comp=PopUp(['?','greater than', 'equal to', 'less than'],1);
@@ -1671,10 +1612,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1699,10 +1637,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1727,26 +1662,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <set><member>\text{greater than}</member>
-              <member>\text{equal to}</member>
-              <member correct="yes">\text{less than}</member></set>
-              </var>
-              <var name="$kappa">
-              <static>
-                \frac{\abs{2\cos(t) \cos(2t)+4\sin(t) \sin(2t)}}{\left(4\cos^2(2t)+\sin^2(t) \right)^{3/2}}
-              </static>
-              </var>
-              <var name="$k[0]">
-              <static>
-                1/4
-              </static>
-              </var>
-              <var name="$k[1]">
-              <static>
-                8
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1778,10 +1697,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1806,10 +1722,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1835,26 +1748,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <set><member correct="yes">\text{greater than}</member>
-              <member>\text{equal to}</member>
-              <member>\text{less than}</member></set>
-              </var>
-              <var name="$kappa">
-              <static>
-                \frac{\abs{\sec^3(t) }}{\left(\sec^4(t) +\sec^2(t) \tan^2(t) \right)^{3/2}}
-              </static>
-              </var>
-              <var name="$k[0]">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$k[1]">
-              <static>
-                \frac{3\sqrt{3}}{5\sqrt{5}}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1886,10 +1783,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1914,26 +1808,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <set><member correct="yes">\text{greater than}</member>
-              <member>\text{equal to}</member>
-              <member>\text{less than}</member></set>
-              </var>
-              <var name="$kappa">
-              <static>
-                \frac{2 \sqrt{18 t^4+15t^2+1}}{\left(18 t^4-2t^2+1\right)^{3/2}}
-              </static>
-              </var>
-              <var name="$k[0]">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$k[1]">
-              <static>
-                \frac{2\sqrt{2}}{17}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1965,10 +1843,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1993,26 +1868,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <set><member>\text{greater than}</member>
-              <member correct="yes">\text{equal to}</member>
-              <member>\text{less than}</member></set>
-              </var>
-              <var name="$kappa">
-              <static>
-                \frac{1}{13}
-              </static>
-              </var>
-              <var name="$k[0]">
-              <static>
-                \frac{1}{13}
-              </static>
-              </var>
-              <var name="$k[1]">
-              <static>
-                \frac{1}{13}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -2055,11 +1914,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserRoot.pl</macro-file></pg-macros>
             <setup>
-              <var name="$max">
-              <static>
-                \pm \frac{\sqrt{2}}{\sqrt[4]{5}}
-              </static>
-              </var>
+ 
             <pg-code>
               parser::Root->Enable;
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2081,10 +1936,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2104,11 +1956,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                1/4
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $max=Formula("1/4");
@@ -2129,11 +1977,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                \pm \sqrt{5}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $max=List(Formula("sqrt(5)"),Formula("-sqrt(5)"));
@@ -2164,10 +2008,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2187,11 +2028,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$radius">
-              <static>
-                5\sqrt{10}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $radius=Formula("5sqrt(10)");
@@ -2212,10 +2049,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2235,11 +2069,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$radius">
-              <static>
-                1/45
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $radius=Formula("1/45");
@@ -2271,10 +2101,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2295,11 +2122,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$osc">
-              <static>
-                \left(x-8/3\right)^2+y^2 = 1/9
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->set(x=>{limits=>[2,4]});
@@ -2323,10 +2146,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2347,11 +2167,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$osc">
-              <static>
-                (x-1/2)^2+(y-1/2)^2 = 1/2
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->set(x=>{limits=>[-1,2]});

@@ -1106,7 +1106,7 @@
           <!-- START figures/fig_subst12a.tex -->
             <image xml:id="img_subst12a">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[axis on top,
@@ -1120,7 +1120,7 @@
 
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
 
           </figure>
@@ -1130,7 +1130,7 @@
           <!-- START figures/fig_subst12b.tex -->
             <image xml:id="img_subst12b">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[axis on top,
@@ -1145,7 +1145,7 @@
 
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
           <!-- figures/fig_subst12b.tex END -->
           </figure>
@@ -1208,7 +1208,7 @@
           <!-- START figures/fig_subst13a.tex -->
             <image xml:id="img_subst13a">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
               \begin{axis}[axis on top,
@@ -1223,7 +1223,7 @@
               \end{axis}
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
 
           </figure>
@@ -1232,10 +1232,10 @@
           <!-- START figures/fig_subst13b.tex -->
             <image xml:id="img_subst13b">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}
-              \begin{axis}[axis on top,			
+              \begin{axis}[axis on top, 
               xtick={1},
               extra x ticks={1.57},
               extra x tick labels={$\frac{\pi}{2}$},ymin=-.6,ymax=1.1,
@@ -1246,7 +1246,7 @@
               \end{axis}
               \end{tikzpicture}
               ]]>
-              </latex-image-code>
+              </latex-image>
             </image>
           <!-- figures/fig_subst13b.tex END -->
           </figure>

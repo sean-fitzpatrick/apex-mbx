@@ -33,7 +33,7 @@
       <!-- START figures/fig_rie1a.tex -->
       <image xml:id="img_rie1a"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[axis on top,
@@ -48,7 +48,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_rie1a.tex END -->
     </figure>
@@ -64,7 +64,7 @@
       <caption>Approximating area under a curve with one rectangle</caption>
       <image xml:id="img_rie1a2"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[axis on top,
@@ -82,7 +82,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
 
     </figure>
@@ -130,7 +130,7 @@
       <!-- START figures/fig_rie1b.tex -->
       <image xml:id="img_rie1b"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -168,7 +168,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_rie1b.tex END -->
     </figure>
@@ -227,7 +227,7 @@
           <!-- START figures/fig_rie2a.tex -->
           <image xml:id="img_rie2a"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[axis on top,
@@ -258,7 +258,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_rie2a.tex END -->
         </figure>
@@ -284,7 +284,7 @@
           <!-- START figures/fig_rie2b.tex -->
           <image xml:id="img_rie2b"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -322,7 +322,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_rie2b.tex END -->
         </figure>
@@ -349,7 +349,7 @@
           <!-- START figures/fig_rie2c.tex -->
           <image xml:id="img_rie2c"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -387,7 +387,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_rie2c.tex END -->
         </figure>
@@ -634,7 +634,7 @@
           <!-- START figures/fig_rie7.tex -->
           <image xml:id="img_rie7"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -681,7 +681,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_rie7.tex END -->
         </figure>
@@ -791,7 +791,7 @@
       <!-- START figures/fig_riedef.tex -->
       <image xml:id="img_riedef"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -829,7 +829,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_riedef.tex END -->
     </figure>
@@ -939,7 +939,7 @@
           <!-- START figures/fig_rie8.tex -->
           <image xml:id="img_rie8"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -968,7 +968,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_rie8.tex END -->
         </figure>
@@ -1156,7 +1156,7 @@
           <!-- START figures/fig_rie9.tex -->
           <image xml:id="img_rie9"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -1183,7 +1183,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_rie9.tex END -->
         </figure>
@@ -1746,10 +1746,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1769,10 +1766,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1792,10 +1786,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1815,10 +1806,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2464,10 +2452,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(n=>"Real");
               $f = Formula("(n+1)^2/(4*n^2)");

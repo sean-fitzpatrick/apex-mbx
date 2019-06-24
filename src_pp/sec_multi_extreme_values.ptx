@@ -1150,7 +1150,7 @@
             <!-- START figures/fig_conopt1b.tex -->
               <image xml:id="img_conopt1b">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1175,7 +1175,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_conopt1b.tex END -->
             </figure>
@@ -1649,14 +1649,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1677,14 +1671,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1703,14 +1691,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1729,10 +1711,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1767,10 +1746,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1792,26 +1768,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$sad">
-              <static>
-                (7,-6)
-              </static>
-              </var>
-              <var name="$inc">
-              <static>
-                \text{None}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $max=List("None");
@@ -1876,10 +1836,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1900,26 +1857,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-                (0,0)
-              </static>
-              </var>
-              <var name="$sad">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$inc">
-              <static>
-                \text{None}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $max=List("(0,0)");
@@ -1984,10 +1925,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2014,26 +1952,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                (-1,-2)
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-                (1,2)
-              </static>
-              </var>
-              <var name="$sad">
-              <static>
-                (1,-2), (-1,2)
-              </static>
-              </var>
-              <var name="$inc">
-              <static>
-                \text{None}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $max=List("(-1,-2)");
@@ -2098,10 +2020,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2124,26 +2043,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                (0,-3)
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-                (-1,3), (1,3)
-              </static>
-              </var>
-              <var name="$sad">
-              <static>
-                (-1,-3), (0,3), (1,-3)
-              </static>
-              </var>
-              <var name="$inc">
-              <static>
-                \text{None}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $max=List("(0,-3)");
@@ -2208,10 +2111,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2241,26 +2141,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$sad">
-              <static>
-                \text{None}
-              </static>
-              </var>
-              <var name="$inc">
-              <static>
-                (0,0)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $max=List("None");
@@ -2335,26 +2219,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxout">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$maxin">
-              <static>
-                (0,1)
-              </static>
-              </var>
-              <var name="$minout">
-              <static>
-                \frac{3}{4}
-              </static>
-              </var>
-              <var name="$minin">
-              <static>
-                (0,-1/2)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $maxout = Compute("3");
@@ -2413,26 +2281,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxout">
-              <static>
-                25/28
-              </static>
-              </var>
-              <var name="$maxin">
-              <static>
-                (5/14,25/196)
-              </static>
-              </var>
-              <var name="$minout">
-              <static>
-                -12
-              </static>
-              </var>
-              <var name="$minin">
-              <static>
-                (-1,1)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Point");
               $maxout = Compute("25/28");
@@ -2484,10 +2336,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2540,10 +2389,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

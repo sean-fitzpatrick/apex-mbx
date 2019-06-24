@@ -10,7 +10,7 @@
 
     <image>
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}[>=latex]
       \draw (0,0) node (A) [align=center] {Choose \ \(x\)}
@@ -18,7 +18,7 @@
 			(6.25,0) node [align=center] (C) {Plot point \ \((x,y)\)};
       \draw [->](A) --(B);
       \draw [->](B) -- (C);\end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 
     <p>
@@ -41,7 +41,7 @@
 
     <image>
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}[>=latex]
       \draw (0,0) node (A) [align=center] {Choose \ \(t\)}
@@ -52,7 +52,7 @@
       \draw [->](A) --(B2);
       \draw [->](B1) -- (C);
       \draw [->](B2) -- (C);\end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 
     <p>
@@ -173,7 +173,7 @@
 <!-- START figures/fig_pareq1.tex -->
                 <image xml:id="img_pareq1">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -203,13 +203,13 @@
                   \filldraw (axis cs:1,2) circle (1.5pt) node [above] {\scriptsize $t=1$};
                   \filldraw (axis cs:4,3) circle (1.5pt) node [above ] {\scriptsize $t=2$};
 
-			
+ 
 
                   \end{axis}
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_pareq1.tex END -->
               </figure></cell>
@@ -298,7 +298,7 @@
 <!-- START figures/fig_pareq2.tex -->
                 <image xml:id="img_pareq2">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -328,13 +328,13 @@
                   \filldraw (axis cs:.5,.292) circle (1.5pt) node [above right] {\scriptsize $t=3\pi/4$};
                   \filldraw (axis cs:1,0) circle (1.5pt) node [above right] {\scriptsize $t=\pi$};
 
-			
+ 
 
                   \end{axis}
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_pareq2.tex END -->
               </figure></cell>
@@ -441,7 +441,7 @@
             <!-- START figures/fig_pareq3a.tex -->
               <image xml:id="img_pareq3a">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -467,13 +467,13 @@
 
                 \draw (axis cs: 4,5) node [align=left] {\scriptsize $x=t^2+t$\\ \scriptsize $y=t^2-t$};
 
-			
+ 
 
                 \end{axis}
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_pareq3a.tex END -->
             </figure>
@@ -483,7 +483,7 @@
             <!-- START figures/fig_pareq3b.tex -->
               <image xml:id="img_pareq3b">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -509,13 +509,13 @@
 
                 \draw (axis cs: 2.5,5) node [align=left] {\scriptsize $x=t^2+t+3$\\ \scriptsize $y=t^2-t-2$};
 
-			
+ 
 
                 \end{axis}
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_pareq3b.tex END -->
             </figure>
@@ -553,7 +553,7 @@
           <!-- START figures/fig_pareq4.tex -->
           <image xml:id="img_pareq4">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -579,13 +579,13 @@
 
             \draw (axis cs: 7,14) node [align=left] {\scriptsize $x=t^3-5t^2+3t+11$\\ \scriptsize $y=t^2-2t+3$};
 
-			
+ 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_pareq4.tex END -->
         </figure>
@@ -704,7 +704,7 @@
           <!-- START figures/fig_pareq6.tex -->
           <image xml:id="img_pareq6">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -731,13 +731,13 @@
 
             \draw (axis cs: 100,50) node [align=left] {\scriptsize $x=32t$\\ \scriptsize $y=-16t^2+96t$};
 
-			
+ 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_pareq6.tex END -->
         </figure>
@@ -789,7 +789,7 @@
           <!-- START figures/fig_pareq7.tex -->
           <image xml:id="img_pareq7">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -818,13 +818,13 @@
 
             %\draw (axis cs: 100,50) node [align=left] {\scriptsize $x=32t$\\ \scriptsize $y=-16t^2+96t$};
 
-			
+ 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_pareq7.tex END -->
         </figure>
@@ -889,7 +889,7 @@
           <!-- START figures/fig_pareq8.tex -->
           <image xml:id="img_pareq8">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -918,13 +918,13 @@
 
             %\draw (axis cs: 100,50) node [align=left] {\scriptsize $x=32t$\\ \scriptsize $y=-16t^2+96t$};
 
-			
+ 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_pareq8.tex END -->
         </figure>
@@ -1009,7 +1009,7 @@
 <!-- START figures/fig_planecurve1.tex -->
               <image xml:id="img_planecurve1">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1035,7 +1035,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_planecurve1.tex END -->
             </figure></cell>
@@ -1057,7 +1057,7 @@
 <!-- START figures/fig_planecurve2.tex -->
               <image xml:id="img_planecurve2">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1083,7 +1083,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_planecurve2.tex END -->
             </figure></cell>
@@ -1105,7 +1105,7 @@
 <!-- START figures/fig_planecurve3.tex -->
               <image xml:id="img_planecurve3">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1131,7 +1131,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_planecurve3.tex END -->
             </figure></cell>
@@ -1153,7 +1153,7 @@
 <!-- START figures/fig_planecurve4.tex -->
               <image xml:id="img_planecurve4">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1179,7 +1179,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_planecurve4.tex END -->
             </figure></cell>
@@ -1281,7 +1281,7 @@
           <!-- START figures/fig_pareq9.tex -->
           <image xml:id="img_pareq9">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -1307,7 +1307,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_pareq9.tex END -->
         </figure>
@@ -1359,14 +1359,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1388,11 +1382,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
-              <var name="$orientation">
-              <static>
-                orientation
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ArbitraryString");
               $orientation=Compute("orientation");
@@ -1418,11 +1408,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
-              <var name="$rectangular">
-              <static>
-                rectangular
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ArbitraryString");
               $rectangular=Compute("rectangular");
@@ -1446,10 +1432,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1483,10 +1466,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1500,7 +1480,7 @@
             <!-- START figures/fig_09_02_ex_05.tex -->
                 <image xml:id="img_09_02_ex_05X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1527,7 +1507,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_05.tex END -->
               </figure>
@@ -1538,10 +1518,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1555,7 +1532,7 @@
             <!-- START figures/fig_09_02_ex_06.tex -->
                 <image xml:id="img_09_02_ex_06X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1583,7 +1560,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_06.tex END -->
               </figure>
@@ -1594,10 +1571,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1611,7 +1585,7 @@
             <!-- START figures/fig_09_02_ex_07.tex -->
                 <image xml:id="img_09_02_ex_07X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1638,7 +1612,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_07.tex END -->
               </figure>
@@ -1649,10 +1623,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1666,7 +1637,7 @@
             <!-- START figures/fig_09_02_ex_08.tex -->
                 <image xml:id="img_09_02_ex_08X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1693,7 +1664,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_08.tex END -->
               </figure>
@@ -1716,10 +1687,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1733,7 +1701,7 @@
             <!-- START figures/fig_09_02_ex_09.tex -->
                 <image xml:id="img_09_02_ex_09X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1745,7 +1713,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_09.tex END -->
               </figure>
@@ -1756,10 +1724,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1773,7 +1738,7 @@
             <!-- START figures/fig_09_02_ex_10.tex -->
                 <image xml:id="img_09_02_ex_10X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1785,7 +1750,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_10.tex END -->
               </figure>
@@ -1796,10 +1761,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1813,7 +1775,7 @@
             <!-- START figures/fig_09_02_ex_11.tex -->
                 <image xml:id="img_09_02_ex_11X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1825,7 +1787,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_11.tex END -->
               </figure>
@@ -1836,10 +1798,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1853,7 +1812,7 @@
             <!-- START figures/fig_09_02_ex_12.tex -->
                 <image xml:id="img_09_02_ex_12X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1866,7 +1825,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_12.tex END -->
               </figure>
@@ -1877,10 +1836,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1894,7 +1850,7 @@
             <!-- START figures/fig_09_02_ex_13.tex -->
                 <image xml:id="img_09_02_ex_13X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1907,7 +1863,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_13.tex END -->
               </figure>
@@ -1918,10 +1874,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1935,7 +1888,7 @@
             <!-- START figures/fig_09_02_ex_14.tex -->
                 <image xml:id="img_09_02_ex_14X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1948,7 +1901,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_14.tex END -->
               </figure>
@@ -1959,10 +1912,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1976,7 +1926,7 @@
             <!-- START figures/fig_09_02_ex_15.tex -->
                 <image xml:id="img_09_02_ex_15X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -1989,7 +1939,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_15.tex END -->
               </figure>
@@ -2000,10 +1950,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2017,7 +1964,7 @@
             <!-- START figures/fig_09_02_ex_16.tex -->
                 <image xml:id="img_09_02_ex_16X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -2030,7 +1977,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_16.tex END -->
               </figure>
@@ -2041,10 +1988,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2058,7 +2002,7 @@
             <!-- START figures/fig_09_02_ex_17.tex -->
                 <image xml:id="img_09_02_ex_17X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[
@@ -2071,7 +2015,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_02_ex_17.tex END -->
               </figure>
@@ -2093,10 +2037,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2166,10 +2107,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2243,11 +2181,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                3x+2y=17
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("3x+2y=17",limits=>[[-3,3],[6,11]]);
@@ -2271,10 +2205,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2294,10 +2225,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2317,10 +2245,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2340,11 +2265,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                y-2x=3
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("y-2x=3",limits=>[[-3,3],[0,6]]);
@@ -2368,10 +2289,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2391,10 +2309,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2414,10 +2329,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2437,10 +2349,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2460,11 +2369,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                x=1-2y^2
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("x=1-2y^2",limits=>[[-1,2],[-2,2]]);
@@ -2499,10 +2404,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2523,10 +2425,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2547,10 +2446,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2571,10 +2467,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2610,31 +2503,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$x">
-              <static>
-                \frac{t+11}{6}
-              </static>
-              </var>
-              <var name="$y">
-              <static>
-                \frac{t^2-97}{12}
-              </static>
-              </var>
-              <var name="$point">
-              <static>
-                (2,-8)
-              </static>
-              </var>
-              <var name="$yp">
-              <static>
-                6x-11
-              </static>
-              </var>
-              <var name="$yp1">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $x=Formula("(t+11)/6");
@@ -2683,31 +2556,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$x">
-              <static>
-                \ln(t)
-              </static>
-              </var>
-              <var name="$y">
-              <static>
-                t
-              </static>
-              </var>
-              <var name="$point">
-              <static>
-                (0,1)
-              </static>
-              </var>
-              <var name="$yp">
-              <static>
-                e^{x}
-              </static>
-              </var>
-              <var name="$yp1">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->variables->set(t=>{limits=>[0.1,10]});
@@ -2756,31 +2609,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$x">
-              <static>
-                \arccos(t)
-              </static>
-              </var>
-              <var name="$y">
-              <static>
-                \sqrt{1-t^2}
-              </static>
-              </var>
-              <var name="$point">
-              <static>
-                (0,0)
-              </static>
-              </var>
-              <var name="$yp">
-              <static>
-                \cos(x)
-              </static>
-              </var>
-              <var name="$yp1">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->variables->set(t=>{limits=>[-0.9,0.9]});
@@ -2830,10 +2663,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2868,16 +2698,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crossings">
-              <static>
-                -1, 1
-              </static>
-              </var>
-              <var name="$points">
-              <static>
-                (3,-2)
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $crossings=List("-1,1");
               Context("Point");
@@ -2910,10 +2732,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2933,10 +2752,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2956,10 +2772,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2989,10 +2802,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3012,16 +2822,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cusps">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$points">
-              <static>
-                (-4,-8)
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $cusps=List("2");
               Context("Point");
@@ -3054,10 +2856,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3077,16 +2876,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cusps">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$points">
-              <static>
-                (1,0)
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $cusps=List("0");
               Context("Point");
@@ -3130,10 +2921,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3153,10 +2941,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3176,10 +2961,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3200,10 +2982,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">2\cos(t)</member>
-              <member correct="yes">-2\sin(t)</member></set>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $x=Formula("2cos(t)");
@@ -3257,10 +3036,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">3\cos(2\pi t)+1</member>
-              <member correct="yes">3\sin(2\pi t)+1</member></set>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $x=Formula("3cos(2 pi t)+1");
@@ -3315,10 +3091,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\cos(t)+1</member>
-              <member correct="yes">3\sin(t)+3</member></set>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $x=Formula("3cos(2 pi t)+1");
@@ -3357,10 +3130,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3381,10 +3151,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3406,10 +3173,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

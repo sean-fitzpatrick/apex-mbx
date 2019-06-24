@@ -24,7 +24,7 @@
       <!-- START figures/fig_ftc1.tex -->
       <image xml:id="img_ftc0"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[axis on top,
@@ -42,7 +42,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_ftc0.tex END -->
     </figure>
@@ -63,7 +63,7 @@
       <!-- START figures/fig_ftc1.tex -->
           <image xml:id="img_ftc1"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xtick=\empty,
@@ -75,13 +75,13 @@
             xmin=-1,xmax=3.5
             ]
             \addplot+[domain=-1:3.25] {2*x};
-            \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {2*x} \closedcycle;        
+            \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {2*x} \closedcycle; 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
       <!-- figures/fig_ftc1.tex END -->
         </figure>
@@ -101,7 +101,7 @@
       <!-- START figures/fig_ftc1.tex -->
           <image xml:id="img_ftc1b"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ xtick=\empty,
@@ -123,7 +123,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
       <!-- figures/fig_ftc1.tex END -->
         </figure>
@@ -156,7 +156,7 @@
       <!-- START figures/fig_ftc1.tex -->
           <image xml:id="img_ftc1c"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ymin=-2,ymax=8,
@@ -169,7 +169,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
       <!-- figures/fig_ftc1.tex END -->
         </figure>
@@ -538,7 +538,7 @@
               <caption>The area between <m>v(t)</m> and the <m>t</m>-axis can be used to represent displacement.</caption>
               <image xml:id="img_ftcmotion1a">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[ xtick=\empty,
@@ -558,7 +558,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </figure>
@@ -567,7 +567,7 @@
               <caption>The area between <m>\abs{v(t)}</m> and the <m>t</m>-axis can be used to represent distance.</caption>
               <image xml:id="img_ftcmotion1b">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[ xtick=\empty,
@@ -589,7 +589,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </figure>
@@ -741,7 +741,7 @@
       <!-- START figures/fig_ftc5.tex -->
         <image xml:id="img_ftc5a">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -767,7 +767,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
       <!-- figures/fig_ftc5.tex END -->
       </figure>
@@ -777,7 +777,7 @@
       <!-- START figures/fig_ftc5a.tex -->
         <image xml:id="img_ftc5b">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -803,7 +803,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
       <!-- figures/fig_ftc5a.tex END -->
       </figure>
@@ -858,7 +858,7 @@
           <!-- START figures/fig_ftc6.tex -->
           <image xml:id="img_ftc6"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[axis on top,
@@ -876,7 +876,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_ftc6.tex END -->
         </figure>
@@ -915,7 +915,7 @@
       <!-- START figures/fig_ftc7a.tex -->
       <image xml:id="img_ftc7a"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -938,7 +938,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_ftc7a.tex END -->
     </figure>
@@ -982,7 +982,7 @@
         <!-- START figures/fig_ftc7b2.tex -->
         <image xml:id="img_ftc7b2">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -1006,7 +1006,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_ftc7b2.tex END -->
       </figure>
@@ -1016,7 +1016,7 @@
         <!-- START figures/fig_ftc7b1.tex -->
         <image xml:id="img_ftc7b1">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -1040,7 +1040,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_ftc7b1.tex END -->
       </figure>
@@ -1050,7 +1050,7 @@
         <!-- START figures/fig_ftc7b3.tex -->
         <image xml:id="img_ftc7b3">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -1074,7 +1074,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_ftc7b3.tex END -->
       </figure>
@@ -1152,7 +1152,7 @@
           <!-- START figures/fig_ftc8.tex -->
           <image xml:id="img_ftc8"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -1178,7 +1178,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_ftc8.tex END -->
         </figure>
@@ -1216,7 +1216,7 @@
       <!-- START figures/fig_ftc9a.tex -->
       <image xml:id="img_ftc9a"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -1243,13 +1243,13 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_ftc9a.tex END -->
       <!-- START figures/fig_ftc9b.tex -->
       <image xml:id="img_ftc9b"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -1276,7 +1276,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_ftc9b.tex END -->
     </figure>
@@ -1460,10 +1460,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1495,10 +1492,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2107,10 +2101,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

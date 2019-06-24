@@ -4073,10 +4073,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4098,10 +4095,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4122,10 +4116,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4147,10 +4138,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4184,10 +4172,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4211,11 +4196,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                52
-              </static>
-              </var>
+ 
             <pg-code>
                 $int=Compute("52");
             </pg-code>
@@ -4238,10 +4219,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4267,11 +4245,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                3\pi/2
-              </static>
-              </var>
+ 
             <pg-code>
                 $int=Compute("3pi/2");
             </pg-code>
@@ -4306,10 +4280,7 @@
       <exercise xml:id="x13_06_ex_07">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4469,10 +4440,7 @@
       <exercise xml:id="x13_06_ex_08">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4636,10 +4604,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4804,10 +4769,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4960,10 +4922,7 @@
       <exercise xml:id="x13_06_ex_11">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5105,7 +5064,7 @@
               <p>
                 <m>dx\ dy\ dz</m>:
                 <m>\ds\int_0^4\int_{z/4}^{1}\int_{z/2-2y+2}^2\ dx\ dy\ dz</m>
-	
+ 
 	<m>\ds V = \int_0^4\int_{z/4}^{1}\int_{2y-z/2-2}^2\ dx\ dy\ dz = 4/3</m>.
               </p>
             </solution>
@@ -5115,10 +5074,7 @@
       <exercise xml:id="x13_06_ex_12">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5264,7 +5220,7 @@
               <p>
                 <m>dx\ dy\ dz</m>:
                 <m>\ds\int_0^8\int_{z/2}^{4}\int_{-\sqrt{4-y}}^{\sqrt{4-y}}\ dx\ dy\ dz</m>
-	
+ 
 	<m>\ds V = \int_{-2}^2\int_{0}^{4-x^2}\int_{0}^{2y}\ dz\ dy\ dx = 512/15</m>.
               </p>
             </solution>
@@ -5274,10 +5230,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5437,7 +5390,7 @@
               <p>
                 <m>dx\ dy\ dz</m>:
                 <m>\ds\int_0^1\int_{0}^{1-z^2}\int_{0}^{\sqrt{1-y}}\ dx\ dy\ dz</m>
-	
+ 
 	Answers will vary. Neither order is particularly <q>hard.</q> The order <m>dz\ dy\ dx</m> requires integrating a square root, so powers can be messy; the order <m>dy\ dz\ dx</m> requires two triple integrals, but each uses only polynomials.
               </p>
             </solution>
@@ -5447,10 +5400,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5597,7 +5547,7 @@
               <p>
                 <m>dx\ dy\ dz</m>:
                 <m>\ds\int_0^1\int_{0}^{3-3z}\int_{0}^{1-z}\ dx\ dy\ dz</m>
-	
+ 
 	<m>\ds V = \int_0^1\int_{0}^{3-3z}\int_{0}^{1-z}\ dx\ dy\ dz = 1</m>.
               </p>
             </solution>
@@ -5616,10 +5566,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5636,11 +5583,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                \frac{7}{8}
-              </static>
-              </var>
+ 
             <pg-code>
                 $int=Compute("7/8");
             </pg-code>
@@ -5660,10 +5603,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5683,11 +5623,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                0
-              </static>
-              </var>
+ 
             <pg-code>
                 $int=Compute("0");
             </pg-code>
@@ -5717,10 +5653,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5753,10 +5686,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5790,10 +5720,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -5827,10 +5754,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

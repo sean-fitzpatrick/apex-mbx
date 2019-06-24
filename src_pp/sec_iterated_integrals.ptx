@@ -249,7 +249,7 @@
       <!-- START figures/fig_iterated_intro.tex -->
       <image xml:id="img_iterated_intro">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -290,7 +290,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_iterated_intro.tex END -->
     </figure>
@@ -325,7 +325,7 @@
       <!-- START figures/fig_iterated_intro2.tex -->
       <image xml:id="img_iterated_intro2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -366,7 +366,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_iterated_intro2.tex END -->
     </figure>
@@ -434,7 +434,7 @@
           <!-- START figures/fig_iterated4.tex -->
           <image xml:id="img_iterated4">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -475,7 +475,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_iterated4.tex END -->
         </figure>
@@ -517,7 +517,7 @@
           <!-- START figures/fig_iterated5.tex -->
           <image xml:id="img_iterated5">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -558,7 +558,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_iterated5.tex END -->
         </figure>
@@ -615,7 +615,7 @@
           <!-- START figures/fig_iterated6.tex -->
           <image xml:id="img_iterated6">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -656,7 +656,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_iterated6.tex END -->
         </figure>
@@ -751,7 +751,7 @@
           <!-- START figures/fig_double5.tex -->
           <image xml:id="img_double5">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -775,14 +775,14 @@
 													(axis cs:-.5,-.1666) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x/3$} (axis cs: 6.9, 2.3);
             \draw [very thick,{\colorone}] (axis cs:0,-.5) -- (axis cs:0,2.5)
 													(axis cs:6,-.5) -- (axis cs:6,2.5);
-													
-            \draw (axis cs:4,.5) node {$R$};													
+ 
+            \draw (axis cs:4,.5) node {$R$}; 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_double5.tex END -->
         </figure>
@@ -819,7 +819,7 @@
           <!-- START figures/fig_double7.tex -->
           <image xml:id="img_double7">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -844,15 +844,15 @@
 															(axis cs:-.5,4) -- (axis cs:4.5,4);
             %\draw [very thick,{\colorone}] (axis cs:3,-.5) -- (axis cs:3,3.5)
 															%(axis cs:-.5,-.5) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x$} (axis cs: 3.5,3.5);
-            \draw (axis cs:2,1.75) node {$R$};													
+            \draw (axis cs:2,1.75) node {$R$}; 
             \draw (axis cs:2,3.1) node [rotate=30] {\scriptsize$x=y^2/4$};
-            \draw (axis cs:3,1.5) node [rotate=56] {\scriptsize $x= (y+4)/2$};													
+            \draw (axis cs:3,1.5) node [rotate=56] {\scriptsize $x= (y+4)/2$}; 
 
             \end{axis}
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_double7.tex END -->
         </figure>
@@ -901,10 +901,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -929,10 +926,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -952,10 +946,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -976,10 +967,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1010,10 +998,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1053,16 +1038,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                2+\pi^2\cos(y)
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                \pi^2+\pi
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->variables->are(x=>'Real',y=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1093,10 +1070,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1136,16 +1110,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                y^4/2-y^3+y^2/2
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                8/15
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->variables->are(x=>'Real',y=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1176,10 +1142,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1219,16 +1182,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                x/(1+x^2)
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                \frac12\ln\left(\frac52\right)
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->variables->are(x=>'Real',y=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1272,10 +1227,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1284,7 +1236,7 @@
             <!-- START figures/fig_13_01_ex_11.tex -->
                 <image xml:id="img_13_01_ex_11">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1313,7 +1265,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_11.tex END -->
               </figure>
@@ -1333,10 +1285,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1345,7 +1294,7 @@
             <!-- START figures/fig_13_01_ex_12.tex -->
                 <image xml:id="img_13_01_ex_12">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1374,7 +1323,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_12.tex END -->
               </figure>
@@ -1394,10 +1343,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1406,7 +1352,7 @@
             <!-- START figures/fig_13_01_ex_13.tex -->
                 <image xml:id="img_13_01_ex_13">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1435,7 +1381,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_13.tex END -->
               </figure>
@@ -1457,10 +1403,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1469,7 +1412,7 @@
             <!-- START figures/fig_13_01_ex_14.tex -->
                 <image xml:id="img_13_01_ex_14">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1499,7 +1442,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_14.tex END -->
               </figure>
@@ -1519,10 +1462,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1531,7 +1471,7 @@
             <!-- START figures/fig_13_01_ex_15.tex -->
                 <image xml:id="img_13_01_ex_15">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1563,7 +1503,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_15.tex END -->
               </figure>
@@ -1583,10 +1523,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1595,7 +1532,7 @@
             <!-- START figures/fig_13_01_ex_16.tex -->
                 <image xml:id="img_13_01_ex_16">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1627,7 +1564,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_16.tex END -->
               </figure>
@@ -1654,10 +1591,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1671,7 +1605,7 @@
             <!-- START figures/fig_13_01_ex_18.tex -->
                 <image xml:id="img_13_01_ex_18X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1703,7 +1637,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_18.tex END -->
               </figure>
@@ -1718,10 +1652,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1735,7 +1666,7 @@
             <!-- START figures/fig_13_01_ex_20.tex -->
                 <image xml:id="img_13_01_ex_20X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1769,7 +1700,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_20.tex END -->
               </figure>
@@ -1784,10 +1715,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1801,7 +1729,7 @@
             <!-- START figures/fig_13_01_ex_19.tex -->
                 <image xml:id="img_13_01_ex_19X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1833,7 +1761,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_19.tex END -->
               </figure>
@@ -1848,10 +1776,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1865,7 +1790,7 @@
             <!-- START figures/fig_13_01_ex_17.tex -->
                 <image xml:id="img_13_01_ex_17X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1897,7 +1822,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_17.tex END -->
               </figure>
@@ -1912,10 +1837,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1929,7 +1851,7 @@
             <!-- START figures/fig_13_01_ex_22.tex -->
                 <image xml:id="img_13_01_ex_22X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1963,7 +1885,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_22.tex END -->
               </figure>
@@ -1978,10 +1900,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1995,7 +1914,7 @@
             <!-- START figures/fig_13_01_ex_21.tex -->
                 <image xml:id="img_13_01_ex_21X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2029,7 +1948,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_13_01_ex_21.tex END -->
               </figure>

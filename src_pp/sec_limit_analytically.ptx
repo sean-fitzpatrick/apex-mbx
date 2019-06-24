@@ -48,8 +48,8 @@
         </index>
 
         <md>
-          <mrow>\lim_{x\to c}f(x)\amp=L\amp\lim_{x\to c} g(x)\amp = K\text{.}</mrow>
-        </md>
+          <mrow>\lim_{x\to c}f(x)\amp=L\amp\lim_{x\to c} g(x)\amp = K</mrow>
+        </md>.
       </p>
 
       <p>
@@ -155,8 +155,8 @@
       <p>
         Let
         <md>
-          <mrow>\lim_{x\to 2} f(x)\amp=2\amp\lim_{x\to 2} g(x)\amp= 3\amp p(x)\amp = 3x^2-5x+7\text{.}</mrow>
-        </md>
+          <mrow>\lim_{x\to 2} f(x)\amp=2\amp\lim_{x\to 2} g(x)\amp= 3\amp p(x)\amp = 3x^2-5x+7</mrow>
+        </md>.
         Find the following limits:
 
         <ol cols="2">
@@ -525,7 +525,7 @@
     <caption>An illustration of the Squeeze Theorem</caption>
     <image xml:id="img-squeeze-theorem" width="47%">
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}
       \begin{axis}[xtick={5},ytick={4},xticklabel={$c$}, yticklabel={$L$}]
@@ -535,7 +535,7 @@
       \end{axis}
       \end{tikzpicture}
       ]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 
   </figure>
@@ -614,7 +614,7 @@
           <!-- START figures/fig_squeeze1.tex -->
         <image xml:id="img_squeeze_sinx" width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[compat=1.5.1,
@@ -632,7 +632,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_squeeze1.tex END -->
       </figure>
@@ -647,8 +647,8 @@
         the area of the triangle contained inside the sector is <m>\frac{1}{2}\sin(\theta)</m>.
         It is then clear from <xref ref="fig_squeeze1">Figure</xref> that
         <me>
-          \frac{\tan(\theta)}{2}\geq\frac{\theta}{2}\geq\frac{\sin(\theta)}{2}\text{.}
-        </me>
+          \frac{\tan(\theta)}{2}\geq\frac{\theta}{2}\geq\frac{\sin(\theta)}{2}
+        </me>.
         (You may need to recall that the area of a sector of a circle is
         <m>\frac{1}{2}r^2 \theta</m> with <m>\theta</m> measured in radians.)
       </p>
@@ -658,7 +658,7 @@
           <!-- START figures/fig_squeeze1a.tex -->
         <image xml:id="img_squeeze1a">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[x=100pt,y=100pt]
           \fill [draw=black,thick,fill=blue!20] (0,0) node [shift={(22.5:0.2)}] {$\theta$} -- (1,.839) -- node [pos=.5,below,rotate=90] {$\tan(\theta)$} (1,0) -- cycle;
@@ -667,13 +667,13 @@
           \draw [black,dashed,thick] (1,0) -- (.766,.643);
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_squeeze1a.tex END -->
           <!-- START figures/fig_squeeze1b.tex -->
         <image xml:id="img_squeeze1b">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[x=100pt,y=100pt]
           \fill [draw=black,thick,fill=blue!20] (0,0) node [shift={(22.5:0.2)}] {$\theta$} -- (1,0) arc(0:40:1) -- cycle;
@@ -682,13 +682,13 @@
           \draw [black,dashed,thick] (1,0) -- (.766,.643) -- (1,.839) -- node [pos=.5,below,rotate=90,opacity=0] {$\tan(\theta)$} cycle;
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_squeeze1b.tex END -->
           <!-- START figures/fig_squeeze1c.tex -->
         <image xml:id="img_squeeze1c">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[x=100pt,y=100pt]
           \fill [draw=black,thick,fill=blue!20] (0,0) node [shift={(22.5:0.2)}] {$\theta$} -- (1,0) --(.766,.643) -- cycle;
@@ -698,7 +698,7 @@
           \draw [black,dashed,thick] (1,0) arc(0:40:1) --  (1,.839) -- node [pos=.5,below,rotate=90,opacity=0] {$\tan(\theta)$} cycle;
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_squeeze1c.tex END -->
       </sidebyside>
@@ -760,7 +760,7 @@
     <m>y=\sin(x)</m> are essentially indistinguishable.
   </p>
 
-  <todo>Put GeoGebra applet here with ability to zoom in on x and sin(x) near 0.</todo>
+  <!--TODO: Put GeoGebra applet here with ability to zoom in on x and sin(x) near 0. -->
 
   <p>
     We include this special limit,
@@ -891,7 +891,7 @@
           <!-- START figures/figLimitXplus1.tex -->
         <image xml:id="img_limitxplus1" width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-.1,xmax=2.2,
@@ -902,7 +902,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/figLimitXplus1.tex END -->
       </figure>
@@ -946,7 +946,7 @@
     </statement>
   </theorem>
 
-  <todo>Add the Fundamental Theorem of Algebra somewhere? Is it in the reference pages? If so, link to it.</todo>
+  <!--TODO: Add the Fundamental Theorem of Algebra somewhere? Is it in the reference pages? If so, link to it. -->
 
   <p>
     The Fundamental Theorem of Algebra tells us that when dealing with a rational function of the form
@@ -963,8 +963,8 @@
       <p>
         Evaluate
         <me>
-          \lim\limits_{x\to 3} \frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15}\text{.}
-        </me>
+          \lim\limits_{x\to 3} \frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15}
+        </me>.
       </p>
     </statement>
     <solution>
@@ -988,8 +988,8 @@
           <mrow>\lim_{x\to 3} \frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15} \amp = \lim_{x\to 3}\frac{(x-3)\left(x^2+x-2\right)}{(x-3)\left(2 x^2+9 x-5\right)}</mrow>
           <mrow>\amp =\lim_{x\to 3} \frac{x^2+x-2}{2 x^2+9 x-5}</mrow>
           <mrow>\amp = \frac{10}{40}</mrow>
-          <mrow>\amp = \frac{1}{4}\text{.}</mrow>
-        </md>
+          <mrow>\amp = \frac{1}{4}</mrow>
+        </md>.
       </p>
     </solution>
   </example>
@@ -1000,8 +1000,8 @@
       <p>
         Evaluate
         <me>
-          \lim\limits_{x\to 9} \frac{\sqrt{x}-3}{x-9}\text{.}
-        </me>
+          \lim\limits_{x\to 9} \frac{\sqrt{x}-3}{x-9}
+        </me>.
       </p>
     </statement>
     <solution>
@@ -1024,8 +1024,8 @@
           <mrow>\amp = \frac{1}{\lim_{x\to 9}\sqrt{x}+\lim_{x \to 9}3}</mrow>
           <mrow>\amp = \frac{1}{\sqrt{\lim_{x\to 9}x}+3}</mrow>
           <mrow>\amp = \frac{1}{\sqrt{3+3}}</mrow>
-          <mrow>\amp = \frac{1}{6}\text{.}</mrow>
-        </md>
+          <mrow>\amp = \frac{1}{6}</mrow>
+        </md>.
       </p>
     </solution>
   </example>
@@ -1208,7 +1208,7 @@
       </exercise>
 
     </exercisegroup>
-    <todo>Resolve the repeated instructions in the exercises in this exercisegroup.</todo>
+    <!--TODO: Resolve the repeated instructions in the exercises in this exercisegroup. -->
     <exercisegroup>
 
       <introduction>
@@ -1228,16 +1228,8 @@
         <title>A sum</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                9
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                9
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1273,16 +1265,8 @@
         <title>A quotient</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                9
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                6
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1318,16 +1302,8 @@
         <title>A difference in the numerator</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                9
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1363,16 +1339,8 @@
         <title>A difference in the denominator</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                6
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1408,16 +1376,8 @@
         <title>A composition</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                6
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                \text{NPK}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1453,16 +1413,8 @@
         <title>A composition</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                6
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                \text{NPK}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1498,16 +1450,8 @@
         <title>A triple composition</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                6
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                \text{NPK}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1543,16 +1487,8 @@
         <title>Products and squares</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                6
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                -45
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1604,16 +1540,8 @@
         <title><m>f</m> to the <m>g</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1649,16 +1577,8 @@
         <title>cosine of <m>g</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                10
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                -1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1694,16 +1614,8 @@
         <title><m>f</m> times <m>g</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1739,16 +1651,8 @@
         <title>A composition</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                \pi
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1781,7 +1685,7 @@
       </exercise>
 
     </exercisegroup>
-    <todo>Resolve duplicate instructions in these exercisegroup exercises</todo>
+    <!--TODO: Resolve duplicate instructions in these exercisegroup exercises -->
     <exercisegroup>
 
       <introduction>
@@ -1794,31 +1698,11 @@
         <title>Polynomial</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                -3
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                7
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                x^2-3x+7
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                7
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(2,8,1);
               $b=non_zero_random(-5,5,1);
@@ -1854,31 +1738,11 @@
         <title>Rational and power</title>
         <webwork seed="1">
             <setup>
-              <var name="$b">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$n">
-              <static>
-                7
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \left(\frac{x-3}{x-5}\right)^7
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                \left(\frac{\pi-3}{\pi-5}\right)^7
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $b=non_zero_random(-5,5,1);
               do{$c=non_zero_random(-9,9,1);}until($b!=$c);
@@ -1918,26 +1782,10 @@
         <title>Trig</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                \pi/4
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                \sqrt{3}/4
-              </static>
-              </var>
-              <var name="$l" category="number">
-              <static>
-                \sqrt{2}/2
-              </static>
-              </var>
-              <var name="$r" category="number">
-              <static>
-                \sqrt{2}/2
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $d=list_random(3,4,6);
               if($envir{problemSeed}==1){$d=4;};
@@ -1980,11 +1828,7 @@
         <title><m>\log</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$L" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
+ 
             <pg-code>
               $L=Compute("DNE");
             </pg-code>
@@ -2021,31 +1865,11 @@
         <title>Exponential</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                4
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                8
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                4^{x^3-8x}
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                64
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(2,4,1);
               do{$b=random(2,4,1);}until($a!=$b);
@@ -2086,16 +1910,8 @@
         <title><m>\csc</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                \pi/6
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                2
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $d=list_random(3,4,6);
               if($envir{problemSeed}==1){$d=6;};
@@ -2133,16 +1949,8 @@
         <title><m>\log</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \ln(1+x)
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $a=random(1,9,1);
@@ -2173,51 +1981,15 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$d">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$e">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                x^2+3x+5
-              </static>
-              </var>
-              <var name="$g">
-              <static>
-                5x^2-2x-2
-              </static>
-              </var>
-              <var name="$r">
-              <static>
-                \frac{x^2+3x+5}{5x^2-2x-2}
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                \frac{\pi^2+3\pi+5}{5\pi^2-2\pi-3}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               #ensure rational function doesn't reduce
@@ -2264,16 +2036,8 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{3x+1}{1-x}
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                \frac{3\pi+1}{1-\pi}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $a=non_zero_random(-5,5,1);
@@ -2309,21 +2073,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{x^2-4x-12}{x^2-13x+42}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                6
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                -8
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=6;$b=-2;$c=7;};
@@ -2354,16 +2106,8 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{x^2+2x}{x^2-2x}
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                -1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               ($b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,2);
               if($envir{problemSeed}==1){$b=-2;$c=2;};
@@ -2396,21 +2140,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{x^2+6x-16}{x^2-3x+2}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                10
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=2;$b=-8;$c=1;};
@@ -2441,21 +2173,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{x^2-10x+16}{x^2-x-2}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                -2
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=2;$b=8;$c=-1;};
@@ -2486,21 +2206,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{x^2-5x-14}{x^2+10x+16}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                -2
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                -\frac{3}{2}
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=-2;$b=7;$c=-8;};
@@ -2531,21 +2239,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
-              <var name="$r">
-              <static>
-                \frac{x^2+9x+8}{x^2-6x-7}
-              </static>
-              </var>
-              <var name="$a">
-              <static>
-                -1
-              </static>
-              </var>
-              <var name="$L" category="number">
-              <static>
-                -\frac{7}{8}
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=-1;$b=-8;$c=7;};
@@ -2681,16 +2377,8 @@
         <title><m>\sin</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$L" category="number">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \frac{\sin(3x)}{x}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $L=random(2,9,1);
               if($envir{problemSeed}==1){$L=3;};
@@ -2711,16 +2399,8 @@
         <title><m>\sin</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$L" category="number">
-              <static>
-                \frac{5}{8}
-              </static>
-              </var>
-              <var name="$f">
-              <static>
-                \frac{\sin(5x)}{8x}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $a=random(2,9,1);
               do{$b=random(2,9,1);}until($a!=$b);
@@ -2744,11 +2424,7 @@
         <title><m>\log</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                1
-              </static>
-              </var>
+ 
             <pg-code>
               $L=1;
             </pg-code>
@@ -2767,11 +2443,7 @@
         <title><m>\sin</m></title>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                \frac{\pi}{180}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               $L=Formula("pi/180");

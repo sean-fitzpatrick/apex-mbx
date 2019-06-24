@@ -34,7 +34,7 @@
         <caption>A graph of <m>f(x)</m> and its tangent line at <m>0</m>.</caption>
         <image xml:id="img_taypolyintroa_1">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -59,7 +59,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -143,7 +143,7 @@
       <!-- START figures/fig_taypolyintrob.tex -->
       <image xml:id="img_taypolyintrob" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -166,7 +166,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_taypolyintrob.tex END -->
     </figure>
@@ -192,7 +192,7 @@
       <!-- START figures/fig_taypolyintroc.tex -->
       <image xml:id="img_taypolyintroc" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -214,7 +214,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_taypolyintroc.tex END -->
     </figure>
@@ -362,7 +362,7 @@
             <!-- START figures/fig_taypoly1b.tex -->
                 <image xml:id="img_taypoly1b" width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -393,7 +393,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_taypoly1b.tex END -->
               </figure>
@@ -524,7 +524,7 @@
             <!-- START figures/fig_taypoly2b.tex -->
                 <image xml:id="img_taypoly2b" widht="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -555,7 +555,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_taypoly2b.tex END -->
               </figure>
@@ -588,7 +588,7 @@
             <!-- START figures/fig_taypoly2c.tex -->
                 <image xml:id="img_taypoly2c" width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[axis on top,
@@ -615,7 +615,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_taypoly2c.tex END -->
               </figure>
@@ -957,7 +957,7 @@
           <!-- START figures/fig_taypoly4.tex -->
           <image xml:id="img_taypoly4b" width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -990,7 +990,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_taypoly4.tex END -->
         </figure>
@@ -1098,7 +1098,7 @@
             <!-- START figures/fig_taypoly5.tex -->
                 <image xml:id="img_taypoly5b" width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1135,7 +1135,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_taypoly5.tex END -->
               </figure>
@@ -1244,7 +1244,7 @@
           <!-- START figures/fig_taypoly6.tex -->
           <image xml:id="img_taypoly6" width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[ymin=-.1,ymax=3.5,
@@ -1260,7 +1260,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_taypoly6.tex END -->
         </figure>
@@ -1306,10 +1306,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1331,10 +1328,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1355,10 +1349,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1380,10 +1371,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1415,10 +1403,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1438,10 +1423,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1461,10 +1443,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1484,10 +1463,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1507,10 +1483,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1530,10 +1503,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1553,10 +1523,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1576,10 +1543,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1605,10 +1569,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1629,10 +1590,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1653,10 +1611,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1682,10 +1637,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1710,10 +1662,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1734,10 +1683,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1758,10 +1704,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1781,10 +1724,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1810,10 +1750,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1835,10 +1772,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1860,10 +1794,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1886,10 +1817,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1916,10 +1844,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1943,10 +1868,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1971,10 +1893,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2000,10 +1919,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2034,10 +1950,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2057,10 +1970,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2082,10 +1992,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2105,10 +2012,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2128,10 +2032,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2156,10 +2057,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2179,10 +2077,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2202,10 +2097,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

@@ -61,8 +61,8 @@
     we will likely get a better approximation of the instantaneous velocity.
     On <m>[2,2.5]</m> we have
     <me>
-      \frac{f(2.5)-f(2)}{2.5-2} = \frac{50-86}{0.5} =-72\,\text{ft/s}\text{.}
-    </me>
+      \frac{f(2.5)-f(2)}{2.5-2} = \frac{50-86}{0.5} =-72\,\text{ft/s}
+    </me>.
   </p>
   <aside>
     <title>Units in Calculations</title>
@@ -81,16 +81,16 @@
     For instance, over a time span of one tenth of a second,
     i.e., on <m>[2,2.1]</m>, we have
     <me>
-      \frac{f(2.1)-f(2)}{2.1-2} = \frac{79.44-86}{0.1} =-65.6\,\text{ft/s}\text{.}
-    </me>
+      \frac{f(2.1)-f(2)}{2.1-2} = \frac{79.44-86}{0.1} =-65.6\,\text{ft/s}
+    </me>.
   </p>
 
   <p>
     Over a time span of one hundredth of a second,
     on <m>[2,2.01]</m>, the average velocity is
     <me>
-      \frac{f(2.01)-f(2)}{2.01-2} = \frac{85.3584-86}{0.01} =-64.16\,\text{ft/s}\text{.}
-    </me>
+      \frac{f(2.01)-f(2)}{2.01-2} = \frac{85.3584-86}{0.01} =-64.16\,\text{ft/s}
+    </me>.
   </p>
 
   <p>
@@ -180,7 +180,7 @@
         <image xml:id="img_derivfalling">
         <!-- START figures/fig_derivfalling.tex -->
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}
           \begin{axis}[xmin=-.5,xmax=3.49,
           ymin=-50,ymax=160,
@@ -191,7 +191,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
       <!-- figures/fig_derivfalling.tex END -->
       </figure>
@@ -201,7 +201,7 @@
         <image xml:id="img_derivfalling2">
         <!-- START figures/fig_derivfalling2.tex -->
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}
           \begin{axis}[xmin=1.8,xmax=3.4,
           ymin=0,ymax=129,
@@ -213,7 +213,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_derivfalling2.tex END -->
       </figure>
@@ -225,7 +225,7 @@
         <image xml:id="img_derivfalling3">
         <!-- START figures/fig_derivfalling3.tex -->
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}
           \begin{axis}[xmin=1.4,xmax=2.6,
           ymin=0,ymax=129,
@@ -237,7 +237,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_derivfalling3.tex END -->
       </figure>
@@ -247,7 +247,7 @@
         <!-- START figures/fig_derivfalling4.tex -->
         <image xml:id="img_derivfalling4">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}
           \begin{axis}[xmin=1.4,xmax=2.6,
           ymin=0,ymax=129,
@@ -259,7 +259,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -436,7 +436,7 @@
           <!-- START figures/fig_tangent1.tex -->
           <image xml:id="img_tangent1">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[xmin=-1,xmax=4.1,
             ymin=-11,ymax=66]
@@ -447,7 +447,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_tangent1.tex END -->
         </figure>
@@ -522,7 +522,7 @@
           <!-- START figures/fig_normal1.tex -->
           <image xml:id="img_normal1">
             <description></description>
-            <latex-image-code>
+            <latex-image>
 
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[ymin=-.1,ymax=3.5,
@@ -534,7 +534,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_normal1.tex END -->
         </figure>
@@ -667,7 +667,7 @@
           <!-- START figures/fig_tangentsinx.tex -->
           <image xml:id="img_tangentsinx">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[ymin=-1.1,ymax=1.1,
             xmin=-3.5,xmax=3.5,
@@ -679,7 +679,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_tangentsinx.tex END -->
         </figure>
@@ -903,8 +903,8 @@
       <p>
         Find the derivative of the absolute value function,
         <me>
-          f(x) = \abs{x} = \begin{cases} -x \amp  x\lt 0 \\ x \amp  x\geq 0\end{cases}\text{.}
-        </me>
+          f(x) = \abs{x} = \begin{cases} -x \amp  x\lt 0 \\ x \amp  x\geq 0\end{cases}
+        </me>.
       </p>
 
       <p>
@@ -916,7 +916,7 @@
         <!-- START figures/fig_absolutevalue.tex -->
         <image xml:id="img_absolutevalue">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}
           \begin{axis}[ymin=-.2,ymax=1.1,
           xmin=-1.1,xmax=1.1,]
@@ -924,7 +924,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_absolutevalue.tex END -->
       </figure>
@@ -993,8 +993,8 @@
         and <m>f</m> is not differentiable at <m>0</m>.
         So we have
         <me>
-          \fp(x) = \begin{cases} -1 \amp  x\lt 0 \\ 1 \amp  x \gt 0\end{cases}\text{.}
-        </me>
+          \fp(x) = \begin{cases} -1 \amp  x\lt 0 \\ 1 \amp  x \gt 0\end{cases}
+        </me>.
       </p>
 
       <p>
@@ -1009,7 +1009,7 @@
         <!-- START figures/fig_absolutevalueprime.tex -->
         <image xml:id="img_absolutevalueprime">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}
           \begin{axis}[ymin=-1.4,ymax=1.4,
           xmin=-1.1,xmax=1.1]
@@ -1019,7 +1019,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_absolutevalueprime.tex END -->
       </figure>
@@ -1036,7 +1036,7 @@
     <statement>
       <p>
         Find the derivative of <m>f(x)</m>,
-        where <m>f(x) = \begin{cases}\sin(x) \amp x\leq \pi/2 \\ 1 \amp x\gt\pi/2\end{cases}\text{.}</m> See <xref ref="fig_piecewisesinx1">Figure</xref>.
+        where <m>f(x) = \begin{cases}\sin(x) \amp x\leq \pi/2 \\ 1 \amp x\gt\pi/2\end{cases}</m>. See <xref ref="fig_piecewisesinx1">Figure</xref>.
       </p>
 
       <figure xml:id="fig_piecewisesinx1">
@@ -1044,7 +1044,7 @@
         <!-- START figures/fig_piecewisesinx1.tex -->
         <image xml:id="img_piecewisesinx1">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}[declare function = {func(\x) = (\x < 1.5708) * (sin(x*180/pi)) + (\x >= 1.5708) * (1);}]
           \begin{axis}[ymin=-.4,ymax=1.4,
           xmin=-.1,xmax=2.1,
@@ -1054,7 +1054,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_piecewisesinx1.tex END -->
       </figure>
@@ -1073,8 +1073,8 @@
       <p>
         So far we have
         <me>
-          \fp(x) = \begin{cases}\cos(x) \amp  x\lt \pi/2\\ 0 \amp  x>\pi/2\end{cases}\text{.}
-        </me>
+          \fp(x) = \begin{cases}\cos(x) \amp  x\lt \pi/2\\ 0 \amp  x>\pi/2\end{cases}
+        </me>.
       </p>
 
       <p>
@@ -1121,8 +1121,8 @@
         (and is <m>0</m>).
         Therefore we can fully write <m>\fp</m> as
         <me>
-          \fp(x) = \begin{cases}\cos(x) \amp  x\leq\pi/2\\ 0 \amp  x \gt \pi/2\end{cases}\text{.}
-        </me>
+          \fp(x) = \begin{cases}\cos(x) \amp  x\leq\pi/2\\ 0 \amp  x \gt \pi/2\end{cases}
+        </me>.
       </p>
 
       <p>
@@ -1135,7 +1135,7 @@
         <!-- START figures/fig_piecewisecosx1.tex -->
         <image xml:id="img_piecewisecosx1">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[\begin{tikzpicture}[declare function = {func(\x) = (\x < 1.5708) * (cos(x*180/pi)) + (\x >= 1.5708) * (0);}]
           \begin{axis}[ymin=-.4,ymax=1.4,
           xmin=-.1,xmax=2.1,
@@ -1145,7 +1145,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_piecewisecosx1.tex END -->
       </figure>
@@ -1185,14 +1185,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1212,14 +1206,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1312,8 +1300,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>f</m> where
                 <me>
-                  f(x) = 6\text{.}
-                </me>
+                  f(x) = 6
+                </me>.
               </p>
 
               <p>
@@ -1329,8 +1317,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>f</m> where
                 <me>
-                  f(x) = 2x\text{.}
-                </me>
+                  f(x) = 2x
+                </me>.
               </p>
 
               <p>
@@ -1346,8 +1334,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>f</m> where
                 <me>
-                  f(t) = 4-3t\text{.}
-                </me>
+                  f(t) = 4-3t
+                </me>.
               </p>
 
               <p>
@@ -1363,8 +1351,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>g</m> where
                 <me>
-                  g(x) = x^2\text{.}
-                </me>
+                  g(x) = x^2
+                </me>.
               </p>
 
               <p>
@@ -1380,8 +1368,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>f</m> where
                 <me>
-                  f(x) = 3x^2-x+4\text{.}
-                </me>
+                  f(x) = 3x^2-x+4
+                </me>.
               </p>
 
               <p>
@@ -1397,8 +1385,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>r</m> where
                 <me>
-                  r(x) = \frac{1}{x}\text{.}
-                </me>
+                  r(x) = \frac{1}{x}
+                </me>.
               </p>
 
               <p>
@@ -1414,8 +1402,8 @@
               <p>
                 Use the definition of the derivative to compute the derivative of <m>r</m> where
                 <me>
-                  r(s) = \frac{1}{s-2}\text{.}
-                </me>
+                  r(s) = \frac{1}{s-2}
+                </me>.
               </p>
 
               <p>
@@ -1442,16 +1430,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=6
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                x=-2
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1480,16 +1460,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=62x
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                y=-\frac{1}{2}(x-3)+6
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1518,16 +1490,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=-3x+4
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                y=\frac{1}{3}(x-7)-17
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1556,16 +1520,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=4(x-2)+4
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                y=-\frac{1}{4}(x-2)+4
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1594,16 +1550,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=-7(x+1)+8
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                y=\frac{1}{7}(x+1)+8
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1632,16 +1580,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=-\frac{1}{4}(x+2)-\frac{1}{2}
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                y=4(x+2)-\frac{1}{2}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1670,16 +1610,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=-(x-3)+1
-              </static>
-              </var>
-              <var name="$normalline">
-              <static>
-                y=(x-3)+1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1720,11 +1652,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=8.1(x-3)+16
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1748,11 +1676,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=-0.09901(x-9)+1
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1776,11 +1700,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=7.771(x-2)+e^2
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1804,11 +1724,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tangentline">
-              <static>
-                y=-0.04996x+1
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitPlane");
               Context()->variables->are(x=>'Real',y=>'Real');
@@ -1834,41 +1750,13 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$approx[0]">
-            <static>
-              -2
-            </static>
-            </var>
-            <var name="$approx[1]">
-            <static>
-              0
-            </static>
-            </var>
-            <var name="$approx[2]">
-            <static>
-              4
-            </static>
-            </var>
-            <var name="$derivative">
-            <static>
-              2x
-            </static>
-            </var>
-            <var name="$slopes[0]">
-            <static>
-              -2
-            </static>
-            </var>
-            <var name="$slopes[1]">
-            <static>
-              0
-            </static>
-            </var>
-            <var name="$slopes[2]">
-            <static>
-              4
-            </static>
-            </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
           <pg-code>
             $gr = init_graph(-3,-2,3,4,axes=>[0,0],grid=>[6,6],size=>[400,400]);
             add_functions($gr, "x^2-1 for x in &lt;-3,3> using color:blue and weight:2");
@@ -1943,31 +1831,11 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$approx[0]">
-            <static>
-              -1
-            </static>
-            </var>
-            <var name="$approx[1]">
-            <static>
-              -\frac{1}{4}
-            </static>
-            </var>
-            <var name="$derivative">
-            <static>
-              -\frac{1}{(x+1)^2}
-            </static>
-            </var>
-            <var name="$slopes[0]">
-            <static>
-              -1
-            </static>
-            </var>
-            <var name="$slopes[1]">
-            <static>
-              -\frac{1}{4}
-            </static>
-            </var>
+ 
+ 
+ 
+ 
+ 
           <pg-code>
             $gr = init_graph(-1,-1,3,6,axes=>[0,0],grid=>[4,7],size=>[400,400]);
             add_functions($gr, "1/(x+1) for x in &lt;-0.85,3> using color:blue and weight:2");
@@ -2043,7 +1911,7 @@
 
           <image xml:id="img_02_01_ex_26" width="50%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[xmin=-2.1,xmax=5.1,
             ymin=-1.5,ymax=3.5]
@@ -2051,7 +1919,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </statement>
@@ -2062,7 +1930,7 @@
 
           <image xml:id="img_02_01_ex_27" width="50%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[xmin=-7.1,xmax=3.1,
             ymin=-3.5,ymax=3.5]
@@ -2070,7 +1938,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </statement>
@@ -2081,7 +1949,7 @@
 
           <image xml:id="img_02_01_ex_28" width="50%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[xmin=-3.1,xmax=3.1,
             ymin=-5.5,ymax=5.5]
@@ -2089,7 +1957,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </statement>
@@ -2100,7 +1968,7 @@
 
           <image xml:id="img_02_01_ex_29" width="50%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[\begin{tikzpicture}
             \begin{axis}[xmin=-6.9,xmax=6.9,
             ymin=-1.1,ymax=1.1,
@@ -2110,7 +1978,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </statement>
@@ -2121,36 +1989,12 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$pos" category="interval">
-            <static>
-              (-1.5,1.5)
-            </static>
-            </var>
-            <var name="$neg" category="interval">
-            <static>
-              (-\infty,-1.5)\cup(1.5,\infty)
-            </static>
-            </var>
-            <var name="$zer" category="interval">
-            <static>
-              \{-1.5,1.5\}
-            </static>
-            </var>
-            <var name="$dec" category="interval">
-            <static>
-              (-1,0)\cup(1,\infty)
-            </static>
-            </var>
-            <var name="$inc" category="interval">
-            <static>
-              (-\infty,-1)\cup(0,1)
-            </static>
-            </var>
-            <var name="$fla" category="interval">
-            <static>
-              \{-1,0,1\}
-            </static>
-            </var>
+ 
+ 
+ 
+ 
+ 
+ 
           <pg-code>
             $gr = init_graph(-3,-10,3,5,axes=>[0,0],grid=>[6,15],size=>[400,400]);
             add_functions($gr, "-2x^4+4*x^2+3*1.5^4-6*1.5^2 for x in &lt;-2,2> using color:blue and weight:2");
@@ -2236,11 +2080,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                -24
-              </static>
-              </var>
+ 
             <pg-code>
               $L=-24;
             </pg-code>
@@ -2260,11 +2100,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$root">
-              <static>
-                0.54
-              </static>
-              </var>
+ 
             <pg-code>
               $root=Compute(0.54)->with(tolType=>absolute,tolerance=>0.01);
             </pg-code>
@@ -2286,26 +2122,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cont[0]" category="interval">
-              <static>
-                (-\infty,\infty)
-              </static>
-              </var>
-              <var name="$cont[1]" category="interval">
-              <static>
-                (-\infty,-1)\cup(-1,1)\cup(1,\infty)
-              </static>
-              </var>
-              <var name="$cont[2]" category="interval">
-              <static>
-                (-\infty,5]
-              </static>
-              </var>
-              <var name="$cont[3]" category="interval">
-              <static>
-                [-\sqrt{5},\sqrt{5}]
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context("Interval");
               @cont=(Compute("(-inf,inf)"),Compute("(-inf,-1)U(-1,1)U(1,inf)"),Compute("(-inf,5]"),Compute("[-sqrt(5),sqrt(5)]"));
@@ -2350,26 +2170,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L[0]" category="number">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$L[1]" category="number">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$L[2]" category="number">
-              <static>
-                \text{DNE}
-              </static>
-              </var>
-              <var name="$cont" category="interval">
-              <static>
-                (-\infty,-3)\cup(-3,\infty)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $gr = init_graph(-5,-1,1,4,axes=>[0,0],grid=>[6,5],size=>[400,400]);
               add_functions($gr, "(x+3)^2 +1 for x in &lt;-5,-3) using color:blue and weight:2");

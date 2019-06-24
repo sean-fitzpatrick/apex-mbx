@@ -34,7 +34,7 @@
       <!-- START figures/fig_hf_circlearea.tex -->
         <image xml:id="img_hf_circlearea">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[axis equal image,
@@ -58,7 +58,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
       <!-- figures/fig_hf_circlearea.tex END -->
       </figure>
@@ -68,7 +68,7 @@
       <!-- START figures/fig_hf_hyperbolaarea.tex -->
         <image xml:id="img_hf_hyperbolaarea">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -99,7 +99,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
       <!-- figures/fig_hf_hyperbolaarea.tex END -->
       </figure>
@@ -202,7 +202,7 @@
 
         <image xml:id="img_hf_cosh">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[axis on top,
@@ -217,7 +217,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -228,7 +228,7 @@
 
         <image xml:id="img_hf_sinh">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[axis on top,
@@ -243,7 +243,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
       <!-- figures/fig_hf_sinh.tex END -->
       </figure>
@@ -273,7 +273,7 @@
       <!-- START figures/fig_hf_tanh_coth.tex -->
         <image xml:id="img_hf_tanh_coth">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[axis on top,
@@ -292,7 +292,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -303,7 +303,7 @@
 
         <image xml:id="img_hf_sech_csch">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[axis on top,
@@ -320,7 +320,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -824,7 +824,7 @@
         <!-- START figures/fig_hfarccosh.tex -->
         <image xml:id="img_hfarccosh">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -859,7 +859,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -870,7 +870,7 @@
 
         <image xml:id="img_hfarcsinh">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -906,7 +906,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_hfarcsinh.tex END -->
       </figure>
@@ -919,7 +919,7 @@
         <!-- START figures/fig_hfarctanharccoth.tex -->
         <image xml:id="img_hfarctanharccoth">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -959,7 +959,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -969,7 +969,7 @@
         <!-- START figures/fig_hfarcsecharccsch.tex -->
         <image xml:id="img_hfarcsecharccsch">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[%
@@ -1003,7 +1003,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>

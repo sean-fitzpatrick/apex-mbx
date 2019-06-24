@@ -31,7 +31,7 @@
       <!-- START figures/fig_defint1.tex -->
       <image xml:id="img_defint1"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -48,7 +48,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_defint1.tex END -->
     </figure>
@@ -94,7 +94,7 @@
       <!-- START figures/fig_defint2.tex -->
       <image xml:id="img_defint2"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -116,7 +116,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_defint2.tex END -->
     </figure>
@@ -234,7 +234,7 @@
           <!-- START figures/fig_defint3.tex -->
           <image xml:id="img_defint3"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[axis on top,
@@ -246,11 +246,11 @@
             ylabel={$y$ (ft/s)},]
 
             \addplot+[-,domain=0:3] {-32*x+48};
-            \addplot [{\coloronefill},fill={\coloronefill},domain=0:3,area style] {-32*x+48} \closedcycle;         
+            \addplot [{\coloronefill},fill={\coloronefill},domain=0:3,area style] {-32*x+48} \closedcycle; 
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_defint3.tex END -->
         </figure>
@@ -410,7 +410,7 @@
           <!-- START figures/fig_defint4.tex -->
           <image xml:id="img_defint4"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[axis on top,
@@ -424,7 +424,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_defint4.tex END -->
         </figure>
@@ -505,7 +505,7 @@
             <!-- START figures/fig_defint4a.tex -->
                 <image xml:id="img_defint4a" width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[axis on top,
@@ -517,7 +517,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_defint4a.tex END -->
               </figure>
@@ -616,7 +616,7 @@
           We can break the interval <m>[a,c]</m> into two subintervals,
           <m>[a,b]</m> and <m>[b,c]</m>.
           The total area over <m>[a,c]</m> is the area over <m>[a,b]</m> plus the area over <m>[b,c]</m>.
-		
+ 
 		It is important to note that this still holds true even if <m>a\lt b\lt c</m> is not true. We discuss this in the next point.
         </p>
       </li>
@@ -675,7 +675,7 @@
           <!-- START figures/fig_defint5.tex -->
           <image xml:id="img_defint5"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[axis on top,
@@ -690,7 +690,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_defint5.tex END -->
         </figure>
@@ -803,7 +803,7 @@
             <!-- START figures/fig_defint8a.tex -->
                     <image xml:id="img_defint8a">
                       <description></description>
-                      <latex-image-code>
+                      <latex-image>
                       <![CDATA[
                       \begin{tikzpicture}
                       \begin{axis}[axis on top,
@@ -812,7 +812,7 @@
                       \addplot+[-,domain=-2:5] {2*x-4};
                       \addplot [{\coloronefill},fill={\coloronefill},area style,domain=-2:5] {2*x-4} \closedcycle;
                       \addplot[soliddot] coordinates{(-2,-8)} node[right]{\small $(-2,-8)$};
-                      \addplot[soliddot] coordinates{(5,6)} node[left]{\small $(5,6)$};   
+                      \addplot[soliddot] coordinates{(5,6)} node[left]{\small $(5,6)$}; 
                       \draw (axis cs:-1,-2) node {\scriptsize $R_1$};
                       \draw (axis cs:4.2,2) node {\scriptsize $R_2$};
 
@@ -820,7 +820,7 @@
 
                       \end{tikzpicture}
                       ]]>
-                      </latex-image-code>
+                      </latex-image>
                     </image>
             <!-- figures/fig_defint8a.tex END -->
                   </figure>
@@ -830,7 +830,7 @@
             <!-- START figures/fig_defint8b.tex -->
                     <image xml:id="img_defint8b">
                       <description></description>
-                      <latex-image-code>
+                      <latex-image>
                       <![CDATA[
                       \begin{tikzpicture}
                       \begin{axis}[axis on top,
@@ -846,7 +846,7 @@
                       \end{axis}
                       \end{tikzpicture}
                       ]]>
-                      </latex-image-code>
+                      </latex-image>
                     </image>
             <!-- figures/fig_defint8b.tex END -->
                   </figure>
@@ -875,7 +875,7 @@
           <!-- START figures/fig_defint6.tex -->
           <image xml:id="img_defint6"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[axis on top,
@@ -899,7 +899,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_defint6.tex END -->
         </figure>
@@ -941,7 +941,7 @@
       <!-- START figures/fig_defint7.tex -->
       <image xml:id="img_defint7"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[axis on top,
@@ -953,7 +953,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_defint7.tex END -->
     </figure>
@@ -1024,10 +1024,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
 <!-- FUNGUS: Come back to this when I figure out how to enter a definite integral as a solution -->
               $a = Formula("0");
@@ -1087,7 +1084,7 @@
             <!-- START figures/fig_05_02_ex_05.tex -->
                 <image xml:id="img_05_02_ex_05"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1112,7 +1109,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_05.tex END -->
                 <ol cols="2">
@@ -1175,7 +1172,7 @@
             <!-- START figures/fig_05_02_ex_06.tex -->
                 <image xml:id="img_05_02_ex_06"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1202,7 +1199,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_06.tex END -->
                 <ol cols="2">
@@ -1265,7 +1262,7 @@
             <!-- START figures/fig_05_02_ex_07.tex -->
                 <image xml:id="img_05_02_ex_07"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1293,7 +1290,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_07.tex END -->
                 <ol cols="2">
@@ -1356,7 +1353,7 @@
             <!-- START figures/fig_05_02_ex_08.tex -->
                 <image xml:id="img_05_02_ex_08"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1381,7 +1378,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_08.tex END -->
                 <ol cols="2">
@@ -1429,10 +1426,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $r = Formula("2");
               $a = Formula("1/4*pi*$r^2");
@@ -1446,7 +1440,7 @@
             <!-- START figures/fig_05_02_ex_09.tex -->
                 <image xml:id="img_05_02_ex_09"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1471,7 +1465,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_09.tex END -->
                 <ol cols="2">
@@ -1531,7 +1525,7 @@
             <!-- START figures/fig_05_02_ex_10.tex -->
                 <image xml:id="img_05_02_ex_10"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1559,7 +1553,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_10.tex END -->
                 <ol cols="2">
@@ -1608,7 +1602,7 @@
             <!-- START figures/fig_05_02_ex_11.tex -->
                 <image xml:id="img_05_02_ex_11"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1636,7 +1630,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_11.tex END -->
                 <ol cols="2">
@@ -1685,7 +1679,7 @@
             <!-- START figures/fig_05_02_ex_12.tex -->
                 <image xml:id="img_05_02_ex_12"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1714,7 +1708,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_12.tex END -->
                 <ol cols="2">
@@ -1763,7 +1757,7 @@
             <!-- START figures/fig_05_02_ex_13.tex -->
                 <image xml:id="img_05_02_ex_13"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1793,7 +1787,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_13.tex END -->
                 <ol cols="2">
@@ -1855,7 +1849,7 @@
             <!-- START figures/fig_05_02_ex_14.tex -->
                 <image xml:id="img_05_02_ex_14"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1880,7 +1874,7 @@
                   \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_14.tex END -->
               </figure>
@@ -1938,7 +1932,7 @@
             <!-- START figures/fig_05_02_ex_15.tex -->
                 <image xml:id="img_05_02_ex_15"  width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1966,7 +1960,7 @@
                   \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_05_02_ex_15.tex END -->
               </figure>
@@ -2406,10 +2400,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserFormulaUpToConstant.pl</macro-file></pg-macros>
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $F = FormulaUpToConstant("1/4*x^4-2/3*x^3+7/2*x^2-9x");
             </pg-code>
@@ -2430,10 +2421,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserFormulaUpToConstant.pl</macro-file></pg-macros>
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $F = FormulaUpToConstant("-cos(x) - sin(x) + tan(x)");
             </pg-code>
@@ -2454,10 +2442,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserFormulaUpToConstant.pl</macro-file></pg-macros>
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(t=>"Real");
               $F = FormulaUpToConstant("3/4*t^(4/3) - 1/t + 2^t/ln(2)");
@@ -2479,10 +2464,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserFormulaUpToConstant.pl</macro-file></pg-macros>
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $F = FormulaUpToConstant("ln(abs(x)) + csc(x)");
             </pg-code>

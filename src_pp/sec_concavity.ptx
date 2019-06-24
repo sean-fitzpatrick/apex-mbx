@@ -87,7 +87,7 @@
       <!-- START figures/fig_concavity1.tex -->
       <image xml:id="img_concavity1"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-3.5,xmax=3.5,
@@ -100,7 +100,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_concavity1.tex END -->
     </figure>
@@ -142,7 +142,7 @@
       <!-- START figures/fig_concavity2.tex -->
       <image xml:id="img_concavity2"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-3.5,xmax=3.5,
@@ -155,7 +155,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_concavity2.tex END -->
     </figure>
@@ -209,13 +209,13 @@
           <caption><m>\fp>0</m>, <m>f</m> increasing; <m>\fpp\lt0</m>, <m>f</m> is concave down</caption>
           <image>
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \draw [thick] (0,0) arc (180:90:2);
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </figure>
@@ -224,13 +224,13 @@
           <caption><m>\fp\lt0</m>, <m>f</m> decreasing; <m>\fpp\lt0</m>, <m>f</m> is concave down</caption>
           <image>
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \draw [thick] (0,0) arc (90:0:2);
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </figure>
@@ -241,13 +241,13 @@
           <caption><m>\fp\lt0</m>, <m>f</m> decreasing; <m>\fpp>0</m>, <m>f</m> is concave up</caption>
           <image>
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \draw [thick] (0,0) arc (180:270:2);
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </figure>
@@ -256,13 +256,13 @@
           <caption><m>\fp>0</m>, <m>f</m> increasing; <m>\fpp>0</m>, <m>f</m> is concave up</caption>
           <image>
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \draw [thick] (0,0) arc (0:-90:2);
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
 
         </figure>
@@ -312,7 +312,7 @@
       <!-- START figures/fig_concavity4.tex -->
       <image xml:id="img_concavity4" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-.5,xmax=4.5,
@@ -325,7 +325,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_concavity4.tex END -->
     </figure>
@@ -403,7 +403,7 @@
           <!-- START figures/fig_concline1.tex -->
           <image xml:id="img_concline1"  width="67%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[numberline,
@@ -418,7 +418,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_concline1.tex END -->
         </figure>
@@ -428,7 +428,7 @@
           <!-- START figures/fig_conc1.tex -->
           <image xml:id="img_conc1"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-2.2,xmax=2.2,
@@ -438,7 +438,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_conc1.tex END -->
         </figure>
@@ -537,7 +537,7 @@
           <!-- START figures/fig_concline2.tex -->
           <image xml:id="img_concline2"  width="80%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[numberline,
@@ -554,7 +554,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_concline2.tex END -->
         </figure>
@@ -575,7 +575,7 @@
           <!-- START figures/fig_conc2.tex -->
           <image xml:id="img_conc2"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-3.2,xmax=3.2,
@@ -590,7 +590,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_conc2.tex END -->
         </figure>
@@ -634,7 +634,7 @@
           <!-- START figures/fig_conc3.tex -->
           <image xml:id="img_conc3"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-.2,xmax=3.2,
@@ -645,7 +645,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_conc3.tex END -->
         </figure>
@@ -686,7 +686,7 @@
           <!-- START figures/fig_conc3b.tex -->
           <image xml:id="img_conc3b"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-.2,xmax=3.2,
@@ -699,7 +699,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_conc3.tex END -->
         </figure>
@@ -725,7 +725,7 @@
       <!-- START figures/fig_concavity5.tex -->
       <image xml:id="img_concavity5"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-1.1,xmax=1.1,
@@ -734,7 +734,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_concavity5.tex END -->
     </figure>
@@ -757,7 +757,7 @@
       <!-- START figures/fig_concavity6.tex -->
       <image xml:id="img_concavity6"  width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[xmin=-2.1,xmax=2.1,
@@ -770,7 +770,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_concavity6.tex END -->
     </figure>
@@ -869,7 +869,7 @@
           <!-- START figures/fig_conc4.tex -->
           <image xml:id="img_conc4"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-21,xmax=21,
@@ -881,7 +881,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_conc4.tex END -->
         </figure>
@@ -1022,10 +1022,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("0");
             </pg-code>
@@ -1051,10 +1048,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("-8");
             </pg-code>
@@ -1080,10 +1074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("8");
             </pg-code>
@@ -1109,10 +1100,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("6x-6");
             </pg-code>
@@ -1138,10 +1126,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("-6x+2");
             </pg-code>
@@ -1167,10 +1152,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("-cos(x)");
             </pg-code>
@@ -1196,10 +1178,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("-sin(x)");
             </pg-code>
@@ -1225,10 +1204,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("2tan(x)sec^(2)(x)");
             </pg-code>
@@ -1254,10 +1230,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("(6x^2-2)/(x^2+1)^3");
             </pg-code>
@@ -1283,10 +1256,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("2/x^3");
             </pg-code>
@@ -1312,10 +1282,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$der">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
               $der=Formula("6/x^4");
             </pg-code>
@@ -1366,18 +1333,9 @@
       <exercise xml:id="exer_03_04_ex_16">
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("does not apply");
@@ -1442,18 +1400,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("does not apply");
@@ -1518,18 +1467,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("0");
@@ -1595,18 +1535,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1673,18 +1604,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1751,18 +1673,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1830,18 +1743,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1");
@@ -1906,18 +1810,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1/sqrt(3),-1/sqrt(3)");
@@ -1984,18 +1879,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("0,1,-1");
@@ -2061,18 +1947,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("-pi/4,3pi/4");
@@ -2139,18 +2016,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("-2+sqrt(2),-2-sqrt(2)");
@@ -2217,18 +2085,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1/e^(3/2)");
@@ -2294,18 +2153,9 @@
       <exercise xml:id="exer_03_04_ex_28">
         <webwork seed="1">
             <setup>
-              <var name="$i">
-              <static>
-              </static>
-              </var>
-              <var name="$up">
-              <static>
-              </static>
-              </var>
-              <var name="$down">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1/sqrt(2),-1/sqrt(2)");
@@ -2386,18 +2236,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("");
@@ -2461,18 +2302,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("");
@@ -2536,18 +2368,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2612,18 +2435,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2687,18 +2501,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2762,18 +2567,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2838,18 +2634,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2913,18 +2700,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2988,18 +2766,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("-1,1");
@@ -3063,18 +2832,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -3139,18 +2899,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -3215,18 +2966,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -3290,18 +3032,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$crit">
-              <static>
-              </static>
-              </var>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -3377,14 +3110,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3435,14 +3162,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3493,14 +3214,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3551,14 +3266,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3609,14 +3318,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-2/3");
@@ -3669,14 +3372,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("(2+sqrt(7))/3");
@@ -3729,14 +3426,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3787,14 +3478,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-1/sqrt(3)");
@@ -3846,14 +3531,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("0");
@@ -3904,14 +3583,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-pi/4");
@@ -3963,14 +3636,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-2-sqrt(2)");
@@ -4022,14 +3689,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -4080,14 +3741,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$max">
-              <static>
-              </static>
-              </var>
-              <var name="$min">
-              <static>
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-1/sqrt(2)");

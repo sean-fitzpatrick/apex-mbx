@@ -108,7 +108,7 @@
         <!-- START figures/fig_extreme1.tex -->
       <image xml:id="img_extreme1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[ ymin=-.9,ymax=5.5,xmin=-2.2,xmax=2.2,]
@@ -118,7 +118,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
         <!-- figures/fig_extreme1.tex END -->
     </figure>
@@ -128,7 +128,7 @@
 
       <image xml:id="img_extreme2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[ ymin=-.9,ymax=5.5,xmin=-2.2,xmax=2.2,]
@@ -139,7 +139,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
 
     </figure>
@@ -149,7 +149,7 @@
         <!-- START figures/fig_extreme3.tex -->
       <image xml:id="img_extreme3">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[ ymin=-.9,ymax=5.5,xmin=-2.2,xmax=2.2,]
@@ -159,7 +159,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
         <!-- figures/fig_extreme3.tex END -->
     </figure>
@@ -211,7 +211,7 @@
           <!-- START figures/fig_extval1.tex -->
         <image xml:id="img_extval1"  width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-2,xmax=5.7,
@@ -224,7 +224,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_extval1.tex END -->
       </figure>
@@ -330,7 +330,7 @@
           <!-- START figures/fig_extval2.tex -->
         <image xml:id="img_extval2"  width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-2.2,xmax=3.2,
@@ -339,7 +339,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_extval2.tex END -->
       </figure>
@@ -380,7 +380,7 @@
           <!-- START figures/fig_extval3.tex -->
         <image xml:id="img_extval3"  width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-.6,xmax=2.6,
@@ -390,7 +390,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_extval3.tex END -->
       </figure>
@@ -480,7 +480,7 @@
       <!-- START figures/fig_extreme4.tex -->
     <image xml:id="img_extreme4"  width="47%">
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}
       \begin{axis}[xmin=-1.1,xmax=1.1,
@@ -489,7 +489,7 @@
       \end{axis}
       \end{tikzpicture}
       ]]>
-      </latex-image-code>
+      </latex-image>
     </image>
       <!-- figures/fig_extreme4.tex END -->
   </figure>
@@ -561,7 +561,7 @@
           <!-- START figures/fig_extval4.tex -->
         <image xml:id="img_extval4"  width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[xmin=-.4,xmax=3.3,
@@ -571,7 +571,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_extval4.tex END -->
       </figure>
@@ -728,7 +728,7 @@
             <!-- START figures/fig_extval5.tex -->
           <image xml:id="img_extval5">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-4.5,xmax=2.5,
@@ -739,7 +739,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_extval5.tex END -->
         </figure>
@@ -826,7 +826,7 @@
             <!-- START figures/fig_extval6.tex -->
           <image xml:id="img_extval6">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-2.2,xmax=2.2,
@@ -836,7 +836,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_extval6.tex END -->
         </figure>
@@ -870,7 +870,7 @@
             <!-- START figures/fig_extval7.tex -->
           <image xml:id="img_extval7">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-1.2,xmax=1.2,
@@ -881,7 +881,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
             <!-- figures/fig_extval7.tex END -->
         </figure>
@@ -1030,14 +1030,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1068,55 +1062,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$A">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
-              <var name="$B">
-              <set><member correct="yes">\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member>\text{none of the above}</member></set>
-              </var>
-              <var name="$C">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member correct="yes">\text{a relative minimum}</member>
-              <member>\text{none of the above}</member></set>
-              </var>
-              <var name="$D">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
-              <var name="$E">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
-              <var name="$F">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member correct="yes">\text{a relative minimum}</member>
-              <member>\text{none of the above}</member></set>
-              </var>
-              <var name="$G">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $gr=init_graph(-0.5,-2.5,6.5,3.5,axes=>[0,0],size=>[400,400]);
               $gr->lb('reset');
@@ -1201,41 +1153,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$A">
-              <set><member>\text{an absolute maximum}</member>
-              <member correct="yes">\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member>\text{none of the above}</member></set>
-              </var>
-              <var name="$B">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
-              <var name="$C">
-              <set><member correct="yes">\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member>\text{none of the above}</member></set>
-              </var>
-              <var name="$D">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
-              <var name="$E">
-              <set><member>\text{an absolute maximum}</member>
-              <member>\text{an absolute minimum}</member>
-              <member>\text{a relative maximum}</member>
-              <member>\text{a relative minimum}</member>
-              <member correct="yes">\text{none of the above}</member></set>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $gr=init_graph(-0.5,-2.5,5.5,2.5,axes=>[0,0],size=>[400,400]);
               $gr->lb('reset');
@@ -1590,26 +1512,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                10
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                3.75
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                -0.5
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $maxy=Compute("10");
               $maxx=Compute("2");
@@ -1633,26 +1539,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                -134.5
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                5
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $maxy=Compute("3");
               $maxx=Compute("0");
@@ -1676,26 +1566,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                3
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                /pi/2
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                3\sqrt{2}/2
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                \pi/4
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("3");
@@ -1721,26 +1595,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                16\sqrt{3}/9
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                -2\sqrt{2/3}, 2\sqrt{2/3}
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                -2,0,2
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("16sqrt(3)/9");
@@ -1765,26 +1623,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                28/5
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                2\sqrt3
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                \sqrt3
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("28/5");
@@ -1809,26 +1651,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                5/6
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("5/6");
@@ -1853,26 +1679,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                \frac{\sqrt{2}e^{\pi/4}}{2}
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                \pi/4
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                -e^{\pi}
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                \pi
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("(sqrt(2)e^(pi/4))/2");
@@ -1897,26 +1707,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                \frac{\sqrt{2}e^{3\pi/4}}{2}
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                3\pi/4
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                0,\pi
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("(sqrt(2)e^(3pi/4))/2");
@@ -1941,26 +1735,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                1/e
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                e
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("1/e");
@@ -1985,26 +1763,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$maxy">
-              <static>
-                4/27
-              </static>
-              </var>
-              <var name="$maxx">
-              <static>
-                8/27
-              </static>
-              </var>
-              <var name="$miny">
-              <static>
-                2^{2/3}-2
-              </static>
-              </var>
-              <var name="$minx">
-              <static>
-                2
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $maxy=Compute("4/27");
@@ -2038,11 +1800,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dydx">
-              <static>
-                \frac{y (y-2 x)}{x (x-2 y)}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $dydx=Formula("(y*(y-2x))/(x*(x-2y))");
@@ -2067,11 +1825,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$line">
-              <static>
-                y=-\frac{4}{5}(x-1)+2
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->variables->add(y=>'Real');
@@ -2095,11 +1849,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                3x^2+1
-              </static>
-              </var>
+ 
             <pg-code>
               $L=Formula("3x^2+1");
             </pg-code>

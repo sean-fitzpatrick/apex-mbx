@@ -40,7 +40,7 @@
       <caption>A graph of <m>y=\cos(x^2)</m> and a tangent line at <m>\pi/2</m></caption>
       <image xml:id="img_chain" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[ymin=-1.5,ymax=1.5,
@@ -53,7 +53,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
 
     </figure>
@@ -420,7 +420,7 @@
           <!-- START figures/fig_chain7.tex -->
           <image xml:id="img_chain7">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[xmin=-3.1,xmax=3.1,
@@ -431,7 +431,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_chain7.tex END -->
         </figure>
@@ -859,7 +859,7 @@
         <!-- START figures/fig_chainrule_gears.tex -->
         <image xml:id="img_chainrulegears">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[>=latex]
 
@@ -899,7 +899,7 @@
           \end{scope}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_chainrule_gears.tex END -->
       </figure>
@@ -944,10 +944,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -965,10 +962,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],2);
             </pg-code>
@@ -986,10 +980,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],2);
             </pg-code>
@@ -1007,10 +998,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -1028,10 +1016,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -1049,10 +1034,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$tf">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -1079,11 +1061,7 @@
       <exercise xml:id="exer_02_05_06">
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                10\left(4x^3-x\right)^9\left(12x^2-1\right)
-              </static>
-              </var>
+ 
             <pg-code>
               $fp=Formula("10(4x^3-x)^9(12x^2-1)");
             </pg-code>
@@ -1108,11 +1086,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                15(3t-2)^4
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("15(3t-2)^4");
@@ -1138,11 +1112,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                3(\sin(\theta)+\cos(\theta))^2(\cos(\theta)-\sin(\theta))
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $fp=Formula("3(sin(theta)+cos(theta))^2(cos(theta)-sin(theta))");
@@ -1172,11 +1142,7 @@
       <exercise xml:id="exer_02_05_09">
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                (6t+1)e^{3t^2+t-1}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("(6t+1)e^(3t^2+t-1)");
@@ -1202,11 +1168,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                4\left(x+\frac{1}{x}\right)^3\left(1-\frac{1}{x^2}\right)
-              </static>
-              </var>
+ 
             <pg-code>
               $fp=Formula("4(x+1/x)^3(1-1/x^2)");
             </pg-code>
@@ -1231,11 +1193,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                -3\sin(3x)
-              </static>
-              </var>
+ 
             <pg-code>
               $fp=Formula("-3sin(3x)");
             </pg-code>
@@ -1260,11 +1218,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                5\sec^2(5x)
-              </static>
-              </var>
+ 
             <pg-code>
               $fp=Formula("5sec^2(5x)");
             </pg-code>
@@ -1289,11 +1243,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                8\sin^3(2t)\cos(2t)
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("8 sin^3(2t) cos(2t)");
@@ -1319,11 +1269,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                -3\cos^2\mathopen{}\left(t^2+3t+1\right)\mathclose{}\sin\mathopen{}\left(t^2+3t+1\right)\mathclose{}(2t+3)
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("-3 cos^2(t^2+3t+1) sin(t^2+3t+1) (2t+3)");
@@ -1349,11 +1295,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                -\tan(x)
-              </static>
-              </var>
+ 
             <pg-code>
               $fp=Formula("-tan(x)");
             </pg-code>
@@ -1378,11 +1320,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \frac{2}{x}
-              </static>
-              </var>
+ 
             <pg-code>
                $fp=Formula("2/x");
             </pg-code>
@@ -1407,11 +1345,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \frac{2}{x}
-              </static>
-              </var>
+ 
             <pg-code>
                $fp=Formula("2/x");
             </pg-code>
@@ -1436,11 +1370,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \ln(4) \cdot 4^r
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(r=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1467,11 +1397,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                -\ln(5)\cdot5^{\cos(t)}\sin(t)
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1498,11 +1424,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                0
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("0");
@@ -1528,11 +1450,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \ln(3/2) (3/2)^w
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(w=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1559,11 +1477,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \dfrac{\left(3^t+2\right)\ln(2)2^t-\left(2^t+3\right)\ln(3)3^t}{\left(3^t+2\right)^2}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1590,11 +1504,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \dfrac{2^w\left(\ln(3) \cdot 3^w-\ln(2) \cdot (3^w+1)\right)}{2^{2w}}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(w=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1621,11 +1531,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                \dfrac{2^{x^2}\left(\ln(3) \cdot 3^{x^2}2x+1\right) - \left(3^{x^2}+x\right)\ln(2) \cdot 2^{x^2}2x}{2^{2x^2}}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fp=Formula("(2^(x^2)(ln(3)3^(x^2)2x+1) - (3^(x^2)+x)ln(2)2^(x^2)2x)/2^(2x^2)");
@@ -1651,11 +1557,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                5x^2\cos(5x) + 2x\sin(5x)
-              </static>
-              </var>
+ 
             <pg-code>
               $fp=Formula("5x^2cos(5x) + 2xsin(5x)");
             </pg-code>
@@ -1680,11 +1582,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                5\cos\mathopen{}\left(t^2+3t\right)\mathclose{}\cos(5t-7)- (2t+3)\sin\mathopen{}\left(t^2+3t\right)\mathclose{}\sin(5t-7)
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("5cos(t^2+3t)cos(5t-7)- (2t+3)sin(t^2+3t)sin(5t-7)");
@@ -1710,11 +1608,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                10t\cos\mathopen{}\left(\frac{1}{t}\right)\mathclose{}e^{5t^2}+\frac{1}{t^2}\sin\mathopen{}\left(\frac{1}{t}\right)\mathclose{}e^{5t^2}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $fp=Formula("10t cos(1/t)e^(5t^2)+1/t^2sin(1/t)e^(5t^2)");
@@ -1752,16 +1646,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$t">
-              <static>
-                y=0
-              </static>
-              </var>
-              <var name="$n">
-              <static>
-                x=0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Numeric")->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1790,16 +1676,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$t">
-              <static>
-                y=15(x-1)+1
-              </static>
-              </var>
-              <var name="$n">
-              <static>
-                y=-1/15(x-1)+1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Numeric")->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1829,16 +1707,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$t">
-              <static>
-                y=-3(x - pi/2)+1
-              </static>
-              </var>
-              <var name="$n">
-              <static>
-                y=1/3(x - pi/2)+1
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Numeric")->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1868,16 +1738,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$t">
-              <static>
-                y=-5e(x+1)+e
-              </static>
-              </var>
-              <var name="$n">
-              <static>
-                y=1/(5e)(x+1)+e
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Numeric")->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1994,10 +1856,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$sign">
-              <set><member>positive</member>
-              <member>negative</member></set>
-              </var>
+ 
             <pg-code>
               $sign=PopUp(['?','positive','negative'],2);
             </pg-code>
@@ -2059,16 +1918,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fp">
-              <static>
-                2xe^x\cot(x) + x^2e^x\cot(x) - x^2e^x\csc^2(x)
-              </static>
-              </var>
-              <var name="$gp">
-              <static>
-                \ln(24)24^x
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               $fp=Formula("2xe^xcot(x) + x^2e^xcot(x) - x^2e^xcsc^2(x)");

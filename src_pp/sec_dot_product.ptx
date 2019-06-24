@@ -184,7 +184,7 @@
         <!-- START figures/fig_dotpangle.tex -->
           <image xml:id="img_dotpangle">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth,scale=1.25]
 	\draw [rotate=-15,->] (0,0) -- (2,0) node (A) [right] {\scriptsize $\vec u$};
@@ -193,7 +193,7 @@
 	\draw [rotate=10] (.9,0) node {\scriptsize $\theta$};
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_dotpangle.tex END -->
         </figure>
@@ -352,7 +352,7 @@
 <!-- START figures/fig_dotpanglesign.tex -->
       <image xml:id="img_dotpanglesign">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=stealth,thick]
 	\begin{scope}[scale=1.25]
@@ -361,14 +361,14 @@
 		\draw[->] (.3,0) arc (0:60:.3);
 		\draw[rotate=30] (.45,0) node {\scriptsize $\theta$};
 	\end{scope}
-	
+ 
 	\begin{scope}[shift={(3cm,0)},scale=1.25]
 		\draw[->] (0,0) -- (1,0)node [pos=.5,below] {\scriptsize $\vec u\cdot \vec v =0$}node [right] {\scriptsize $\vec u$};
 		\draw[->] (0,0) -- (0,1)node [above ] {\scriptsize $\vec v$};
 		\draw[->] (.3,0) arc (0:90:.3);
 		\draw[rotate=22.5] (.7,0) node {\scriptsize $\theta=\pi/2$};
 	\end{scope}
-	
+ 
 	\begin{scope}[shift={(6.5cm,0)},scale=1.25]
 		\draw[->] (0,0) -- (1,0)node [pos=.5,below] {\scriptsize $\vec u\cdot \vec v <0$}node [right] {\scriptsize $\vec u$};
 		\draw[->] (0,0) -- (-.707,.707)node [above left] {\scriptsize $\vec v$};
@@ -377,7 +377,7 @@
 	\end{scope}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_dotpanglesign.tex END -->
       \captionof{figure}{Illustrating the relationship between the angle between vectors and the sign of their dot product.} We <em>can</em>
@@ -399,7 +399,7 @@
       <!-- START figures/fig_dotp2.tex -->
       <image xml:id="img_dotp2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=stealth]
         \begin{axis}[%
@@ -436,7 +436,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_dotp2.tex END -->
     </figure>
@@ -742,14 +742,14 @@
               There are infinite directions in space orthogonal to any given direction,
               so there are an infinite number of non<ndash />parallel vectors orthogonal to <m>\vec v</m>.
               Since there are so many, we have great leeway in finding some.
-	
+ 
 	One way is to arbitrarily pick values for the first two components, leaving the third unknown. For instance, let <m>\vec v_1 = \la 2,7,z\ra</m>. If <m>\vec v_1</m> is to be orthogonal to <m>\vec v</m>, then <m>\vec v_1\cdot\vec v = 0</m>, so
               <me>
                 2+14+3z=0  \Rightarrow z = \frac{-16}{3}
               </me>.
               So <m>\vec v_1 = \la 2, 7, -16/3\ra</m> is orthogonal to <m>\vec v</m>.
               We can apply a similar technique by leaving the first or second component unknown.
-	
+ 
 	Another method of finding a vector orthogonal to <m>\vec v</m> mirrors what we did in part 1. Let <m>\vec v_2 = \la-2,1,0\ra</m>. Here we switched the first two components of <m>\vec v</m>, changing the sign of one of them (similar to the <q>opposite reciprocal</q> concept before). Letting the third component be 0 effectively ignores the third component of <m>\vec v</m>, and it is easy to see that
               <me>
                 \vec v_2\cdot\vec v = \la -2,1,0\ra\cdot\la 1,2,3\ra = 0
@@ -801,7 +801,7 @@
         <!-- START figures/fig_dotpproja.tex -->
           <image xml:id="img_dotpproja">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
 	\draw [thick,->] (0,0) -- (4,2) node [right] {\scriptsize $\vec v$};
@@ -813,7 +813,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_dotpproja.tex END -->
         </figure>
@@ -823,7 +823,7 @@
         <!-- START figures/fig_dotpprojb.tex -->
           <image xml:id="img_dotpprojb">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
 	\draw [thick,->] (2,1) -- (4,2) node [right] {\scriptsize $\vec v$};
@@ -835,7 +835,7 @@
 	\draw [rotate=49] (.6,0) node {\scriptsize $\theta$};
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_dotpprojb.tex END -->
         </figure>
@@ -933,7 +933,7 @@
 <!-- START figures/fig_dotp4a.tex -->
                         <image xml:id="img_dotp4a">
                           <description></description>
-                          <latex-image-code>
+                          <latex-image>
                           <![CDATA[
                           \begin{tikzpicture}[>=stealth]
                           \begin{axis}[%
@@ -964,7 +964,7 @@
 
                           \end{tikzpicture}
                           ]]>
-                          </latex-image-code>
+                          </latex-image>
                         </image>
             <!-- figures/fig_dotp4a.tex END -->
                       </figure></cell>
@@ -1234,7 +1234,7 @@
       <!-- START figures/fig_dotpprojc.tex -->
       <image xml:id="img_dotpprojc">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=stealth]
 	\draw [thick,->] (2,1) -- (4,2) node [below] {\scriptsize $\vec v$};
@@ -1246,7 +1246,7 @@
 	%\draw [rotate=49] (.6,0) node {\scriptsize $\theta$};
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_dotpprojc.tex END -->
     </figure>
@@ -1408,7 +1408,7 @@
             <!-- START figures/fig_dotp6.tex -->
               <image xml:id="img_dotp6">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[>=stealth]
 	\begin{scope}[scale=.25]
@@ -1419,7 +1419,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_dotp6.tex END -->
             </figure>
@@ -1429,7 +1429,7 @@
             <!-- START figures/fig_dotp6b.tex -->
               <image xml:id="img_dotp6b">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[>=stealth]
 	\begin{scope}[scale=.25]
@@ -1442,7 +1442,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_dotp6b.tex END -->
             </figure>
@@ -1522,7 +1522,7 @@
       <!-- START figures/fig_dotpwork.tex -->
       <image xml:id="img_dotpwork">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=stealth,scale=.8]
 	\draw [thick] (0,0) rectangle (2,2);
@@ -1532,7 +1532,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_dotpwork.tex END -->
     </figure>
@@ -1602,7 +1602,7 @@
           <!-- START figures/fig_dotp7.tex -->
           <image xml:id="img_dotp7">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth,scale=.3]
 	\draw [thick] (0,0) -- node [below,pos=.5] {\scriptsize 15} (15,0) -- node [right, pos=.5] {\scriptsize 3} (15,3) -- cycle;
@@ -1615,7 +1615,7 @@
 	\end{scope}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_dotp7.tex END -->
         </figure>
@@ -1650,10 +1650,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1673,10 +1670,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1697,10 +1691,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1722,10 +1713,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1754,11 +1742,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dot">
-              <static>
-                -22
-              </static>
-              </var>
+ 
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("-22");
@@ -1779,11 +1763,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dot">
-              <static>
-                33
-              </static>
-              </var>
+ 
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("33");
@@ -1804,11 +1784,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dot">
-              <static>
-                3
-              </static>
-              </var>
+ 
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("3");
@@ -1830,11 +1806,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dot">
-              <static>
-                0
-              </static>
-              </var>
+ 
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("0");
@@ -1856,10 +1828,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1879,11 +1848,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dot">
-              <static>
-                0
-              </static>
-              </var>
+ 
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("0");
@@ -1907,10 +1872,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -1932,10 +1894,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -1965,11 +1924,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$theta">
-              <static>
-                \arccos\mathopen{}(3/\sqrt{10}\right)\mathclose{}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("arccos(3/sqrt(10))");
@@ -1987,11 +1942,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$theta">
-              <static>
-                \arccos\mathopen{}(-1/\sqrt{170}\right)\mathclose{}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("arccos(-1/sqrt(170))");
@@ -2009,11 +1960,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$theta">
-              <static>
-                \pi/4
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("pi/4");
@@ -2031,11 +1978,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$theta">
-              <static>
-                \pi/2
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("pi/2");
@@ -2063,10 +2006,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\langle-7,4\rangle</member>
-              <member correct="yes">\langle14,-8\rangle</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;4,7>");
@@ -2105,10 +2045,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\langle5,3\rangle</member>
-              <member correct="yes">\langle-15,-9\rangle</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;-3,5>");
@@ -2147,10 +2084,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\langle1,0,-1\rangle</member>
-              <member correct="yes">\langle4,5,-9\rangle</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;1,1,1>");
@@ -2189,10 +2123,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\langle2,1,0\rangle</member>
-              <member correct="yes">\langle1,1,1/3\rangle</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;1,-2,3>");
@@ -2243,11 +2174,7 @@
       <exercise xml:id="ex_10_03_ex_21">
         <webwork seed="1">
             <setup>
-              <var name="$projuv">
-              <static>
-                \langle -1/2,3/2\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2276,11 +2203,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$projuv">
-              <static>
-                \langle 2,6\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2309,11 +2232,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$projuv">
-              <static>
-                \langle -1/2,-1/2\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2342,11 +2261,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$projuv">
-              <static>
-                \langle 0,0\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2375,11 +2290,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$projuv">
-              <static>
-                \langle 1,2,3\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2408,11 +2319,7 @@
       <exercise xml:id="ex_10_03_ex_24">
         <webwork seed="1">
             <setup>
-              <var name="$projuv">
-              <static>
-                \langle 4/3,4/3,2/3\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2456,10 +2363,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\la -1/2,3/2\ra</member>
-              <member correct="yes">\la 3/2,1/2\ra</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2531,10 +2435,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\la 2,6\ra</member>
-              <member correct="yes">\la 3,-1\ra</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2606,10 +2507,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\la -1/2,-1/2\ra</member>
-              <member correct="yes">\la -5/2,5/2\ra</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2681,10 +2579,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\la 0,0\ra</member>
-              <member correct="yes">\la -3,2\ra</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2756,10 +2651,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\la 1,2,3\ra</member>
-              <member correct="yes">\la 0,3,-2\ra</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2831,10 +2723,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$multians">
-              <set><member correct="yes">\la 4/3,4/3,2/3\ra</member>
-              <member correct="yes">\la 5/3,-7/3,4/3\ra</member></set>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2908,10 +2797,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2932,10 +2818,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2957,10 +2840,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2980,10 +2860,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -3003,10 +2880,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -3027,10 +2901,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -3051,10 +2922,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>

@@ -2415,10 +2415,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2438,10 +2435,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2462,10 +2456,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2500,10 +2491,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2512,7 +2500,7 @@
             <!-- START figures/fig_07_02_ex_05.tex -->
                 <image xml:id="img_07_02_ex_05">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2546,7 +2534,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_05.tex END -->
               </figure>
@@ -2562,10 +2550,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2574,7 +2559,7 @@
             <!-- START figures/fig_07_02_ex_06.tex -->
                 <image xml:id="img_07_02_ex_06">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2608,7 +2593,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_06.tex END -->
               </figure>
@@ -2624,10 +2609,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2636,7 +2618,7 @@
             <!-- START figures/fig_07_02_ex_07.tex -->
                 <image xml:id="img_07_02_ex_07">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2670,7 +2652,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_07.tex END -->
               </figure>
@@ -2686,10 +2668,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2698,7 +2677,7 @@
             <!-- START figures/fig_07_02_ex_04.tex -->
                 <image xml:id="img_07_02_ex_04">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2734,7 +2713,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_04.tex END -->
               </figure>
@@ -2755,10 +2734,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2767,7 +2743,7 @@
             <!-- START figures/fig_07_02_ex_09.tex -->
                 <image xml:id="img_07_02_ex_09">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2801,7 +2777,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_09.tex END -->
               </figure>
@@ -2817,10 +2793,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2829,7 +2802,7 @@
             <!-- START figures/fig_07_02_ex_10.tex -->
                 <image xml:id="img_07_02_ex_10">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2863,7 +2836,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_10.tex END -->
               </figure>
@@ -2879,10 +2852,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2891,7 +2861,7 @@
             <!-- START figures/fig_07_02_ex_11.tex -->
                 <image xml:id="img_07_02_ex_11">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2925,7 +2895,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_11.tex END -->
               </figure>
@@ -2947,10 +2917,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2959,7 +2926,7 @@
             <!-- START figures/fig_07_02_ex_08.tex -->
                 <image xml:id="img_07_02_ex_08">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -2995,7 +2962,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_08.tex END -->
               </figure>
@@ -3016,10 +2983,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3092,10 +3056,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3167,10 +3128,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3243,10 +3201,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3306,10 +3261,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3370,10 +3322,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3453,10 +3402,7 @@
       <exercise xml:id="ex_07_02_ex_18">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3467,7 +3413,7 @@
 
               <image xml:id="img_07_02_ex_08X">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=.5]
                 \begin{scope}[xscale=2]
@@ -3478,7 +3424,7 @@
                 \draw [fill=black] (0,0) circle (1pt) -- node [pos=.5,above] { 5} (2,0);
                 \draw (0,0) -- node [pos=.5,rotate=90,above] { 10} (0,4);
                 \draw [thick] (-2,0) -- (0,4)-- (2,0);\end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </statement>
@@ -3495,10 +3441,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3510,7 +3453,7 @@
 
               <image xml:id="img_07_02_ex_08X1">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=.5]
                 \begin{scope}[xscale=2]
@@ -3521,7 +3464,7 @@
 
                 \draw [fill=black] (0,0) circle (1pt) -- node [pos=.5,above] { 5} (2,0);
                 \draw [thick] (-2,0.2) -- (2,4)-- node [pos=.5,rotate=-90,above] { 10}(2,0);\end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </statement>
@@ -3537,10 +3480,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3552,14 +3492,14 @@
 
               <image xml:id="img_07_02_ex_08X2">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=.75]
                 \draw [thick](-1,0) -- (1,0) -- (0,3)--cycle;
                 \draw [thick,dashed] (-1,0) --  node [pos=.5,above] { 4} (0,.5) -- node [pos=.5,above] { 4} (1,0)
 											(0,.5)-- node [pos=.3,above,rotate=90] { 10} (0,3);
                 \draw (-.2,.4) -- (0,.3) -- (.2,.4);\end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </statement>
@@ -3578,10 +3518,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3593,16 +3530,16 @@
 
               <image xml:id="img_07_02_ex_08X3">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[x={(1,0)},z={(0,1)},y={(.5,.87)},scale=.4]
 
                 \draw [thick] (0,0,0) -- node[pos=.5,below] { 10} (10,0,0) -- (10,2.5,5) -- (10,5,0) -- node [pos=.5,below right] { 5} (10,0,0)
 							(0,0,0) -- node [pos=.5,left] { 5} (0,0,5) -- (10,2.5,5) -- (0,5,5) -- node [pos=.5,left] { 5} (0,0,5);
-							
+ 
                 \draw [thick,dashed] (0,0,0) -- (0,5,0) -- (0,5,5)
 										(0,5,0) -- (10,5,0);\end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </statement>

@@ -54,7 +54,7 @@
       <caption>Illustrating polar coordinates.</caption>
       <image xml:id="img_polar_intro1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=latex]
 	\draw[thick,->] (0,0) node [below] {\(O\)} -- (3,0) node [below] {initial ray} ;
@@ -63,7 +63,7 @@
 	\draw [thick,rotate=55] (0,0)-- node [rotate=55,pos=.5,above] {\(r\)} (2,0) node [above] {\(P=P(r,\theta)\)};
 	\draw [->] (.75,0) arc(0:55:.75);
 	\draw [rotate=27.5] (1,0) node {\(\theta\)};\end{tikzpicture}]]>
-        </latex-image-code>
+        </latex-image>
       </image>
 
     </figure>
@@ -94,7 +94,7 @@
 
         <image>
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[scale=.8]
 	\draw [dashed,gray] (-3.1,0) -- (0,0);
@@ -107,7 +107,7 @@
 	\foreach \x in {30,45,60,90,120,135,150}
 	{\draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
 	}\end{tikzpicture}]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
         <p>
@@ -148,7 +148,7 @@
           <!-- START figures/fig_polar1.tex -->
           <image xml:id="img_polar1">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[scale=.75,>=latex]
             \draw[thick,->] (0,0) node [below] {$O$} -- (3.5,0) ;
@@ -164,7 +164,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_polar1.tex END -->
         </figure>
@@ -208,7 +208,7 @@
       <!-- START figures/fig_polarintro2.tex -->
       <image xml:id="img_polar_intro2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=.75,>=latex]
 
@@ -222,7 +222,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarintro2.tex END -->
     </figure>
@@ -304,7 +304,7 @@
             <!-- START figures/fig_polar2.tex -->
                   <image xml:id="img_polar2">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}[>=latex]
 
@@ -323,7 +323,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_polar2.tex END -->
                 </figure>
@@ -334,7 +334,7 @@
             <!-- START figures/fig_polar2b.tex -->
                   <image xml:id="img_polar2b">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}[>=latex]
 
@@ -366,7 +366,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_polar2b.tex END -->
                 </figure>
@@ -414,7 +414,7 @@
                   add <m>\pi</m> to the result of <m>\tan^{-1}(x)</m>.
                   So  <m>\pi+(-\pi/4)</m> puts the angle at <m>3\pi/4</m>.
                   Thus the polar point is <m>P(\sqrt{2},3\pi/4)</m>.
-		
+ 
 		An alternate method is to use the angle <m>\theta</m> given by arctangent, but change the sign of <m>r</m>. Thus we could also refer to <m>(-1,1)</m> as
                   <m>P(-\sqrt{2},-\pi/4)</m>.
                 </p>
@@ -509,7 +509,7 @@
             <!-- START figures/fig_polar3.tex -->
                 <image xml:id="img_polar3">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=latex]
 
@@ -528,7 +528,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_polar3.tex END -->
               </figure>
@@ -615,7 +615,7 @@
 <!-- START figures/fig_polar4.tex -->
               <image xml:id="img_polar4">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=1]
 	\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -628,9 +628,9 @@
 	\foreach \x in {30,45,60,90,120,135,150}
 	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	}
-	
+ 
 	\draw [thick,{\colorone}] (2,0)--(1.616,0.933)--(1.207,1.207) -- (0.75,1.299) -- (0,1.) -- (-0.25,0.433) -- (-0.2071,0.2071) -- (-0.116,0.06699) -- (0,0) -- (-0.116,-0.06699) -- (-0.2071,-0.2071) -- (-0.25,-0.433) -- (0,-1) -- (0.75,-1.299) -- (1.207,-1.207) -- (1.616,-0.933) -- (2,0);
-	
+ 
 	\filldraw (2.,0) circle (2pt)
 	(1.616,0.933) circle (2pt)
 	(1.207,1.207) circle (1pt)
@@ -649,7 +649,7 @@
 	(1.616,-0.933) circle (1pt) ;
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_polar4.tex END -->
             </figure></cell>
@@ -687,7 +687,7 @@
       <!-- START figures/fig_polar4b.tex -->
       <image xml:id="img_polar4b">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1]
 	\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -700,13 +700,13 @@
 	\foreach \x in {30,45,60,90,120,135,150}
 	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	}
-	
+ 
 	\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1+cos(\x))},{sin(\x)*(1+cos(\x))});
-	
-	
+ 
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polar4b.tex END -->
     </figure>
@@ -772,7 +772,7 @@
             <!-- START figures/fig_polar5.tex -->
               <image xml:id="img_polar5">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=1]
 	\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -785,15 +785,15 @@
 	\foreach \x in {30,45,60,90,120,135,150}
 	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	}
-	
+ 
 	\draw [thick,{\colorone}] plot coordinates {(2.,0)(0.866,0.5)(0,0)(-0.5,-0.866)(0,-2.)(0.5,-0.866)(0,0)(-0.866,0.5)(-2.,0)(-0.866,-0.5)(0,0)(0.5,0.866)(0,2.)(-0.5,0.866)(0,0)(0.866,-0.5)(2,0)};
-	
-	
+ 
+ 
                 \foreach \x/\y/\z/\w in {2./0/1/{above right},0.866/0.5/2/above,0/0/3/above,-0.5/-0.866/4/above,
                 0/-2./5/above, 0.5/-0.866/6/above,0/0/7/left,%
                 -0.866/0.5/8/above,-2./0/9/above left,-0.866/-0.5/10/above,0/0/11/right,0.5/0.866/12/above,0/2./13/above,-0.5/0.866/14/above,0/0/15/below,0.866/-0.5/16/above,2/0/17/{below right}}
                 {\filldraw (\x,\y) circle (1.5pt) node [\w] {\scriptsize \z};
-                }	
+                } 
 	%\filldraw (2.,0) circle (2pt)
 	%(1.616,0.933) circle (2pt)
 	%(1.207,1.207) circle (1pt)
@@ -812,7 +812,7 @@
 	%(1.616,-0.933) circle (1pt) ;
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_polar5.tex END -->
             </figure>
@@ -823,7 +823,7 @@
             <!-- START figures/fig_polar5b.tex -->
               <image xml:id="img_polar5b">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=1]
 	\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -836,14 +836,14 @@
 	\foreach \x in {30,45,60,90,120,135,150}
 	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	}
-	
+ 
                 \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
-	
-	
+ 
+ 
                 \foreach \x/\y in {2./0,0.866/0.5,0/0,-0.5/-0.866,0/-2.,0.5/-0.866,0/0,%
                 -0.866/0.5,-2./0,-0.866/-0.5,0/0,0.5/0.866,0/2.,-0.5/0.866,0/0,0.866/-0.5}
                 {\filldraw (\x,\y) circle (1.5pt);
-                }	
+                } 
 	%\filldraw (2.,0) circle (2pt)
 	%(1.616,0.933) circle (2pt)
 	%(1.207,1.207) circle (1pt)
@@ -862,7 +862,7 @@
 	%(1.616,-0.933) circle (1pt) ;
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_polar5b.tex END -->
             </figure>
@@ -945,7 +945,7 @@
               This function is valid only when the product of <m>\cos(\theta) \sin(\theta)</m> is positive.
               This occurs in the first and third quadrants,
               meaning the domain of this polar function is <m>(0,\pi/2) \cup (\pi,3\pi/2)</m>.
-	
+ 
 	We can rewrite the original rectangular equation <m>xy=1</m> as <m>y=1/x</m>. This is graphed in <xref ref="fig_polar6">Figure</xref>; note how it only exists in the first and third quadrants.
 
               <figure xml:id="fig_polar6">
@@ -953,7 +953,7 @@
             <!-- START figures/fig_polar6.tex -->
                 <image xml:id="img_polar6">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -982,7 +982,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_polar6.tex END -->
               </figure>
@@ -1082,7 +1082,7 @@
       <!-- START figures/fig_polarline1.tex -->
       <image xml:id="img_polarline1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
 	%\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -1095,28 +1095,28 @@
 	%\foreach \x in {30,45,60,90,120,135,150}
 	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	%}
-	
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
-	
+ 
         \draw [thick,{\colorone},rotate=50] (-2.1,0) -- (2.1,0);
 
         \draw [->] (.5,0) arc (0:50:.5);
         \draw [rotate=25] (.7,0) node {\scriptsize $\alpha$};
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarline1.tex END -->
       &amp;
       <!-- START figures/fig_polarline2.tex -->
       <image xml:id="img_polarline2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
 	%\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -1129,28 +1129,28 @@
 	%\foreach \x in {30,45,60,90,120,135,150}
 	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	%}
-	
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
-	
+ 
         \draw [thick,{\colorone}] (-2,.6) -- (2,.6);
 
         \draw (-.2,.3) node {\scriptsize $a\left\{\rule[-.23cm]{0pt}{.23cm}\right.$};
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarline2.tex END -->
       &amp;
       <!-- START figures/fig_polarline4.tex -->
       <image xml:id="img_polarline4">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
 	%\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -1163,29 +1163,29 @@
 	%\foreach \x in {30,45,60,90,120,135,150}
 	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	%}
-	
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
-	
+ 
         \draw [thick,{\colorone}] (.6,-2) -- (.6,2);
 
         \draw (.3,.2) node {\scriptsize $\overbrace{\rule{.55cm}{0pt}}$};
         \draw (.3,.4) node {\scriptsize $a$};
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarline4.tex END -->
       &amp;
       <!-- START figures/fig_polarline3.tex -->
       <image xml:id="img_polarline3">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
 	%\draw [dashed,gray] (-2.1,0) -- (0,0);
@@ -1198,21 +1198,21 @@
 	%\foreach \x in {30,45,60,90,120,135,150}
 	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
 	%}
-	
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
-	
+ 
         \draw [thick,{\colorone},shift={(0,.6)},rotate=50] (-2.1,0) -- (1.7,0) node [pos=.82,rotate=50,black,shift={(0,-5pt)}] {\scriptsize slope $=m$};
 
         \draw (.2,.3) node {\scriptsize $\left.\rule[-.23cm]{0pt}{.23cm}\right\}b$};
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarline3.tex END -->
     </tabular>
@@ -1228,88 +1228,88 @@
       <!-- START figures/fig_polarcircle1.tex -->
       <image xml:id="img_polarcircle1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone}] (.9,0) circle (.9);
 
         \draw (.9,.1) node {\scriptsize $\overbrace{\rule{1.7cm}{0cm}}$};
         \draw (.9,.3) node {\scriptsize $a$};
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarcircle1.tex END -->
       &amp;
       <!-- START figures/fig_polarcircle2.tex -->
       <image xml:id="img_polarcircle2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone}] (0,.9) circle (.9);
 
         \draw (-.2,.9) node {\scriptsize $a\left\{\rule[-.8cm]{0cm}{0.8cm}\right.$};
         %\draw (.9,.3) node {\scriptsize $a$};
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarcircle2.tex END -->
       &amp;
       <!-- START figures/fig_polarcircle3.tex -->
       <image xml:id="img_polarcircle3">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone}] (0,0) circle (.9);
 
         \draw (.45,.1) node {\scriptsize $\overbrace{\rule{.8cm}{0cm}}$};
         \draw (.45,.3) node {\scriptsize $a$};
-	
-	
+ 
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarcircle3.tex END -->
       &amp;
       <!-- START figures/fig_polarspiral.tex -->
       <image xml:id="img_polarspiral">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:18.85,samples=100,smooth] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
         %\draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarspiral.tex END -->
     </tabular>
@@ -1330,80 +1330,80 @@
       <!-- START figures/fig_polarlimacon1.tex -->
       <image xml:id="img_polarlimacon1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarlimacon1.tex END -->
       &amp;
       <!-- START figures/fig_polarlimacon2.tex -->
       <image xml:id="img_polarlimacon2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarlimacon2.tex END -->
       &amp;
       <!-- START figures/fig_polarlimacon3.tex -->
       <image xml:id="img_polarlimacon3">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarlimacon3.tex END -->
       &amp;
       <!-- START figures/fig_polarlimacon4.tex -->
       <image xml:id="img_polarlimacon4">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarlimacon4.tex END -->
     </tabular>
@@ -1427,80 +1427,80 @@
       <!-- START figures/fig_polarrose1.tex -->
       <image xml:id="img_polarrose1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarrose1.tex END -->
       &amp;
       <!-- START figures/fig_polarrose2.tex -->
       <image xml:id="img_polarrose2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarrose2.tex END -->
       &amp;
       <!-- START figures/fig_polarrose4.tex -->
       <image xml:id="img_polarrose4">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarrose4.tex END -->
       &amp;
       <!-- START figures/fig_polarrose3.tex -->
       <image xml:id="img_polarrose3">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarrose3.tex END -->
     </tabular>
@@ -1516,82 +1516,82 @@
       <!-- START figures/fig_polarspecial1.tex -->
       <image xml:id="img_polarspecial1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:900,samples=100,smooth] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarspecial1.tex END -->
       &amp;
       <!-- START figures/fig_polarspecial2.tex -->
       <image xml:id="img_polarspecial2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=0:1800,samples=200,smooth] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarspecial2.tex END -->
       &amp;
       <!-- START figures/fig_polarspecial3.tex -->
       <image xml:id="img_polarspecial3">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
         \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarspecial3.tex END -->
       &amp;
       <!-- START figures/fig_polarspecial4.tex -->
       <image xml:id="img_polarspecial4">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[scale=1,>=stealth]
-		
+ 
 	\draw [<->,] (-2.1,0) -- (2.1,0);
 	\draw [<->,] (0,-2.1) -- (0,2.1);
-	
-	
+ 
+ 
         \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
         \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
 
-	
+ 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_polarspecial4.tex END -->
     </tabular>
@@ -1629,7 +1629,7 @@
             <!-- START figures/fig_polar7.tex -->
               <image xml:id="img_polar7">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1660,7 +1660,7 @@
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_polar7.tex END -->
             </figure>
@@ -1670,7 +1670,7 @@
             <!-- START figures/fig_polar7b.tex -->
               <image xml:id="img_polar7b">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -1701,7 +1701,7 @@
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_polar7b.tex END -->
             </figure>
@@ -1796,10 +1796,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1820,14 +1817,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1847,14 +1838,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1873,14 +1858,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1901,10 +1880,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -1944,7 +1920,7 @@
 
               <image xml:id="img_polar7bX1">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=.5]
                 \foreach \x in {1,2}
@@ -1956,7 +1932,7 @@
                 (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] { \(B\)}
 			(xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] { \(C\)}
 			(xyz polar cs: angle=45,radius=1)circle (2pt) node [right] { \(D\)};\end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </figure>
@@ -1967,10 +1943,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2010,7 +1983,7 @@
 
               <image xml:id="img_polar7bX3">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[scale=.5]
                 \foreach \x in {1,2}
@@ -2022,7 +1995,7 @@
                 (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] { \(B\)}
 			(xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] { \(C\)}
 			(xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
               </image>
 
             </figure>
@@ -2033,10 +2006,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2048,7 +2018,7 @@
 
             <image xml:id="img_polar7bX4">
               <description></description>
-              <latex-image-code>
+              <latex-image>
               <![CDATA[
               \begin{tikzpicture}[scale=.5]
               \draw [dashed,gray] (-3.1,0) -- (0,0);
@@ -2065,7 +2035,7 @@
               (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] { \(B\)}
 			(xyz polar cs: angle=240,radius=3)circle (2pt) node [right] { \(C\)}
 			(xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}]]>
-              </latex-image-code>
+              </latex-image>
             </image>
 
           </statement>
@@ -2092,86 +2062,22 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$r[0]">
-            <static>
-              2
-            </static>
-            </var>
-            <var name="$r[1]">
-            <static>
-              1
-            </static>
-            </var>
-            <var name="$r[2]">
-            <static>
-              2
-            </static>
-            </var>
-            <var name="$r[3]">
-            <static>
-              2.5
-            </static>
-            </var>
-            <var name="$s[0]">
-            <static>
-              -2
-            </static>
-            </var>
-            <var name="$s[1]">
-            <static>
-              -1
-            </static>
-            </var>
-            <var name="$s[2]">
-            <static>
-              -2
-            </static>
-            </var>
-            <var name="$s[3]">
-            <static>
-              -2.5
-            </static>
-            </var>
-            <var name="$t[0]">
-            <static>
-              \pi/6
-            </static>
-            </var>
-            <var name="$t[1]">
-            <static>
-              -\pi/3
-            </static>
-            </var>
-            <var name="$t[2]">
-            <static>
-              3\pi/4
-            </static>
-            </var>
-            <var name="$t[3]">
-            <static>
-              \pi
-            </static>
-            </var>
-            <var name="$u[0]">
-            <static>
-              -5\pi/6
-            </static>
-            </var>
-            <var name="$u[1]">
-            <static>
-              2\pi/3
-            </static>
-            </var>
-            <var name="$u[2]">
-            <static>
-              -\pi/4
-            </static>
-            </var>
-            <var name="$u[3]">
-            <static>
-              0
-            </static>
-            </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
           <pg-code>
             $gr = init_graph(-3.5,-3.5,3.5,3.5,size=>[400,400]);
             $gr->moveTo(0,0); $gr->arrowTo(3.4,0,'black',1);
@@ -2295,26 +2201,10 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$xy[0]">
-            <static>
-              \left(\sqrt{2},\sqrt{2}\right)
-            </static>
-            </var>
-            <var name="$xy[1]">
-            <static>
-              \left(\sqrt{2},-\sqrt{2}\right)
-            </static>
-            </var>
-            <var name="$rt[0]">
-            <static>
-              \left(\sqrt{5},\arctan(-1/2)\right)
-            </static>
-            </var>
-            <var name="$rt[1]">
-            <static>
-              \left(\sqrt{5},\pi+\arctan(-1/2)\right)
-            </static>
-            </var>
+ 
+ 
+ 
+ 
           <pg-code>
             Context("Point");
             Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2401,26 +2291,10 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$xy[0]">
-            <static>
-              (-3,0)
-            </static>
-            </var>
-            <var name="$xy[1]">
-            <static>
-              \left(-1/2,\sqrt{3}/2\right)
-            </static>
-            </var>
-            <var name="$rt[0]">
-            <static>
-              (4,\pi/2)
-            </static>
-            </var>
-            <var name="$rt[1]">
-            <static>
-              (2,-\pi/3)
-            </static>
-            </var>
+ 
+ 
+ 
+ 
           <pg-code>
             Context("Point");
             Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2515,10 +2389,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2532,7 +2403,7 @@
             <!-- START figures/fig_09_04_ex_11.tex -->
                 <image xml:id="img_09_04_ex_11X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2558,7 +2429,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_11.tex END -->
               </figure>
@@ -2569,10 +2440,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2586,7 +2454,7 @@
             <!-- START figures/fig_09_04_ex_12.tex -->
                 <image xml:id="img_09_04_ex_12X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2612,7 +2480,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_12.tex END -->
               </figure>
@@ -2623,10 +2491,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2640,7 +2505,7 @@
             <!-- START figures/fig_09_04_ex_13.tex -->
                 <image xml:id="img_09_04_ex_13X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2666,7 +2531,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_13.tex END -->
               </figure>
@@ -2677,10 +2542,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2694,7 +2556,7 @@
             <!-- START figures/fig_09_04_ex_14.tex -->
                 <image xml:id="img_09_04_ex_14X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2720,7 +2582,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_14.tex END -->
               </figure>
@@ -2731,10 +2593,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2748,7 +2607,7 @@
             <!-- START figures/fig_09_04_ex_15.tex -->
                 <image xml:id="img_09_04_ex_15X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2774,7 +2633,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_15.tex END -->
               </figure>
@@ -2785,10 +2644,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2802,7 +2658,7 @@
             <!-- START figures/fig_09_04_ex_16.tex -->
                 <image xml:id="img_09_04_ex_16X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2828,7 +2684,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_16.tex END -->
               </figure>
@@ -2839,10 +2695,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2856,7 +2709,7 @@
             <!-- START figures/fig_09_04_ex_17.tex -->
                 <image xml:id="img_09_04_ex_17X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2882,7 +2735,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_17.tex END -->
               </figure>
@@ -2893,10 +2746,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2910,7 +2760,7 @@
             <!-- START figures/fig_09_04_ex_18.tex -->
                 <image xml:id="img_09_04_ex_18X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2936,7 +2786,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_18.tex END -->
               </figure>
@@ -2947,10 +2797,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2964,7 +2811,7 @@
             <!-- START figures/fig_09_04_ex_19.tex -->
                 <image xml:id="img_09_04_ex_19X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -2990,7 +2837,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_19.tex END -->
               </figure>
@@ -3001,10 +2848,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3018,7 +2862,7 @@
             <!-- START figures/fig_09_04_ex_20.tex -->
                 <image xml:id="img_09_04_ex_20X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3044,7 +2888,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_20.tex END -->
               </figure>
@@ -3055,10 +2899,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3072,7 +2913,7 @@
             <!-- START figures/fig_09_04_ex_21.tex -->
                 <image xml:id="img_09_04_ex_21X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3098,7 +2939,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_21.tex END -->
               </figure>
@@ -3109,10 +2950,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3126,7 +2964,7 @@
             <!-- START figures/fig_09_04_ex_22.tex -->
                 <image xml:id="img_09_04_ex_22X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3152,7 +2990,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_22.tex END -->
               </figure>
@@ -3163,10 +3001,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3180,7 +3015,7 @@
             <!-- START figures/fig_09_04_ex_23.tex -->
                 <image xml:id="img_09_04_ex_23X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3206,7 +3041,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_23.tex END -->
               </figure>
@@ -3217,10 +3052,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3234,7 +3066,7 @@
             <!-- START figures/fig_09_04_ex_24.tex -->
                 <image xml:id="img_09_04_ex_24X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3260,7 +3092,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_24.tex END -->
               </figure>
@@ -3271,10 +3103,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3288,7 +3117,7 @@
             <!-- START figures/fig_09_04_ex_25.tex -->
                 <image xml:id="img_09_04_ex_25X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3314,7 +3143,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_25.tex END -->
               </figure>
@@ -3325,10 +3154,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3342,7 +3168,7 @@
             <!-- START figures/fig_09_04_ex_26.tex -->
                 <image xml:id="img_09_04_ex_26X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3368,7 +3194,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_26.tex END -->
               </figure>
@@ -3379,10 +3205,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3396,7 +3219,7 @@
             <!-- START figures/fig_09_04_ex_27.tex -->
                 <image xml:id="img_09_04_ex_27X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3422,7 +3245,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_27.tex END -->
               </figure>
@@ -3433,10 +3256,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3450,7 +3270,7 @@
             <!-- START figures/fig_09_04_ex_28.tex -->
                 <image xml:id="img_09_04_ex_28X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3476,7 +3296,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_28.tex END -->
               </figure>
@@ -3487,10 +3307,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3504,7 +3321,7 @@
             <!-- START figures/fig_09_04_ex_29.tex -->
                 <image xml:id="img_09_04_ex_29X">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[%
@@ -3530,7 +3347,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_09_04_ex_29.tex END -->
               </figure>
@@ -3551,11 +3368,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                (x-1)^2+y^2=1
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("(x-1)^2+y^2=1", limits=>[[-1,3],[-2,2]]);
@@ -3580,11 +3393,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                x^2+(y+2)^2=4
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("x^2+(y+2)^2=4", limits=>[[-3,3],[-5,1]]);
@@ -3609,11 +3418,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                (x-1/2)^2+(y-1/2)^2=1/2
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("(x-1/2)^2+(y-1/2)^2=1/2", limits=>[[-1,2],[-1,2]]);
@@ -3638,11 +3443,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                y=\frac{2}{5}x+\frac{7}{5}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("y=2/5x+7/5", limits=>[[-3,3],[-2,4]]);
@@ -3667,11 +3468,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                x=3
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("x=3", limits=>[[0,6],[-3,3]]);
@@ -3696,11 +3493,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                y=4
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("y=4", limits=>[[-3,3],[1,7]]);
@@ -3725,10 +3518,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3748,11 +3538,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                x^2+y^2=4
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("x^2+y^2=4", limits=>[[-3,3],[-3,3]]);
@@ -3777,11 +3563,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                y=x/\sqrt{3}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               $eq=ImplicitEquation("y=x/sqrt(3)", limits=>[[-3,3],[-3,3]]);
@@ -3816,11 +3598,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                \theta=\pi/4
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(r=>'Real',theta=>['Real',TeX=>'\theta']);
@@ -3847,11 +3625,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                r=7/(\sin(\theta)-4\cos(\theta))
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(r=>'Real',theta=>['Real',TeX=>'\theta']);
@@ -3878,11 +3652,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                r=5\sec(\theta)
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(r=>'Real',theta=>['Real',TeX=>'\theta']);
@@ -3909,11 +3679,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                r=5\csc(\theta)
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(r=>'Real',theta=>['Real',TeX=>'\theta']);
@@ -3940,11 +3706,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                r=\cos(\theta) /\sin^2(\theta)
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(r=>'Real',theta=>['Real',TeX=>'\theta']);
@@ -3971,10 +3733,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3994,11 +3753,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$eq">
-              <static>
-                r=\sqrt{7}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(r=>'Real',theta=>['Real',TeX=>'\theta']);
@@ -4026,10 +3781,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4059,11 +3811,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$rts">
-              <static>
-                P\mathopen{}\left(\sqrt{3}/2,\pi/6\right)\mathclose{}, P(0,\pi/2), P\mathopen{}\left(-\sqrt{3}/2,5\pi/6\right)\mathclose{}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Point");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -4093,10 +3841,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4116,11 +3861,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$rts">
-              <static>
-                P(0,0), P\mathopen{}\left(\sqrt{2},\pi/4\right)\mathclose{}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Point");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -4150,10 +3891,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4174,10 +3912,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4199,11 +3934,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$rts">
-              <static>
-                P(3/2,\pi/3), P(3/2,-\pi/3), P(0,\pi)
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Point");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -4234,10 +3965,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4258,10 +3986,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -4285,10 +4010,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -4313,10 +4035,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>

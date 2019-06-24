@@ -48,7 +48,7 @@
         <!-- START figures/fig_newt1a.tex -->
         <image xml:id="img_newt1a">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[
@@ -65,7 +65,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -75,7 +75,7 @@
         <!-- START figures/fig_newt1b.tex -->
         <image xml:id="img_newt1b">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[
@@ -92,7 +92,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_newt1b.tex END -->
       </figure>
@@ -102,7 +102,7 @@
         <!-- START figures/fig_newt1c.tex -->
         <image xml:id="img_newt1c">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[
@@ -119,7 +119,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_newt1c.tex END -->
       </figure>
@@ -275,7 +275,7 @@
           <!-- START figures/fig_newt2.tex -->
           <image xml:id="img_newt2" width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[
@@ -286,7 +286,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_newt2.tex END -->
         </figure>
@@ -357,7 +357,7 @@
           <!-- START figures/fig_newt3.tex -->
           <image xml:id="img_newt3"  width="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[
@@ -371,7 +371,7 @@
             \end{axis}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_newt3.tex END -->
         </figure>
@@ -473,7 +473,7 @@
       <!-- START figures/fig_newt2a.tex -->
       <image xml:id="img_newt2a" width="47%">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[
@@ -485,7 +485,7 @@
         \end{axis}
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_newt2a.tex END -->
     </figure>
@@ -530,7 +530,7 @@
         <!-- START figures/fig_newt4a.tex -->
         <image xml:id="img_newt4a">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[
@@ -547,7 +547,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
 
       </figure>
@@ -557,7 +557,7 @@
         <!-- START figures/fig_newt4b.tex -->
         <image xml:id="img_newt4b">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[
@@ -574,7 +574,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_newt4b.tex END -->
       </figure>
@@ -584,7 +584,7 @@
         <!-- START figures/fig_newt4c.tex -->
         <image xml:id="img_newt4c">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}
           \begin{axis}[
@@ -601,7 +601,7 @@
           \end{axis}
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
         <!-- figures/fig_newt4c.tex END -->
       </figure>
@@ -633,14 +633,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -658,14 +652,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -697,41 +685,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \cos(x)
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                1.5
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                1.5709
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                1.5708
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                1.5708
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                1.5708
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                1.5708
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $f=list_random('cos(x)');
               $f=Compute($f);
@@ -790,41 +750,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \sin(x)
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                1
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                -0.5574
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                0.06594
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                -0.00009572
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                2.924*10^{-13}
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $f=list_random('sin(x)');
               $f=Compute($f);
@@ -883,41 +815,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{2}+x-2
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                1.2
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                1.01176
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                1.0000458
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $f=list_random('x^2+x-2');
               $f=Compute($f);
@@ -976,41 +880,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{2}-2
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                1.5
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                1.417
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                1.414
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                1.414
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                1.414
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                1.414
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $f=list_random('x^2-2');
               $f=Compute($f);
@@ -1069,41 +945,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                \ln(x)
-              </static>
-              </var>
-              <var name="$x[0]">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$x[1]">
-              <static>
-                0.6137
-              </static>
-              </var>
-              <var name="$x[2]">
-              <static>
-                0.9133
-              </static>
-              </var>
-              <var name="$x[3]">
-              <static>
-                0.996132
-              </static>
-              </var>
-              <var name="$x[4]">
-              <static>
-                0.999992509
-              </static>
-              </var>
-              <var name="$x[5]">
-              <static>
-                1
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $f=list_random('ln(x)');
               $f=Compute($f);
@@ -1175,16 +1023,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{3}+5x^{2}-x-1
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (-5.15633,-0.369102,0.525430)
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $f = list_random('x^3+5x^2-x-1');
               $f = Compute($f);
@@ -1208,16 +1048,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{4}+2x^{3}-7x^{2}-x+5
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (-3.714,-0.8567,1,1.571)
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $f = list_random('x^4+2x^3-7x^2-x+5');
               $f = Compute($f);
@@ -1241,21 +1073,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{17}-2x^{13}-10x^{8}+10
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (-1.013,0.9883,1.393)
-              </static>
-              </var>
-              <var name="$I">
-              <static>
-                (-2,2)
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f = list_random('x^17-2x^13-10x^8+10');
               $I = Interval(-2,2);
@@ -1280,21 +1100,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{2}\cos(x) + (x-1)\sin(x)
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (-2.165,0,0.525,1.813)
-              </static>
-              </var>
-              <var name="$I">
-              <static>
-                (-3,3)
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f = list_random('x^2cos(x) + (x-1)sin(x)');
               $I = Interval(-3,3);
@@ -1332,21 +1140,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^{2}
-              </static>
-              </var>
-              <var name="$g">
-              <static>
-                \cos(x)
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (0.8241,-0.8241)
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f = list_random('x^2');
               $g = list_random('cos(x)');
@@ -1373,21 +1169,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x^2-1
-              </static>
-              </var>
-              <var name="$g">
-              <static>
-                \sin(x)
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (-0.6367,1.410)
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f = list_random('x^2-1');
               $g = list_random('sin(x)');
@@ -1415,21 +1199,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                e^{x^{2}
-              </static>
-              </var>
-              <var name="$g">
-              <static>
-                \cos(x)
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (0)
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f = list_random('e^(x^2)');
               $g = list_random('cos(x)');
@@ -1456,26 +1228,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$f">
-              <static>
-                x
-              </static>
-              </var>
-              <var name="$g">
-              <static>
-                \tan(x)
-              </static>
-              </var>
-              <var name="$I">
-              <static>
-                [-6,6]
-              </static>
-              </var>
-              <var name="$L">
-              <static>
-                (4.493,-4.493,0)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $f = list_random('x');
               $g = list_random('tan(x)');

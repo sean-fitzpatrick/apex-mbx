@@ -381,7 +381,7 @@
                 f_x(x,y) = 3x^2y^2-1
               </me>.
               Note how the <m>5y^2</m> and <m>7</m> terms go to zero.
-	
+ 
 	To compute <m>f_y(x,y)</m>, we hold <m>x</m> fixed:
               <me>
                 f_y(x,y) = 2x^3y+10y
@@ -858,17 +858,17 @@
           <li>
             <p>
               <m>f(x,y) = x^3y^2+2xy^3+\cos(x)</m>
-		
+ 
 		<m>f_x(x,y) = 3x^2y^2+2y^3-\sin(x)</m>
-		
+ 
 		<m>f_y(x,y) = 2x^3y+6xy^2</m>
-		
+ 
 		<m>\ds f_{xx}(x,y) = \frac{\partial}{\px}\big(f_x\big) = \frac{\partial}{\px}\big(3x^2y^2+2y^3-\sin(x) \big) = 6xy^2-\cos(x)</m>
-		
+ 
 		<m>\ds f_{yy}(x,y) = \frac{\partial}{\py}\big(f_y\big) = \frac{\partial}{\py}\big(2x^3y+6xy^2\big) = 2x^3+12xy</m>
-		
+ 
 		<m>\ds f_{xy}(x,y) = \frac{\partial}{\py}\big(f_x\big) = \frac{\partial}{\py}\big(3x^2y^2+2y^3-\sin(x) \big) = 6x^2y+6y^2</m>
-		
+ 
 		<m>\ds f_{yx}(x,y) = \frac{\partial}{\px}\big(f_x\big) = \frac{\partial}{\px}\big(2x^3y+6xy^2\big) = 6x^2y+6y^2</m>
             </p>
           </li>
@@ -876,17 +876,17 @@
           <li>
             <p>
               <m>\ds f(x,y) = \frac{x^3}{y^2} = x^3y^{-2}</m>
-	
+ 
 	<m>\ds f_x(x,y) = \frac{3x^2}{y^2}</m>
-	
+ 
 	<m>\ds f_y(x,y) = -\frac{2x^3}{y^3}</m>
-	
+ 
 	<m>\ds f_{xx}(x,y) = \frac{\partial}{\px}\big(f_x\big) = \frac{\partial}{\px}\big(\frac{3x^2}{y^2}\big) = \frac{6x}{y^2}</m>
-		
+ 
 		<m>\ds f_{yy}(x,y) = \frac{\partial}{\py}\big(f_y\big) = \frac{\partial}{\py}\big(-\frac{2x^3}{y^3}\big) = \frac{6x^3}{y^4}</m>
-		
+ 
 		<m>\ds f_{xy}(x,y) = \frac{\partial}{\py}\big(f_x\big) = \frac{\partial}{\py}\big(\frac{3x^2}{y^2}\big) = -\frac{6x^2}{y^3}</m>
-		
+ 
 		<m>\ds f_{yx}(x,y) = \frac{\partial}{\px}\big(f_x\big) = \frac{\partial}{\px}\big(-\frac{2x^3}{y^3}\big) =
               -\frac{6x^2}{y^3}</m>
             </p>
@@ -903,16 +903,16 @@
               followed by some basic combination of like terms.
 
               <m>\ds f_x(x,y) = e^x\sin(x^2y) + 2xye^x\cos(x^2y)</m>
-	
+ 
 	<m>\ds f_y(x,y) = x^2e^x\cos(x^2y)</m>
-	
+ 
 	<m>\ds f_{xx}(x,y) = e^x\sin(x^2y)+4xye^x\cos(x^2y)+2ye^x\cos(x^2y)-4x^2y^2e^x\sin(x^2y)</m>
-	
-	
+ 
+ 
 		<m>\ds f_{yy}(x,y) = -x^4e^x\sin(x^2y)</m>
-		
+ 
 		<m>\ds f_{xy}(x,y) = x^2e^x\cos(x^2y)+2xe^x\cos(x^2y)-2x^3ye^x\sin(x^2y)</m>
-		
+ 
 		<m>\ds f_{yx}(x,y) = x^2e^x\cos(x^2y)+2xe^x\cos(x^2y)-2x^3ye^x\sin(x^2y)</m>
             </p>
           </li>
@@ -1391,9 +1391,9 @@
             <p>
               <m>f_x = 2xy^3z^4+2xy^2+3x^2z^3</m>;
               <m>f_y = 3x^2y^2z^4+2x^2y+4y^3z^4</m>;
-	
+ 
 	<m>f_z = 4x^2y^3z^3+3x^3z^2+4y^4z^3</m>; <m>f_{xz} = 8xy^3z^3+9x^2z^2</m>;
-	
+ 
 	<m>f_{yz} = 12x^2y^2z^3+16y^3z^3</m>; <m>f_{zz} = 12x^2y^3z^2+6x^3z+12y^4z^2</m>
             </p>
           </li>
@@ -1402,7 +1402,7 @@
             <p>
               <m>f_x = \sin(yz)</m>; <m>f_y = xz\cos(yz)</m>;
               <m>f_z = xy\cos(yz)</m>;
-	
+ 
 	<m>f_{xz} = y\cos(yz)</m>; <m>f_{yz} = x\cos(yz) - xyz\sin(yz)</m>; <m>f_{zz} = -xy^2\sin(xy)</m>
             </p>
           </li>
@@ -1432,7 +1432,7 @@
         f_{xyx}(x,y)  =\frac{\partial}{\px}\left(\frac{\partial}{\py}\left(\frac{\pf}{\px}\right)\right)  \text{ and }
       </me>
       <me>
-        f_{xyz}(x,y,z)  =\frac{\partial}{\partial z}\left(\frac{\partial}{\py}\left(\frac{\pf}{\px}\right)\right)  
+        f_{xyz}(x,y,z)  =\frac{\partial}{\partial z}\left(\frac{\partial}{\py}\left(\frac{\pf}{\px}\right)\right) 
       </me>.
     </p>
 
@@ -1541,10 +1541,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1565,10 +1562,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1590,10 +1584,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$first">
-              <set><member correct="yes">f_{x}</member>
-              <member>f_{y}</member></set>
-              </var>
+ 
             <pg-code>
               $first=RadioButtons(['\(f_x\)', '\(f_y\)'],0,labels=>[f_x,f_y],displayLabels => 0 );
             </pg-code>
@@ -1614,10 +1605,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$first">
-              <set><member correct="yes">f_{x}</member>
-              <member>f_{y}</member></set>
-              </var>
+ 
             <pg-code>
               $first=RadioButtons(['\(f_x\)', '\(f_y\)'],1,labels=>[f_x,f_y],displayLabels => 0 );
             </pg-code>
@@ -1649,10 +1637,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1676,16 +1661,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $fx=0;
               $fy=0;
@@ -1711,10 +1688,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1739,16 +1713,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                -1/2
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                -1/3
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Fraction");
               $fx=Fraction(-1,2);
@@ -1786,10 +1752,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1817,36 +1780,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                3x^2+6xy+3y^2
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                3x^2+6xy+3y^2
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                6x+6y
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                6x+6y
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                6x+6y
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                6x+6y
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("3x^2+6xy+3y^2");
@@ -1893,10 +1832,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1924,36 +1860,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                -\frac{4}{x^2y}
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                -\frac{4}{xy^2}
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                \frac{8}{x^3y}
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                \frac{4}{x^2y^2}
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                \frac{4}{x^2y^2}
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                \frac{8}{xy^3}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("-4/(x^2y)");
@@ -2000,10 +1912,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2033,36 +1942,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                e^{x+2y}
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                2e^{x+2y}
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                e^{x+2y}
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                2e^{x+2y}
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                2e^{x+2y}
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                4e^{x+2y}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("e^(x+2y)");
@@ -2109,10 +1994,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2142,36 +2024,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                3(x+y)^2
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                3(x+y)^2
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                6(x+y)
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                6(x+y)
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                6(x+y)
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                6(x+y)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("3(x+y)^2");
@@ -2218,10 +2076,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2251,36 +2106,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                10x cos\mathopen{}\left(5x^2+2y^3\right)\mathclose{}
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                6y^2 cos\mathopen{}\left(5x^2+2y^3\right)\mathclose{}
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                10 cos\mathopen{}\left(5x^2+2y^3\right)\mathclose{}-100x^2 sin\mathopen{}\left(5x^2+2y^3\right)\mathclose{}
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                -60xy^2 sin\mathopen{}\left(5x^2+2y^3\right)\mathclose{}
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                -60xy^2 sin\mathopen{}\left(5x^2+2y^3\right)\mathclose{}
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                12y cos\mathopen{}\left(5x^2+2y^3\right)\mathclose{}-36y^4 sin\mathopen{}\left(5x^2+2y^3\right)\mathclose{}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("10x cos(5x^2+2y^3)");
@@ -2327,36 +2158,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                \frac{2y^2}{\sqrt{4xy^2+1}}
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                \frac{4xy}{\sqrt{4xy^2+1}}
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                -\frac{4y^4}{\sqrt{4xy^2+1}^3}
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                -\frac{8xy^3}{\sqrt{4xy^2+1}^3}+\frac{4y}{\sqrt{4xy^2+1}}
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                -\frac{8xy^3}{\sqrt{4xy^2+1}^3}+\frac{4y}{\sqrt{4xy^2+1}}
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                -\frac{16x^2y^2}{\sqrt{4xy^2+1}^3}+\frac{4x}{\sqrt{4xy^2+1}}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("2y^2/sqrt(4xy^2+1)");
@@ -2403,10 +2210,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2436,10 +2240,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2470,36 +2271,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                -17
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("5");
@@ -2546,10 +2323,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2577,36 +2351,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                \frac{2x}{x^2+y}
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                \frac{1}{x^2+y}
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                -\frac{4x^2}{(x^2+y)^2}+\frac{2}{x^2+y}
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                -\frac{2x}{(x^2+y)^2}
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                -\frac{2x}{(x^2+y)^2}
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                -\frac{1}{(x^2+y)^2}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("2x/(x^2+y)");
@@ -2653,10 +2403,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2686,36 +2433,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                5e^x\sin(y)
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                5e^x\cos(y)
-              </static>
-              </var>
-              <var name="$fxx">
-              <static>
-                5e^x\sin(y)
-              </static>
-              </var>
-              <var name="$fxy">
-              <static>
-                5e^x\cos(y)
-              </static>
-              </var>
-              <var name="$fyx">
-              <static>
-                5e^x\cos(y)
-              </static>
-              </var>
-              <var name="$fyy">
-              <static>
-                -5e^x\sin(y)
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $fx=Compute("5e^x sin(y)");
@@ -2772,10 +2495,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2797,11 +2517,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserFormulaUpToConstant.pl</macro-file></pg-macros>
             <setup>
-              <var name="$f">
-              <static>
-                \frac{1}{2}x^2+xy+\frac{1}{2}y^2+C
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $f=Compute("1/2x^2+xy+1/2y^2");
@@ -2824,10 +2540,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2849,11 +2562,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserFormulaUpToConstant.pl</macro-file></pg-macros>
             <setup>
-              <var name="$f">
-              <static>
-                \ln(x^2+y^2)+C
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $f=Compute("ln(x^2+y^2)");
@@ -2886,10 +2595,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2915,31 +2621,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                3x^2y^2+3x^2z
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                2x^3y+2yz
-              </static>
-              </var>
-              <var name="$fz">
-              <static>
-                x^3+y^2
-              </static>
-              </var>
-              <var name="$fyz">
-              <static>
-                2y
-              </static>
-              </var>
-              <var name="$fzy">
-              <static>
-                2y
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',z=>'Real');
               $fx=Compute("3x^2y^2+3x^2z");
@@ -2981,10 +2667,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3011,31 +2694,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$fx">
-              <static>
-                \frac{1}{x}
-              </static>
-              </var>
-              <var name="$fy">
-              <static>
-                \frac{1}{y}
-              </static>
-              </var>
-              <var name="$fz">
-              <static>
-                \frac{1}{z}
-              </static>
-              </var>
-              <var name="$fyz">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$fzy">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',z=>'Real');
               $fx=Compute("1/x");

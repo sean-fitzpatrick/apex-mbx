@@ -181,7 +181,7 @@
               As <m>\{S_n\}</m> oscillates,
               repeating 1, 0, 1, 0, <m>\ldots</m>,
               we conclude that <m>\lim\limits_{n\to\infty}S_n</m> does not exist,
-              hence <m>\ds\infser (-1)^{n+1}</m> diverges.		
+              hence <m>\ds\infser (-1)^{n+1}</m> diverges. 
 
               A scatter plot of the sequence <m>\{b_n\}</m> and the partial sums <m>\{S_n\}</m> is given in <xref ref="fig_series1b">Figure</xref>.
               When <m>n</m> is odd,
@@ -194,7 +194,7 @@
             <!-- START figures/fig_series1a.tex -->
                   <image xml:id="img_series1a">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -227,7 +227,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series1a.tex END -->
                 </figure>
@@ -237,7 +237,7 @@
             <!-- START figures/fig_series1b.tex -->
                   <image xml:id="img_series1b">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -270,7 +270,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series1b.tex END -->
                 </figure>
@@ -501,7 +501,7 @@
             <!-- START figures/fig_series2a.tex -->
                 <image xml:id="img_series2" width="47%">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -534,7 +534,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_series2a.tex END -->
               </figure>
@@ -571,7 +571,7 @@
             <!-- START figures/fig_series2b.tex -->
                   <image xml:id="img_series2a">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -604,7 +604,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series2b.tex END -->
                 </figure>
@@ -614,7 +614,7 @@
             <!-- START figures/fig_series2c.tex -->
                   <image xml:id="img_series2b">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -647,7 +647,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series2c.tex END -->
                 </figure>
@@ -898,7 +898,7 @@
           <!-- START figures/fig_series3.tex -->
           <image xml:id="img_series3" widths="47%">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -931,7 +931,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_series3.tex END -->
         </figure>
@@ -1021,7 +1021,7 @@
             <!-- START figures/fig_series4a.tex -->
                   <image xml:id="img_series4a">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -1054,7 +1054,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series4a.tex END -->
                 </figure>
@@ -1064,7 +1064,7 @@
             <!-- START figures/fig_series4b.tex -->
                   <image xml:id="img_series4b">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -1097,7 +1097,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series4b.tex END -->
                 </figure>
@@ -1303,7 +1303,7 @@
             <!-- START figures/fig_series5a.tex -->
                   <image xml:id="img_series5a">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -1336,7 +1336,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series5a.tex END -->
                 </figure>
@@ -1346,7 +1346,7 @@
             <!-- START figures/fig_series5b.tex -->
                   <image xml:id="img_series5b">
                     <description></description>
-                    <latex-image-code>
+                    <latex-image>
                     <![CDATA[
                     \begin{tikzpicture}
                     \begin{axis}[%
@@ -1379,7 +1379,7 @@
 
                     \end{tikzpicture}
                     ]]>
-                    </latex-image-code>
+                    </latex-image>
                   </image>
             <!-- figures/fig_series5b.tex END -->
                 </figure>
@@ -1669,10 +1669,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1692,10 +1689,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1715,10 +1709,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1741,10 +1732,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1764,10 +1752,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1813,10 +1798,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1846,10 +1828,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1880,10 +1859,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1913,10 +1889,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1946,10 +1919,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1979,10 +1949,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2012,10 +1979,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2045,10 +2009,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2084,10 +2045,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2108,10 +2066,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2132,10 +2087,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2156,10 +2108,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2180,10 +2129,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2204,10 +2150,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2233,10 +2176,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2256,10 +2196,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2279,10 +2216,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2302,10 +2236,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2325,10 +2256,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2348,10 +2276,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2371,10 +2296,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2394,10 +2316,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2417,10 +2336,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2440,10 +2356,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2485,10 +2398,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2518,10 +2428,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2551,10 +2458,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2586,10 +2490,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2619,10 +2520,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2652,10 +2550,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2685,10 +2580,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2719,10 +2611,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2754,10 +2643,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2789,10 +2675,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2823,10 +2706,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2856,10 +2736,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2891,10 +2768,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2925,10 +2799,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2960,10 +2831,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2993,10 +2861,7 @@
       <exercise xml:id="x08_02_ex_24">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3016,7 +2881,7 @@
                 <li>
                   <p>
                     Show why <m>\ds \infser \frac{1}{2n-1}>\infser \frac{1}{2n}</m>.
-		
+ 
 		(Compare each <m>n^\text{ th }</m> partial sum.)
                   </p>
                 </li>
@@ -3094,10 +2959,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

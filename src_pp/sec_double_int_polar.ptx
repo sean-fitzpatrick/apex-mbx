@@ -38,7 +38,7 @@
         <!-- START figures/fig_doublepol_intro.tex -->
           <image xml:id="img_doublepol_intro">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -121,7 +121,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_doublepol_intro.tex END -->
         </figure>
@@ -131,7 +131,7 @@
         <!-- START figures/fig_doublepol_intro_b.tex -->
           <image xml:id="img_doublepol_intro_b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -172,7 +172,7 @@
             %\node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
         <!-- figures/fig_doublepol_intro_b.tex END -->
         </figure>
@@ -434,7 +434,7 @@
             <!-- START figures/fig_doublepol2a.tex -->
               <image xml:id="img_doublepol2a">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}
                 \begin{axis}[%
@@ -461,7 +461,7 @@
 
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
             <!-- figures/fig_doublepol2a.tex END -->
             </figure>
@@ -1087,10 +1087,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1111,10 +1108,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1146,11 +1140,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                4\pi
-              </static>
-              </var>
+ 
             <pg-code>
               $int=Compute("4pi");
             </pg-code>
@@ -1171,10 +1161,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1195,11 +1182,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                16\pi
-              </static>
-              </var>
+ 
             <pg-code>
               $int=Compute("16pi");
             </pg-code>
@@ -1221,10 +1204,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1246,10 +1226,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1271,11 +1248,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                \pi/2
-              </static>
-              </var>
+ 
             <pg-code>
               $int=Compute("pi/2");
             </pg-code>
@@ -1296,10 +1269,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1321,10 +1291,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1357,10 +1324,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1380,11 +1344,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$int">
-              <static>
-                \frac{128}{3}
-              </static>
-              </var>
+ 
             <pg-code>
               $int=Compute("128/3");
             </pg-code>
@@ -1404,10 +1364,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1427,10 +1384,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1464,10 +1418,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1530,10 +1481,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>

@@ -56,7 +56,7 @@
       <!-- START figures/fig_improper1.tex -->
       <image xml:id="img_improper1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -86,7 +86,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_improper1.tex END -->
     </figure>
@@ -230,7 +230,7 @@
             <!-- START figures/fig_eximpint1a.tex -->
                 <image xml:id="img_impint1a">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -257,7 +257,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_eximpint1a.tex END -->
               </figure>
@@ -272,7 +272,7 @@
 						\amp = \lim_{b\to\infty} \ln(b)\\
 						\amp = \infty.
               \end{aligned}</m>
-	
+ 
               The limit does not exist,
               hence the improper integral <m>\ds\int_1^\infty\frac1x\ dx</m> diverges.
               Compare the graphs in <xref ref="fig_impint1a">Figures</xref>
@@ -285,7 +285,7 @@
             <!-- START figures/fig_eximpint1b.tex -->
                 <image xml:id="img_impint1b">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -311,7 +311,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_eximpint1b.tex END -->
               </figure>
@@ -326,7 +326,7 @@
 					\amp = \lim_{a\to-\infty} e^0-e^a \\
 					\amp = 1.
               \end{aligned}</m>
-		
+ 
 		A graph of the area defined by this integral is given in <xref ref="fig_impint1c">Figure</xref>.
 
               <figure xml:id="fig_impint1c">
@@ -334,7 +334,7 @@
             <!-- START figures/fig_eximpint1c.tex -->
                 <image xml:id="img_impint1c">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -360,7 +360,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_eximpint1c.tex END -->
               </figure>
@@ -388,7 +388,7 @@
             <!-- START figures/fig_eximpint1d.tex -->
                 <image xml:id="img_impint1d">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -414,7 +414,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_eximpint1d.tex END -->
               </figure>
@@ -450,7 +450,7 @@
           <!-- START figures/fig_eximpint2.tex -->
           <image xml:id="img_impint2">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -476,7 +476,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_eximpint2.tex END -->
         </figure>
@@ -564,7 +564,7 @@
             <!-- START figures/fig_impint3.tex -->
                 <image xml:id="img_impint3">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -590,7 +590,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_impint3.tex END -->
               </figure>
@@ -615,7 +615,7 @@
             <!-- START figures/fig_impint3b.tex -->
                 <image xml:id="img_impint3b">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -645,7 +645,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_impint3b.tex END -->
               </figure>
@@ -713,7 +713,7 @@
           <!-- START figures/fig_impint4.tex -->
           <image xml:id="img_impint4">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -743,7 +743,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_impint4.tex END -->
         </figure>
@@ -893,7 +893,7 @@
             <!-- START figures/fig_impint5.tex -->
                 <image xml:id="img_impint5">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -921,7 +921,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_impint5.tex END -->
               </figure>
@@ -953,7 +953,7 @@
             <!-- START figures/fig_impint5b.tex -->
                 <image xml:id="img_impint5b">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -981,7 +981,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_impint5b.tex END -->
               </figure>
@@ -1110,7 +1110,7 @@
           <!-- START figures/fig_impint6.tex -->
           <image xml:id="img_impint6">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -1138,7 +1138,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_impint6.tex END -->
         </figure>

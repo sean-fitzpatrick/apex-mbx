@@ -710,10 +710,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -737,10 +734,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -760,10 +754,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -787,10 +778,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -816,10 +804,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -839,11 +824,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$partial">
-              <static>
-                \text{partial}
-              </static>
-              </var>
+ 
             <pg-code>
               $partial="partial";
               Context()->strings->add($partial=>{},);
@@ -886,10 +867,7 @@
       <exercise xml:id="x12_08_ex_07">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -919,16 +897,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzdt">
-              <static>
-                2x-4yt
-              </static>
-              </var>
-              <var name="$dzdt1">
-              <static>
-                2
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',t=>'Real');
               $x=Compute("t");
@@ -965,10 +935,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -999,16 +966,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzdt">
-              <static>
-                \frac{1}{1+y^2}(-\sin(t) )-\frac{2xy}{(y^2+1)^2}\cos(t)
-              </static>
-              </var>
-              <var name="$dzdt1">
-              <static>
-                -\frac{1}{2}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',t=>'Real');
               $x=Compute("cos(t)");
@@ -1046,10 +1005,7 @@
       <exercise xml:id="x12_08_ex_10">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1081,16 +1037,8 @@
       <exercise xml:id="x12_08_ex_08">
         <webwork seed="1">
             <setup>
-              <var name="$dzdt">
-              <static>
-                -\sin(x) \sin(y) (\pi) + \cos(x) \cos(y) (2\pi)
-              </static>
-              </var>
-              <var name="$dzdt1">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',t=>'Real');
               $x=Compute("pi t");
@@ -1140,10 +1088,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1163,11 +1108,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$zeros">
-              <static>
-                -\sqrt{3/2}, 0, \sqrt{3/2}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $zeros=Compute("-sqrt(3/2), 0, sqrt(3/2)");
@@ -1189,10 +1130,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1213,11 +1151,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$zeros">
-              <static>
-                0, \pi
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $zeros=Compute("0, pi");
@@ -1266,10 +1200,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1297,11 +1228,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$zeros">
-              <static>
-                0,\frac{1}{pi}\arctan(sqrt{5}), 1-\frac{1}{pi}\arctan(sqrt{5}), 1, 1+\frac{1}{pi}\arctan(sqrt{5}), 2-\frac{1}{pi}\arctan(sqrt{5})
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $zeros=Compute("0, 1/pi*arctan(sqrt(5)), 1- 1/pi*arctan(sqrt(5)), 1, 1+1/pi*arctan(sqrt(5)), 2-1/pi*arctan(sqrt(5))");
@@ -1430,10 +1357,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1467,26 +1391,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzds">
-              <static>
-                -\pi\sin(\pi x + \pi y/2)\cdot t^2-\frac{1}{2}\pi\sin(\pi x + \pi y/2)\cdot 2st
-              </static>
-              </var>
-              <var name="$dzdt">
-              <static>
-                -\pi\sin(\pi x + \pi y/2)\cdot 2st-\frac{1}{2}\pi\sin(\pi x + \pi y/2)\cdot 2t^2
-              </static>
-              </var>
-              <var name="$dzds1">
-              <static>
-                2\pi
-              </static>
-              </var>
-              <var name="$dzdt1">
-              <static>
-                5\pi/2
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',s=>'Real', t=>'Real');
               $x=Compute("st^2");
@@ -1542,26 +1450,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzds">
-              <static>
-                2x\cos(t) +2y\sin(t)
-              </static>
-              </var>
-              <var name="$dzdt">
-              <static>
-                -2xs\sin(t) + 2ys\cos(t)
-              </static>
-              </var>
-              <var name="$dzds1">
-              <static>
-                4
-              </static>
-              </var>
-              <var name="$dzdt1">
-              <static>
-                0
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',s=>'Real', t=>'Real');
               $x=Compute("st^2");
@@ -1616,26 +1508,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzds">
-              <static>
-                -2yt^2e^{-(x^2+y^2)}
-              </static>
-              </var>
-              <var name="$dzdt">
-              <static>
-                -2xe^{-(x^2+y^2)}-4stye^{-(x^2+y^2)}
-              </static>
-              </var>
-              <var name="$dzds1">
-              <static>
-                -2/e^2
-              </static>
-              </var>
-              <var name="$dzdt1">
-              <static>
-                -6/e^2
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->add(y=>'Real',s=>'Real', t=>'Real');
               $x=Compute("st^2");
@@ -1701,10 +1577,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1728,11 +1601,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dydx">
-              <static>
-                -\frac{x}{y^2}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $dydx=Compute("-x/y^2");
@@ -1754,10 +1623,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1782,11 +1648,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dydx">
-              <static>
-                -\frac{2x+y}{2y+x}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $dydx=Compute("-(2x+y)/(2y+x)");
@@ -1819,10 +1681,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1842,11 +1701,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzdt">
-              <static>
-                0
-              </static>
-              </var>
+ 
             <pg-code>
               $dzdt=Compute("0");
             </pg-code>
@@ -1867,10 +1722,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1898,16 +1750,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$dzds">
-              <static>
-                -2
-              </static>
-              </var>
-              <var name="$dzdt">
-              <static>
-                5
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $dzds=Compute("-2");
               $dzdt=Compute("5");

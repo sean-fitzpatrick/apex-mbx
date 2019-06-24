@@ -12,11 +12,11 @@
 
 #   1) Make a copy of Makefile.paths.original
 #      as Makefile.paths, which git will ignore.
-#   2) Edit Makefile.paths to provide full paths to the root folders 
+#   2) Edit Makefile.paths to provide full paths to the root folders
 #      of your local clones of the project repository and the mathbook
 #      repository as described below.
 #   3) The files Makefile and Makefile.paths.original
-#      are managed by git revision control and any edits you make to 
+#      are managed by git revision control and any edits you make to
 #      these will conflict. You should only be editing Makefile.paths.
 
 ##############
@@ -56,7 +56,7 @@ STYLE     = $(PRJ)/style
 IMGSRC    = $(PRJSRC)/images
 
 # The project's main hub file
-MAINFILE  = $(PRJSRC)/index.mbx
+MAINFILE  = $(PRJSRC)/index.ptx
 
 # The project's styling files
 CSS       = $(STYLE)/css/apex.css
@@ -82,10 +82,10 @@ IMAGESOUT  = $(OUTPUT)/images
 # of PCC's server in a nontrivial capacity.    <alex.jordan@pcc.edu>
 SERVER = https://webwork.pcc.edu
 
-#  Write out each WW problem as a standalone problem in PGML ready 
-#  for use on a WW server.  "def" files and "header" files are 
-#  produced. Directories and filenames are derived from titles of 
-#  chapters, sections, etc., in addition to the titles of the 
+#  Write out each WW problem as a standalone problem in PGML ready
+#  for use on a WW server.  "def" files and "header" files are
+#  produced. Directories and filenames are derived from titles of
+#  chapters, sections, etc., in addition to the titles of the
 #  problems themselves.
 #
 #  Results land in the subdirectory:  $(PGOUT)/local
@@ -95,7 +95,7 @@ pg:
 	cd $(PGOUT); \
 	xsltproc -xinclude --stringparam chunk.level 2 $(MBXSL)/mathbook-webwork-archive.xsl $(MAINFILE)
 
-#  HTML output 
+#  HTML output
 #  Output lands in the subdirectory:  $(HTMLOUT)
 html:
 	install -d $(HTMLOUT)

@@ -379,7 +379,7 @@
           <!-- START figures/fig_rr3.tex -->
         <image xml:id="img_rr3" width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[>=latex]
           \draw(0,0) -- (3,0) node [pos=.5,above] {\scriptsize $B=1/2$} -- (0,-3) node [pos=.4,below] {\scriptsize $C$}-- (0,0) node [pos=.5,rotate=90,shift={(.1,.2)}] {\scriptsize $A=1/2$};
@@ -394,7 +394,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_rr3.tex END -->
       </figure>
@@ -513,7 +513,7 @@
           <!-- START figures/fig_rr4.tex -->
         <image xml:id="img_rr4" width="47%">
           <description></description>
-          <latex-image-code>
+          <latex-image>
           <![CDATA[
           \begin{tikzpicture}[>=latex]
 
@@ -525,7 +525,7 @@
 
           \end{tikzpicture}
           ]]>
-          </latex-image-code>
+          </latex-image>
         </image>
           <!-- figures/fig_rr4.tex END -->
       </figure>
@@ -672,14 +672,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -698,14 +692,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -728,21 +716,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                0.7958
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                0.07958
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                0.007958
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(ReducedConstants=>0);
               $a = Compute("5/(2pi)");
@@ -801,21 +777,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                0.7958
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                0.007958
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                0.00007958
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(ReducedConstants=>0);
               $a = Compute("5/(2pi)");
@@ -870,11 +834,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                63.14
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(ReducedConstants=>0);
               $a = Compute("abs(-80*sqrt(2)+50)");
@@ -901,16 +861,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                64.44
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                78.89
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context()->flags->set(ReducedConstants=>0);
               $a = Compute("abs(-40*sqrt(5)+25)");
@@ -957,21 +909,9 @@
         <webwork seed="1">
             <setup>
             <!--Static answers are in rad/s-->
-              <var name="$a">
-              <static>
-                0.0573
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                0.0725
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                0.0733
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(ReducedConstants=>0);
               $a = Compute("10000/5280*500/1^2*cos(atan(10000/5280/1))^2");
@@ -1031,21 +971,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                0.07261
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                3.667
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                7.333
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(ReducedConstants=>0);
               $hmi = Compute("100/5280");
@@ -1107,28 +1035,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                0.04170
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                0.4583
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                3.355
-              </static>
-              </var>
-              <var name="$d">
-            <!--FUNGUS: How do I code this answer? It doesn't work, so it's not really infinity.
-            And in the same comment: Why does the svg image not load in Firefox for Ubuntu?-->
-              <static>
-                /infty
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $f = Compute("x/sqrt(24^2-x^2)");
               $a = Compute($f->eval(x=>1));
@@ -1149,7 +1059,7 @@
             <!-- START figures/fig_04_02_ex_09.tex -->
                 <image xml:id="img_04_02_ex_09">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=latex]
 
@@ -1164,7 +1074,7 @@
                   \draw [->,>=latex] (34pt,2pt) -- node [above right,pos=.5] {\scriptsize 1 ft/s} (50pt,2pt);
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_04_02_ex_09.tex END -->
               </figure>
@@ -1221,26 +1131,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                30.59
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                36.06
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                301.5
-              </static>
-              </var>
-              <var name="$d">
-            <!--Text answer.-->
-              <static>
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $f = Compute("30*sqrt(10^2+x^2)/x");
               $a = Compute($f->eval(x=>50));
@@ -1260,7 +1154,7 @@
             <!-- START figures/fig_04_02_ex_10.tex -->
                 <image xml:id="img_04_02_ex_10">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=latex]
 
@@ -1289,7 +1183,7 @@
                   %\draw [->,>=latex] (34pt,2pt) -- node [above right,pos=.5] {\scriptsize 1 ft/s} (50pt,2pt);
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_04_02_ex_10.tex END -->
               </figure>
@@ -1340,26 +1234,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                50.92
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                0.5093
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                0.1411
-              </static>
-              </var>
-              <var name="$d">
-              <static>
-                52.36
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $f = Compute("160/(pi*x^2)");
               $a = Compute($f->eval(x=>1));
@@ -1425,21 +1303,9 @@
       <exercise xml:id="exer_04_02_ex_12">
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                0.6325
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                1.600
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                51.96
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               $f = Compute("2x/sqrt(x^2+30^2)");
               $a = Compute($f->eval(x=>10));
@@ -1461,7 +1327,7 @@
             <!-- START figures/fig_04_02_ex_12.tex -->
                 <image xml:id="img_04_02_ex_12">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=latex,x=1pt,y=1pt]
 
@@ -1480,7 +1346,7 @@
                   \draw [thick,->](40,5) --(55,5) node[pos=.5,above] {\scriptsize 2 ft/s};
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_04_02_ex_12.tex END -->
               </figure>
@@ -1526,26 +1392,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                80
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                1.715
-              </static>
-              </var>
-              <var name="$c">
-              <static>
-                1.873
-              </static>
-              </var>
-              <var name="$d">
-              <static>
-                34.16
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               $a = Compute("sqrt(30^2+40^2)+30");
               $a = NumberWithUnits("$a ft");
@@ -1612,16 +1462,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                105
-              </static>
-              </var>
-              <var name="$b">
-              <static>
-                17.45
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               $a = Compute("100+5");
               $a = NumberWithUnits("$a ft");
@@ -1665,11 +1507,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$a">
-              <static>
-                0.003144
-              </static>
-              </var>
+ 
             <pg-code>
               $a = Compute("5*16/(9*pi*30^2)");
               $a = NumberWithUnits("$a ft/s");

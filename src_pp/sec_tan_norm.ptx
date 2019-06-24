@@ -221,7 +221,7 @@
           <!-- START figures/fig_tannorm2.tex -->
           <image xml:id="img_tannorm2">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -255,7 +255,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_tannorm2.tex END -->
         </figure>
@@ -282,7 +282,7 @@
       <!-- START figures/fig_tannorm_intro1.tex -->
       <image xml:id="img_tannorm_intro1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}[>=stealth]
         \begin{axis}[%
@@ -312,7 +312,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_tannorm_intro1.tex END -->
     </figure>
@@ -568,7 +568,7 @@
           <!-- START figures/fig_tannorm4.tex -->
           <image xml:id="img_tannorm4">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -601,7 +601,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_tannorm4.tex END -->
         </figure>
@@ -865,7 +865,7 @@
           <!-- START figures/fig_tannorm6.tex -->
           <image xml:id="img_tannorm6">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -894,7 +894,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_tannorm6.tex END -->
         </figure>
@@ -937,7 +937,7 @@
           <!-- START figures/fig_tannorm7b.tex -->
           <image xml:id="img_tannorm7b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
             \begin{axis}[%
@@ -971,7 +971,7 @@
             \draw (B) node [shift={(9pt,8pt)}] {\scriptsize $t=5$};
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_tannorm7b.tex END -->
         </figure>
@@ -1134,10 +1134,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1157,10 +1154,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1190,10 +1184,7 @@
       <exercise xml:id="x11_04_ex_05">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1214,16 +1205,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$T">
-              <static>
-                \la \frac{1}{\sqrt{1+\sin^2(t) }},-\frac{\sin(t) }{\sqrt{1+\sin^2(t) }} \ra
-              </static>
-              </var>
-              <var name="$Ta">
-              <static>
-                \la \sqrt{2/3}, -1/\sqrt{3}\ra
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1265,10 +1248,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1292,16 +1272,8 @@
       <exercise xml:id="x11_04_ex_08">
         <webwork seed="1">
             <setup>
-              <var name="$T">
-              <static>
-                \la -\sin(t) ,\cos(t) \ra
-              </static>
-              </var>
-              <var name="$Ta">
-              <static>
-                \la 0, -1\ra
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1355,11 +1327,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                \la 2,0\ra + t\la 4/\sqrt{17},1/\sqrt{17}\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1382,11 +1350,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                \la \pi/4,\sqrt{2}/{2}\ra + t\la \sqrt{2/3},-1/\sqrt{3}\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1409,10 +1373,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1438,11 +1399,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$L">
-              <static>
-                \la -1,0\ra + t\la 0,-1\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1476,10 +1433,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1500,10 +1454,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1524,10 +1475,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1548,10 +1496,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1601,10 +1546,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1634,10 +1576,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1667,10 +1606,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1700,10 +1636,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1742,10 +1675,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1766,11 +1696,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$N">
-              <static>
-                \la -\cos(t) ,-3/5\sin(t) ,-4/5\sin(t) \ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -1794,10 +1720,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1818,11 +1741,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$N">
-              <static>
-                \la  -\cos(at) ,-\sin(at) ,0\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real',a=>'Real');
@@ -1858,10 +1777,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1899,36 +1815,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$aT">
-              <static>
-                \frac{-2/t^5}{\sqrt{1+1/t^4}}
-              </static>
-              </var>
-              <var name="$aN">
-              <static>
-                \frac{2/t^3}{\sqrt{1+1/t^4}}
-              </static>
-              </var>
-              <var name="$aT1">
-              <static>
-                -\sqrt{2}
-              </static>
-              </var>
-              <var name="$aN1">
-              <static>
-                \sqrt{2}
-              </static>
-              </var>
-              <var name="$aT2">
-              <static>
-                -\frac{1}{4\sqrt{17}}
-              </static>
-              </var>
-              <var name="$aN2">
-              <static>
-                \frac{1}{\sqrt{17}}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2013,10 +1905,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2055,36 +1944,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$aT">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$aN">
-              <static>
-                4t^2
-              </static>
-              </var>
-              <var name="$aT1">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$aN1">
-              <static>
-                2\pi
-              </static>
-              </var>
-              <var name="$aT2">
-              <static>
-                2
-              </static>
-              </var>
-              <var name="$aN2">
-              <static>
-                4\pi
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2169,10 +2034,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2213,36 +2075,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$aT">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$aN">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$aT1">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$aN1">
-              <static>
-                5
-              </static>
-              </var>
-              <var name="$aT2">
-              <static>
-                0
-              </static>
-              </var>
-              <var name="$aN2">
-              <static>
-                5
-              </static>
-              </var>
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);

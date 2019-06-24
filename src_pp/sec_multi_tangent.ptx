@@ -1625,10 +1625,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1654,10 +1651,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1683,14 +1677,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1711,10 +1699,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1779,10 +1764,7 @@
       <exercise xml:id="x12_06_ex_05">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1823,21 +1805,9 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
-              <var name="$p[0]">
-              <static>
-                x=\pi/3+t, y=\pi/6, z=3/4 -\frac{3\sqrt{3}}{4}t
-              </static>
-              </var>
-              <var name="$p[1]">
-              <static>
-                x=\pi/3, y=\pi/6+t, z=3/4 +\frac{3\sqrt{3}}{4}t
-              </static>
-              </var>
-              <var name="$p[2]">
-              <static>
-                x=\pi/3+t/\sqrt{5}, y=\pi/6+2t/\sqrt{5}, z=3/4 +\frac{3\sqrt{3/5}}{4}t
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->add(t=>"Real");
@@ -1887,7 +1857,7 @@
                  $tch=(($sp==$cp) or $dc->isParallel($sp-$cp));
                  return (3*($par and $tch),@err);
                 });
-              };  
+              }; 
             </pg-code>
             </setup>
             <statement>
@@ -1936,10 +1906,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1979,21 +1946,9 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
-              <var name="$p[0]">
-              <static>
-                x=1+t, y=2, z=3
-              </static>
-              </var>
-              <var name="$p[1]">
-              <static>
-                x=1, y=2+t, z=3
-              </static>
-              </var>
-              <var name="$p[2]">
-              <static>
-                x=1+t/\sqrt{2}, y=2+t/\sqrt{2}, z=3
-              </static>
-              </var>
+ 
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->add(t=>"Real");
@@ -2043,7 +1998,7 @@
                  $tch=(($sp==$cp) or $dc->isParallel($sp-$cp));
                  return (3*($par and $tch),@err);
                 });
-              };  
+              }; 
             </pg-code>
             </setup>
             <statement>
@@ -2105,10 +2060,7 @@
       <exercise xml:id="x12_06_ex_09">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2130,11 +2082,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
-              <var name="$n">
-              <static>
-                x = \pi/3-\frac{3\sqrt{3}}{4}t, y = \pi/6+\frac{3\sqrt{3}}{4}t, z = 3/4 -t
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");
@@ -2201,10 +2149,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2226,11 +2171,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
-              <var name="$n">
-              <static>
-                x = 1, y = 2, z = 3-t
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");
@@ -2309,10 +2250,7 @@
       <exercise xml:id="x12_06_ex_13">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2333,10 +2271,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2356,10 +2291,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2379,10 +2311,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2414,10 +2343,7 @@
       <exercise xml:id="x12_06_ex_17">
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2437,11 +2363,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$t">
-              <static>
-                -\frac{3\sqrt{3}}4(x-\pi/3)+\frac{3\sqrt{3}}4(y-\pi/6) - (z-3/4) = 0
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitPlane");
               $t=Compute("-3sqrt(3)/4(x-pi/3)+3sqrt(3)/4(y-pi/6)-(z-3/4)=0");
@@ -2463,10 +2385,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2487,11 +2406,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$t">
-              <static>
-                z=3
-              </static>
-              </var>
+ 
             <pg-code>
               Context("ImplicitPlane");
               $t=Compute("z=3");
@@ -2537,10 +2452,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2578,16 +2490,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$n">
-              <static>
-                x= 4-2t, y = -3+ 2t/3, z = \sqrt{5} + 2\sqrt{5}t
-              </static>
-              </var>
-              <var name="$t">
-              <static>
-                -2(x-4) + \frac23(y+3) + 2\sqrt{5}(z-\sqrt{5})=0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");
@@ -2674,10 +2578,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2713,16 +2614,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$n">
-              <static>
-                x= 2 +\frac{\pi}{8\sqrt{3}}t, y = \frac{\pi}{12}-\sqrt{3}t, z = 4-\frac{\pi}{8\sqrt{3}}t
-              </static>
-              </var>
-              <var name="$t">
-              <static>
-                \frac{\pi}{8\sqrt{3}}(x-2) -\sqrt{3}(y-\frac{\pi}{12}) -\frac{\pi}{8\sqrt{3}}(z-4) = 0
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");

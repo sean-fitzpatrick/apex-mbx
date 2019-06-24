@@ -112,12 +112,12 @@
 
     <image>
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}[baseline=-3pt,>=stealth]
       \node at (0,0) {\(\begin{array}{ccc} \veci\amp \vecj\amp \veck \\  2\amp -1\amp 4\\3\amp 2\amp 5
       \end{array} \)};\end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 
     <p>
@@ -126,12 +126,12 @@
 
     <image>
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}[baseline=-3pt,>=stealth]
       \node at (0,0) {\(\begin{array}{ccccc} \veci\amp \vecj\amp \veck\amp \veci\amp \vecj \\  2\amp -1\amp 4\amp 2\amp -1\\3\amp 2\amp 5\amp 3\amp 2
       \end{array} \)};\end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 
     <p>
@@ -144,7 +144,7 @@
 
     <image>
       <description></description>
-      <latex-image-code>
+      <latex-image>
       <![CDATA[
       \begin{tikzpicture}[baseline=-3pt,>=stealth]
       \node at (0,0) {\(\begin{array}{ccccc} \ \veci\ \amp \ \vecj\ \amp \ \veck\ \amp \ \veci\ \amp \ \vecj\ \\  2\amp -1\amp 4\amp 2\amp -1\\3\amp 2\amp 5\amp 3\amp 2
@@ -155,7 +155,7 @@
       \draw[->, thin] (0,.4) -- (-2,-.8) node[below left] {\(-3\veck\)};
       \draw[->, thin] (.7,.4) -- (-1.3,-.8) node[below left ] {8\veci};
       \draw[->, thin] (1.3,.4) -- (-.5,-.8) node[below left] {10\vecj};\end{tikzpicture}]]>
-      </latex-image-code>
+      </latex-image>
     </image>
 
     <me>
@@ -607,7 +607,7 @@
 <!-- START figures/fig_crossp_parallelogram1.tex -->
               <image xml:id="img_crossp_parallelogram1">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[thick,scale=1.25]
 			\draw (0,0) -- node [below,pos=.5]  {\scriptsize $b$} (2,0) -- (3,1.5) -- (1,1.5) -- (0,0);
@@ -615,7 +615,7 @@
 			\draw (.8,0) -- (.8,.2) -- (1,.2);
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_crossp_parallelogram1.tex END -->
             </figure></cell>
@@ -628,7 +628,7 @@
 <!-- START figures/fig_crossp_parallelogram2.tex -->
               <image xml:id="img_crossp_parallelogram2">
                 <description></description>
-                <latex-image-code>
+                <latex-image>
                 <![CDATA[
                 \begin{tikzpicture}[thick,scale=1.25,>=stealth]
 			\draw [->](0,0) -- node [below,pos=1]  {\scriptsize $\vec v$} (2,0);
@@ -639,7 +639,7 @@
 			\draw (.8,0) -- (.8,.2) -- (1,.2);
                 \end{tikzpicture}
                 ]]>
-                </latex-image-code>
+                </latex-image>
               </image>
           <!-- figures/fig_crossp_parallelogram2.tex END -->
             </figure></cell>
@@ -704,7 +704,7 @@
             <!-- START figures/fig_crossp4b.tex -->
                     <image xml:id="img_crossp4b">
                       <description></description>
-                      <latex-image-code>
+                      <latex-image>
                       <![CDATA[
                       \begin{tikzpicture}
                       \begin{axis}[%
@@ -731,7 +731,7 @@
 
                       \end{tikzpicture}
                       ]]>
-                      </latex-image-code>
+                      </latex-image>
                     </image>
             <!-- figures/fig_crossp4b.tex END -->
                   </figure>
@@ -880,7 +880,7 @@
           <!-- START figures/fig_crossp5.tex -->
           <image xml:id="img_crossp5">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -907,7 +907,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_crossp5.tex END -->
         </figure>
@@ -1286,11 +1286,11 @@
           <!-- START figures/fig_crossp7.tex -->
           <image xml:id="img_crossp7">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
-	
-	
+ 
+ 
 	\draw [thick,->,rotate=45] (-2,0) -- (0,0) node [below,pos=.5] {\scriptsize $\vec\ell$};
 	\filldraw[black,rotate=45] (-2,0) circle (1.5pt);
 	\draw [rotate=45,->] (-1.8,0) arc (0:-270:.2);
@@ -1299,9 +1299,9 @@
 	\begin{scope}[shift={(-.05,.05)}]
 	\draw [thick,->,rotate=-45] (-1.5,0)node [left] {\scriptsize $\vec F$} -- (0,0);
 		\end{scope}
-	
+ 
 	\begin{scope}[shift={(3,0)}]
-		
+ 
 	\draw [thick,->,rotate=45] (-2,0) -- (0,0) node [below,pos=.5] {\scriptsize $\vec\ell$};
 	\filldraw[black,rotate=45] (-2,0) circle (1.5pt);
 	\draw [rotate=45,->] (-1.8,0) arc (0:-270:.2);
@@ -1314,7 +1314,7 @@
 	\end{scope}
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_crossp7.tex END -->
         </figure>
@@ -1342,9 +1342,9 @@
               Since the lever arm makes a
               <m>45^\circ</m> angle with the horizontal and is 2ft long,
               we can state that <m>\vec \ell = 2\la \cos(45^\circ) ,\sin(45^\circ) \ra = \la \sqrt2,\sqrt2\ra</m>.
-	
+ 
 	Since the force vector is perpendicular to the lever arm (as seen in the left hand side of <xref ref="fig_crossp7">Figure</xref>), we can conclude it is making an angle of <m>-45^\circ</m> with the horizontal. As it has a magnitude of 10lb, we can state <m>\vec F = 10\la \cos(-45^\circ), \sin(-45^\circ)\ra = \la 5\sqrt2,-5\sqrt2\ra</m>.
-	
+ 
 	Using Equation <xref ref="eq_crossp3" /> to find the torque requires a cross product. We again let the third component of each vector be 0  and compute the cross product:
               <md>
                 <mrow>\vec\tau \amp = \crossp \ell F</mrow>
@@ -1352,7 +1352,7 @@
                 <mrow>\amp = \la 0,0,-20\ra</mrow>
               </md>
               This clearly has a magnitude of 20 ft-lb.
-	
+ 
 	We can view the force and lever arm vectors as lying <q>on the page</q>; our computation of <m>\vec\tau</m> shows that the torque goes <q>into the page.</q> This follows the Right Hand Rule of the cross product, and it also matches well with the example of the wrench turning the bolt. Turning a bolt clockwise moves it in.
             </p>
           </li>
@@ -1412,10 +1412,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1435,10 +1432,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1462,10 +1456,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1485,14 +1476,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$true">
-              <set><member correct="yes">True</member>
-              <member>False</member></set>
-              </var>
-              <var name="$false">
-              <set><member>True</member>
-              <member correct="yes">False</member></set>
-              </var>
+ 
+ 
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1512,10 +1497,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1545,11 +1527,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \la 12,-15,3\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $cp=Vector("&lt;12, -15, 3>");
@@ -1575,11 +1553,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \la 11, 1, -17\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $cp=Vector("&lt;11, 1, -17>");
@@ -1605,11 +1579,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \la -5, -31, 27\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $cp=Vector("&lt;-5, -31, 27>");
@@ -1635,11 +1605,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \la 47, -36, -44\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $cp=Vector("&lt;47, -36, -44>");
@@ -1665,11 +1631,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \la 0, -2, 0\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $cp=Vector("&lt;0, -2, 0>");
@@ -1695,11 +1657,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \la 0, 0, 0\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               $cp=Vector("&lt;0, 0, 0>");
@@ -1725,11 +1683,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \hat{k}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(ijk=>1);
@@ -1756,11 +1710,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                -\hat{\jmath}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(ijk=>1);
@@ -1786,11 +1736,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$cp">
-              <static>
-                \hat{\imath}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(ijk=>1);
@@ -1818,10 +1764,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -1843,10 +1786,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -1879,11 +1819,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normucv">
-              <static>
-                5
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $normucv=Formula("5");
@@ -1902,11 +1838,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normucv">
-              <static>
-                21
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $normucv=Formula("21");
@@ -1925,11 +1857,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normucv">
-              <static>
-                0
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $normucv=Formula("0");
@@ -1948,11 +1876,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normucv">
-              <static>
-                5
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $normucv=Formula("5");
@@ -1981,11 +1905,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                \sqrt{14}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("sqrt(14)");
@@ -2007,11 +1927,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                \sqrt{230}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("sqrt(230)");
@@ -2033,11 +1949,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                3
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("3");
@@ -2059,11 +1971,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                6
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("6");
@@ -2095,11 +2003,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                5\sqrt{2}/2
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("5sqrt(2)/2");
@@ -2121,11 +2025,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                3\sqrt{30}/2
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("3sqrt(30)");
@@ -2147,11 +2047,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                1
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("1");
@@ -2173,11 +2069,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                5/2
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("5/2");
@@ -2210,11 +2102,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                7
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("7");
@@ -2242,11 +2130,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$area">
-              <static>
-                4\sqrt{14}
-              </static>
-              </var>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
               $area=Formula("4sqrt(14)");
@@ -2283,11 +2167,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$volume">
-              <static>
-                2
-              </static>
-              </var>
+ 
             <pg-code>
               $volume=Compute("2");
             </pg-code>
@@ -2308,11 +2188,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$volume">
-              <static>
-                15
-              </static>
-              </var>
+ 
             <pg-code>
               $volume=Compute("15");
             </pg-code>
@@ -2343,11 +2219,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$w">
-              <static>
-                \pm\frac{1}{\sqrt{6}}\la 1,1,-2\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
@@ -2371,11 +2243,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$w">
-              <static>
-                \pm\frac{1}{\sqrt{21}}\la -2,1,4\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
@@ -2399,11 +2267,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$w">
-              <static>
-                \pm\la 0,1,0\ra
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
@@ -2427,11 +2291,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$w">
-              <static>
-                \text{any unit vector orthogonal to $\vec u$}
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0);
@@ -2461,10 +2321,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2486,10 +2343,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2512,10 +2366,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2536,10 +2387,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2562,10 +2410,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2592,10 +2437,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>

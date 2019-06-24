@@ -251,7 +251,7 @@
       <!-- START figures/fig_trigint2.tex -->
       <image xml:id="img_trigint2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -284,7 +284,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_trigint2.tex END -->
     </figure>

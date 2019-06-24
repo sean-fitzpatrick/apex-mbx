@@ -103,7 +103,7 @@
       <!-- START figures/fig_vectintro1.tex -->
       <image xml:id="img_vectintro1">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -128,7 +128,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_vectintro1.tex END -->
     </figure>
@@ -152,7 +152,7 @@
       <!-- START figures/fig_vectintro2.tex -->
       <image xml:id="img_vectintro2">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -177,7 +177,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_vectintro2.tex END -->
     </figure>
@@ -290,7 +290,7 @@
               Using <m>P</m> as the initial point,
               we move 2 units in the positive <m>x</m>-direction and <m>-1</m> units in the positive <m>y</m>-direction to arrive at the terminal point <m>P\,'=(5,1)</m>,
               as drawn in <xref ref="fig_vect1">Figure</xref>(a).
-	
+ 
 	The magnitude of <m>\vec v</m> is determined directly from the component form:
               <me>
                 \norm{\vec v} =\sqrt{2^2+(-1)^2} = \sqrt{5}
@@ -303,7 +303,7 @@
             <!-- START figures/fig_vectintro3.tex -->
                     <image xml:id="img_vectintro3">
                       <description></description>
-                      <latex-image-code>
+                      <latex-image>
                       <![CDATA[
                       \begin{tikzpicture}
                       \begin{axis}[%
@@ -329,7 +329,7 @@
 
                       \end{tikzpicture}
                       ]]>
-                      </latex-image-code>
+                      </latex-image>
                     </image>
             <!-- figures/fig_vectintro3.tex END -->
                   </figure>
@@ -456,7 +456,7 @@
               <m>-1</m> unit in the positive <m>y</m>-direction,
               and 3 units in the positive <m>z</m>-direction to arrive at the terminal point <m>Q' = (3,0,4)</m>,
               illustrated in <xref ref="fig_vect1">Figure</xref>(b).
-	
+ 
 	The magnitude of <m>\vec u</m> is:
               <me>
                 \norm{\vec u} = \sqrt{2^2+(-1)^2+3^2} = \sqrt{14}
@@ -572,7 +572,7 @@
           <!-- START figures/fig_vect2.tex -->
           <image xml:id="img_vect2">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -596,7 +596,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_vect2.tex END -->
         </figure>
@@ -659,7 +659,7 @@
       <!-- START figures/fig_vect2b.tex -->
       <image xml:id="img_vect2b">
         <description></description>
-        <latex-image-code>
+        <latex-image>
         <![CDATA[
         \begin{tikzpicture}
         \begin{axis}[%
@@ -686,7 +686,7 @@
 
         \end{tikzpicture}
         ]]>
-        </latex-image-code>
+        </latex-image>
       </image>
       <!-- figures/fig_vect2b.tex END -->
     </figure>
@@ -747,7 +747,7 @@
           <!-- START figures/fig_vect4.tex -->
           <image xml:id="img_vect4">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
             \begin{axis}[%
@@ -777,7 +777,7 @@
 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_vect4.tex END -->
         </figure>
@@ -824,7 +824,7 @@
             <!-- START figures/fig_vect3.tex -->
                 <image xml:id="img_vect3">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -848,7 +848,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_vect3.tex END -->
               </figure>
@@ -1084,7 +1084,7 @@
             <!-- START figures/fig_vect5.tex -->
                 <image xml:id="img_vect5">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}
                   \begin{axis}[%
@@ -1110,7 +1110,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_vect5.tex END -->
               </figure>
@@ -1275,13 +1275,13 @@
           <!-- START figures/fig_vect6.tex -->
           <image xml:id="img_vect6">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
-	
+ 
 	\filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1)--cycle;
 	\draw (0,-.5) node {50lb};
-	
+ 
 	\draw [thick] (-1.5,1.5) -- (2,1.5);
 	\clip (-1.5,1.5) rectangle (2,-1.25);
 	\draw [thick,rotate=120] (0,0) -- (3,0);
@@ -1297,10 +1297,10 @@
 	%\draw [dashed,->,>=stealth] (1.5,0) arc (0:45:1.5);
 	%\draw [rotate=15] (1.8,0) node {\scriptsize $45^\circ$};
 
-	
+ 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_vect6.tex END -->
         </figure>
@@ -1348,7 +1348,7 @@
           <!-- START figures/fig_vect6b.tex -->
           <image xml:id="img_vect6b">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}[>=stealth]
 	\draw [thick,rotate=120,->] (0,0) -- (1.5,0) node [left] {\scriptsize $\vec F_1$};
@@ -1366,10 +1366,10 @@
 	\draw [dashed,->,>=stealth] (1.5,0) arc (0:45:1.5);
 	\draw [rotate=15] (1.8,0) node {\scriptsize $45^\circ$};
 
-	
+ 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_vect6b.tex END -->
         </figure>
@@ -1510,16 +1510,16 @@
           <!-- START figures/fig_vect8.tex -->
           <image xml:id="img_vect8">
             <description></description>
-            <latex-image-code>
+            <latex-image>
             <![CDATA[
             \begin{tikzpicture}
 	\draw [dashed] (-1.5,-.2) -- (2,-.2);
 	\draw (1.75,.65) node {\scriptsize 2ft $\left\{\rule{0pt}{.8cm}\right.$};
 	\filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1)--cycle;
 	\draw (0,-.5) node {25lb};
-	
-	
-	
+ 
+ 
+ 
 	\draw [thick] (-1.5,1.5) -- (2,1.5);
 	\clip (-1.5,1.5) rectangle (2,-1.25);
 	\draw [thick,rotate=110] (0,0) -- (3,0);
@@ -1532,10 +1532,10 @@
 	\draw [rotate=99] (1.2,0) node {\scriptsize $\theta$};
 	\draw [thick,->,>=stealth] (-1.45,-.5) -- (-.8,-.5) node [pos=.15,below] {\scriptsize $\vec F_w$};
 
-	
+ 
             \end{tikzpicture}
             ]]>
-            </latex-image-code>
+            </latex-image>
           </image>
           <!-- figures/fig_vect8.tex END -->
         </figure>
@@ -1626,10 +1626,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1650,10 +1647,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1674,10 +1668,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1697,10 +1688,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1722,10 +1710,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -1755,16 +1740,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <static>
-                \langle1,6\rangle
-              </static>
-              </var>
-              <var name="$stan">
-              <static>
-                \hat{\mathi}+6\hat{\mathj}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector2D");
               Context()->constants->undefine(i,j);
@@ -1804,16 +1781,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <static>
-                \langle4,-4\rangle
-              </static>
-              </var>
-              <var name="$stan">
-              <static>
-                4\hat{\mathi}-4\hat{\mathj}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector2D");
               Context()->constants->undefine(i,j);
@@ -1853,16 +1822,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <static>
-                \langle6,-1,6\rangle
-              </static>
-              </var>
-              <var name="$stan">
-              <static>
-                6\hat{\mathi}-\hat{\mathj}+6\hat{k}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->constants->undefine(i,j,k);
@@ -1902,16 +1863,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$comp">
-              <static>
-                \langle2,2,0\rangle
-              </static>
-              </var>
-              <var name="$stan">
-              <static>
-                2\hat{\mathi}+2\hat{\mathj}
-              </static>
-              </var>
+ 
+ 
             <pg-code>
               Context("Vector");
               Context()->constants->undefine(i,j,k);
@@ -1953,10 +1906,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2011,10 +1961,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2078,10 +2025,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2090,7 +2034,7 @@
             <!-- START figures/fig_10_02_ex_11.tex -->
                 <image xml:id="img_10_02_ex_11">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[axis on top,%
@@ -2108,7 +2052,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_11.tex END -->
               </figure>
@@ -2118,7 +2062,7 @@
             <!-- START figures/fig_10_02_ex_11ans.tex -->
                 <image xml:id="img_10_02_ex_11ansX">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[axis on top,%
@@ -2140,7 +2084,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_11ans.tex END -->
               </figure>
@@ -2151,10 +2095,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2163,7 +2104,7 @@
             <!-- START figures/fig_10_02_ex_13.tex -->
                 <image xml:id="img_10_02_ex_13">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[axis on top,%
@@ -2181,7 +2122,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_13.tex END -->
               </figure>
@@ -2191,7 +2132,7 @@
             <!-- START figures/fig_10_02_ex_13ans.tex -->
                 <image xml:id="img_10_02_ex_13ansX">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}[axis on top,%
@@ -2213,7 +2154,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_13ans.tex END -->
                 Sketch of <m>\vec u-\vec v</m> shifted for clarity.
@@ -2225,10 +2166,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2237,7 +2175,7 @@
             <!-- START figures/fig_10_02_ex_14.tex -->
                 <image xml:id="img_10_02_ex_14">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}%
@@ -2269,7 +2207,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_14.tex END -->
               </figure>
@@ -2279,7 +2217,7 @@
             <!-- START figures/fig_10_02_ex_14ans.tex -->
                 <image xml:id="img_10_02_ex_14ansX">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}%
@@ -2311,7 +2249,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_14ans.tex END -->
               </figure>
@@ -2322,10 +2260,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2334,7 +2269,7 @@
             <!-- START figures/fig_10_02_ex_15.tex -->
                 <image xml:id="img_10_02_ex_15">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}%
@@ -2366,7 +2301,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_15.tex END -->
               </figure>
@@ -2376,7 +2311,7 @@
             <!-- START figures/fig_10_02_ex_15ans.tex -->
                 <image xml:id="img_10_02_ex_15ansX">
                   <description></description>
-                  <latex-image-code>
+                  <latex-image>
                   <![CDATA[
                   \begin{tikzpicture}[>=stealth]
                   \begin{axis}%
@@ -2408,7 +2343,7 @@
 
                   \end{tikzpicture}
                   ]]>
-                  </latex-image-code>
+                  </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_15ans.tex END -->
               </figure>
@@ -2430,26 +2365,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normu">
-              <static>
-                \sqrt{5}
-              </static>
-              </var>
-              <var name="$normv">
-              <static>
-                \sqrt{13}
-              </static>
-              </var>
-              <var name="$normupv">
-              <static>
-                \sqrt{26}
-              </static>
-              </var>
-              <var name="$normumv">
-              <static>
-                \sqrt{10}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("sqrt(5)");
@@ -2485,26 +2404,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normu">
-              <static>
-                \sqrt{17}
-              </static>
-              </var>
-              <var name="$normv">
-              <static>
-                \sqrt{3}
-              </static>
-              </var>
-              <var name="$normupv">
-              <static>
-                \sqrt{14}
-              </static>
-              </var>
-              <var name="$normumv">
-              <static>
-                \sqrt{26}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("sqrt(17)");
@@ -2540,26 +2443,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normu">
-              <static>
-                \sqrt{5}
-              </static>
-              </var>
-              <var name="$normv">
-              <static>
-                3\sqrt{5}
-              </static>
-              </var>
-              <var name="$normupv">
-              <static>
-                2\sqrt{5}
-              </static>
-              </var>
-              <var name="$normumv">
-              <static>
-                4\sqrt{5}
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("sqrt(5)");
@@ -2595,26 +2482,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$normu">
-              <static>
-                7
-              </static>
-              </var>
-              <var name="$normv">
-              <static>
-                35
-              </static>
-              </var>
-              <var name="$normupv">
-              <static>
-                42
-              </static>
-              </var>
-              <var name="$normumv">
-              <static>
-                28
-              </static>
-              </var>
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("7");
@@ -2652,10 +2523,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2685,11 +2553,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$u">
-              <static>
-                \left\langle\frac{3}{\sqrt{58}},\frac{7}{\sqrt{58}}\right\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -2711,11 +2575,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$u">
-              <static>
-                \left\langle0.6,0.8\right\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -2737,11 +2597,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$u">
-              <static>
-                \left\langle\frac{1}{3},-\frac{2}{3},\frac{2}{3}\right\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2763,11 +2619,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="$u">
-              <static>
-                \left\langle\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\right\rangle
-              </static>
-              </var>
+ 
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2791,11 +2643,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$u">
-            <static>
-              \left\langle\cos\mathopen{}\left(50^{\circ}\right),\sin\mathopen{}\left(50^{\circ}\right)\right\rangle
-            </static>
-            </var>
+ 
           <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2818,11 +2666,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="$u">
-            <static>
-              \left\langle-\frac{1}{2},\frac{\sqrt{3}}{2}\right\rangle
-            </static>
-            </var>
+ 
           <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2845,10 +2689,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-            <var name="">
-            <static>
-            </static>
-            </var>
+ 
           <pg-code>
           </pg-code>
           </setup>
@@ -2887,10 +2728,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2910,10 +2748,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2933,10 +2768,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2959,10 +2791,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -2996,10 +2825,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3020,10 +2846,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3044,10 +2867,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
@@ -3067,10 +2887,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-              <var name="">
-              <static>
-              </static>
-              </var>
+ 
             <pg-code>
             </pg-code>
             </setup>
