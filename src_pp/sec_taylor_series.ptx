@@ -20,25 +20,25 @@
         <p>
           Let <m>f(x)</m> have derivatives of all orders at <m>x=c</m>.
 
-          <index>
-            <main>Taylor Series</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>Taylor Series</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>Maclaurin Series</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>Maclaurin Series</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>Maclaurin Series|see{Taylor Series}</main>
-          </index>
+          <idx>
+            <h>Maclaurin Series|see{Taylor Series}</h>
+          </idx>
 
-          <index>
-            <main>series</main><sub>Taylor</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Taylor</h>
+          </idx>
 
-          <index>
-            <main>series</main><sub>Maclaurin</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Maclaurin</h>
+          </idx>
 
         </p>
 
@@ -299,9 +299,9 @@
           and let <m>I</m> be an interval on which the Taylor series of <m>f(x)</m> converges.
           If <m>\lim\limits_{n\to\infty} R_n(x) = 0</m> for all <m>x</m> in <m>I</m>, then
 
-          <index>
-            <main>Taylor Series</main><sub>equality with generating function</sub>
-          </index>
+          <idx>
+            <h>Taylor Series</h><h>equality with generating function</h>
+          </idx>
 
           <me>
             f(x) = \infser[0] \frac{f^{(n)}(c)}{n!}(x-c)^n\ \text{ on \(I\). }
@@ -373,9 +373,9 @@
       centered at any point the domain of <m>f(x)</m>,
       is said to be an <em>analytic function</em>,
 
-      <index>
-        <main>analytic function</main>
-      </index>
+      <idx>
+        <h>analytic function</h>
+      </idx>
 
       and most, if not all,
       functions that we encounter within this course are analytic functions.
@@ -392,13 +392,13 @@
       We develop the Taylor series for one more important function,
       then give a table of the Taylor series for a number of common functions.
 
-      <index>
-        <main>Binomial Series</main>
-      </index>
+      <idx>
+        <h>Binomial Series</h>
+      </idx>
 
-      <index>
-        <main>series</main><sub>Binomial</sub>
-      </index>
+      <idx>
+        <h>series</h><h>Binomial</h>
+      </idx>
 
     </p>
 
@@ -581,9 +581,9 @@
 
       <p>
 
-        <index>
-          <main>Taylor Series</main><sub>common series</sub>
-        </index>
+        <idx>
+          <h>Taylor Series</h><h>common series</h>
+        </idx>
 
       </p>
     </insight>
@@ -596,9 +596,9 @@
           <m>\ds g(x) = \infser[0] b_nx^n</m> converge absolutely for <m>\abs{x}\lt R</m>,
           and let <m>h(x)</m> be continuous.
 
-          <index>
-            <main>power series</main><sub>algebra of</sub>
-          </index>
+          <idx>
+            <h>power series</h><h>algebra of</h>
+          </idx>
 
         </p>
 

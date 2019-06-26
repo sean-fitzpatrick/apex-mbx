@@ -55,9 +55,9 @@
           <dl>
             <li>
               <title>Constant Rule</title>
-              <index>
-                <main>derivative</main><sub>Constant Rule</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>Constant Rule</h>
+              </idx>
 
               <p>
                 <m>\lzoo{x}{c} = 0</m>, where <m>c</m> is a constant.
@@ -66,13 +66,13 @@
 
             <li xml:id="power-derivative-rule">
               <title>Power Rule</title>
-              <index>
-                <main>derivative</main><sub>Power Rule</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>Power Rule</h>
+              </idx>
 
-              <index>
-                <main>Power Rule</main><sub>differentiation</sub>
-              </index>
+              <idx>
+                <h>Power Rule</h><h>differentiation</h>
+              </idx>
 
               <p>
                 <m>\lzoo{x}{x^n}= nx^{n-1}</m>,
@@ -100,9 +100,9 @@
             </li>
           </dl>
 
-          <index>
-            <main>derivative</main><sub>basic rules</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>basic rules</h>
+          </idx>
 
         </p>
       </statement>
@@ -275,13 +275,13 @@
                   <mrow>\amp= \fp(x)\pm g'(x)</mrow>
                 </md>
 
-                <index>
-                  <main>derivative</main><sub>Sum/Difference Rule</sub>
-                </index>
+                <idx>
+                  <h>derivative</h><h>Sum/Difference Rule</h>
+                </idx>
 
-                <index>
-                  <main>Sum/Difference Rule</main><sub>of derivatives</sub>
-                </index>
+                <idx>
+                  <h>Sum/Difference Rule</h><h>of derivatives</h>
+                </idx>
 
               </p>
             </li>
@@ -294,13 +294,13 @@
                   <mrow>\amp = c\cdot\fp(x)</mrow>
                 </md>.
 
-                <index>
-                  <main>derivative</main><sub>Constant Multiple Rule</sub>
-                </index>
+                <idx>
+                  <h>derivative</h><h>Constant Multiple Rule</h>
+                </idx>
 
-                <index>
-                  <main>Constant Multiple Rule</main><sub>of derivatives</sub>
-                </index>
+                <idx>
+                  <h>Constant Multiple Rule</h><h>of derivatives</h>
+                </idx>
 
               </p>
             </li>
@@ -468,13 +468,13 @@
         <p>
           Let <m>y=f(x)</m> be a differentiable function on <m>I</m>.
 
-          <index>
-            <main>derivative</main><sub>higher order</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>higher order</h>
+          </idx>
 
-          <index>
-            <main>derivative</main><sub>notation</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>notation</h>
+          </idx>
 
           <ol>
             <li>
@@ -602,9 +602,9 @@
       What do higher order derivatives <em>mean</em>?
       What is the practical interpretation?
 
-      <index>
-        <main>derivative</main><sub>higher order!interpretation</sub>
-      </index>
+      <idx>
+        <h>derivative</h><h>higher order!interpretation</h>
+      </idx>
 
     </p>
 

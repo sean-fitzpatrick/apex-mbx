@@ -289,9 +289,9 @@
       <p>
         Let <m>f</m> be a continuous function on an open interval <m>I</m> and let <m>c</m> be in <m>I</m>.
 
-        <index>
-          <main>derivative</main><sub>at a point</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>at a point</h>
+        </idx>
 
         The <term>derivative of <m>f</m> at <m>c</m></term>, denoted <m>\fp(c)</m>, is
         <me>
@@ -305,9 +305,9 @@
         If <m>f</m> is differentiable at every point in <m>I</m>,
         then <term><m>f</m> is differentiable on <m>I</m></term>.
 
-        <index>
-          <main>differentiable</main>
-        </index>
+        <idx>
+          <h>differentiable</h>
+        </idx>
 
       </p>
     </statement>
@@ -324,13 +324,13 @@
         that is, it is the line through
         <m>(c,f(c))</m> whose slope is the derivative of <m>f</m> at <m>c</m>.
 
-        <index>
-          <main>tangent line</main>
-        </index>
+        <idx>
+          <h>tangent line</h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>tangent line</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>tangent line</h>
+        </idx>
 
       </p>
     </statement>
@@ -475,13 +475,13 @@
         the normal line is the vertical line through <m>\left(c,f(c)\right)</m>;
         that is, <m>x=c</m>.)
 
-        <index>
-          <main>derivative</main><sub>normal line</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>normal line</h>
+        </idx>
 
-        <index>
-          <main>normal line</main>
-        </index>
+        <idx>
+          <h>normal line</h>
+        </idx>
 
       </p>
     </statement>
@@ -749,13 +749,13 @@
         </me>
         is <term>the derivative of <m>f</m></term>.
 
-        <index>
-          <main>derivative</main><sub>as a function</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>as a function</h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>notation</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>notation</h>
+        </idx>
 
       </p>
 

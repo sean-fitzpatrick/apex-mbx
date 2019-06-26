@@ -44,9 +44,9 @@
       To produce an accurate sketch a given function <m>f</m>,
       consider the following steps.
 
-      <index>
-        <main>curve sketching</main>
-      </index>
+      <idx>
+        <h>curve sketching</h>
+      </idx>
 
       <ol>
         <li xml:id="item-find-domain">
@@ -267,7 +267,7 @@
             </latex-image>
           </image>
         </figure> -->
-      <sidebyside xml:id="fig_sketch1" widths="32% 32% 32%">
+      <sidebyside widths="32% 32% 32%">
         <caption>Sketching <m>f</m> in <xref ref="ex_sketch1">Example</xref>.</caption>
         <figure xml:id="fig_sketch1a">
           <caption/>
@@ -494,7 +494,7 @@
             </latex-image>
           </image>
         </figure> -->
-      <sidebyside xml:id="fig_sketch2" widths="32% 32% 32%">
+      <sidebyside widths="32% 32% 32%">
         <caption>Sketching <m>f</m> in <xref ref="ex_sketch2">Example</xref>.</caption>
         <figure xml:id="fig_sketch2a">
           <caption/>
@@ -739,7 +739,7 @@
             </latex-image>
           </image>
         </figure> -->
-      <sidebyside xml:id="fig_sketch3" widths="32% 32% 32%">
+      <sidebyside widths="32% 32% 32%">
         <caption>Sketching <m>f</m> in <xref ref="ex_sketch3">Example</xref>.</caption>
         <figure xml:id="fig_sketch3a">
           <caption/>
@@ -851,7 +851,7 @@
     <q>end behavior</q> is accurate.)
   </p>
 
-  <sidebyside xml:id="fig_sage_sinx" widths="47% 47%">
+  <sidebyside widths="47% 47%">
     <caption>CAS plots of <m>y=\sin(x)</m> illustrating the sample points</caption>
     <figure>
       <caption><booktitle>Sage</booktitle> output</caption>

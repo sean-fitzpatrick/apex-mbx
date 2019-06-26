@@ -10,9 +10,9 @@
     In this section we apply the concepts of extreme values to solve <q>word problems,</q>
     i.e., problems stated in terms of situations that require us to create the appropriate mathematical framework in which to solve the problem.
 
-    <index>
-      <main>optimization</main>
-    </index>
+    <idx>
+      <h>optimization</h>
+    </idx>
 
   </p>
 
@@ -44,7 +44,7 @@
         we are trying to maximize the area.
       </p>
         <!-- START figures/fig_opt1b.tex -->
-      <sidebyside widths="47% 47%" xml:id="fig_opt1">
+      <sidebyside widths="47% 47%">
         <caption>A sketch of the enclosure in <xref ref="ex_opt1">Example</xref>.</caption>
         <image>
           <description></description>
@@ -289,7 +289,7 @@
               A key feature of the sketches is to acknowledge that one side is not fenced.
             </p>
 
-            <sidebyside xml:id="fig_opt2" widths="47% 47%">
+            <sidebyside widths="47% 47%">
               <caption>A sketch of the enclosure in <xref ref="ex_opt2">Example</xref>.</caption>
             <!-- START figures/fig_opt2a.tex -->
               <image>

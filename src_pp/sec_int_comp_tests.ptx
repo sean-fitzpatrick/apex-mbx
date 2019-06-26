@@ -39,21 +39,21 @@
           Then <m>\ds \infser a_n</m> converges, if,
           and only if, <m>\ds\int_1^\infty a(x)\ dx</m> converges.
 
-          <index>
-            <main>series</main><sub>Integral Test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Integral Test</h>
+          </idx>
 
-          <index>
-            <main>Integral Test</main>
-          </index>
+          <idx>
+            <h>Integral Test</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Integral Test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Integral Test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Integral Test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Integral Test</h>
+          </idx>
 
         </p>
       </statement>
@@ -77,7 +77,7 @@
       </men>.
     </p>
 
-    <sidebyside xml:id="fig_integral_test" widths="47% 47%">
+    <sidebyside widths="47% 47%">
       <caption>Illustrating the truth of the Integral Test.</caption>
       <figure xml:id="fig_integral_test_a">
         <caption/>
@@ -403,21 +403,21 @@
           Let <m>\{a_n\}</m> and <m>\{b_n\}</m> be positive sequences where
           <m>a_n\leq b_n</m> for all <m>n\geq N</m>, for some <m>N\geq 1</m>.
 
-          <index>
-            <main>series</main><sub>Direct Comparison Test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Direct Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>Direct Comparison Test</main><sub>for series</sub>
-          </index>
+          <idx>
+            <h>Direct Comparison Test</h><h>for series</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Direct Comparison Test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Direct Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Direct Comparison Test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Direct Comparison Test</h>
+          </idx>
 
         </p>
 
@@ -449,9 +449,9 @@
         Because of <xref ref="thm_series_behavior">Theorem</xref>,
         any theorem that relies on a positive sequence still holds true when <m>a_n>0</m> for all but a finite number of values of <m>n</m>.
 
-        <index>
-          <main>sequence</main><sub>positive</sub>
-        </index>
+        <idx>
+          <h>sequence</h><h>positive</h>
+        </idx>
 
       </p>
     </aside>
@@ -595,21 +595,21 @@
         <p>
           Let <m>\{a_n\}</m> and <m>\{b_n\}</m> be positive sequences.
 
-          <index>
-            <main>series</main><sub>Limit Comparison Test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Limit Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>Limit Comparison Test</main><sub>for series</sub>
-          </index>
+          <idx>
+            <h>Limit Comparison Test</h><h>for series</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Limit Comparison Test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Limit Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Limit Comparison Test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Limit Comparison Test</h>
+          </idx>
 
         </p>
 

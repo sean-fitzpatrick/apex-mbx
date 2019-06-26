@@ -210,9 +210,9 @@
           The area of the region bounded by the curves <m>y=f(x)</m>,
           <m>y=g(x)</m> and the lines <m>x=a</m> and <m>x=b</m> is
 
-          <index>
-            <main>integration</main><sub>area between curves</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>area between curves</h>
+          </idx>
 
           <me>
             \int_a^b \big(f(x)-g(x)\big)\ dx

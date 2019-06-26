@@ -47,13 +47,13 @@
       as shown in <xref ref="fig_mass_intro">Figure</xref>(a),
       with the shape of some planar region <m>R</m>, as shown in part (b).
 
-      <index>
-        <main>lamina</main>
-      </index>
+      <idx>
+        <h>lamina</h>
+      </idx>
 
-      <index>
-        <main>mass</main>
-      </index>
+      <idx>
+        <h>mass</h>
+      </idx>
 
     </p>
 
@@ -222,9 +222,9 @@
           Let <m>\delta(x,y)</m> be a continuous density function of a lamina corresponding to a plane region <m>R</m>.
           The mass <m>M</m> of the lamina is
 
-          <index>
-            <main>mass</main>
-          </index>
+          <idx>
+            <h>mass</h>
+          </idx>
 
           <me>
             \text{ mass }  M = \iint_R\ dm = \iint_R \delta(x,y)\ dA
@@ -748,13 +748,13 @@
       if they are <q>out of balance</q>,
       their center of mass will be outside of the axle and it will shake terribly).
 
-      <index>
-        <main>center of mass</main>
-      </index>
+      <idx>
+        <h>center of mass</h>
+      </idx>
 
-      <index>
-        <main>mass</main><sub>center of</sub>
-      </index>
+      <idx>
+        <h>mass</h><h>center of</h>
+      </idx>
 
     </p>
 
@@ -811,9 +811,9 @@
           respectively.
           The center of mass <m>\overline{x}</m> of the system is located at
 
-          <index>
-            <main>center of mass</main>
-          </index>
+          <idx>
+            <h>center of mass</h>
+          </idx>
 
           <me>
             \overline{x} = \sum_{i=1}^nm_ix_i\Bigg/\sum_{i=1}^n m_i
@@ -996,9 +996,9 @@
           <m>(x_2,y_2)\ldots,(x_n,y_n)</m>, respectively,
           in the <m>x</m>-<m>y</m> plane.
 
-          <index>
-            <main>moment</main>
-          </index>
+          <idx>
+            <h>moment</h>
+          </idx>
 
         </p>
 
@@ -1042,9 +1042,9 @@
           in the <m>x</m>-<m>y</m> plane,
           and let <m>\ds M = \sum_{i=1}^n m_i</m>.
 
-          <index>
-            <main>center of mass</main>
-          </index>
+          <idx>
+            <h>center of mass</h>
+          </idx>
 
         </p>
 
@@ -1183,13 +1183,13 @@
         <p>
           Let a planar lamina be represented by a region <m>R</m> in the <m>x</m>-<m>y</m> plane with density function <m>\delta(x,y)</m>.
 
-          <index>
-            <main>center of mass</main>
-          </index>
+          <idx>
+            <h>center of mass</h>
+          </idx>
 
-          <index>
-            <main>moment</main>
-          </index>
+          <idx>
+            <h>moment</h>
+          </idx>
 
         </p>
 

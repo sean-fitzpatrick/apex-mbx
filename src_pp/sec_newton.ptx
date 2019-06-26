@@ -41,7 +41,7 @@
       This sequence of points will often converge rather quickly to a root of <m>f</m>.
     </p>
 
-    <sidebyside xml:id="fig_newt1" widths="31% 31% 31%">
+    <sidebyside widths="31% 31% 31%">
       <caption>Demonstrating the geometric concept behind Newton's Method.</caption>
       <figure xml:id="fig_newt1a">
         <caption/>
@@ -181,9 +181,9 @@
         To approximate the value of the root,
         accurate to <m>d</m> decimal places:
 
-        <index>
-          <main>Newton's Method</main>
-        </index>
+        <idx>
+          <h>Newton's Method</h>
+        </idx>
 
       </p>
 
@@ -523,7 +523,7 @@
       each successive approximation is twice as far from the true answer as the previous approximation.)
     </p>
 
-    <sidebyside xml:id="fig_newt4" widths="31% 31% 31%">
+    <sidebyside widths="31% 31% 31%">
       <caption>Newton's Method fails to find a root of <m>f(x) = x^{1/3}</m>, regardless of the choice of <m>x_0</m>.</caption>
       <figure xml:id="fig_newt4a">
         <caption/>

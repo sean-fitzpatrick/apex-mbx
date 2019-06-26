@@ -51,21 +51,21 @@
       <p>
         Let <m>f</m> be a function defined on an interval <m>I</m>.
 
-        <index>
-          <main>increasing function</main>
-        </index>
+        <idx>
+          <h>increasing function</h>
+        </idx>
 
-        <index>
-          <main>decreasing function</main>
-        </index>
+        <idx>
+          <h>decreasing function</h>
+        </idx>
 
-        <index>
-          <main>increasing function</main><sub>strictly</sub>
-        </index>
+        <idx>
+          <h>increasing function</h><h>strictly</h>
+        </idx>
 
-        <index>
-          <main>decreasing function</main><sub>strictly</sub>
-        </index>
+        <idx>
+          <h>decreasing function</h><h>strictly</h>
+        </idx>
 
       </p>
 
@@ -248,13 +248,13 @@
       Let <m>f</m> be a function on a domain <m>D</m>.
       To find intervals on which <m>f</m> is increasing and decreasing:
 
-      <index>
-        <main>increasing function</main><sub>finding intervals</sub>
-      </index>
+      <idx>
+        <h>increasing function</h><h>finding intervals</h>
+      </idx>
 
-      <index>
-        <main>decreasing function</main><sub>finding intervals</sub>
-      </index>
+      <idx>
+        <h>decreasing function</h><h>finding intervals</h>
+      </idx>
 
     </p>
 
@@ -537,25 +537,25 @@
         and differentiable on <m>I</m>,
         except possibly at <m>c</m>, where <m>c</m> is a critical number in <m>I</m>.
 
-        <index>
-          <main>First Derivative Test</main>
-        </index>
+        <idx>
+          <h>First Derivative Test</h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>First Deriv. Test</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>First Deriv. Test</h>
+        </idx>
 
-        <index>
-          <main>extrema</main><sub>and First Deriv. Test</sub>
-        </index>
+        <idx>
+          <h>extrema</h><h>and First Deriv. Test</h>
+        </idx>
 
-        <index>
-          <main>maximum</main><sub>and First Deriv. Test</sub>
-        </index>
+        <idx>
+          <h>maximum</h><h>and First Deriv. Test</h>
+        </idx>
 
-        <index>
-          <main>minimum</main><sub>and First Deriv. Test</sub>
-        </index>
+        <idx>
+          <h>minimum</h><h>and First Deriv. Test</h>
+        </idx>
 
       </p>
 

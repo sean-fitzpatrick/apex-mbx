@@ -129,21 +129,21 @@
               Let <m>f</m> be a continuous function on <m>[a,\infty)</m>.
               Define
 
-              <index>
-                <main>integration</main><sub>improper</sub>
-              </index>
+              <idx>
+                <h>integration</h><h>improper</h>
+              </idx>
 
-              <index>
-                <main>improper integration</main>
-              </index>
+              <idx>
+                <h>improper integration</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>of improper int.</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>of improper int.</h>
+              </idx>
 
-              <index>
-                <main>divergence</main><sub>of improper int.</sub>
-              </index>
+              <idx>
+                <h>divergence</h><h>of improper int.</h>
+              </idx>
 
               <me>
                 \int_a^\infty f(x)\ dx  \text{ to be }  \lim_{b\to\infty}\int_a^b f(x)\ dx
@@ -510,13 +510,13 @@
           where <m>x=c</m> is a vertical asymptote of <m>f</m>.
           Define
 
-          <index>
-            <main>integration</main><sub>improper</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>improper</h>
+          </idx>
 
-          <index>
-            <main>improper integration</main>
-          </index>
+          <idx>
+            <h>improper integration</h>
+          </idx>
 
           <me>
             \int_a^b f(x)\ dx = \lim_{t\to c^-}\int_a^t f(x)\ dx + \lim_{t\to c^+}\int_t^b f(x)\ dx
@@ -780,13 +780,13 @@
           <p>
             The improper integral <m>\ds \int_1^\infty\frac1{x^p}\ dx</m> converges when <m>p>1</m> and diverges when <m>p\leq 1</m>.
 
-            <index>
-              <main>convergence</main><sub>of improper int.</sub>
-            </index>
+            <idx>
+              <h>convergence</h><h>of improper int.</h>
+            </idx>
 
-            <index>
-              <main>divergence</main><sub>of improper int.</sub>
-            </index>
+            <idx>
+              <h>divergence</h><h>of improper int.</h>
+            </idx>
 
           </p>
         </li>
@@ -826,29 +826,29 @@
               If <m>\ds \int_a^\infty g(x)\ dx</m> converges,
               then <m>\ds \int_a^\infty f(x)\ dx</m> converges.
 
-              <index>
-                <main>integration</main><sub>improper</sub>
-              </index>
+              <idx>
+                <h>integration</h><h>improper</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>Direct Comparison Test!for integration</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>Direct Comparison Test!for integration</h>
+              </idx>
 
-              <index>
-                <main>divergence</main><sub>Direct Comparison Test!for integration</sub>
-              </index>
+              <idx>
+                <h>divergence</h><h>Direct Comparison Test!for integration</h>
+              </idx>
 
-              <index>
-                <main>Direct Comparison Test</main><sub>for integration</sub>
-              </index>
+              <idx>
+                <h>Direct Comparison Test</h><h>for integration</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>of improper int.</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>of improper int.</h>
+              </idx>
 
-              <index>
-                <main>divergence</main><sub>of improper int.</sub>
-              </index>
+              <idx>
+                <h>divergence</h><h>of improper int.</h>
+              </idx>
 
             </p>
           </li>
@@ -1028,29 +1028,29 @@
           </me>
           either both converge or both diverge.
 
-          <index>
-            <main>integration</main><sub>improper</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>improper</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Limit Comparison Test!for integration</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Limit Comparison Test!for integration</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Limit Comparison Test!for integration</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Limit Comparison Test!for integration</h>
+          </idx>
 
-          <index>
-            <main>Limit Comparison Test</main><sub>for integration</sub>
-          </index>
+          <idx>
+            <h>Limit Comparison Test</h><h>for integration</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>of improper int.</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>of improper int.</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>of improper int.</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>of improper int.</h>
+          </idx>
 
         </p>
       </statement>

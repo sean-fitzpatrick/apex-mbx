@@ -248,9 +248,9 @@
         <m>\alpha\leq\theta\leq\beta</m> and <m>g_1(\theta)\leq r\leq g_2(\theta)</m>.
         Then
 
-        <index>
-          <main>double integral</main><sub>in polar</sub>
-        </index>
+        <idx>
+          <h>double integral</h><h>in polar</h>
+        </idx>
 
         <me>
           \iint_Rf(x,y)\ dA = \int_\alpha^\beta\int_{g_1(\theta)}^{g_2(\theta)} f\big(r\cos(\theta) ,r\sin(\theta) \big)\ r\ dr\ d\theta

@@ -54,13 +54,13 @@
         Let <m>r=f(\theta)</m> be a polar function.
         With <m>x=f(\theta)\cos(\theta)</m> and <m>y=f(\theta)\sin(\theta)</m>,
 
-        <index>
-          <main>polar</main><sub>functions!finding <m>\frac{dy}{dx}</m></sub>
-        </index>
+        <idx>
+          <h>polar</h><h>functions!finding <m>\frac{dy}{dx}</m></h>
+        </idx>
 
-        <index>
-          <main>tangent line</main>
-        </index>
+        <idx>
+          <h>tangent line</h>
+        </idx>
 
         <me>
           \frac{dy}{dx} = \frac{\fp(\theta)\sin(\theta) +f(\theta)\cos(\theta) }{\fp(\theta)\cos(\theta) -f(\theta)\sin(\theta) }
@@ -315,9 +315,9 @@
       (hence the name <q>rectangular coordinates</q>).
       It is then somewhat natural to use rectangles to approximate area as we did when learning about the definite integral.
 
-      <index>
-        <main>polar</main><sub>functions!area</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>functions!area</h>
+      </idx>
 
     </p>
 
@@ -637,9 +637,9 @@
       Our study of area in the context of rectangular functions led naturally to finding area bounded between curves.
       We consider the same in the context of polar functions.
 
-      <index>
-        <main>polar</main><sub>functions!area between curves</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>functions!area between curves</h>
+      </idx>
 
     </p>
 
@@ -1008,13 +1008,13 @@
       Recall that the arc length <m>L</m> of the graph defined by the parametric equations <m>x=f(t)</m>,
       <m>y=g(t)</m> on <m>[a,b]</m> is
 
-      <index>
-        <main>arc length</main>
-      </index>
+      <idx>
+        <h>arc length</h>
+      </idx>
 
-      <index>
-        <main>polar</main><sub>function!arc length</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>function!arc length</h>
+      </idx>
 
       <men xml:id="eq_polar_arclength">
         L = \int_a^b \sqrt{\fp(t)^2 + g'(t)^2}\ dt = \int_a^b \sqrt{x'(t)^2+y'(t)^2}\ dt
@@ -1143,17 +1143,17 @@
         where <m>\fp</m> is continuous on an open interval containing
         <m>[\alpha,\beta]</m> on which the graph does not cross itself.
 
-        <index>
-          <main>surface area</main><sub>solid of revolution</sub>
-        </index>
+        <idx>
+          <h>surface area</h><h>solid of revolution</h>
+        </idx>
 
-        <index>
-          <main>polar</main><sub>function!surface area</sub>
-        </index>
+        <idx>
+          <h>polar</h><h>function!surface area</h>
+        </idx>
 
-        <index>
-          <main>integration</main><sub>surface area</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>surface area</h>
+        </idx>
 
       </p>
 

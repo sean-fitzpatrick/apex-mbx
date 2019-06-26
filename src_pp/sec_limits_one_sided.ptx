@@ -64,13 +64,13 @@
         <dl width="narrow">
           <li>
             <title>Left-Hand Limit</title>
-            <index>
-              <main>limit</main><sub>one sided</sub>
-            </index>
+            <idx>
+              <h>limit</h><h>one sided</h>
+            </idx>
 
-            <index>
-              <main>limit</main><sub>left-handed</sub>
-            </index>
+            <idx>
+              <h>limit</h><h>left-handed</h>
+            </idx>
 
             <p>
               Let <m>I=(a,c)</m> be an open interval,
@@ -92,13 +92,13 @@
 
           <li>
             <title>Right-Hand Limit</title>
-            <index>
-              <main>limit</main><sub>one sided</sub>
-            </index>
+            <idx>
+              <h>limit</h><h>one sided</h>
+            </idx>
 
-            <index>
-              <main>limit</main><sub>right-handed</sub>
-            </index>
+            <idx>
+              <h>limit</h><h>right-handed</h>
+            </idx>
 
             <p>
               Let <m>I=(c,b)</m> be an open interval,
@@ -321,9 +321,9 @@
       <p>
         Let <m>f</m> be a function defined on an open interval <m>I</m> containing <m>c</m>.
 
-        <index>
-          <main>limit</main><sub>does not exist</sub>
-        </index>
+        <idx>
+          <h>limit</h><h>does not exist</h>
+        </idx>
 
         Then
         <me>

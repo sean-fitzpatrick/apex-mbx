@@ -42,17 +42,17 @@
           If <m>\fp</m> is constant then the graph of <m>f</m> is said to have
           <term>no concavity</term>.
 
-          <index>
-            <main>concavity</main>
-          </index>
+          <idx>
+            <h>concavity</h>
+          </idx>
 
-          <index>
-            <main>concave up</main>
-          </index>
+          <idx>
+            <h>concave up</h>
+          </idx>
 
-          <index>
-            <main>concave down</main>
-          </index>
+          <idx>
+            <h>concave down</h>
+          </idx>
 
         </p>
       </statement>
@@ -190,13 +190,13 @@
           The graph of <m>f</m> is concave up if <m>\fpp>0</m> on <m>I</m>,
           and is concave down if <m>\fpp\lt 0</m> on <m>I</m>.
 
-          <index>
-            <main>concavity</main><sub>test for</sub>
-          </index>
+          <idx>
+            <h>concavity</h><h>test for</h>
+          </idx>
 
-          <index>
-            <main>concavity</main><sub>inflection point</sub>
-          </index>
+          <idx>
+            <h>concavity</h><h>inflection point</h>
+          </idx>
 
         </p>
       </statement>
@@ -290,13 +290,13 @@
           A <term>point of inflection</term>
           is a point on the graph of <m>f</m> at which the concavity of <m>f</m> changes.
 
-          <index>
-            <main>point of inflection</main>
-          </index>
+          <idx>
+            <h>point of inflection</h>
+          </idx>
 
-          <index>
-            <main>inflection point</main>
-          </index>
+          <idx>
+            <h>inflection point</h>
+          </idx>
 
         </p>
       </statement>
@@ -781,25 +781,25 @@
         <p>
           Let <m>c</m> be a critical value of <m>f</m> where <m>\fpp(c)</m> is defined.
 
-          <index>
-            <main>derivative</main><sub>Second Deriv. Test</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>Second Deriv. Test</h>
+          </idx>
 
-          <index>
-            <main>Second Derivative Test</main>
-          </index>
+          <idx>
+            <h>Second Derivative Test</h>
+          </idx>
 
-          <index>
-            <main>extrema</main><sub>and Second Deriv. Test</sub>
-          </index>
+          <idx>
+            <h>extrema</h><h>and Second Deriv. Test</h>
+          </idx>
 
-          <index>
-            <main>maximum</main><sub>and Second Deriv. Test</sub>
-          </index>
+          <idx>
+            <h>maximum</h><h>and Second Deriv. Test</h>
+          </idx>
 
-          <index>
-            <main>minimum</main><sub>and First Deriv. Test</sub>
-          </index>
+          <idx>
+            <h>minimum</h><h>and First Deriv. Test</h>
+          </idx>
 
         </p>
 

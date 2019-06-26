@@ -94,7 +94,7 @@
         </me>.
       </p>
 
-      <sidebyside xml:id="fig_mvt1" widths="47% 47%">
+      <sidebyside widths="47% 47%">
         <caption/>
 
         <figure>
@@ -159,13 +159,13 @@
         There exists a value <m>c</m>,
         <m>a \lt  c \lt  b</m>, such that
 
-        <index>
-          <main>Mean Value Theorem</main><sub>of differentiation</sub>
-        </index>
+        <idx>
+          <h>Mean Value Theorem</h><h>of differentiation</h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>Mean Value Theorem</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>Mean Value Theorem</h>
+        </idx>
 
         <me>
           \fp(c) = \frac{f(b)-f(a)}{b-a}
@@ -196,9 +196,9 @@
         where <m>f(a) = f(b)</m>.
         There is some <m>c</m> in <m>(a,b)</m> such that <m>\fp(c) = 0</m>.
 
-        <index>
-          <main>Rolle's Theorem</main>
-        </index>
+        <idx>
+          <h>Rolle's Theorem</h>
+        </idx>
 
       </p>
     </statement>

@@ -44,7 +44,7 @@
       We can approximate the length of the given curve by approximating the curve with straight lines and measuring their lengths.
     </p>
 
-    <sidebyside xml:id="fig_arcintro">
+    <sidebyside>
       <caption>Graphing <m>y=\sin(x)</m> on <m>[0,\pi]</m> and approximating the curve with line segments.</caption>
       <figure>
 <!-- START figures/fig_arcintroa.tex -->
@@ -235,13 +235,13 @@
         where <m>\fp</m> is also continuous on <m>[a,b]</m>.
         Then the arc length of <m>f</m> from <m>x=a</m> to <m>x=b</m> is
 
-        <index>
-          <main>integration</main><sub>arc length</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>arc length</h>
+        </idx>
 
-        <index>
-          <main>arc length</main>
-        </index>
+        <idx>
+          <h>arc length</h>
+        </idx>
 
         <me>
           L = \int_a^b \sqrt{1+\fp(x)^2}\ dx
@@ -720,13 +720,13 @@
       <p>
         Let <m>f</m> be differentiable on an open interval containing <m>[a,b]</m> where <m>\fp</m> is also continuous on <m>[a,b]</m>.
 
-        <index>
-          <main>integration</main><sub>surface area</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>surface area</h>
+        </idx>
 
-        <index>
-          <main>surface area</main><sub>solid of revolution</sub>
-        </index>
+        <idx>
+          <h>surface area</h><h>solid of revolution</h>
+        </idx>
 
       </p>
 
@@ -924,7 +924,7 @@
           </li>
         </ol>
 
-        <sidebyside xml:id="fig_sa2">
+        <sidebyside>
           <caption>The solids used in <xref ref="ex_sa2">Example</xref>.</caption>
           <figure>
 <!--
@@ -1165,9 +1165,9 @@
           since it looks like a very long horn that only a supernatural person,
           such as an angel, could play.)
 
-          <index>
-            <main>Gabriel's Horn</main>
-          </index>
+          <idx>
+            <h>Gabriel's Horn</h>
+          </idx>
 
         </p>
 

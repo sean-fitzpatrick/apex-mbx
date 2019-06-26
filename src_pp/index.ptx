@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <docinfo>
 
         <latex-preamble>
@@ -196,7 +196,7 @@
                                       }}
 ]]></latex-image-preamble>
 
-    <rename element="insight" lang="en-US">Key Idea</rename>
+    <rename element="insight" xml:lang="en-US">Key Idea</rename>
   </docinfo>
 
   <book>
@@ -294,11 +294,11 @@
     <xi:include href="./chapter13.ptx" />
 
     <backmatter>
-      <index-part>
+      <i-ndex>
       <title>Index</title>
       <index-list />
-      </index-part>
+      </i-ndex>
     </backmatter>
   </book>
-</mathbook>
+</pretext>
 

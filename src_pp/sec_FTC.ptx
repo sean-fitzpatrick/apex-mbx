@@ -194,13 +194,13 @@
           Let <m>f</m> be continuous on <m>[a,b]</m> and let <m>F(x) = \int_a^x f(t)\ dt</m>.
           Then <m>F</m> is a differentiable function on <m>(a,b)</m>, and
 
-          <index>
-            <main>Fundamental Theorem of Calculus</main>
-          </index>
+          <idx>
+            <h>Fundamental Theorem of Calculus</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>Fun. Thm. of Calc.</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>Fun. Thm. of Calc.</h>
+          </idx>
 
           <me>
             \Fp(x)=f(x)
@@ -285,13 +285,13 @@
           antiderivative of <m>f</m>.
           Then
 
-          <index>
-            <main>Fundamental Theorem of Calculus</main>
-          </index>
+          <idx>
+            <h>Fundamental Theorem of Calculus</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>Fun. Thm. of Calc.</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>Fun. Thm. of Calc.</h>
+          </idx>
 
           <me>
             \int_a^b f(x)\ dx = F(b) - F(a)
@@ -335,9 +335,9 @@
     <p>
       <em>Notation:</em>
 
-      <index>
-        <main>integration</main><sub>notation</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>notation</h>
+      </idx>
 
       A special notation is often used in the process of evaluating definite integrals using the Fundamental Theorem of Calculus.
       Instead of explicitly writing <m>F(b)-F(a)</m>,
@@ -454,13 +454,13 @@
       Specifically, if <m>v(t)</m> is a velocity function,
       what does <m>\ds \int_a^b v(t)\ dt</m> mean?
 
-      <index>
-        <main>integration</main><sub>displacement</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>displacement</h>
+      </idx>
 
-      <index>
-        <main>displacement</main>
-      </index>
+      <idx>
+        <h>displacement</h>
+      </idx>
 
     </p>
 
@@ -533,7 +533,7 @@
           (as in <xref ref="fig_ftcmotion1b">Figure</xref>),
           we get the total distance of <m>9</m> ft.
 
-          <sidebyside xml:id="fig_ftcmotion1" widths="47% 47%">
+          <sidebyside widths="47% 47%">
             <figure xml:id="fig_ftcmotion1a">
               <caption>The area between <m>v(t)</m> and the <m>t</m>-axis can be used to represent displacement.</caption>
               <image xml:id="img_ftcmotion1a">
@@ -654,9 +654,9 @@
     <p>
       What is the derivative of such a function?
 
-      <index>
-        <main>Fundamental Theorem of Calculus</main><sub>and Chain Rule</sub>
-      </index>
+      <idx>
+        <h>Fundamental Theorem of Calculus</h><h>and Chain Rule</h>
+      </idx>
 
       The Chain Rule can be employed to state
       <me>
@@ -728,13 +728,13 @@
       as demonstrated in <xref ref="fig_ftc5">Figure</xref>.
       What is the area of the shaded region bounded by the two curves over <m>[a,b]</m>?
 
-      <index>
-        <main>integration</main><sub>area between curves</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>area between curves</h>
+      </idx>
 
     </p>
 
-    <sidebyside xml:id="fig_ftc5" widths="47% 47%">
+    <sidebyside widths="47% 47%">
       <caption>Finding the area bounded by two functions on an interval; it is found by subtracting the area under <m>g</m> from the area under <m>f</m>.</caption>
       <figure xml:id="fig_ftc5a">
         <caption/>
@@ -975,7 +975,7 @@
       We state this idea formally in a theorem.
     </p>
 
-    <sidebyside xml:id="fig_ftc7b" widths="31% 31% 31%">
+    <sidebyside widths="31% 31% 31%">
       <caption>Differently sized rectangles give upper and lower bounds on <m>\int_1^4 f(x)\ dx</m>; the last rectangle matches the area exactly.</caption>
       <figure xml:id="fig_ftc7b2">
         <caption/>
@@ -1086,13 +1086,13 @@
         <p>
           Let <m>f</m> be continuous on <m>[a,b]</m>.
 
-          <index>
-            <main>Mean Value Theorem</main><sub>of integration</sub>
-          </index>
+          <idx>
+            <h>Mean Value Theorem</h><h>of integration</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>Mean Value Theorem</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>Mean Value Theorem</h>
+          </idx>
 
           There exists a value <m>c</m> in <m>[a,b]</m> such that
           <me>
@@ -1343,13 +1343,13 @@
           The <term>average value of<nbsp /> <m>f</m><nbsp /> on <m>[a,b]</m></term> is <m>f(c)</m>,
           where <m>c</m> is a value in <m>[a,b]</m> guaranteed by the Mean Value Theorem.
 
-          <index>
-            <main>integration</main><sub>average value</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>average value</h>
+          </idx>
 
-          <index>
-            <main>average value of function</main>
-          </index>
+          <idx>
+            <h>average value of function</h>
+          </idx>
 
           I.e.,
           <me>

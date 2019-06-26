@@ -28,21 +28,21 @@
         <p>
           Let <m>\{a_n\}</m> be a positive sequence and consider<m>\lim\limits_{n\to\infty}\dfrac{a_{n+1}}{a_n}</m>.
 
-          <index>
-            <main>series</main><sub>Ratio Comparison Test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Ratio Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>Ratio Comparison Test</main><sub>for series</sub>
-          </index>
+          <idx>
+            <h>Ratio Comparison Test</h><h>for series</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Ratio Comparison Test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Ratio Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Ratio Comparison Test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Ratio Comparison Test</h>
+          </idx>
 
         </p>
 
@@ -242,21 +242,21 @@
           Let <m>\{a_n\}</m> be a positive sequence,
           and consider <m>\lim\limits_{n\to \infty} (a_n)^{1/n}</m>.
 
-          <index>
-            <main>series</main><sub>Root Comparison Test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Root Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>Root Comparison Test</main><sub>for series</sub>
-          </index>
+          <idx>
+            <h>Root Comparison Test</h><h>for series</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Root Comparison Test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Root Comparison Test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Root Comparison Test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Root Comparison Test</h>
+          </idx>
 
         </p>
 

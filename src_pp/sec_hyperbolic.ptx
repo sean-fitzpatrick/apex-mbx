@@ -27,7 +27,7 @@
       are used to define points on the hyperbola <m>x^2-y^2=1</m>.
     </p>
 
-    <sidebyside xml:id="fig_hfcircle" widths="47% 47%">
+    <sidebyside widths="47% 47%">
       <caption>Using trigonometric functions to define points on a circle and hyperbolic functions to define points on a hyperbola. The area of the shaded regions are included in them.</caption>
       <figure>
         <caption/>
@@ -117,9 +117,9 @@
             <p>
               <m>\ds \cosh(x) = \frac{e^x+e^{-x}}2</m>
 
-              <index>
-                <main>hyperbolic function</main><sub>definition</sub>
-              </index>
+              <idx>
+                <h>hyperbolic function</h><h>definition</h>
+              </idx>
 
             </p>
           </li>
@@ -194,7 +194,7 @@
       <m>\sinh(x)</m> acts like <m>-e^{-x}/2</m>.
     </p>
 
-    <sidebyside xml:id="fig_hyperbolic1" widths="47% 47%">
+    <sidebyside widths="47% 47%">
       <caption>Graphs of <m>\sinh(x)</m> and <m>\cosh(x)</m>.</caption>
       <!-- START figures/fig_hf_cosh.tex -->
       <figure xml:id="fig_hf_cosh">
@@ -266,7 +266,7 @@
       The following example explores some of the properties of these functions that bear remarkable resemblance to the properties of their trigonometric counterparts.
     </p>
 
-    <sidebyside xml:id="fig_hyperbolic2" widths="47% 47%">
+    <sidebyside widths="47% 47%">
       <caption>Graphs of <m>\tanh(x), \coth(x), \csch(x)</m> and <m>\cosh(x)</m>.</caption>
       <figure>
         <caption/>
@@ -468,25 +468,25 @@
             <p>
               <m>\cosh^2(x) -\sinh^2(x) =1</m>
 
-              <index>
-                <main>hyperbolic function</main><sub>identities</sub>
-              </index>
+              <idx>
+                <h>hyperbolic function</h><h>identities</h>
+              </idx>
 
-              <index>
-                <main>hyperbolic function</main><sub>derivatives</sub>
-              </index>
+              <idx>
+                <h>hyperbolic function</h><h>derivatives</h>
+              </idx>
 
-              <index>
-                <main>hyperbolic function</main><sub>integrals</sub>
-              </index>
+              <idx>
+                <h>hyperbolic function</h><h>integrals</h>
+              </idx>
 
-              <index>
-                <main>derivative</main><sub>hyperbolic funct.</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>hyperbolic funct.</h>
+              </idx>
 
-              <index>
-                <main>integration</main><sub>hyperbolic funct.</sub>
-              </index>
+              <idx>
+                <h>integration</h><h>hyperbolic funct.</h>
+              </idx>
 
             </p>
           </li>
@@ -704,9 +704,9 @@
       The rest of the hyperbolic functions area already one-to-one and need no domain restrictions.
       Their graphs are also shown in <xref ref="fig_hfinverse2">Figure</xref>.
 
-      <index>
-        <main>hyperbolic function</main><sub>inverse</sub>
-      </index>
+      <idx>
+        <h>hyperbolic function</h><h>inverse</h>
+      </idx>
 
     </p>
 
@@ -817,7 +817,7 @@
 
     </sidebyside>
 
-    <sidebyside widths="47% 47%" xml:id="fig_hfinverse1">
+    <sidebyside widths="47% 47%">
       <caption>Graphs of the hyperbolic sine and cosine (with restricted domain) and their inverses.</caption>
       <figure xml:id="fig_hfarccosh">
         <caption/>
@@ -912,7 +912,7 @@
       </figure>
     </sidebyside>
 
-    <sidebyside widths="47% 47%" xml:id="fig_hfinverse2">
+    <sidebyside widths="47% 47%">
       <caption>Graphs of the inverse hyperbolic tangent, cotangent, cosecant and secant.</caption>
       <figure>
         <caption/>
@@ -1017,9 +1017,9 @@
           <p>
             <m>\ds\cosh^{-1}(x) =\ln\big(x+\sqrt{x^2-1}\big);\\ x\geq1</m>
 
-            <index>
-              <main>hyperbolic function</main><sub>inverse!logarithmic def.</sub>
-            </index>
+            <idx>
+              <h>hyperbolic function</h><h>inverse!logarithmic def.</h>
+            </idx>
 
           </p>
         </li>
@@ -1074,13 +1074,13 @@
           <p>
             <m>\ds\frac{d}{dx}\big(\cosh^{-1}(x) \big) = \frac{1}{\sqrt{x^2-1}};\\ x>1</m>
 
-            <index>
-              <main>derivative</main><sub>inverse hyper.</sub>
-            </index>
+            <idx>
+              <h>derivative</h><h>inverse hyper.</h>
+            </idx>
 
-            <index>
-              <main>hyperbolic function</main><sub>inverse!derivative</sub>
-            </index>
+            <idx>
+              <h>hyperbolic function</h><h>inverse!derivative</h>
+            </idx>
 
           </p>
         </li>
@@ -1126,13 +1126,13 @@
               <mrow>\int \frac{1}{\sqrt{x^2-a^2}}\ dx \amp= \cosh^{-1}\left(\frac xa\right)+C ;\ 0\lt a\lt x\amp =\ln\abs{x+\sqrt{x^2-a^2}}+C</mrow>
             </md>
 
-            <index>
-              <main>integration</main><sub>inverse hyper.</sub>
-            </index>
+            <idx>
+              <h>integration</h><h>inverse hyper.</h>
+            </idx>
 
-            <index>
-              <main>hyperbolic function</main><sub>inverse!integration</sub>
-            </index>
+            <idx>
+              <h>hyperbolic function</h><h>inverse!integration</h>
+            </idx>
 
           </p>
         </li>

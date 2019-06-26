@@ -18,25 +18,25 @@
       <p>
         Let <m>f</m> be defined on an interval <m>I</m> containing <m>c</m>.
 
-        <index>
-          <main>extreme values</main>
-        </index>
+        <idx>
+          <h>extreme values</h>
+        </idx>
 
-        <index>
-          <main>absolute minimum</main>
-        </index>
+        <idx>
+          <h>absolute minimum</h>
+        </idx>
 
-        <index>
-          <main>minimum</main><sub>absolute</sub>
-        </index>
+        <idx>
+          <h>minimum</h><h>absolute</h>
+        </idx>
 
-        <index>
-          <main>absolute maximum</main>
-        </index>
+        <idx>
+          <h>absolute maximum</h>
+        </idx>
 
-        <index>
-          <main>maximum</main><sub>absolute</sub>
-        </index>
+        <idx>
+          <h>maximum</h><h>absolute</h>
+        </idx>
 
       </p>
 
@@ -65,9 +65,9 @@
         <term>extreme values</term>,
         or <term>extrema</term>, of <m>f</m> on <m>I</m>.
 
-        <index>
-          <main>extrema</main><sub>absolute</sub>
-        </index>
+        <idx>
+          <h>extrema</h><h>absolute</h>
+        </idx>
 
       </p>
     </statement>
@@ -101,7 +101,7 @@
 
   <todo>I'm not sure if the intervals need to be shown on the x axis. I left them there for now. </todo>
 
-  <sidebyside xml:id="fig_extreme" widths="31% 31% 31%">
+  <sidebyside widths="31% 31% 31%">
     <caption>Graphs of functions with and without extreme values.</caption>
     <figure xml:id="fig_extreme1">
       <caption/>
@@ -180,9 +180,9 @@
         Let <m>f</m> be a continuous function defined on a closed interval <m>I</m>.
         Then <m>f</m> has both a maximum and minimum value on <m>I</m>.
 
-        <index>
-          <main>Extreme Value Theorem</main>
-        </index>
+        <idx>
+          <h>Extreme Value Theorem</h>
+        </idx>
 
       </p>
     </statement>
@@ -269,9 +269,9 @@
               then <m>f(c)</m> is a <term>relative minimum</term> of <m>f</m>.
               We also say that <m>f</m> has a relative minimum at <m>(c,f(c))</m>.
 
-              <index>
-                <main>minimum</main><sub>relative/local</sub>
-              </index>
+              <idx>
+                <h>minimum</h><h>relative/local</h>
+              </idx>
 
             </p>
           </li>
@@ -282,13 +282,13 @@
               then <m>f(c)</m> is a <term>relative maximum</term> of <m>f</m>.
               We also say that <m>f</m> has a relative maximum at <m>(c,f(c))</m>.
 
-              <index>
-                <main>maximum</main><sub>relative/local</sub>
-              </index>
+              <idx>
+                <h>maximum</h><h>relative/local</h>
+              </idx>
 
-              <index>
-                <main>extrema</main><sub>relative</sub>
-              </index>
+              <idx>
+                <h>extrema</h><h>relative</h>
+              </idx>
 
             </p>
           </li>
@@ -428,13 +428,13 @@
         (or <term>critical value</term>)
         of <m>f</m> if <m>\fp(c)=0</m> or <m>\fp(c)</m> is not defined.
 
-        <index>
-          <main>critical number</main>
-        </index>
+        <idx>
+          <h>critical number</h>
+        </idx>
 
-        <index>
-          <main>critical point</main>
-        </index>
+        <idx>
+          <h>critical point</h>
+        </idx>
 
       </p>
 
@@ -508,9 +508,9 @@
       Let <m>f</m> be a continuous function defined on a closed interval <m>[a,b]</m>.
       To find the maximum and minimum values of <m>f</m> on <m>[a,b]</m>:
 
-      <index>
-        <main>extrema</main><sub>finding</sub>
-      </index>
+      <idx>
+        <h>extrema</h><h>finding</h>
+      </idx>
 
     </p>
 

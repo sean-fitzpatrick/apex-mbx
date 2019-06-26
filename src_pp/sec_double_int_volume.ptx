@@ -401,25 +401,25 @@
         <p>
           Alternate notations for the double integral are
 
-          <index>
-            <main>integration</main><sub>double</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>double</h>
+          </idx>
 
-          <index>
-            <main>double integral</main>
-          </index>
+          <idx>
+            <h>double integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
-          <index>
-            <main>signed volume</main>
-          </index>
+          <idx>
+            <h>signed volume</h>
+          </idx>
 
-          <index>
-            <main>volume</main>
-          </index>
+          <idx>
+            <h>volume</h>
+          </idx>
 
           <me>
             \iint_R f(x,y)\ dA=\iint_R f(x,y)\ dx\ dy=\iint_R f(x,y)\ dy\ dx
@@ -621,25 +621,25 @@
           bounded region in the <m>x</m>-<m>y</m> plane and let
           <m>z=f(x,y)</m> be a continuous function on <m>R</m>.
 
-          <index>
-            <main>double integral</main>
-          </index>
+          <idx>
+            <h>double integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
-          <index>
-            <main>signed volume</main>
-          </index>
+          <idx>
+            <h>signed volume</h>
+          </idx>
 
-          <index>
-            <main>volume</main>
-          </index>
+          <idx>
+            <h>volume</h>
+          </idx>
 
-          <index>
-            <main>Fubini's Theorem</main>
-          </index>
+          <idx>
+            <h>Fubini's Theorem</h>
+          </idx>
 
         </p>
 
@@ -1015,13 +1015,13 @@
           bounded plane region <m>R</m>,
           and let <m>c</m> be a constant.
 
-          <index>
-            <main>double integral</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>double integral</h><h>properties</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>iterated integration</h><h>properties</h>
+          </idx>
 
         </p>
 
@@ -1686,9 +1686,9 @@
           Let <m>z=f(x,y)</m> be a continuous function defined over a closed region <m>R</m> in the <m>x</m>-<m>y</m> plane.
           The <term>average value of <m>f</m> on <m>R</m></term> is
 
-          <index>
-            <main>average value of a function</main>
-          </index>
+          <idx>
+            <h>average value of a function</h>
+          </idx>
 
           <me>
             \text{ average value of \(f\) on \(R\) }  = \frac{\ds \iint_R f(x,y)\ dA}{\ds\iint_R \ dA}

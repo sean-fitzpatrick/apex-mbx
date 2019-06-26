@@ -26,13 +26,13 @@
           The <term>domain</term> of <m>\vec r</m> is the set of all values of <m>t</m> for which <m>\vec r(t)</m> is defined.
           The <term>range</term> of <m>\vec r</m> is the set of all possible output vectors <m>\vec r(t)</m>.
 
-          <index>
-            <main>vector-valued function</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>vector-valued function</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>function</main><sub>vector-valued</sub>
-          </index>
+          <idx>
+            <h>function</h><h>vector-valued</h>
+          </idx>
 
         </p>
       </statement>
@@ -56,9 +56,9 @@
       In <xref ref="fig_vvfintro1">Figure</xref>(b) we sketch the graph of <m>\vec r</m> ; we can indicate individual points on the graph with their respective vector,
       as shown.
 
-      <index>
-        <main>vector-valued function</main><sub>graphing</sub>
-      </index>
+      <idx>
+        <h>vector-valued function</h><h>graphing</h>
+      </idx>
 
     </p>
 
@@ -416,9 +416,9 @@
         <p>
           A similar definition holds for vector-valued functions in <m>\mathbb{R}^3</m>.
 
-          <index>
-            <main>vector-valued function</main><sub>algebra of</sub>
-          </index>
+          <idx>
+            <h>vector-valued function</h><h>algebra of</h>
+          </idx>
 
         </p>
       </statement>
@@ -603,9 +603,9 @@
           Find an equation describing the cycloid,
           where the circle has radius 1.
 
-          <index>
-            <main>cycloid</main>
-          </index>
+          <idx>
+            <h>cycloid</h>
+          </idx>
 
         </p>
 
@@ -750,13 +750,13 @@
       <m>\vec r(t_1)-\vec r(t_0)</m>,
       the <em>displacement</em>.
 
-      <index>
-        <main>displacement</main>
-      </index>
+      <idx>
+        <h>displacement</h>
+      </idx>
 
-      <index>
-        <main>vector-valued function</main><sub>displacement</sub>
-      </index>
+      <idx>
+        <h>vector-valued function</h><h>displacement</h>
+      </idx>
 
     </p>
 
@@ -876,13 +876,13 @@
           The <term>average rate of change</term>
           of <m>\vec r(t)</m> on <m>[t_0,t_1]</m> is
 
-          <index>
-            <main>average rate of change</main>
-          </index>
+          <idx>
+            <h>average rate of change</h>
+          </idx>
 
-          <index>
-            <main>vector-valued function</main><sub>average rate of change</sub>
-          </index>
+          <idx>
+            <h>vector-valued function</h><h>average rate of change</h>
+          </idx>
 
           <me>
             \text{ average rate of change }  = \frac{\vec r(t_1) - \vec r(t_0)}{t_1-t_0}

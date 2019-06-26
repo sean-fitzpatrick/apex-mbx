@@ -99,9 +99,9 @@
           <p>
             For integrands containing <m>\sqrt{a^2-x^2}</m>:
 
-            <index>
-              <main>integration</main><sub>trig. subst.</sub>
-            </index>
+            <idx>
+              <h>integration</h><h>trig. subst.</h>
+            </idx>
 
             Let <m>x=a\sin(\theta)</m>, <m>dx = a\cos(\theta) \ d\theta</m>.
             Thus <m>\theta = \sin^{-1}(x/a)</m>,

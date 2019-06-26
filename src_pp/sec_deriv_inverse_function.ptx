@@ -15,9 +15,9 @@
     but by restricting <m>f</m> to
     <m>(0,\infty)</m>, <m>f</m> is one-to-one.
 
-    <index>
-      <main>derivative</main><sub>inverse function</sub>
-    </index>
+    <idx>
+      <h>derivative</h><h>inverse function</h>
+    </idx>
 
   </p>
 
@@ -332,7 +332,7 @@
     the tangent lines to arcsine approach vertical lines with undefined slopes.
   </p>
 
-  <sidebyside xml:id="fig_inversesine" widths="47% 47%">
+  <sidebyside widths="47% 47%">
     <caption>Graphs of <m>\sin(x)</m> and <m>\sin^{-1}(x)</m> along with corresponding tangent lines.</caption>
       <!-- START figures/fig_inverse4.tex -->
     <figure>
@@ -526,9 +526,9 @@
           </li>
         </ol>
 
-        <index>
-          <main>derivative</main><sub>inverse trig.</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>inverse trig.</h>
+        </idx>
 
       </p>
     </statement>

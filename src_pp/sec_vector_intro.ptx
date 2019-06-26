@@ -55,37 +55,37 @@
           Two vectors are <term>equal</term>
           if they have the same magnitude and direction.
 
-          <index>
-            <main>vectors</main>
-          </index>
+          <idx>
+            <h>vectors</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>norm</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>norm</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>magnitude</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>magnitude</h>
+          </idx>
 
-          <index>
-            <main>norm</main>
-          </index>
+          <idx>
+            <h>norm</h>
+          </idx>
 
-          <index>
-            <main>magnitude of vector</main>
-          </index>
+          <idx>
+            <h>magnitude of vector</h>
+          </idx>
 
-          <index>
-            <main>terminal point</main>
-          </index>
+          <idx>
+            <h>terminal point</h>
+          </idx>
 
-          <index>
-            <main>initial point</main>
-          </index>
+          <idx>
+            <h>initial point</h>
+          </idx>
 
         </p>
       </statement>
@@ -141,9 +141,9 @@
       (pronounced <q>r three</q>)
       to represent all the vectors in space.
 
-      <index>
-        <main>r@<m>\mathbb{R}</m></main>
-      </index>
+      <idx>
+        <h>r@<m>\mathbb{R}</m></h>
+      </idx>
 
     </p>
 
@@ -233,9 +233,9 @@
           (and <m>c</m>, respectively)
           are the <term>components</term> of <m>\vec v</m>.
 
-          <index>
-            <main>vectors</main><sub>component form</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>component form</h>
+          </idx>
 
         </p>
       </statement>
@@ -484,9 +484,9 @@
               <m>\vec v = \la v_1,v_2\ra</m> be vectors in <m>\mathbb{R}^2</m>,
               and let <m>c</m> be a scalar.
 
-              <index>
-                <main>vectors</main><sub>algebra of</sub>
-              </index>
+              <idx>
+                <h>vectors</h><h>algebra of</h>
+              </idx>
 
             </p>
 
@@ -628,29 +628,29 @@
       <em>resultant vector</em>,
       or just the <q>resultant.</q>
 
-      <index>
-        <main>vectors</main><sub>resultant</sub>
-      </index>
+      <idx>
+        <h>vectors</h><h>resultant</h>
+      </idx>
 
-      <index>
-        <main>Parallelogram Law</main>
-      </index>
+      <idx>
+        <h>Parallelogram Law</h>
+      </idx>
 
-      <index>
-        <main>vectors</main><sub>Parallelogram Law</sub>
-      </index>
+      <idx>
+        <h>vectors</h><h>Parallelogram Law</h>
+      </idx>
 
-      <index>
-        <main>Head To Tail Rule</main>
-      </index>
+      <idx>
+        <h>Head To Tail Rule</h>
+      </idx>
 
-      <index>
-        <main>vectors</main><sub>Head To Tail Rule</sub>
-      </index>
+      <idx>
+        <h>vectors</h><h>Head To Tail Rule</h>
+      </idx>
 
-      <index>
-        <main>vectors</main><sub>zero vector</sub>
-      </index>
+      <idx>
+        <h>vectors</h><h>zero vector</h>
+      </idx>
 
     </p>
 
@@ -902,9 +902,9 @@
           <m>\mathbb{R}^2</m> or where <m>\vec u</m>,
           <m>\vec v</m> and <m>\vec w</m> are all in <m>\mathbb{R}^3</m>:
 
-          <index>
-            <main>vectors</main><sub>algebraic properties</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>algebraic properties</h>
+          </idx>
 
         </p>
 
@@ -982,13 +982,13 @@
         <p>
           A <term>unit vector</term> is a vector <m>\vec v</m> with a magnitude of 1; that is,
 
-          <index>
-            <main>vectors</main><sub>unit vector</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>unit vector</h>
+          </idx>
 
-          <index>
-            <main>unit vector</main>
-          </index>
+          <idx>
+            <h>unit vector</h>
+          </idx>
 
           <me>
             \norm{\vec v}=1
@@ -1154,13 +1154,13 @@
               <m>\vec u_2</m> are <em>parallel</em>
               if <m>\vec u_1 = \pm \vec u_2</m>.
 
-              <index>
-                <main>vectors</main><sub>parallel</sub>
-              </index>
+              <idx>
+                <h>vectors</h><h>parallel</h>
+              </idx>
 
-              <index>
-                <main>parallel vectors</main>
-              </index>
+              <idx>
+                <h>parallel vectors</h>
+              </idx>
 
             </p>
           </li>
@@ -1233,13 +1233,13 @@
             and only if,
             its component form is <m>\la \cos(\theta) ,\sin(\theta) \ra</m> for some angle <m>\theta</m>.
 
-            <index>
-              <main>unit vector</main><sub>properties</sub>
-            </index>
+            <idx>
+              <h>unit vector</h><h>properties</h>
+            </idx>
 
-            <index>
-              <main>vectors</main><sub>unit vector</sub>
-            </index>
+            <idx>
+              <h>vectors</h><h>unit vector</h>
+            </idx>
 
           </p>
         </li>
@@ -1421,13 +1421,13 @@
             <p>
               In <m>\mathbb{R}^2</m>, the standard unit vectors are
 
-              <index>
-                <main>vectors</main><sub>standard unit vector</sub>
-              </index>
+              <idx>
+                <h>vectors</h><h>standard unit vector</h>
+              </idx>
 
-              <index>
-                <main>unit vector</main><sub>standard unit vector</sub>
-              </index>
+              <idx>
+                <h>unit vector</h><h>standard unit vector</h>
+              </idx>
 
               <me>
                 \vec i = \la 1,0\ra  \text{ and }  \vec j = \la 0,1\ra

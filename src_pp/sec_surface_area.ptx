@@ -335,9 +335,9 @@
           bounded region <m>R</m>.
           The surface area <m>S</m> over <m>R</m> is
 
-          <index>
-            <main>surface area</main>
-          </index>
+          <idx>
+            <h>surface area</h>
+          </idx>
 
           <md>
             <mrow>S \amp = \iint_R \ dS</mrow>

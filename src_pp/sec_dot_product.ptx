@@ -20,13 +20,13 @@
               The <em>dot product</em> of <m>\vec u</m> and <m>\vec v</m>,
               denoted \dotp uv, is
 
-              <index>
-                <main>dot product</main><sub>definition</sub>
-              </index>
+              <idx>
+                <h>dot product</h><h>definition</h>
+              </idx>
 
-              <index>
-                <main>vectors</main><sub>dot product</sub>
-              </index>
+              <idx>
+                <h>vectors</h><h>dot product</h>
+              </idx>
 
               <me>
                 \dotp uv = u_1v_1+u_2v_2
@@ -118,13 +118,13 @@
           <m>\vec v</m> and <m>\vec w</m> be vectors in <m>\mathbb{R}^2</m> or
           <m>\mathbb{R}^3</m> and let <m>c</m> be a scalar.
 
-          <index>
-            <main>dot product</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>dot product</h><h>properties</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>dot product</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>dot product</h>
+          </idx>
 
         </p>
 
@@ -326,13 +326,13 @@
           where <m>\theta</m>, <m>0\leq\theta\leq \pi</m>,
           is the angle between <m>\vec u</m> and <m>\vec v</m>.
 
-          <index>
-            <main>dot product</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>dot product</h><h>properties</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>dot product</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>dot product</h>
+          </idx>
 
         </p>
       </statement>
@@ -667,17 +667,17 @@
           Vectors <m>\vec u</m> and <m>\vec v</m> are <term>orthogonal</term>
           if their dot product is 0.
 
-          <index>
-            <main>orthogonal</main>
-          </index>
+          <idx>
+            <h>orthogonal</h>
+          </idx>
 
-          <index>
-            <main>perpendicular|see{orthogonal}</main>
-          </index>
+          <idx>
+            <h>perpendicular|see{orthogonal}</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>orthogonal</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>orthogonal</h>
+          </idx>
 
         </p>
       </statement>
@@ -872,13 +872,13 @@
           The <term>orthogonal projection of <m>\vec u</m> onto <m>\vec v</m></term>,
           denoted <m>\proj uv</m>, is
 
-          <index>
-            <main>orthogonal projection</main>
-          </index>
+          <idx>
+            <h>orthogonal projection</h>
+          </idx>
 
-          <index>
-            <main>vectors</main><sub>orthogonal projection</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>orthogonal projection</h>
+          </idx>
 
           <me>
             \proj uv = \frac{\dotp uv}{\dotp vv}\vec v
@@ -1294,17 +1294,17 @@
         one of which is parallel to <m>\vec v</m>,
         and one of which is orthogonal to <m>\vec v</m>:
 
-        <index>
-          <main>orthogonal decomposition of vectors</main>
-        </index>
+        <idx>
+          <h>orthogonal decomposition of vectors</h>
+        </idx>
 
-        <index>
-          <main>orthogonal</main><sub>decomposition</sub>
-        </index>
+        <idx>
+          <h>orthogonal</h><h>decomposition</h>
+        </idx>
 
-        <index>
-          <main>vectors</main><sub>orthogonal decomposition</sub>
-        </index>
+        <idx>
+          <h>vectors</h><h>orthogonal decomposition</h>
+        </idx>
 
         <me>
           \vec u = \underbrace{\proj uv}_{\parallel\ \vec v}\ +\  (\underbrace{\vec u-\proj uv}_{\perp\ \vec v})
@@ -1569,9 +1569,9 @@
           Let <m>\vec d = \vv{PQ}</m>.
           The <term>work</term> <m>W</m> done by <m>\vec F</m> along <m>\vec d</m> is <m>W = \dotp Fd</m>.
 
-          <index>
-            <main>work</main>
-          </index>
+          <idx>
+            <h>work</h>
+          </idx>
 
         </p>
       </statement>

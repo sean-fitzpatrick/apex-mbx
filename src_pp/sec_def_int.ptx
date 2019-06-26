@@ -326,29 +326,29 @@
           Let <m>y=f(x)</m> be defined on a closed interval <m>[a,b]</m>.
           The <term>total signed area from <m>x=a</m> to <m>x=b</m> under <m>f</m></term> is:
 
-          <index>
-            <main>integration</main><sub>definite</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>definite</h>
+          </idx>
 
-          <index>
-            <main>definite integral</main>
-          </index>
+          <idx>
+            <h>definite integral</h>
+          </idx>
 
-          <index>
-            <main>signed area</main>
-          </index>
+          <idx>
+            <h>signed area</h>
+          </idx>
 
-          <index>
-            <main>total signed area</main>
-          </index>
+          <idx>
+            <h>total signed area</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>notation</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>notation</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>area</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>area</h>
+          </idx>
 
         </p>
 
@@ -551,13 +551,13 @@
           <m>b</m> and <m>c</m>, and let <m>k</m> be a constant.
           The following hold:
 
-          <index>
-            <main>integration</main><sub>definite!properties</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>definite!properties</h>
+          </idx>
 
-          <index>
-            <main>definite integral</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>definite integral</h><h>properties</h>
+          </idx>
 
         </p>
 
@@ -796,7 +796,7 @@
                 <me>
                   \int_{-3}^3 \sqrt{9-x^2}\ dx = \frac12\pi r^2 = \frac 92\pi
                 </me>.
-                <sidebyside xml:id="fig_defint8" widths="47% 47%">
+                <sidebyside widths="47% 47%">
                   <caption>Graphs from <xref ref="ex_defint8">Example</xref></caption>
                   <figure xml:id="fig_defint8a">
                     <caption><m>f(x) = 2x-4</m></caption>

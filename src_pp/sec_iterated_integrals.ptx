@@ -27,9 +27,9 @@
       To signify that <m>C</m> is actually a function of <m>y</m>,
       we write:
 
-      <index>
-        <main>integration</main><sub>of multivariable functions</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>of multivariable functions</h>
+      </idx>
 
       <me>
         f(x,y) = \int f_x(x,y)\ dx  = x^2y+C(y)
@@ -164,25 +164,25 @@
           respectively.
           Then:
 
-          <index>
-            <main>integration</main><sub>iterated</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>iterated</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>multiple</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>multiple</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
-          <index>
-            <main>multiple integration|see{iterated integration}</main>
-          </index>
+          <idx>
+            <h>multiple integration|see{iterated integration}</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>notation</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>notation</h>
+          </idx>
 
         </p>
 
@@ -235,9 +235,9 @@
       We learned in <xref ref="sec_ABC">Section</xref>
       that the area of <m>R</m> is given by
 
-      <index>
-        <main>integration</main><sub>area</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>area</h>
+      </idx>
 
       <me>
         \int_a^b \big(g_2(x)-g_1(x)\big)\ dx
@@ -398,9 +398,9 @@
               where <m>h_1</m> and <m>h_2</m> are continuous functions on <m>[c,d]</m>.
               The area <m>A</m> of <m>R</m> is
 
-              <index>
-                <main>integration</main><sub>area</sub>
-              </index>
+              <idx>
+                <h>integration</h><h>area</h>
+              </idx>
 
               <me>
                 A = \int_c^d\int_{h_1(y)}^{h_2(y)} \ dx\ dy
@@ -691,9 +691,9 @@
       we have been given a region <m>R</m> and found the bounds needed to find the area of <m>R</m> using both orders of integration.
       We integrated using both orders of integration to demonstrate their equality.
 
-      <index>
-        <main>iterated integration</main><sub>changing order</sub>
-      </index>
+      <idx>
+        <h>iterated integration</h><h>changing order</h>
+      </idx>
 
     </p>
 

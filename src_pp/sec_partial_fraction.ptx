@@ -53,9 +53,9 @@
         Let <m>\ds \frac{p(x)}{q(x)}</m> be a rational function,
         where the degree of <m>p</m> is less than the degree of <m>q</m>.
 
-        <index>
-          <main>integration</main><sub>partial fraction decomp.</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>partial fraction decomp.</h>
+        </idx>
 
       </p>
 

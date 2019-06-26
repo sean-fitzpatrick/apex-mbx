@@ -31,13 +31,13 @@
           The <term>cross product of <m>\vec u</m> and <m>\vec v</m></term>,
           denoted <m>\crossp uv</m>, is the vector
 
-          <index>
-            <main>vectors</main><sub>cross product</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>cross product</h>
+          </idx>
 
-          <index>
-            <main>cross product</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>cross product</h><h>definition</h>
+          </idx>
 
           <me>
             \crossp uv = \la u_2v_3-u_3v_2,-(u_1v_3-u_3v_1),u_1v_2-u_2v_1\ra
@@ -236,13 +236,13 @@
           <m>\mathbb{R}^3</m> and let <m>c</m> be a scalar.
           The following identities hold:
 
-          <index>
-            <main>vectors</main><sub>cross product</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>cross product</h>
+          </idx>
 
-          <index>
-            <main>cross product</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>cross product</h><h>properties</h>
+          </idx>
 
         </p>
 
@@ -354,13 +354,13 @@
           where <m>\theta</m>, <m>0\leq \theta \leq \pi</m>,
           is the angle between <m>\vecu</m> and <m>\vecv</m>.
 
-          <index>
-            <main>vectors</main><sub>cross product</sub>
-          </index>
+          <idx>
+            <h>vectors</h><h>cross product</h>
+          </idx>
 
-          <index>
-            <main>cross product</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>cross product</h><h>properties</h>
+          </idx>
 
         </p>
       </statement>
@@ -574,9 +574,9 @@
       finding a vector perpendicular to two others.
       We highlight a few here.
 
-      <index>
-        <main>cross product</main><sub>applications</sub>
-      </index>
+      <idx>
+        <h>cross product</h><h>applications</h>
+      </idx>
 
     </p>
 
@@ -657,9 +657,9 @@
     <p>
       We illustrate using Equation <xref ref="eq_crossp1" /> in the following example.
 
-      <index>
-        <main>cross product</main><sub>applications!area of parallelogram</sub>
-      </index>
+      <idx>
+        <h>cross product</h><h>applications!area of parallelogram</h>
+      </idx>
 
     </p>
 
@@ -1074,9 +1074,9 @@
 
     <p>
 
-      <index>
-        <main>cross product</main><sub>applications!volume of parallelepiped</sub>
-      </index>
+      <idx>
+        <h>cross product</h><h>applications!volume of parallelepiped</h>
+      </idx>
 
     </p>
 
@@ -1258,9 +1258,9 @@
       and has units of N<m>\cdot</m>m,
       a Newton<ndash />meter, or ft<m>\cdot</m>lb, a foot<ndash />pound.
 
-      <index>
-        <main>cross product</main><sub>applications!torque</sub>
-      </index>
+      <idx>
+        <h>cross product</h><h>applications!torque</h>
+      </idx>
 
     </p>
 

@@ -135,9 +135,9 @@
         if <m>\abs{x - c} \lt  \delta</m>,
         then <m>\abs{f(x) - L} \lt  \varepsilon</m>.
 
-        <index>
-          <main>limit</main><sub>definition</sub>
-        </index>
+        <idx>
+          <h>limit</h><h>definition</h>
+        </idx>
 
       </p>
     </statement>
@@ -207,7 +207,7 @@
         See <xref ref="fig_choose_e_d">Figure</xref>.
       </p>
 
-      <sidebyside xml:id="fig_choose_e_d" widths="47% 47%">
+      <sidebyside widths="47% 47%">
         <caption>Illustrating the <m>\varepsilon-\delta</m> process. With <m>\varepsilon=0.5</m>, we pick any <m>\delta \lt  1.75</m>.</caption>
         <figure>
             <!-- START figures/fig_limit_proof1a.tex -->

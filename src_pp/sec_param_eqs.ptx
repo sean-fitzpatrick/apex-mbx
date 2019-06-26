@@ -29,9 +29,9 @@
       we need to plot the <q>top</q>
       and <q>bottom</q> separately.)
 
-      <index>
-        <main>curve</main><sub>rectangular equation</sub>
-      </index>
+      <idx>
+        <h>curve</h><h>rectangular equation</h>
+      </idx>
 
     </p>
 
@@ -73,13 +73,13 @@
           where <m>t</m> is the <term>parameter</term>.
           A <term>curve</term> is a graph along with the parametric equations that define it.
 
-          <index>
-            <main>curve</main><sub>parametrically defined</sub>
-          </index>
+          <idx>
+            <h>curve</h><h>parametrically defined</h>
+          </idx>
 
-          <index>
-            <main>parametric equations</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>parametric equations</h><h>definition</h>
+          </idx>
 
         </p>
       </statement>
@@ -955,9 +955,9 @@
             define an ellipse with horizontal axis of length <m>2a</m> and vertical axis of length <m>2b</m>,
             centered at <m>(h,k)</m>.
 
-            <index>
-              <main>ellipse</main><sub>parametric equations</sub>
-            </index>
+            <idx>
+              <h>ellipse</h><h>parametric equations</h>
+            </idx>
 
           </p>
         </li>
@@ -975,9 +975,9 @@
             defines a hyperbola with horizontal transverse axis.
             Each has asymptotes at <m>y=\pm b/a(x-h)+k</m>.
 
-            <index>
-              <main>hyperbola</main><sub>parametric equations</sub>
-            </index>
+            <idx>
+              <h>hyperbola</h><h>parametric equations</h>
+            </idx>
 
           </p>
         </li>
@@ -1208,17 +1208,17 @@
           A curve is <term>piecewise smooth</term>
           on <m>I</m> if <m>I</m> can be partitioned into subintervals where <m>C</m> is smooth on each subinterval.
 
-          <index>
-            <main>curve</main><sub>smooth</sub>
-          </index>
+          <idx>
+            <h>curve</h><h>smooth</h>
+          </idx>
 
-          <index>
-            <main>smooth curve</main>
-          </index>
+          <idx>
+            <h>smooth curve</h>
+          </idx>
 
-          <index>
-            <main>cusp</main>
-          </index>
+          <idx>
+            <h>cusp</h>
+          </idx>
 
         </p>
       </statement>

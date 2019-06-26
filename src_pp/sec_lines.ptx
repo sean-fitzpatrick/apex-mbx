@@ -5,9 +5,9 @@
   <introduction>
     <p>
 
-      <index>
-        <main>lines</main>
-      </index>
+      <idx>
+        <h>lines</h>
+      </idx>
 
       To find the equation of a line in the <m>x</m>-<m>y</m> plane, we need two pieces of information: a point and the slope. The slope conveys <em>direction</em> information. As vertical lines have an undefined slope, the following statement is more accurate:
     </p>
@@ -227,9 +227,9 @@
           Consider the line in space that passes through
           <m>\vec p = \la x_0,y_0,z_0\ra</m> in the direction of <m>\vec d = \la a,b,c\ra</m>.
 
-          <index>
-            <main>lines</main><sub>equations for</sub>
-          </index>
+          <idx>
+            <h>lines</h><h>equations for</h>
+          </idx>
 
         </p>
 
@@ -566,17 +566,17 @@
       we have four possibilities:
       <m>\vec \ell_1</m> and <m>\vec \ell_2</m> are
 
-      <index>
-        <main>lines</main><sub>skew</sub>
-      </index>
+      <idx>
+        <h>lines</h><h>skew</h>
+      </idx>
 
-      <index>
-        <main>lines</main><sub>parallel</sub>
-      </index>
+      <idx>
+        <h>lines</h><h>parallel</h>
+      </idx>
 
-      <index>
-        <main>lines</main><sub>intersecting</sub>
-      </index>
+      <idx>
+        <h>lines</h><h>intersecting</h>
+      </idx>
 
     </p>
 
@@ -1142,17 +1142,17 @@
             Let <m>P</m> be a point on a line <m>\ell</m> that is parallel to <m>\vec d</m>.
             The distance <m>h</m> from a point <m>Q</m> to the line <m>\ell</m> is:
 
-            <index>
-              <main>distance</main><sub>between point and line</sub>
-            </index>
+            <idx>
+              <h>distance</h><h>between point and line</h>
+            </idx>
 
-            <index>
-              <main>distance</main><sub>between lines</sub>
-            </index>
+            <idx>
+              <h>distance</h><h>between lines</h>
+            </idx>
 
-            <index>
-              <main>lines</main><sub>distances between</sub>
-            </index>
+            <idx>
+              <h>lines</h><h>distances between</h>
+            </idx>
 
             <me>
               h =\frac{\norm{\vv{PQ}\times \vec d}}{\vnorm{d}}

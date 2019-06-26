@@ -46,13 +46,13 @@
           Where the partial derivatives <m>f_x</m> and <m>f_y</m> exist,
           the <term>total differential of <m>z</m></term> is
 
-          <index>
-            <main>total differential</main>
-          </index>
+          <idx>
+            <h>total differential</h>
+          </idx>
 
-          <index>
-            <main>partial derivative</main><sub>total differential</sub>
-          </index>
+          <idx>
+            <h>partial derivative</h><h>total differential</h>
+          </idx>
 
           <me>
             dz = f_x(x,y)dx + f_y(x,y)dy
@@ -136,17 +136,17 @@
               If <m>f</m> is differentiable on <m>\mathbb{R}^2</m>,
               we say that <m>f</m> is <em>differentiable everywhere</em>.
 
-              <index>
-                <main>differentiable</main>
-              </index>
+              <idx>
+                <h>differentiable</h>
+              </idx>
 
-              <index>
-                <main>derivative</main><sub>multivariable differentiability</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>multivariable differentiability</h>
+              </idx>
 
-              <index>
-                <main>multivariable function</main><sub>differentiability</sub>
-              </index>
+              <idx>
+                <h>multivariable function</h><h>differentiability</h>
+              </idx>
 
             </p>
           </li>
@@ -217,13 +217,13 @@
           If <m>f</m> is differentiable at <m>(x_0,y_0)</m>,
           then <m>f</m> is continuous at <m>(x_0,y_0)</m>.
 
-          <index>
-            <main>multivariable function</main><sub>differentiability</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>differentiability</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>continuity</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>continuity</h>
+          </idx>
 
         </p>
       </statement>
@@ -237,9 +237,9 @@
           If <m>f_x</m> and <m>f_y</m> are both continuous on <m>S</m>,
           then <m>f</m> is differentiable on <m>S</m>.
 
-          <index>
-            <main>multivariable function</main><sub>differentiability</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>differentiability</h>
+          </idx>
 
         </p>
       </statement>
@@ -448,13 +448,13 @@
 
     <p>
 
-      <index>
-        <main>sensitivity analysis</main>
-      </index>
+      <idx>
+        <h>sensitivity analysis</h>
+      </idx>
 
-      <index>
-        <main>total differential</main><sub>sensitivity analysis</sub>
-      </index>
+      <idx>
+        <h>total differential</h><h>sensitivity analysis</h>
+      </idx>
 
     </p>
 
@@ -522,13 +522,13 @@
           <m>f_y</m> and <m>f_z</m> exist,
           the <term>total differential of <m>w</m></term> is
 
-          <index>
-            <main>total differential</main>
-          </index>
+          <idx>
+            <h>total differential</h>
+          </idx>
 
-          <index>
-            <main>partial derivative</main><sub>total differential</sub>
-          </index>
+          <idx>
+            <h>partial derivative</h><h>total differential</h>
+          </idx>
 
           <me>
             dz = f_x(x,y,z)dx + f_y(x,y,z)dy+f_z(x,y,z)dz
@@ -555,17 +555,17 @@
           <m>E_y</m> and <m>E_z</m> be functions of <m>dx</m>,
           <m>dy</m> and <m>dz</m> such that
 
-          <index>
-            <main>differentiable</main>
-          </index>
+          <idx>
+            <h>differentiable</h>
+          </idx>
 
-          <index>
-            <main>derivative</main><sub>multivariable differentiability</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>multivariable differentiability</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>differentiability</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>differentiability</h>
+          </idx>
 
           <me>
             \Delta w = dw + E_xdx + E_ydy + E_zdz
@@ -621,13 +621,13 @@
               <m>f_y</m> and <m>f_z</m> are continuous on <m>B</m>,
               then <m>f</m> is differentiable on <m>B</m>.
 
-              <index>
-                <main>multivariable function</main><sub>differentiability</sub>
-              </index>
+              <idx>
+                <h>multivariable function</h><h>differentiability</h>
+              </idx>
 
-              <index>
-                <main>multivariable function</main><sub>continuity</sub>
-              </index>
+              <idx>
+                <h>multivariable function</h><h>continuity</h>
+              </idx>
 
             </p>
           </li>

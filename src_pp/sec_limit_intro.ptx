@@ -85,13 +85,13 @@
       </me>.
       The expression <m>0/0</m> has no value; it is
 
-      <index>
-        <main>limit</main><sub>indeterminate form</sub>
-      </index>
+      <idx>
+        <h>limit</h><h>indeterminate form</h>
+      </idx>
 
-      <index>
-        <main>indeterminate form</main>
-      </index>
+      <idx>
+        <h>indeterminate form</h>
+      </idx>
 
       <term>indeterminate</term>.
       Such an expression gives no information about what is going on with the function nearby.
@@ -136,9 +136,9 @@
       This is not a complete definition (that will come in the next section);
       this is a pseudo-definition that will allow us to explore the idea of a limit.
 
-      <index>
-        <main>limit</main><sub>pseudo-definition</sub>
-      </index>
+      <idx>
+        <h>limit</h><h>pseudo-definition</h>
+      </idx>
 
     </p>
 
@@ -544,9 +544,9 @@
       for there may not be a number that <m>f(x)</m> is approaching.
       There are three ways in which a limit may fail to exist.
 
-      <index>
-        <main>limit</main><sub>does not exist</sub>
-      </index>
+      <idx>
+        <h>limit</h><h>does not exist</h>
+      </idx>
 
       <ol>
         <li>
@@ -780,132 +780,134 @@
           <m>f(x)</m> does not appear to approach any value.
         </p>
 
-        <sidebyside xml:id="fig_nolimit3" widths="47% 47%">
-          <caption>Observing that <m>f(x)=\sin(1/x)</m> has no limit as <m>x\to0</m> in <xref ref="ex_no_limit3">Example</xref>.</caption>
-          <figure xml:id="fig_nolimit3a">
-            <caption /><!-- START figures/fig_nolimit3a.tex -->
-            <image xml:id="img_nolimit3a">
-              <latex-image>
-              <![CDATA[
-              \begin{tikzpicture}
-              \begin{axis}[xmin=-1.1,xmax=1.1,
-              ymin=-1.1,ymax=1.1,
-              ]
-              \addplot[firstcurvestyle,leftarrow,
-              domain=-1.018591636:-0.318309886, % 1/(15/48 pi) to 1/(48/48 pi)
-              samples=34, % sample every pi/48 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.318309886:-0.106103295, % 1/pi to 1/(3 pi)
-              samples=25, % sample every pi/12 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.106103295:-0.063661977, % 1/(3 pi) to 1/(5 pi)
-              samples=49, % sample every pi/24 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
-              samples=97, % sample every pi/48 through phase
-              ] {sin(1/x * 180 / pi)};
-              \draw [color=blue,fill=blue] (axis cs:-0.045472841,-1) rectangle (axis cs:0.045472841,1);
-              %\addplot[firstcurvestyle,-,smooth,
-              %         domain=-0.045472841:-0.0106103295, % 1/(7 pi) to 1/(30 pi)
-              %         samples=93, % sample every pi/2 through phase
-              %        ] {sin(1/x * 180 / pi)};
-              %\addplot[firstcurvestyle,-,smooth,
-              %         domain=0.0106103295:0.045472841, % 1/(30 pi) to 1/(7 pi)
-              %         samples=93, % sample every pi/2 through phase
-              %        ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.045472841:0.063661977, % 1/(7 pi) to 1/(5 pi)
-              samples=97, % sample every pi/48 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.063661977:0.106103295, % 1/(5 pi) to 1/(3 pi)
-              samples=49, % sample every pi/24 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.106103295:0.318309886, % 1/(3 pi) to 1/pi
-              samples=25, % sample every pi/12 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,rightarrow,
-              domain=0.318309886:1.018591636, % 1/(48/48 pi) to 1/(15/48 pi)
-              samples=34, % sample every pi/48 through phase
-              ] {sin(1/x * 180 / pi)};
-              \end{axis}
-              \end{tikzpicture}
-              ]]>
-              </latex-image>
-            </image>
-            <!-- figures/fig_nolimit3a.tex END -->
-          </figure>
+          <figure xml:id="fig_nolimit3as">
+            <caption>Observing that <m>f(x)=\sin(1/x)</m> has no limit as <m>x\to0</m> in <xref ref="ex_no_limit3">Example</xref>.</caption>
+              <sidebyside widths="47% 47%">
+                <figure xml:id="fig_nolimit3a">
+                  <caption /><!-- START figures/fig_nolimit3a.tex -->
+                    <image xml:id="img_nolimit3a">
+                      <latex-image>
+                      <![CDATA[
+                      \begin{tikzpicture}
+                      \begin{axis}[xmin=-1.1,xmax=1.1,
+                      ymin=-1.1,ymax=1.1,
+                      ]
+                      \addplot[firstcurvestyle,leftarrow,
+                      domain=-1.018591636:-0.318309886, % 1/(15/48 pi) to 1/(48/48 pi)
+                      samples=34, % sample every pi/48 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.318309886:-0.106103295, % 1/pi to 1/(3 pi)
+                      samples=25, % sample every pi/12 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.106103295:-0.063661977, % 1/(3 pi) to 1/(5 pi)
+                      samples=49, % sample every pi/24 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
+                      samples=97, % sample every pi/48 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \draw [color=blue,fill=blue] (axis cs:-0.045472841,-1) rectangle (axis cs:0.045472841,1);
+                      %\addplot[firstcurvestyle,-,smooth,
+                      %         domain=-0.045472841:-0.0106103295, % 1/(7 pi) to 1/(30 pi)
+                      %         samples=93, % sample every pi/2 through phase
+                      %        ] {sin(1/x * 180 / pi)};
+                      %\addplot[firstcurvestyle,-,smooth,
+                      %         domain=0.0106103295:0.045472841, % 1/(30 pi) to 1/(7 pi)
+                      %         samples=93, % sample every pi/2 through phase
+                      %        ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.045472841:0.063661977, % 1/(7 pi) to 1/(5 pi)
+                      samples=97, % sample every pi/48 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.063661977:0.106103295, % 1/(5 pi) to 1/(3 pi)
+                      samples=49, % sample every pi/24 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.106103295:0.318309886, % 1/(3 pi) to 1/pi
+                      samples=25, % sample every pi/12 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,rightarrow,
+                      domain=0.318309886:1.018591636, % 1/(48/48 pi) to 1/(15/48 pi)
+                      samples=34, % sample every pi/48 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \end{axis}
+                      \end{tikzpicture}
+                      ]]>
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_nolimit3a.tex END -->
+                  </figure>
 
-          <figure xml:id="fig_nolimit3b">
-            <caption /><!-- START figures/fig_nolimit3b.tex -->
-            <image xml:id="img_nolimit3b">
-              <latex-image>
-              <![CDATA[
-              \begin{tikzpicture}
-              \begin{axis}[xmin=-.11,xmax=.11,
-              ymin=-1.1,ymax=1.1
-              ]
-              \addplot[firstcurvestyle,leftarrow,
-              domain=-0.100518911:-0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
-              samples=89, % sample every pi/48 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
-              samples=25, % sample every pi/12 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.045472841:-0.035367765, % 1/(7 pi) to 1/(9 pi)
-              samples=49, % sample every pi/24 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.035367765:-0.024485376, % 1/(9 pi) to 1/(13 pi)
-              samples=145, % sample every pi/36 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=-0.024485376:-0.012732395, % 1/(13 pi) to 1/(25 pi)
-              samples=73, % sample every pi/6 through phase
-              ] {sin(1/x * 180 / pi)};
-              \draw [color=blue,fill=blue] (axis cs:-0.012732395,-1) rectangle (axis cs:0.012732395,1);
-              %\addplot[firstcurvestyle,-,smooth,
-              %         domain=-0.0031830988618379:-0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
-              %         samples=401, % sample every pi/2 through phase
-              %        ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,leftarrow,
-              domain=0.100518911:0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
-              samples=89, % sample every pi/48 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.063661977:0.045472841, % 1/(5 pi) to 1/(7 pi)
-              samples=25, % sample every pi/12 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.045472841:0.035367765, % 1/(7 pi) to 1/(9 pi)
-              samples=49, % sample every pi/24 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.035367765:0.024485376, % 1/(9 pi) to 1/(13 pi)
-              samples=145, % sample every pi/36 through phase
-              ] {sin(1/x * 180 / pi)};
-              \addplot[firstcurvestyle,-,smooth,
-              domain=0.024485376:0.012732395, % 1/(13 pi) to 1/(25 pi)
-              samples=73, % sample every pi/6 through phase
-              ] {sin(1/x * 180 / pi)};
-              %\addplot[firstcurvestyle,-,smooth,
-              %         domain=0.0031830988618379:0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
-              %         samples=401, % sample every pi/2 through phase
-              %        ] {sin(1/x * 180 / pi)};
-              \end{axis}
-              \end{tikzpicture}
-              ]]>
-              </latex-image>
-            </image>
-            <!-- figures/fig_nolimit3b.tex END -->
-          </figure>
-        </sidebyside>
+                  <figure xml:id="fig_nolimit3b">
+                    <caption /><!-- START figures/fig_nolimit3b.tex -->
+                    <image xml:id="img_nolimit3b">
+                      <latex-image>
+                      <![CDATA[
+                      \begin{tikzpicture}
+                      \begin{axis}[xmin=-.11,xmax=.11,
+                      ymin=-1.1,ymax=1.1
+                      ]
+                      \addplot[firstcurvestyle,leftarrow,
+                      domain=-0.100518911:-0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
+                      samples=89, % sample every pi/48 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
+                      samples=25, % sample every pi/12 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.045472841:-0.035367765, % 1/(7 pi) to 1/(9 pi)
+                      samples=49, % sample every pi/24 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.035367765:-0.024485376, % 1/(9 pi) to 1/(13 pi)
+                      samples=145, % sample every pi/36 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=-0.024485376:-0.012732395, % 1/(13 pi) to 1/(25 pi)
+                      samples=73, % sample every pi/6 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \draw [color=blue,fill=blue] (axis cs:-0.012732395,-1) rectangle (axis cs:0.012732395,1);
+                      %\addplot[firstcurvestyle,-,smooth,
+                      %         domain=-0.0031830988618379:-0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
+                      %         samples=401, % sample every pi/2 through phase
+                      %        ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,leftarrow,
+                      domain=0.100518911:0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
+                      samples=89, % sample every pi/48 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.063661977:0.045472841, % 1/(5 pi) to 1/(7 pi)
+                      samples=25, % sample every pi/12 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.045472841:0.035367765, % 1/(7 pi) to 1/(9 pi)
+                      samples=49, % sample every pi/24 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.035367765:0.024485376, % 1/(9 pi) to 1/(13 pi)
+                      samples=145, % sample every pi/36 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      \addplot[firstcurvestyle,-,smooth,
+                      domain=0.024485376:0.012732395, % 1/(13 pi) to 1/(25 pi)
+                      samples=73, % sample every pi/6 through phase
+                      ] {sin(1/x * 180 / pi)};
+                      %\addplot[firstcurvestyle,-,smooth,
+                      %         domain=0.0031830988618379:0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
+                      %         samples=401, % sample every pi/2 through phase
+                      %        ] {sin(1/x * 180 / pi)};
+                      \end{axis}
+                      \end{tikzpicture}
+                      ]]>
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_nolimit3b.tex END -->
+                </figure>
+              </sidebyside>
+            </figure>
 
         <table xml:id="table_nolimit3c">
           <caption>Observing that <m>f(x)=\sin(1/x)</m> has no limit as <m>x\to0</m> in <xref ref="ex_no_limit3">Example</xref>.</caption>
@@ -962,9 +964,9 @@
       We have approximated limits of functions as <m>x</m> approached a particular number.
       We will consider another important kind of limit after explaining a few key ideas.
 
-      <index>
-        <main>limit</main><sub>difference quotient</sub>
-      </index>
+      <idx>
+        <h>limit</h><h>difference quotient</h>
+      </idx>
 
     </p>
 
@@ -988,21 +990,21 @@
       Since the particle traveled <m>10</m> feet in <m>4</m> seconds,
       we can say the particle's
 
-      <index>
-        <main>average velocity</main>
-      </index>
+      <idx>
+        <h>average velocity</h>
+      </idx>
 
-      <index>
-        <main>velocity</main><sub>average velocity</sub>
-      </index>
+      <idx>
+        <h>velocity</h><h>average velocity</h>
+      </idx>
 
       <term>average velocity</term> was <m>2.5</m> ft/s.
       We write this calculation using a
       <q>quotient of differences,</q> or, a
 
-      <index>
-        <main>difference quotient</main>
-      </index>
+      <idx>
+        <h>difference quotient</h>
+      </idx>
 
       <term>difference quotient</term>:
       <me>
@@ -1080,7 +1082,7 @@
 
     <!--TODO: Add a geogebra applet (for online version only). I've made one here: https://ggbm.at/mGffD9sE -->
 
-    <sidebyside xml:id="fig_diff_quot_smallh" widths="31% 31% 31%">
+    <sidebyside widths="31% 31% 31%">
       <caption>Secant lines of <m>f(x)</m> at <m>x=1</m> and <m>x=1+h</m>, for shrinking values of <m>h</m> (i.e., <m>h\rightarrow 0</m>).</caption>
       <figure xml:id="fig_diff_quot_smallha">
         <caption><m>h=2</m></caption>

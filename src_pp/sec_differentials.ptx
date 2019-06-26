@@ -33,7 +33,7 @@
     </me>.
   </p>
 
-  <sidebyside xml:id="fig_diffal1" widths="47% 47%">
+  <sidebyside widths="47% 47%">
     <caption>Graphing <m>f(x) = \sin(x)</m> and its tangent line at <m>x=\pi/3</m> in order to estimate <m>\sin(1.1)</m>.</caption>
     <figure xml:id="fig_diffal1a">
     <caption/>
@@ -177,13 +177,13 @@
         denoted <m>dx</m>, is any nonzero real number
         (usually taken to be a small number).
 
-        <index>
-          <main>differential</main>
-        </index>
+        <idx>
+          <h>differential</h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>differential</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>differential</h>
+        </idx>
 
         The <term>differential of <m>y</m></term>, denoted <m>dy</m>, is
         <me>
@@ -213,9 +213,9 @@
     <p>
       Let <m>y = f(x)</m> be a differentiable function.
 
-      <index>
-        <main>differential</main><sub>notation</sub>
-      </index>
+      <idx>
+        <h>differential</h><h>notation</h>
+      </idx>
 
     </p>
 

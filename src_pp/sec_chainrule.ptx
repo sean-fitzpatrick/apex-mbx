@@ -140,13 +140,13 @@
           Let <m>y = f(u)</m> be a differentiable function of <m>u</m> and let
           <m>u = g(x)</m> be a differentiable function of <m>x</m>.
 
-          <index>
-            <main>derivative</main><sub>Chain Rule</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>Chain Rule</h>
+          </idx>
 
-          <index>
-            <main>Chain Rule</main>
-          </index>
+          <idx>
+            <h>Chain Rule</h>
+          </idx>
 
           Then <m>y=f(g(x))</m> is a differentiable function of <m>x</m>, and
           <me>
@@ -265,13 +265,13 @@
         <p>
           Let <m>g(x)</m> be a differentiable function and let <m>n\neq 0</m> be an integer.
 
-          <index>
-            <main>derivative</main><sub>Generalized Power Rule</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>Generalized Power Rule</h>
+          </idx>
 
-          <index>
-            <main>Generalized Power Rule</main>
-          </index>
+          <idx>
+            <h>Generalized Power Rule</h>
+          </idx>
 
           Then
           <me>
@@ -752,9 +752,9 @@
         <p>
           Let <m>f(x)=a^x</m>, for <m>a>0, a\neq 1</m>.
 
-          <index>
-            <main>derivative</main><sub>exponential functions</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>exponential functions</h>
+          </idx>
 
           Then <m>f</m> is differentiable for all real numbers and
           <me>
@@ -781,13 +781,13 @@
       we can talk about <m>\lz{y}{x}</m>.
       This leads to an interesting progression of notation:
 
-      <index>
-        <main>Chain Rule</main><sub>notation</sub>
-      </index>
+      <idx>
+        <h>Chain Rule</h><h>notation</h>
+      </idx>
 
-      <index>
-        <main>derivative</main><sub>Chain Rule</sub>
-      </index>
+      <idx>
+        <h>derivative</h><h>Chain Rule</h>
+      </idx>
 
       <md>
         <mrow>y' \amp = \fp(g(x))\cdot g'(x)</mrow>
