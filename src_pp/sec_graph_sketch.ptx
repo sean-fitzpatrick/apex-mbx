@@ -43,11 +43,7 @@
     <p>
       To produce an accurate sketch a given function <m>f</m>,
       consider the following steps.
-
-      <idx>
-        <h>curve sketching</h>
-      </idx>
-
+            <idx><h>curve sketching</h></idx>
       <ol>
         <li xml:id="item-find-domain">
 
@@ -100,7 +96,7 @@
             Evaluate <m>f</m> at each critical point and possible point of inflection.
             Plot these points on a set of axes.
             Connect these points with curves exhibiting the proper concavity.
-            Sketch asymptotes and <m>x</m>- and <m>y</m>-intercepts where applicable.
+            Sketch asymptotes and <m>x</m> and <m>y</m> intercepts where applicable.
           </p>
         </li>
       </ol>
@@ -171,6 +167,7 @@
           </li>
 
           <li>
+
             <p>
               We place the values <m>x=(10\pm\sqrt{37})/9</m> and <m>x=10/9</m> on a number line,
               as shown in <xref ref="tab_sketchline1">Figure</xref>.
@@ -201,6 +198,8 @@
         </ol>
       </p>
 
+<!--TODO: Sean is not so sure about the table that has
+replaced Greg's sign diagram image here... Also, can we consider having separate sign diagrams for f, f', f'' or is Sean the only one who does it that way?-->
       <table xml:id="tab_sketchline1">
         <caption />
 
@@ -244,7 +243,8 @@
 
       </table>
 <!--         <figure xml:id="fig_sketchline1">
-          <caption/>
+          <caption>Number line for <m>f</m> in Example \ref{ex_sketch1}.</caption>
+
           <image width="100%">
             <latex-image>
               <![CDATA[
@@ -267,64 +267,66 @@
             </latex-image>
           </image>
         </figure> -->
-      <sidebyside widths="32% 32% 32%">
-        <caption>Sketching <m>f</m> in <xref ref="ex_sketch1">Example</xref>.</caption>
-        <figure xml:id="fig_sketch1a">
-          <caption/>
-            <!-- START figures/fig_sketch1a.tex -->
-          <image xml:id="img_sketch1a">
-            <description></description>
-            <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[ymin=-5.5,ymax=10.9,xmin=-1.2,xmax=3.2,]
-            \addplot[firstcurvestyle,leftarrow,domain=-1:0.435] {(5-6.4)/(0-0.435)*(x-0.435)+6.4};
-            \addplot[firstcurvestyle,-] coordinates {(0.435,6.4) (1.79,2.69)};
-            \addplot[firstcurvestyle,rightarrow,domain=1.79:2.7] {(5-6.4)/(0-0.435)*(x-1.79)+2.69};
-            \addplot[soliddot] coordinates{(0.435,6.4) (1.11,4.55) (1.79,2.69)};
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-            </latex-image>
-          </image>
+      <figure xml:id="fig_sketch1">
+      <caption>Sketching <m>f</m> in <xref ref="ex_sketch1">Example</xref>.</caption>
+        <sidebyside widths="32% 32% 32%">
+          <figure xml:id="fig_sketch1a">
+            <caption/>
+              <!-- START figures/fig_sketch1a.tex -->
+            <image xml:id="img_sketch1a">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ymin=-5.5,ymax=10.9,xmin=-1.2,xmax=3.2,]
+              \addplot[firstcurvestyle,leftarrow,domain=-1:0.435] {(5-6.4)/(0-0.435)*(x-0.435)+6.4};
+              \addplot[firstcurvestyle,-] coordinates {(0.435,6.4) (1.79,2.69)};
+              \addplot[firstcurvestyle,rightarrow,domain=1.79:2.7] {(5-6.4)/(0-0.435)*(x-1.79)+2.69};
+              \addplot[soliddot] coordinates{(0.435,6.4) (1.11,4.55) (1.79,2.69)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
             <!-- figures/fig_sketch1a.tex END -->
-        </figure>
+          </figure>
 
-        <figure xml:id="fig_sketch1b">
-          <caption/>
-            <!-- START figures/fig_sketch1b.tex -->
-          <image xml:id="img_sketch1b">
-            <description></description>
-            <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[ymin=-5.5,ymax=10.9,xmin=-1.2,xmax=3.2,]
-            \addplot[firstcurvestyle,leftarrow,domain=-0.8:0.435] {(x-0.435)^2/(0-0.435)^2*(5-6.4)  + 6.4};
-            \addplot[firstcurvestyle,-,domain=0.435:1.79] {(6.4-2.69)*6/(1.79-0.435)^3*((x-0.435)*(x-1.79)^2/2 - (x-1.79)^3/6)+2.69};
-            \addplot[firstcurvestyle,rightarrow,domain=1.79:2.8] {-(x-1.79)^2/(0-0.435)^2*(5-6.4)  + 2.69};
-            \addplot[soliddot] coordinates{(0.435,6.4) (1.11,4.55) (1.79,2.69)};
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-            </latex-image>
-          </image>
-            <!-- figures/fig_sketch1b.tex END -->
-        </figure>
+          <figure xml:id="fig_sketch1b">
+            <caption/>
+              <!-- START figures/fig_sketch1b.tex -->
+            <image xml:id="img_sketch1b">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ymin=-5.5,ymax=10.9,xmin=-1.2,xmax=3.2,]
+              \addplot[firstcurvestyle,leftarrow,domain=-0.8:0.435] {(x-0.435)^2/(0-0.435)^2*(5-6.4)  + 6.4};
+              \addplot[firstcurvestyle,-,domain=0.435:1.79] {(6.4-2.69)*6/(1.79-0.435)^3*((x-0.435)*(x-1.79)^2/2 - (x-1.79)^3/6)+2.69};
+              \addplot[firstcurvestyle,rightarrow,domain=1.79:2.8] {-(x-1.79)^2/(0-0.435)^2*(5-6.4)  + 2.69};
+              \addplot[soliddot] coordinates{(0.435,6.4) (1.11,4.55) (1.79,2.69)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+              <!-- figures/fig_sketch1b.tex END -->
+          </figure>
 
-        <figure xml:id="fig_sketch1c">
-          <caption/>
+          <figure xml:id="fig_sketch1c">
+            <caption/>
 
-          <image xml:id="img_sketch1c">
-            <description></description>
+            <image xml:id="img_sketch1c">
+              <description></description>
 
-            <sageplot>
-              f(x) = 3*x^3-10*x^2+7*x+5
-              plot(f, (x, -1, 3), ymin=-5, ymax=10, fontsize=30, thickness=3)
-            </sageplot>
-          </image>
+              <sageplot>
+                f(x) = 3*x^3-10*x^2+7*x+5
+                plot(f, (x, -1, 3), ymin=-5, ymax=10, fontsize=30, thickness=3)
+              </sageplot>
+            </image>
 
-        </figure>
-      </sidebyside>
+          </figure>
+        </sidebyside>
+      </figure>
     </solution>
   </example>
 
@@ -345,7 +347,7 @@
           <li>
             <p>
               In determining the domain,
-              we assume it is all real numbers and looks for restrictions.
+              we assume it is all real numbers and look for restrictions.
               We find that at <m>x=-2</m> and <m>x=3</m>,
               <m>f(x)</m> is not defined.
               So the domain of <m>f</m> is <m>D = \{ x \mid x\neq -2,3\}</m>.
@@ -356,12 +358,12 @@
             <p>
               To find the critical values of <m>f</m>,
               we first find <m>\fp(x)</m>.
-              Using the <xref ref="thm_QuotientRule" autoname="title" />, we find
+              Using the <xref ref="thm_QuotientRule" text="title" />, we find
               <me>
                 \fp(x) = \frac{-8x+4}{(x^2+x-6)^2} = \frac{-8x+4}{(x-3)^2(x+2)^2}
               </me>.
-              When <m>x = 1/2</m>, <m>\fp(x) = 0</m>,
-              and <m>\fp</m> is undefined when <m>x=-2,3</m>.
+              We get <m>\fp(x) = 0</m> when <m>x = 1/2</m>,
+                and <m>\fp</m> is undefined when <m>x=-2,3</m>.
               Since <m>\fp</m>is undefined only when <m>f</m> is also undefined,
               these are not critical values.
               The only critical value is <m>x=1/2</m>.
@@ -371,7 +373,7 @@
           <li>
             <p>
               To find the possible points of inflection, we find <m>\fpp(x)</m>,
-              again employing the <xref ref="thm_QuotientRule" autoname="title" />:
+              again employing the <xref ref="thm_QuotientRule" text="title" />:
               <me>
                 \fpp(x) = \frac{24x^2-24x+56}{(x-3)^3(x+2)^3}
               </me>.
@@ -432,9 +434,10 @@
           </li>
         </ol>
       </p>
-
+<!--TODO: Another vote fro Sean for going back to the TikZ number line -->
       <table xml:id="tab_sketchline2">
-        <caption />
+        <caption>Number line for <m>f</m> in <xref ref="ex_sketch2">Example</xref>.</caption>
+
 
         <tabular halign="center">
           <row bottom="major">
@@ -494,71 +497,74 @@
             </latex-image>
           </image>
         </figure> -->
-      <sidebyside widths="32% 32% 32%">
+      <figure xml:id="fig_sketch2">
         <caption>Sketching <m>f</m> in <xref ref="ex_sketch2">Example</xref>.</caption>
-        <figure xml:id="fig_sketch2a">
-          <caption/>
-            <!-- START figures/fig_sketch2a.tex -->
-          <image xml:id="img_sketch2a">
+        <sidebyside widths="32% 32% 32%">
+          <caption>Sketching <m>f</m> in <xref ref="ex_sketch2">Example</xref>.</caption>
+          <figure xml:id="fig_sketch2a">
+            <caption/>
+              <!-- START figures/fig_sketch2a.tex -->
+            <image xml:id="img_sketch2a">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ymin=-5.2,ymax=5.2,xmin=-5.1,xmax=5.1,]
+              \addplot[firstcurvestyle,domain=-4.5:-2.5] {(x+3)+3};
+              \addplot[firstcurvestyle,leftarrow,domain=-1.7:0.5] {(0-0.36)/(-1-0.5)*(x-0.5)+0.36};
+              \addplot[firstcurvestyle,rightarrow,domain=0.5:2.7] {(0-0.36)/(2-0.5)*(x-0.5)+0.36};
+              \addplot[firstcurvestyle,domain=3.5:5] {-(x-4)+3};
+              \addplot[asymptote] coordinates {(-2,-5) (-2,5)};
+              \addplot[asymptote] coordinates {(3,-5) (3,5)};
+              \addplot[asymptote] {1};
+              \addplot[soliddot] coordinates{(0.5,0.36)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+              <!-- figures/fig_sketch2a.tex END -->
+          </figure>
+
+          <figure xml:id="fig_sketch2b">
+            <caption/>
+              <!-- START figures/fig_sketch2b.tex -->
+            <image xml:id="img_sketch2b">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ymin=-5.2,ymax=5.2,xmin=-5.1,xmax=5.1,]
+              \addplot[firstcurvestyle,domain=-5.1:-2.3] {-1/(x+2)+1};
+              \addplot[firstcurvestyle,domain=-1.8:2.8] {(x^2-x-2)/(x^2-x-6)};
+              \addplot[firstcurvestyle,domain=3.3:5.1] {1/(x-3)+1};
+              \addplot[asymptote] coordinates {(-2,-5) (-2,5)};
+              \addplot[asymptote] coordinates {(3,-5) (3,5)};
+              \addplot[asymptote] {1};
+              \addplot[soliddot] coordinates{(0.5,0.36) (-1,0) (2,0)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+              <!-- figures/fig_sketch2b.tex END -->
+          </figure>
+
+          <figure xml:id="fig_sketch2c">
+            <caption/>
+
+            <image xml:id="img_sketch2c">
             <description></description>
-            <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[ymin=-5.2,ymax=5.2,xmin=-5.1,xmax=5.1,]
-            \addplot[firstcurvestyle,domain=-4.5:-2.5] {(x+3)+3};
-            \addplot[firstcurvestyle,leftarrow,domain=-1.7:0.5] {(0-0.36)/(-1-0.5)*(x-0.5)+0.36};
-            \addplot[firstcurvestyle,rightarrow,domain=0.5:2.7] {(0-0.36)/(2-0.5)*(x-0.5)+0.36};
-            \addplot[firstcurvestyle,domain=3.5:5] {-(x-4)+3};
-            \addplot[asymptote] coordinates {(-2,-5) (-2,5)};
-            \addplot[asymptote] coordinates {(3,-5) (3,5)};
-            \addplot[asymptote] {1};
-            \addplot[soliddot] coordinates{(0.5,0.36)};
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-            </latex-image>
-          </image>
-            <!-- figures/fig_sketch2a.tex END -->
-        </figure>
 
-        <figure xml:id="fig_sketch2b">
-          <caption/>
-            <!-- START figures/fig_sketch2b.tex -->
-          <image xml:id="img_sketch2b">
-            <description></description>
-            <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[ymin=-5.2,ymax=5.2,xmin=-5.1,xmax=5.1,]
-            \addplot[firstcurvestyle,domain=-5.1:-2.3] {-1/(x+2)+1};
-            \addplot[firstcurvestyle,domain=-1.8:2.8] {(x^2-x-2)/(x^2-x-6)};
-            \addplot[firstcurvestyle,domain=3.3:5.1] {1/(x-3)+1};
-            \addplot[asymptote] coordinates {(-2,-5) (-2,5)};
-            \addplot[asymptote] coordinates {(3,-5) (3,5)};
-            \addplot[asymptote] {1};
-            \addplot[soliddot] coordinates{(0.5,0.36) (-1,0) (2,0)};
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-            </latex-image>
-          </image>
-            <!-- figures/fig_sketch2b.tex END -->
-        </figure>
+              <sageplot>
+                f(x) = (x^2-x-2)/(x^2-x-6)
+                plot(f, (x, -5, 5), ymin=-5, ymax=5, detect_poles=true, fontsize=30, thickness=3)
+              </sageplot>
+            </image>
 
-        <figure xml:id="fig_sketch2c">
-          <caption/>
-
-          <image xml:id="img_sketch2c">
-            <description></description>
-
-            <sageplot>
-              f(x) = (x^2-x-2)/(x^2-x-6)
-              plot(f, (x, -5, 5), ymin=-5, ymax=5, detect_poles=true, fontsize=30, thickness=3)
-            </sageplot>
-          </image>
-
-        </figure>
-      </sidebyside>
+          </figure>
+        </sidebyside>
+      </figure>
     </solution>
   </example>
 
@@ -566,7 +572,7 @@
     <title>Curve sketching</title>
     <statement>
       <p>
-        Sketch <m>\ds f(x) = \frac{5(x-2)(x+1)}{x^2+2x+4}</m>.
+        Sketch <m>f(x) = \dfrac{5(x-2)(x+1)}{x^2+2x+4}</m>.
       </p>
     </statement>
     <solution>
@@ -653,7 +659,7 @@
               (this graph only includes increasing/decreasing information).
               In <xref ref="fig_sketch3b">Figure</xref>,
               we add concavity, drawing the function so that it is smooth
-              (since <m>f</m> is differntiable everywhere,
+              (since <m>f</m> is differentiable everywhere,
               there should be no kinks or corners).
               <xref ref="fig_sketch3c">Figure</xref>
               shows a computer generated graph of <m>f</m>, affirming our results.
@@ -661,9 +667,9 @@
           </li>
         </ol>
       </p>
-
+<!--TODO: take a look at this table too -->
       <table xml:id="tab_sketchline3">
-        <caption />
+        <caption>Number line for <m>f</m> in Example <xref ref="ex_sketch3">Example</xref>.</caption>
 
         <tabular halign="center">
           <row bottom="major">
@@ -739,72 +745,74 @@
             </latex-image>
           </image>
         </figure> -->
-      <sidebyside widths="32% 32% 32%">
-        <caption>Sketching <m>f</m> in <xref ref="ex_sketch3">Example</xref>.</caption>
-        <figure xml:id="fig_sketch3a">
-          <caption/>
-            <!-- START figures/fig_sketch3a.tex -->
-          <image xml:id="img_sketch3a">
-            <description></description>
-            <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[ ymin=-3.1,ymax=8.1,xmin=-7.5,xmax=6.5,]
-            \addplot[firstcurvestyle,leftarrow,domain=-7:-4] {(7.2-7.5)/(-5.579+4)*(x+4)+7.5};
-            \addplot[firstcurvestyle,-,domain=-4:-1.305] {(1.630-7.5)/(-1.305+4)*(x+4)+7.5};
-            \addplot[firstcurvestyle,-,domain=-1.305:-1] {(0-1.630)/(-1+1.305)*(x+1)};
-            \addplot[firstcurvestyle,-,domain=-1:0] {(-2.5-0)/(0+1)*(x+1)};
-            \addplot[firstcurvestyle,-,domain=0:1.064] {(-1.331+2.5)/(1.064-0)*(x-1.064)-1.331};
-            \addplot[firstcurvestyle,rightarrow,domain=1.064:5] {(0+1.331)/(2-1.064)*(x-2)};
-            \addplot[asymptote,domain=-7.5:6.5] {5};
-            \addplot[soliddot] coordinates{(0,-2.5) (-1,0) (2,0) (-5.579,7.2) (-1.305,1.630) (1.064,-1.331) (-4,7.5)};
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-            </latex-image>
-          </image>
-            <!-- figures/fig_sketch3a.tex END -->
-        </figure>
+        <figure xml:id="fig_sketch3">
+        <sidebyside widths="32% 32% 32%">
+          <caption>Sketching <m>f</m> in <xref ref="ex_sketch3">Example</xref>.</caption>
+          <figure xml:id="fig_sketch3a">
+            <caption/>
+              <!-- START figures/fig_sketch3a.tex -->
+            <image xml:id="img_sketch3a">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ ymin=-3.1,ymax=8.1,xmin=-7.5,xmax=6.5,]
+              \addplot[firstcurvestyle,leftarrow,domain=-7:-4] {(7.2-7.5)/(-5.579+4)*(x+4)+7.5};
+              \addplot[firstcurvestyle,-,domain=-4:-1.305] {(1.630-7.5)/(-1.305+4)*(x+4)+7.5};
+              \addplot[firstcurvestyle,-,domain=-1.305:-1] {(0-1.630)/(-1+1.305)*(x+1)};
+              \addplot[firstcurvestyle,-,domain=-1:0] {(-2.5-0)/(0+1)*(x+1)};
+              \addplot[firstcurvestyle,-,domain=0:1.064] {(-1.331+2.5)/(1.064-0)*(x-1.064)-1.331};
+              \addplot[firstcurvestyle,rightarrow,domain=1.064:5] {(0+1.331)/(2-1.064)*(x-2)};
+              \addplot[asymptote,domain=-7.5:6.5] {5};
+              \addplot[soliddot] coordinates{(0,-2.5) (-1,0) (2,0) (-5.579,7.2) (-1.305,1.630) (1.064,-1.331) (-4,7.5)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+              <!-- figures/fig_sketch3a.tex END -->
+          </figure>
 
-        <figure xml:id="fig_sketch3b">
-          <caption/>
-            <!-- START figures/fig_sketch3b.tex -->
-          <image xml:id="img_sketch3b">
-            <description></description>
-            <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[ ymin=-3.1,ymax=8.1,xmin=-7.5,xmax=6.5,]
-            \addplot[firstcurvestyle,leftarrow,domain=-7.5:-4] {7.5-0.3/(exp(-1/2/(-5.579+4)^2*(-5.579+4)^2) - 1)*(-1+exp(-1/2/(-5.579+4)^2*(x+4)^2))};
-            \addplot[firstcurvestyle,-,domain=-4:-1.305] {(1.630-7.5)/(-1.305+4)^2*(x+4)^2+7.5};
-            \addplot[firstcurvestyle,-,domain=-1.305:-1] {(0-1.630)/(-1+1.305)*(x+1)+0};
-            \addplot[firstcurvestyle,-,domain=-1:0] {2.5/(-1)^2*x^2-2.5};
-            \addplot[firstcurvestyle,-,domain=0:1.064] {(-1.331+2.5)/(1.064)^2*x^2-2.5};
-            \addplot[firstcurvestyle,rightarrow,domain=1.064:6] {4*(-1.331+2.5)/1.064 * sqrt(1.064+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064)))*sqrt(x+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064)))-(4*(-1.331+2.5)/1.064 * sqrt(1.064+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064))))*sqrt(2+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064)))};
-            \addplot[asymptote,domain=-7.5:6.5] {5};
-            \addplot[soliddot] coordinates{(0,-2.5) (-1,0) (2,0) (-5.579,7.2) (-1.305,1.630) (1.064,-1.331) (-4,7.5)};
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-            </latex-image>
-          </image>
-            <!-- figures/fig_sketch3b.tex END -->
-        </figure>
+          <figure xml:id="fig_sketch3b">
+            <caption/>
+              <!-- START figures/fig_sketch3b.tex -->
+            <image xml:id="img_sketch3b">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ ymin=-3.1,ymax=8.1,xmin=-7.5,xmax=6.5,]
+              \addplot[firstcurvestyle,leftarrow,domain=-7.5:-4] {7.5-0.3/(exp(-1/2/(-5.579+4)^2*(-5.579+4)^2) - 1)*(-1+exp(-1/2/(-5.579+4)^2*(x+4)^2))};
+              \addplot[firstcurvestyle,-,domain=-4:-1.305] {(1.630-7.5)/(-1.305+4)^2*(x+4)^2+7.5};
+              \addplot[firstcurvestyle,-,domain=-1.305:-1] {(0-1.630)/(-1+1.305)*(x+1)+0};
+              \addplot[firstcurvestyle,-,domain=-1:0] {2.5/(-1)^2*x^2-2.5};
+              \addplot[firstcurvestyle,-,domain=0:1.064] {(-1.331+2.5)/(1.064)^2*x^2-2.5};
+              \addplot[firstcurvestyle,rightarrow,domain=1.064:6] {4*(-1.331+2.5)/1.064 * sqrt(1.064+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064)))*sqrt(x+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064)))-(4*(-1.331+2.5)/1.064 * sqrt(1.064+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064))))*sqrt(2+((1.331*1.064/4/(-1.331+2.5)+1.064)^2 - 1.064*2) / (1.064+2 - 2*(1.331*1.064/4/(-1.331+2.5)+1.064)))};
+              \addplot[asymptote,domain=-7.5:6.5] {5};
+              \addplot[soliddot] coordinates{(0,-2.5) (-1,0) (2,0) (-5.579,7.2) (-1.305,1.630) (1.064,-1.331) (-4,7.5)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+              <!-- figures/fig_sketch3b.tex END -->
+          </figure>
 
-        <figure xml:id="fig_sketch3c">
-          <caption/>
+          <figure xml:id="fig_sketch3c">
+            <caption/>
 
-          <image xml:id="img_sketch3c">
-            <description></description>
+            <image xml:id="img_sketch3c">
+              <description></description>
 
-            <sageplot>
-              f(x) = (5*(x-2)*(x+1))/(x^2+2*x+4)
-              plot(f, (x, -7.5, 6.5), ymin=-3, ymax=8, fontsize=30, thickness=3)
-            </sageplot>
-          </image>
+              <sageplot>
+                f(x) = (5*(x-2)*(x+1))/(x^2+2*x+4)
+                plot(f, (x, -7.5, 6.5), ymin=-3, ymax=8, fontsize=30, thickness=3)
+              </sageplot>
+            </image>
 
-        </figure>
-      </sidebyside>
+          </figure>
+        </sidebyside>
+      </figure>
     </solution>
   </example>
 
@@ -851,26 +859,27 @@
     <q>end behavior</q> is accurate.)
   </p>
 
-  <sidebyside widths="47% 47%">
-    <caption>CAS plots of <m>y=\sin(x)</m> illustrating the sample points</caption>
-    <figure>
-      <caption><booktitle>Sage</booktitle> output</caption>
-      <image xml:id="img_sage_sinx">
-        <description></description>
+  <figure xml:id="fig_sage_sinx">
+    <sidebyside widths="47% 47%">
+      <caption>CAS plots of <m>y=\sin(x)</m> illustrating the sample points</caption>
+      <figure>
+        <caption><booktitle>Sage</booktitle> output</caption>
+        <image xml:id="img_sage_sinx">
+          <description></description>
 
-          <sageplot>
-            f(x) = sin(x)
-            plot(f, (x, 0, 2*pi), marker="o", plot_points=50, randomize=False, adaptive_tolerance=0.01, adaptive_recursion=2, fontsize=30, thickness=2)
-          </sageplot>
-      </image>
+            <sageplot>
+              f(x) = sin(x)
+              plot(f, (x, 0, 2*pi), marker="o", plot_points=50, randomize=False, adaptive_tolerance=0.01, adaptive_recursion=2, fontsize=30, thickness=2)
+            </sageplot>
+        </image>
+      </figure>
 
-    </figure>
-
-    <figure>
-      <caption><booktitle>Mathematica</booktitle> output</caption>
-      <image xml:id="img_mathematica_sinx" source="images/figmathematica_sinx" />
-    </figure>
-  </sidebyside>
+      <figure>
+        <caption><booktitle>Mathematica</booktitle> output</caption>
+        <image xml:id="img_mathematica_sinx" source="images/figmathematica_sinx" />
+      </figure>
+    </sidebyside>
+  </figure>
 
   <p>
     How does <booktitle>Sage</booktitle> know where the graph is <q>curvy</q>?
@@ -906,7 +915,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
             </pg-code>
             </setup>
@@ -930,7 +938,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
             </pg-code>
             </setup>
@@ -954,7 +961,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -976,7 +982,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -998,7 +1003,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $tf=PopUp(['?','True','False'],1);
             </pg-code>
@@ -1114,7 +1118,7 @@
 
     </exercisegroup>
     <exercisegroup>
-
+<!--TODO: Instead of "use technology", how about "use the Sage cell provided"? -->
       <introduction>
         <p>
           In the following exercises,

@@ -44,7 +44,9 @@
     <md>
       <mrow>\frac{\Delta f}{\Delta t} \amp = \frac{f(2)-f(0)}{2-0}</mrow>
       <mrow>\amp  = \frac{100-0}{2}</mrow>
-      <mrow>\amp = 50\text{ mph}</mrow>
+      <mrow>\amp = <quantity>
+      <mag>50</mag><unit base="mileperhour" />
+    </quantity></mrow>
     </md>.
   </p>
 
@@ -94,9 +96,9 @@
         </me>.
       </p>
 
+      <figure xml:id="fig_mvt1">
+      <caption/>
       <sidebyside widths="47% 47%">
-        <caption/>
-
         <figure>
           <caption>A graph of <m>f_1(x) = 1/x^2</m></caption>
             <!-- START figures/fig_mvt1.tex -->
@@ -140,6 +142,7 @@
             <!-- figures/fig_mvt2.tex END -->
         </figure>
       </sidebyside>
+      </figure>
     </statement>
   </example>
 
@@ -155,18 +158,9 @@
     <title>The Mean Value Theorem of Differentiation</title>
     <statement>
       <p>
-        Let <m>y=f(x)</m> be continuous function on the closed interval <m>[a,b]</m> and differentiable on the open interval <m>(a,b)</m>.
-        There exists a value <m>c</m>,
-        <m>a \lt  c \lt  b</m>, such that
-
-        <idx>
-          <h>Mean Value Theorem</h><h>of differentiation</h>
-        </idx>
-
-        <idx>
-          <h>derivative</h><h>Mean Value Theorem</h>
-        </idx>
-
+        Let <m>y=f(x)</m> be a continuous function on the closed interval <m>[a,b]</m> and differentiable on the open interval <m>(a,b)</m>.
+        There exists a value <m>c</m>, <m>a \lt  c \lt  b</m>,
+        such that <idx><h>Mean Value Theorem</h><h>of differentiation</h></idx><idx><h>derivative</h><h>Mean Value Theorem</h></idx>
         <me>
           \fp(c) = \frac{f(b)-f(a)}{b-a}
         </me>.
@@ -195,11 +189,7 @@
         Let <m>f</m> be continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>,
         where <m>f(a) = f(b)</m>.
         There is some <m>c</m> in <m>(a,b)</m> such that <m>\fp(c) = 0</m>.
-
-        <idx>
-          <h>Rolle's Theorem</h>
-        </idx>
-
+            <idx><h>Rolle's Theorem</h></idx>
       </p>
     </statement>
   </theorem>
@@ -297,7 +287,7 @@
       We can show <m>g(a)=g(b)</m> (it is actually easier to show <m>g(b)-g(a)=0</m>,
       which suffices).
       We can then apply Rolle's theorem to guarantee the existence of
-      <m>c \in (a,b)</m> such that <m>g'(c) = 0</m>.
+      <m>c</m> in <m>(a,b)</m> such that <m>g'(c) = 0</m>.
       But note that
       <me>
         0= g'(c) = \fp(c) - \frac{f(b)-f(a)}{b-a}
@@ -409,6 +399,7 @@
     it is mostly used to advance other theory.
     We will use it in the next section to relate the shape of a graph to its derivative.
   </p>
+  
   <exercises>
     <exercisegroup>
 
@@ -463,7 +454,7 @@
         <p>
           In the following exercises,
           a function <m>f(x)</m> and interval <m>[a,b]</m> are given.
-          Check if <xref ref="thm_rolles" autoname="title"/> can be applied to <m>f</m> on <m>[a,b]</m>;
+          Check if <xref ref="thm_rolles" text="title"/> can be applied to <m>f</m> on <m>[a,b]</m>;
           if so, find <m>c</m> in <m>(a,b)</m> such that <m>\fp(c)=0</m>.
         </p>
       </introduction>
@@ -471,7 +462,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->strings->add('does not apply'=>{});
@@ -497,7 +487,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->strings->add('does not apply'=>{});
@@ -523,7 +512,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -550,7 +538,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -577,7 +564,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -604,7 +590,6 @@
       <exercise>
         <webwork>
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -632,7 +617,6 @@
       <exercise>
         <webwork>
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -662,7 +646,6 @@
       <exercise>
         <webwork>
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -697,14 +680,26 @@
           In the following exercises,
           a function <m>f(x)</m> and interval <m>[a,b]</m> are given.
           Check if the Mean Value Theorem can be applied to <m>f</m> on <m>[a,b]</m>;
-          if so, find a value <m>c</m> in <m>[a,b]</m> guaranteed by the Mean Value Theorem.
+          if so, find a value <m>c</m> in <m>(a,b)</m> guaranteed by the Mean Value Theorem.
         </p>
       </introduction>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>\ds f(x) = x^2+3x-1</m> on <m>[-2,2]</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>c=0</m>
+        </p>
+      </answer>
+    </exercise>
 
       <exercise>
         <webwork>
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -734,7 +729,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -764,7 +758,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -794,7 +787,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -824,7 +816,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -854,7 +845,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -886,7 +876,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -919,7 +908,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -951,7 +939,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -983,7 +970,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               Context("Interval");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1024,7 +1010,6 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
- 
             <pg-code>
             </pg-code>
           </setup> -->
@@ -1048,7 +1033,6 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
- 
             <pg-code>
             </pg-code>
           </setup> -->
@@ -1070,7 +1054,6 @@
       <exercise>
 <!--         <webwork seed="1">
           <setup>
- 
             <pg-code>
             </pg-code>
           </setup> -->
@@ -1083,7 +1066,7 @@
         <solution>
           <p>
             They are the odd,
-            integer valued multiples of <m>\pi/2</m> (such as <m>0, \pm\pi/2, \pm 3\pi/2, \pm5\pi/2</m>, etc.)
+            integer valued multiples of <m>\pi/2</m> (such as <m>\pm\pi/2, \pm 3\pi/2, \pm5\pi/2</m>, etc.)
           </p>
         </solution>
 <!--         </webwork> -->

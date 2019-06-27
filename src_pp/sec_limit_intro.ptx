@@ -85,13 +85,8 @@
       </me>.
       The expression <m>0/0</m> has no value; it is
 
-      <idx>
-        <h>limit</h><h>indeterminate form</h>
-      </idx>
-
-      <idx>
-        <h>indeterminate form</h>
-      </idx>
+          <idx><h>limit</h><h>indeterminate form</h></idx>
+          <idx><h>indeterminate form</h></idx>
 
       <term>indeterminate</term>.
       Such an expression gives no information about what is going on with the function nearby.
@@ -135,11 +130,7 @@
       </me>.
       This is not a complete definition (that will come in the next section);
       this is a pseudo-definition that will allow us to explore the idea of a limit.
-
-      <idx>
-        <h>limit</h><h>pseudo-definition</h>
-      </idx>
-
+          <idx><h>limit</h><h>pseudo-definition</h></idx>
     </p>
 
     <p>
@@ -190,32 +181,32 @@
           <cell><m>\sin(x)/x</m></cell>
         </row>
         <row>
-          <cell><m>0.9</m></cell>
-          <cell><m>0.870363</m></cell>
+          <cell>0.9</cell>
+          <cell>0.870363</cell>
         </row>
         <row>
-          <cell><m>0.99</m></cell>
-          <cell><m>0.844471</m></cell>
+          <cell>0.99</cell>
+          <cell>0.844471</cell>
         </row>
         <row>
-          <cell><m>0.999</m></cell>
-          <cell><m>0.841772</m></cell>
+          <cell>0.999</cell>
+          <cell>0.841772</cell>
         </row>
         <row>
-          <cell><m>\textit{1}</m></cell>
-          <cell><m>\textit{0.841471}</m></cell>
+          <cell><alert>1</alert></cell>
+          <cell><alert>0.841471</alert></cell>
         </row>
         <row>
-          <cell><m>1.001</m></cell>
-          <cell><m>0.841170</m></cell>
+          <cell>1.001</cell>
+          <cell>0.841170</cell>
         </row>
         <row>
-          <cell><m>1.01</m></cell>
-          <cell><m>0.838447</m></cell>
+          <cell>1.01</cell>
+          <cell>0.838447</cell>
         </row>
         <row>
-          <cell><m>1.1</m></cell>
-          <cell><m>0.810189</m></cell>
+          <cell>1.1</cell>
+          <cell>0.810189</cell>
         </row>
       </tabular>
 
@@ -240,32 +231,32 @@
           <cell><m>\sin(x)/x</m></cell>
         </row>
         <row>
-          <cell><m>-0.1</m></cell>
-          <cell><m>0.9983341665</m></cell>
+          <cell>-0.1</cell>
+          <cell>0.9983341665</cell>
         </row>
         <row>
-          <cell><m>-0.01</m></cell>
-          <cell><m>0.9999833334</m></cell>
+          <cell>-0.01</cell>
+          <cell>0.9999833334</cell>
         </row>
         <row>
-          <cell><m>-0.001</m></cell>
-          <cell><m>0.9999998333</m></cell>
+          <cell>-0.001</cell>
+          <cell>0.9999998333</cell>
         </row>
         <row>
-          <cell><m>\textit{0}</m></cell>
-          <cell><m>\textit{not defined}</m></cell>
+          <cell><alert>0</alert></cell>
+          <cell><alert>not defined</alert></cell>
         </row>
         <row>
-          <cell><m>0.001</m></cell>
-          <cell><m>0.9999998333</m></cell>
+          <cell>0.001</cell>
+          <cell>0.9999998333</cell>
         </row>
         <row>
-          <cell><m>0.01</m></cell>
-          <cell><m>0.9999833334</m></cell>
+          <cell>0.01</cell>
+          <cell>0.9999833334</cell>
         </row>
         <row>
-          <cell><m>0.1</m></cell>
-          <cell><m>0.9983341665</m></cell>
+          <cell>0.1</cell>
+          <cell>0.9983341665</cell>
         </row>
       </tabular>
 
@@ -293,7 +284,7 @@
         <p>
           Use graphical and numerical methods to approximate
           <me>
-            \lim_{x\to 3} \frac{x^2-x-6}{6x^2-19x+3 }
+            \lim_{x\to 3} \frac{x^2-x-6}{6x^2-19x+3}
           </me>.
         </p>
       </statement>
@@ -542,12 +533,9 @@
       (where <m>L</m> is some real number)
       for all values of <m>c</m>,
       for there may not be a number that <m>f(x)</m> is approaching.
-      There are three ways in which a limit may fail to exist.
+      There are three common ways in which a limit may fail to exist.
 
-      <idx>
-        <h>limit</h><h>does not exist</h>
-      </idx>
-
+          <idx><h>limit</h><h>does not exist</h></idx>
       <ol>
         <li>
           <p>
@@ -563,7 +551,7 @@
 
         <li>
           <p>
-            The function may oscillate as <m>x</m> approaches <m>c</m>.
+            The function may oscillate as <m>x</m> approaches <m>c</m> without approaching a specific value.
           </p>
         </li>
       </ol>
@@ -583,7 +571,7 @@
       </statement>
       <solution>
         <p>
-          A graph of <m>f(x)</m> around <m>x=1</m> and a table are given <xref ref="fig_nolimit1">Figure</xref>
+          A graph of <m>f(x)</m> around <m>x=1</m> and a table are given in <xref ref="fig_nolimit1">Figure</xref>
           and <xref ref="table_nolimit1">Table</xref>, respectively.
           It is clear that as <m>x</m> approaches <m>1</m>,
           <m>f(x)</m> does not seem to approach a single number.
@@ -775,139 +763,139 @@
           on the interval <m>[-0.1,0.1]</m>.
           Here the oscillation is even more pronounced.
           Finally, in <xref ref="table_nolimit3c">Figure</xref>,
-          we see <m>\sin(x)/x</m> evaluated for values of <m>x</m> near <m>0</m>.
+          we see <m>\sin(1/x)</m> evaluated for values of <m>x</m> near <m>0</m>.
           As <m>x</m> approaches <m>0</m>,
           <m>f(x)</m> does not appear to approach any value.
         </p>
 
-          <figure xml:id="fig_nolimit3as">
-            <caption>Observing that <m>f(x)=\sin(1/x)</m> has no limit as <m>x\to0</m> in <xref ref="ex_no_limit3">Example</xref>.</caption>
-              <sidebyside widths="47% 47%">
-                <figure xml:id="fig_nolimit3a">
-                  <caption /><!-- START figures/fig_nolimit3a.tex -->
-                    <image xml:id="img_nolimit3a">
-                      <latex-image>
-                      <![CDATA[
-                      \begin{tikzpicture}
-                      \begin{axis}[xmin=-1.1,xmax=1.1,
-                      ymin=-1.1,ymax=1.1,
-                      ]
-                      \addplot[firstcurvestyle,leftarrow,
-                      domain=-1.018591636:-0.318309886, % 1/(15/48 pi) to 1/(48/48 pi)
-                      samples=34, % sample every pi/48 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.318309886:-0.106103295, % 1/pi to 1/(3 pi)
-                      samples=25, % sample every pi/12 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.106103295:-0.063661977, % 1/(3 pi) to 1/(5 pi)
-                      samples=49, % sample every pi/24 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
-                      samples=97, % sample every pi/48 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \draw [color=blue,fill=blue] (axis cs:-0.045472841,-1) rectangle (axis cs:0.045472841,1);
-                      %\addplot[firstcurvestyle,-,smooth,
-                      %         domain=-0.045472841:-0.0106103295, % 1/(7 pi) to 1/(30 pi)
-                      %         samples=93, % sample every pi/2 through phase
-                      %        ] {sin(1/x * 180 / pi)};
-                      %\addplot[firstcurvestyle,-,smooth,
-                      %         domain=0.0106103295:0.045472841, % 1/(30 pi) to 1/(7 pi)
-                      %         samples=93, % sample every pi/2 through phase
-                      %        ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.045472841:0.063661977, % 1/(7 pi) to 1/(5 pi)
-                      samples=97, % sample every pi/48 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.063661977:0.106103295, % 1/(5 pi) to 1/(3 pi)
-                      samples=49, % sample every pi/24 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.106103295:0.318309886, % 1/(3 pi) to 1/pi
-                      samples=25, % sample every pi/12 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,rightarrow,
-                      domain=0.318309886:1.018591636, % 1/(48/48 pi) to 1/(15/48 pi)
-                      samples=34, % sample every pi/48 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \end{axis}
-                      \end{tikzpicture}
-                      ]]>
-                      </latex-image>
-                    </image>
-                    <!-- figures/fig_nolimit3a.tex END -->
-                  </figure>
+        <figure xml:id="fig_nolimit3">
+        <caption>Observing that <m>f(x)=\sin(1/x)</m> has no limit as <m>x\to0</m> in <xref ref="ex_no_limit3">Example</xref>.</caption>
+        <sidebyside widths="47% 47%">
+          <figure xml:id="fig_nolimit3a">
+            <caption /><!-- START figures/fig_nolimit3a.tex -->
+            <image xml:id="img_nolimit3a">
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[xmin=-1.1,xmax=1.1,
+              ymin=-1.1,ymax=1.1,
+              ]
+              \addplot[firstcurvestyle,leftarrow,
+              domain=-1.018591636:-0.318309886, % 1/(15/48 pi) to 1/(48/48 pi)
+              samples=34, % sample every pi/48 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.318309886:-0.106103295, % 1/pi to 1/(3 pi)
+              samples=25, % sample every pi/12 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.106103295:-0.063661977, % 1/(3 pi) to 1/(5 pi)
+              samples=49, % sample every pi/24 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
+              samples=97, % sample every pi/48 through phase
+              ] {sin(1/x * 180 / pi)};
+              \draw [color=blue,fill=blue] (axis cs:-0.045472841,-1) rectangle (axis cs:0.045472841,1);
+              %\addplot[firstcurvestyle,-,smooth,
+              %         domain=-0.045472841:-0.0106103295, % 1/(7 pi) to 1/(30 pi)
+              %         samples=93, % sample every pi/2 through phase
+              %        ] {sin(1/x * 180 / pi)};
+              %\addplot[firstcurvestyle,-,smooth,
+              %         domain=0.0106103295:0.045472841, % 1/(30 pi) to 1/(7 pi)
+              %         samples=93, % sample every pi/2 through phase
+              %        ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.045472841:0.063661977, % 1/(7 pi) to 1/(5 pi)
+              samples=97, % sample every pi/48 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.063661977:0.106103295, % 1/(5 pi) to 1/(3 pi)
+              samples=49, % sample every pi/24 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.106103295:0.318309886, % 1/(3 pi) to 1/pi
+              samples=25, % sample every pi/12 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,rightarrow,
+              domain=0.318309886:1.018591636, % 1/(48/48 pi) to 1/(15/48 pi)
+              samples=34, % sample every pi/48 through phase
+              ] {sin(1/x * 180 / pi)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+            <!-- figures/fig_nolimit3a.tex END -->
+          </figure>
 
-                  <figure xml:id="fig_nolimit3b">
-                    <caption /><!-- START figures/fig_nolimit3b.tex -->
-                    <image xml:id="img_nolimit3b">
-                      <latex-image>
-                      <![CDATA[
-                      \begin{tikzpicture}
-                      \begin{axis}[xmin=-.11,xmax=.11,
-                      ymin=-1.1,ymax=1.1
-                      ]
-                      \addplot[firstcurvestyle,leftarrow,
-                      domain=-0.100518911:-0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
-                      samples=89, % sample every pi/48 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
-                      samples=25, % sample every pi/12 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.045472841:-0.035367765, % 1/(7 pi) to 1/(9 pi)
-                      samples=49, % sample every pi/24 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.035367765:-0.024485376, % 1/(9 pi) to 1/(13 pi)
-                      samples=145, % sample every pi/36 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=-0.024485376:-0.012732395, % 1/(13 pi) to 1/(25 pi)
-                      samples=73, % sample every pi/6 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \draw [color=blue,fill=blue] (axis cs:-0.012732395,-1) rectangle (axis cs:0.012732395,1);
-                      %\addplot[firstcurvestyle,-,smooth,
-                      %         domain=-0.0031830988618379:-0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
-                      %         samples=401, % sample every pi/2 through phase
-                      %        ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,leftarrow,
-                      domain=0.100518911:0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
-                      samples=89, % sample every pi/48 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.063661977:0.045472841, % 1/(5 pi) to 1/(7 pi)
-                      samples=25, % sample every pi/12 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.045472841:0.035367765, % 1/(7 pi) to 1/(9 pi)
-                      samples=49, % sample every pi/24 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.035367765:0.024485376, % 1/(9 pi) to 1/(13 pi)
-                      samples=145, % sample every pi/36 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      \addplot[firstcurvestyle,-,smooth,
-                      domain=0.024485376:0.012732395, % 1/(13 pi) to 1/(25 pi)
-                      samples=73, % sample every pi/6 through phase
-                      ] {sin(1/x * 180 / pi)};
-                      %\addplot[firstcurvestyle,-,smooth,
-                      %         domain=0.0031830988618379:0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
-                      %         samples=401, % sample every pi/2 through phase
-                      %        ] {sin(1/x * 180 / pi)};
-                      \end{axis}
-                      \end{tikzpicture}
-                      ]]>
-                      </latex-image>
-                    </image>
-                    <!-- figures/fig_nolimit3b.tex END -->
-                </figure>
-              </sidebyside>
-            </figure>
+          <figure xml:id="fig_nolimit3b">
+            <caption /><!-- START figures/fig_nolimit3b.tex -->
+            <image xml:id="img_nolimit3b">
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[xmin=-.11,xmax=.11,
+              ymin=-1.1,ymax=1.1
+              ]
+              \addplot[firstcurvestyle,leftarrow,
+              domain=-0.100518911:-0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
+              samples=89, % sample every pi/48 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.063661977:-0.045472841, % 1/(5 pi) to 1/(7 pi)
+              samples=25, % sample every pi/12 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.045472841:-0.035367765, % 1/(7 pi) to 1/(9 pi)
+              samples=49, % sample every pi/24 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.035367765:-0.024485376, % 1/(9 pi) to 1/(13 pi)
+              samples=145, % sample every pi/36 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=-0.024485376:-0.012732395, % 1/(13 pi) to 1/(25 pi)
+              samples=73, % sample every pi/6 through phase
+              ] {sin(1/x * 180 / pi)};
+              \draw [color=blue,fill=blue] (axis cs:-0.012732395,-1) rectangle (axis cs:0.012732395,1);
+              %\addplot[firstcurvestyle,-,smooth,
+              %         domain=-0.0031830988618379:-0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
+              %         samples=401, % sample every pi/2 through phase
+              %        ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,leftarrow,
+              domain=0.100518911:0.063661977, % 1/(152/48 pi) to 1/(240/48 pi)
+              samples=89, % sample every pi/48 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.063661977:0.045472841, % 1/(5 pi) to 1/(7 pi)
+              samples=25, % sample every pi/12 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.045472841:0.035367765, % 1/(7 pi) to 1/(9 pi)
+              samples=49, % sample every pi/24 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.035367765:0.024485376, % 1/(9 pi) to 1/(13 pi)
+              samples=145, % sample every pi/36 through phase
+              ] {sin(1/x * 180 / pi)};
+              \addplot[firstcurvestyle,-,smooth,
+              domain=0.024485376:0.012732395, % 1/(13 pi) to 1/(25 pi)
+              samples=73, % sample every pi/6 through phase
+              ] {sin(1/x * 180 / pi)};
+              %\addplot[firstcurvestyle,-,smooth,
+              %         domain=0.0031830988618379:0.0010610329539459, % 1/(100 pi) to 1/(300 pi)
+              %         samples=401, % sample every pi/2 through phase
+              %        ] {sin(1/x * 180 / pi)};
+              \end{axis}
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+            <!-- figures/fig_nolimit3b.tex END -->
+          </figure>
+        </sidebyside>
+        </figure>
 
         <table xml:id="table_nolimit3c">
           <caption>Observing that <m>f(x)=\sin(1/x)</m> has no limit as <m>x\to0</m> in <xref ref="ex_no_limit3">Example</xref>.</caption>
@@ -950,7 +938,7 @@
 
         <p>
           It can be shown that in reality,
-          as <m>x</m> approaches 0, <m>\sin(1/x)</m> takes on all values between <m>-1</m> and 1 infinite times!
+          as <m>x</m> approaches 0, <m>\sin(1/x)</m> takes on all values between <m>-1</m> and <m>1</m> infinitely many times!
           Because of this oscillation,
           <m>\lim\limits_{x\to 0}\sin(1/x)</m> does not exist.
         </p>
@@ -964,9 +952,7 @@
       We have approximated limits of functions as <m>x</m> approached a particular number.
       We will consider another important kind of limit after explaining a few key ideas.
 
-      <idx>
-        <h>limit</h><h>difference quotient</h>
-      </idx>
+          <idx><h>limit</h><h>difference quotient</h></idx>
 
     </p>
 
@@ -990,21 +976,15 @@
       Since the particle traveled <m>10</m> feet in <m>4</m> seconds,
       we can say the particle's
 
-      <idx>
-        <h>average velocity</h>
-      </idx>
+      <idx><h>average velocity</h></idx>
 
-      <idx>
-        <h>velocity</h><h>average velocity</h>
-      </idx>
+      <idx><h>velocity</h><h>average velocity</h></idx>
 
       <term>average velocity</term> was <m>2.5</m> ft/s.
       We write this calculation using a
       <q>quotient of differences,</q> or, a
 
-      <idx>
-        <h>difference quotient</h>
-      </idx>
+      <idx><h>difference quotient</h></idx>
 
       <term>difference quotient</term>:
       <me>
@@ -1082,8 +1062,9 @@
 
     <!--TODO: Add a geogebra applet (for online version only). I've made one here: https://ggbm.at/mGffD9sE -->
 
+    <figure xml:id="fig_diff_quot_smallh">
+    <caption>Secant lines of <m>f(x)</m> at <m>x=1</m> and <m>x=1+h</m>, for shrinking values of <m>h</m> (i.e., <m>h\rightarrow 0</m>).</caption>
     <sidebyside widths="31% 31% 31%">
-      <caption>Secant lines of <m>f(x)</m> at <m>x=1</m> and <m>x=1+h</m>, for shrinking values of <m>h</m> (i.e., <m>h\rightarrow 0</m>).</caption>
       <figure xml:id="fig_diff_quot_smallha">
         <caption><m>h=2</m></caption>
         <!-- START figures/fig_diff_quot_smallha.tex -->
@@ -1147,6 +1128,7 @@
         <!-- figures/fig_diff_quot_smallhc.tex END -->
       </figure>
     </sidebyside>
+    </figure>
 
     <p>
       As we do not yet have a true definition of a limit nor an exact method for computing it,
@@ -1247,7 +1229,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $answer="an indeterminate form";
               $undefined="an undefined expression";
@@ -1271,7 +1253,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $limitequalsvalue=PopUp(['?','True','False'],'False');
             </pg-code>
@@ -1314,26 +1296,43 @@
 
       <exercise>
         <webwork seed="1">
-            <statement>
-              <p>
-                In your own words, what is a difference quotient?
-              </p>
+          <statement>
+            <p>
+              In your own words, what is a difference quotient?
+            </p>
 
-              <p>
-                <var form="essay" />
-              </p>
-            </statement>
-            <solution>
-              <p>
-                Answers will vary.
-              </p>
-            </solution>
+            <p>
+              <var form="essay" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Answers will vary.
+            </p>
+          </solution>
         </webwork>
       </exercise>
 
-    </exercisegroup>
+      <exercise>
+        <webwork seed="1">
+          <statement>
+            <p>
+              When <m>x</m> is near <m>0</m>,
+              <m>\ds\frac{\sin x}{x}</m> is near what value?
+            </p>
+            <p>
+              <var form ="essay" />
+            </p>
+          </statement>
+        <solution>
+          <m>1</m>
+        </solution>
+      </webwork>
+    </exercise>
+  </exercisegroup>
+
     <!--TODO: Resolve this exercisegroup's introduction instructions and their repetition in each exercise. -->
-    <exercisegroup>
+  <exercisegroup>
 
       <introduction>
         <p>
@@ -1345,21 +1344,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{
               do{$b=non_zero_random(-5,5,1);
@@ -1456,7 +1440,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -1474,21 +1458,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{
               do{$b=non_zero_random(-5,5,1);
@@ -1586,7 +1555,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -1604,21 +1573,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{$b=non_zero_random(-5,5,1);
               $c=non_zero_random(-5,5,1);
@@ -1721,7 +1675,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -1739,21 +1693,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{$b=non_zero_random(-5,5,1);
               $c=non_zero_random(-5,5,1);
@@ -1858,7 +1797,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -1876,21 +1815,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{$b=random(-1,1,2)*random(6,9,1);
               $c=non_zero_random(-5,5,1);
@@ -1995,7 +1919,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -2013,21 +1937,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{$b=random(-1,1,2)*random(6,9,1);
               $c=non_zero_random(-5,5,1);
@@ -2131,7 +2040,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -2149,21 +2058,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               $b=non_zero_random(-5,5,1);
               $c=list_random(-4,-3,-2,-1,2,3,4);
@@ -2266,7 +2160,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -2284,21 +2178,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{
               $a=non_zero_random(-3,3,1);
@@ -2403,7 +2282,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -2421,21 +2300,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               $a=0;
               $b=non_zero_random(-5,5,1);
@@ -2535,7 +2399,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -2553,21 +2417,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               $a=list_random(Formula("pi/2"),Formula("pi/3"),Formula("pi/6"));
@@ -2668,7 +2517,7 @@
               </p>
 
               <figure>
-                <image pg-name="$solgr" tex_size="200" />
+                <image pg-name="$solgr" tex-size="200" />
               </figure>
 
               <p>
@@ -2682,7 +2531,8 @@
             </solution>
         </webwork>
       </exercise>
-      <!--<exercise>
+
+      <exercise>
         <webwork seed="1">
           <setup>
             <pg-code>
@@ -2765,7 +2615,7 @@
             <p>For a graphical approximation:</p>
 
             <figure>
-              <image pg-name="$solgr" tex_size="200" />
+              <image pg-name="$solgr" tex-size="200" />
             </figure>
 
             <p>It appears that when <m>x</m> is close to <m>0</m>, that <m>\lvert x \rvert^x</m> is close to <m>1</m>. So
@@ -2776,6 +2626,7 @@
           </solution>
         </webwork>
       </exercise>
+
       <exercise>
         <webwork seed="1">
           <setup>
@@ -2859,7 +2710,7 @@
             <p>For a graphical approximation:</p>
 
             <figure>
-              <image pg-name="$solgr" tex_size="200" />
+              <image pg-name="$solgr" tex-size="200" />
             </figure>
 
             <p>It appears that when <m>x</m> is close to <m>0</m>, that <m>e^{-e^{1/x}}</m> approaches different values from the left and right. So
@@ -2888,14 +2739,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               $m=non_zero_random(-9,9,1);
               do {$b=non_zero_random(-9,9,1);}until(abs($m)!=abs($b));
@@ -3021,14 +2864,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               $m=non_zero_random(-9,9,1);
               $b=random(0.01,0.09,0.01)+random(0.1,0.9,0.1)+random(-9,9,1);
@@ -3154,14 +2989,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{
               $b=non_zero_random(-5,5,1);
@@ -3290,14 +3117,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{$b=non_zero_random(-5,5,1);
               $a=random(-5,5,1);} until ($a + $b!= 0);
@@ -3423,14 +3242,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               do{
               do{
@@ -3562,14 +3373,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               $a=random(2,9,1);
               if ($envir{problemSeed}==1){$a=5;};
@@ -3694,14 +3497,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               $a=list_random(Formula("pi/3"),Formula("2pi/3"),Formula("pi"),Formula("4pi/3"),Formula("5pi/3"),);
@@ -3827,7 +3622,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               $a=list_random(Formula("pi/3"),Formula("2pi/3"),Formula("pi"),Formula("4pi/3"),Formula("5pi/3"),);
@@ -3953,4 +3747,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

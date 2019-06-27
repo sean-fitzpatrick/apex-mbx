@@ -38,13 +38,8 @@
       that we can still find <m>y'</m> via a process known as
       <term>implicit differentiation</term>.
 
-      <idx>
-        <h>implicit differentiation</h>
-      </idx>
-
-      <idx>
-        <h>derivative</h><h>implicit</h>
-      </idx>
+          <idx><h>implicit differentiation</h></idx>
+          <idx><h>derivative</h><h>implicit</h></idx>
 
     </p>
 
@@ -70,7 +65,7 @@
     </figure>
 
     <p>
-      Implicit differentiation is a technique based on the <xref ref="thm_chain_rule" autoname="title"/> that is used to find a derivative when the relationship between the variables is given implicitly rather than explicitly
+      Implicit differentiation is a technique based on the <xref ref="thm_chain_rule" text="title"/> that is used to find a derivative when the relationship between the variables is given implicitly rather than explicitly
       (solved for one variable in terms of the other).
     </p>
 
@@ -186,7 +181,7 @@
     </p>
 
     <example xml:id="ex_implicit2">
-      <title>Using Implicit Differentiation to find a Tangent Line</title>
+      <title>Using implicit differentiation to find a tangent line</title>
       <statement>
         <p>
           Find the equation of the line tangent to the curve of the implicitly defined function
@@ -295,13 +290,13 @@
       </statement>
       <solution>
         <p>
-          We will take the implicit derivatives term-by-term.
+          We will take the implicit derivatives term by term.
           The derivative of <m>y^3</m> is <m>3y^2y'</m>.
         </p>
 
         <p>
           The second term, <m>x^2y^4</m>, is a little tricky.
-          It requires the <xref ref="thm_ProductRule" autoname="title" /> as it is the product of two functions of <m>x</m>:
+          It requires the <xref ref="thm_ProductRule" text="title" /> as it is the product of two functions of <m>x</m>:
           <m>x^2</m> and <m>y^4</m>.
           Its derivative is <m>x^2(4y^3y') + 2xy^4</m>.
           The first part of this expression requires a <m>y'</m> because we are taking the derivative of a <m>y</m> term.
@@ -387,9 +382,9 @@
       </statement>
       <solution>
         <p>
-          Differentiating term-by-term,
+          Differentiating term by term,
           we find the most difficulty in the first term.
-          It requires both the <xref ref="thm_chain_rule" autoname="title" /> and <xref ref="thm_ProductRule" autoname="title" />.
+          It requires both the <xref ref="thm_chain_rule" text="title" /> and <xref ref="thm_ProductRule" text="title" />.
           <md>
             <mrow>\lzoo{x}{\sin\mathopen{}\left(x^2y^2\right)\mathclose{}} \amp = \cos\mathopen{}\left(x^2y^2\right)\mathclose{}\cdot\lzoo{x}{x^2y^2}</mrow>
             <mrow>\amp = \cos\mathopen{}\left(x^2y^2\right)\mathclose{}\cdot\left(x^2(2yy')+2xy^2\right)</mrow>
@@ -585,20 +580,20 @@
       We allude to a possible solution,
       as we can write the square root function as a power function with a rational (or,
       fractional) power.
-      We are then tempted to apply the <xref ref="thm_PowerRule" autoname="title" /> and obtain
+      We are then tempted to apply the <xref ref="thm_PowerRule" text="title" /> and obtain
       <me>
         \lzoo{x^{1/2}} = \frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}
       </me>.
     </p>
 
     <p>
-      The trouble with this is that the <xref ref="thm_PowerRule" autoname="title" /> was initially defined only for positive integer powers,
+      The trouble with this is that the <xref ref="thm_PowerRule" text="title" /> was initially defined only for positive integer powers,
       <m>n>0</m>.
       While we did not justify this at the time,
-      generally the <xref ref="thm_PowerRule" autoname="title" /> is proved using something called the Binomial Theorem,
+      generally the <xref ref="thm_PowerRule" text="title" /> is proved using something called the Binomial Theorem,
       which deals only with positive integers.
-      The <xref ref="thm_QuotientRule" autoname="title" /> allowed us to extend the <xref ref="thm_PowerRule" autoname="title" /> to negative integer powers.
-      Implicit Differentiation allows us to extend the <xref ref="thm_PowerRule" autoname="title" /> to rational powers,
+      The <xref ref="thm_QuotientRule" text="title" /> allowed us to extend the <xref ref="thm_PowerRule" text="title" /> to negative integer powers.
+      Implicit Differentiation allows us to extend the <xref ref="thm_PowerRule" text="title" /> to rational powers,
       as shown below.
     </p>
 
@@ -622,7 +617,7 @@
     </p>
 
     <p>
-      The above derivation is the key to the proof extending the <xref ref="thm_PowerRule" autoname="title" /> to rational powers.
+      The above derivation is the key to the proof extending the <xref ref="thm_PowerRule" text="title" /> to rational powers.
       Using limits,
       we can extend this once more to include <em>all</em>
       powers, including irrational
@@ -635,17 +630,11 @@
       <statement>
         <p>
           Let <m>f(x) = x^n</m>, where <m>n\neq 0</m> is a real number.
-          Then <m>f</m> is a differentiable function,
+          Then <m>f</m> is differentiable on its domain,
+          except possibly at <m>x=0</m>,
           and <m>\fp(x) = n\cdot x^{n-1}</m>.
-
-          <idx>
-            <h>derivative</h><h>Power Rule</h>
-          </idx>
-
-          <idx>
-            <h>Power Rule</h><h>differentiation</h>
-          </idx>
-
+              <idx><h>derivative</h><h>Power Rule</h></idx>
+              <idx><h>Power Rule</h><h>differentiation</h></idx>
         </p>
       </statement>
     </theorem>
@@ -655,7 +644,7 @@
     </p>
 
     <p>
-      We now apply this final version of the <xref ref="thm_finalpower" autoname="title" /> in the next example,
+      We now apply this final version of the <xref ref="thm_finalpower" text="title" /> in the next example,
       the second investigation of a <q>famous</q> curve.
     </p>
 
@@ -805,9 +794,13 @@
       We skirt the issue here.
       </fn> How do we take its derivative?
 
-      <idx>
-        <h>logarithmic differentiation</h>
-      </idx>
+  <!-- TODO: decide on above footnote addded in apex-mbx -->
+
+
+          <idx><h>logarithmic differentiation</h></idx>
+          <idx><h>derivative</h>
+               <h>logarithmic</h>
+          </idx>
 
     </p>
 
@@ -881,8 +874,8 @@
         </p>
 
         <p>
-          Thus the equation of the tangent line is <m>y \approx 2.582(x-1.5)+1.837</m>.
-          <xref ref="fig_implicit9">Figure</xref>
+          Thus the equation of the tangent line is (approximately) <m>y \approx 2.582(x-1.5)+1.837</m>.
+          <xref ref="fig_implicit10">Figure</xref>
           graphs <m>y=x^x</m> along with this tangent line.
         </p>
 
@@ -913,7 +906,7 @@
     <p>
       Implicit differentiation proves to be useful as it allows us to find the instantaneous rates of change of a variety of functions.
       In particular,
-      it extended the <xref ref="thm_finalpower" autoname="title"/> to rational exponents,
+      it extended the <xref ref="thm_finalpower" text="title"/> to rational exponents,
       which we then extended to all real numbers.
       In <xref ref="sec_deriv_inverse_function">Section</xref>,
       implicit differentiation will be used to find the derivatives of
@@ -1419,7 +1412,7 @@
             </statement>
             <solution>
               <p>
-                <m>-\frac{e^x x (x+2) 2^{-y}}{\ln(2)}</m>
+                <m>\lz{y}{z}=-\frac{e^x x (x+2) 2^{-y}}{\ln(2)}</m>
               </p>
             </solution>
         </webwork>
@@ -1450,7 +1443,7 @@
             </statement>
             <solution>
               <p>
-                <m>-\frac{2 \sin(y) \cos(y)}{x}</m>
+                <m>\lz{y}{z}=-\frac{2 \sin(y) \cos(y)}{x}</m>
               </p>
             </solution>
         </webwork>
@@ -1480,7 +1473,7 @@
             </statement>
             <solution>
               <p>
-                <m>-\frac{x}{y^2}</m>
+                <m>\lz{y}{z}=-\frac{x}{y^2}</m>
               </p>
             </solution>
         </webwork>
@@ -1510,7 +1503,7 @@
             </statement>
             <solution>
               <p>
-                <m>\frac{1}{2y+2}</m>
+                <m>\lz{y}{z}=\frac{1}{2y+2}</m>
               </p>
             </solution>
         </webwork>
@@ -1540,8 +1533,22 @@
             </statement>
             <solution>
               <p>
-                <m>\frac{x^2+2 x y^2-y}{2 x^2 y-x+y^2}</m>
-              </p>
+          If one takes the derivative of the equation,
+          as shown, using the Quotient Rule,
+          one finds <m>\frac{dy}{dx}=\frac{x^2+2 x y^2-y}{2 x^2 y-x+y^2}</m>.
+        </p>
+
+        <p>
+          If one first clears the denominator and writes
+          <m>x^2+y=17(x+y^2)</m> then takes the derivative of both sides,
+          one finds <m>\frac{dy}{dx}= \frac{2x-17}{34y-1}</m>.
+        </p>
+
+        <p>
+          These expressions, by themselves, are not equal.
+          However, for values of <m>x</m> and <m>y</m> that satisfy the original equation (i.e, for <m>x</m> and <m>y</m> such that <m>\frac{x^2+y}{x+y^2}=17</m>),
+          these expressions are equal.
+        </p>
             </solution>
         </webwork>
       </exercise>
@@ -1567,8 +1574,22 @@
             </statement>
             <solution>
               <p>
-                <m>\frac{-\cos(x) (x+\cos(y))+\sin(x)+y}{\sin(y) (\sin(x)+y)+x+\cos(y)}</m>
-              </p>
+          If one takes the derivative of the equation,
+          as shown, using the Quotient Rule,
+          one finds <m>\frac{dy}{dx} = \frac{-\cos (x) (x+\cos (y))+\sin (x)+y}{\sin (y) (\sin (x)+y)+x+\cos (y)}</m>.
+        </p>
+
+        <p>
+          If one first clears the denominator and writes
+          <m>\sin(x)+y = \cos(y)+x</m> then takes the derivative of both sides,
+          one finds <m>\frac{dy}{dx} = \frac{1-\cos(x)}{1+\sin(y)}</m>.
+        </p>
+
+        <p>
+          These expressions, by themselves, are not equal.
+          However, for values of <m>x</m> and <m>y</m> that satisfy the original equation (i.e, for <m>x</m> and <m>y</m> such that <m>\frac{\sin(x)+y)}{\cos(y)+x)}=1</m>),
+          these expressions are equal.
+        </p>
             </solution>
         </webwork>
       </exercise>
@@ -1598,7 +1619,7 @@
             </statement>
             <solution>
               <p>
-                <m>-\frac{x}{y}</m>
+                <m>\lz{y}{z} = -\frac{x}{y}</m>
               </p>
             </solution>
         </webwork>
@@ -1698,6 +1719,7 @@
       </webwork>
     </exercise>
 
+    <!-- TODO: solutions for this exercise group. Answers are in APEX -->
     <exercisegroup>
 
       <introduction>
@@ -2041,6 +2063,60 @@
             </statement>
         </webwork>
       </exercise>
+    <!-- TODO: add WW code for this exercise -->
+
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2+y^3+2xy=0</m>
+
+          <ol>
+            <li>
+              <p>
+                At <m>\ds \left(-1,1\right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                At <m>\ds\left(-1,\frac12(-1+\sqrt{5})\right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                At <m>\ds\left(-1,\frac12(-1-\sqrt{5})\right)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          <img src="figures/fig02_06_ex_38"/>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>y=1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y =-\frac{2}{\sqrt{5}}(x+1)+\frac12(-1+\sqrt{5})</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y =-\frac{2}{\sqrt{5}}(x+1)+\frac12(-1+\sqrt{5}),y =\frac{2}{\sqrt{5}}(x+1)+\frac12(-1-\sqrt{5})</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
 
     </exercisegroup>
     <exercisegroup>

@@ -15,7 +15,7 @@
       Let's practice abstraction on linear functions, <m>y=mx+b</m>.
       What is <m>y'</m>?
       Without limits,
-      recognize that linear function are characterized by being functions with a constant rate of change
+      recognize that linear functions are characterized by being functions with a constant rate of change
       (the slope).
       The derivative, <m>y'</m>, gives the instantaneous rate of change;
       with a linear function, this is constant, <m>m</m>.
@@ -55,9 +55,7 @@
           <dl>
             <li>
               <title>Constant Rule</title>
-              <idx>
-                <h>derivative</h><h>Constant Rule</h>
-              </idx>
+              <idx><h>derivative</h><h>Constant Rule</h></idx>
 
               <p>
                 <m>\lzoo{x}{c} = 0</m>, where <m>c</m> is a constant.
@@ -66,13 +64,8 @@
 
             <li xml:id="power-derivative-rule">
               <title>Power Rule</title>
-              <idx>
-                <h>derivative</h><h>Power Rule</h>
-              </idx>
-
-              <idx>
-                <h>Power Rule</h><h>differentiation</h>
-              </idx>
+              <idx><h>derivative</h><h>Power Rule</h></idx>
+              <idx><h>Power Rule</h><h>differentiation</h></idx>
 
               <p>
                 <m>\lzoo{x}{x^n}= nx^{n-1}</m>,
@@ -100,9 +93,7 @@
             </li>
           </dl>
 
-          <idx>
-            <h>derivative</h><h>basic rules</h>
-          </idx>
+          <idx><h>derivative</h><h>basic rules</h></idx>
 
         </p>
       </statement>
@@ -114,7 +105,7 @@
       Therefore their derivative is <m>0</m>
       (they change at the rate of <m>0</m>).
       The theorem then states some fairly amazing things.
-      The <xref ref="power-derivative-rule" autoname="title" /> states that the derivatives of Power Functions
+      The <xref ref="power-derivative-rule" text="title" /> states that the derivatives of Power Functions
       (of the form <m>y=x^n</m>)
       are very straightforward:
       multiply by the power, then subtract <m>1</m> from the power.
@@ -124,10 +115,10 @@
     </p>
 
     <p>
-      One special case of the <xref ref="power-derivative-rule" autoname="title" /> is when <m>n=1</m>,
+      One special case of the <xref ref="power-derivative-rule" text="title" /> is when <m>n=1</m>,
       i.e., when <m>f(x) = x</m>.
       What is <m>\fp(x)</m>?
-      According to the <xref ref="power-derivative-rule" autoname="title" />,
+      According to the <xref ref="power-derivative-rule" text="title" />,
       <me>
         \fp(x) = \lzoo{x}{x} = \lzoo{x}{x^1} = 1\cdot x^0 = 1
       </me>.
@@ -188,7 +179,7 @@
           <ol>
             <li>
               <p>
-                The <xref ref="power-derivative-rule" autoname="title" /> states that if <m>f(x) = x^3</m>,
+                The <xref ref="power-derivative-rule" text="title" /> states that if <m>f(x) = x^3</m>,
                 then <m>\fp(x) = 3x^2</m>.
               </p>
             </li>
@@ -246,6 +237,7 @@
           </image>
           <!-- figures/fig_xcubedwithderiv.tex END -->
         </figure>
+
       </solution>
     </example>
 
@@ -275,13 +267,8 @@
                   <mrow>\amp= \fp(x)\pm g'(x)</mrow>
                 </md>
 
-                <idx>
-                  <h>derivative</h><h>Sum/Difference Rule</h>
-                </idx>
-
-                <idx>
-                  <h>Sum/Difference Rule</h><h>of derivatives</h>
-                </idx>
+                  <idx><h>derivative</h><h>Sum/Difference Rule</h></idx>
+                  <idx><h>Sum/Difference Rule</h><h>of derivatives</h></idx>
 
               </p>
             </li>
@@ -294,13 +281,8 @@
                   <mrow>\amp = c\cdot\fp(x)</mrow>
                 </md>.
 
-                <idx>
-                  <h>derivative</h><h>Constant Multiple Rule</h>
-                </idx>
-
-                <idx>
-                  <h>Constant Multiple Rule</h><h>of derivatives</h>
-                </idx>
+                  <idx><h>derivative</h><h>Constant Multiple Rule</h></idx>
+                  <idx><h>Constant Multiple Rule</h><h>of derivatives</h></idx>
 
               </p>
             </li>
@@ -312,7 +294,7 @@
     <p>
       <xref ref="thm_deriv_prop">Theorem</xref>
       allows us to find the derivatives of a wide variety of functions.
-      It can be used in conjunction with the <xref ref="power-derivative-rule" autoname="title" /> to find the derivatives of any polynomial.
+      It can be used in conjunction with the <xref ref="power-derivative-rule" text="title" /> to find the derivatives of any polynomial.
       Recall in <xref ref="ex_deriv1">Example</xref> that we found,
       using the limit definition, the derivative of <m>f(x) = 3x^2+5x-7</m>.
       We can now find its derivative without expressly using limits:
@@ -456,6 +438,20 @@
 
   <subsection>
     <title>Higher Order Derivatives</title>
+    <aside>
+      <p>
+        <em>Note:</em> The second derivative notation could be written as
+        <me>
+          \frac{d^2y}{dx^2}=\frac{d^2y}{(dx)^2}=\frac{d^2}{(dx)^2}\big(y\big)
+        </me>.
+      </p>
+
+      <p>
+        That is, we take the derivative of <m>y</m> twice
+        (hence <m>d^2</m>),
+        both times with respect to <m>x</m> (hence <m>(dx)^2=dx^2</m>).
+      </p>
+    </aside>
     <p>
       The derivative of a function <m>f</m> is itself a function,
       therefore we can take its derivative.
@@ -467,14 +463,10 @@
       <statement>
         <p>
           Let <m>y=f(x)</m> be a differentiable function on <m>I</m>.
+          The following are defined, provided the corresponding limits exist.
 
-          <idx>
-            <h>derivative</h><h>higher order</h>
-          </idx>
-
-          <idx>
-            <h>derivative</h><h>notation</h>
-          </idx>
+              <idx><h>derivative</h><h>higher order</h></idx>
+              <idx><h>derivative</h><h>notation</h></idx>
 
           <ol>
             <li>
@@ -520,8 +512,8 @@
     </aside>
     <p>
       In general, when finding the fourth derivative and on,
-      we resort to the <m>f^{(4)}(x)</m> notation, not <m>\fp'''(x)</m>;
-      after a while, too many ticks is too confusing.
+      we resort to the <m>f\,^{(4)}(x)</m> notation, not <m>\fp'''(x)</m>;
+      after a while, too many ticks is confusing.
     </p>
 
     <p>
@@ -602,10 +594,9 @@
       What do higher order derivatives <em>mean</em>?
       What is the practical interpretation?
 
-      <idx>
-        <h>derivative</h><h>higher order!interpretation</h>
-      </idx>
+<!-- TODO: is ! the right markup here? -->
 
+          <idx><h>derivative</h><h>higher order!interpretation</h></idx>
     </p>
 
     <p>
@@ -633,7 +624,7 @@
     </p>
 
     <p>
-      We started this chapter with amusement-park riders free-falling with position function <m>f(t) = -16t^2+150</m>.
+      We started this chapter with amusement park riders free-falling with position function <m>f(t) = -16t^2+150</m>.
       It is easy to compute <m>\fp(t)=-32t</m> ft/s and <m>\fp'(t) = -32</m> (ft/s)/s.
       We may recognize this latter constant;
       it is the acceleration due to gravity.
@@ -676,7 +667,6 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
- 
             <pg-code>
               Context("ArbitraryString");
               $ans=Compute("Power Rule");
@@ -709,7 +699,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $ans=Formula("1/x");
             </pg-code>
@@ -729,7 +718,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $ans=Compute("e^x");
               $ev=$ans->cmp(checker=>sub{my($correct,$student,$self )=@_;
@@ -763,9 +751,7 @@
 
       <exercise>
         <webwork seed="1">
-            <setup>
- 
-            <pg-code>
+            <setup>            <pg-code>
               $ans=Formula("10");
               $ev=$ans->cmp(checker=>sub{my($correct,$student,$self )=@_;
                 my$context=Context()->copy;
@@ -799,8 +785,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $covered = RadioButtons(["Covered by this section","Not covered"],0);
               $not = RadioButtons(["Covered by this section","Not covered"],1);
@@ -902,7 +886,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $ans=Compute("17x-205");
               $ev=$ans->cmp(checker=>sub{my($correct,$student,$self )=@_;
@@ -961,8 +944,6 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
- 
- 
             <pg-code>
               Context("ArbitraryString");
               $ans[0]=Compute("a velocity function");
@@ -1022,7 +1003,6 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
- 
             <pg-code>
               Context("ArbitraryString");
               $ans=Compute("lb/ft^2");
@@ -1069,8 +1049,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("7x^2-5x+7");
               $fp=Formula("14x-5");
@@ -1091,8 +1069,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("14x^3+7x^2+11x-29");
               $fp=Formula("42x^2+14x+11");
@@ -1113,8 +1089,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0);
@@ -1137,8 +1111,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $f=Formula("9sin(theta) +10cos(theta)");
@@ -1164,8 +1136,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(r=>'Real');
               $f=Formula("6e^r");
@@ -1187,8 +1157,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $f=Formula("10t^4-cos(t) +7sin(t)");
@@ -1210,8 +1178,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("2ln(x)-x");
               $fp=Formula("2/x-1");
@@ -1232,8 +1198,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(s=>'Real');
               Context()->flags->set(reduceConstants=>0);
@@ -1256,8 +1220,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $f=Formula("e^t-sin(t)-cos(t)");
@@ -1279,8 +1241,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("ln(5x^3)");
               $fp=Formula("3/x");
@@ -1301,8 +1261,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -1326,8 +1284,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $f=Formula("(1+3t)^2");
@@ -1349,8 +1305,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("(2x-5)^3");
               $fp=Formula("24x^2-120x+150");
@@ -1371,8 +1325,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("(1-x)^3");
               $fp=Formula("-3x^2+6x-3");
@@ -1393,8 +1345,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               $f=Formula("(2-3x)^2");
               $fp=Formula("18x-12");
@@ -1413,6 +1363,8 @@
       </exercise>
 
     </exercisegroup>
+
+<!-- TODO: Greg added the instruction with <m>a=10</m> in V4. Is it needed? -->
 
     <exercise>
       <webwork seed="1">
@@ -1462,11 +1414,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f=Formula("x^6");
               @d=(Formula("6x^5"), Formula("30x^4"), Formula("120x^3"), Formula("360x^2"));
@@ -1499,11 +1446,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f=Formula("2cos(x)");
               @d=(Formula("-2sin(x)"), Formula("-2cos(x)"), Formula("2sin(x)"), Formula("2cos(x)"));
@@ -1536,11 +1478,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               Context()->variables->are(t=>'Real');
               $f=Formula("t^2 - e^t");
@@ -1574,11 +1511,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $f=Formula("theta^4-theta^3");
@@ -1616,11 +1548,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $f=Formula("sin(theta)-cos(theta)");
@@ -1658,11 +1585,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f=Formula("1100");
               @d=(Formula("0"), Formula("0"), Formula("0"), Formula("0"));
@@ -1705,8 +1627,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->variables->add(y=>'Real');
@@ -1734,8 +1654,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->variables->are(y=>'Real',t=>'Real');
@@ -1763,8 +1681,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->variables->are(y=>'Real',x=>'Real');
@@ -1792,8 +1708,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->variables->are(y=>'Real',x=>'Real');
@@ -1821,8 +1735,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -1851,8 +1763,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -1890,7 +1800,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $ans=1.1;
             </pg-code>
@@ -1917,7 +1826,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $ans=82.08;
             </pg-code>

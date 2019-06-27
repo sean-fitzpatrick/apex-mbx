@@ -6,7 +6,7 @@
   <p>
     <xref ref="sec_basic_diff_rules">Section</xref> showed that,
     in some ways, derivatives behave nicely.
-    The <xref ref="constant-multiple-derivative-rule" autoname="title" /> and <xref ref="sum-difference-derivative-rule" autoname="title" /> established that the derivative of <m>f(x) = 5x^2+\sin(x)</m> was not complicated.
+    The <xref ref="constant-multiple-derivative-rule" text="title" /> and <xref ref="sum-difference-derivative-rule" text="title" /> established that the derivative of <m>f(x) = 5x^2+\sin(x)</m> was not complicated.
     We neglected computing the derivative of things like
     <m>g(x) = 5x^2\sin(x)</m> and <m>h(x) = \frac{5x^2}{\sin(x) }</m> on purpose;
     their derivatives are <em>not</em> as straightforward.
@@ -22,18 +22,11 @@
     <statement>
       <p>
         Let <m>f</m> and <m>g</m> be differentiable functions on an open interval <m>I</m>.
-
-        <idx>
-          <h>Power Rule</h><h>differentiation</h>
-        </idx>
-
-        <idx>
-          <h>derivative</h><h>Product Rule</h>
-        </idx>
-
+            <idx><h>Power Rule</h><h>differentiation</h></idx>
+            <idx><h>derivative</h><h>Product Rule</h></idx>
         Then <m>fg</m> is a differentiable function on <m>I</m>, and
         <me>
-          \lzoo{x}{f(x)g(x)} = f(x)g'(x) + \fp(x)g(x)
+          \lzoo{x}{f(x)g(x)} = \fp(x)g(x) + f(x)g'(x)
         </me>.
       </p>
     </statement>
@@ -42,7 +35,7 @@
   <warning>
     <p>
       <m>\lzoo{x}{f(x)g(x)}\neq \fp(x)g'(x)</m>!
-      While this would be simpler than the <xref ref="thm_ProductRule" autoname="title" />, it is wrong.
+      While this would be simpler than the <xref ref="thm_ProductRule" text="title" />, it is wrong.
     </p>
   </warning>
 
@@ -61,21 +54,21 @@
     </statement>
     <solution>
       <p>
-        To make our use of the <xref ref="thm_ProductRule" autoname="title" /> explicit,
+        To make our use of the <xref ref="thm_ProductRule" text="title" /> explicit,
         let's set <m>f(x) = 5x^2</m> and <m>g(x) = \sin(x)</m>.
         We easily compute/recall that
         <m>\fp(x) = 10x</m> and <m>g'(x) = \cos(x)</m>.
         Employing the rule, we have
         <md>
-          <mrow>\lzoo{x}{5x^2\sin(x)} \amp= 5x^2\lzoo{x}{\sin(x)} + \lzoo{x}{5x^2}\sin(x)</mrow>
-          <mrow>\amp= 5x^2\cos(x) + 10x\sin(x)</mrow>
+          <mrow>\lzoo{x}{5x^2\sin(x)} \amp= \lzoo{x}{5x^2}\sin(x) + 5x^2\lzoo{x}{\sin(x)}</mrow>
+          <mrow>\amp= 10x\sin(x) + 5x^2\cos(x)</mrow>
         </md>.
       </p>
 
       <p>
         At <m>x=\pi/2</m>, we have
         <me>
-          y'(\pi/2) = 5\left(\frac{\pi}{2}\right)^2\cos\left(\frac{\pi}2\right) + 10\cdot\frac{\pi}2 \sin\left(\frac{\pi}{2}\right) = 5\pi
+            y'(\pi/2) = 10\cdot\frac{\pi}2 \sin\left(\frac{\pi}{2}\right) + 5\left(\frac{\pi}{2}\right)^2\cos\left(\frac{\pi}2\right) = 5\pi
         </me>.
       </p>
 
@@ -114,7 +107,7 @@
   </example>
 
   <p>
-    We now investigate why the <xref ref="thm_ProductRule" autoname="title" /> is true.
+    We now investigate why the <xref ref="thm_ProductRule" text="title" /> is true.
   </p>
 
   <proof statement="thm_ProductRule">
@@ -133,33 +126,35 @@
       We now do something a bit unexpected;
       add <m>0</m> to the numerator
       (so that nothing is changed)
-      in the form of <m>{}-f(x+h)g(x)+f(x+h)g(x)</m>,
+      in the form of <m>{}-f(x)g(x+h)+f(x)g(x+h)</m>,
       then do some regrouping as shown.<fn>
       Adding <m>0</m> in some clever form is a common mathematical proof technique.
       </fn><md>
         <mrow>\amp\lzoo{x}{f(x)g(x)} = \lim_{h\to0} \frac{f(x+h)g(x+h)-f(x)g(x)}{h}</mrow>
         <mrow>\amp \text{ (now add 0 to the numerator) }</mrow>
-        <mrow>\amp = \lim_{h\to0} \frac{f(x+h)g(x+h)-f(x+h)g(x)+f(x+h)g(x)-f(x)g(x)}{h}</mrow>
+        <mrow>\amp = \lim_{h\to0} \frac{f(x+h)g(x+h)-f(x)g(x+h)+f(x)g(x+h)-f(x)g(x)}{h}</mrow>
         <mrow>\amp \text{ (regroup) }</mrow>
-        <mrow>\amp = \lim_{h\to0} \frac{\left[f(x+h)g(x+h)-f(x+h)g(x)\right]+\left[f(x+h)g(x)-f(x)g(x)\right]}{h}</mrow>
+        <mrow>\amp = \lim_{h\to0} \frac{\left[f(x+h)g(x+h)-f(x)g(x+h)\right]+\left[f(x)g(x+h)-f(x)g(x)\right]}{h}</mrow>
         <mrow>\amp \text{ (split fraction)}</mrow>
-        <mrow>\amp = \lim_{h\to0} \frac{f(x+h)g(x+h)-f(x+h)g(x)}{h}+\lim_{h\to0}\frac{f(x+h)g(x)-f(x)g(x)}{h}</mrow>
+        <mrow>\amp = \lim_{h\to0} \frac{f(x+h)g(x+h)-f(x)g(x+h)}{h}+\lim_{h\to0}\frac{f(x)g(x+h)-f(x)g(x)}{h}</mrow>
         <mrow>\amp \text{ (factor) }</mrow>
-        <mrow>\amp = \lim_{h\to0} f(x+h)\frac{g(x+h)-g(x)}{h}+\lim_{h\to0}\frac{f(x+h)-f(x)}{h}g(x)</mrow>
+        <mrow>\amp = \lim_{h\to0} \left(\frac{f(x+h)-f(x)}{h}g(x+h)\right)+\lim_{h\to0}\left(f(x)\frac{g(x+h)-g(x)}{h}\right)</mrow>
         <mrow>\amp \text{ (apply limit properties) }</mrow>
-        <mrow>\amp = \lim_{h\to0} f(x+h)\cdot \lim_{h\to0} \frac{g(x+h)-g(x)}{h}+\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\cdot \lim_{h\to0} g(x)</mrow>
+        <mrow>\amp = \lim_{h\to0} \frac{f(x+h)-f(x)}{h}\cdot \lim_{h\to0}g(x+h)+f(x)\cdot\lim_{h\to0}\frac{g(x+h)-g(x)}{h}</mrow>
         <mrow>\amp \text{ (apply limits) }</mrow>
-        <mrow>\amp =f(x)g'(x) + \fp(x)g(x)</mrow>
-        <mrow>\amp \text{ (by definition of the derivative).}</mrow>
-      </md>
-      We have proven the product rule as desired.
+        <mrow>\amp =\fp(x)g(x) + f(x)g'(x)</mrow>
+        <mrow>\amp \text{ (by definition of the derivative)}</mrow>
+      </md>.
+      We have proven the product rule as desired. (In the last step,
+      we also relied on the fact that since <m>g</m> is differentiable,
+      it is also continuous, which guarantees that <m>\lim\limits_{h\to0}g(x+h)=g(x)</m>.)
     </p>
   </proof>
 
   <p>
     It is often true that we can recognize that a theorem is true through its proof yet somehow doubt its applicability to real problems.
     In the following example,
-    we compute the derivative of a product of functions in two ways to verify that the <xref ref="thm_ProductRule" autoname="title" /> is indeed <q>right.</q>
+    we compute the derivative of a product of functions in two ways to verify that the <xref ref="thm_ProductRule" text="title" /> is indeed <q>right.</q>
   </p>
 
   <example xml:id="ex_prod2">
@@ -170,7 +165,7 @@
         Find <m>y'</m> two ways: first,
         by expanding the given product and then taking the derivative,
         and second,
-        by applying the <xref ref="thm_ProductRule" autoname="title" />.
+        by applying the <xref ref="thm_ProductRule" text="title" />.
         Verify that both methods give the same answer.
       </p>
     </statement>
@@ -178,18 +173,18 @@
       <p>
         We first expand the expression for <m>y</m>;
         a little algebra shows that <m>y = 2x^4+3x^3-6x^2+1</m>.
-        It is easy to compute <m>y'</m>;
+        It is easy to compute <m>y'</m>:
         <me>
           y' = 8x^3+9x^2-12x
         </me>.
       </p>
 
       <p>
-        Instead, let's apply the <xref ref="thm_ProductRule" autoname="title" /> to the original factored form:
+        Instead, let's apply the <xref ref="thm_ProductRule" text="title" /> to the original factored form:
         <md>
-          <mrow>y' \amp = (x^2+3x+1)\lzoo{x}{2x^2-3x+1}+\lzoo{x}{x^2+3x+1}(2x^2-3x+1)</mrow>
-          <mrow>\amp = (x^2+3x+1)(4x-3)+(2x+3)(2x^2-3x+1)</mrow>
-          <mrow>\amp = \left(4x^3+9x^2-5x-3\right) + \left(4x^3-7x+3\right)</mrow>
+          <mrow>y' \amp = \lzoo{x}{x^2+3x+1}(2x^2-3x+1)+(x^2+3x+1)\lzoo{x}{2x^2-3x+1}</mrow>
+          <mrow>\amp = (2x+3)(2x^2-3x+1)+(x^2+3x+1)(4x-3)</mrow>
+          <mrow>\amp = \left(4x^3-7x+3\right)+\left(4x^3+9x^2-5x-3\right)</mrow>
           <mrow>\amp  = 8x^3+9x^2-12x</mrow>
         </md>.
       </p>
@@ -213,23 +208,23 @@
     </statement>
     <solution>
       <p>
-        We have a product of three functions while the <xref ref="thm_ProductRule" autoname="title" /> only specifies how to handle a product of two functions.
+        We have a product of three functions while the <xref ref="thm_ProductRule" text="title" /> only specifies how to handle a product of two functions.
         Our method of handling this problem is to simply group the latter two functions together,
         and consider <m>y = x^3\cdot\left[\ln(x) \cos(x) \right]</m>.
-        Following the <xref ref="thm_ProductRule" autoname="title" />, we have
+        Following the <xref ref="thm_ProductRule" text="title" />, we have
         <md>
-          <mrow>\yp \amp = (x^3)\lzoo{x}{\ln(x) \cos(x)} + \lzoo{x}{x^3}\ln(x) \cos(x)</mrow>
+          <mrow>\yp \amp = \lzoo{x}{x^3}\ln(x) \cos(x) + (x^3)\lzoo{x}{\ln(x) \cos(x)}</mrow>
           <intertext>To evaluate <m>\lzoo{x}{\ln(x) \cos(x)}</m>, we apply the Product Rule again:</intertext>
-          <mrow>\yp \amp = (x^3)\left[\ln(x) (-\sin(x) ) + \frac1x\cos(x) \right]+ 3x^2\left[\ln(x) \cos(x) \right]</mrow>
-          <mrow>\amp = x^3\ln(x) (-\sin(x) ) + x^3\frac{1}{x}\cos(x) + 3x^2\ln(x) \cos(x)</mrow>
+          <mrow>\yp \amp = 3x^2\left[\ln(x) \cos(x) \right] + (x^3)\left[\frac1x\cos(x) + \ln(x) (-\sin(x) )\right]</mrow>
+          <mrow>\amp = 3x^2\ln(x) \cos(x) + x^3\frac{1}{x}\cos(x) + x^3\ln(x) (-\sin(x) )</mrow>
         </md>.
       </p>
 
       <p>
         Recognize the pattern in our answer above:
-        when applying the <xref ref="thm_ProductRule" autoname="title" /> to a product of three functions,
+        when applying the <xref ref="thm_ProductRule" text="title" /> to a product of three functions,
         there are three terms added together in the final derivative.
-        Each terms contains only one derivative of one of the original functions,
+        Each term contains only one derivative of one of the original functions,
         and each function's derivative shows up in only one term.
         It is straightforward to extend this pattern to finding the derivative of a product of four or more functions.
       </p>
@@ -237,7 +232,7 @@
       <p>
         Ultimately though, we would simplify our final computation to:
         <me>
-          \yp=-x^3\ln(x)\sin(x) + x^2\cos(x) + 3x^2\ln(x)\cos(x)
+          \yp=3x^2\ln(x)\cos(x) + x^2\cos(x) + -x^3\ln(x)\sin(x)
         </me>
         If you check this answer with a <init>CAS</init>,
         it may factor and give the answer:
@@ -276,17 +271,17 @@
     <solution>
       <p>
         Recalling that the derivative of <m>\ln(x)</m> is <m>1/x</m>,
-        we use the <xref ref="thm_ProductRule" autoname="title" /> to find our answers.
+        we use the <xref ref="thm_ProductRule" text="title" /> to find our answers.
       </p>
 
       <p>
         <ol>
           <li>
             <p>
-              Applying the <xref ref="thm_ProductRule" autoname="title" />:
+              Applying the <xref ref="thm_ProductRule" text="title" />:
               <md>
-                <mrow>\lzoo{x}{x\ln(x)}\amp= x\cdot 1/x + 1\cdot \ln(x)</mrow>
-                <mrow>\amp = 1+\ln(x)</mrow>
+                <mrow>\lzoo{x}{x\ln(x)}\amp= 1\cdot \ln(x) + x\cdot 1/x</mrow>
+                <mrow>\amp = \ln(x) + 1</mrow>
               </md>.
             </p>
           </li>
@@ -295,7 +290,7 @@
             <p>
               Using the result from above, we compute
               <md>
-                <mrow>\lzoo{x}{x\ln(x) -x}\amp= 1+\ln(x) -1</mrow>
+                <mrow>\lzoo{x}{x\ln(x) -x}\amp= \ln(x) + 1 - 1</mrow>
                 <mrow>\amp= \ln(x)</mrow>
               </md>.
             </p>
@@ -325,17 +320,10 @@
     <title>Quotient Rule</title>
     <statement>
       <p>
-        Let <m>f</m> and <m>g</m> be functions defined on an open interval <m>I</m>,
+        Let <m>f</m> and <m>g</m> be differentiable functions defined on an open interval <m>I</m>,
         where <m>g(x) \neq 0</m> on <m>I</m>.
-
-        <idx>
-          <h>derivative</h><h>Quotient Rule</h>
-        </idx>
-
-        <idx>
-          <h>Quotient Rule</h>
-        </idx>
-
+            <idx><h>derivative</h><h>Quotient Rule</h></idx>
+            <idx><h>Quotient Rule</h></idx>
         Then <m>f/g</m> is differentiable on <m>I</m>, and
         <me>
           \lzoo{x}{\frac{f(x)}{g(x)}} = \frac{g(x)\fp(x) - f(x)g'(x)}{g(x)^2}
@@ -345,7 +333,7 @@
   </theorem>
 
   <p>
-    The <xref ref="thm_QuotientRule" autoname="title" /> is not hard to use,
+    The <xref ref="thm_QuotientRule" text="title" /> is not hard to use,
     although it might be a bit tricky to remember.
     A useful mnemonic works as follows.
     Consider a fraction's numerator and denominator as <q>HI</q>
@@ -377,7 +365,7 @@
     </statement>
     <solution>
       <p>
-        Directly applying the <xref ref="thm_QuotientRule" autoname="title" /> gives:
+        Directly applying the <xref ref="thm_QuotientRule" text="title" /> gives:
         <md>
           <mrow>\lzoo{x}{frac{5x^2}{\sin(x) }} \amp = \frac{\sin(x) \cdot \lzoo{x}{5x^2} - 5x^2\cdot \lzoo{x}{\sin(x)} }{\sin^2(x) }</mrow>
           <mrow>\amp =    \frac{10x\sin(x) - 5x^2\cos(x) }{\sin^2(x) }</mrow>
@@ -387,7 +375,7 @@
   </example>
 
   <p>
-    The <xref ref="thm_QuotientRule" autoname="title" /> allows us to fill in holes in our understanding of derivatives of the common trigonometric functions.
+    The <xref ref="thm_QuotientRule" text="title" /> allows us to fill in holes in our understanding of derivatives of the common trigonometric functions.
     We start with finding the derivative of the tangent function.
   </p>
 
@@ -402,7 +390,7 @@
       <p>
         At first, one might feel unequipped to answer this question.
         But recall that <m>\tan(x) = \sin(x) /\cos(x)</m>,
-        so we can apply the <xref ref="thm_QuotientRule" autoname="title" />.
+        so we can apply the <xref ref="thm_QuotientRule" text="title" />.
         <md>
           <mrow>\lzoo{x}{\tan(x)}\amp = \lzoo{x}{\frac{\sin(x) }{\cos(x) }}</mrow>
           <mrow>\amp = \frac{\cos(x) \lzoo{x}{\sin(x)} - \sin(x)\lzoo{x}{\cos(x)}}{\cos^2(x) }</mrow>
@@ -454,7 +442,7 @@
     and stated the derivative of the cosine function in <xref ref="thm_deriv_common">Theorem</xref>.
     The derivatives of the cotangent,
     cosecant and secant functions can all be computed directly using <xref ref="thm_deriv_common">Theorem</xref>
-    and the <xref ref="thm_QuotientRule" autoname="title" />.
+    and the <xref ref="thm_QuotientRule" text="title" />.
   </p>
 
   <theorem xml:id="thm_deriv_trig">
@@ -466,9 +454,7 @@
             <p>
               <m>\displaystyle \lzoo{x}{\sin(x)} = \cos(x)</m>
 
-              <idx>
-                <h>derivative</h><h>trigonometric functions</h>
-              </idx>
+      <idx><h>derivative</h><h>trigonometric functions</h></idx>
 
             </p>
           </li>
@@ -518,7 +504,7 @@
     <statement>
       <p>
         In <xref ref="ex_quot1">Example</xref>
-        the derivative of <m>f(x) = \frac{5x^2}{\sin(x) }</m> was found using the <xref ref="thm_QuotientRule" autoname="title" />.
+        the derivative of <m>f(x) = \frac{5x^2}{\sin(x) }</m> was found using the <xref ref="thm_QuotientRule" text="title" />.
         Rewriting <m>f</m> as <m>f(x) = 5x^2\csc(x)</m>,
         find <m>\fp</m> using <xref ref="thm_deriv_trig">Theorem</xref>
         and verify the two answers are the same.
@@ -528,7 +514,7 @@
       <p>
         We found in <xref ref="ex_quot1">Example</xref>
         that <m>\fp(x) = \frac{10x\sin(x) - 5x^2\cos(x) }{\sin^2(x) }</m>.
-        We now find <m>\fp</m> using the <xref ref="thm_ProductRule" autoname="title" />, considering <m>f</m> as <m>f(x) = 5x^2\csc(x)</m>.
+        We now find <m>\fp</m> using the <xref ref="thm_ProductRule" text="title" />, considering <m>f</m> as <m>f(x) = 5x^2\csc(x)</m>.
         <md>
           <mrow>\fp(x) \amp = \lzoo{x}{5x^2\csc(x)}</mrow>
           <mrow>\amp = 5x^2\lzoo{x}{\csc(x)} + \lzoo{x}{5x^2}\csc(x)</mrow>
@@ -551,7 +537,7 @@
   </example>
 
   <p>
-    The <xref ref="thm_QuotientRule" autoname="title" /> gives other useful results,
+    The <xref ref="thm_QuotientRule" text="title" /> gives other useful results,
     as shown in the next example.
   </p>
 
@@ -578,7 +564,7 @@
     </statement>
     <solution>
       <p>
-        We employ the <xref ref="thm_QuotientRule" autoname="title" />.
+        We employ the <xref ref="thm_QuotientRule" text="title" />.
 
         <ol>
           <li>
@@ -617,7 +603,7 @@
   </p>
 
   <p>
-    This is reminiscent of the <xref ref="power-derivative-rule" autoname="title" />:
+    This is reminiscent of the <xref ref="power-derivative-rule" text="title" />:
     multiply by the power, then subtract <m>1</m> from the power.
     We now add to our previous Power Rule,
     which had the restriction of <m>n>0</m>.
@@ -628,15 +614,8 @@
     <statement>
       <p>
         Let <m>f(x) = x^n</m>, where <m>n\neq 0</m> is an integer.
-
-        <idx>
-          <h>derivative</h><h>Power Rule</h>
-        </idx>
-
-        <idx>
-          <h>Power Rule</h><h>differentiation</h>
-        </idx>
-
+            <idx><h>derivative</h><h>Power Rule</h></idx>
+            <idx><h>Power Rule</h><h>differentiation</h></idx>
         Then
         <me>
           \fp(x) = n\cdot x^{n-1}
@@ -668,13 +647,13 @@
         <ol>
           <li>
             <p>
-              By applying the <xref ref="thm_QuotientRule" autoname="title" />,
+              By applying the <xref ref="thm_QuotientRule" text="title" />,
             </p>
           </li>
 
           <li>
             <p>
-              by viewing <m>f</m> as <m>f(x) = \left(x^2-3x+1\right)\cdot x^{-1}</m> and applying the <xref ref="thm_ProductRule" autoname="title" /> and <xref ref="thm_PowerRule" autoname="title" />, and
+              by viewing <m>f</m> as <m>f(x) = \left(x^2-3x+1\right)\cdot x^{-1}</m> and applying the <xref ref="thm_ProductRule" text="title" /> and <xref ref="thm_PowerRule" text="title" />, and
             </p>
           </li>
 
@@ -693,7 +672,7 @@
         <ol>
           <li>
             <p>
-              Applying the <xref ref="thm_QuotientRule" autoname="title" /> gives:
+              Applying the <xref ref="thm_QuotientRule" text="title" /> gives:
               <md>
                 <mrow>\fp(x) \amp =\frac{x\cdot\lzoo{x}{x^2-3x+1}-\left(x^2-3x+1\right)\lzoo{x}{x}}{x^2}</mrow>
                 <mrow>\amp = \frac{x\cdot(2x-3)-\left(x^2-3x+1\right)\cdot 1}{x^2}</mrow>
@@ -706,7 +685,7 @@
           <li>
             <p>
               By rewriting <m>f</m>,
-              we can apply the <xref ref="thm_ProductRule" autoname="title" /> and <xref ref="thm_PowerRule" autoname="title" /> as follows:
+              we can apply the <xref ref="thm_ProductRule" text="title" /> and <xref ref="thm_PowerRule" text="title" /> as follows:
               <md>
                 <mrow>\fp(x) \amp = \left(x^2-3x+1\right)\lzoo{x}{x^{-1}} + \lzoo{x}{x^2-3x+1} x^{-1}</mrow>
                 <mrow>\amp = \left(x^2-3x+1\right)\cdot (-1)x^{-2} + (2x-3)\cdot x^{-1}</mrow>
@@ -722,7 +701,7 @@
             <p>
               As <m>x\neq 0</m>, we can divide through by <m>x</m> first,
               giving <m>f(x) = x-3+x^{-1}</m>.
-              Now apply the <xref ref="thm_PowerRule" autoname="title" />.
+              Now apply the <xref ref="thm_PowerRule" text="title" />.
               <me>
                 \fp(x) = 1-\frac{1}{x^2}
               </me>,
@@ -739,7 +718,7 @@
     demonstrates three methods of finding <m>\fp</m>.
     One is hard pressed to argue for a <q>best method</q>
     as all three gave the same result without too much difficulty,
-    although it is clear that using the <xref ref="thm_ProductRule" autoname="title" /> required more steps.
+    although it is clear that using the <xref ref="thm_ProductRule" text="title" /> required more steps.
     Ultimately, the important principle to take away from this is:
     reduce the answer to a form that seems
     <q>simple</q> and easy to interpret.
@@ -762,13 +741,14 @@
     In the next section we continue to learn rules that allow us to more easily compute derivatives than using the limit definition directly.
     We have to memorize the derivatives of a certain set of functions,
     such as <q>the derivative of <m>\sin(x)</m> is <m>\cos(x)</m>.</q>
-    The <xref ref="sum-difference-derivative-rule" autoname="title" />,
-    <xref ref="constant-multiple-derivative-rule" autoname="title" />,
-    <xref ref="thm_PowerRule" autoname="title">Power Rule</xref>,
-    <xref ref="thm_ProductRule" autoname="title" /> and <xref ref="thm_QuotientRule" autoname="title" /> show us how to find the derivatives of certain combinations of these functions.
+    The <xref ref="sum-difference-derivative-rule" text="title" />,
+    <xref ref="constant-multiple-derivative-rule" text="title" />,
+    <xref ref="thm_PowerRule" text="title">Power Rule</xref>,
+    <xref ref="thm_ProductRule" text="title" /> and <xref ref="thm_QuotientRule" text="title" /> show us how to find the derivatives of certain combinations of these functions.
     The next section shows how to find the derivatives when we <em>compose</em>
     these functions together.
   </p>
+
   <!-- </introduction> Violates DTD to have introduction with no subsections -->
   <exercises>
     <exercisegroup>
@@ -782,7 +762,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $t=PopUp(['?','True','False'],1);
               $f=PopUp(['?','True','False'],2);
@@ -801,7 +780,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $t=PopUp(['?','True','False'],1);
               $f=PopUp(['?','True','False'],2);
@@ -820,7 +798,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $t=PopUp(['?','True','False'],1);
               $f=PopUp(['?','True','False'],2);
@@ -840,7 +817,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $rules=PopUp(['?','Constant Rule','Constant Multiple Rule','Sum/Difference Rule','Product Rule','Quotient Rule'],5);
             </pg-code>
@@ -857,7 +833,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $t=PopUp(['?','True','False'],1);
               $f=PopUp(['?','True','False'],2);
@@ -1068,6 +1043,7 @@
       </exercise>
 
     </exercisegroup>
+
     <exercisegroup>
 
       <introduction>
@@ -1241,6 +1217,7 @@
       </exercise>
 
     </exercisegroup>
+
     <exercisegroup>
 
       <introduction>
@@ -1249,13 +1226,10 @@
         </p>
       </introduction>
 
+<!-- TODO: In this and subsequent problems, syntax highlighting says there's an error in the vars. I can't find it -->
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'f';
               $x = 'x';
@@ -1276,14 +1250,39 @@
         </webwork>
       </exercise>
 
+<!-- TODO: Make this a WW problem -->
+
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2\cos x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\fp(x) = 2x\cos x - x^2\sin x</m>
+        </p>
+      </answer>
+    </exercise>
+
+<!-- TODO: Make this a WW problem -->
+
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = e^x\ln x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\fp(x) = e^x\ln x + e^x\frac1x</m>
+        </p>
+      </answer>
+    </exercise>
+
       <exercise>
         <webwork seed="1">
-            <setup>
- 
- 
- 
- 
-            <pg-code>
+            <setup>            <pg-code>
               $f = 'f';
               $x = 't';
               Context()->variables->are($x => 'Real');
@@ -1306,10 +1305,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $x = 'x';
@@ -1333,10 +1328,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $x = 't';
@@ -1360,10 +1351,44 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+            <pg-code>
+              $f = 'h';
+              $x = 'x';
+              Context()->variables->are($x => 'Real');
+              $formula = Formula("cot($x) - e^$x");
+              $deriv = $formula->D("$x")->reduce;
+            </pg-code>
+            </setup>
+            <statement>
+              <p>
+                <m><var name="$f" />(<var name="$x" />) = <var name="$formula" /></m>
+              </p>
+
+              <p>
+                <m><var name="$f" />'(<var name="$x" />) = </m><var name="$deriv" width="15" />
+              </p>
+            </statement>
+        </webwork>
+      </exercise>
+
+<!-- TODO: Make this a WW problem -->
+
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \big(\tan x\big)\ln x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\fp(x) = \big(\sec^2x\big)\ln x + \big(\tan x\big)\frac1x</m>
+        </p>
+      </answer>
+    </exercise>
+
+      <exercise>
+        <webwork seed="1">
+            <setup>
             <pg-code>
               $f = 'h';
               $x = 'x';
@@ -1387,10 +1412,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'h';
               $x = 't';
@@ -1414,10 +1435,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'f';
               $x = 'x';
@@ -1441,10 +1458,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'f';
               $x = 'x';
@@ -1468,10 +1481,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'f';
               $x = 't';
@@ -1495,10 +1504,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'f';
               $x = 'x';
@@ -1519,13 +1524,35 @@
         </webwork>
       </exercise>
 
+    <exercise>
+      <statement>
+        <p>
+          <m>\ds f(\theta) = \theta^3\sin\theta + \frac{\sin \theta}{\theta^3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\fp(\theta) = 3\theta^2\sin\theta+\theta^3\cos\theta + \frac{\theta^3\cos\theta - (\sin\theta)(3\theta^2)}{\theta^6}</m>
+        </p>
+      </answer>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          <m>\ds f(x) = \frac{\cos x}{x} + \frac{x}{\tan x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\fp(x) = \frac{-x\sin x - \cos x}{x^2} + \frac{\tan x -x\sec^2x}{\tan^2x}</m>
+        </p>
+      </answer>
+    </exercise>
+
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $x = 'x';
@@ -1550,10 +1577,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $x = 't';
@@ -1577,10 +1600,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'h';
               $x = 't';
@@ -1604,10 +1623,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'f';
               $x = 'x';
@@ -1631,10 +1646,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $x = 'x';
@@ -1656,6 +1667,7 @@
       </exercise>
 
     </exercisegroup>
+
     <exercisegroup>
 
       <introduction>
@@ -1668,11 +1680,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $formula = Formula("e^x(x^2+2)");
@@ -1705,11 +1712,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $formula = Formula("x sin(x)");
@@ -1743,11 +1745,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $formula = Formula("x^2/(x-1)");
@@ -1780,11 +1777,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
             <pg-code>
               $f = 'g';
               $formula = Formula("(cos(x)-8x)/(x+1)");
@@ -1827,7 +1819,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $points = List("3/2");
             </pg-code>
@@ -1851,7 +1842,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $points = List("0");
             </pg-code>
@@ -1875,7 +1865,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $points = Compute("NONE");
             </pg-code>
@@ -1899,7 +1888,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $points = List("-2,0");
             </pg-code>
@@ -1932,7 +1920,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $answer=Formula("2cos(x)-x*sin(x)");
             </pg-code>
@@ -1952,7 +1939,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $answer=Formula("-4cos(x)+x*sin(x)");
             </pg-code>
@@ -1972,7 +1958,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $answer=Formula("cot^2(x)*csc(x)+csc^3(x)");
             </pg-code>
@@ -1992,7 +1977,6 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
             <pg-code>
               $answer=Formula("0");
             </pg-code>

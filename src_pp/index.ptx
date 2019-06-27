@@ -273,31 +273,31 @@
 
     <xi:include href="./chapter_graphbehavior.ptx" />
 
-    <xi:include href="./chapter_deriv_apps.ptx" />
+    <!-- <xi:include href="./chapter_deriv_apps.ptx" /> -->
 
-    <xi:include href="./chapter_integration.ptx" />
+    <!-- <xi:include href="./chapter_integration.ptx" /> -->
 
-    <xi:include href="./chapter_anti_tech.ptx" />
+    <!-- <xi:include href="./chapter_anti_tech.ptx" /> -->
 
-    <xi:include href="./chapter_app_of_int.ptx" />
+    <!-- <xi:include href="./chapter_app_of_int.ptx" /> -->
 
-    <xi:include href="./chapter_sequences_series.ptx" />
+    <!-- <xi:include href="./chapter_sequences_series.ptx" /> -->
 
-    <xi:include href="./chapter9.ptx" />
+    <!-- <xi:include href="./chapter9.ptx" /> -->
 
-    <xi:include href="./chapter10.ptx" />
+    <!-- <xi:include href="./chapter10.ptx" /> -->
 
-    <xi:include href="./chap_vvf.ptx" />
+    <!-- <xi:include href="./chap_vvf.ptx" /> -->
 
-    <xi:include href="./chap_multi.ptx" />
+    <!-- <xi:include href="./chap_multi.ptx" /> -->
 
-    <xi:include href="./chapter13.ptx" />
+    <!-- <xi:include href="./chapter13.ptx" /> -->
 
     <backmatter>
-      <i-ndex>
+      <index>
       <title>Index</title>
       <index-list />
-      </i-ndex>
+      </index>
     </backmatter>
   </book>
 </pretext>
