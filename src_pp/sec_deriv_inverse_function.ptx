@@ -6,7 +6,7 @@
   <p>
     Recall that a function <m>y=f(x)</m> is said to be <term>one-to-one</term>
     if it passes the horizontal line test;
-    that is, for two different <m>x</m> values <m>x_1</m> and <m>x_2</m>,
+    that is, for two different <m>x</m>-values <m>x_1</m> and <m>x_2</m>,
     we do <em>not</em> have <m>f\mathopen{}\left(x_1\right)\mathclose{}=f\mathopen{}\left(x_2\right)\mathclose{}</m>.
     In some cases the domain of <m>f</m> must be restricted so that it is one-to-one.
     For instance, consider <m>f(x)=x^2</m>.
@@ -15,7 +15,10 @@
     but by restricting <m>f</m> to
     <m>(0,\infty)</m>, <m>f</m> is one-to-one.
 
-        <idx><h>derivative</h><h>inverse function</h></idx>
+    <index>
+      <main>derivative</main><sub>inverse function</sub>
+    </index>
+
   </p>
 
   <p>
@@ -185,14 +188,14 @@
     Let <m>y = g(x)</m>, where again <m>g = f^{-1}</m>.
     We want to find <m>y'</m>.
     Since <m>y = g(x)</m>, we know that <m>f(y) = x</m>.
-    Using the <xref ref="thm_chain_rule" text="title" /> and Implicit Differentiation,
+    Using the <xref ref="thm_chain_rule" autoname="title" /> and Implicit Differentiation,
     take the derivative of both sides of this last equality.
     <md>
       <mrow>\lzoo{x}{f(y)} \amp = \lzoo{x}{x}</mrow>
       <mrow>\fp(y)\cdot y' \amp = 1</mrow>
       <mrow>y' \amp = \frac{1}{\fp(y)}</mrow>
       <mrow>y' \amp = \frac{1}{\fp(g(x))}</mrow>
-    </md>.
+    </md>
   </p>
 
   <p>
@@ -329,9 +332,8 @@
     the tangent lines to arcsine approach vertical lines with undefined slopes.
   </p>
 
-  <figure xml:id="fig_inversesine">
-  <caption>Graphs of <m>\sin(x)</m> and <m>\sin^{-1}(x)</m> along with corresponding tangent lines.</caption>
-  <sidebyside widths="47% 47%">
+  <sidebyside xml:id="fig_inversesine" widths="47% 47%">
+    <caption>Graphs of <m>\sin(x)</m> and <m>\sin^{-1}(x)</m> along with corresponding tangent lines.</caption>
       <!-- START figures/fig_inverse4.tex -->
     <figure>
 
@@ -381,12 +383,11 @@
 
     </figure>
   </sidebyside>
-  </figure>
 
   <p>
     In <xref ref="fig_inversesine">Figure</xref>
     we see <m>f(x) = \sin(x)</m> and
-    <m>f^{-1}(x) = \sin^{-1}(x)</m> graphed on their respective domains.
+    <m>f^{-1} = \sin^{-1}(x)</m> graphed on their respective domains.
     The line tangent to <m>\sin(x)</m> at the point
     <m>\left(\pi/3, \sqrt{3}/2\right)</m> has slope <m>\cos(\pi)/3 = 1/2</m>.
     The slope of the corresponding point on <m>\sin^{-1}(x)</m>,
@@ -525,7 +526,9 @@
           </li>
         </ol>
 
-        <idx><h>derivative</h><h>inverse trig.</h></idx>
+        <index>
+          <main>derivative</main><sub>inverse trig.</sub>
+        </index>
 
       </p>
     </statement>
@@ -749,6 +752,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $tf=PopUp(['?','True','False'],2);
             </pg-code>
@@ -931,6 +935,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fip=Formula("1/5");
@@ -956,6 +961,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fip=Formula("1/4");
@@ -982,6 +988,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fip=Formula("1");
@@ -1008,6 +1015,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fip=Formula("1/6");
@@ -1033,7 +1041,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fip=Formula("-2");
@@ -1060,7 +1068,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fip=Formula("1/18");
@@ -1095,7 +1103,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1123,7 +1131,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1150,7 +1158,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $fp=Formula("2/(1+4x^2)");
@@ -1176,7 +1184,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->set(x=>{limits=>[-1,1]});
@@ -1203,7 +1211,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1231,7 +1239,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1259,6 +1267,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->set(x=>{limits=>[-1,1]});
@@ -1285,7 +1294,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->set(x=>{limits=>[1,5]});
@@ -1312,7 +1321,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->set(x=>{limits=>[-1,1]});
@@ -1339,7 +1348,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->set(x=>{limits=>[-1,1]});
@@ -1522,7 +1531,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1551,7 +1560,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1589,7 +1598,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               $dydx=Formula("(y(y-2x))/(x(x-2y))");
@@ -1619,7 +1628,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               Context()->variables->add(y=>'Real');
               parser::Assignment->Allow;
@@ -1648,7 +1657,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $l=Formula("3x^2+1");
             </pg-code>

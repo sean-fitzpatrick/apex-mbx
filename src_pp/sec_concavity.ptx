@@ -41,9 +41,19 @@
           on <m>I</m> if <m>\fp</m> is decreasing.
           If <m>\fp</m> is constant then the graph of <m>f</m> is said to have
           <term>no concavity</term>.
-              <idx><h>concavity</h></idx>
-              <idx><h>concave up</h></idx>
-              <idx><h>concave down</h></idx>
+
+          <index>
+            <main>concavity</main>
+          </index>
+
+          <index>
+            <main>concave up</main>
+          </index>
+
+          <index>
+            <main>concave down</main>
+          </index>
+
         </p>
       </statement>
     </definition>
@@ -179,8 +189,15 @@
           Let <m>f</m> be twice differentiable on an interval <m>I</m>.
           The graph of <m>f</m> is concave up if <m>\fpp>0</m> on <m>I</m>,
           and is concave down if <m>\fpp\lt 0</m> on <m>I</m>.
-              <idx><h>concavity</h><h>test for</h></idx>
-              <idx><h>concavity</h><h>inflection point</h></idx>
+
+          <index>
+            <main>concavity</main><sub>test for</sub>
+          </index>
+
+          <index>
+            <main>concavity</main><sub>inflection point</sub>
+          </index>
+
         </p>
       </statement>
     </theorem>
@@ -272,8 +289,15 @@
         <p>
           A <term>point of inflection</term>
           is a point on the graph of <m>f</m> at which the concavity of <m>f</m> changes.
-              <idx><h>point of inflection</h></idx>
-              <idx><h>inflection point</h></idx>
+
+          <index>
+            <main>point of inflection</main>
+          </index>
+
+          <index>
+            <main>inflection point</main>
+          </index>
+
         </p>
       </statement>
     </definition>
@@ -321,7 +345,7 @@
       <statement>
         <p>
           If <m>(c,f(c))</m> is a point of inflection on the graph of <m>f</m>,
-          then either <m>\fpp(c)=0</m> or <m>\fpp</m> is not defined at <m>c</m>.
+          then either <m>\fpp=0</m> or <m>\fpp</m> is not defined at <m>c</m>.
         </p>
       </statement>
     </theorem>
@@ -509,7 +533,7 @@
         </p>
 
         <figure xml:id="fig_concline2">
-          <caption>Number line for <m>f</m> in <xref ref="ex_conc2">Example</xref>.</caption>
+          <caption></caption>
           <!-- START figures/fig_concline2.tex -->
           <image xml:id="img_concline2"  width="80%">
             <description></description>
@@ -536,8 +560,8 @@
         </figure>
 
         <p>
-          We conclude that <m>f</m> is concave up on <m>(-1,0)</m> and
-          <m>(1,\infty)</m> and concave down on <m>(-\infty,-1)</m> and <m>(0,1)</m>.
+          We conclude that <m>f</m> is concave up on <m>(-1,0)</m> and on <m>(1,\infty)</m> and concave down on
+          <m>(-\infty,-1)</m> and on <m>\cup(0,1)</m>.
           There is only one point of inflection,
           <m>(0,0)</m>, as <m>f</m> is not defined at <m>x=\pm 1</m>.
           Our work is confirmed by the graph of <m>f</m> in <xref ref="fig_conc2">Figure</xref>.
@@ -585,8 +609,9 @@
     <p>
       What does a <q>relative maximum of <m>\fp</m></q> <em>mean</em>?
       The derivative measures the rate of change of <m>f</m>;
-      maximizing <m>\fp</m> means finding where <m>f</m> is increasing the most <mdash /> where <m>f</m> has the steepest tangent line.
-      A similar statement can be made for minimizing <m>\fp</m>; it corresponds to where <m>f</m> has the steepest negatively-sloped tangent line.
+      maximizing <m>\fp</m>means finding the where <m>f</m> is increasing the most <mdash /> where <m>f</m> has the steepest tangent line.
+      A similar statement can be made for minimizing <m>\fp</m>;
+      it corresponds to where <m>f</m> has the steepest negatively-sloped tangent line.
     </p>
 
     <p>
@@ -755,14 +780,30 @@
       <statement>
         <p>
           Let <m>c</m> be a critical value of <m>f</m> where <m>\fpp(c)</m> is defined.
-          <idx><h>derivative</h><h>Second Deriv.
-          Test</h></idx>
-              <idx><h>Second Derivative Test</h></idx>
-              <idx><h>extrema</h><h>and Second Deriv.
-          Test</h></idx><idx><h>maximum</h><h>and Second Deriv.
-          Test</h></idx><idx><h>minimum</h><h>and First Deriv.
-          Test</h></idx>
 
+          <index>
+            <main>derivative</main><sub>Second Deriv. Test</sub>
+          </index>
+
+          <index>
+            <main>Second Derivative Test</main>
+          </index>
+
+          <index>
+            <main>extrema</main><sub>and Second Deriv. Test</sub>
+          </index>
+
+          <index>
+            <main>maximum</main><sub>and Second Deriv. Test</sub>
+          </index>
+
+          <index>
+            <main>minimum</main><sub>and First Deriv. Test</sub>
+          </index>
+
+        </p>
+
+        <p>
           <ol>
             <li>
               <p>
@@ -787,15 +828,11 @@
       <p>
         The second derivative test can only be used on a function that is twice differentiable at <m>c</m>.
         For functions that are not twice differentiable at <m>c</m>,
-        you will need to use the <xref ref="thm_first_der" text="title"/>.
-        If you've already determined the sign diagram for <m>\fp</m>,
-        the <xref ref="thm_first_der" text="title"/> is usually
-        easier to apply, and it applies in cases when
-        xref ref="thm_first_der" text="title"/> does not.
+        you will need to use the <xref ref="thm_first_der" autoname="title"/>.
       </p>
     </aside>
     <p>
-      The Second Derivative Test relates to the <xref ref="thm_first_der" text="title"/> in the following way.
+      The Second Derivative Test relates to the <xref ref="thm_first_der" autoname="title"/> in the following way.
       If <m>\fpp(c)>0</m>,
       then the graph is concave up at a critical point <m>c</m> and <m>\fp</m> itself is growing.
       Since <m>\fp(c)=0</m> and <m>\fp</m> is growing at <m>c</m>,
@@ -809,7 +846,7 @@
       <statement>
         <p>
           Let <m>f(x)=100/x + x</m>.
-          Find the critical points of <m>f</m> and use the <xref ref="thm_second_der" text="title"/> to label them as relative maxima or minima.
+          Find the critical points of <m>f</m> and use the <xref ref="thm_second_der" autoname="title"/> to label them as relative maxima or minima.
         </p>
       </statement>
       <solution>
@@ -984,7 +1021,9 @@
 
       <exercise>
         <webwork seed="1">
-            <setup>            <pg-code>
+            <setup>
+ 
+            <pg-code>
               $der=Formula("0");
             </pg-code>
             </setup>
@@ -1009,6 +1048,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("-8");
             </pg-code>
@@ -1034,6 +1074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("8");
             </pg-code>
@@ -1059,6 +1100,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("6x-6");
             </pg-code>
@@ -1084,6 +1126,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("-6x+2");
             </pg-code>
@@ -1109,6 +1152,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("-cos(x)");
             </pg-code>
@@ -1134,6 +1178,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("-sin(x)");
             </pg-code>
@@ -1159,6 +1204,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("2tan(x)sec^(2)(x)");
             </pg-code>
@@ -1184,6 +1230,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("(6x^2-2)/(x^2+1)^3");
             </pg-code>
@@ -1209,6 +1256,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("2/x^3");
             </pg-code>
@@ -1234,6 +1282,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $der=Formula("6/x^4");
             </pg-code>
@@ -1283,7 +1332,11 @@
 
       <exercise xml:id="exer_03_04_ex_16">
         <webwork seed="1">
-            <setup>            <pg-code>
+            <setup>
+ 
+ 
+ 
+            <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("does not apply");
               $up=Compute("(-inf,inf)");
@@ -1346,7 +1399,10 @@
 
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("does not apply");
@@ -1410,7 +1466,10 @@
 
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("0");
@@ -1476,6 +1535,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1542,6 +1604,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1599,7 +1664,7 @@
               <p>
                 Possible points of inflection: <m>x=-2/3,0</m>;
                 concave down on <m>(-2/3,0)</m>;
-                concave up on <m>(-\infty,-2/3)</m> and <m>(0,\infty)</m>
+                concave up on <m>(-\infty,-2/3)\cup(0,\infty)</m>
               </p>
             </solution>
         </webwork>
@@ -1607,7 +1672,10 @@
 
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1666,7 +1734,7 @@
                 Possible points of inflection:
                 <m>x=(1/3)(2\pm\sqrt{7})</m>;
                 concave up on <m>((1/3)(2-\sqrt{7}),(1/3)(2+\sqrt{7}))</m>;
-                concave down on <m>(-\infty,(1/3)(2-\sqrt{7}))</m> and <m>((1/3)(2+\sqrt{7}),\infty)</m>
+                concave down on <m>(-\infty,(1/3)(2-\sqrt{7}))\cup((1/3)(2+\sqrt{7}),\infty)</m>
               </p>
             </solution>
         </webwork>
@@ -1675,6 +1743,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1");
@@ -1736,24 +1807,12 @@
         </webwork>
       </exercise>
 
-<!-- TODO: webwork code for this problem -->
-    <exercise>
-      <statement>
-        <p>
-          <m>\ds f(x) = \sec x</m> on <m>(-3\pi/2,3\pi/2)</m>
-        </p>
-      </statement>
-      <answer>
-        <p>
-          max: at <m>x=\pm\pi</m>
-          min: at <m>x=0</m>
-        </p>
-      </answer>
-    </exercise>
-
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1/sqrt(3),-1/sqrt(3)");
@@ -1811,7 +1870,7 @@
                 Possible points of inflection:
                 <m>x=\pm1/\sqrt{3}</m>;
                 concave down on <m>(-1/\sqrt{3},1/\sqrt{3})</m>;
-                concave up on <m>(-\infty,-1/\sqrt{3})</m> and <m>(1/\sqrt{3},\infty)</m>
+                concave up on <m>(-\infty,-1/\sqrt{3}) \cup (1/\sqrt{3},\infty)</m>
               </p>
             </solution>
         </webwork>
@@ -1819,7 +1878,10 @@
 
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("0,1,-1");
@@ -1875,8 +1937,8 @@
             <solution>
               <p>
                 Possible points of inflection: <m>x=0,\pm 1</m>;
-                concave down on <m>(-\infty,-1)</m> and <m>(0,1)</m>
-                concave up on <m>(-1,0)</m> and <m>(1,\infty)</m>
+                concave down on <m>(-\infty,-1)\cup (0,1)</m>
+                concave up on <m>(-1,0) \cup (1,\infty)</m>
               </p>
             </solution>
         </webwork>
@@ -1885,6 +1947,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("-pi/4,3pi/4");
@@ -1942,7 +2007,7 @@
                 Possible points of inflection:
                 <m>x=-\pi/4,3\pi/4</m>;
                 concave down on <m>(-\pi/4,3\pi/4)</m>
-                concave up on <m>(-\pi,-\pi/4)</m> and <m>(3\pi/4,\pi)</m>
+                concave up on <m>(-\pi,-\pi/4) \cup (3\pi/4,\pi)</m>
               </p>
             </solution>
         </webwork>
@@ -1950,7 +2015,10 @@
 
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("-2+sqrt(2),-2-sqrt(2)");
@@ -2008,7 +2076,7 @@
                 Possible points of inflection:
                 <m>x=-2\pm\sqrt{2}</m>;
                 concave down on <m>(-2-\sqrt{2},-2+\sqrt{2})</m>
-                concave up on <m>(-\infty,-2-\sqrt{2})</m> and <m> (-2+\sqrt{2},\infty)</m>
+                concave up on <m>(-\infty,-2-\sqrt{2}) \cup (-2+\sqrt{2},\infty)</m>
               </p>
             </solution>
         </webwork>
@@ -2017,6 +2085,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1/e^(3/2)");
@@ -2082,6 +2153,9 @@
       <exercise xml:id="exer_03_04_ex_28">
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $i=Compute("1/sqrt(2),-1/sqrt(2)");
@@ -2139,7 +2213,7 @@
                 Possible points of inflection:
                 <m>x=\pm 1/\sqrt{2}</m>;
                 concave down on <m>(- 1/\sqrt{2}, 1/\sqrt{2})</m>
-                concave up on <m>(-\infty,- 1/\sqrt{2})</m> and <m>( 1/\sqrt{2},\infty)</m>
+                concave up on <m>(-\infty,- 1/\sqrt{2})\cup( 1/\sqrt{2},\infty)</m>
               </p>
             </solution>
         </webwork>
@@ -2162,6 +2236,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("");
@@ -2225,6 +2302,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("");
@@ -2288,6 +2368,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2352,6 +2435,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2415,6 +2501,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2477,7 +2566,10 @@
 
       <exercise>
         <webwork seed="1">
-            <setup> 
+            <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2542,6 +2634,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2602,23 +2697,12 @@
         </webwork>
       </exercise>
 
-<!--TODO: Webwork code for this problem -->
-    <exercise>
-      <statement>
-        <p>
-          <m>\ds f(x) = \sec x</m> on <m>(-3\pi/2,3\pi/2)</m>
-        </p>
-      </statement>
-      <answer>
-        <p>
-          <m>\fp(x)</m> has no relative extrema
-        </p>
-      </answer>
-    </exercise>
-
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2682,6 +2766,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("-1,1");
@@ -2745,6 +2832,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2809,6 +2899,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2873,6 +2966,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -2936,6 +3032,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $crit=Compute("does not apply");
@@ -3011,6 +3110,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3061,6 +3162,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3111,6 +3214,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3161,6 +3266,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3211,6 +3318,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-2/3");
@@ -3263,6 +3372,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("(2+sqrt(7))/3");
@@ -3315,6 +3426,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3362,23 +3475,11 @@
         </webwork>
       </exercise>
 
-<!--TODO: webwork code for this problem -->
-   <exercise>
-      <statement>
-        <p>
-          <m>\ds f(x) = \sec x</m> on <m>(-3\pi/2,3\pi/2)</m>
-        </p>
-      </statement>
-      <answer>
-        <p>
-          <m>\fp(x)</m> has no relative extrema
-        </p>
-      </answer>
-    </exercise>
-
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-1/sqrt(3)");
@@ -3430,6 +3531,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("0");
@@ -3480,6 +3583,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-pi/4");
@@ -3531,6 +3636,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-2-sqrt(2)");
@@ -3582,6 +3689,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("does not apply");
@@ -3632,6 +3741,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->strings->add('does not apply'=>{});
               $max=Compute("-1/sqrt(2)");

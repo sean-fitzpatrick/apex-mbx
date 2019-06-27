@@ -24,9 +24,9 @@
       <p>
         Let <m>f</m> be a function defined on an open interval <m>I</m> containing <m>c</m>.
 
-        <idx>
-          <h>continuous function</h>
-        </idx>
+        <index>
+          <main>continuous function</main>
+        </index>
 
         <ol>
           <li>
@@ -34,9 +34,9 @@
               <m>f</m> is <term>continuous at <m>c</m></term>
               if <m>\lim\limits_{x\to c}f(x) = f(c)</m>.
 
-              <idx>
-                <h>continuous</h><h>at <m>c</m></h>
-              </idx>
+              <index>
+                <main>continuous</main><sub>at <m>c</m></sub>
+              </index>
 
             </p>
           </li>
@@ -46,16 +46,16 @@
               <m>f</m> is <term>continuous on <m>I</m></term>
               if <m>f</m> is continuous at <m>c</m> for all values of <m>c</m> in <m>I</m>.
 
-              <idx>
-                <h>continuous</h><h>on <m>I</m></h>
-              </idx>
+              <index>
+                <main>continuous</main><sub>on <m>I</m></sub>
+              </index>
 
               If <m>f</m> is continuous on <m>(-\infty,\infty)</m>,
               we say <m>f</m> is <term>continuous everywhere</term>.
 
-              <idx>
-                <h>continuous</h><h>everywhere</h>
-              </idx>
+              <index>
+                <main>continuous</main><sub>everywhere</sub>
+              </index>
 
             </p>
           </li>
@@ -158,9 +158,9 @@
       <p>
         The <em>floor function</em>,
 
-        <idx>
-          <h>floor function</h>
-        </idx>
+        <index>
+          <main>floor function</main>
+        </index>
 
         <m>f(x) = \lfloor x \rfloor</m>,
         returns the largest integer smaller than the input <m>x</m>. (For example,
@@ -479,9 +479,9 @@
       <p>
         The following functions are continuous on their domains.
 
-        <idx>
-          <h>continuous function</h><h>properties</h>
-        </idx>
+        <index>
+          <main>continuous function</main><sub>properties</sub>
+        </index>
 
         <ol cols="2">
           <li>
@@ -729,9 +729,9 @@
         where <m>f(a) \lt y \lt f(b)</m>,
         there is a value <m>c</m> in <m>[a,b]</m> such that <m>f(c) = y</m>.
 
-        <idx>
-          <h>Intermediate Value Theorem</h>
-        </idx>
+        <index>
+          <main>Intermediate Value Theorem</main>
+        </index>
 
       </p>
     </statement>
@@ -787,9 +787,9 @@
     Successively applying this technique is called the
     <term>Bisection Method</term>
 
-    <idx>
-      <h>Bisection Method</h>
-    </idx>
+    <index>
+      <main>Bisection Method</main>
+    </index>
 
     of root finding.
     We continue until the interval is sufficiently small.

@@ -14,7 +14,7 @@
       As a motivating example, consider <m>f(x) = 1/x^2</m>,
       as shown in <xref ref="fig_oneoverxsquared">Figure</xref>.
       Note how, as <m>x</m> approaches 0, <m>f(x)</m> grows very,
-      very large <mdash /> in fact, it grows without bound.
+      very large.
       It seems appropriate, and descriptive, to state that
       <me>
         \lim_{x\to 0} \frac1{x^2}=\infty
@@ -58,66 +58,37 @@
       <title>Limit of Infinity, <m>\infty</m></title>
       <statement>
         <p>
-          Let <m>I</m> be an open interval containing <m>c</m>,
-          and let <m>f</m> be a function defined on <m>I</m>,
-          except possibly at <m>c</m>.
+          We say <m>\lim\limits_{x\to c} f(x)=\infty</m> if for every <m>M>0</m> there exists
+          <m>\delta>0</m> such that for all <m>x\neq c</m>,
+          if <m>\abs{x-c}\lt \delta</m>, then <m>f(x)\geq M</m>.
 
-          <ul>
-            <li>
-              <p>
-                The <term>limit of <m>f(x)</m>,
-                as <m>x</m> approaches <m>c</m>,
-                is infinity</term>, denoted by
-                <me>
-                  \lim\limits_{x\rightarrow c} f(x) = \infty
-                </me>,
-                if given any <m>N > 0</m>,
-                there exists <m>\delta > 0</m> such that for all <m>x</m> in <m>I</m>,
-                where <m>x\neq c</m>,
-                if  <m>\abs{x - c} \lt  \delta</m>, then <m>f(x) >N</m>.
-              </p>
-            </li>
-
-            <li>
-              <p>
-                The <term>limit of <m>f(x)</m>,
-                as <m>x</m> approaches <m>c</m>,
-                is negative infinity</term>, denoted by
-                <me>
-                  \lim\limits_{x\rightarrow c} f(x) = -\infty
-                </me>,
-                if given any <m>N \lt  0</m>,
-                there exists <m>\delta > 0</m> such that for all <m>x</m> in <m>I</m>,
-                where <m>x\neq c</m>,
-                if  <m>\abs{x - c} \lt  \delta</m>, then <m>f(x)  \lt  N</m>.
-              </p>
-            </li>
-          </ul>
-              <idx><h>limit</h><h>of infinity</h></idx>
+          <index>
+            <main>limit</main><sub>of infinity</sub>
+          </index>
 
         </p>
       </statement>
     </definition>
 
     <p>
-      The first definition is similar to the
-      <m>\varepsilon</m><ndash /><m>\delta</m> definition in <xref ref="def_limit">Definition</xref>
+      This is just like the <m>\varepsilon</m><ndash /><m>\delta</m> definition in <xref ref="def_limit">Definition</xref>
       from <xref ref="sec_limit_def">Section</xref>.
       In that definition, given any (small) value <m>\varepsilon</m>,
       if we let <m>x</m> get close enough to <m>c</m>
       (within <m>\delta</m> units of <m>c</m>)
-      then <m>f(x)</m> is guaranteed to be within <m>\varepsilon</m> of <m>L</m>.
-      Here, given any (large) value <m>N</m>,
+      then <m>f(x)</m> is guaranteed to be within <m>\varepsilon</m> of <m>f(c)</m>.
+      Here, given any (large) value <m>M</m>,
       if we let <m>x</m> get close enough to <m>c</m>
       (within <m>\delta</m> units of <m>c</m>),
-      then <m>f(x)</m> will be at least as large as <m>N</m>.
+      then <m>f(x)</m> will be at least as large as <m>M</m>.
       In other words, if we get close enough to <m>c</m>,
       then we can make <m>f(x)</m> as large as we want.
+      We can define limits equal to <m>-\infty</m> in a similar way.
     </p>
 
     <p>
       It is important to note that by saying
-      <m>\lim_{x\to c}f(x) = \infty</m> we are implicitly stating that
+      <m>\lim\limits_{x\to c}f(x) = \infty</m> we are implicitly stating that
       <em>the</em> limit of <m>f(x)</m>,
       as <m>x</m> approaches <m>c</m>,
       <em>does not exist.</em> A limit only exists when <m>f(x)</m> approaches an actual numeric value.
@@ -125,61 +96,6 @@
       It is one <em>specific way</em>
       in which a limit can fail to exist.
     </p>
-
-    <p>
-      We define one-sided limits that approach infinity in a similar way.
-    </p>
-
-    <definition xml:id="def_onesided_limit_of_infinity">
-      <title>One-Sided Limits of Infinity</title>
-      <statement>
-        <ul>
-          <li>
-            <p>
-              Let <m>f</m> be a function defined on <m>(a,c)</m> for some <m>a\lt c</m>.
-
-              We say the <term>limit of <m>f(x)</m>,
-              as <m>x</m> approaches <m>c</m> from the left, is infinity</term>, or,
-              <term>the left-hand limit of <m>f</m> at <m>c</m> is infinity</term>,
-              denoted by
-              <me>
-                \lim\limits_{x\rightarrow c^-} f(x) = \infty
-              </me>,
-              if  given any <m>N > 0</m>,
-              there exists <m>\delta > 0</m> such that for all
-              <m>a\lt x\lt c</m>,
-              if  <m>\abs{x - c} \lt  \delta</m>, then <m>f(x) >N</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Let <m>f</m> be a function defined on <m>(c,b)</m> for some <m>b>c</m>.
-
-              We say the <term>limit of <m>f(x)</m>,
-              as <m>x</m> approaches <m>c</m> from the right, is infinity</term>, or,
-              <term>the right-hand limit of <m>f</m> at <m>c</m> is infinity</term>,
-              denoted by
-              <me>
-                \lim\limits_{x\rightarrow c^+} f(x) = \infty
-              </me>,
-              if  given any <m>N > 0</m>,
-              there exists <m>\delta > 0</m> such that for all
-              <m>c\lt x\lt b</m>,
-              if  <m>\abs{x - c} \lt  \delta</m>, then <m>f(x) >N</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              The term <em>left- (or,
-              right-) hand limit of <m>f</m> at c is negative infinity</em>
-              is defined in a manner similar to <xref ref="def_limit_of_infinity">Definition</xref>.
-            </p>
-          </li>
-        </ul>
-      </statement>
-    </definition>
 
     <example xml:id="ex_inflim1">
       <title>Evaluating limits involving infinity</title>
@@ -226,14 +142,14 @@
         </p>
 
         <p>
-          In general, let a <q>large</q> value <m>N</m> be given.
-          Let <m>\delta=1/\sqrt{N}</m>.
+          In general, let a <q>large</q> value <m>M</m> be given.
+          Let <m>\delta=1/\sqrt{M}</m>.
           If <m>x</m> is within <m>\delta</m> of <m>1</m>,
-          i.e., if <m>\abs{x-1}\lt 1/\sqrt{N}</m>, then:
+          i.e., if <m>\abs{x-1}\lt 1/\sqrt{M}</m>, then:
           <md>
-            <mrow>\abs{x-1} \amp \lt  \frac{1}{\sqrt{N}}</mrow>
-            <mrow>(x-1)^2 \amp \lt  \frac{1}{N}</mrow>
-            <mrow>\frac{1}{(x-1)^2} \amp > N</mrow>
+            <mrow>\abs{x-1} \amp \lt  \frac{1}{\sqrt{M}}</mrow>
+            <mrow>(x-1)^2 \amp \lt  \frac{1}{M}</mrow>
+            <mrow>\frac{1}{(x-1)^2} \amp > M</mrow>
           </md>,
           which is what we wanted to show.
           So we may say <m>\lim\limits_{x\to 1}1/{(x-1)^2}=\infty</m>.
@@ -288,33 +204,19 @@
   <subsection>
     <title>Vertical asymptotes</title>
     <p>
-      The graphs in the two previous examples demonstrate that if a function <m>f</m> has a limit (or,
-      left- or right-hand limit) of infinity at <m>x=c</m>,
-      then the graph of <m>f</m> looks similar to a vertical line near <m>x=c</m>.
-      This observation leads to a definition.
+
+      <index>
+        <main>asymptote</main><sub>vertical</sub>
+      </index>
+
     </p>
 
-    <definition xml:id="def_vertical_asymptote">
-      <title>Vertical Asymptote</title>
-      <statement>
-        <p>
-          Let <m>I</m> be an interval that either contains <m>c</m> or has <m>c</m> as an endpoint,
-          and let <m>f</m> be a function defined on <m>I</m>,
-          except possibly at <m>c</m>.
-        </p>
-
-        <p>
-          If the limit of <m>f(x)</m> as <m>x</m> approaches <m>c</m> from either the left or right
-          (or both)
-          is <m>\infty</m> or <m>-\infty</m>,
-          then the line <m>x=c</m> is a <term>vertical asymptote</term> of <m>f</m>.
-
-
-          <idx><h>asymptote</h><h>vertical</h></idx>
-
-        </p>
-      </statement>
-    </definition>
+    <p>
+      If the limit of <m>f(x)</m> as <m>x</m> approaches <m>c</m> from either the left or right
+      (or both)
+      is <m>\infty</m> or <m>-\infty</m>,
+      we say the function has a <em>vertical asymptote</em> at <m>c</m>.
+    </p>
 
     <example xml:id="ex_vertasy1">
       <title>Finding vertical asymptotes</title>
@@ -383,8 +285,8 @@
 
     <p>
       Canceling the common term, we get that <m>f(x)=x+1</m> for <m>x\not=1</m>.
-      So there is clearly no asymptote;
-      rather, a hole exists in the graph at <m>x=1</m>.
+      So there is clearly no asymptote,
+      rather a hole exists in the graph at <m>x=1</m>.
     </p>
 
     <figure xml:id="fig_noasy">
@@ -430,8 +332,15 @@
   <subsection>
     <title>Indeterminate Forms</title>
     <p>
-          <idx><h>limit</h><h>indeterminate form</h></idx>
-          <idx><h>indeterminate form</h></idx>
+
+      <index>
+        <main>limit</main><sub>indeterminate form</sub>
+      </index>
+
+      <index>
+        <main>indeterminate form</main>
+      </index>
+
     </p>
 
     <p>
@@ -461,7 +370,7 @@
       That work may be algebraic
       (such as factoring and canceling),
       it may involve using trigonometric identities or logarithm rules,
-      or it may require a tool such as the <xref text="title" ref="thm_sqz" />.
+      or it may require a tool such as the <xref autoname="title" ref="thm_sqz" />.
       In <xref ref="sec_lhopitals_rule">Section</xref>
       we will learn yet another technique called L'H&#xf4;pital's Rule that provides another way to handle indeterminate forms.
     </p>
@@ -479,19 +388,19 @@
       <q>subtract infinity from infinity.</q> Rather,
       it means <q>One quantity is subtracted from the other,
       but both are growing without bound.</q> What is the result?
-      It is possible to get every value between <m>-\infty</m> and <m>\infty</m>.
+      It is possible to get every value between <m>-\infty</m> and <m>\infty</m>
     </p>
 
     <p>
       Note that <m>1/0</m> and <m>\infty/0</m> are not indeterminate forms,
-      though they are not exactly valid mathematical expressions, either.
+      though they are not exactly valid mathematical expressions either.
       In each, the function is growing without bound,
       indicating that the limit will be <m>\infty</m>, <m>-\infty</m>,
       or simply not exist if the left- and right-hand limits do not match.
     </p>
   </subsection>
 
-  <subsection xml:id="fig_hzasy">
+  <subsection>
     <title>Limits at Infinity and Horizontal Asymptotes</title>
     <p>
       At the beginning of this section we briefly considered what happens to
@@ -502,42 +411,39 @@
     </p>
 
     <definition xml:id="def_limit_at_infinity">
-      <title>Limits at Infinity and Horizontal Asymptotes</title>
+      <title>Limits at Infinity and Horizontal Asymptote</title>
       <statement>
         <p>
-          Let <m>L</m> be a real number.
-
           <ol>
             <li>
               <p>
-                Let <m>f</m> be a function defined on
-                <m>(a,\infty)</m> for some number <m>a</m>.
-                The <term>limit of <m>f</m> at infinity is <m>L</m></term>,
-                denoted <m>\lim\limits_{x\to\infty} f(x)=L</m>,
-                if for every <m>\epsilon>0</m> there exists <m>M>a</m> such that if <m>x > M</m>,
-                then <m>\abs{f(x)-L}\lt \epsilon</m>.
-                <idx><h>limit</h><h>at infinity</h></idx>
-                <idx><h>asymptote</h><h>horizontal</h></idx>
+                We say <m>\lim\limits_{x\to\infty} f(x)=L</m> if for every
+                <m>\varepsilon>0</m> there exists <m>M>0</m> such that if <m>x\geq M</m>,
+                then <m>\abs{f(x)-L}\lt \varepsilon</m>.
+
+                <index>
+                  <main>limit</main><sub>at infinity</sub>
+                </index>
+
+                <index>
+                  <main>asymptote</main><sub>horizontal</sub>
+                </index>
 
               </p>
             </li>
 
             <li>
               <p>
-                Let <m>f</m> be a function defined on
-                <m>(-\infty,b)</m> for some number <m>b</m>.
-                The <term>limit of <m>f</m> at negative infinity is <m>L</m></term>,
-                denoted <m>\lim\limits_{x\to-\infty} f(x)=L</m>,
-                if for every <m>\epsilon>0</m> there exists <m>M\lt b</m> such that if <m>x \lt M</m>,
-                then <m>\abs{f(x)-L}\lt \epsilon</m>.
+                We say <m>\lim\limits_{x\to-\infty} f(x)=L</m> if for every
+                <m>\varepsilon>0</m> there exists <m>M\lt 0</m> such that if <m>x\leq M</m>,
+                then <m>\abs{f(x)-L}\lt \varepsilon</m>.
               </p>
             </li>
 
             <li>
               <p>
-                If <m>\lim\limits_{x\rightarrow\infty} f(x)=L</m> or <m>\lim\limits_{x\rightarrow-\infty} f(x)=L</m>,
-                we say the line <m>y=L</m> is a
-                <em>horizontal asymptote</em> of <m>f</m>.
+                If <m>\lim\limits_{x\to\infty} f(x)=L</m> or <m>\lim\limits_{x\to-\infty} f(x)=L</m>,
+                we say that <m>y=L</m> is a <em>horizontal asymptote</em> of <m>f</m>.
               </p>
             </li>
           </ol>
@@ -723,7 +629,7 @@
     <p>
       We can analytically evaluate limits at infinity for rational functions once we understand <m>\lim\limits_{x\to\infty}\frac{1}{x}</m>.
       As <m>x</m> gets larger and larger,
-      <m>1/x</m> gets smaller and smaller, approaching <m>0</m>.
+      the <m>1/x</m> gets smaller and smaller, approaching <m>0</m>.
       We can, in fact,
       make <m>1/x</m> as small as we want by choosing a large enough value of <m>x</m>.
       Given <m>\varepsilon</m>,
@@ -735,7 +641,7 @@
       It is now not much of a jump to conclude the following:
       <md>
         <mrow>\lim_{x\to\infty}\frac1{x^n}\amp=0\amp\lim_{x\to-\infty}\frac1{x^n}\amp=0</mrow>
-      </md>.
+      </md>
     </p>
 
     <p>
@@ -747,7 +653,7 @@
 
     <p>
       A good way of approaching this is to divide through the numerator and denominator by <m>x^3</m>
-      (hence multiplying by <m>1</m>),
+      (hence dividing by <m>1</m>),
       which is the largest power of <m>x</m> to appear in the denominator.
       Doing this, we get
       <md>
@@ -842,7 +748,7 @@
       <m>m</m>,
       <m>a_n</m>,
       <m>b_m</m> and whether you are looking for
-      <m>\lim_{x\to\infty} f(x)</m> or <m>\lim_{x\to-\infty} f(x)</m>.
+      <m>\lim_{x\to\infty} f(x)</m> or <m>\lim_{x\to\infty} f(x)</m>.
     </p>
 
     <example xml:id="ex_hzasy2">
@@ -940,9 +846,8 @@
           </ol>
         </p>
 
-        <figure xml:id="fig_hzasy3">
-        <caption>Visualizing the functions in <xref ref="ex_hzasy3">Example</xref>.</caption>
-        <sidebyside  widths="31% 31% 31%">
+        <sidebyside xml:id="fig_hzasy3"  widths="31% 31% 31%">
+          <caption>Visualizing the functions in <xref ref="ex_hzasy3">Example</xref>.</caption>
           <figure xml:id="fig_hzasy3a">
             <caption/>
             <!-- START figures/fig_hzasy5.tex -->
@@ -1004,13 +909,11 @@
             <!-- figures/fig_hzasy7.tex END -->
           </figure>
         </sidebyside>
-        </figure>
       </solution>
     </example>
 
     <p>
-      With care, we can quickly evaluate limits at infinity for a large number of functions by considering the
-      long run behavior using <q>dominant terms</q> of <m>f(x)</m>.
+      With care, we can quickly evaluate limits at infinity for a large number of functions by considering the long run behaviour using<q>dominant terms</q> of <m>f(x)</m>.
       For instance,
       consider again <m>\lim\limits_{x\to\pm\infty}\frac{x}{\sqrt{x^2+1}}</m>,
       graphed in <xref ref="fig_hzasyb">Figure</xref>.
@@ -1018,7 +921,7 @@
       When <m>x</m> is very large, <m>x^2+1 \approx x^2</m>.
       Thus
       <md>
-        <mrow>\sqrt{x^2+1}\amp\approx \sqrt{x^2} = \abs{x} \amp \frac{x}{\sqrt{x^2+1}} \amp\approx \frac{x}{\abs{x}}</mrow>
+        <mrow>\sqrt{x^2+1}\amp\approx \sqrt{x^2}= \abs{x}\amp\frac{x}{\sqrt{x^2+1}}\amp \approx \frac{x}{\abs{x}}</mrow>
       </md>.
     </p>
 
@@ -1075,7 +978,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'False');
             </pg-code>
@@ -1099,7 +1002,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'True');
             </pg-code>
@@ -1123,7 +1026,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'False');
             </pg-code>
@@ -1147,7 +1050,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'True');
             </pg-code>
@@ -1171,7 +1074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $truefalse=PopUp(['?','True','False'],'True');
             </pg-code>
@@ -1264,10 +1167,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
+ 
+ 
+ 
+ 
             <pg-code>
               $a=non_zero_random(-3,3,1);
               $b=non_zero_random(-1,1,2);
@@ -1327,15 +1230,15 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @a=map{$_+1}NchooseK(9,2);
               if($envir{problemSeed}==1){$a[0]=3;$a[1]=5;};
@@ -1426,11 +1329,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $b=random(-1,1,2);
               if($envir{problemSeed}==1){$b=1;};
@@ -1495,12 +1398,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(-5,5,1);
               $n=random(1,4,2);
@@ -1566,9 +1469,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
+ 
+ 
+ 
             <pg-code>
               $f=list_random(Formula("sin(x)"),Formula("cos(x)"));
               if($envir{problemSeed}==1){$f=Formula("cos(x)")};
@@ -1620,9 +1523,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
+ 
+ 
+ 
             <pg-code>
               $b=random(1.5,2.5,0.1);
               $c=non_zero_random(-12,12,1);
@@ -1686,24 +1589,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,1,-1,-2);};
@@ -1818,24 +1721,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,4,-9,-1);};
@@ -1950,24 +1853,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,5,6,-2);};
@@ -2082,24 +1985,24 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               @b=map{$_-9}(NchooseK(19,4));
               if($envir{problemSeed}==1){@b=(3,6,-2);};
@@ -2225,8 +2128,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               do {$c[0]=random(2,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2267,8 +2170,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $c[0]=random(2,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2310,8 +2213,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2354,8 +2257,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2398,8 +2301,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=non_zero_random(-9,9,1);
@@ -2441,8 +2344,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $c[0]=random(1,5,1);
               $c[1]=random(-5,-1,1);
@@ -2495,9 +2398,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2518,9 +2421,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2541,9 +2444,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2564,9 +2467,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
+ 
+ 
+ 
             <pg-code>
               $a=list_random(Compute("inf"),Compute("-inf"));
               @b=map{($_==9)?10:$_-9}(NchooseK(19,3));
@@ -2649,13 +2552,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(-9,9,1);
               do{$L[0]=non_zero_random(-9,9,1);$L[1]=non_zero_random(-3,3,1);}until($L[0]!=$L[1]);
@@ -2707,10 +2610,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
-
-
-
+ 
+ 
+ 
+ 
             <pg-code>
               $b[0]=random(-1,1,1);
               $b[3]=random(-1,1,1);
@@ -2736,7 +2639,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $L=1;
             </pg-code>
@@ -2756,3 +2659,4 @@
     </exercisegroup>
   </exercises>
 </section>
+

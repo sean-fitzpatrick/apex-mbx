@@ -41,18 +41,19 @@
       <p>
         Let <m>b</m>, <m>c</m>, <m>L</m> and <m>K</m> be real numbers,
         let <m>n</m> be a positive integer,
-        and let <m>f</m> and <m>g</m> be functions defined on an open interval <m>I</m> containing <m>c</m> with the following limits:
+        and let <m>f</m> and <m>g</m> be functions with the following limits:
 
-              <idx><h>limit</h><h>properties</h></idx>
+        <index>
+          <main>limit</main><sub>properties</sub>
+        </index>
 
         <md>
-          <mrow>\lim_{x\to c}f(x)\amp = L\amp \lim_{x\to c} g(x)\amp = K</mrow>
+          <mrow>\lim_{x\to c}f(x)\amp=L\amp\lim_{x\to c} g(x)\amp = K</mrow>
         </md>.
       </p>
 
       <p>
         The following limits hold.
-
         <dl>
           <li xml:id="constant-limit-rule">
             <title>Constant</title>
@@ -110,9 +111,9 @@
             </p>
 
             <p>
-              (If <m>n</m> is even then require <m>f(x)\geq 0</m> on <m>I</m>.)
+              (If <m>n</m> is even, <m>L</m> must be non-negative.)
             </p>
-            </li>
+          </li>
 
           <li xml:id="composition-limit-rule">
             <title>Composition</title>
@@ -172,6 +173,7 @@
           </li>
 
           <li xml:id="polynomial-limit-example">
+
             <p>
               <m>\lim\limits_{x\to 2}p(x)</m>
             </p>
@@ -184,25 +186,25 @@
         <ol>
           <li>
             <p>
-              Using the <xref ref="sum-difference-limit-rule" text="title" /> rule,
+              Using the <xref ref="sum-difference-limit-rule" autoname="title" /> rule,
               we know that <m>\lim_{x\to 2}(f(x) + g(x)) = 2+3 =5</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Using the <xref ref="scalar-multiple-limit-rule" text="title" />,
-              <xref ref="sum-difference-limit-rule" text="title" />,
-              and <xref ref="power-limit-rule" text="title" /> rules,
+              Using the <xref ref="scalar-multiple-limit-rule" autoname="title" />,
+              <xref ref="sum-difference-limit-rule" autoname="title" />,
+              and <xref ref="power-limit-rule" autoname="title" /> rules,
               we find that <m>\lim\limits_{x\to 2}(5f(x) + g(x)^2) = 5\cdot 2 + 3^2 = 19</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Here we combine the <xref ref="power-limit-rule" text="title" />,
-              <xref ref="scalar-multiple-limit-rule" text="title" />,
-              <xref ref="sum-difference-limit-rule" text="title" /> and <xref ref="constant-limit-rule" text="title" /> Rules.
+              Here we combine the <xref ref="power-limit-rule" autoname="title" />,
+              <xref ref="scalar-multiple-limit-rule" autoname="title" />,
+              <xref ref="sum-difference-limit-rule" autoname="title" /> and <xref ref="constant-limit-rule" autoname="title" /> Rules.
               We show quite a few steps, but in general these can be omitted:
               <md>
                 <mrow>\lim_{x\to 2} p(x) \amp = \lim_{x\to 2}\left(3x^2-5x+7\right)</mrow>
@@ -223,7 +225,7 @@
     <me>
       \lim_{x\to 2} p(x) = 9 = p(2);
     </me>
-    <ie />, the limit at <m>2</m> could have been found just by plugging <m>2</m> into the function.
+    i.e., the limit at <m>2</m> could have been found just by plugging <m>2</m> into the function.
     This holds true for all polynomials,
     and also for rational functions
     (which are quotients of polynomials),
@@ -270,7 +272,7 @@
         Using <xref ref="thm_poly_rat">Theorem</xref>, we can quickly state that
         <md>
           <mrow>\lim_{x\to -1}\frac{3x^2-5x+1}{x^4-x^2+3} \amp = \frac{3(-1)^2-5(-1)+1}{(-1)^4-(-1)^2+3}</mrow>
-          <mrow>\amp = \frac{9}{3} =3</mrow>
+          <mrow>\amp =3</mrow>
         </md>.
       </p>
     </solution>
@@ -362,7 +364,7 @@
             </p>
 
             <p>
-              (follows from <xref ref="identity-limit-rule" text="title"/> and <xref ref="root-limit-rule" text="title"/> rules)
+              (follows from <xref ref="identity-limit-rule" autoname="title"/> and <xref ref="root-limit-rule" autoname="title"/> rules)
             </p>
           </li>
         </ol>
@@ -438,14 +440,14 @@
               <me>
                 \lim_{x\to 3} \left(\sec^2(x) - \tan^2(x)\right) = \lim_{x\to 3} 1 = 1
               </me>,
-              using the <xref ref="constant-limit-rule" text="title" /> rule.
+              using the <xref ref="constant-limit-rule" autoname="title" /> rule.
               Either way, we find the limit is <m>1</m>.
             </p>
           </li>
 
           <li>
             <p>
-              Applying the <xref ref="product-limit-rule" text="title" /> rule and <xref ref="thm_lim_continuous">Theorem</xref> gives
+              Applying the <xref ref="product-limit-rule" autoname="title" /> rule and <xref ref="thm_lim_continuous">Theorem</xref> gives
               <me>
                 \lim\limits_{x\to \pi/2} \cos(x)\sin(x) = \cos(\pi/2)\sin(\pi/2) = 0\cdot 1 = 0
               </me>.
@@ -460,10 +462,10 @@
             </p>
 
             <p>
-              We can also use the <xref ref="composition-limit-rule" text="title" /> rule.
+              We can also use the <xref ref="composition-limit-rule" autoname="title" /> rule.
               Using <xref ref="thm_lim_continuous">Theorem</xref>,
               we have <m>\lim\limits_{x\to 1}\ln(x) = \ln(1) = 0</m> and <m>\lim_{x\to 0} e^x= e^0=1</m>,
-              satisfying the conditions of the <xref ref="composition-limit-rule" text="title" /> rule.
+              satisfying the conditions of the <xref ref="composition-limit-rule" autoname="title" /> rule.
               Applying this rule,
               <me>
                 \lim_{x\to 1} e^{\ln(x)} = e^{\lim_{x\to 1} \ln(x)}=e^{\ln(1)}  = e^0 = 1
@@ -478,10 +480,10 @@
               Applying our theorems, we attempt to find the limit as
               <me>
                 \lim_{x\to 0}\frac{\sin(x)}{x}\rightarrow \frac{\sin(0) }{0}
-              </me>,
+              </me>
               which is of the form <m>\frac{0}{0}</m>.
               This, of course,
-              violates a condition of the <xref ref="quotient-limit-rule" text="title"/>,
+              violates a condition of the <xref ref="quotient-limit-rule" autoname="title"/>,
               as the limit of the denominator is not allowed to be <m>0</m>.
               Therefore, we are still unable to evaluate this limit with tools we currently have at hand.
             </p>
@@ -562,31 +564,34 @@
 
       <p>
 
-        <p>
-              <idx><h>limit</h><h>Squeeze Theorem</h></idx>
-              <idx><h>Squeeze Theorem</h></idx>
-        </p>
+        <index>
+          <main>limit</main><sub>Squeeze Theorem</sub>
+        </index>
+
+        <index>
+          <main>Squeeze Theorem</main>
+        </index>
 
       </p>
     </statement>
   </theorem>
 
   <p>
-    It can take some work to figure out appropriate functions by which to
-    <q>squeeze</q> a given function.
-    However, that is generally the only place where work is necessary;
+    It can take some work to figure out appropriate functions by which to <q>squeeze</q>
+    the given function of which you are trying to evaluate a limit.
+    However, that is generally the only place work is necessary;
     the theorem makes the <q>evaluating the limit part</q> very simple.
   </p>
 
   <p>
-    We use the <xref ref="thm_sqz" text="title" /> in the following example to finally prove that <m>\lim\limits_{x\to 0} \frac{\sin(x)}{x} = 1</m>.
+    We use the <xref ref="thm_sqz" autoname="title" /> in the following example to finally prove that <m>\lim\limits_{x\to 0} \frac{\sin(x)}{x} = 1</m>.
   </p>
 
   <example xml:id="ex_limit_sinx_prove">
     <title>Using the Squeeze Theorem</title>
     <statement>
       <p>
-        Use the <xref ref="thm_sqz" text="title" /> to show that
+        Use the <xref ref="thm_sqz" autoname="title" /> to show that
         <me>
           \lim_{x\to 0} \frac{\sin(x)}{x} = 1
         </me>.
@@ -648,9 +653,8 @@
         <m>\frac{1}{2}r^2 \theta</m> with <m>\theta</m> measured in radians.)
       </p>
 
-      <figure xml:id="fig_squeeze1">
-      <caption>Bounding the sector between two triangles</caption>
-      <sidebyside widths="32% 32% 32%">
+      <sidebyside xml:id="fig_squeeze1" widths="32% 32% 32%">
+        <caption>Bounding the sector between two triangles</caption>
           <!-- START figures/fig_squeeze1a.tex -->
         <image xml:id="img_squeeze1a">
           <description></description>
@@ -698,7 +702,6 @@
         </image>
           <!-- figures/fig_squeeze1c.tex END -->
       </sidebyside>
-      </figure>
 
       <p>
         Multiply all terms by <m>\frac{2}{\sin(\theta)}</m>, giving
@@ -741,7 +744,7 @@
     thinking <q>I would <em>never</em>
     have come up with that on my own.
     This is too hard!</q> Don't be discouraged;
-    within this text we will guide you in your use of the <xref ref="thm_sqz" text="title" />.
+    within this text we will guide you in your use of the <xref ref="thm_sqz" autoname="title" />.
     As one gains mathematical maturity,
     clever proofs like this are easier and easier to create.
   </p>
@@ -830,7 +833,9 @@
     The special limits stated in <xref ref="thm_special_limits">Theorem </xref>
     are called <em>indeterminate forms</em>
 
-    <idx><h>limit</h><h>indeterminate form</h></idx>
+    <index>
+      <main>limit</main><sub>indeterminate form</sub>
+    </index>
 
     , in this case they are of the form <m>0/0</m>,
     except the third limit which is of a different form.
@@ -853,7 +858,7 @@
     </statement>
     <solution>
       <p>
-        We begin by attempting to apply <xref ref="thm_poly_rat">Theorem</xref>
+        We begin by attempting to apply <xref ref="thm_lim_continuous">Theorem</xref>
         and substituting <m>1</m> for <m>x</m> in the quotient.
         This gives:
         <me>
@@ -951,8 +956,9 @@
     cancel, then apply <xref ref="thm_limit_allbut1">Theorem</xref>.
     We demonstrate this once more.
   </p>
+
   <example xml:id="ex_limit_allbut1">
-    <title>Evaluating a limit using <xref ref="thm_limit_allbut1">Theorem</xref></title>
+    <title>Evaluating a Limit with a Hole</title>
     <statement>
       <p>
         Evaluate
@@ -963,8 +969,8 @@
     </statement>
     <solution>
       <p>
-        We attempt to apply <xref ref="thm_poly_rat">Theorem</xref>
-        by substituting <m>3</m> for <m>x</m>.
+        We begin by applying <xref ref="thm_lim_continuous">Theorem</xref>
+        and substituting <m>3</m> for <m>x</m>.
         This returns the familiar indeterminate form of <q>0/0</q>.
         Since the numerator and denominator are each polynomials,
         we know that <m>(x-3)</m> is factor of each.
@@ -982,8 +988,8 @@
           <mrow>\lim_{x\to 3} \frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15} \amp = \lim_{x\to 3}\frac{(x-3)\left(x^2+x-2\right)}{(x-3)\left(2 x^2+9 x-5\right)}</mrow>
           <mrow>\amp =\lim_{x\to 3} \frac{x^2+x-2}{2 x^2+9 x-5}</mrow>
           <mrow>\amp = \frac{10}{40}</mrow>
-          <mrow>\amp = \frac{1}{4}\text{.}</mrow>
-        </md>
+          <mrow>\amp = \frac{1}{4}</mrow>
+        </md>.
       </p>
     </solution>
   </example>
@@ -1000,7 +1006,7 @@
     </statement>
     <solution>
       <p>
-        We begin by trying to apply the <xref ref="quotient-limit-rule" text="title" /> limit rule,
+        We begin by trying to apply the <xref ref="quotient-limit-rule" autoname="title" /> limit rule,
         but the denominator evaluates to zero.
         In fact, this limit is of the indeterminate form <m>0/0</m>.
         We will do some algebra to resolve the indeterminate form.
@@ -1043,7 +1049,7 @@
     <solution>
       <p>
         Since <m>f</m> is a polynomial,
-        our first attempt should be to employ <xref ref="thm_poly_rat">Theorem</xref>
+        our first attempt should be to employ <xref ref="thm_lim_continuous">Theorem</xref>
         and substitute <m>0</m> for <m>h</m>.
         However, we see that this gives us <q><m>0/0</m>.</q>
         Knowing that we have a rational function hints that some algebra will help.
@@ -1066,8 +1072,7 @@
     One of the main results of this section is <xref ref="thm_lim_continuous">Theorem</xref>;
     it states that many functions that we use regularly behave in a very nice,
     predictable way.
-    In <xref ref="sec_continuity">Section</xref>
-    we give a name to this nice behavior;
+    In the next section we give a name to this nice behavior;
     we label such functions as <term>continuous.</term>
     Defining that term will require us to look again at what a limit is and what causes limits to not exist.
   </p>
@@ -1080,7 +1085,6 @@
           Terms and Concepts
         </p>
       </introduction>
-
 
       <exercise>
         <title>Limit of a constant</title>
@@ -1148,18 +1152,13 @@
         </webwork>
       </exercise>
 
-    <exercise>
-      <statement>
-        <p>
-          Sketch a graph that visually demonstrates the Squeeze Theorem.
-        </p>
-      </statement>
-      <answer>
-        <p>
-          Answers will vary.
-        </p>
-      </answer>
-    </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Sketch a graph that visually demonstrates the Squeeze Theorem.
+          </p>
+        </statement>
+      </exercise>
 
       <exercise>
         <title>Limit of <m>0/0</m></title>
@@ -1208,36 +1207,10 @@
         </webwork>
       </exercise>
 
-      <exercise>
-        <webwork seed="1">
-          <setup>
-            <var name="$iszero" >
-            <set><member correct="yes">True</member>
-            <member>False</member></set>
-            </var>
-          <pg-code>
-            $iszero=PopUp(['?','True','False'],'True');
-          </pg-code>
-          </setup>
-          <statement>
-            <p>
-              True or False? <m>\lim\limits_{x\to 1}\ln x = 0</m>.
-              Use a theorem to defend your answer.
-            </p>
-          </statement>
-          <solution>
-            <p>
-              True; by <xref ref="thm_lim_continuous">Theorem</xref>,
-              <m>\lim_{x\to 1}\ln x = \ln 1 =0</m>.
-            </p>
-          </solution>
-        </webwork>
-      </exercise>
     </exercisegroup>
-
     <!--TODO: Resolve the repeated instructions in the exercises in this exercisegroup. -->
-
     <exercisegroup>
+
       <introduction>
         <p>
           In the following exercises,
@@ -1255,8 +1228,8 @@
         <title>A sum</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1292,8 +1265,8 @@
         <title>A quotient</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1321,15 +1294,6 @@
               </p>
             </statement>
             <solution>
-              <p>
-                Using the constant and quotient rules,
-                <md>
-                  <mrow> \lim\limits_{x\to <var name="$a" />}\left(\frac{3f(x)}{g(x)}\right)\amp =
-                         \frac{\lim\limits_{x\to <var name="$a" />}(3f(x))}{\lim\limits_{x\to <var name="$a" />}g(x)}</mrow>
-                  <mrow> \amp = \frac{3\lim\limits_{x\to <var name="$a" />}f(x)}{\lim\limits_{x\to <var name="$a" />}g(x)} </mrow>
-                  <mrow>  \amp \frac{3(6)}{3} = 6 </mrow>
-                </md>.
-              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1338,8 +1302,8 @@
         <title>A difference in the numerator</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1375,8 +1339,8 @@
         <title>A difference in the denominator</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1412,8 +1376,8 @@
         <title>A composition</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1449,8 +1413,8 @@
         <title>A composition</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1486,8 +1450,8 @@
         <title>A triple composition</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1523,8 +1487,8 @@
         <title>Products and squares</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1571,12 +1535,13 @@
           </md>
         </p>
       </introduction>
+
       <exercise>
         <title><m>f</m> to the <m>g</m></title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1612,8 +1577,8 @@
         <title>cosine of <m>g</m></title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1649,8 +1614,8 @@
         <title><m>f</m> times <m>g</m></title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1686,8 +1651,8 @@
         <title>A composition</title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->strings->add('not possible to know'=>{});
               Context()->strings->add('NPK'=>{alias=>'not possible to know'});
@@ -1718,10 +1683,11 @@
             </solution>
         </webwork>
       </exercise>
-    </exercisegroup>
-    <!-- TODO: Resolve duplicate instructions in these exercisegroup exercises -->
 
+    </exercisegroup>
+    <!--TODO: Resolve duplicate instructions in these exercisegroup exercises -->
     <exercisegroup>
+
       <introduction>
         <p>
           In the following exercises, use limit theorems to evaluate the given limit.
@@ -1732,6 +1698,11 @@
         <title>Polynomial</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(2,8,1);
               $b=non_zero_random(-5,5,1);
@@ -1767,6 +1738,11 @@
         <title>Rational and power</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $b=non_zero_random(-5,5,1);
               do{$c=non_zero_random(-9,9,1);}until($b!=$c);
@@ -1802,11 +1778,14 @@
         </webwork>
       </exercise>
 
-
       <exercise>
         <title>Trig</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
+ 
             <pg-code>
               $d=list_random(3,4,6);
               if($envir{problemSeed}==1){$d=4;};
@@ -1846,51 +1825,10 @@
       </exercise>
 
       <exercise>
-        <title>Rational</title>
-        <webwork seed="1">
-            <setup>
-            <pg-code>
-              $a=non_zero_random(-2,5,1);
-              do{$d=non_zero_random(-6,6,1);}until($a!=$d);
-              $b=non_zero_random(-5,5,1);
-              $c=non_zero_random(-5,5,1);
-              if($envir{problemSeed}==1){$a=1;$b=2;$c=2;$d=4};
-              $f=Formula("$b*x-$c")->reduce;
-              $g=Formula("x-$d")->reduce;
-              $h=$f/$g;
-              Context("Fraction");
-              $L=Fraction($b*$a-$c,$a-$d);
-            </pg-code>
-          </setup>
-          <statement>
-            <p>
-              Use limit theorems to evaluate the limit.
-            </p>
-            <p>
-              <m>\lim\limits_{x\to<var name="$a" />}<var name="$r" /></m>
-            </p>
-
-            <p>
-              <var name="$L" width="20" />
-            </p>
-          </statement>
-          <solution>
-            <p>
-            <md>
-                <mrow>\lim_{x\to<var name="$a" />}<var name="$r" /> \amp =
-                \frac{<var name="$b" /><var name="$a" />-<var name="$c" />}
-                   {<var name="$a" />-<var name="$d" />} </mrow>
-                <mrow> \amp = <var name="$L" /></mrow>
-              </md>
-            </p>
-          </solution>
-        </webwork>
-      </exercise>
-
-      <exercise>
         <title><m>\log</m></title>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $L=Compute("DNE");
             </pg-code>
@@ -1927,11 +1865,11 @@
         <title>Exponential</title>
         <webwork seed="1">
             <setup>
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               $a=random(2,4,1);
               do{$b=random(2,4,1);}until($a!=$b);
@@ -1972,8 +1910,8 @@
         <title><m>\csc</m></title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $d=list_random(3,4,6);
               if($envir{problemSeed}==1){$d=6;};
@@ -2011,8 +1949,8 @@
         <title><m>\log</m></title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $a=random(1,9,1);
@@ -2043,6 +1981,15 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               #ensure rational function doesn't reduce
@@ -2089,6 +2036,8 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $a=non_zero_random(-5,5,1);
@@ -2124,6 +2073,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=6;$b=-2;$c=7;};
@@ -2154,6 +2106,8 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               ($b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,2);
               if($envir{problemSeed}==1){$b=-2;$c=2;};
@@ -2186,6 +2140,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=2;$b=-8;$c=1;};
@@ -2216,6 +2173,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=2;$b=8;$c=-1;};
@@ -2246,6 +2206,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=-2;$b=7;$c=-8;};
@@ -2276,6 +2239,9 @@
         <title>Rational function</title>
         <webwork seed="1">
             <setup>
+ 
+ 
+ 
             <pg-code>
               ($a,$b,$c)=map{($_+1)*random(-1,1,2)}NchooseK(9,3);
               if($envir{problemSeed}==1){$a=-1;$b=-8;$c=7;};
@@ -2397,9 +2363,10 @@
             </solution>
         </webwork>
       </exercise>
-    </exercisegroup>
 
+    </exercisegroup>
     <exercisegroup>
+
       <introduction>
         <p>
           The following exercises challenge your understanding of limits but can be evaluated using the knowledge gained in <xref ref="sec_limit_analytically">Section</xref>.
@@ -2410,8 +2377,8 @@
         <title><m>\sin</m></title>
         <webwork seed="1">
             <setup>
-
-
+ 
+ 
             <pg-code>
               $L=random(2,9,1);
               if($envir{problemSeed}==1){$L=3;};
@@ -2432,6 +2399,8 @@
         <title><m>\sin</m></title>
         <webwork seed="1">
             <setup>
+ 
+ 
             <pg-code>
               $a=random(2,9,1);
               do{$b=random(2,9,1);}until($a!=$b);
@@ -2455,6 +2424,7 @@
         <title><m>\log</m></title>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               $L=1;
             </pg-code>
@@ -2473,6 +2443,7 @@
         <title><m>\sin</m></title>
         <webwork seed="1">
             <setup>
+ 
             <pg-code>
               Context()->flags->set(reduceConstants=>0);
               $L=Formula("pi/180");
@@ -2587,3 +2558,4 @@
 
   </exercises>
 </section>
+

@@ -23,7 +23,11 @@
       <q>What <em>is</em> the derivative?</q>
       We offer two interconnected interpretations of the derivative,
       hopefully explaining why we care about it and why it is worthy of study.
-          <idx><h>derivative</h><h>interpretation</h></idx>
+
+      <index>
+        <main>derivative</main><sub>interpretation</sub>
+      </index>
+
     </p>
   </introduction>
 
@@ -32,7 +36,7 @@
     <p>
       <xref ref="sec_derivative">Section</xref>
       started with an example of using the position of an object
-      (in this case, a falling amusement park rider)
+      (in this case, a falling amusement-park rider)
       to find the object's velocity.
       This type of example is often used when introducing the derivative because we tend to readily recognize that velocity is the
       <em>instantaneous rate of change in position.</em> In general,
@@ -41,7 +45,7 @@
       Put another way, the derivative answers
       <q>When <m>x</m> changes,
       at what rate does <m>f</m> change?</q>
-      Thinking back to the amusement park ride,
+      Thinking back to the amusement-park ride,
       we asked <q>When time changed,
       at what rate did the height change?</q>
       and found the answer to be <q>By <m>-64</m> feet per second.</q>
@@ -79,13 +83,13 @@
     </p>
 
     <p>
-      Referring back to the falling amusement park ride,
+      Referring back to the falling amusement-park ride,
       knowing that at <m>t=2</m> the velocity was <m>-64</m> ft/s, we could reasonably approximate that <m>1</m> second later the riders' height would have dropped by about <m>64</m> feet.
       Knowing that the riders were <em>accelerating</em>
       as they fell would inform us that this is an
       <em>under-approximation</em>.
       If all we knew was that <m>f(2) = 86</m> and <m>\fp(2) = -64</m>,
-      we'd know that we'd have to stop the riders quickly otherwise they would hit the ground.
+      we'd know that we'd have to stop the riders quickly otherwise they would hit the ground!
     </p>
 
     <p>
@@ -189,7 +193,7 @@
 
     <p>
       This approximation is best when <m>h</m> is <q>small.</q>
-      <q>Small</q> is a relative term;
+      Small is a relative term;
       when dealing with the world population,
       <m>h=22\text{ days} = 28{,}800\text{ minutes}</m> is small in comparison to years.
       When manufacturing widgets,
@@ -219,7 +223,11 @@
       Then <m>s'(t)</m> has units <q>feet per second,</q>
       and <m>s'(t)</m> measures the <em>instantaneous rate of distance change with repsect to time</em>
       <mdash /> it measures <em>velocity</em>.
-          <idx><h>velocity</h></idx>
+
+      <index>
+        <main>velocity</main>
+      </index>
+
     </p>
 
     <p>
@@ -242,7 +250,10 @@
         <unit base="foot"/><per base="second" exp="2"/>
       </quantity>, but this tends to obscure the meaning of the units.
 
-          <idx><h>acceleration</h></idx>
+      <index>
+        <main>acceleration</main>
+      </index>
+
     </p>
 
     <p>
@@ -291,9 +302,19 @@
             </p>
           </li>
         </ol>
-            <idx><h>derivative</h><h>motion</h></idx>
-            <idx><h>derivative</h><h>velocity</h></idx>
-            <idx><h>derivative</h><h>acceleration</h></idx>
+
+        <index>
+          <main>derivative</main><sub>motion</sub>
+        </index>
+
+        <index>
+          <main>derivative</main><sub>velocity</sub>
+        </index>
+
+        <index>
+          <main>derivative</main><sub>acceleration</sub>
+        </index>
+
       </p>
     </insight>
   </subsection>
@@ -539,7 +560,7 @@
         </p>
 
         <figure xml:id="fig_fwithderivzoom3">
-          <caption>Zooming in on <m>f</m> and its tangent line at <m>x=3</m> for the function given in <xref ref="ex_der_meaning4">Examples</xref> and <xref ref="ex_der_meaning5"></xref>.</caption>
+          <caption>Zooming in on <m>f</m> at <m>x=3</m> for the function given in <xref ref="ex_der_meaning4">Examples</xref> and <xref ref="ex_der_meaning5"></xref>.</caption>
           <!-- START figures/fig_fwithderivzoom3.tex -->
           <image xml:id="img_fwithderivzoom3" width="47%">
             <description></description>
@@ -603,7 +624,7 @@
       <ol>
         <li>
           <p>
-            what <m>f(c)</m> is, for some value of <m>c</m>, and
+            What <m>f(c)</m> is, for some value of <m>c</m>, and
           </p>
         </li>
 
@@ -673,7 +694,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
-
+ 
             <pg-code>
                 Context("ArbitraryString");
                 $ans=Compute("Velocity");
@@ -722,7 +743,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
-
+ 
             <pg-code>
                 Context("ArbitraryString");
                 $ans=Compute("Linear functions");
@@ -752,7 +773,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-
+ 
           <pg-code>
             $ans=10+2*(6-5);
           </pg-code>
@@ -772,7 +793,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-
+ 
           <pg-code>
             $ans=-67+5*(110-100);
           </pg-code>
@@ -793,7 +814,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-
+ 
           <pg-code>
             $ans=187+17*(20-25);
           </pg-code>
@@ -838,7 +859,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-
+ 
           <pg-code>
             $ans=(26-22)/(7-8);
           </pg-code>
@@ -859,7 +880,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
-
+ 
           <pg-code>
             $ans=(17-29)/(0-2);
           </pg-code>
@@ -880,7 +901,7 @@
       <webwork seed="1">
           <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
           <setup>
-
+ 
           <pg-code>
               Context("ArbitraryString");
               $ans=Compute("decibels per customer");
@@ -914,7 +935,7 @@
       <webwork seed="1">
           <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
           <setup>
-
+ 
           <pg-code>
             Context("ArbitraryString");
             $ans=Compute("ft/s^2");
@@ -952,7 +973,7 @@
       <webwork seed="1">
           <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
           <setup>
-
+ 
           <pg-code>
             Context("ArbitraryString");
             $ans=Compute("ft/hr");
@@ -1112,7 +1133,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $gr=init_graph(-4,-5,4,5,axes=>[0,0],size=>[400,400]);
               $gr->lb('reset');
@@ -1140,7 +1161,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $gr=init_graph(-1,-5,4,5,axes=>[0,0],size=>[400,400]);
               $gr->lb('reset');
@@ -1168,7 +1189,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $gr=init_graph(-5,-5,5,5,axes=>[0,0],size=>[400,400]);
               $gr->lb('reset');
@@ -1198,7 +1219,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $gr=init_graph(-4,-2,4,2,axes=>[0,0],size=>[400,400]);
               $gr->lb('reset');
@@ -1265,7 +1286,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $ans=0;
             </pg-code>
@@ -1285,7 +1306,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
-
+ 
             <pg-code>
               $ans=1/6;
             </pg-code>

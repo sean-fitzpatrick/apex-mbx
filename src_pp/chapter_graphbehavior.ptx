@@ -5,7 +5,7 @@
   <introduction>
     <p>
       Our study of limits led to continuous functions,
-      a certain class of functions that behave in a particularly nice way.
+      which is a certain class of functions that behave in a particularly nice way.
       Limits then gave us an even nicer class of functions,
       functions that are differentiable.
     </p>
@@ -15,10 +15,10 @@
     </p>
   </introduction>
 
-  <xi:include  href="sec_graph_extreme_values.ptx" />
-  <xi:include  href="sec_graph_mvt.ptx" />
-  <xi:include  href="sec_graph_incr_decr.ptx" />
-  <xi:include  href="sec_graph_concavity.ptx" />
-  <xi:include  href="sec_graph_sketch.ptx" />
+  <xi:include  href="sec_extreme_values.ptx" />
+  <xi:include  href="sec_mvt.ptx" />
+  <xi:include  href="sec_incr_decr.ptx" />
+  <xi:include  href="sec_concavity.ptx" />
+  <xi:include  href="sec_sketch.ptx" />
 </chapter>
 
