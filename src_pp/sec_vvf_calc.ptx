@@ -39,13 +39,13 @@
           if <m>\abs{t-c} \lt \delta</m>,
           we have <m>\norm{\vec r(t) - \vec L} \lt  \varepsilon</m>.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>limits</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>limits</h>
+          </idx>
 
-          <index>
-            <main>limit</main><sub>of vector<ndash />valued functions</sub>
-          </index>
+          <idx>
+            <h>limit</h><h>of vector<ndash />valued functions</h>
+          </idx>
 
         </p>
       </statement>
@@ -67,13 +67,13 @@
               <m>\mathbb{R}^2</m> defined on an open interval <m>I</m> containing <m>c</m>.
               Then
 
-              <index>
-                <main>vector<ndash />valued function</main><sub>limits</sub>
-              </index>
+              <idx>
+                <h>vector<ndash />valued function</h><h>limits</h>
+              </idx>
 
-              <index>
-                <main>limit</main><sub>of vector<ndash />valued functions</sub>
-              </index>
+              <idx>
+                <h>limit</h><h>of vector<ndash />valued functions</h>
+              </idx>
 
               <me>
                 \lim_{t\to c} \vec r(t) = \la \lim_{t\to c}f(t)\, , \,\lim_{t\to c} g(t)\ra
@@ -128,13 +128,13 @@
         <p>
           Let <m>\vec r(t)</m> be a vector<ndash />valued function defined on an open interval <m>I</m> containing <m>c</m>.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>continuity</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>continuity</h>
+          </idx>
 
-          <index>
-            <main>continuous function</main><sub>vector<ndash />valued</sub>
-          </index>
+          <idx>
+            <h>continuous function</h><h>vector<ndash />valued</h>
+          </idx>
 
         </p>
 
@@ -168,13 +168,13 @@
           <m>\vec r(t)</m> is continuous at <m>c</m> if, and only if,
           each of its component functions is continuous at <m>c</m>.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>continuity</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>continuity</h>
+          </idx>
 
-          <index>
-            <main>continuous function</main><sub>vector<ndash />valued</sub>
-          </index>
+          <idx>
+            <h>continuous function</h><h>vector<ndash />valued</h>
+          </idx>
 
         </p>
       </statement>
@@ -287,13 +287,13 @@
         <p>
           Let <m>\vec r(t)</m> be continuous on an open interval <m>I</m> containing <m>c</m>.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>derivatives</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>derivatives</h>
+          </idx>
 
-          <index>
-            <main>derivative</main><sub>vector<ndash />valued functions</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>vector<ndash />valued functions</h>
+          </idx>
 
         </p>
 
@@ -359,13 +359,13 @@
               Let <m>\vec r(t) = \la \, f(t), g(t), h(t)\,\ra</m>.
               Then
 
-              <index>
-                <main>vector<ndash />valued function</main><sub>derivatives</sub>
-              </index>
+              <idx>
+                <h>vector<ndash />valued function</h><h>derivatives</h>
+              </idx>
 
-              <index>
-                <main>derivative</main><sub>vector<ndash />valued functions</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>vector<ndash />valued functions</h>
+              </idx>
 
               <me>
                 \vrp(t) = \la\, \fp(t), g'(t), h'(t)\, \ra
@@ -641,13 +641,13 @@
           Let <m>\vec r(t)</m> be a differentiable vector<ndash />valued function on an open interval <m>I</m> containing <m>c</m>,
           where <m>\vrp(c)\neq \vec 0</m>.
 
-          <index>
-            <main>tangent line</main>
-          </index>
+          <idx>
+            <h>tangent line</h>
+          </idx>
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>tangent line</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>tangent line</h>
+          </idx>
 
         </p>
 
@@ -901,13 +901,13 @@
           <m>\vec r(t)</m> is <term>smooth</term>
           on <m>I</m> if <m>\vrp(t)\neq \vec 0</m> on <m>I</m>.
 
-          <index>
-            <main>smooth</main>
-          </index>
+          <idx>
+            <h>smooth</h>
+          </idx>
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>smooth</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>smooth</h>
+          </idx>
 
         </p>
       </statement>
@@ -927,21 +927,21 @@
           let <m>f</m> be a differentiable real<ndash />valued function,
           and let <m>c</m> be a real number.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>derivatives</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>derivatives</h>
+          </idx>
 
-          <index>
-            <main>derivative</main><sub>vector<ndash />valued functions</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>vector<ndash />valued functions</h>
+          </idx>
 
-          <index>
-            <main>dot product</main><sub>and derivatives</sub>
-          </index>
+          <idx>
+            <h>dot product</h><h>and derivatives</h>
+          </idx>
 
-          <index>
-            <main>cross product</main><sub>and derivatives</sub>
-          </index>
+          <idx>
+            <h>cross product</h><h>and derivatives</h>
+          </idx>
 
         </p>
 
@@ -1219,9 +1219,9 @@
           <m>\vec r(t)\cdot \vec r(t) = c^2</m> for all <m>t</m> in <m>I</m>).
           Then <m>\vec r(t)\cdot\vrp(t) = 0</m> for all <m>t</m> in <m>I</m>.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>of constant length</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>of constant length</h>
+          </idx>
 
         </p>
       </statement>
@@ -1258,13 +1258,13 @@
         <p>
           A similar statement holds for vector<ndash />valued functions in <m>\mathbb{R}^3</m>.
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>integration</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>integration</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>of vector<ndash />valued functions</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>of vector<ndash />valued functions</h>
+          </idx>
 
         </p>
       </statement>
@@ -1380,9 +1380,9 @@
       Integrating a <em>rate of change</em>
       function gives <em>displacement</em>.
 
-      <index>
-        <main>displacement</main>
-      </index>
+      <idx>
+        <h>displacement</h>
+      </idx>
 
     </p>
 
@@ -1408,13 +1408,13 @@
           Let \vrt<nbsp />be a vector<ndash />valued function where <m>\vrp(t)</m> is continuous on <m>[a,b]</m>.
           The arc length <m>L</m> of the graph of \vrt<nbsp />is
 
-          <index>
-            <main>vector<ndash />valued function</main><sub>arc length</sub>
-          </index>
+          <idx>
+            <h>vector<ndash />valued function</h><h>arc length</h>
+          </idx>
 
-          <index>
-            <main>arc length</main>
-          </index>
+          <idx>
+            <h>arc length</h>
+          </idx>
 
           <me>
             L = \int_a^b \norm{\vrp(t)}\ dt

@@ -29,9 +29,9 @@
     knowing the <em>rate</em> at which one quantity is changing can determine the
     <em>rate</em> at which the other changes.
 
-    <index>
-      <main>related rates</main>
-    </index>
+    <idx>
+      <h>related rates</h>
+    </idx>
 
   </p>
 
@@ -101,9 +101,9 @@
 
   <insight xml:id="idea_relatedrates">
     <title>Related Rates</title>
-    <index>
-      <main>Related Rates</main>
-    </index>
+    <idx>
+      <h>Related Rates</h>
+    </idx>
 
     <p>
       <ol>

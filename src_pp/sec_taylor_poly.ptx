@@ -26,7 +26,7 @@
       that is, the tangent line approximates <m>f</m> well.
     </p>
 
-    <sidebyside xml:id="fig_taypolyintroa">
+    <sidebyside>
       <caption/>
 
       <figure xml:id="fig_taypolyintroa_1">
@@ -234,17 +234,17 @@
         <p>
           Let <m>f</m> be a function whose first <m>n</m> derivatives exist at <m>x=c</m>.
 
-          <index>
-            <main>Taylor Polynomial</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>Taylor Polynomial</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>Maclaurin Polynomial</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>Maclaurin Polynomial</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>Maclaurin Polynomial|see{Taylor Polynomial}</main>
-          </index>
+          <idx>
+            <h>Maclaurin Polynomial|see{Taylor Polynomial}</h>
+          </idx>
 
         </p>
 
@@ -698,13 +698,13 @@
               </me>,
               where <m>\ds R_n(x) = \frac{f^{(n+1)}(z_x)}{(n+1)!}(x-c)^{(n+1)}</m>.
 
-              <index>
-                <main>Taylor Polynomial</main><sub>Taylor's Theorem</sub>
-              </index>
+              <idx>
+                <h>Taylor Polynomial</h><h>Taylor's Theorem</h>
+              </idx>
 
-              <index>
-                <main>Taylor's Theorem</main>
-              </index>
+              <idx>
+                <h>Taylor's Theorem</h>
+              </idx>
 
             </p>
           </li>

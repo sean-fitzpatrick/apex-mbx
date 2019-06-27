@@ -78,29 +78,29 @@
               If the sequence <m>\{S_n\}</m> diverges,
               the series <m>\ds \infser a_n</m> <em>diverges</em>.
 
-              <index>
-                <main>series</main><sub>definition</sub>
-              </index>
+              <idx>
+                <h>series</h><h>definition</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>partial sums</sub>
-              </index>
+              <idx>
+                <h>series</h><h>partial sums</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>convergent</sub>
-              </index>
+              <idx>
+                <h>series</h><h>convergent</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>divergent</sub>
-              </index>
+              <idx>
+                <h>series</h><h>divergent</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>of series</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>of series</h>
+              </idx>
 
-              <index>
-                <main>divergence</main><sub>of series</sub>
-              </index>
+              <idx>
+                <h>divergence</h><h>of series</h>
+              </idx>
 
             </p>
           </li>
@@ -187,7 +187,7 @@
               When <m>n</m> is odd,
               <m>b_n = S_n</m> so the marks for <m>b_n</m> are drawn oversized to show they coincide.
 
-              <sidebyside xml:id="fig_series1">
+              <sidebyside>
                 <caption>Scatter plots relating to <xref ref="ex_series1">Example</xref>.</caption>
                 <figure xml:id="fig_series1a">
                   <caption/>
@@ -310,13 +310,13 @@
         <p>
           Note that the index starts at <m>n=0</m>, not <m>n=1</m>.
 
-          <index>
-            <main>series</main><sub>geometric</sub>
-          </index>
+          <idx>
+            <h>series</h><h>geometric</h>
+          </idx>
 
-          <index>
-            <main>geometric series</main>
-          </index>
+          <idx>
+            <h>geometric series</h>
+          </idx>
 
         </p>
       </statement>
@@ -349,21 +349,21 @@
               The series converges if, and only if, <m>\abs{r} \lt  1</m>.
               When <m>\abs{r}\lt 1</m>,
 
-              <index>
-                <main>series</main><sub>geometric</sub>
-              </index>
+              <idx>
+                <h>series</h><h>geometric</h>
+              </idx>
 
-              <index>
-                <main>geometric series</main>
-              </index>
+              <idx>
+                <h>geometric series</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>of geometric series</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>of geometric series</h>
+              </idx>
 
-              <index>
-                <main>divergence</main><sub>of geometric series</sub>
-              </index>
+              <idx>
+                <h>divergence</h><h>of geometric series</h>
+              </idx>
 
               <me>
                 \infser[0] r^n = \frac{1}{1-r}
@@ -564,7 +564,7 @@
               to diverge.)
               This is illustrated in <xref ref="fig_series2b">Figure</xref>.
 
-              <sidebyside xml:id="fig_series2_2" widths="47% 47%">
+              <sidebyside widths="47% 47%">
                 <caption>Scatter plots relating to the series in <xref ref="ex_series2">Example</xref>.</caption>
                 <figure xml:id="fig_series2a">
                   <caption/>
@@ -683,13 +683,13 @@
             <p>
               A <em>general <m>p</m><ndash />series</em> is a series of the form
 
-              <index>
-                <main>series</main><sub>p@<m>p</m>-series</sub>
-              </index>
+              <idx>
+                <h>series</h><h>p@<m>p</m>-series</h>
+              </idx>
 
-              <index>
-                <main>p@<m>p</m>-series</main>
-              </index>
+              <idx>
+                <h>p@<m>p</m>-series</h>
+              </idx>
 
               <me>
                 \infser \frac{1}{(an+b)^p}, \qquad \text{ where \(p>0\) and \(a\), \(b\) are real numbers. }
@@ -714,21 +714,21 @@
           and only if,
           <m>p>1</m>.
 
-          <index>
-            <main>series</main><sub>p@<m>p</m>-series</sub>
-          </index>
+          <idx>
+            <h>series</h><h>p@<m>p</m>-series</h>
+          </idx>
 
-          <index>
-            <main>p@<m>p</m>-series</main>
-          </index>
+          <idx>
+            <h>p@<m>p</m>-series</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>of p@of <m>p</m>-series</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>of p@of <m>p</m>-series</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>of p@of <m>p</m>-series</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>of p@of <m>p</m>-series</h>
+          </idx>
 
         </p>
       </statement>
@@ -863,13 +863,13 @@
         <p>
           Evaluate the sum <m>\ds \infser \left(\frac1n-\frac1{n+1}\right)</m>.
 
-          <index>
-            <main>series</main><sub>telescoping</sub>
-          </index>
+          <idx>
+            <h>series</h><h>telescoping</h>
+          </idx>
 
-          <index>
-            <main>telescoping series</main>
-          </index>
+          <idx>
+            <h>telescoping series</h>
+          </idx>
 
         </p>
       </statement>
@@ -945,13 +945,13 @@
       The partial sum <m>S_n</m> did not contain <m>n</m> terms,
       but rather just two: 1 and <m>1/(n+1)</m>.
 
-      <index>
-        <main>series</main><sub>telescoping</sub>
-      </index>
+      <idx>
+        <h>series</h><h>telescoping</h>
+      </idx>
 
-      <index>
-        <main>telescoping series</main>
-      </index>
+      <idx>
+        <h>telescoping series</h>
+      </idx>
 
     </p>
 
@@ -1014,7 +1014,7 @@
 
               This is illustrated in <xref ref="fig_series4a">Figure</xref>.
 
-              <sidebyside xml:id="fig_series4" widths="47% 47%">
+              <sidebyside widths="47% 47%">
                 <caption>Scatter plots relating to the series in <xref ref="ex_series4">Example</xref>.</caption>
                 <figure xml:id="fig_series4a">
                   <caption/>
@@ -1157,9 +1157,9 @@
               Constant Multiple Rule:
               <m>\ds\infser c\cdot a_n = c\cdot\infser a_n = c\cdot L</m>.
 
-              <index>
-                <main>Constant Multiple Rule</main><sub>of series</sub>
-              </index>
+              <idx>
+                <h>Constant Multiple Rule</h><h>of series</h>
+              </idx>
 
             </p>
           </li>
@@ -1169,13 +1169,13 @@
               Sum/Difference Rule:
               <m>\ds\infser \big(a_n\pm b_n\big) = \infser a_n \pm \infser b_n = L \pm K</m>.
 
-              <index>
-                <main>series</main><sub>properties</sub>
-              </index>
+              <idx>
+                <h>series</h><h>properties</h>
+              </idx>
 
-              <index>
-                <main>Sum/Difference Rule</main><sub>of series</sub>
-              </index>
+              <idx>
+                <h>Sum/Difference Rule</h><h>of series</h>
+              </idx>
 
             </p>
           </li>
@@ -1220,9 +1220,9 @@
             <m>\ds\infser \frac{1}{n}</m> diverges.
             (This is called the <em>Harmonic Series</em>.)
 
-            <index>
-              <main>Harmonic Series</main>
-            </index>
+            <idx>
+              <h>Harmonic Series</h>
+            </idx>
 
           </p>
         </li>
@@ -1232,9 +1232,9 @@
             <m>\ds\infser \frac{(-1)^{n+1}}{n} = \ln(2)</m>.
             (This is called the <em>Alternating Harmonic Series</em>.)
 
-            <index>
-              <main>Alternating Harmonic Series</main>
-            </index>
+            <idx>
+              <h>Alternating Harmonic Series</h>
+            </idx>
 
           </p>
         </li>
@@ -1296,7 +1296,7 @@
               This is illustrated in <xref ref="fig_series5b">Figure</xref>.
               The graph shows how this particular series converges very rapidly.
 
-              <sidebyside xml:id="fig_series5" widths="47% 47%">
+              <sidebyside widths="47% 47%">
                 <caption>Scatter plots relating to the series in <xref ref="ex_series5">Example</xref>.</caption>
                 <figure xml:id="fig_series5a">
                   <caption/>
@@ -1475,21 +1475,21 @@
         <p>
           Consider the series <m>\ds\infser a_n</m>.
 
-          <index>
-            <main>series</main><sub>nth@<m>n^\text{ th }</m><ndash />term test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>nth@<m>n^\text{ th }</m><ndash />term test</h>
+          </idx>
 
-          <index>
-            <main>nth@<m>n^\text{ th }</m><ndash />term test</main>
-          </index>
+          <idx>
+            <h>nth@<m>n^\text{ th }</m><ndash />term test</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>nth@<m>n^\text{ th }</m><ndash />term test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>nth@<m>n^\text{ th }</m><ndash />term test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>nth@<m>n^\text{ th }</m><ndash />term test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>nth@<m>n^\text{ th }</m><ndash />term test</h>
+          </idx>
 
         </p>
 

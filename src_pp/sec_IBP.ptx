@@ -73,9 +73,9 @@
           </me>,
           and
 
-          <index>
-            <main>integration</main><sub>by parts</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>by parts</h>
+          </idx>
 
           <me>
             \int_{x=a}^{x=b} u\ dv = uv\Big|_a^b - \int_{x=a}^{x=b}v\ du
@@ -123,7 +123,7 @@
           We choose <m>v = \sin(x)</m>.
         </p>
 
-        <sidebyside widths="40% 10% 40%" xml:id="tab_ibp1">
+        <sidebyside widths="40% 10% 40%">
           <p>
             <md>
               <mrow>u\amp = x \amp  v\amp =\mathord{?}</mrow>

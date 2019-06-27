@@ -77,13 +77,13 @@
         Let <m>F(x)</m> be a continuous function on <m>[a,b]</m> describing the amount of force being applied to an object in the direction of travel from distance <m>x=a</m> to distance <m>x=b</m>.
         The total work <m>W</m> done on <m>[a,b]</m> is
 
-        <index>
-          <main>integration</main><sub>work</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>work</h>
+        </idx>
 
-        <index>
-          <main>work</main>
-        </index>
+        <idx>
+          <h>work</h>
+        </idx>
 
         <me>
           W = \int_a^b F(x)\ dx
@@ -280,9 +280,9 @@
       we have that stretching this spring 0.02 m requires a force of
       <m>F(0.02) = k(0.02) = 1</m> N, hence <m>k = 1/0.02 = 50</m> N/m.
 
-      <index>
-        <main>Hooke's Law</main>
-      </index>
+      <idx>
+        <h>Hooke's Law</h>
+      </idx>
 
     </p>
 

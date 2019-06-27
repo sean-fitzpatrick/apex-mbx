@@ -22,7 +22,7 @@
     <!--
     <caption>Conic Sections</caption>
     -->
-    <sidebyside xml:id="fig_nondeg_conic">
+    <sidebyside>
       <figure>
         <caption>Parabola &amp; Ellipse &amp;  Circle &amp;   Hyperbola</caption>
         &amp;
@@ -43,13 +43,13 @@
       a point, a line, and crossed lines.
       We focus here on the nondegenerate cases.
 
-      <index>
-        <main>conic sections</main>
-      </index>
+      <idx>
+        <h>conic sections</h>
+      </idx>
 
-      <index>
-        <main>conic sections</main><sub>degenerate</sub>
-      </index>
+      <idx>
+        <h>conic sections</h><h>degenerate</h>
+      </idx>
 
     </p>
 
@@ -89,21 +89,21 @@
           (called the <term>directrix</term>)
           that does not contain the focus.
 
-          <index>
-            <main>conic sections</main><sub>parabola</sub>
-          </index>
+          <idx>
+            <h>conic sections</h><h>parabola</h>
+          </idx>
 
-          <index>
-            <main>parabola</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>parabola</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>directrix</main>
-          </index>
+          <idx>
+            <h>directrix</h>
+          </idx>
 
-          <index>
-            <main>focus</main>
-          </index>
+          <idx>
+            <h>focus</h>
+          </idx>
 
         </p>
       </statement>
@@ -219,9 +219,9 @@
       <p>
         Note: <m>p</m> is not necessarily a positive number.
 
-        <index>
-          <main>parabola</main><sub>general equation</sub>
-        </index>
+        <idx>
+          <h>parabola</h><h>general equation</h>
+        </idx>
 
       </p>
     </insight>
@@ -447,9 +447,9 @@
             <p>
               The line perpendicular to the directrix through <m>P</m>.
 
-              <index>
-                <main>parabola</main><sub>reflective property</sub>
-              </index>
+              <idx>
+                <h>parabola</h><h>reflective property</h>
+              </idx>
 
             </p>
           </li>
@@ -479,17 +479,17 @@
           An <term>ellipse</term> is the locus of all points whose sum of distances from two fixed points,
           each a <term>focus</term> of the ellipse, is constant.
 
-          <index>
-            <main>conic sections</main><sub>ellipse</sub>
-          </index>
+          <idx>
+            <h>conic sections</h><h>ellipse</h>
+          </idx>
 
-          <index>
-            <main>ellipse</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>ellipse</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>focus</main>
-          </index>
+          <idx>
+            <h>focus</h>
+          </idx>
 
         </p>
       </statement>
@@ -657,9 +657,9 @@
         The foci lie along the major axis,
         <m>c</m> units from the center, where <m>c^2=a^2-b^2</m>.
 
-        <index>
-          <main>ellipse</main><sub>standard equation</sub>
-        </index>
+        <idx>
+          <h>ellipse</h><h>standard equation</h>
+        </idx>
 
       </p>
     </insight>
@@ -981,13 +981,13 @@
         <p>
           The eccentricity <m>e</m> of an ellipse is <m>\ds e=\frac{c}{a}</m>.
 
-          <index>
-            <main>ellipse</main><sub>eccentricity</sub>
-          </index>
+          <idx>
+            <h>ellipse</h><h>eccentricity</h>
+          </idx>
 
-          <index>
-            <main>eccentricity</main>
-          </index>
+          <idx>
+            <h>eccentricity</h>
+          </idx>
 
         </p>
       </statement>
@@ -1055,9 +1055,9 @@
           Let <m>P</m> be a point on a ellipse with foci <m>F_1</m> and <m>F_2</m>.
           The tangent line to the ellipse at <m>P</m> makes equal angles with the following two lines:
 
-          <index>
-            <main>ellipse</main><sub>reflective property</sub>
-          </index>
+          <idx>
+            <h>ellipse</h><h>reflective property</h>
+          </idx>
 
         </p>
 
@@ -1097,17 +1097,17 @@
           A <term>hyperbola</term> is the locus of all points where the absolute value of difference of distances from two fixed points,
           each a focus of the hyperbola, is constant.
 
-          <index>
-            <main>conic sections</main><sub>hyperbola</sub>
-          </index>
+          <idx>
+            <h>conic sections</h><h>hyperbola</h>
+          </idx>
 
-          <index>
-            <main>hyperbola</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>hyperbola</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>focus</main>
-          </index>
+          <idx>
+            <h>focus</h>
+          </idx>
 
         </p>
       </statement>
@@ -1194,9 +1194,9 @@
       <p>
         The equation of a hyperbola centered at <m>(h,k)</m> in standard form is:
 
-        <index>
-          <main>hyperbola</main><sub>standard equation</sub>
-        </index>
+        <idx>
+          <h>hyperbola</h><h>standard equation</h>
+        </idx>
 
       </p>
 
@@ -1530,13 +1530,13 @@
         <p>
           The eccentricity of a hyperbola is <m>\ds e=\frac ca</m>.
 
-          <index>
-            <main>hyperbola</main><sub>eccentricity</sub>
-          </index>
+          <idx>
+            <h>hyperbola</h><h>eccentricity</h>
+          </idx>
 
-          <index>
-            <main>eccentricity</main>
-          </index>
+          <idx>
+            <h>eccentricity</h>
+          </idx>
 
         </p>
       </statement>
@@ -1751,9 +1751,9 @@
           Let <m>P</m> be a point on a hyperbola with foci <m>F_1</m> and <m>F_2</m>.
           The tangent line to the hyperbola at <m>P</m> makes equal angles with the following two lines:
 
-          <index>
-            <main>hyperbola</main><sub>reflective property</sub>
-          </index>
+          <idx>
+            <h>hyperbola</h><h>reflective property</h>
+          </idx>
 
         </p>
 

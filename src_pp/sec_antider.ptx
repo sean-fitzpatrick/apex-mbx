@@ -46,17 +46,17 @@
           Let a function <m>f(x)</m> be given.
           An <term>antiderivative</term> of <m>f(x)</m> is a function <m>F(x)</m> such that <m>\Fp(x) = f(x)</m>.
 
-          <index>
-            <main>antiderivative</main>
-          </index>
+          <idx>
+            <h>antiderivative</h>
+          </idx>
 
-          <index>
-            <main>indefinite integral</main>
-          </index>
+          <idx>
+            <h>indefinite integral</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>indefinite</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>indefinite</h>
+          </idx>
 
         </p>
 
@@ -112,9 +112,9 @@
     <p>
       Let's analyze this indefinite integral notation.
 
-      <index>
-        <main>integration</main><sub>notation</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>notation</h>
+      </idx>
 
     </p>
     <!-- START figures/fig_anti1.tex -->
@@ -388,9 +388,9 @@
           <p>
             This is the Constant Multiple Rule:
 
-            <index>
-              <main>Constant Multiple Rule</main><sub>of integration</sub>
-            </index>
+            <idx>
+              <h>Constant Multiple Rule</h><h>of integration</h>
+            </idx>
 
             we can temporarily ignore constants when finding antiderivatives,
             just as we did when computing derivatives (i.e.,
@@ -415,13 +415,13 @@
           <p>
             This is the Sum/Difference Rule:
 
-            <index>
-              <main>integration</main><sub>Sum/Difference Rule</sub>
-            </index>
+            <idx>
+              <h>integration</h><h>Sum/Difference Rule</h>
+            </idx>
 
-            <index>
-              <main>Sum/Difference Rule</main><sub>of integration</sub>
-            </index>
+            <idx>
+              <h>Sum/Difference Rule</h><h>of integration</h>
+            </idx>
 
             we can split integrals apart when the integrand contains terms that are added/subtracted,
             as we did in <xref ref="ex_anti3">Example</xref>.
@@ -447,13 +447,13 @@
           <p>
             This is the Power Rule of indefinite integration.
 
-            <index>
-              <main>integration</main><sub>Power Rule</sub>
-            </index>
+            <idx>
+              <h>integration</h><h>Power Rule</h>
+            </idx>
 
-            <index>
-              <main>Power Rule</main><sub>integration</sub>
-            </index>
+            <idx>
+              <h>Power Rule</h><h>integration</h>
+            </idx>
 
             There are two important things to keep in mind:
 
@@ -517,9 +517,9 @@
       we saw that the derivative of a position function gave a velocity function,
       and the derivative of a velocity function describes acceleration.
 
-      <index>
-        <main>initial value problem</main>
-      </index>
+      <idx>
+        <h>initial value problem</h>
+      </idx>
 
       We can now go <q>the other way:</q>
       the antiderivative of an acceleration function gives a velocity function, etc.

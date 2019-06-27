@@ -127,9 +127,9 @@
           where the range of <m>g</m> is an interval <m>I</m> contained in the domain of <m>F</m>.
           Then
 
-          <index>
-            <main>integration</main><sub>by substitution</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>by substitution</h>
+          </idx>
 
           <me>
             \int \Fp(g(x))g'(x)\ dx = F(g(x)) + C
@@ -534,9 +534,9 @@
       <title>Antiderivatives of Trigonometric Functions</title>
       <statement>
 
-        <index>
-          <main>integration</main><sub>of trig. functions</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>of trig. functions</h>
+        </idx>
 
         <todo>Fix the column spacing. I don't know how to do it.</todo>
 
@@ -1043,13 +1043,13 @@
           where the range of <m>g</m> is an interval <m>I</m> that is contained in the domain of <m>F</m> and <m>u=g(x)</m>.
           Then
 
-          <index>
-            <main>integration</main><sub>definite!and substitution</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>definite!and substitution</h>
+          </idx>
 
-          <index>
-            <main>definite integral</main><sub>and substitution</sub>
-          </index>
+          <idx>
+            <h>definite integral</h><h>and substitution</h>
+          </idx>
 
           <me>
             \int_a^b \Fp\big(g(x)\big)g'(x)\ dx = \int_{g(a)}^{g(b)} \Fp(u)\ du
@@ -1099,7 +1099,7 @@
           we never went back to using <m>x</m>.
         </p>
 
-        <sidebyside xml:id="fig_subst12" widths="47% 47%">
+        <sidebyside widths="47% 47%">
           <caption>Graphing the areas defined by the definite integrals of <xref ref="ex_sub12">Example</xref>.</caption>
           <figure xml:id="fig_subst12a">
             <caption/>
@@ -1201,7 +1201,7 @@
           guarantees that they have the same area.
         </p>
 
-        <sidebyside xml:id="fig_subst13" widths="47% 47%">
+        <sidebyside widths="47% 47%">
           <caption>Graphing the areas defined by the definite integrals of <xref ref="ex_subst13">Example</xref>.</caption>
           <figure xml:id="fig_subst13a">
             <caption/>

@@ -40,13 +40,13 @@
       as in <m>P(r,\theta)</m>.
       This is illustrated in <xref ref="fig_polar_intro1">Figure</xref>
 
-      <index>
-        <main>polar coordinates</main>
-      </index>
+      <idx>
+        <h>polar coordinates</h>
+      </idx>
 
-      <index>
-        <main>polar</main><sub>coordinates</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>coordinates</h>
+      </idx>
 
     </p>
 
@@ -78,9 +78,9 @@
         <p>
           Plot the following polar coordinates:
 
-          <index>
-            <main>polar coordinates</main><sub>plotting points</sub>
-          </index>
+          <idx>
+            <h>polar coordinates</h><h>plotting points</h>
+          </idx>
 
           <me>
             A = P(1,\pi/4) B=P(1.5,\pi) C = P(2,-\pi/3) D = P(-1,\pi/4)
@@ -442,13 +442,13 @@
       although we can create functions of the form <m>\theta = f(r)</m>.
       The following examples introduce us to this concept.
 
-      <index>
-        <main>polar</main><sub>functions</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>functions</h>
+      </idx>
 
-      <index>
-        <main>polar</main><sub>functions!graphing</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>functions!graphing</h>
+      </idx>
 
     </p>
 
@@ -1056,9 +1056,9 @@
       <q>classic</q> polar curves,
       famous for their beauty and/or applicability to the sciences.
 
-      <index>
-        <main>polar</main><sub>function!gallery of graphs</sub>
-      </index>
+      <idx>
+        <h>polar</h><h>function!gallery of graphs</h>
+      </idx>
 
       This section ends with a small gallery of some of these graphs.
       We encourage the reader to understand how these graphs are formed,

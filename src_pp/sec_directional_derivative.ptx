@@ -31,13 +31,13 @@
           For all points <m>(x,y)</m>,
           the <term>directional derivative of <m>f</m> at <m>(x,y)</m> in the direction of <m>\vec u</m></term> is
 
-          <index>
-            <main>derivative</main><sub>directional</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>directional</h>
+          </idx>
 
-          <index>
-            <main>directional derivative</main>
-          </index>
+          <idx>
+            <h>directional derivative</h>
+          </idx>
 
           <me>
             D_{\vec u\,}f(x,y) = \lim_{h\to 0} \frac{f(x+hu_1,y+hu_2) - f(x,y)}h
@@ -65,13 +65,13 @@
           The directional derivative of <m>f</m> at
           <m>(x_0,y_0)</m> in the direction of <m>\vec u</m> is
 
-          <index>
-            <main>derivative</main><sub>directional</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>directional</h>
+          </idx>
 
-          <index>
-            <main>directional derivative</main>
-          </index>
+          <idx>
+            <h>directional derivative</h>
+          </idx>
 
           <me>
             D_{\vec u\,}f(x_0,y_0)=f_x(x_0,y_0)u_1 + f_y(x_0,y_0)u_2
@@ -312,9 +312,9 @@
         <p>
           Let <m>z=f(x,y)</m> be differentiable on an open set <m>S</m> that contains the point <m>(x_0,y_0)</m>.
 
-          <index>
-            <main>gradient</main>
-          </index>
+          <idx>
+            <h>gradient</h>
+          </idx>
 
         </p>
 
@@ -356,17 +356,17 @@
         The directional derivative of
         <m>z=f(x,y)</m> in the direction of <m>\vec u</m> is
 
-        <index>
-          <main>gradient</main>
-        </index>
+        <idx>
+          <h>gradient</h>
+        </idx>
 
-        <index>
-          <main>directional derivative</main>
-        </index>
+        <idx>
+          <h>directional derivative</h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>directional</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>directional</h>
+        </idx>
 
         <me>
           D_{\vec u\,}f = \nabla f\cdot \vec u
@@ -510,25 +510,25 @@
               At <m>P</m>,
               <m>\nabla f(x_0,y_0)</m> is orthogonal to the level curve passing through <m>\big(x_0,y_0,f(x_0,y_0)\big)</m>.
 
-              <index>
-                <main>gradient</main>
-              </index>
+              <idx>
+                <h>gradient</h>
+              </idx>
 
-              <index>
-                <main>directional derivative</main>
-              </index>
+              <idx>
+                <h>directional derivative</h>
+              </idx>
 
-              <index>
-                <main>derivative</main><sub>directional</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>directional</h>
+              </idx>
 
-              <index>
-                <main>level curves</main>
-              </index>
+              <idx>
+                <h>level curves</h>
+              </idx>
 
-              <index>
-                <main>gradient</main><sub>and level curves</sub>
-              </index>
+              <idx>
+                <h>gradient</h><h>and level curves</h>
+              </idx>
 
             </p>
           </li>
@@ -1256,17 +1256,17 @@
         <p>
           Let <m>w=F(x,y,z)</m> be differentiable on an open ball <m>B</m> and let <m>\vec u</m> be a unit vector in <m>\mathbb{R}^3</m>.
 
-          <index>
-            <main>gradient</main>
-          </index>
+          <idx>
+            <h>gradient</h>
+          </idx>
 
-          <index>
-            <main>directional derivative</main>
-          </index>
+          <idx>
+            <h>directional derivative</h>
+          </idx>
 
-          <index>
-            <main>derivative</main><sub>directional</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>directional</h>
+          </idx>
 
         </p>
 
@@ -1303,17 +1303,17 @@
           let <m>\nabla F</m> be the gradient of <m>F</m>,
           and let <m>\vec u</m> be a unit vector.
 
-          <index>
-            <main>gradient</main>
-          </index>
+          <idx>
+            <h>gradient</h>
+          </idx>
 
-          <index>
-            <main>directional derivative</main>
-          </index>
+          <idx>
+            <h>directional derivative</h>
+          </idx>
 
-          <index>
-            <main>derivative</main><sub>directional</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>directional</h>
+          </idx>
 
         </p>
 

@@ -21,13 +21,13 @@
           Let <m>\{a_n\}</m> be a sequence,
           let <m>x</m> be a variable, and let <m>c</m> be a real number.
 
-          <index>
-            <main>power series</main>
-          </index>
+          <idx>
+            <h>power series</h>
+          </idx>
 
-          <index>
-            <main>series</main><sub>power</sub>
-          </index>
+          <idx>
+            <h>series</h><h>power</h>
+          </idx>
 
         </p>
 
@@ -127,17 +127,17 @@
           Let a power series <m>\ds \infser[0] a_n(x-c)^n</m> be given.
           Then one of the following is true:
 
-          <index>
-            <main>convergence</main><sub>of power series</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>of power series</h>
+          </idx>
 
-          <index>
-            <main>power series</main><sub>convergence</sub>
-          </index>
+          <idx>
+            <h>power series</h><h>convergence</h>
+          </idx>
 
-          <index>
-            <main>series</main><sub>power</sub>
-          </index>
+          <idx>
+            <h>series</h><h>power</h>
+          </idx>
 
         </p>
 
@@ -195,29 +195,29 @@
               The <em>interval of convergence</em>
               is the set of all values of <m>x</m> for which the series converges.
 
-              <index>
-                <main>convergence</main><sub>radius of</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>radius of</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>interval of</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>interval of</h>
+              </idx>
 
-              <index>
-                <main>radius of convergence</main>
-              </index>
+              <idx>
+                <h>radius of convergence</h>
+              </idx>
 
-              <index>
-                <main>interval of convergence</main>
-              </index>
+              <idx>
+                <h>interval of convergence</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>radius of convergence</sub>
-              </index>
+              <idx>
+                <h>series</h><h>radius of convergence</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>interval of convergence</sub>
-              </index>
+              <idx>
+                <h>series</h><h>interval of convergence</h>
+              </idx>
 
             </p>
           </li>
@@ -404,21 +404,21 @@
               <m>\ds \int f(x)\ dx = C+\infser[0] a_n\frac{(x-c)^{n+1}}{n+1}</m>,
               with radius of convergence <m>R</m>.
 
-              <index>
-                <main>series</main><sub>power!derivatives and integrals</sub>
-              </index>
+              <idx>
+                <h>series</h><h>power!derivatives and integrals</h>
+              </idx>
 
-              <index>
-                <main>integration</main><sub>of power series</sub>
-              </index>
+              <idx>
+                <h>integration</h><h>of power series</h>
+              </idx>
 
-              <index>
-                <main>derivative</main><sub>power series</sub>
-              </index>
+              <idx>
+                <h>derivative</h><h>power series</h>
+              </idx>
 
-              <index>
-                <main>power series</main><sub>derivatives and integrals</sub>
-              </index>
+              <idx>
+                <h>power series</h><h>derivatives and integrals</h>
+              </idx>
 
             </p>
           </li>
@@ -593,9 +593,9 @@
       However, we never gave an argument for why this was the case.
       The work above finally shows how we conclude that the Alternating Harmonic Series converges to <m>\ln(2)</m>.
 
-      <index>
-        <main>Alternating Harmonic Series</main>
-      </index>
+      <idx>
+        <h>Alternating Harmonic Series</h>
+      </idx>
 
     </p>
 

@@ -129,13 +129,13 @@
       This parameter <m>s</m> is very useful,
       and is called the <em>arc length parameter</em>.
 
-      <index>
-        <main>arc length parameter</main>
-      </index>
+      <idx>
+        <h>arc length parameter</h>
+      </idx>
 
-      <index>
-        <main>arc length</main>
-      </index>
+      <idx>
+        <h>arc length</h>
+      </idx>
 
     </p>
 
@@ -335,9 +335,9 @@
           The parameter <m>s</m> is the arc length parameter if,
           and only if, <m>\norm{\vrp(s)} = 1</m>.
 
-          <index>
-            <main>arc length parameter</main>
-          </index>
+          <idx>
+            <h>arc length parameter</h>
+          </idx>
 
         </p>
       </statement>
@@ -478,13 +478,13 @@
           Let <m>\vec r(s)</m> be a vector<ndash />valued function where <m>s</m> is the arc length parameter.
           The curvature <m>\kappa</m> of the graph of <m>\vec r(s)</m> is
 
-          <index>
-            <main>curvature</main>
-          </index>
+          <idx>
+            <h>curvature</h>
+          </idx>
 
-          <index>
-            <main>unit tangent vector</main><sub>and curvature</sub>
-          </index>
+          <idx>
+            <h>unit tangent vector</h><h>and curvature</h>
+          </idx>
 
           <me>
             \kappa = \snorm{\frac{d\vec T}{ds}} = \snorm{\vec T\,'(s)}
@@ -575,9 +575,9 @@
         <p>
           Let <m>C</m> be a smooth curve on an open interval <m>I</m> in the plane or in space.
 
-          <index>
-            <main>curvature</main><sub>equations for</sub>
-          </index>
+          <idx>
+            <h>curvature</h><h>equations for</h>
+          </idx>
 
         </p>
 
@@ -624,9 +624,9 @@
           Find the curvature of a circle with radius <m>r</m>,
           defined by <m>\vec c(t) = \la r\cos(t) ,r\sin(t) \ra</m>.
 
-          <index>
-            <main>curvature</main><sub>of circle</sub>
-          </index>
+          <idx>
+            <h>curvature</h><h>of circle</h>
+          </idx>
 
         </p>
       </statement>
@@ -703,25 +703,25 @@
       to <m>C</m> at <m>P</m>, and <m>r</m> is the
       <em>radius of curvature</em>.
 
-      <index>
-        <main>curvature</main><sub>of circle</sub>
-      </index>
+      <idx>
+        <h>curvature</h><h>of circle</h>
+      </idx>
 
-      <index>
-        <main>osculating circle</main>
-      </index>
+      <idx>
+        <h>osculating circle</h>
+      </idx>
 
-      <index>
-        <main>circle of curvature</main>
-      </index>
+      <idx>
+        <h>circle of curvature</h>
+      </idx>
 
-      <index>
-        <main>radius of curvature</main>
-      </index>
+      <idx>
+        <h>radius of curvature</h>
+      </idx>
 
-      <index>
-        <main>curvature</main><sub>radius of</sub>
-      </index>
+      <idx>
+        <h>curvature</h><h>radius of</h>
+      </idx>
 
       <xref ref="fig_curvature_osculate">Figure</xref>
       shows the graph of the curve seen earlier in <xref ref="fig_curvatureintro">Figure</xref>
@@ -1065,25 +1065,25 @@
       and that we can find scalars
       <m>a_\text{T}</m> and <m>a_\text{N}</m> such that
 
-      <index>
-        <main>curvature</main><sub>and motion</sub>
-      </index>
+      <idx>
+        <h>curvature</h><h>and motion</h>
+      </idx>
 
-      <index>
-        <main>unit tangent vector</main><sub>and curvature</sub>
-      </index>
+      <idx>
+        <h>unit tangent vector</h><h>and curvature</h>
+      </idx>
 
-      <index>
-        <main>unit normal vector</main><sub>and curvature</sub>
-      </index>
+      <idx>
+        <h>unit normal vector</h><h>and curvature</h>
+      </idx>
 
-      <index>
-        <main>at@<m>a_\text{T}</m></main>
-      </index>
+      <idx>
+        <h>at@<m>a_\text{T}</m></h>
+      </idx>
 
-      <index>
-        <main>an@<m>a_\text{N}</m></main>
-      </index>
+      <idx>
+        <h>an@<m>a_\text{N}</m></h>
+      </idx>
 
       <me>
         \vat = a_\text{T} \vec T(t) + a_\text{N} \vec N(t)

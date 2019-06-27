@@ -9,9 +9,9 @@
       we ended the section with a region whose area was not simple to compute.
       In this section we develop a technique to find such areas.
 
-      <index>
-        <main>Riemann Sum</main>
-      </index>
+      <idx>
+        <h>Riemann Sum</h>
+      </idx>
 
     </p>
 
@@ -111,17 +111,17 @@
       the rectangle drawn on the interval <m>[2,3]</m> has height determined by the Left Hand Rule;
       it has a height of <m>f(2)</m>. (The rectangle is labeled <q>LHR.</q>)
 
-      <index>
-        <main>Left Hand Rule</main>
-      </index>
+      <idx>
+        <h>Left Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>Right Hand Rule</main>
-      </index>
+      <idx>
+        <h>Right Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>Midpoint Rule</main>
-      </index>
+      <idx>
+        <h>Midpoint Rule</h>
+      </idx>
 
     </p>
 
@@ -417,9 +417,9 @@
       We introduce <em>summation notation</em>
       to ameliorate this problem.
 
-      <index>
-        <main>summation</main><sub>notation</sub>
-      </index>
+      <idx>
+        <h>summation</h><h>notation</h>
+      </idx>
 
     </p>
 
@@ -556,17 +556,17 @@
       <m>\ds \sum_{i=1}^{16} f(x_{i+1})\Delta x</m> <em>Midpoint Rule:</em>
       <m>\ds \sum_{i=1}^{16} f\left(\frac{x_i+x_{i+1}}2\right)\Delta x</m>
 
-      <index>
-        <main>Left Hand Rule</main>
-      </index>
+      <idx>
+        <h>Left Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>Right Hand Rule</main>
-      </index>
+      <idx>
+        <h>Right Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>Midpoint Rule</main>
-      </index>
+      <idx>
+        <h>Midpoint Rule</h>
+      </idx>
 
       We use these formulas in the next two examples.
       The following example lets us practice using the Right Hand Rule and the summation formulas introduced in <xref ref="thm_summation">Theorem</xref>.
@@ -762,9 +762,9 @@
           Let <m>f</m> be defined on the closed interval <m>[a,b]</m> and let
           <m>\Delta x</m> be a partition of <m>[a,b]</m>, with
 
-          <index>
-            <main>Riemann Sum</main>
-          </index>
+          <idx>
+            <h>Riemann Sum</h>
+          </idx>
 
           <me>
             a=x_1 \lt  x_2 \lt  \ldots \lt  x_n \lt  x_{n+1}=b
@@ -1301,13 +1301,13 @@
           <m>S_R(n)</m> and <m>S_M(n)</m> be defined as before.
           Then:
 
-          <index>
-            <main>Riemann Sum</main><sub>and definite integral</sub>
-          </index>
+          <idx>
+            <h>Riemann Sum</h><h>and definite integral</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>definite!Riemann Sums</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>definite!Riemann Sums</h>
+          </idx>
 
         </p>
 

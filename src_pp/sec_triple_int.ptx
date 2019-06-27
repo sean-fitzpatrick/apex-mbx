@@ -24,9 +24,9 @@
           where <m>f(x,y)\geq g(x,y)</m> for all <m>(x,y)</m> in <m>R</m>.
           The volume <m>V</m> between <m>f</m> and <m>g</m> over <m>R</m> is
 
-          <index>
-            <main>volume</main>
-          </index>
+          <idx>
+            <h>volume</h>
+          </idx>
 
           <me>
             V =\iint_R \big(f(x,y)-g(x,y)\big)\ dA
@@ -580,17 +580,17 @@
           and let <m>f_1(x,y)</m> and
           <m>f_2(x,y)</m> be continuous functions of <m>x</m> and <m>y</m>.
 
-          <index>
-            <main>integration</main><sub>triple</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>triple</h>
+          </idx>
 
-          <index>
-            <main>triple integral</main>
-          </index>
+          <idx>
+            <h>triple integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
         </p>
 
@@ -640,17 +640,17 @@
           where the <m>i^\text{ \,th }</m> subregion <m>D_i</m> has dimensions
           <m>\dx_i\times\dy_i\times\ddz_i</m> and volume <m>\Delta V_i</m>.
 
-          <index>
-            <main>integration</main><sub>triple</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>triple</h>
+          </idx>
 
-          <index>
-            <main>triple integral</main>
-          </index>
+          <idx>
+            <h>triple integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
         </p>
 
@@ -2129,13 +2129,13 @@
           Let <m>D</m> be a closed, bounded region in space,
           and let <m>D_1</m> and <m>D_2</m> be non-overlapping regions such that <m>D=D_1\bigcup D_2</m>.
 
-          <index>
-            <main>triple integral</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>triple integral</h><h>properties</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>iterated integration</h><h>properties</h>
+          </idx>
 
         </p>
 
@@ -3433,17 +3433,17 @@
           The <term>iterated integral</term>
           <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} h(x,y,z)\ dz\ dy\ dx</m> is evaluated as
 
-          <index>
-            <main>integration</main><sub>triple</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>triple</h>
+          </idx>
 
-          <index>
-            <main>triple integral</main>
-          </index>
+          <idx>
+            <h>triple integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
           <me>
             \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} h(x,y,z)\ dz\ dy\ dx = \int_a^b\int_{g_1(x)}^{g_2(x)}\left(\int_{f_1(x,y)}^{f_2(x,y)} h(x,y,z)\ dz\right) dy\ dx
@@ -3531,17 +3531,17 @@
           and let <m>\Delta D</m> be any partition of <m>D</m> into <m>n</m> rectangular solids with volume <m>\Delta V_i</m>.
           The <term>triple integral of <m>h</m> over <m>D</m></term> is
 
-          <index>
-            <main>integration</main><sub>triple</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>triple</h>
+          </idx>
 
-          <index>
-            <main>triple integral</main>
-          </index>
+          <idx>
+            <h>triple integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
           <me>
             \iiint_Dh(x,y,z)\ dV = \lim_{\norm{\Delta D}\to 0}\sum_{i=1}^n h(x_i,y_i,z_i)\Delta V_i
@@ -3591,17 +3591,17 @@
           bounded space region <m>D</m>,
           and let <m>\Delta D</m> be any partition of <m>D</m> into <m>n</m> rectangular solids with volume <m>V_i</m>.
 
-          <index>
-            <main>integration</main><sub>triple</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>triple</h>
+          </idx>
 
-          <index>
-            <main>triple integral</main>
-          </index>
+          <idx>
+            <h>triple integral</h>
+          </idx>
 
-          <index>
-            <main>iterated integration</main>
-          </index>
+          <idx>
+            <h>iterated integration</h>
+          </idx>
 
         </p>
 
@@ -3646,17 +3646,17 @@
         <p>
           Let a solid be represented by a region <m>D</m> in space with variable density function <m>\delta(x,y,z)</m>.
 
-          <index>
-            <main>moment</main>
-          </index>
+          <idx>
+            <h>moment</h>
+          </idx>
 
-          <index>
-            <main>center of mass</main>
-          </index>
+          <idx>
+            <h>center of mass</h>
+          </idx>
 
-          <index>
-            <main>mass</main>
-          </index>
+          <idx>
+            <h>mass</h>
+          </idx>
 
         </p>
 

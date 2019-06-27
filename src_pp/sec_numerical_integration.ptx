@@ -14,22 +14,22 @@
       The second case is when we actually do not know the integrand,
       but only its value when evaluated at certain points.
 
-      <index>
-        <main>integration</main><sub>numerical</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>numerical</h>
+      </idx>
 
-      <index>
-        <main>numerical integration</main>
-      </index>
+      <idx>
+        <h>numerical integration</h>
+      </idx>
 
     </p>
 
     <p>
       An <em>elementary function</em>
 
-      <index>
-        <main>elementary function</main>
-      </index>
+      <idx>
+        <h>elementary function</h>
+      </idx>
 
       is any function that is a combination of polynomials,
       <m>n^{\text{ th } }</m> roots, rational,
@@ -63,7 +63,7 @@
       as pictured in <xref ref="fig_numerical1">Figure</xref>.
     </p>
 
-    <sidebyside xml:id="fig_numerical1" widths="31% 31% 31%">
+    <sidebyside widths="31% 31% 31%">
       <caption>Graphically representing three definite integrals that cannot be evaluated using antiderivatives.</caption>
       <figure xml:id="fig_numerical1a">
         <caption/>
@@ -263,21 +263,21 @@
       we addressed the problem of evaluating definite integrals by approximating the area under the curve using rectangles.
       We revisit those ideas here before introducing other methods of approximating definite integrals.
 
-      <index>
-        <main>numerical integration</main><sub>Left/Right Hand Rule</sub>
-      </index>
+      <idx>
+        <h>numerical integration</h><h>Left/Right Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>Right Hand Rule</main>
-      </index>
+      <idx>
+        <h>Right Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>Left Hand Rule</main>
-      </index>
+      <idx>
+        <h>Left Hand Rule</h>
+      </idx>
 
-      <index>
-        <main>integration</main><sub>numerical!Left/Right Hand Rule</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>numerical!Left/Right Hand Rule</h>
+      </idx>
 
     </p>
 
@@ -336,7 +336,7 @@
           </md>.
         </p>
 
-        <sidebyside xml:id="fig_num1" widths="47% 47%">
+        <sidebyside widths="47% 47%">
           <caption>Approximating <m>\int_0^1e^{-x^2}\ dx</m> in <xref ref="ex_num1">Example</xref>.</caption>
       <!-- START figures/fig_num1b.tex -->
           <figure xml:id="fig_num1b">
@@ -605,7 +605,7 @@
           Average of the Left and Right Hand Rules: 0.4258.
         </p>
 
-        <sidebyside xml:id="fig_num2" widths="47% 47%">
+        <sidebyside widths="47% 47%">
           <caption>Approximating <m>\int_{-\frac{\pi}4}^{\frac{\pi}2}\sin(x^3)\ dx</m> in <xref ref="ex_num2">Example</xref>.</caption>
       <!-- START figures/fig_num2b.tex -->
           <figure xml:id="fig_num2b">
@@ -786,17 +786,17 @@
     These graphs clearly show that rectangles do not match the shape of the graph all that well,
     and that accurate approximations will only come by using lots of rectangles.
 
-    <index>
-      <main>Trapezoidal Rule</main>
-    </index>
+    <idx>
+      <h>Trapezoidal Rule</h>
+    </idx>
 
-    <index>
-      <main>numerical integration</main><sub>Trapezoidal Rule</sub>
-    </index>
+    <idx>
+      <h>numerical integration</h><h>Trapezoidal Rule</h>
+    </idx>
 
-    <index>
-      <main>integration</main><sub>numerical!Trapezoidal Rule</sub>
-    </index>
+    <idx>
+      <h>integration</h><h>numerical!Trapezoidal Rule</h>
+    </idx>
 
   </p>
 
@@ -1298,17 +1298,17 @@
       we can create a quadratic function that goes through those three points
       (given that no two have the same <m>x</m><ndash />value).
 
-      <index>
-        <main>Simpson's Rule</main>
-      </index>
+      <idx>
+        <h>Simpson's Rule</h>
+      </idx>
 
-      <index>
-        <main>numerical integration</main><sub>Simpson's Rule</sub>
-      </index>
+      <idx>
+        <h>numerical integration</h><h>Simpson's Rule</h>
+      </idx>
 
-      <index>
-        <main>integration</main><sub>numerical!Simpson's Rule</sub>
-      </index>
+      <idx>
+        <h>integration</h><h>numerical!Simpson's Rule</h>
+      </idx>
 
     </p>
 
@@ -1491,7 +1491,7 @@
           as shown in <xref ref="fig_num5a">Figure</xref>.
         </p>
 
-        <sidebyside xml:id="fig_num5" widths ="40% 54%">
+        <sidebyside widths ="40% 54%">
           <caption>A table of values to approximate <m>\int_0^1e^{-x^2}\ dx</m>, along with a graph of the function.</caption>
           <table xml:id="fig_num5a">
             <caption/>
@@ -1818,41 +1818,41 @@
         let <m>n</m> be a positive integer,
         and let <m>\ds\dx = \frac{b-a}{n}</m>.
 
-        <index>
-          <main>integration</main><sub>numerical!Left/Right Hand Rule</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>numerical!Left/Right Hand Rule</h>
+        </idx>
 
-        <index>
-          <main>integration</main><sub>numerical!Trapezoidal Rule</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>numerical!Trapezoidal Rule</h>
+        </idx>
 
-        <index>
-          <main>integration</main><sub>numerical!Simpson's Rule</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>numerical!Simpson's Rule</h>
+        </idx>
 
-        <index>
-          <main>Left/Right Hand Rule</main>
-        </index>
+        <idx>
+          <h>Left/Right Hand Rule</h>
+        </idx>
 
-        <index>
-          <main>Trapezoidal Rule</main>
-        </index>
+        <idx>
+          <h>Trapezoidal Rule</h>
+        </idx>
 
-        <index>
-          <main>Simpson's Rule</main>
-        </index>
+        <idx>
+          <h>Simpson's Rule</h>
+        </idx>
 
-        <index>
-          <main>numerical integration</main><sub>Left/Right Hand Rule</sub>
-        </index>
+        <idx>
+          <h>numerical integration</h><h>Left/Right Hand Rule</h>
+        </idx>
 
-        <index>
-          <main>numerical integration</main><sub>Trapezoidal Rule</sub>
-        </index>
+        <idx>
+          <h>numerical integration</h><h>Trapezoidal Rule</h>
+        </idx>
 
-        <index>
-          <main>numerical integration</main><sub>Simpson's Rule</sub>
-        </index>
+        <idx>
+          <h>numerical integration</h><h>Simpson's Rule</h>
+        </idx>
 
       </p>
 
@@ -1964,29 +1964,29 @@
       <title>Error Bounds in the Trapezoidal and Simpson's Rules</title>
       <statement>
         <ol>
-          <index>
-            <main>integration</main><sub>numerical!Trapezoidal Rule</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>numerical!Trapezoidal Rule</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>numerical!Simpson's Rule</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>numerical!Simpson's Rule</h>
+          </idx>
 
-          <index>
-            <main>Trapezoidal Rule</main><sub>error bounds</sub>
-          </index>
+          <idx>
+            <h>Trapezoidal Rule</h><h>error bounds</h>
+          </idx>
 
-          <index>
-            <main>Simpson's Rule</main><sub>error bounds</sub>
-          </index>
+          <idx>
+            <h>Simpson's Rule</h><h>error bounds</h>
+          </idx>
 
-          <index>
-            <main>numerical integration</main><sub>Trapezoidal Rule!error bounds</sub>
-          </index>
+          <idx>
+            <h>numerical integration</h><h>Trapezoidal Rule!error bounds</h>
+          </idx>
 
-          <index>
-            <main>numerical integration</main><sub>Simpson's Rule!error bounds</sub>
-          </index>
+          <idx>
+            <h>numerical integration</h><h>Simpson's Rule!error bounds</h>
+          </idx>
 
           <li>
             <p>

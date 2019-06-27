@@ -46,9 +46,9 @@
       but this system is inherently different from the one created by using the
       <q>left hand rule.</q>)
 
-      <index>
-        <main>right hand rule</main><sub>of Cartesian coordinates</sub>
-      </index>
+      <idx>
+        <h>right hand rule</h><h>of Cartesian coordinates</h>
+      </idx>
 
     </p>
 
@@ -271,9 +271,9 @@
           Let <m>P=(x_1,y_1,z_1)</m> and <m>Q = (x_2,y_2,z_2)</m> be points in space.
           The distance <m>D</m> between <m>P</m> and <m>Q</m> is
 
-          <index>
-            <main>distance</main><sub>between points in space</sub>
-          </index>
+          <idx>
+            <h>distance</h><h>between points in space</h>
+          </idx>
 
           <me>
             D = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}
@@ -415,9 +415,9 @@
     <title>Spheres</title>
     <p>
 
-      <index>
-        <main>sphere</main>
-      </index>
+      <idx>
+        <h>sphere</h>
+      </idx>
 
       Just as a circle is the set of all points in the <em>plane</em> equidistant from a given point (its center), a sphere is the set of all points in <em>space</em> that are equidistant from a given point. <xref ref="def_space_distance">Definition</xref> allows us to write an equation of the sphere.
     </p>
@@ -493,13 +493,13 @@
       the <m>y</m>-<m>z</m> plane and the <m>x</m>-<m>z</m> plane.
       The <m>x</m>-<m>y</m> plane is characterized as the set of all points in space where the <m>z</m>-value is 0.
 
-      <index>
-        <main>planes</main><sub>coordinate plane</sub>
-      </index>
+      <idx>
+        <h>planes</h><h>coordinate plane</h>
+      </idx>
 
-      <index>
-        <main>planes</main><sub>introduction</sub>
-      </index>
+      <idx>
+        <h>planes</h><h>introduction</h>
+      </idx>
 
       This, in fact,
       gives us an equation that describes this plane: <m>z=0</m>.
@@ -1180,13 +1180,13 @@
           The curve <m>C</m> is the <term>directrix</term> of the cylinder,
           and the lines are the <term>rulings</term>.
 
-          <index>
-            <main>cylinder</main>
-          </index>
+          <idx>
+            <h>cylinder</h>
+          </idx>
 
-          <index>
-            <main>directrix</main>
-          </index>
+          <idx>
+            <h>directrix</h>
+          </idx>
 
         </p>
       </statement>
@@ -2049,9 +2049,9 @@
       <p>
         Let <m>r</m> be a radius function.
 
-        <index>
-          <main>surface of revolution</main>
-        </index>
+        <idx>
+          <h>surface of revolution</h>
+        </idx>
 
       </p>
 
@@ -2317,9 +2317,9 @@
         be a curve in the <m>x</m>-<m>z</m> plane.
         The surface formed by revolving this curve about the <m>z</m>-axis has equation <m>z=f\big(\sqrt{x^2+y^2}\big)</m>.
 
-        <index>
-          <main>surface of revolution</main>
-        </index>
+        <idx>
+          <h>surface of revolution</h>
+        </idx>
 
       </p>
     </insight>
@@ -2532,9 +2532,9 @@
         <p>
           A <term>quadric surface</term> is the graph of the general second<ndash />degree equation in three variables:
 
-          <index>
-            <main>quadric surface</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>quadric surface</h><h>definition</h>
+          </idx>
 
           <me>
             Ax^2+By^2+Cz^2+Dxy+Exz+Fyz+Gx+Hy+Iz+J=0
@@ -2660,13 +2660,13 @@
     <p>
       We study each shape by considering <em>traces</em>,
 
-      <index>
-        <main>trace</main>
-      </index>
+      <idx>
+        <h>trace</h>
+      </idx>
 
-      <index>
-        <main>quadric surface</main><sub>trace</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>trace</h>
+      </idx>
 
       that is, intersections of each surface with a plane parallel to a coordinate plane.
       For instance,
@@ -2925,13 +2925,13 @@
 
       Multiplying the right hand side by <m>(-1)</m> defines an elliptic paraboloid that <q>opens</q> in the opposite direction.
 
-      <index>
-        <main>quadric surface</main><sub>gallery|(</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>gallery|(</h>
+      </idx>
 
-      <index>
-        <main>quadric surface</main><sub>elliptic paraboloid</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>elliptic paraboloid</h>
+      </idx>
 
     </figure>
 
@@ -3264,9 +3264,9 @@
       <!-- figures/figquadric_conec_3D.asy END -->
       One can rewrite the equation as <m>z^2-x^2/a^2-y^2/{b^2} = 0</m>. The one variable with a positive coefficient corresponds to the axis that the cones <q>open</q> along.
 
-      <index>
-        <main>quadric surface</main><sub>elliptic cone</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>elliptic cone</h>
+      </idx>
 
     </figure>
 
@@ -3506,13 +3506,13 @@
       <!-- figures/figquadric_ellipsoidb_3D.asy END -->
       If <m>a=b=c\neq0</m>, the ellipsoid is a sphere with radius <m>a</m>; compare to <xref ref="idea_sphere">Key Idea</xref>.
 
-      <index>
-        <main>quadric surface</main><sub>ellipsoid</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>ellipsoid</h>
+      </idx>
 
-      <index>
-        <main>quadric surface</main><sub>sphere</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>sphere</h>
+      </idx>
 
     </figure>
 
@@ -3765,9 +3765,9 @@
       <!-- figures/figquadric_hyp_one_sheetb_3D.asy END -->
       The one variable with a negative coefficient corresponds to the axis that the hyperboloid <q>opens</q> along.
 
-      <index>
-        <main>quadric surface</main><sub>hyperboloid of one sheet</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>hyperboloid of one sheet</h>
+      </idx>
 
     </figure>
 
@@ -4031,9 +4031,9 @@
       <!-- figures/figquadric_hyp_two_sheetb_3D.asy END -->
       The one variable with a positive coefficient corresponds to the axis that the hyperboloid <q>opens</q> along. In the case illustrated, when <m>\abs{d}\lt \abs{c}</m>, there is no trace.
 
-      <index>
-        <main>quadric surface</main><sub>hyperboloid of two sheets</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>hyperboloid of two sheets</h>
+      </idx>
 
     </figure>
 
@@ -4386,13 +4386,13 @@
       <!-- figures/figquadric_hyp_parc_3D.asy END -->
       The parabolic traces will open along the axis of the one variable that is raised to the first power.
 
-      <index>
-        <main>quadric surface</main><sub>gallery|)</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>gallery|)</h>
+      </idx>
 
-      <index>
-        <main>quadric surface</main><sub>hyperbolic paraboloid</sub>
-      </index>
+      <idx>
+        <h>quadric surface</h><h>hyperbolic paraboloid</h>
+      </idx>
 
     </figure>
 

@@ -38,13 +38,13 @@
           Let <m>w</m> be the weight<ndash />density of a fluid.
           The <term>pressure</term> <m>p</m> exerted on an object at depth <m>d</m> in the fluid is <m>p = w\cdot d</m>.
 
-          <index>
-            <main>fluid pressure/force</main>
-          </index>
+          <idx>
+            <h>fluid pressure/force</h>
+          </idx>
 
-          <index>
-            <main>integration</main><sub>fluid force</sub>
-          </index>
+          <idx>
+            <h>integration</h><h>fluid force</h>
+          </idx>
 
         </p>
       </statement>
@@ -347,13 +347,13 @@
         Let a vertically oriented plate be submerged in a fluid with weight<ndash />density <m>w</m> where the top of the plate is at <m>y=b</m> and the bottom is at <m>y=a</m>.
         Let <m>\ell(y)</m> be the length of the plate at <m>y</m>.
 
-        <index>
-          <main>fluid pressure/force</main>
-        </index>
+        <idx>
+          <h>fluid pressure/force</h>
+        </idx>
 
-        <index>
-          <main>integration</main><sub>fluid force</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>fluid force</h>
+        </idx>
 
       </p>
 

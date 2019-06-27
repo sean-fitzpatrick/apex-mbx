@@ -41,13 +41,13 @@
         where <m>f</m> and <m>g</m> are differentiable on some open interval <m>I</m> and <m>\fp(t)\neq 0</m> on <m>I</m>.
         Then
 
-        <index>
-          <main>parametric equations</main><sub>finding <m>\frac{dy}{dx}</m></sub>
-        </index>
+        <idx>
+          <h>parametric equations</h><h>finding <m>\frac{dy}{dx}</m></h>
+        </idx>
 
-        <index>
-          <main>derivative</main><sub>parametric equations</sub>
-        </index>
+        <idx>
+          <h>derivative</h><h>parametric equations</h>
+        </idx>
 
         <me>
           \frac{dy}{dx} = \frac{g'(t)}{\fp(t)}
@@ -75,21 +75,21 @@
           <m>\big(f(t_0),g(t_0)\big)</m> with slope <m>m=-\fp(t_0)/g'(t_0)</m>,
           provided <m>g'(t_0)\neq 0</m>.
 
-          <index>
-            <main>tangent line</main>
-          </index>
+          <idx>
+            <h>tangent line</h>
+          </idx>
 
-          <index>
-            <main>normal line</main>
-          </index>
+          <idx>
+            <h>normal line</h>
+          </idx>
 
-          <index>
-            <main>parametric equations</main><sub>tangent line</sub>
-          </index>
+          <idx>
+            <h>parametric equations</h><h>tangent line</h>
+          </idx>
 
-          <index>
-            <main>parametric equations</main><sub>normal line</sub>
-          </index>
+          <idx>
+            <h>parametric equations</h><h>normal line</h>
+          </idx>
 
         </p>
       </statement>
@@ -448,13 +448,13 @@
       but recall that <m>\frac{dy}{dx}</m> is a function of <m>t</m>,
       not <m>x</m>, making this computation not straightforward.
 
-      <index>
-        <main>concavity</main>
-      </index>
+      <idx>
+        <h>concavity</h>
+      </idx>
 
-      <index>
-        <main>parametric equations</main><sub>concavity</sub>
-      </index>
+      <idx>
+        <h>parametric equations</h><h>concavity</h>
+      </idx>
 
     </p>
 
@@ -485,9 +485,9 @@
         where <m>\fp(t)\neq 0</m> on <m>I</m>.
         Then
 
-        <index>
-          <main>parametric equations</main><sub>finding <m>\frac{d^2y}{dx^2}</m></sub>
-        </index>
+        <idx>
+          <h>parametric equations</h><h>finding <m>\frac{d^2y}{dx^2}</m></h>
+        </idx>
 
         <me>
           \frac{d^2y}{dx^2} = \frac{d}{dt}\left[\frac{dy}{dx}\right]\Bigg/\frac{dx}{dt} = \frac{d}{dt}\left[\frac{dy}{dx}\right]\Bigg/\fp(t)
@@ -797,13 +797,13 @@
           Let <m>x=f(t)</m> and <m>y=g(t)</m> be parametric equations with <m>\fp</m> and <m>g'</m> continuous on some open interval <m>I</m> containing <m>t_1</m> and <m>t_2</m> on which the graph traces itself only once.
           The arc length of the graph, from <m>t=t_1</m> to <m>t=t_2</m>, is
 
-          <index>
-            <main>parametric equations</main><sub>arc length</sub>
-          </index>
+          <idx>
+            <h>parametric equations</h><h>arc length</h>
+          </idx>
 
-          <index>
-            <main>arc length</main>
-          </index>
+          <idx>
+            <h>arc length</h>
+          </idx>
 
           <me>
             L = \int_{t_1}^{t_2} \sqrt{\fp(t)^2+g'(t)^2}\ dt
@@ -934,17 +934,17 @@
         Consider the graph of the parametric equations <m>x=f(t)</m> and <m>y=g(t)</m>,
         where <m>\fp</m> and <m>g'</m> are continuous on an open interval <m>I</m> containing <m>t_1</m> and <m>t_2</m> on which the graph does not cross itself.
 
-        <index>
-          <main>surface area</main><sub>solid of revolution</sub>
-        </index>
+        <idx>
+          <h>surface area</h><h>solid of revolution</h>
+        </idx>
 
-        <index>
-          <main>integration</main><sub>surface area</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>surface area</h>
+        </idx>
 
-        <index>
-          <main>parametric equations</main><sub>surface area</sub>
-        </index>
+        <idx>
+          <h>parametric equations</h><h>surface area</h>
+        </idx>
 
       </p>
 

@@ -151,9 +151,9 @@
           Let <m>z=f(x,y)</m> be differentiable on an open set <m>S</m> containing
           <m>(x_0,y_0)</m> and let <m>\vec u = \la u_1, u_2\ra</m> be a unit vector.
 
-          <index>
-            <main>tangent line</main><sub>directional</sub>
-          </index>
+          <idx>
+            <h>tangent line</h><h>directional</h>
+          </idx>
 
         </p>
 
@@ -709,13 +709,13 @@
           </me>
           are defined.
 
-          <index>
-            <main>normal line</main>
-          </index>
+          <idx>
+            <h>normal line</h>
+          </idx>
 
-          <index>
-            <main>orthogonal</main>
-          </index>
+          <idx>
+            <h>orthogonal</h>
+          </idx>
 
         </p>
 
@@ -1164,13 +1164,13 @@
           <term>tangent plane to <m>f</m> at <m>P</m></term>.
           The standard form of this plane is
 
-          <index>
-            <main>tangent plane</main>
-          </index>
+          <idx>
+            <h>tangent plane</h>
+          </idx>
 
-          <index>
-            <main>planes</main><sub>tangent</sub>
-          </index>
+          <idx>
+            <h>planes</h><h>tangent</h>
+          </idx>
 
           <me>
             a(x-x_0) + b(y-y_0) - \big(z-f(x_0,y_0)\big) = 0
@@ -1375,9 +1375,9 @@
         <p>
           Let <m>w=F(x,y,z)</m> be differentiable on an open ball <m>B</m> that contains the point <m>(x_0,y_0,z_0)</m>.
 
-          <index>
-            <main>gradient</main>
-          </index>
+          <idx>
+            <h>gradient</h>
+          </idx>
 
         </p>
 
@@ -1427,13 +1427,13 @@
           The vector <m>\nabla F(x_0,y_0,z_0)</m> is orthogonal to the level surface
           <m>F(x,y,z)=c</m> at <m>(x_0,y_0,z_0)</m>.
 
-          <index>
-            <main>gradient</main><sub>and level surfaces</sub>
-          </index>
+          <idx>
+            <h>gradient</h><h>and level surfaces</h>
+          </idx>
 
-          <index>
-            <main>level surface</main>
-          </index>
+          <idx>
+            <h>level surface</h>
+          </idx>
 
         </p>
       </statement>

@@ -24,9 +24,9 @@
           An <term>alternating series</term>
           is a series of either the form
 
-          <index>
-            <main>series</main><sub>alternating</sub>
-          </index>
+          <idx>
+            <h>series</h><h>alternating</h>
+          </idx>
 
           <me>
             \infser (-1)^na_n\qquad \text{ or } \qquad \infser (-1)^{n+1}a_n
@@ -74,21 +74,21 @@
           decreasing sequence where <m>\lim\limits_{n\to\infty}a_n=0</m>.
           Then
 
-          <index>
-            <main>series</main><sub>Alternating Series Test</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Alternating Series Test</h>
+          </idx>
 
-          <index>
-            <main>Alternating Series Test</main><sub>for series</sub>
-          </index>
+          <idx>
+            <h>Alternating Series Test</h><h>for series</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>Alternating Series Test</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>Alternating Series Test</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>Alternating Series Test</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>Alternating Series Test</h>
+          </idx>
 
           <me>
             \infser (-1)^{n}a_n \qquad \text{ and } \qquad \infser (-1)^{n+1}a_n
@@ -122,7 +122,7 @@
 
     <todo>Fix so that a_1 is shown in black</todo>
 
-    <sidebyside xml:id="fig_alt_series_converge" widths ="47% 47%">
+    <sidebyside widths ="47% 47%">
       <caption/>
 
       <figure xml:id="fig_alt_series_converge_a" width="47%">
@@ -312,9 +312,9 @@
           of either <m>\ds \infser (-1)^{n}a_n</m> or <m>\ds \infser (-1)^{n+1}a_n</m>.
           Then
 
-          <index>
-            <main>series</main><sub>alternating!Approximation Theorem</sub>
-          </index>
+          <idx>
+            <h>series</h><h>alternating!Approximation Theorem</h>
+          </idx>
 
         </p>
 
@@ -457,9 +457,9 @@
       <m>\ds \infser (-1)^{n+1}\frac1n</m>, converges.
       The notion that alternating the signs of the terms in a series can make a series converge leads us to the following definitions.
 
-      <index>
-        <main>Alternating Harmonic Series</main>
-      </index>
+      <idx>
+        <h>Alternating Harmonic Series</h>
+      </idx>
 
     </p>
 
@@ -473,21 +473,21 @@
               <em>converges absolutely</em>
               if <m>\ds \infser \abs{a_n}</m> converges.
 
-              <index>
-                <main>convergence</main><sub>absolute</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>absolute</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>conditional</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>conditional</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>absolute convergence</sub>
-              </index>
+              <idx>
+                <h>series</h><h>absolute convergence</h>
+              </idx>
 
-              <index>
-                <main>series</main><sub>conditional convergence</sub>
-              </index>
+              <idx>
+                <h>series</h><h>conditional convergence</h>
+              </idx>
 
             </p>
           </li>
@@ -600,13 +600,13 @@
     <p>
       The second statement relates to <em>rearrangements</em>
 
-      <index>
-        <main>rearrangements of series</main>
-      </index>
+      <idx>
+        <h>rearrangements of series</h>
+      </idx>
 
-      <index>
-        <main>series</main><sub>rearrangements</sub>
-      </index>
+      <idx>
+        <h>series</h><h>rearrangements</h>
+      </idx>
 
       of series.
       When dealing with a finite set of numbers,
@@ -624,25 +624,25 @@
         <p>
           Let <m>\ds \infser a_n</m> be a series that converges absolutely.
 
-          <index>
-            <main>convergence</main><sub>absolute</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>absolute</h>
+          </idx>
 
-          <index>
-            <main>Absolute Convergence Theorem</main>
-          </index>
+          <idx>
+            <h>Absolute Convergence Theorem</h>
+          </idx>
 
-          <index>
-            <main>series</main><sub>Absolute Convergence Theorem</sub>
-          </index>
+          <idx>
+            <h>series</h><h>Absolute Convergence Theorem</h>
+          </idx>
 
-          <index>
-            <main>rearrangements of series</main>
-          </index>
+          <idx>
+            <h>rearrangements of series</h>
+          </idx>
 
-          <index>
-            <main>series</main><sub>rearrangements</sub>
-          </index>
+          <idx>
+            <h>series</h><h>rearrangements</h>
+          </idx>
 
         </p>
 

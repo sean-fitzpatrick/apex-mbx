@@ -25,13 +25,13 @@
           <m>g</m> and <m>h</m> are differentiable functions.
           Then <m>z = f(x,y) = f\big(g(t),h(t)\big)</m> is a function of <m>t</m>, and
 
-          <index>
-            <main>derivative</main><sub>Chain Rule</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>Chain Rule</h>
+          </idx>
 
-          <index>
-            <main>Chain Rule</main><sub>multivariable</sub>
-          </index>
+          <idx>
+            <h>Chain Rule</h><h>multivariable</h>
+          </idx>
 
           <md>
             <mrow>\frac{dz}{dt} = \frac{df}{dt} \amp = f_x(x,y)\frac{dx}{dt}+f_y(x,y)\frac{dy}{dt}</mrow>
@@ -481,13 +481,13 @@
                 <p>
                   <m>\ds \frac{\partial z}{\partial t} = \frac{\partial f}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial f}{\partial y}\frac{\partial y}{\partial t}</m>.
 
-                  <index>
-                    <main>derivative</main><sub>Chain Rule</sub>
-                  </index>
+                  <idx>
+                    <h>derivative</h><h>Chain Rule</h>
+                  </idx>
 
-                  <index>
-                    <main>Chain Rule</main><sub>multivariable</sub>
-                  </index>
+                  <idx>
+                    <h>Chain Rule</h><h>multivariable</h>
+                  </idx>
 
                 </p>
               </li>
@@ -648,13 +648,13 @@
           for some constant <m>c</m>.
           Then
 
-          <index>
-            <main>derivative</main><sub>implicit</sub>
-          </index>
+          <idx>
+            <h>derivative</h><h>implicit</h>
+          </idx>
 
-          <index>
-            <main>implicit differentiation</main>
-          </index>
+          <idx>
+            <h>implicit differentiation</h>
+          </idx>
 
           <me>
             \frac{dy}{dx} = - \frac{f_x(x,y)}{f_y(x,y)}

@@ -57,37 +57,37 @@
           centered at the origin with radius <m>M</m>, contains <m>S</m>.
           A set that is not bounded is <term>unbounded</term>.
 
-          <index>
-            <main>open</main>
-          </index>
+          <idx>
+            <h>open</h>
+          </idx>
 
-          <index>
-            <main>closed</main>
-          </index>
+          <idx>
+            <h>closed</h>
+          </idx>
 
-          <index>
-            <main>open disk</main>
-          </index>
+          <idx>
+            <h>open disk</h>
+          </idx>
 
-          <index>
-            <main>closed disk</main>
-          </index>
+          <idx>
+            <h>closed disk</h>
+          </idx>
 
-          <index>
-            <main>boundary point</main>
-          </index>
+          <idx>
+            <h>boundary point</h>
+          </idx>
 
-          <index>
-            <main>interior point</main>
-          </index>
+          <idx>
+            <h>interior point</h>
+          </idx>
 
-          <index>
-            <main>bounded set</main>
-          </index>
+          <idx>
+            <h>bounded set</h>
+          </idx>
 
-          <index>
-            <main>unbounded set</main>
-          </index>
+          <idx>
+            <h>unbounded set</h>
+          </idx>
 
         </p>
       </statement>
@@ -371,13 +371,13 @@
           <m>(x_0,y_0)</m> with radius <m>\delta</m>,
           then <m>\abs{f(x,y) - L}\lt \varepsilon</m>.
 
-          <index>
-            <main>limit</main><sub>of multivariable function</sub>
-          </index>
+          <idx>
+            <h>limit</h><h>of multivariable function</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>limit</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>limit</h>
+          </idx>
 
         </p>
       </statement>
@@ -539,17 +539,17 @@
         <p>
           The following limits hold.
 
-          <index>
-            <main>limit</main><sub>of multivariable function</sub>
-          </index>
+          <idx>
+            <h>limit</h><h>of multivariable function</h>
+          </idx>
 
-          <index>
-            <main>limit</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>limit</h><h>properties</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>limit</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>limit</h>
+          </idx>
 
         </p>
 
@@ -838,13 +838,13 @@
               <m>f</m> is <em>continuous</em>
               at <m>(x_0,y_0)</m> if <m>\lim\limits_{(x,y)\to(x_0,y_0)} f(x,y) = f(x_0,y_0)</m>.
 
-              <index>
-                <main>continuous function</main>
-              </index>
+              <idx>
+                <h>continuous function</h>
+              </idx>
 
-              <index>
-                <main>multivariable function</main><sub>continuity</sub>
-              </index>
+              <idx>
+                <h>multivariable function</h><h>continuity</h>
+              </idx>
 
             </p>
           </li>
@@ -1054,13 +1054,13 @@
           and let <m>n</m> be a positive integer.
           The following functions are continuous on <m>B</m>.
 
-          <index>
-            <main>continuous function</main><sub>properties</sub>
-          </index>
+          <idx>
+            <h>continuous function</h><h>properties</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>continuity</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>continuity</h>
+          </idx>
 
         </p>
 
@@ -1163,21 +1163,21 @@
               An <em>open ball</em> in <m>\mathbb{R}^3</m> centered at
               <m>(x_0,y_0,z_0)</m> with radius <m>r</m> is the set of all points <m>(x,y,z)</m> such that <m>\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2} = r</m>.
 
-              <index>
-                <main>multivariable function</main><sub>limit</sub>
-              </index>
+              <idx>
+                <h>multivariable function</h><h>limit</h>
+              </idx>
 
-              <index>
-                <main>limit</main><sub>of multivariable function</sub>
-              </index>
+              <idx>
+                <h>limit</h><h>of multivariable function</h>
+              </idx>
 
-              <index>
-                <main>multivariable function</main><sub>continuity</sub>
-              </index>
+              <idx>
+                <h>multivariable function</h><h>continuity</h>
+              </idx>
 
-              <index>
-                <main>open ball</main>
-              </index>
+              <idx>
+                <h>open ball</h>
+              </idx>
 
             </p>
           </li>

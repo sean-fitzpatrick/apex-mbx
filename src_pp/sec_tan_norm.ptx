@@ -22,13 +22,13 @@
           Let <m>\vrt</m> be a smooth function on an open interval <m>I</m>.
           The unit tangent vector <m>\vec T(t)</m> is
 
-          <index>
-            <main>unit tangent vector</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>unit tangent vector</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>unit vector</main><sub>unit tangent vector</sub>
-          </index>
+          <idx>
+            <h>unit vector</h><h>unit tangent vector</h>
+          </idx>
 
           <me>
             \vec T(t) = \frac{1}{\norm{\vrp(t)}}\vrp(t)
@@ -334,9 +334,9 @@
       We know <m>\vec T(t)</m>, the unit tangent vector, has constant length.
       Therefore <m>\vec T(t)</m> is orthogonal to <m>\vec T\,'(t)</m>.
 
-      <index>
-        <main>vector-valued function</main><sub>of constant length</sub>
-      </index>
+      <idx>
+        <h>vector-valued function</h><h>of constant length</h>
+      </idx>
 
     </p>
 
@@ -362,13 +362,13 @@
           <m>\vec T(t)</m>, is smooth on an open interval <m>I</m>.
           The <term>unit normal vector</term> <m>\vec N(t)</m> is
 
-          <index>
-            <main>unit normal vector</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>unit normal vector</h><h>definition</h>
+          </idx>
 
-          <index>
-            <main>unit vector</main><sub>unit normal vector</sub>
-          </index>
+          <idx>
+            <h>unit vector</h><h>unit normal vector</h>
+          </idx>
 
           <me>
             \vec N(t) = \frac1{\norm{\vec T\,'(t)}}\vec T\,'(t)
@@ -643,13 +643,13 @@
           </me>,
           whichever is the vector that points to the concave side of the graph of <m>\vec r</m>.
 
-          <index>
-            <main>unit tangent vector</main><sub>in <m>\mathbb{R}^2</m></sub>
-          </index>
+          <idx>
+            <h>unit tangent vector</h><h>in <m>\mathbb{R}^2</m></h>
+          </idx>
 
-          <index>
-            <main>unit normal vector</main><sub>in <m>\mathbb{R}^2</m></sub>
-          </index>
+          <idx>
+            <h>unit normal vector</h><h>in <m>\mathbb{R}^2</m></h>
+          </idx>
 
         </p>
       </statement>
@@ -678,13 +678,13 @@
       acceleration is perpendicular to the direction of travel, that is,
       it measures the component of acceleration that affects the direction of travel.
 
-      <index>
-        <main>unit tangent vector</main><sub>and acceleration</sub>
-      </index>
+      <idx>
+        <h>unit tangent vector</h><h>and acceleration</h>
+      </idx>
 
-      <index>
-        <main>unit normal vector</main><sub>and acceleration</sub>
-      </index>
+      <idx>
+        <h>unit normal vector</h><h>and acceleration</h>
+      </idx>
 
     </p>
 
@@ -750,29 +750,29 @@
 
     <p>
 
-      <index>
-        <main>unit tangent vector</main><sub>and acceleration</sub>
-      </index>
+      <idx>
+        <h>unit tangent vector</h><h>and acceleration</h>
+      </idx>
 
-      <index>
-        <main>unit normal vector</main><sub>and acceleration</sub>
-      </index>
+      <idx>
+        <h>unit normal vector</h><h>and acceleration</h>
+      </idx>
 
-      <index>
-        <main>an@<m>a_\text{N}</m></main>
-      </index>
+      <idx>
+        <h>an@<m>a_\text{N}</m></h>
+      </idx>
 
-      <index>
-        <main>at@<m>a_\text{T}</m></main>
-      </index>
+      <idx>
+        <h>at@<m>a_\text{T}</m></h>
+      </idx>
 
-      <index>
-        <main>unit normal vector</main><sub>an@<m>a_\text{N}</m></sub>
-      </index>
+      <idx>
+        <h>unit normal vector</h><h>an@<m>a_\text{N}</m></h>
+      </idx>
 
-      <index>
-        <main>unit tangent vector</main><sub>at@<m>a_\text{T}</m></sub>
-      </index>
+      <idx>
+        <h>unit tangent vector</h><h>at@<m>a_\text{T}</m></h>
+      </idx>
 
     </p>
 
@@ -915,9 +915,9 @@
           Find the position function <m>\vrt</m> of the ball and analyze
           <m>a_\text{T}</m> and <m>a_\text{N}</m>.
 
-          <index>
-            <main>projectile motion</main>
-          </index>
+          <idx>
+            <h>projectile motion</h>
+          </idx>
 
         </p>
       </statement>

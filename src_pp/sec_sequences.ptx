@@ -32,9 +32,9 @@
           A <term>sequence</term> is a function <m>a(n)</m> whose domain is <m>\mathbb{N}</m>.
           The <term>range</term> of a sequence is the set of all distinct values of <m>a(n)</m>.
 
-          <index>
-            <main>sequences</main><sub>definition</sub>
-          </index>
+          <idx>
+            <h>sequences</h><h>definition</h>
+          </idx>
 
         </p>
 
@@ -66,13 +66,13 @@
           (read as <m>3</m> factorial)
           refers to the number <m>3\cdot2\cdot1 = 6</m>.
 
-          <index>
-            <main>factorial</main>
-          </index>
+          <idx>
+            <h>factorial</h>
+          </idx>
 
-          <index>
-            <main>aa@<m>"!</m></main>
-          </index>
+          <idx>
+            <h>aa@<m>"!</m></h>
+          </idx>
 
         </p>
 
@@ -157,7 +157,7 @@
               <todo>Maybe move these to be next to each example?
               Otherwise they are too small to be used meaningfully.</todo>
 
-              <sidebyside xml:id="fig_seq1" widths="31% 31% 31%">
+              <sidebyside widths="31% 31% 31%">
                 <caption>Plotting sequences in <xref ref="ex_seq1">Example</xref>.</caption>
                 <figure xml:id="fig_seq1a">
                   <caption/>
@@ -414,29 +414,29 @@
           we say the sequence <term>converges</term>;
           otherwise, the sequence <term>diverges</term>.
 
-          <index>
-            <main>limit</main><sub>of sequence</sub>
-          </index>
+          <idx>
+            <h>limit</h><h>of sequence</h>
+          </idx>
 
-          <index>
-            <main>sequences</main><sub>limit</sub>
-          </index>
+          <idx>
+            <h>sequences</h><h>limit</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>of sequence</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>of sequence</h>
+          </idx>
 
-          <index>
-            <main>divergence</main><sub>of sequence</sub>
-          </index>
+          <idx>
+            <h>divergence</h><h>of sequence</h>
+          </idx>
 
-          <index>
-            <main>sequences</main><sub>convergent</sub>
-          </index>
+          <idx>
+            <h>sequences</h><h>convergent</h>
+          </idx>
 
-          <index>
-            <main>sequences</main><sub>divergent</sub>
-          </index>
+          <idx>
+            <h>sequences</h><h>divergent</h>
+          </idx>
 
         </p>
       </statement>
@@ -611,7 +611,7 @@
           </li>
         </ol>
 
-        <sidebyside  xml:id="fig_seq4" widths="31% 31% 31%">
+        <sidebyside widths="31% 31% 31%">
           <caption>Scatter plots of the sequences in <xref ref="ex_seq4">Example</xref>.</caption>
           <figure xml:id="fig_seq4a">
             <caption/>
@@ -739,17 +739,17 @@
           If <m>\lim\limits_{n\to\infty} \abs{a_n} = 0</m>,
           then <m>\lim\limits_{n\to\infty} a_n = 0</m>
 
-          <index>
-            <main>Absolute Value Theorem</main>
-          </index>
+          <idx>
+            <h>Absolute Value Theorem</h>
+          </idx>
 
-          <index>
-            <main>limit</main><sub>Absolute Value Theorem</sub>
-          </index>
+          <idx>
+            <h>limit</h><h>Absolute Value Theorem</h>
+          </idx>
 
-          <index>
-            <main>sequence</main><sub>Absolute Value Theorem</sub>
-          </index>
+          <idx>
+            <h>sequence</h><h>Absolute Value Theorem</h>
+          </idx>
 
         </p>
       </statement>
@@ -885,9 +885,9 @@
             <p>
               <m>\lim\limits_{n\to\infty} (a_n\pm b_n) = L\pm K</m>
 
-              <index>
-                <main>sequences</main><sub>limit properties</sub>
-              </index>
+              <idx>
+                <h>sequences</h><h>limit properties</h>
+              </idx>
 
             </p>
           </li>
@@ -1019,17 +1019,17 @@
           it is <term>bounded below</term> if there exists an <m>m</m> such that
           <m>m\lt a_n</m> for all <m>n</m> in <m>\mathbb{N}</m>.
 
-          <index>
-            <main>sequences</main><sub>boundedness</sub>
-          </index>
+          <idx>
+            <h>sequences</h><h>boundedness</h>
+          </idx>
 
-          <index>
-            <main>bounded sequence</main>
-          </index>
+          <idx>
+            <h>bounded sequence</h>
+          </idx>
 
-          <index>
-            <main>unbounded sequence</main>
-          </index>
+          <idx>
+            <h>unbounded sequence</h>
+          </idx>
 
         </p>
       </statement>
@@ -1077,7 +1077,7 @@
           </li>
         </ol>
 
-        <sidebyside xml:id="fig_seq3">
+        <sidebyside>
           <caption>A plot of <m>\{a_n\} = \{1/n\}</m> and <m>\{a_n\} = \{2^n\}</m> from <xref ref="ex_seq3">Example</xref>.</caption>
           <figure xml:id="fig_seq3a">
             <caption/>
@@ -1184,17 +1184,17 @@
           Let <m>\ds \left\{a_n\right\}</m> be a convergent sequence.
           Then <m>\{a_n\}</m> is bounded.
 
-          <index>
-            <main>bounded sequence</main><sub>convergence</sub>
-          </index>
+          <idx>
+            <h>bounded sequence</h><h>convergence</h>
+          </idx>
 
-          <index>
-            <main>convergence</main><sub>of sequence</sub>
-          </index>
+          <idx>
+            <h>convergence</h><h>of sequence</h>
+          </idx>
 
-          <index>
-            <main>sequences</main><sub>convergent</sub>
-          </index>
+          <idx>
+            <h>sequences</h><h>convergent</h>
+          </idx>
 
         </p>
       </statement>
@@ -1258,13 +1258,13 @@
               A sequence is <em>monotonic</em>
               if it is monotonically increasing or monotonically decreasing.
 
-              <index>
-                <main>sequences</main><sub>monotonic</sub>
-              </index>
+              <idx>
+                <h>sequences</h><h>monotonic</h>
+              </idx>
 
-              <index>
-                <main>monotonic sequence</main>
-              </index>
+              <idx>
+                <h>monotonic sequence</h>
+              </idx>
 
             </p>
           </li>
@@ -1422,7 +1422,7 @@
 
         <sbsgroup widths="47% 47%">
           <caption>Plots of sequences in <xref ref="ex_seq7">Example</xref>.</caption>
-          <sidebyside xml:id="fig_seq7">
+          <sidebyside>
             <figure xml:id="fig_seq7a">
               <caption/>
             <!-- START figures/fig_seq7a.tex -->
@@ -1607,13 +1607,13 @@
               Let <m>\{a_n\}</m> be a monotonically decreasing sequence that is bounded below.
               Then <m>\{a_n\}</m> converges.
 
-              <index>
-                <main>sequences</main><sub>convergent</sub>
-              </index>
+              <idx>
+                <h>sequences</h><h>convergent</h>
+              </idx>
 
-              <index>
-                <main>convergence</main><sub>of monotonic sequences</sub>
-              </index>
+              <idx>
+                <h>convergence</h><h>of monotonic sequences</h>
+              </idx>
 
             </p>
           </li>

@@ -73,9 +73,9 @@
         Consider <m>\ds \int \sin^m(x) \cos^n(x) \ dx</m>,
         where <m>m,n</m> are nonnegative integers.
 
-        <index>
-          <main>integration</main><sub>of trig. powers</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>of trig. powers</h>
+        </idx>
 
       </p>
 
@@ -449,9 +449,9 @@
         Consider <m>\ds\int\tan^m(x) \sec^n(x) \ dx</m>,
         where <m>m,n</m> are nonnegative integers.
 
-        <index>
-          <main>integration</main><sub>of trig. powers</sub>
-        </index>
+        <idx>
+          <h>integration</h><h>of trig. powers</h>
+        </idx>
 
       </p>
 

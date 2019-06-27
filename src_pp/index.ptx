@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <docinfo>
 
         <latex-preamble>
@@ -196,7 +196,7 @@
                                       }}
 ]]></latex-image-preamble>
 
-    <rename element="insight" lang="en-US">Key Idea</rename>
+    <rename element="insight" xml:lang="en-US">Key Idea</rename>
   </docinfo>
 
   <book>
@@ -273,32 +273,32 @@
 
     <xi:include href="./chapter_graphbehavior.ptx" />
 
-    <xi:include href="./chapter_deriv_apps.ptx" />
+    <!-- <xi:include href="./chapter_deriv_apps.ptx" /> -->
 
-    <xi:include href="./chapter_integration.ptx" />
+    <!-- <xi:include href="./chapter_integration.ptx" /> -->
 
-    <xi:include href="./chapter_anti_tech.ptx" />
+    <!-- <xi:include href="./chapter_anti_tech.ptx" /> -->
 
-    <xi:include href="./chapter_app_of_int.ptx" />
+    <!-- <xi:include href="./chapter_app_of_int.ptx" /> -->
 
-    <xi:include href="./chapter_sequences_series.ptx" />
+    <!-- <xi:include href="./chapter_sequences_series.ptx" /> -->
 
-    <xi:include href="./chapter9.ptx" />
+    <!-- <xi:include href="./chapter9.ptx" /> -->
 
-    <xi:include href="./chapter10.ptx" />
+    <!-- <xi:include href="./chapter10.ptx" /> -->
 
-    <xi:include href="./chap_vvf.ptx" />
+    <!-- <xi:include href="./chap_vvf.ptx" /> -->
 
-    <xi:include href="./chap_multi.ptx" />
+    <!-- <xi:include href="./chap_multi.ptx" /> -->
 
-    <xi:include href="./chapter13.ptx" />
+    <!-- <xi:include href="./chapter13.ptx" /> -->
 
     <backmatter>
-      <index-part>
+      <index>
       <title>Index</title>
       <index-list />
-      </index-part>
+      </index>
     </backmatter>
   </book>
-</mathbook>
+</pretext>
 

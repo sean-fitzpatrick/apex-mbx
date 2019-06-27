@@ -14,21 +14,21 @@
           <m>D</m> is the <term>domain</term> of <m>f</m>;
           the set of all outputs of <m>f</m> is the <term>range</term>.
 
-          <index>
-            <main>multivariable function</main>
-          </index>
+          <idx>
+            <h>multivariable function</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>domain</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>domain</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>range</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>range</h>
+          </idx>
 
-          <index>
-            <main>function</main><sub>of two variables</sub>
-          </index>
+          <idx>
+            <h>function</h><h>of two variables</h>
+          </idx>
 
         </p>
       </statement>
@@ -370,17 +370,17 @@
       It may be surprising to find that the problem of representing a three dimensional surface on paper is familiar to most people
       (they just don't realize it).
 
-      <index>
-        <main>multivariable function</main><sub>level curves</sub>
-      </index>
+      <idx>
+        <h>multivariable function</h><h>level curves</h>
+      </idx>
 
-      <index>
-        <main>level curves</main>
-      </index>
+      <idx>
+        <h>level curves</h>
+      </idx>
 
-      <index>
-        <main>contour lines</main>
-      </index>
+      <idx>
+        <h>contour lines</h>
+      </idx>
 
       Topographical maps,
       like the one shown in <xref ref="fig_topomap">Figure</xref>,
@@ -892,21 +892,21 @@
           <m>D</m> is the <term>domain</term> of <m>f</m>;
           the set of all outputs of <m>f</m> is the <term>range</term>.
 
-          <index>
-            <main>multivariable function</main>
-          </index>
+          <idx>
+            <h>multivariable function</h>
+          </idx>
 
-          <index>
-            <main>function</main><sub>of three variables</sub>
-          </index>
+          <idx>
+            <h>function</h><h>of three variables</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>domain</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>domain</h>
+          </idx>
 
-          <index>
-            <main>multivariable function</main><sub>range</sub>
-          </index>
+          <idx>
+            <h>multivariable function</h><h>range</h>
+          </idx>
 
         </p>
       </statement>
@@ -969,13 +969,13 @@
       a function of <em>three</em> variables is a <em>hypersurface</em>
       drawn in <em>4</em> dimensions.
 
-      <index>
-        <main>multivariable function</main><sub>level surface</sub>
-      </index>
+      <idx>
+        <h>multivariable function</h><h>level surface</h>
+      </idx>
 
-      <index>
-        <main>level surface</main>
-      </index>
+      <idx>
+        <h>level surface</h>
+      </idx>
 
     </p>
 

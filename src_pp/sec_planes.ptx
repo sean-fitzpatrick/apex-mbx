@@ -128,17 +128,17 @@
       called a <em>normal vector</em>,
       that is orthogonal to the plane.
 
-      <index>
-        <main>vectors</main><sub>normal vector</sub>
-      </index>
+      <idx>
+        <h>vectors</h><h>normal vector</h>
+      </idx>
 
-      <index>
-        <main>normal vector</main>
-      </index>
+      <idx>
+        <h>normal vector</h>
+      </idx>
 
-      <index>
-        <main>planes</main><sub>normal vector</sub>
-      </index>
+      <idx>
+        <h>planes</h><h>normal vector</h>
+      </idx>
 
     </p>
 
@@ -188,9 +188,9 @@
           </me>
           the equation's <term>general form</term> is
 
-          <index>
-            <main>planes</main><sub>equations of</sub>
-          </index>
+          <idx>
+            <h>planes</h><h>equations of</h>
+          </idx>
 
           <me>
             ax+by+cz = d
@@ -1109,13 +1109,13 @@
         </me>,
         where <m>P</m> is any point in the plane.
 
-        <index>
-          <main>planes</main><sub>distance between point and plane</sub>
-        </index>
+        <idx>
+          <h>planes</h><h>distance between point and plane</h>
+        </idx>
 
-        <index>
-          <main>distance</main><sub>between point and plane</sub>
-        </index>
+        <idx>
+          <h>distance</h><h>between point and plane</h>
+        </idx>
 
       </p>
     </insight>

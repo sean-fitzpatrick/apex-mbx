@@ -19,29 +19,29 @@
         <p>
           Let <m>z=f(x,y)</m> be defined on a set <m>S</m> containing the point <m>P=(x_0,y_0)</m>.
 
-          <index>
-            <main>maximum</main><sub>relative/local</sub>
-          </index>
+          <idx>
+            <h>maximum</h><h>relative/local</h>
+          </idx>
 
-          <index>
-            <main>minimum</main><sub>relative/local</sub>
-          </index>
+          <idx>
+            <h>minimum</h><h>relative/local</h>
+          </idx>
 
-          <index>
-            <main>extrema</main><sub>relative</sub>
-          </index>
+          <idx>
+            <h>extrema</h><h>relative</h>
+          </idx>
 
-          <index>
-            <main>extrema</main><sub>absolute</sub>
-          </index>
+          <idx>
+            <h>extrema</h><h>absolute</h>
+          </idx>
 
-          <index>
-            <main>maximum</main><sub>absolute</sub>
-          </index>
+          <idx>
+            <h>maximum</h><h>absolute</h>
+          </idx>
 
-          <index>
-            <main>minimum</main><sub>absolute</sub>
-          </index>
+          <idx>
+            <h>minimum</h><h>absolute</h>
+          </idx>
 
         </p>
 
@@ -94,9 +94,9 @@
           A <term>critical point</term>
           <m>P=(x_0,y_0)</m> of <m>f</m> is a point in <m>S</m> such that
 
-          <index>
-            <main>critical point</main>
-          </index>
+          <idx>
+            <h>critical point</h>
+          </idx>
 
         </p>
 
@@ -124,13 +124,13 @@
           If <m>f</m> has a relative extrema at <m>P</m>,
           then <m>P</m> is a critical point of <m>f</m>.
 
-          <index>
-            <main>extrema</main><sub>relative</sub>
-          </index>
+          <idx>
+            <h>extrema</h><h>relative</h>
+          </idx>
 
-          <index>
-            <main>critical point</main>
-          </index>
+          <idx>
+            <h>critical point</h>
+          </idx>
 
         </p>
       </statement>
@@ -587,13 +587,13 @@
           <m>(x_2,y_2)</m> in <m>D</m> such that
           <m>f(x_0,y_0)>f(x_1,y_1)</m> and <m>f(x_0,y_0)\lt f(x_2,y_2)</m>.
 
-          <index>
-            <main>saddle point</main>
-          </index>
+          <idx>
+            <h>saddle point</h>
+          </idx>
 
-          <index>
-            <main>critical point</main>
-          </index>
+          <idx>
+            <h>critical point</h>
+          </idx>
 
         </p>
       </statement>
@@ -675,21 +675,21 @@
         <p>
           Let <m>z=f(x,y)</m> be differentiable on an open set containing <m>P = (x_0,y_0)</m>, and let
 
-          <index>
-            <main>Second Derivative Test</main>
-          </index>
+          <idx>
+            <h>Second Derivative Test</h>
+          </idx>
 
-          <index>
-            <main>maximum</main><sub>relative/local</sub>
-          </index>
+          <idx>
+            <h>maximum</h><h>relative/local</h>
+          </idx>
 
-          <index>
-            <main>minimum</main><sub>relative/local</sub>
-          </index>
+          <idx>
+            <h>minimum</h><h>relative/local</h>
+          </idx>
 
-          <index>
-            <main>saddle point</main>
-          </index>
+          <idx>
+            <h>saddle point</h>
+          </idx>
 
           <me>
             D = f_{xx}(x_0,y_0)f_{yy}(x_0,y_0)-f_{xy}^{\,2}(x_0,y_0)
@@ -982,13 +982,13 @@
       (the <q>boundary</q>)
       of the interval.
 
-      <index>
-        <main>constrained optimization</main>
-      </index>
+      <idx>
+        <h>constrained optimization</h>
+      </idx>
 
-      <index>
-        <main>optimization</main><sub>constrained</sub>
-      </index>
+      <idx>
+        <h>optimization</h><h>constrained</h>
+      </idx>
 
     </p>
 
@@ -1008,9 +1008,9 @@
           bounded set <m>S</m>.
           Then <m>f</m> has a maximum and minimum value on <m>S</m>.
 
-          <index>
-            <main>Extreme Value Theorem</main>
-          </index>
+          <idx>
+            <h>Extreme Value Theorem</h>
+          </idx>
 
         </p>
       </statement>
