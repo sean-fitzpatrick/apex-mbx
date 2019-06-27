@@ -43,63 +43,66 @@
         Either way, drawing a rectangle forces us to realize that we need to know the dimensions of this rectangle so we can create an area function <mdash /> after all,
         we are trying to maximize the area.
       </p>
+
         <!-- START figures/fig_opt1b.tex -->
-      <sidebyside widths="47% 47%">
+      <figure xml:id="fig_opt1b">
         <caption>A sketch of the enclosure in <xref ref="ex_opt1">Example</xref>.</caption>
-        <image>
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
+        <sidebyside widths="47% 47%">
+          <image>
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
 
-          \shadedraw [top color = green,bottom color = green!50!black] (0,0) -- (33.6pt,35.28pt) -- (95.2pt,35.28pt) -- (61.6pt,0) -- cycle;
+            \shadedraw [top color = green,bottom color = green!50!black] (0,0) -- (33.6pt,35.28pt) -- (95.2pt,35.28pt) -- (61.6pt,0) -- cycle;
 
-          \begin{scope}[cm={1,1.05,0,1,(0,0)}]
-          \foreach \x in {0,...,7}
-          {
-          \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-          }
-          \end{scope}
+            \begin{scope}[cm={1,1.05,0,1,(0,0)}]
+            \foreach \x in {0,...,7}
+            {
+            \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+            }
+            \end{scope}
 
-          \begin{scope}[shift={(33.6pt,35.28pt)}]
-          \foreach \x in {0,...,10}
-          {
-          \shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-          }
-          \end{scope}
+            \begin{scope}[shift={(33.6pt,35.28pt)}]
+            \foreach \x in {0,...,10}
+            {
+            \shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+            }
+            \end{scope}
 
-          \foreach \x in {0,...,10}
-          {
-          \shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-          }
+            \foreach \x in {0,...,10}
+            {
+            \shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+            }
 
-          \begin{scope}[cm={1,1.05,0,1,(61.6pt,0)}]
-          \foreach \x in {0,...,7}
-          {
-          \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-          }
-          \end{scope}
+            \begin{scope}[cm={1,1.05,0,1,(61.6pt,0)}]
+            \foreach \x in {0,...,7}
+            {
+            \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) --   ++(0,20pt)  -- ++(4pt,4pt)  -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+            }
+            \end{scope}
 
-          \draw [<->,>=latex] (0,-5pt) -- (61.6pt,-5pt) node [below,pos=.5] {$x$};
-          \draw [<->,>=latex] (100.2pt,35.28pt) -- (66.6pt,0pt) node [right,pos=.5] {$y$};
+            \draw [<->,>=latex] (0,-5pt) -- (61.6pt,-5pt) node [below,pos=.5] {$x$};
+            \draw [<->,>=latex] (100.2pt,35.28pt) -- (66.6pt,0pt) node [right,pos=.5] {$y$};
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
 
-        <image>
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \draw [shift = {(150pt,0)}] (0,0) -- (80pt,0) node [pos=.5,below] {$x$} -- (80pt,50pt) node [pos=.5,right] {$y$} -- (0,50pt) -- cycle;
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
+          <image>
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \draw [shift = {(150pt,0)}] (0,0) -- (80pt,0) node [pos=.5,below] {$x$} -- (80pt,50pt) node [pos=.5,right] {$y$} -- (0,50pt) -- cycle;
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
 
-      </sidebyside>
+        </sidebyside>
+      </figure>
           <!-- figures/fig_opt1b.tex END -->
       <p>
         We let <m>x</m> and <m>y</m> denote the lengths of the sides of the rectangle.
@@ -289,69 +292,71 @@
               A key feature of the sketches is to acknowledge that one side is not fenced.
             </p>
 
-            <sidebyside widths="47% 47%">
-              <caption>A sketch of the enclosure in <xref ref="ex_opt2">Example</xref>.</caption>
             <!-- START figures/fig_opt2a.tex -->
-              <image>
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}
+            <figure xml:id="fig_opt2a">
+              <caption>A sketch of the enclosure in <xref ref="ex_opt2">Example</xref>.</caption>
+              <sidebyside widths="47% 47%">
+                <image>
+                  <description></description>
+                  <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
 
-                \shadedraw [top color = green,bottom color = green!50!black] (0,0) -- (33.6pt,35.28pt) -- (95.2pt,35.28pt) -- (61.6pt,0) -- cycle;
+                  \shadedraw [top color = green,bottom color = green!50!black] (0,0) -- (33.6pt,35.28pt) -- (95.2pt,35.28pt) -- (61.6pt,0) -- cycle;
 
-                \begin{scope}[cm={1,1.05,0,1,(0,0)}]
-                \foreach \x in {0,...,7}
-                {
-                \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-                }
-                \end{scope}
+                  \begin{scope}[cm={1,1.05,0,1,(0,0)}]
+                  \foreach \x in {0,...,7}
+                  {
+                  \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+                  }
+                  \end{scope}
 
-                \begin{scope}[shift={(33.6pt,35.28pt)}]
-                \foreach \x in {0,...,10}
-                {
-                \shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-                }
-                \end{scope}
+                  \begin{scope}[shift={(33.6pt,35.28pt)}]
+                  \foreach \x in {0,...,10}
+                  {
+                  \shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+                  }
+                  \end{scope}
 
-                \begin{scope}[cm={1,1.05,0,1,(61.6pt,0)}]
-                \foreach \x in {0,...,7}
-                {
-                \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-                }
-                \end{scope}
+                  \begin{scope}[cm={1,1.05,0,1,(61.6pt,0)}]
+                  \foreach \x in {0,...,7}
+                  {
+                  \shadedraw [xscale=.3,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+                  }
+                  \end{scope}
 
-                \shadedraw [top color=blue, bottom color=blue!50!white] (-10pt,0) sin (30pt,2pt) cos (70pt,0pt) -- (70pt,-10pt) sin (35pt,-8pt) cos (-10pt,-10pt) --cycle;
+                  \shadedraw [top color=blue, bottom color=blue!50!white] (-10pt,0) sin (30pt,2pt) cos (70pt,0pt) -- (70pt,-10pt) sin (35pt,-8pt) cos (-10pt,-10pt) --cycle;
 
-                %\foreach \x in {0,...,10}
-                % {
-                %\shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
-                % }
+                  %\foreach \x in {0,...,10}
+                  % {
+                  %\shadedraw [xscale=.4,shift={(\x*14 pt,0)},left color=brown!40!white,right color = brown!99!white] (0,0) -- ++(0,20pt) -- ++(4pt,4pt) -- ++(6pt,0pt) -- ++(4pt,-4pt)-- ++(0pt,-20pt) -- cycle;
+                  % }
 
-                \draw [<->,>=latex] (0,-15pt) -- (61.6pt,-15pt) node [below,pos=.5] {$x$};
-                \draw [<->,>=latex] (100.2pt,35.28pt) -- (66.6pt,0pt) node [right,pos=.5] {$y$};
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
+                  \draw [<->,>=latex] (0,-15pt) -- (61.6pt,-15pt) node [below,pos=.5] {$x$};
+                  \draw [<->,>=latex] (100.2pt,35.28pt) -- (66.6pt,0pt) node [right,pos=.5] {$y$};
+                  \end{tikzpicture}
+                  ]]>
+                  </latex-image>
+                </image>
 
-              <image>
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}
+                <image>
+                  <description></description>
+                  <latex-image>
+                  <![CDATA[
+                  \begin{tikzpicture}
 
-                \draw [shift = {(0,-80pt)}] (0,0) -- (0,50pt) -- (80pt,50pt) node [pos=.5,below] {$x$} --(80pt,0) node [pos=.5,right] {$y$};
-                \draw [{\colorone},very thick,shift = {(0,-80pt)}] (0,0) sin (40pt,2pt) cos (80pt,0);
+                  \draw [shift = {(0,-80pt)}] (0,0) -- (0,50pt) -- (80pt,50pt) node [pos=.5,below] {$x$} --(80pt,0) node [pos=.5,right] {$y$};
+                  \draw [{\colorone},very thick,shift = {(0,-80pt)}] (0,0) sin (40pt,2pt) cos (80pt,0);
 
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
+                  \end{tikzpicture}
+                  ]]>
+                  </latex-image>
+                </image>
 
-            </sidebyside>
+              </sidebyside>
+            </figure>
             <!-- figures/fig_opt2a.tex END -->
-            <!-- </figure> -->
+
           </li>
 
           <li>
@@ -451,8 +456,8 @@
       </p>
 
       <p>
-        It costs <dollar />50/ft. to run a power line along the land,
-        and <dollar />130/ft. to run a power line under water.
+        It costs $50/ft. to run a power line along the land,
+        and $130/ft. to run a power line under water.
         How much of the power line should be run along the land to minimize the overall cost?
         What is the minimal cost?
       </p>
@@ -828,18 +833,14 @@
                 What dimensions should these pens have to maximize the enclosed area?
               </p>
 
-              <figure>
-
-                <image xml:id="img_opt3cX">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}\draw [thick](0,0) rectangle (3,2);
-                  \draw [thick](1.5,0) -- (1.5,2);\end{tikzpicture}]]>
-                  </latex-image>
-                </image>
-
-              </figure>
+              <image xml:id="img_opt3cX">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}\draw [thick](0,0) rectangle (3,2);
+                \draw [thick](1.5,0) -- (1.5,2);\end{tikzpicture}]]>
+                </latex-image>
+              </image>
 
               <p>
                 Longer side: <var name = "$l" width="20" />
@@ -908,7 +909,7 @@
               </p>
 
               <p>
-                The <q><hash />10 can</q>is a standard sized can used by the restaurant industry that holds about 206in<m>^3</m> with a diameter of 6 2/16in and height of 7in.
+                The <q>#10 can</q>is a standard sized can used by the restaurant industry that holds about 206in<m>^3</m> with a diameter of 6 2/16in and height of 7in.
                 Does it seem these dimensions where chosen with minimization in mind?
               </p>
 
@@ -921,7 +922,7 @@
               </p>
 
               <p>
-                Does a <hash />10 can roughly minimize material costs?
+                Does a #10 can roughly minimize material costs?
                 <var name="$close" form="popup" />
               </p>
             </statement>
@@ -974,20 +975,16 @@
                 that is, <m>S = kwh^2</m> for some constant <m>k</m>.
               </p>
 
-              <figure>
-
-                <image xml:id="img_opt3cX1">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}\draw [thick](0,0) circle (1cm);
-                  \draw [thick](-.6,.8) -- node [pos=.5,right] { \(12\)} (.6,-.8);
-                  \draw [thick](-.6,-.8) rectangle (.6,.8);
-                  \draw (.7,0) node { \(h\)} (0,.7) node { \(w\)};\end{tikzpicture}]]>
-                  </latex-image>
-                </image>
-
-              </figure>
+              <image xml:id="img_opt3cX1">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}\draw [thick](0,0) circle (1cm);
+                \draw [thick](-.6,.8) -- node [pos=.5,right] { \(12\)} (.6,-.8);
+                \draw [thick](-.6,-.8) rectangle (.6,.8);
+                \draw (.7,0) node { \(h\)} (0,.7) node { \(w\)};\end{tikzpicture}]]>
+                </latex-image>
+              </image>
 
               <p>
                 Given a circular log with diameter of 12 inches,
@@ -1023,7 +1020,7 @@
               <p>
                 A power line is to be run to an offshore facility in the manner described in <xref ref="ex_opt3">Example</xref>.
                 The offshore facility is 2 miles at sea and 5 miles along the shoreline from the power plant.
-                It costs <dollar />50,000 per mile to lay a power line underground and <dollar />80,000 to run the line underwater.
+                It costs $50,000 per mile to lay a power line underground and $80,000 to run the line underwater.
               </p>
 
               <p>
@@ -1061,7 +1058,7 @@
               <p>
                 A power line is to be run to an offshore facility in the manner described in <xref ref="ex_opt3">Example</xref>.
                 The offshore facility is 5 miles at sea and 2 miles along the shoreline from the power plant.
-                It costs <dollar />50,000 per mile to lay a power line underground and <dollar />80,000 to run the line underwater.
+                It costs $50,000 per mile to lay a power line underground and $80,000 to run the line underwater.
               </p>
 
               <p>
