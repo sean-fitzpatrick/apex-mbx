@@ -41,11 +41,11 @@
       This sequence of points will often converge rather quickly to a root of <m>f</m>.
     </p>
 
+  <figure xml:id="fig_newt1">
+    <caption>Demonstrating the geometric concept behind Newton's Method.</caption>
     <sidebyside widths="31% 31% 31%">
-      <caption>Demonstrating the geometric concept behind Newton's Method.</caption>
       <figure xml:id="fig_newt1a">
         <caption/>
-        <!-- START figures/fig_newt1a.tex -->
         <image xml:id="img_newt1a">
           <description></description>
           <latex-image>
@@ -69,10 +69,8 @@
         </image>
 
       </figure>
-      <!-- figures/fig_newt1a.tex END -->
       <figure xml:id="fig_newt1b">
         <caption/>
-        <!-- START figures/fig_newt1b.tex -->
         <image xml:id="img_newt1b">
           <description></description>
           <latex-image>
@@ -94,12 +92,10 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt1b.tex END -->
       </figure>
 
       <figure xml:id="fig_newt1c">
         <caption/>
-        <!-- START figures/fig_newt1c.tex -->
         <image xml:id="img_newt1c">
           <description></description>
           <latex-image>
@@ -121,9 +117,9 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt1c.tex END -->
       </figure>
     </sidebyside>
+  </figure>
 
     <p>
       We can use this <em>geometric</em>
@@ -272,7 +268,6 @@
 
         <figure xml:id="fig_newt2">
           <caption>A graph of <m>f(x) = x^3-x^2-1</m> in <xref ref="ex_newt2">Example</xref>.</caption>
-          <!-- START figures/fig_newt2.tex -->
           <image xml:id="img_newt2" width="47%">
             <description></description>
             <latex-image>
@@ -288,7 +283,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_newt2.tex END -->
         </figure>
       </solution>
     </example>
@@ -354,7 +348,6 @@
 
         <figure xml:id="fig_newt3">
           <caption>A graph of <m>f(x)=\cos(x) -x</m> used to find an initial approximation of its root.</caption>
-          <!-- START figures/fig_newt3.tex -->
           <image xml:id="img_newt3"  width="47%">
             <description></description>
             <latex-image>
@@ -373,7 +366,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_newt3.tex END -->
         </figure>
 
         <p>
@@ -470,7 +462,6 @@
 
     <figure xml:id="fig_newt2a">
       <caption>A graph of <m>f(x) = x^3-x^2-1</m>, showing why an initial approximation of <m>x_0=0</m> with Newton's Method fails.</caption>
-      <!-- START figures/fig_newt2a.tex -->
       <image xml:id="img_newt2a" width="47%">
         <description></description>
         <latex-image>
@@ -487,7 +478,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_newt2a.tex END -->
     </figure>
 
     <p>
@@ -523,11 +513,11 @@
       each successive approximation is twice as far from the true answer as the previous approximation.)
     </p>
 
+  <figure xml:id="fig_newt4">
+  <caption>Newton's Method fails to find a root of <m>f(x) = x^{1/3}</m>, regardless of the choice of <m>x_0</m>.</caption>
     <sidebyside widths="31% 31% 31%">
-      <caption>Newton's Method fails to find a root of <m>f(x) = x^{1/3}</m>, regardless of the choice of <m>x_0</m>.</caption>
       <figure xml:id="fig_newt4a">
         <caption/>
-        <!-- START figures/fig_newt4a.tex -->
         <image xml:id="img_newt4a">
           <description></description>
           <latex-image>
@@ -551,10 +541,8 @@
         </image>
 
       </figure>
-      <!-- figures/fig_newt4a.tex END -->
       <figure xml:id="fig_newt4b">
         <caption/>
-        <!-- START figures/fig_newt4b.tex -->
         <image xml:id="img_newt4b">
           <description></description>
           <latex-image>
@@ -576,12 +564,10 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt4b.tex END -->
       </figure>
 
       <figure xml:id="fig_newt4c">
         <caption/>
-        <!-- START figures/fig_newt4c.tex -->
         <image xml:id="img_newt4c">
           <description></description>
           <latex-image>
@@ -603,9 +589,9 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt4c.tex END -->
       </figure>
     </sidebyside>
+  </figure>
 
     <p>
       There is no <q>fix</q> to this problem; Newton's Method simply will not work and another method must be used. (In this case the particular reason Newton's Method fails is that the tangent line is vertical at the root).
@@ -709,36 +695,32 @@
                 Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
               </p>
 
-              <table>
-
-                <tabular>
-                  <row>
-                    <cell><m>x_0=</m></cell>
-                    <cell><var name="$x[0]" /></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_1=</m></cell>
-                    <cell><var name="$x[1]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_2=</m></cell>
-                    <cell><var name="$x[2]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_3=</m></cell>
-                    <cell><var name="$x[3]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_4=</m></cell>
-                    <cell><var name="$x[4]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_5=</m></cell>
-                    <cell><var name="$x[5]" width="10"/></cell>
-                  </row>
-                </tabular>
-
-              </table>
+              <tabular>
+                <row>
+                  <cell><m>x_0=</m></cell>
+                  <cell><var name="$x[0]" /></cell>
+                </row>
+                <row>
+                  <cell><m>x_1=</m></cell>
+                  <cell><var name="$x[1]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_2=</m></cell>
+                  <cell><var name="$x[2]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_3=</m></cell>
+                  <cell><var name="$x[3]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_4=</m></cell>
+                  <cell><var name="$x[4]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_5=</m></cell>
+                  <cell><var name="$x[5]" width="10"/></cell>
+                </row>
+              </tabular>
 
               <p>
                 Compare <m>x_5</m> to the known value of the root.
@@ -774,36 +756,32 @@
                 Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
               </p>
 
-              <table>
-
-                <tabular>
-                  <row>
-                    <cell><m>x_0=</m></cell>
-                    <cell><m><var name="$x[0]" /></m></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_1=</m></cell>
-                    <cell><var name="$x[1]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_2=</m></cell>
-                    <cell><var name="$x[2]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_3=</m></cell>
-                    <cell><var name="$x[3]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_4=</m></cell>
-                    <cell><var name="$x[4]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_5=</m></cell>
-                    <cell><var name="$x[5]" width="10"/></cell>
-                  </row>
-                </tabular>
-
-              </table>
+              <tabular>
+                <row>
+                  <cell><m>x_0=</m></cell>
+                  <cell><m><var name="$x[0]" /></m></cell>
+                </row>
+                <row>
+                  <cell><m>x_1=</m></cell>
+                  <cell><var name="$x[1]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_2=</m></cell>
+                  <cell><var name="$x[2]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_3=</m></cell>
+                  <cell><var name="$x[3]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_4=</m></cell>
+                  <cell><var name="$x[4]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_5=</m></cell>
+                  <cell><var name="$x[5]" width="10"/></cell>
+                </row>
+              </tabular>
 
               <p>
                 Compare <m>x_5</m> to the known value of the root.
@@ -839,36 +817,32 @@
                 Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
               </p>
 
-              <table>
-
-                <tabular>
-                  <row>
-                    <cell><m>x_0=</m></cell>
-                    <cell><m><var name="$x[0]" /></m></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_1=</m></cell>
-                    <cell><var name="$x[1]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_2=</m></cell>
-                    <cell><var name="$x[2]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_3=</m></cell>
-                    <cell><var name="$x[3]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_4=</m></cell>
-                    <cell><var name="$x[4]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_5=</m></cell>
-                    <cell><var name="$x[5]" width="10"/></cell>
-                  </row>
-                </tabular>
-
-              </table>
+              <tabular>
+                <row>
+                  <cell><m>x_0=</m></cell>
+                  <cell><m><var name="$x[0]" /></m></cell>
+                </row>
+                <row>
+                  <cell><m>x_1=</m></cell>
+                  <cell><var name="$x[1]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_2=</m></cell>
+                  <cell><var name="$x[2]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_3=</m></cell>
+                  <cell><var name="$x[3]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_4=</m></cell>
+                  <cell><var name="$x[4]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_5=</m></cell>
+                  <cell><var name="$x[5]" width="10"/></cell>
+                </row>
+              </tabular>
 
               <p>
                 Compare <m>x_5</m> to the known value of the root.
@@ -904,36 +878,32 @@
                 Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
               </p>
 
-              <table>
-
-                <tabular>
-                  <row>
-                    <cell><m>x_0=</m></cell>
-                    <cell><m><var name="$x[0]" /></m></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_1=</m></cell>
-                    <cell><var name="$x[1]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_2=</m></cell>
-                    <cell><var name="$x[2]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_3=</m></cell>
-                    <cell><var name="$x[3]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_4=</m></cell>
-                    <cell><var name="$x[4]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_5=</m></cell>
-                    <cell><var name="$x[5]" width="10"/></cell>
-                  </row>
-                </tabular>
-
-              </table>
+              <tabular>
+                <row>
+                  <cell><m>x_0=</m></cell>
+                  <cell><m><var name="$x[0]" /></m></cell>
+                </row>
+                <row>
+                  <cell><m>x_1=</m></cell>
+                  <cell><var name="$x[1]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_2=</m></cell>
+                  <cell><var name="$x[2]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_3=</m></cell>
+                  <cell><var name="$x[3]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_4=</m></cell>
+                  <cell><var name="$x[4]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_5=</m></cell>
+                  <cell><var name="$x[5]" width="10"/></cell>
+                </row>
+              </tabular>
 
               <p>
                 Compare <m>x_5</m> to the known value of the root.
@@ -969,36 +939,32 @@
                 Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
               </p>
 
-              <table>
-
-                <tabular>
-                  <row>
-                    <cell><m>x_0=</m></cell>
-                    <cell><m><var name="$x[0]" /></m></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_1=</m></cell>
-                    <cell><var name="$x[1]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_2=</m></cell>
-                    <cell><var name="$x[2]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_3=</m></cell>
-                    <cell><var name="$x[3]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_4=</m></cell>
-                    <cell><var name="$x[4]" width="10"/></cell>
-                  </row>
-                  <row>
-                    <cell><m>x_5=</m></cell>
-                    <cell><var name="$x[5]" width="10"/></cell>
-                  </row>
-                </tabular>
-
-              </table>
+              <tabular>
+                <row>
+                  <cell><m>x_0=</m></cell>
+                  <cell><m><var name="$x[0]" /></m></cell>
+                </row>
+                <row>
+                  <cell><m>x_1=</m></cell>
+                  <cell><var name="$x[1]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_2=</m></cell>
+                  <cell><var name="$x[2]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_3=</m></cell>
+                  <cell><var name="$x[3]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_4=</m></cell>
+                  <cell><var name="$x[4]" width="10"/></cell>
+                </row>
+                <row>
+                  <cell><m>x_5=</m></cell>
+                  <cell><var name="$x[5]" width="10"/></cell>
+                </row>
+              </tabular>
 
               <p>
                 Compare <m>x_5</m> to the known value of the root.
