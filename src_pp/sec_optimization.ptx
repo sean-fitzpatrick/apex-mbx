@@ -44,7 +44,6 @@
         we are trying to maximize the area.
       </p>
 
-        <!-- START figures/fig_opt1b.tex -->
       <figure xml:id="fig_opt1b">
         <caption>A sketch of the enclosure in <xref ref="ex_opt1">Example</xref>.</caption>
         <sidebyside widths="47% 47%">
@@ -103,7 +102,6 @@
 
         </sidebyside>
       </figure>
-          <!-- figures/fig_opt1b.tex END -->
       <p>
         We let <m>x</m> and <m>y</m> denote the lengths of the sides of the rectangle.
         Clearly,
@@ -292,7 +290,6 @@
               A key feature of the sketches is to acknowledge that one side is not fenced.
             </p>
 
-            <!-- START figures/fig_opt2a.tex -->
             <figure xml:id="fig_opt2a">
               <caption>A sketch of the enclosure in <xref ref="ex_opt2">Example</xref>.</caption>
               <sidebyside widths="47% 47%">
@@ -355,7 +352,6 @@
 
               </sidebyside>
             </figure>
-            <!-- figures/fig_opt2a.tex END -->
 
           </li>
 
@@ -464,7 +460,6 @@
 
       <figure xml:id="fig_opt3b">
         <caption>Running a power line from the power station to an offshore facility with minimal cost in <xref ref="ex_opt3">Example</xref>.</caption>
-          <!-- START figures/fig_opt3b.tex -->
         <image xml:id="img_opt3b" width="47%">
           <description></description>
           <latex-image>
@@ -492,7 +487,6 @@
           ]]>
           </latex-image>
         </image>
-          <!-- figures/fig_opt3b.tex END -->
       </figure>
     </statement>
     <solution>
@@ -527,7 +521,6 @@
 
       <figure xml:id="fig_opt3c">
         <caption>Labeling unknown distances in <xref ref="ex_opt3">Example</xref>.</caption>
-          <!-- START figures/fig_opt3c.tex -->
         <image xml:id="img_opt3c" width="47%">
           <description></description>
           <latex-image>
@@ -557,7 +550,6 @@
           ]]>
           </latex-image>
         </image>
-          <!-- figures/fig_opt3c.tex END -->
       </figure>
 
       <p>

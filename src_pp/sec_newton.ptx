@@ -46,7 +46,6 @@
     <sidebyside widths="31% 31% 31%">
       <figure xml:id="fig_newt1a">
         <caption/>
-        <!-- START figures/fig_newt1a.tex -->
         <image xml:id="img_newt1a">
           <description></description>
           <latex-image>
@@ -70,10 +69,8 @@
         </image>
 
       </figure>
-      <!-- figures/fig_newt1a.tex END -->
       <figure xml:id="fig_newt1b">
         <caption/>
-        <!-- START figures/fig_newt1b.tex -->
         <image xml:id="img_newt1b">
           <description></description>
           <latex-image>
@@ -95,12 +92,10 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt1b.tex END -->
       </figure>
 
       <figure xml:id="fig_newt1c">
         <caption/>
-        <!-- START figures/fig_newt1c.tex -->
         <image xml:id="img_newt1c">
           <description></description>
           <latex-image>
@@ -122,7 +117,6 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt1c.tex END -->
       </figure>
     </sidebyside>
   </figure>
@@ -274,7 +268,6 @@
 
         <figure xml:id="fig_newt2">
           <caption>A graph of <m>f(x) = x^3-x^2-1</m> in <xref ref="ex_newt2">Example</xref>.</caption>
-          <!-- START figures/fig_newt2.tex -->
           <image xml:id="img_newt2" width="47%">
             <description></description>
             <latex-image>
@@ -290,7 +283,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_newt2.tex END -->
         </figure>
       </solution>
     </example>
@@ -356,7 +348,6 @@
 
         <figure xml:id="fig_newt3">
           <caption>A graph of <m>f(x)=\cos(x) -x</m> used to find an initial approximation of its root.</caption>
-          <!-- START figures/fig_newt3.tex -->
           <image xml:id="img_newt3"  width="47%">
             <description></description>
             <latex-image>
@@ -375,7 +366,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_newt3.tex END -->
         </figure>
 
         <p>
@@ -472,7 +462,6 @@
 
     <figure xml:id="fig_newt2a">
       <caption>A graph of <m>f(x) = x^3-x^2-1</m>, showing why an initial approximation of <m>x_0=0</m> with Newton's Method fails.</caption>
-      <!-- START figures/fig_newt2a.tex -->
       <image xml:id="img_newt2a" width="47%">
         <description></description>
         <latex-image>
@@ -489,7 +478,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_newt2a.tex END -->
     </figure>
 
     <p>
@@ -530,7 +518,6 @@
     <sidebyside widths="31% 31% 31%">
       <figure xml:id="fig_newt4a">
         <caption/>
-        <!-- START figures/fig_newt4a.tex -->
         <image xml:id="img_newt4a">
           <description></description>
           <latex-image>
@@ -554,10 +541,8 @@
         </image>
 
       </figure>
-      <!-- figures/fig_newt4a.tex END -->
       <figure xml:id="fig_newt4b">
         <caption/>
-        <!-- START figures/fig_newt4b.tex -->
         <image xml:id="img_newt4b">
           <description></description>
           <latex-image>
@@ -579,12 +564,10 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt4b.tex END -->
       </figure>
 
       <figure xml:id="fig_newt4c">
         <caption/>
-        <!-- START figures/fig_newt4c.tex -->
         <image xml:id="img_newt4c">
           <description></description>
           <latex-image>
@@ -606,7 +589,6 @@
           ]]>
           </latex-image>
         </image>
-        <!-- figures/fig_newt4c.tex END -->
       </figure>
     </sidebyside>
   </figure>
