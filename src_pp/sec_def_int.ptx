@@ -24,11 +24,10 @@
       we can say this area represents 50 ft.
     </p>
 
-    <todo>Add some sort of style guidelines for areas.</todo>
+    <!-- <todo>Add some sort of style guidelines for areas.</todo> -->
 
     <figure xml:id="fig_defint1">
       <caption>The area under a constant velocity function corresponds to distance traveled.</caption>
-      <!-- START figures/fig_defint1.tex -->
       <image xml:id="img_defint1"  width="47%">
         <description></description>
         <latex-image>
@@ -50,7 +49,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_defint1.tex END -->
     </figure>
 
     <p>
@@ -91,7 +89,6 @@
 
     <figure xml:id="fig_defint2">
       <caption>The total displacement is the area above the <m>t</m><ndash />axis minus the area below the <m>t</m><ndash />axis.</caption>
-      <!-- START figures/fig_defint2.tex -->
       <image xml:id="img_defint2"  width="47%">
         <description></description>
         <latex-image>
@@ -118,7 +115,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_defint2.tex END -->
     </figure>
 
     <p>
@@ -134,25 +130,27 @@
           When <m>t=0</m>, the object had a height of 0 ft.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              What was the initial velocity of the object?
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                What was the initial velocity of the object?
+              </p>
+            </li>
 
-          <li>
-            <p>
-              What was the maximum height of the object?
-            </p>
-          </li>
+            <li>
+              <p>
+                What was the maximum height of the object?
+              </p>
+            </li>
 
-          <li>
-            <p>
-              What was the height of the object at time <m>t=2</m>?
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                What was the height of the object at time <m>t=2</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
         <p>
@@ -231,7 +229,6 @@
 
         <figure xml:id="fig_defint3">
           <caption>A graph of <m>v(t)=-32t+48</m>; the shaded areas help determine displacement.</caption>
-          <!-- START figures/fig_defint3.tex -->
           <image xml:id="img_defint3"  width="47%">
             <description></description>
             <latex-image>
@@ -252,7 +249,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_defint3.tex END -->
         </figure>
 
         <p>
@@ -268,7 +264,6 @@
             <mrow>\text{ Area } \amp = \frac12\text{ Base }  \times \text{ Height }</mrow>
             <mrow>\amp =\frac12\times 1.5\text{s} \times 48\text{ ft/s }</mrow>
             <mrow>\amp = 36\text{ ft }</mrow>
-            ,
           </md>
           which matches our previous calculation of the maximum height.
         </p>
@@ -407,7 +402,6 @@
 
         <figure xml:id="fig_defint4">
           <caption>A graph of <m>f(x)</m> in <xref ref="ex_defint4">Example</xref>.</caption>
-          <!-- START figures/fig_defint4.tex -->
           <image xml:id="img_defint4"  width="47%">
             <description></description>
             <latex-image>
@@ -426,83 +420,85 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_defint4.tex END -->
         </figure>
 
         <p>
           Find:
         </p>
 
-        <ol cols="2">
-          <li>
-            <p>
-              <m>\ds \int_0^3 f(x)\ dx</m>
-            </p>
-          </li>
+        <p>
+          <ol cols="2">
+            <li>
+              <p>
+                <m>\ds \int_0^3 f(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_3^5 f(x)\ dx</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_3^5 f(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_0^5 f(x)\ dx</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_0^5 f(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_0^3 5f(x)\ dx</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_0^3 5f(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_1^1 f(x) \ dx</m>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\ds \int_1^1 f(x) \ dx</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              <m>\int_0^3 f(x)\ dx</m> is the area under <m>f</m> on the interval <m>[0,3]</m>.
-              This region is a triangle,
-              so the area is <m>\int_0^3 f(x)\ dx=\frac12(3)(1) = 1.5</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\int_0^3 f(x)\ dx</m> is the area under <m>f</m> on the interval <m>[0,3]</m>.
+                This region is a triangle,
+                so the area is <m>\int_0^3 f(x)\ dx=\frac12(3)(1) = 1.5</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\int_3^5 f(x)\ dx</m> represents the area of the triangle found under the <m>x</m><ndash />axis on <m>[3,5]</m>.
-              The area is <m>\frac12(2)(1) = 1</m>;
-              since it is found <em>under</em>
-              the <m>x</m><ndash />axis,
-              this is <q>negative area.</q> Therefore <m>\int_3^5 f(x)\ dx = -1</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\int_3^5 f(x)\ dx</m> represents the area of the triangle found under the <m>x</m><ndash />axis on <m>[3,5]</m>.
+                The area is <m>\frac12(2)(1) = 1</m>;
+                since it is found <em>under</em>
+                the <m>x</m><ndash />axis,
+                this is <q>negative area.</q> Therefore <m>\int_3^5 f(x)\ dx = -1</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\int_0^5f(x)\ dx</m> is the total signed area under <m>f</m> on <m>[0,5]</m>.
-              This is <m>1.5 + (-1) = 0.5</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\int_0^5f(x)\ dx</m> is the total signed area under <m>f</m> on <m>[0,5]</m>.
+                This is <m>1.5 + (-1) = 0.5</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\int_0^35f(x)\ dx</m> is the area under <m>5f</m> on <m>[0,3]</m>.
-              This is sketched in <xref ref="fig_defint4a">Figure</xref>.
-              Again, the region is a triangle,
-              with height 5 times that of the height of the original triangle.
-              Thus the area is <m>\int_0^35f(x)\ dx = 15/2 = 7.5</m>.
+            <li>
+              <p>
+                <m>\int_0^35f(x)\ dx</m> is the area under <m>5f</m> on <m>[0,3]</m>.
+                This is sketched in <xref ref="fig_defint4a">Figure</xref>.
+                Again, the region is a triangle,
+                with height 5 times that of the height of the original triangle.
+                Thus the area is <m>\int_0^35f(x)\ dx = 15/2 = 7.5</m>.
+              </p>
 
               <figure xml:id="fig_defint4a">
                 <caption>A graph of <m>5f</m> in <xref ref="ex_defint4">Example</xref>. (Yes, it looks just like the graph of <m>f</m> in <xref ref="fig_defint4">Figure</xref>, just with a different <m>y</m>-scale.)</caption>
-            <!-- START figures/fig_defint4a.tex -->
                 <image xml:id="img_defint4a" width="47%">
                   <description></description>
                   <latex-image>
@@ -519,22 +515,20 @@
                   ]]>
                   </latex-image>
                 </image>
-            <!-- figures/fig_defint4a.tex END -->
               </figure>
+            </li>
 
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\int_1^1f(x)\ dx</m> is the area under <m>f</m> on the
-              <q>interval</q> <m>[1,1]</m>.
-              This describes a line segment,
-              not a region; it has no width.
-              Therefore the area is 0.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\int_1^1f(x)\ dx</m> is the area under <m>f</m> on the
+                <q>interval</q> <m>[1,1]</m>.
+                This describes a line segment,
+                not a region; it has no width.
+                Therefore the area is 0.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
@@ -561,37 +555,39 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\ds \int_a^a f(x)\ dx = 0</m>
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\ds \int_a^a f(x)\ dx = 0</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_a^b f(x)\ dx + \int_b^c f(x)\ dx = \int_a^cf(x)\ dx</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_a^b f(x)\ dx + \int_b^c f(x)\ dx = \int_a^cf(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_a^bf(x)\ dx = -\int_b^a f(x)\ dx</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_a^bf(x)\ dx = -\int_b^a f(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_a^b\big(f(x)\pm g(x)\big)\ dx = \int_a^bf(x)\ dx \pm \int_a^bg(x)\ dx</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_a^b\big(f(x)\pm g(x)\big)\ dx = \int_a^bf(x)\ dx \pm \int_a^bg(x)\ dx</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_a^bk\cdot f(x)\ dx = k\cdot\int_a^bf(x)\ dx</m>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\ds \int_a^bk\cdot f(x)\ dx = k\cdot\int_a^bf(x)\ dx</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -599,69 +595,70 @@
       We give a brief justification of <xref ref="thm_defintprop">Theorem</xref> here.
     </p>
 
-    <ol>
-      <li>
-        <p>
-          As demonstrated in <xref ref="ex_defint4">Example</xref>,
-          there is no <q>area under the curve</q>
-          when the region has no width;
-          hence this definite integral is 0.
-        </p>
-      </li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            As demonstrated in <xref ref="ex_defint4">Example</xref>,
+            there is no <q>area under the curve</q>
+            when the region has no width;
+            hence this definite integral is 0.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          This states that total area is the sum of the areas of subregions.
-          It is easily considered when we let <m>a\lt b\lt c</m>.
-          We can break the interval <m>[a,c]</m> into two subintervals,
-          <m>[a,b]</m> and <m>[b,c]</m>.
-          The total area over <m>[a,c]</m> is the area over <m>[a,b]</m> plus the area over <m>[b,c]</m>.
- 
-		It is important to note that this still holds true even if <m>a\lt b\lt c</m> is not true. We discuss this in the next point.
-        </p>
-      </li>
+        <li>
+          <p>
+            This states that total area is the sum of the areas of subregions.
+            It is easily considered when we let <m>a\lt b\lt c</m>.
+            We can break the interval <m>[a,c]</m> into two subintervals,
+            <m>[a,b]</m> and <m>[b,c]</m>.
+            The total area over <m>[a,c]</m> is the area over <m>[a,b]</m> plus the area over <m>[b,c]</m>.
+  
+            It is important to note that this still holds true even if <m>a\lt b\lt c</m> is not true. We discuss this in the next point.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          This property can be viewed a merely a convention to make other properties work well.
-          (Later we will see how this property has a justification all its own,
-          not necessarily in support of other properties.)
-          Suppose <m>b\lt a\lt c</m>.
-          The discussion from the previous point clearly justifies
-          <men xml:id="eq_defint1">
-            \int_b^a f(x)\ dx + \int_a^c f(x)\ dx = \int_b^c f(x)\ dx
-          </men>.
-          However, we still claim that, as originally stated,
-          <men xml:id="eq_defint2">
-            \int_a^b f(x)\ dx + \int_b^c f(x)\ dx = \int_a^c f(x)\ dx
-          </men>.
-          How do Equations <xref ref="eq_defint1" /> and <xref ref="eq_defint2" /> relate?
-          Start with Equation <xref ref="eq_defint1" />:
-          <md>
-            <mrow>\int_b^a f(x)\ dx + \int_a^c f(x)\ dx \amp = \int_b^c f(x)\ dx</mrow>
-            <mrow>\int_a^c f(x)\ dx \amp = -\int_b^a f(x)\ dx + \int_b^c f(x)\ dx</mrow>
-          </md>
-          Property <m>(3)</m> justifies changing the sign and switching the bounds of integration on the <m>\ds -\int_b^a f(x)\ dx</m> term;
-          when this is done, Equations <xref ref="eq_defint1" /> and <xref ref="eq_defint2" /> are equivalent.
+        <li>
+          <p>
+            This property can be viewed a merely a convention to make other properties work well.
+            (Later we will see how this property has a justification all its own,
+            not necessarily in support of other properties.)
+            Suppose <m>b\lt a\lt c</m>.
+            The discussion from the previous point clearly justifies
+            <men xml:id="eq_defint1">
+              \int_b^a f(x)\ dx + \int_a^c f(x)\ dx = \int_b^c f(x)\ dx
+            </men>.
+            However, we still claim that, as originally stated,
+            <men xml:id="eq_defint2">
+              \int_a^b f(x)\ dx + \int_b^c f(x)\ dx = \int_a^c f(x)\ dx
+            </men>.
+            How do Equations <xref ref="eq_defint1" /> and <xref ref="eq_defint2" /> relate?
+            Start with Equation <xref ref="eq_defint1" />:
+            <md>
+              <mrow>\int_b^a f(x)\ dx + \int_a^c f(x)\ dx \amp = \int_b^c f(x)\ dx</mrow>
+              <mrow>\int_a^c f(x)\ dx \amp = -\int_b^a f(x)\ dx + \int_b^c f(x)\ dx</mrow>
+            </md>
+            Property <m>(3)</m> justifies changing the sign and switching the bounds of integration on the <m>\ds -\int_b^a f(x)\ dx</m> term;
+            when this is done, Equations <xref ref="eq_defint1" /> and <xref ref="eq_defint2" /> are equivalent.
 
-          The conclusion is this:
-          by adopting the convention of Property (3), Property (2) holds no matter the order of <m>a</m>,
-          <m>b</m> and <m>c</m>.
-          Again, in the next section we will see another justification for this property.
-        </p>
-      </li>
+            The conclusion is this:
+            by adopting the convention of Property (3), Property (2) holds no matter the order of <m>a</m>,
+            <m>b</m> and <m>c</m>.
+            Again, in the next section we will see another justification for this property.
+          </p>
+        </li>
 
-      <li>
-        <title>4,5.</title>
-        <p>
-          Each of these may be non<ndash />intuitive.
-          Property (5) states that when one scales a function by,
-          for instance, 7, the area of the enclosed region also is scaled by a factor of 7.
-          Both Properties (4) and (5) can be proved using geometry.
-          The details are not complicated but are not discussed here.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <p>
+            Each of these may be non<ndash />intuitive.
+            Property (5) states that when one scales a function by,
+            for instance, 7, the area of the enclosed region also is scaled by a factor of 7.
+            Both Properties (4) and (5) can be proved using geometry.
+            The details are not complicated but are not discussed here.
+          </p>
+        </li>
+      </ol>
+    </p>
 
     <example xml:id="ex_defint5">
       <title>Evaluating definite integrals using properties of the definite integral</title>
@@ -672,7 +669,6 @@
 
         <figure xml:id="fig_defint5">
           <caption>A graph of a function in <xref ref="ex_defint5">Example</xref>.</caption>
-          <!-- START figures/fig_defint5.tex -->
           <image xml:id="img_defint5"  width="47%">
             <description></description>
             <latex-image>
@@ -692,63 +688,66 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_defint5.tex END -->
         </figure>
 
         <p>
           Answer the following:
         </p>
 
-        <ol>
-          <li>
-            <p>
-              Which value is greater:
-              <m>\ds \int_a^b f(x)\ dx</m> or <m>\ds \int_b^c f(x)\ dx</m>?
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Which value is greater:
+                <m>\ds \int_a^b f(x)\ dx</m> or <m>\ds \int_b^c f(x)\ dx</m>?
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Is <m>\ds \int_a^c f(x)\ dx</m> greater or less than 0?
-            </p>
-          </li>
+            <li>
+              <p>
+                Is <m>\ds \int_a^c f(x)\ dx</m> greater or less than 0?
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Which value is greater:
-              <m>\ds \int_a^b f(x)\ dx</m> or <m>\ds \int_c^b f(x)\ dx</m>?
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Which value is greater:
+                <m>\ds \int_a^b f(x)\ dx</m> or <m>\ds \int_c^b f(x)\ dx</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              <m>\int_a^b f(x)\ dx</m> has a positive value
-              (since the area is above the <m>x</m><ndash />axis)
-              whereas <m>\int_b^c f(x)\ dx</m> has a negative value.
-              Hence <m>\int_a^b f(x)\ dx</m> is bigger.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\int_a^b f(x)\ dx</m> has a positive value
+                (since the area is above the <m>x</m><ndash />axis)
+                whereas <m>\int_b^c f(x)\ dx</m> has a negative value.
+                Hence <m>\int_a^b f(x)\ dx</m> is bigger.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\int_a^c f(x)\ dx</m> is the total signed area under <m>f</m> between <m>x=a</m> and <m>x=c</m>.
-              Since the region below the <m>x</m><ndash />axis looks to be larger than the region above,
-              we conclude that the definite integral has a value less than 0.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\int_a^c f(x)\ dx</m> is the total signed area under <m>f</m> between <m>x=a</m> and <m>x=c</m>.
+                Since the region below the <m>x</m><ndash />axis looks to be larger than the region above,
+                we conclude that the definite integral has a value less than 0.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Note how the second integral has the bounds <q>reversed.</q>
-              Therefore <m>\int_c^b f(x)\ dx=-\int_b^c f(x)\ dx</m> represents a positive number,
-              greater than the area described by the first definite integral.
-              Hence <m>\int_c^b f(x)\ dx</m> is greater.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Note how the second integral has the bounds <q>reversed.</q>
+                Therefore <m>\int_c^b f(x)\ dx=-\int_b^c f(x)\ dx</m> represents a positive number,
+                greater than the area described by the first definite integral.
+                Hence <m>\int_c^b f(x)\ dx</m> is greater.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
@@ -758,12 +757,14 @@
 
     <example xml:id="ex_defint8">
       <title>Evaluating definite integrals using geometry</title>
-      <p>
-        Evaluate the following definite integrals:
-        <me>
-          1. \ \int_{-2}^5 (2x-4)\ dx \qquad 2.\ \int_{-3}^3 \sqrt{9-x^2}\ dx
-        </me>.
-      </p>
+      <statement>
+        <p>
+          Evaluate the following definite integrals:
+          <me>
+            1. \ \int_{-2}^5 (2x-4)\ dx \qquad 2.\ \int_{-3}^3 \sqrt{9-x^2}\ dx
+          </me>.
+        </p>
+      </statement>
       <solution>
         <p>
           <ol>
@@ -796,63 +797,58 @@
                 <me>
                   \int_{-3}^3 \sqrt{9-x^2}\ dx = \frac12\pi r^2 = \frac 92\pi
                 </me>.
-                <sidebyside widths="47% 47%">
-                  <caption>Graphs from <xref ref="ex_defint8">Example</xref></caption>
-                  <figure xml:id="fig_defint8a">
-                    <caption><m>f(x) = 2x-4</m></caption>
-            <!-- START figures/fig_defint8a.tex -->
-                    <image xml:id="img_defint8a">
-                      <description></description>
-                      <latex-image>
-                      <![CDATA[
-                      \begin{tikzpicture}
-                      \begin{axis}[axis on top,
-                      ymin=-11,ymax=11,%
-                      xmin=-3.5,xmax=5.5]
-                      \addplot+[-,domain=-2:5] {2*x-4};
-                      \addplot [{\coloronefill},fill={\coloronefill},area style,domain=-2:5] {2*x-4} \closedcycle;
-                      \addplot[soliddot] coordinates{(-2,-8)} node[right]{\small $(-2,-8)$};
-                      \addplot[soliddot] coordinates{(5,6)} node[left]{\small $(5,6)$}; 
-                      \draw (axis cs:-1,-2) node {\scriptsize $R_1$};
-                      \draw (axis cs:4.2,2) node {\scriptsize $R_2$};
-
-                      \end{axis}
-
-                      \end{tikzpicture}
-                      ]]>
-                      </latex-image>
-                    </image>
-            <!-- figures/fig_defint8a.tex END -->
-                  </figure>
-
-                  <figure xml:id="fig_defint8b">
-                    <caption><m>f(x) = \sqrt{9-x^2}</m></caption>
-            <!-- START figures/fig_defint8b.tex -->
-                    <image xml:id="img_defint8b">
-                      <description></description>
-                      <latex-image>
-                      <![CDATA[
-                      \begin{tikzpicture}
-                      \begin{axis}[axis on top,
-                      xtick={-3,3},
-                      extra y ticks={1,2,3,4},
-                      extra y tick labels=\empty,
-                      ytick={5},
-                      ymin=-.5,ymax=5.5,
-                      xmin=-3.5,xmax=3.5]
-
-                      \addplot+[-,domain=0:180,samples=50] ({3*cos (x)},{3*sin(x)});
-                      \addplot [smooth,{\coloronefill},fill={\coloronefill},area style,domain=0:180] ({3*cos (x)},{3*sin(x)}) \closedcycle;
-                      \end{axis}
-                      \end{tikzpicture}
-                      ]]>
-                      </latex-image>
-                    </image>
-            <!-- figures/fig_defint8b.tex END -->
-                  </figure>
-                </sidebyside>
-
               </p>
+         
+              <sidebyside widths="47% 47%">
+                <figure xml:id="fig_defint8a">
+                  <caption><m>f(x) = 2x-4</m></caption>
+                  <image xml:id="img_defint8a">
+                    <description></description>
+                    <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                    \begin{axis}[axis on top,
+                    ymin=-11,ymax=11,%
+                    xmin=-3.5,xmax=5.5]
+                    \addplot+[-,domain=-2:5] {2*x-4};
+                    \addplot [{\coloronefill},fill={\coloronefill},area style,domain=-2:5] {2*x-4} \closedcycle;
+                    \addplot[soliddot] coordinates{(-2,-8)} node[right]{\small $(-2,-8)$};
+                    \addplot[soliddot] coordinates{(5,6)} node[left]{\small $(5,6)$}; 
+                    \draw (axis cs:-1,-2) node {\scriptsize $R_1$};
+                    \draw (axis cs:4.2,2) node {\scriptsize $R_2$};
+
+                    \end{axis}
+
+                    \end{tikzpicture}
+                    ]]>
+                    </latex-image>
+                  </image>
+                </figure>
+
+                <figure xml:id="fig_defint8b">
+                  <caption><m>f(x) = \sqrt{9-x^2}</m></caption>
+                  <image xml:id="img_defint8b">
+                    <description></description>
+                    <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                    \begin{axis}[axis on top,
+                    xtick={-3,3},
+                    extra y ticks={1,2,3,4},
+                    extra y tick labels=\empty,
+                    ytick={5},
+                    ymin=-.5,ymax=5.5,
+                    xmin=-3.5,xmax=3.5]
+
+                    \addplot+[-,domain=0:180,samples=50] ({3*cos (x)},{3*sin(x)});
+                    \addplot [smooth,{\coloronefill},fill={\coloronefill},area style,domain=0:180] ({3*cos (x)},{3*sin(x)}) \closedcycle;
+                    \end{axis}
+                    \end{tikzpicture}
+                    ]]>
+                    </latex-image>
+                  </image>
+                </figure>
+              </sidebyside>       
             </li>
           </ol>
         </p>
@@ -872,7 +868,6 @@
 
         <figure xml:id="fig_defint6">
           <caption>A graph of a velocity in <xref ref="ex_defint6">Example</xref>.</caption>
-          <!-- START figures/fig_defint6.tex -->
           <image xml:id="img_defint6"  width="47%">
             <description></description>
             <latex-image>
@@ -901,7 +896,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_defint6.tex END -->
         </figure>
       </statement>
       <solution>
@@ -938,7 +932,6 @@
 
     <figure xml:id="fig_defint7">
       <caption>What is the area below <m>y=x^2</m> on <m>[0,3]</m>? The region is not a usual geometric shape.</caption>
-      <!-- START figures/fig_defint7.tex -->
       <image xml:id="img_defint7"  width="47%">
         <description></description>
         <latex-image>
@@ -955,7 +948,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_defint7.tex END -->
     </figure>
 
     <p>
@@ -963,6 +955,11 @@
       we will explore how to find the areas of such regions.
     </p>
   </introduction>
+
+  <subsection>
+  <title>Please restructure me</title>
+  <p>file hurts to read</p>
+  </subsection>
 
   <exercises>
     <exercisegroup>
@@ -1080,8 +1077,7 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_05.tex -->
+
                 <image xml:id="img_05_02_ex_05"  width="47%">
                   <description></description>
                   <latex-image>
@@ -1111,45 +1107,45 @@
                   ]]>
                   </latex-image>
                 </image>
-            <!-- figures/fig_05_02_ex_05.tex END -->
-                <ol cols="2">
-                  <li>
-                    <p>
-                      <m>\ds \int_0^1 (-2x+4)\ dx = </m><var name="$a" width="3" />
-                    </p>
-                  </li>
+                <p>
+                  <ol cols="2">
+                    <li>
+                      <p>
+                        <m>\ds \int_0^1 (-2x+4)\ dx = </m><var name="$a" width="3" />
+                      </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      <m>\ds \int_0^2 (-2x+4)\ dx = </m><var name="$b" width="3" />
-                    </p>
-                  </li>
+                    <li>
+                      <p>
+                        <m>\ds \int_0^2 (-2x+4)\ dx = </m><var name="$b" width="3" />
+                      </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      <m>\ds \int_0^3 (-2x+4)\ dx = </m><var name="$c" width="3" />
-                    </p>
-                  </li>
+                    <li>
+                      <p>
+                        <m>\ds \int_0^3 (-2x+4)\ dx = </m><var name="$c" width="3" />
+                      </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      <m>\ds \int_1^3 (-2x+4)\ dx = </m><var name="$d" width="3" />
-                    </p>
-                  </li>
+                    <li>
+                      <p>
+                        <m>\ds \int_1^3 (-2x+4)\ dx = </m><var name="$d" width="3" />
+                      </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      <m>\ds \int_2^4 (-2x+4)\ dx = </m><var name="$e" width="3" />
-                    </p>
-                  </li>
+                    <li>
+                      <p>
+                        <m>\ds \int_2^4 (-2x+4)\ dx = </m><var name="$e" width="3" />
+                      </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      <m>\ds \int_0^1 (-6x+12)\ dx = </m><var name="$f" width="3" />
-                    </p>
-                  </li>
-                </ol>
-              </figure>
+                    <li>
+                      <p>
+                        <m>\ds \int_0^1 (-6x+12)\ dx = </m><var name="$f" width="3" />
+                      </p>
+                    </li>
+                  </ol>
+                </p>
             </statement>
         </webwork>
       </exercise>
@@ -1168,40 +1164,38 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_06.tex -->
-                <image xml:id="img_05_02_ex_06"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4,5},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={5},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-2.2,ymax=2.2,%
-			xmin=-.9,xmax=5.5%
-                  ]
+              <image xml:id="img_05_02_ex_06"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3,4,5},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={5},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-2.2,ymax=2.2,%
+    xmin=-.9,xmax=5.5%
+                ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},domain=0:2] {-2};
-                  \addplot [thick, {\colorone},domain=2:3] {2*x-6};
-                  \addplot [thick, {\colorone},domain=3:5] {x-3};
+                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},domain=0:2] {-2};
+                \addplot [thick, {\colorone},domain=2:3] {2*x-6};
+                \addplot [thick, {\colorone},domain=3:5] {x-3};
 
-                  \draw (axis cs:3.2,-1.5) node {\scriptsize $y = f(x)$};
+                \draw (axis cs:3.2,-1.5) node {\scriptsize $y = f(x)$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_06.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1239,7 +1233,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1258,41 +1252,40 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_07.tex -->
-                <image xml:id="img_05_02_ex_07"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4,5},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={5},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=4.5,%
-			xmin=-.9,xmax=4.5%
-                  ]
+              <image xml:id="img_05_02_ex_07"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3,4,5},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={5},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-.5,ymax=4.5,%
+    xmin=-.9,xmax=4.5%
+                ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},domain=0:1] {4*x};
-                  \addplot [thick, {\colorone},domain=1:2] {-4*(x-2)};
-                  \addplot [thick, {\colorone},domain=2:3] {2*(x-2)};
-                  \addplot [thick, {\colorone},domain=3:4] {-2*(x-4)};
+                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},domain=0:1] {4*x};
+                \addplot [thick, {\colorone},domain=1:2] {-4*(x-2)};
+                \addplot [thick, {\colorone},domain=2:3] {2*(x-2)};
+                \addplot [thick, {\colorone},domain=3:4] {-2*(x-4)};
 
-                  \draw (axis cs:3,2.5) node {\scriptsize $y = f(x)$};
+                \draw (axis cs:3,2.5) node {\scriptsize $y = f(x)$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_07.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1330,7 +1323,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1349,38 +1342,36 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_08.tex -->
-                <image xml:id="img_05_02_ex_08"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4,5},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.5,ymax=3.5,%
-			xmin=-.9,xmax=4.5%
-                  ]
+              <image xml:id="img_05_02_ex_08"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3,4,5},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+    ytick={-1,1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-1.5,ymax=3.5,%
+    xmin=-.9,xmax=4.5%
+                ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},domain=0:4] {x-1};
+                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},domain=0:4] {x-1};
 
-                  \draw (axis cs:2,2.5) node {\scriptsize $y = x-1$};
+                \draw (axis cs:2,2.5) node {\scriptsize $y = x-1$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_08.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1418,7 +1409,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1436,38 +1427,37 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_09.tex -->
-                <image xml:id="img_05_02_ex_09"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=3.5,%
-			xmin=-.9,xmax=4.5%
-                  ]
+              <image xml:id="img_05_02_ex_09"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3,4},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+    ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-.5,ymax=3.5,%
+    xmin=-.9,xmax=4.5%
+                ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},smooth,samples=40,domain=0:3.14159] ({2*cos(deg(x))+2}, {2*sin(deg(x))});
+                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},smooth,samples=40,domain=0:3.14159] ({2*cos(deg(x))+2}, {2*sin(deg(x))});
 
-                  \draw (axis cs:3,2.4) node {\scriptsize $f(x) = \sqrt{4-(x-2)^2}$};
+                \draw (axis cs:3,2.4) node {\scriptsize $f(x) = \sqrt{4-(x-2)^2}$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_09.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+      
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1493,7 +1483,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1521,41 +1511,40 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_10.tex -->
-                <image xml:id="img_05_02_ex_10"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-105,ymax=55,%
-			xmin=-.9,xmax=3.5%
-                  ]
+              <image xml:id="img_05_02_ex_10"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-105,ymax=55,%
+    xmin=-.9,xmax=3.5%
+                ]
 
-                  \addplot [{\coloronefill},fill={\coloronefill},domain=0:3,area style,smooth] {60*x*(1-x)*(x-2)*(x-2)*(x-3)} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},smooth,samples=40,domain=0:3] {60*x*(1-x)*(x-2)*(x-2)*(x-3)};
+                \addplot [{\coloronefill},fill={\coloronefill},domain=0:3,area style,smooth] {60*x*(1-x)*(x-2)*(x-2)*(x-3)} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},smooth,samples=40,domain=0:3] {60*x*(1-x)*(x-2)*(x-2)*(x-3)};
 
-                  \draw (axis cs:1.5,30) node {\scriptsize $y=f(x)$};
-                  \draw (axis cs:.45,-10) node {\scriptsize $59$};
-                  \draw (axis cs:1.4,10) node {\scriptsize $11$};
-                  \draw (axis cs:2.6,10) node {\scriptsize $21$};
+                \draw (axis cs:1.5,30) node {\scriptsize $y=f(x)$};
+                \draw (axis cs:.45,-10) node {\scriptsize $59$};
+                \draw (axis cs:1.4,10) node {\scriptsize $11$};
+                \draw (axis cs:2.6,10) node {\scriptsize $21$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_10.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+          
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1581,7 +1570,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1598,41 +1587,40 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_11.tex -->
-                <image xml:id="img_05_02_ex_11"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.5,ymax=1.5,%
-			xmin=-.9,xmax=4.5%
-                  ]
+              <image xml:id="img_05_02_ex_11"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3,4},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-1.5,ymax=1.5,%
+    xmin=-.9,xmax=4.5%
+                ]
 
-                  \addplot [{\coloronefill},fill={\coloronefill},domain=0:4,area style,smooth] {sin(deg(3.14159*x/2))} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},smooth,samples=40,domain=0:4] {sin(deg(3.14159*x/2))};
+                \addplot [{\coloronefill},fill={\coloronefill},domain=0:4,area style,smooth] {sin(deg(3.14159*x/2))} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},smooth,samples=40,domain=0:4] {sin(deg(3.14159*x/2))};
 
-                  \draw (axis cs:3,0.75) node {\scriptsize $f(x)=\sin(\pi x/2)$};
-                  \draw (axis cs:1,.6) node {\scriptsize $4/\pi$};
-                  \draw (axis cs:3,-.6) node {\scriptsize $4/\pi$};
-                  %\draw (axis cs:2.6,10) node {\scriptsize $21$};
+                \draw (axis cs:3,0.75) node {\scriptsize $f(x)=\sin(\pi x/2)$};
+                \draw (axis cs:1,.6) node {\scriptsize $4/\pi$};
+                \draw (axis cs:3,-.6) node {\scriptsize $4/\pi$};
+                %\draw (axis cs:2.6,10) node {\scriptsize $21$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_11.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+    
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1658,7 +1646,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1675,42 +1663,41 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_12.tex -->
-                <image xml:id="img_05_02_ex_12"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-2,-1,1,2},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-5.5,ymax=11,%
-			xmin=-2.5,xmax=2.5%
-                  ]
+              <image xml:id="img_05_02_ex_12"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={-2,-1,1,2},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-5.5,ymax=11,%
+    xmin=-2.5,xmax=2.5%
+                ]
 
-                  \addplot [{\coloronefill},fill={\coloronefill},domain=-2:2,area style] {3*x^2-3} |- (axis cs:-2,0) --cycle;
-                  \addplot [thick, {\colorone},smooth,samples=40,domain=-2:2] {3*x^2-3};
+                \addplot [{\coloronefill},fill={\coloronefill},domain=-2:2,area style] {3*x^2-3} |- (axis cs:-2,0) --cycle;
+                \addplot [thick, {\colorone},smooth,samples=40,domain=-2:2] {3*x^2-3};
 
-                  %\draw (axis cs:-.9,8) node {\scriptsize $f(x)=3x^2-3$};
-                  \draw (axis cs:1.5,10) node {\scriptsize $f(x)=3x^2-3$};
-                  \draw (axis cs:-1.5,1) node {\scriptsize $4$};
-                  \draw (axis cs:1.5,1) node {\scriptsize $4$};
-                  \draw (axis cs:.3,-1) node {\scriptsize $-4$};
+                %\draw (axis cs:-.9,8) node {\scriptsize $f(x)=3x^2-3$};
+                \draw (axis cs:1.5,10) node {\scriptsize $f(x)=3x^2-3$};
+                \draw (axis cs:-1.5,1) node {\scriptsize $4$};
+                \draw (axis cs:1.5,1) node {\scriptsize $4$};
+                \draw (axis cs:.3,-1) node {\scriptsize $-4$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_12.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+          
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1736,7 +1723,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1753,43 +1740,42 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_13.tex -->
-                <image xml:id="img_05_02_ex_13"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=4.2,%
-			xmin=-.2,xmax=2.1%
-                  ]
+              <image xml:id="img_05_02_ex_13"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-.1,ymax=4.2,%
+    xmin=-.2,xmax=2.1%
+                ]
 
-                  \addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},smooth,samples=40,domain=0:2] {x^2};
+                \addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},smooth,samples=40,domain=0:2] {x^2};
 
-                  \draw [thick,{\colorone},dashed] (axis cs:1,0) -- (axis cs:1,1);
+                \draw [thick,{\colorone},dashed] (axis cs:1,0) -- (axis cs:1,1);
 
-                  \draw (axis cs:1,3) node {\scriptsize $f(x)=x^2$};
-                  \draw (axis cs:.7,.2) node {\scriptsize $1/3$};
-                  \draw (axis cs:1.5,.2) node {\scriptsize $7/3$};
-                  %\draw (axis cs:.3,-1) node {\scriptsize $-4$};
+                \draw (axis cs:1,3) node {\scriptsize $f(x)=x^2$};
+                \draw (axis cs:.7,.2) node {\scriptsize $1/3$};
+                \draw (axis cs:1.5,.2) node {\scriptsize $7/3$};
+                %\draw (axis cs:.3,-1) node {\scriptsize $-4$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_13.tex END -->
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+          
+              <p>
                 <ol cols="2">
                   <li>
                     <p>
@@ -1815,7 +1801,7 @@
                     </p>
                   </li>
                 </ol>
-              </figure>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1845,71 +1831,69 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_14.tex -->
-                <image xml:id="img_05_02_ex_14"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=2.2,%
-			xmin=-.2,xmax=3.1%
-                  ]
+              <image xml:id="img_05_02_ex_14"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-1.1,ymax=2.2,%
+    xmin=-.2,xmax=3.1%
+                ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},domain=0:3] {-x+2};
+                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},domain=0:3] {-x+2};
 
-                  \end{axis}
+                \end{axis}
 
-                  \node [right] at (myplot.right of origin) {\scriptsize $t$ (s)};
-                  \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_14.tex END -->
-              </figure>
+                \node [right] at (myplot.right of origin) {\scriptsize $t$ (s)};
+                \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
 
-              <ol>
-                <li>
-                  <p>
-                    What is the object's maximum velocity?
-                  </p>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      What is the object's maximum velocity?
+                    </p>
 
-                  <p>
-                    <var name="$mv" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$mv" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    What is the object's maximum displacement?
-                  </p>
+                  <li>
+                    <p>
+                      What is the object's maximum displacement?
+                    </p>
 
-                  <p>
-                    <var name="$md" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$md" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    What is the object's total displacement on <m>[0,3]</m>?
-                  </p>
+                  <li>
+                    <p>
+                      What is the object's total displacement on <m>[0,3]</m>?
+                    </p>
 
-                  <p>
-                    <var name="$td" width="20" />
-                  </p>
-                </li>
-              </ol>
+                    <p>
+                      <var name="$td" width="20" />
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1928,74 +1912,72 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_05_02_ex_15.tex -->
-                <image xml:id="img_05_02_ex_15"  width="47%">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4,5},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=3.2,%
-			xmin=-.2,xmax=5.3%
-                  ]
+              <image xml:id="img_05_02_ex_15"  width="47%">
+                <description></description>
+                <latex-image>
+                <![CDATA[
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+    %x=.37\marginparwidth,
+    %y=.37\marginparwidth,
+    xtick={1,2,3,4,5},%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %			ytick={1,2,3},
+    %%extra y ticks={-5,-3,...,7},%
+    ymin=-.5,ymax=3.2,%
+    xmin=-.2,xmax=5.3%
+                ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},domain=0:1] {3};
-                  \addplot [thick, {\colorone},domain=1:2] {-3*(x-2)};
-                  \addplot [thick, {\colorone},domain=2:3] {2*(x-2)};
-                  \addplot [thick, {\colorone},domain=3:5] {2};
+                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
+                \addplot [thick, {\colorone},domain=0:1] {3};
+                \addplot [thick, {\colorone},domain=1:2] {-3*(x-2)};
+                \addplot [thick, {\colorone},domain=2:3] {2*(x-2)};
+                \addplot [thick, {\colorone},domain=3:5] {2};
 
-                  \end{axis}
+                \end{axis}
 
-                  \node [right] at (myplot.right of origin) {\scriptsize $t$ (s)};
-                  \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_05_02_ex_15.tex END -->
-              </figure>
+                \node [right] at (myplot.right of origin) {\scriptsize $t$ (s)};
+                \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
 
-              <ol>
-                <li>
-                  <p>
-                    What is the object's maximum velocity?
-                  </p>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      What is the object's maximum velocity?
+                    </p>
 
-                  <p>
-                    <var name="$mv" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$mv" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    What is the object's maximum displacement?
-                  </p>
+                  <li>
+                    <p>
+                      What is the object's maximum displacement?
+                    </p>
 
-                  <p>
-                    <var name="$md" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$md" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    What is the object's total displacement on <m>[0,5]</m>?
-                  </p>
+                  <li>
+                    <p>
+                      What is the object's total displacement on <m>[0,5]</m>?
+                    </p>
 
-                  <p>
-                    <var name="$td" width="20" />
-                  </p>
-                </li>
-              </ol>
+                    <p>
+                      <var name="$td" width="20" />
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -2022,48 +2004,50 @@
                 where <m>t</m> is in seconds, from a height of 48 feet.
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    What is the object's maximum velocity?
-                  </p>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      What is the object's maximum velocity?
+                    </p>
 
-                  <p>
-                    <var name="$mv" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$mv" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    What is the object's maximum displacement?
-                  </p>
+                  <li>
+                    <p>
+                      What is the object's maximum displacement?
+                    </p>
 
-                  <p>
-                    <var name="$md" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$md" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    When does the maximum displacement occur?
-                  </p>
+                  <li>
+                    <p>
+                      When does the maximum displacement occur?
+                    </p>
 
-                  <p>
-                    At t = <var name="$md_t" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      At t = <var name="$md_t" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    When will the object reach a height of 0? (Hint:
-                    find when the displacement is <m>-48</m>ft.)
-                  </p>
+                  <li>
+                    <p>
+                      When will the object reach a height of 0? (Hint:
+                      find when the displacement is <m>-48</m>ft.)
+                    </p>
 
-                  <p>
-                    At t = <var name="$h0_t" width="20" />
-                  </p>
-                </li>
-              </ol>
+                    <p>
+                      At t = <var name="$h0_t" width="20" />
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -2090,47 +2074,49 @@
                 where <m>t</m> is in seconds, from a height of 64 feet.
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    What is the object's initial velocity?
-                  </p>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      What is the object's initial velocity?
+                    </p>
 
-                  <p>
-                    <var name="$v0" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$v0" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    When is the object's displacement 0?
-                  </p>
+                  <li>
+                    <p>
+                      When is the object's displacement 0?
+                    </p>
 
-                  <p>
-                    <var name="$d" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$d" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    How long does it take for the object to return to its initial height?
-                  </p>
+                  <li>
+                    <p>
+                      How long does it take for the object to return to its initial height?
+                    </p>
 
-                  <p>
-                    <var name="$h0_2" width="20" />
-                  </p>
-                </li>
+                    <p>
+                      <var name="$h0_2" width="20" />
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    What is the maximum height the object reaches?
-                  </p>
+                  <li>
+                    <p>
+                      What is the maximum height the object reaches?
+                    </p>
 
-                  <p>
-                    <var name="$hmax" width="20" />
-                  </p>
-                </li>
-              </ol>
+                    <p>
+                      <var name="$hmax" width="20" />
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -2143,31 +2129,33 @@
           In the following exercises, let
         </p>
 
-        <ul>
-          <li>
-            <p>
-              <m>\ds \int_0^2 f(x)\ dx = 5</m>,
-            </p>
-          </li>
+        <p>
+          <ul>
+            <li>
+              <p>
+                <m>\ds \int_0^2 f(x)\ dx = 5</m>,
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_0^3 f(x) \ dx=7</m>,
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_0^3 f(x) \ dx=7</m>,
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_0^2 g(x)\ dx = -3</m>, and
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_0^2 g(x)\ dx = -3</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_2^3 g(x)\ dx = 5</m>.
-            </p>
-          </li>
-        </ul>
+            <li>
+              <p>
+                <m>\ds \int_2^3 g(x)\ dx = 5</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
 
         <p>
           Use these values to evaluate the given definite integrals.
@@ -2267,31 +2255,33 @@
           In the following exercises, let
         </p>
 
-        <ul>
-          <li>
-            <p>
-              <m>\ds \int_0^3 s(t)\ dt = 10</m>,
-            </p>
-          </li>
+        <p>
+          <ul>
+            <li>
+              <p>
+                <m>\ds \int_0^3 s(t)\ dt = 10</m>,
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_3^5 s(t) \ dt=8</m>,
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_3^5 s(t) \ dt=8</m>,
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_3^5 r(t)\ dt = -1</m>, and
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int_3^5 r(t)\ dt = -1</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_0^5 r(t)\ dt = 11</m>.
-            </p>
-          </li>
-        </ul>
+            <li>
+              <p>
+                <m>\ds \int_0^5 r(t)\ dt = 11</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
 
         <p>
           Use these values to evaluate the given definite integrals.
@@ -2385,16 +2375,12 @@
 
     </exercisegroup>
     <exercisegroup>
-
+      <title>Review</title>
       <introduction>
         <p>
-          Review
+          In the following exercises, evaluate the given indefinite integral.
         </p>
       </introduction>
-
-      <p>
-        In the following exercises, evaluate the given indefinite integral.
-      </p>
 
       <exercise>
         <webwork seed="1">

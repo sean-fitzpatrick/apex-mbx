@@ -21,7 +21,6 @@
 
     <figure xml:id="fig_ftc0">
       <caption>The area of the shaded region is <m>F(x) = \int_a^x f(t)\ dt</m>.</caption>
-      <!-- START figures/fig_ftc1.tex -->
       <image xml:id="img_ftc0"  width="47%">
         <description></description>
         <latex-image>
@@ -44,7 +43,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_ftc0.tex END -->
     </figure>
 
     <example xml:id="ex_ftc1">
@@ -60,7 +58,6 @@
 
         <figure xml:id="fig_ftc1">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
-      <!-- START figures/fig_ftc1.tex -->
           <image xml:id="img_ftc1"  width="47%">
             <description></description>
             <latex-image>
@@ -83,7 +80,6 @@
             ]]>
             </latex-image>
           </image>
-      <!-- figures/fig_ftc1.tex END -->
         </figure>
       </statement>
       <solution>
@@ -98,7 +94,6 @@
 
         <figure xml:id="fig_ftc1b">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
-      <!-- START figures/fig_ftc1.tex -->
           <image xml:id="img_ftc1b"  width="47%">
             <description></description>
             <latex-image>
@@ -125,7 +120,6 @@
             ]]>
             </latex-image>
           </image>
-      <!-- figures/fig_ftc1.tex END -->
         </figure>
 
         <p>
@@ -148,12 +142,11 @@
           A plot of both <m>f(x)=2x</m> and
           <m>F(x)=x^2-1</m> are given in Figure <xref ref="fig_ftc1c">Figure</xref>.
           You should notice a familiar relationship between these two functions.
-          This relationship is formally stated in <xref autoname="title" ref="thm_FTC1"/>.
+          This relationship is formally stated in <xref ref="thm_FTC1"/>.
         </p>
 
         <figure xml:id="fig_ftc1c">
           <caption>Graphs of <m>f(x)=2x</m> and <m>F(x)=x^2-1</m>.</caption>
-      <!-- START figures/fig_ftc1.tex -->
           <image xml:id="img_ftc1c"  width="47%">
             <description></description>
             <latex-image>
@@ -171,7 +164,6 @@
             ]]>
             </latex-image>
           </image>
-      <!-- figures/fig_ftc1.tex END -->
         </figure>
       </solution>
     </example>
@@ -378,67 +370,69 @@
         </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              <md>
-                <mrow>\int_{-2}^2 x^3\ dx \amp = \left.\frac14x^4\right|_{-2}^2 \amp</mrow>
-                <mrow>\amp = \left(\frac142^4\right) - \left(\frac14(-2)^4\right)</mrow>
-                <mrow>\amp = 0</mrow>
-              </md>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <md>
+                  <mrow>\int_{-2}^2 x^3\ dx \amp = \left.\frac14x^4\right|_{-2}^2 \amp</mrow>
+                  <mrow>\amp = \left(\frac142^4\right) - \left(\frac14(-2)^4\right)</mrow>
+                  <mrow>\amp = 0</mrow>
+                </md>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <md>
-                <mrow>\int_0^\pi \sin(x) \ dx \amp = -\cos(x) \Big|_0^\pi</mrow>
-                <mrow>\amp = -\cos(\pi) - \big(-\cos(0) \big)</mrow>
-                <mrow>\amp = 1+1=2</mrow>
-              </md>.
-              (This is interesting; it says that the area under one
-              <q>hump</q> of a sine curve is 2.)
-            </p>
-          </li>
+            <li>
+              <p>
+                <md>
+                  <mrow>\int_0^\pi \sin(x) \ dx \amp = -\cos(x) \Big|_0^\pi</mrow>
+                  <mrow>\amp = -\cos(\pi) - \big(-\cos(0) \big)</mrow>
+                  <mrow>\amp = 1+1=2</mrow>
+                </md>.
+                (This is interesting; it says that the area under one
+                <q>hump</q> of a sine curve is 2.)
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <md>
-                <mrow>\int_0^5e^t\ dt \amp = e^t\Big|_0^5</mrow>
-                <mrow>\amp = e^5 - e^0</mrow>
-                <mrow>\amp= e^5-1 \approx 147.41</mrow>
-              </md>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <md>
+                  <mrow>\int_0^5e^t\ dt \amp = e^t\Big|_0^5</mrow>
+                  <mrow>\amp = e^5 - e^0</mrow>
+                  <mrow>\amp= e^5-1 \approx 147.41</mrow>
+                </md>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <md>
-                <mrow>\int_4^9 \sqrt{u}\ du \amp= \int_4^9 u^\frac12\ du</mrow>
-                <mrow>\amp = \frac23u^\frac32\Big|_4^9</mrow>
-                <mrow>\amp = \frac23\left(9^\frac32-4^\frac32\right)</mrow>
-                <mrow>\amp = \frac23\big(27-8\big) =\frac{38}3</mrow>
-              </md>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <md>
+                  <mrow>\int_4^9 \sqrt{u}\ du \amp= \int_4^9 u^\frac12\ du</mrow>
+                  <mrow>\amp = \frac23u^\frac32\Big|_4^9</mrow>
+                  <mrow>\amp = \frac23\left(9^\frac32-4^\frac32\right)</mrow>
+                  <mrow>\amp = \frac23\big(27-8\big) =\frac{38}3</mrow>
+                </md>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <md>
-                <mrow>\int_1^5 2\ dx \amp = 2x\Big|_1^5</mrow>
-                <mrow>\amp = 2(5)-2</mrow>
-                <mrow>\amp =2(5-1)=8</mrow>
-              </md>.
-              This integral is interesting;
-              the integrand is a constant function,
-              hence we are finding the area of a rectangle with width <m>(5-1)=4</m> and height 2.
-              Notice how the evaluation of the definite integral led to <m>2(4)=8</m>.
+            <li>
+              <p>
+                <md>
+                  <mrow>\int_1^5 2\ dx \amp = 2x\Big|_1^5</mrow>
+                  <mrow>\amp = 2(5)-2</mrow>
+                  <mrow>\amp =2(5-1)=8</mrow>
+                </md>.
+                This integral is interesting;
+                the integrand is a constant function,
+                hence we are finding the area of a rectangle with width <m>(5-1)=4</m> and height 2.
+                Notice how the evaluation of the definite integral led to <m>2(4)=8</m>.
 
-              In general, if <m>c</m> is a constant,
-              then <m>\int_a^b c\ dx = c(b-a)</m>.
-            </p>
-          </li>
-        </ol>
+                In general, if <m>c</m> is a constant,
+                then <m>\int_a^b c\ dx = c(b-a)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
   </introduction>
@@ -532,70 +526,67 @@
           But when we add the absolute value of both of these areas
           (as in <xref ref="fig_ftcmotion1b">Figure</xref>),
           we get the total distance of <m>9</m> ft.
-
-          <sidebyside widths="47% 47%">
-            <figure xml:id="fig_ftcmotion1a">
-              <caption>The area between <m>v(t)</m> and the <m>t</m>-axis can be used to represent displacement.</caption>
-              <image xml:id="img_ftcmotion1a">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}
-                \begin{axis}[ xtick=\empty,
-                extra x ticks={0.625,1},
-                extra x tick labels={$5/8$,$1$},
-                %ytick=\empty,
-                xlabel=$t$,
-                ymin=-15,ymax=25,%
-                xmin=-1,xmax=1.5%
-                ]
-                \addplot+[domain=-.5:1.5] {-32*x+20};
-                \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:1] {-32*x+20} \closedcycle;
-                \node at (axis cs:.3125,5) {\scriptsize $A_1$};
-                \node at (axis cs:.8125,-3) {\scriptsize $A_2$};
-
-                \end{axis}
-
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
-
-            </figure>
-
-            <figure xml:id="fig_ftcmotion1b">
-              <caption>The area between <m>\abs{v(t)}</m> and the <m>t</m>-axis can be used to represent distance.</caption>
-              <image xml:id="img_ftcmotion1b">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}
-                \begin{axis}[ xtick=\empty,
-                extra x ticks={0.625,1},
-                extra x tick labels={$5/8$,$1$},
-                %ytick=\empty,
-                xlabel=$t$,
-                ymin=-15,ymax=25,%
-                xmin=-1,xmax=1.5%
-                ]
-                \addplot+[-,domain=-.5:5/8] {-32*x+20};
-                \addplot+[-,domain=5/8:1.5, firstcurvestyle] {32*x-20};
-                \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:5/8] {-32*x+20} \closedcycle;
-                \addplot [{\coloronefill},fill={\coloronefill},area style,domain=5/8:1] {32*x-20} \closedcycle;
-                \node at (axis cs:.3125,5) {\scriptsize $A_1$};
-                \node at (axis cs:.8125,3) {\scriptsize $A_3$};
-
-                \end{axis}
-
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
-
-            </figure>
-          </sidebyside>
-
         </p>
+
+        <sidebyside widths="47% 47%">
+          <figure xml:id="fig_ftcmotion1a">
+            <caption>The area between <m>v(t)</m> and the <m>t</m>-axis can be used to represent displacement.</caption>
+            <image xml:id="img_ftcmotion1a">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ xtick=\empty,
+              extra x ticks={0.625,1},
+              extra x tick labels={$5/8$,$1$},
+              %ytick=\empty,
+              xlabel=$t$,
+              ymin=-15,ymax=25,%
+              xmin=-1,xmax=1.5%
+              ]
+              \addplot+[domain=-.5:1.5] {-32*x+20};
+              \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:1] {-32*x+20} \closedcycle;
+              \node at (axis cs:.3125,5) {\scriptsize $A_1$};
+              \node at (axis cs:.8125,-3) {\scriptsize $A_2$};
+
+              \end{axis}
+
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+          </figure>
+
+          <figure xml:id="fig_ftcmotion1b">
+            <caption>The area between <m>\abs{v(t)}</m> and the <m>t</m>-axis can be used to represent distance.</caption>
+            <image xml:id="img_ftcmotion1b">
+              <description></description>
+              <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+              \begin{axis}[ xtick=\empty,
+              extra x ticks={0.625,1},
+              extra x tick labels={$5/8$,$1$},
+              %ytick=\empty,
+              xlabel=$t$,
+              ymin=-15,ymax=25,%
+              xmin=-1,xmax=1.5%
+              ]
+              \addplot+[-,domain=-.5:5/8] {-32*x+20};
+              \addplot+[-,domain=5/8:1.5, firstcurvestyle] {32*x-20};
+              \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:5/8] {-32*x+20} \closedcycle;
+              \addplot [{\coloronefill},fill={\coloronefill},area style,domain=5/8:1] {32*x-20} \closedcycle;
+              \node at (axis cs:.3125,5) {\scriptsize $A_1$};
+              \node at (axis cs:.8125,3) {\scriptsize $A_3$};
+
+              \end{axis}
+
+              \end{tikzpicture}
+              ]]>
+              </latex-image>
+            </image>
+          </figure>
+        </sidebyside>
       </solution>
     </example>
 
@@ -734,80 +725,78 @@
 
     </p>
 
-    <sidebyside widths="47% 47%">
-      <caption>Finding the area bounded by two functions on an interval; it is found by subtracting the area under <m>g</m> from the area under <m>f</m>.</caption>
-      <figure xml:id="fig_ftc5a">
-        <caption/>
-      <!-- START figures/fig_ftc5.tex -->
-        <image xml:id="img_ftc5a">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,%
-			extra x ticks={.5,3},
-			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
-          %			minor x tick num=4,
-			ymin=-.5,ymax=2,%
-			xmin=-.5,xmax=3.5%
-          ]
+    <figure xml:id="fig_ftc5">
+    <caption>Finding the area bounded by two functions on an interval; it is found by subtracting the area under <m>g</m> from the area under <m>f</m>.</caption>
+      <sidebyside widths="47% 47%">
+        <figure xml:id="fig_ftc5a">
+          <caption/>
+          <image xml:id="img_ftc5a">
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \begin{axis}[%
+            axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick=\empty,%
+        extra x ticks={.5,3},
+        extra x tick labels={$a$,$b$},
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
+            %			minor x tick num=4,
+        ymin=-.5,ymax=2,%
+        xmin=-.5,xmax=3.5%
+            ]
 
-          \addplot [{\coloronefill},domain=.5:3,stack plots=y] {.25*(x-2)^2+.2};
-          \addplot [{\coloronefill},thick,fill={\coloronefill},area style,domain=.5:3,stack plots=y] {.25*sin(deg(2*x))+1.25-(.25*(x-2)^2+.2)} \closedcycle;
-          \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)} ,black] {\scriptsize $f(x)$};
-          \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)} ,black] {\scriptsize $g(x)$};
+            \addplot [{\coloronefill},domain=.5:3,stack plots=y] {.25*(x-2)^2+.2};
+            \addplot [{\coloronefill},thick,fill={\coloronefill},area style,domain=.5:3,stack plots=y] {.25*sin(deg(2*x))+1.25-(.25*(x-2)^2+.2)} \closedcycle;
+            \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)} ,black] {\scriptsize $f(x)$};
+            \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)} ,black] {\scriptsize $g(x)$};
 
-          \end{axis}
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-      <!-- figures/fig_ftc5.tex END -->
-      </figure>
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+        </figure>
 
-      <figure xml:id="fig_ftc5b">
-        <caption/>
-      <!-- START figures/fig_ftc5a.tex -->
-        <image xml:id="img_ftc5b">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,%
-			extra x ticks={.5,3},
-			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
-          %			minor x tick num=4,
-			ymin=-.5,ymax=2,%
-			xmin=-.5,xmax=3.5%
-          ]
+        <figure xml:id="fig_ftc5b">
+          <caption/>
+          <image xml:id="img_ftc5b">
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \begin{axis}[%
+            axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick=\empty,%
+        extra x ticks={.5,3},
+        extra x tick labels={$a$,$b$},
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
+            %			minor x tick num=4,
+        ymin=-.5,ymax=2,%
+        xmin=-.5,xmax=3.5%
+            ]
 
-          \addplot [{\coloronefill},fill={\coloronefill},area style,domain=.5:3] {.25*sin(deg(2*x))+1.25} \closedcycle;
-          \addplot [{\colortwofill},fill={\colortwofill},domain=.5:3,fill opacity=.5] {.25*(x-2)^2+.2} \closedcycle;
-          \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)} ,black] {\scriptsize $f(x)$};
-          \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)} ,black] {\scriptsize $g(x)$};
+            \addplot [{\coloronefill},fill={\coloronefill},area style,domain=.5:3] {.25*sin(deg(2*x))+1.25} \closedcycle;
+            \addplot [{\colortwofill},fill={\colortwofill},domain=.5:3,fill opacity=.5] {.25*(x-2)^2+.2} \closedcycle;
+            \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)} ,black] {\scriptsize $f(x)$};
+            \addplot [smooth,thick, {\colorone},domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)} ,black] {\scriptsize $g(x)$};
 
-          \end{axis}
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-      <!-- figures/fig_ftc5a.tex END -->
-      </figure>
-    </sidebyside>
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </sidebyside>
+    </figure>
 
     <p>
       The area can be found by recognizing that this area is
@@ -855,7 +844,6 @@
 
         <figure xml:id="fig_ftc6">
           <caption>Sketching the region enclosed by <m>y=x^2+x-5</m> and <m>y=3x-2</m> in <xref ref="ex_ftc6">Example</xref>.</caption>
-          <!-- START figures/fig_ftc6.tex -->
           <image xml:id="img_ftc6"  width="47%">
             <description></description>
             <latex-image>
@@ -878,7 +866,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_ftc6.tex END -->
         </figure>
 
         <p>
@@ -912,7 +899,6 @@
     <title>The Mean Value Theorem and Average Value</title>
     <figure xml:id="fig_ftc7a">
       <caption>A graph of a function <m>f</m> to introduce the Mean Value Theorem.</caption>
-      <!-- START figures/fig_ftc7a.tex -->
       <image xml:id="img_ftc7a"  width="47%">
         <description></description>
         <latex-image>
@@ -940,7 +926,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_ftc7a.tex END -->
     </figure>
 
     <p>
@@ -975,110 +960,106 @@
       We state this idea formally in a theorem.
     </p>
 
-    <sidebyside widths="31% 31% 31%">
-      <caption>Differently sized rectangles give upper and lower bounds on <m>\int_1^4 f(x)\ dx</m>; the last rectangle matches the area exactly.</caption>
-      <figure xml:id="fig_ftc7b2">
-        <caption/>
-        <!-- START figures/fig_ftc7b2.tex -->
-        <image xml:id="img_ftc7b2">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
-          %			extra x ticks={.5,3},
-          %			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
-          %			minor x tick num=4,
-			ymin=-.5,ymax=1.75,%
-			xmin=-.5,xmax=4.5%
-          ]
+    <figure xml:id="fig_ftc7b">
+    <caption>Differently sized rectangles give upper and lower bounds on <m>\int_1^4 f(x)\ dx</m>; the last rectangle matches the area exactly.</caption>
+      <sidebyside widths="31% 31% 31%">
+        <figure xml:id="fig_ftc7b2">
+          <caption/>
+          <image xml:id="img_ftc7b2">
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \begin{axis}[%
+            axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
+            %			extra x ticks={.5,3},
+            %			extra x tick labels={$a$,$b$},
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
+            %			minor x tick num=4,
+        ymin=-.5,ymax=1.75,%
+        xmin=-.5,xmax=4.5%
+            ]
 
-          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
-          \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
-          \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,1.35);
-          \end{axis}
+            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
+            \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
+            \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,1.35);
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-        <!-- figures/fig_ftc7b2.tex END -->
-      </figure>
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+        </figure>
 
-      <figure xml:id="fig_ftc7b1">
-        <caption/>
-        <!-- START figures/fig_ftc7b1.tex -->
-        <image xml:id="img_ftc7b1">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
-          %			extra x ticks={.5,3},
-          %			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
-          %			minor x tick num=4,
-			ymin=-.5,ymax=1.75,%
-			xmin=-.5,xmax=4.5%
-          ]
+        <figure xml:id="fig_ftc7b1">
+          <caption/>
+          <image xml:id="img_ftc7b1">
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \begin{axis}[%
+            axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
+            %			extra x ticks={.5,3},
+            %			extra x tick labels={$a$,$b$},
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
+            %			minor x tick num=4,
+        ymin=-.5,ymax=1.75,%
+        xmin=-.5,xmax=4.5%
+            ]
 
-          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
-          \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
-          \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,.65);
-          \end{axis}
+            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
+            \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
+            \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,.65);
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-        <!-- figures/fig_ftc7b1.tex END -->
-      </figure>
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+        </figure>
 
-      <figure xml:id="fig_ftc7b3">
-        <caption/>
-        <!-- START figures/fig_ftc7b3.tex -->
-        <image xml:id="img_ftc7b3">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
-          %			extra x ticks={.5,3},
-          %			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
-          %			minor x tick num=4,
-			ymin=-.5,ymax=1.75,%
-			xmin=-.5,xmax=4.5%
-          ]
+        <figure xml:id="fig_ftc7b3">
+          <caption/>
+          <image xml:id="img_ftc7b3">
+            <description></description>
+            <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+            \begin{axis}[%
+            axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
+            %			extra x ticks={.5,3},
+            %			extra x tick labels={$a$,$b$},
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
+            %			minor x tick num=4,
+        ymin=-.5,ymax=1.75,%
+        xmin=-.5,xmax=4.5%
+            ]
 
-          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
-          \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
-          \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,.84);
-          \end{axis}
+            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
+            \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
+            \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,.84);
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-        <!-- figures/fig_ftc7b3.tex END -->
-      </figure>
-    </sidebyside>
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+        </figure>
+      </sidebyside>
+    </figure>
 
     <theorem xml:id="thm_mvt2">
       <title>The Mean Value Theorem of Integration</title>
@@ -1149,7 +1130,6 @@
 
         <figure xml:id="fig_ftc8">
           <caption>A graph of <m>y=\sin(x)</m> on <m>[0,\pi]</m> and the rectangle guaranteed by the Mean Value Theorem.</caption>
-          <!-- START figures/fig_ftc8.tex -->
           <image xml:id="img_ftc8"  width="47%">
             <description></description>
             <latex-image>
@@ -1180,7 +1160,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_ftc8.tex END -->
         </figure>
 
         <p>
@@ -1213,72 +1192,71 @@
 
     <figure xml:id="fig_ftc9">
       <caption>On the left, a graph of <m>y=f(x)</m> and the rectangle guaranteed by the Mean Value Theorem. On the right, <m>y=f(x)</m> is shifted down by <m>f(c)</m>; the resulting <q>area under the curve</q> is 0.</caption>
-      <!-- START figures/fig_ftc9a.tex -->
-      <image xml:id="img_ftc9a"  width="47%">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,%
-			extra x ticks={1,4,1.63},
-			extra x tick labels={$a$,$b$,$c$},
-			ytick=\empty,
-			%
-			extra y ticks={1.75},%
-			extra y tick labels={$f(c)$},
-        %			minor x tick num=4,
-			ymin=-1,ymax=3.5,%
-			xmin=-.5,xmax=4.25%
-        ]
+      <sidebyside widths="47% 47%">
+        <image xml:id="img_ftc9a">
+          <description></description>
+          <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+          \begin{axis}[%
+          axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick=\empty,%
+        extra x ticks={1,4,1.63},
+        extra x tick labels={$a$,$b$,$c$},
+        ytick=\empty,
+        %
+        extra y ticks={1.75},%
+        extra y tick labels={$f(c)$},
+          %			minor x tick num=4,
+        ymin=-1,ymax=3.5,%
+        xmin=-.5,xmax=4.25%
+          ]
 
-        \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2+1} \closedcycle;
-        \addplot [smooth,thick, {\colorone},domain=-.5:4.25] {(x-2.5)^2+1};
-        \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,1.75);
-        \draw (axis cs:3.35,3) node {\scriptsize $y=f(x)$};
-        \end{axis}
+          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2+1} \closedcycle;
+          \addplot [smooth,thick, {\colorone},domain=-.5:4.25] {(x-2.5)^2+1};
+          \draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,1.75);
+          \draw (axis cs:3.35,3) node {\scriptsize $y=f(x)$};
+          \end{axis}
 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_ftc9a.tex END -->
-      <!-- START figures/fig_ftc9b.tex -->
-      <image xml:id="img_ftc9b"  width="47%">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,%
-			extra x ticks={1,4,1.63},
-			extra x tick labels={$a$,$b$,$c$},
-			ytick=\empty,
-			%
-			extra y ticks={1.75},%
-			extra y tick labels={$f(c)$},
-        %			minor x tick num=4,
-			ymin=-1,ymax=3.5,%
-			xmin=-.5,xmax=4.25%
-        ]
+          \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
 
-        \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2-.75} \closedcycle;
-        \addplot [smooth,thick, {\colorone},domain=.75:4.25] {(x-2.5)^2-.75};
-        %\draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,1.75);
-        \draw (axis cs:3.2,2.5) node {\scriptsize $y=f(x)-f(c)$};
-        \end{axis}
+        <image xml:id="img_ftc9b">
+          <description></description>
+          <latex-image>
+          <![CDATA[
+          \begin{tikzpicture}
+          \begin{axis}[%
+          axis on top,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick=\empty,%
+        extra x ticks={1,4,1.63},
+        extra x tick labels={$a$,$b$,$c$},
+        ytick=\empty,
+        %
+        extra y ticks={1.75},%
+        extra y tick labels={$f(c)$},
+          %			minor x tick num=4,
+        ymin=-1,ymax=3.5,%
+        xmin=-.5,xmax=4.25%
+          ]
 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_ftc9b.tex END -->
+          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2-.75} \closedcycle;
+          \addplot [smooth,thick, {\colorone},domain=.75:4.25] {(x-2.5)^2-.75};
+          %\draw [thick,draw={\colortwo}] (axis cs: 1,0) rectangle (axis cs:4,1.75);
+          \draw (axis cs:3.2,2.5) node {\scriptsize $y=f(x)-f(c)$};
+          \end{axis}
+
+          \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+      </sidebyside>
     </figure>
 
     <p>
@@ -1412,7 +1390,7 @@
       we can later create Riemann sums to approximate values other than
       <q>area under the curve,</q>
       convert the sums to definite integrals,
-      then evaluate these using the <xref autoname="title" ref="thm_FTC2"/>.
+      then evaluate these using the <xref ref="thm_FTC2"/>.
       This will allow us to compute the work done by a variable force,
       the volume of certain solids,
       the arc length of curves, and more.
@@ -2110,21 +2088,23 @@
                 Explain why:
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \int_{-1}^1 x^n\ dx=0</m>,
-                    when <m>n</m> is a positive, odd integer, and
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_{-1}^1 x^n\ dx=0</m>,
+                      when <m>n</m> is a positive, odd integer, and
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int_{-1}^1 x^n\ dx = 2\int_{0}^1 x^n\ dx</m> when <m>n</m> is a positive,
-                    even integer.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_{-1}^1 x^n\ dx = 2\int_{0}^1 x^n\ dx</m> when <m>n</m> is a positive,
+                      even integer.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 <var form="essay" />

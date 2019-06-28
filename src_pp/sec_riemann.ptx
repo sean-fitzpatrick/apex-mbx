@@ -30,7 +30,6 @@
 
     <figure xml:id="fig_rie1a">
       <caption>A graph of <m>f(x) = 4x-x^2</m>. What is the area of the shaded region?</caption>
-      <!-- START figures/fig_rie1a.tex -->
       <image xml:id="img_rie1a"  width="47%">
         <description></description>
         <latex-image>
@@ -50,7 +49,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_rie1a.tex END -->
     </figure>
 
     <p>
@@ -127,7 +125,6 @@
 
     <figure xml:id="fig_rie1b">
       <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using rectangles. The heights of the rectangles are determined using different rules.</caption>
-      <!-- START figures/fig_rie1b.tex -->
       <image xml:id="img_rie1b"  width="47%">
         <description></description>
         <latex-image>
@@ -170,7 +167,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_rie1b.tex END -->
     </figure>
 
     <p>
@@ -224,7 +220,6 @@
 
         <figure xml:id="fig_rie2a">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using the Left Hand Rule in <xref ref="ex_rie2">Example</xref>.</caption>
-          <!-- START figures/fig_rie2a.tex -->
           <image xml:id="img_rie2a"  width="47%">
             <description></description>
             <latex-image>
@@ -260,7 +255,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_rie2a.tex END -->
         </figure>
 
         <p>
@@ -281,7 +275,6 @@
 
         <figure xml:id="fig_rie2b">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using the Right Hand Rule in <xref ref="ex_rie2">Example</xref>.</caption>
-          <!-- START figures/fig_rie2b.tex -->
           <image xml:id="img_rie2b"  width="47%">
             <description></description>
             <latex-image>
@@ -324,7 +317,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_rie2b.tex END -->
         </figure>
 
         <p>
@@ -346,7 +338,6 @@
 
         <figure xml:id="fig_rie2c">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using the Midpoint Rule in <xref ref="ex_rie2">Example</xref>.</caption>
-          <!-- START figures/fig_rie2c.tex -->
           <image xml:id="img_rie2c"  width="47%">
             <description></description>
             <latex-image>
@@ -389,7 +380,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_rie2c.tex END -->
         </figure>
 
         <p>
@@ -631,7 +621,6 @@
 
         <figure xml:id="fig_rie7">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> with the Right Hand Rule and 16 evenly spaced subintervals.</caption>
-          <!-- START figures/fig_rie7.tex -->
           <image xml:id="img_rie7"  width="47%">
             <description></description>
             <latex-image>
@@ -683,7 +672,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_rie7.tex END -->
         </figure>
 
         <p>
@@ -716,22 +704,24 @@
       Each had the same basic structure, which was:
     </p>
 
-    <ol>
-      <li>
-        <p>
-          each rectangle has the same width,
-          which we referred to as <m>\Delta x</m>, and
-        </p>
-      </li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            each rectangle has the same width,
+            which we referred to as <m>\Delta x</m>, and
+          </p>
+        </li>
 
-      <li>
-        <p>
-          each rectangle's height is determined by evaluating <m>f</m> at a particular point in each subinterval.
-          For instance,
-          the Left Hand Rule states that each rectangle's height is determined by evaluating <m>f</m> at the left hand endpoint of the subinterval the rectangle lives on.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <p>
+            each rectangle's height is determined by evaluating <m>f</m> at a particular point in each subinterval.
+            For instance,
+            the Left Hand Rule states that each rectangle's height is determined by evaluating <m>f</m> at the left hand endpoint of the subinterval the rectangle lives on.
+          </p>
+        </li>
+      </ol>
+    </p>
 
     <p>
       One could partition an interval <m>[a,b]</m> with subintervals that did not have the same size.
@@ -788,7 +778,6 @@
 
     <figure xml:id="fig_riedef">
       <caption>An example of a general Riemann sum to approximate <m>\int_0^4(4x-x^2)\ dx</m>.</caption>
-      <!-- START figures/fig_riedef.tex -->
       <image xml:id="img_riedef"  width="47%">
         <description></description>
         <latex-image>
@@ -831,7 +820,6 @@
         ]]>
         </latex-image>
       </image>
-      <!-- figures/fig_riedef.tex END -->
     </figure>
 
     <p>
@@ -854,42 +842,44 @@
         Consider <m>\ds \int_a^b f(x) \ dx \approx \sum_{i=1}^n f(c_i)\Delta x_i</m>.
       </p>
 
-      <ol>
-        <li>
-          <p>
-            When the <m>n</m> subintervals have equal length,
-            <m>\ds \Delta x_i = \Delta x = \frac{b-a}n</m>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              When the <m>n</m> subintervals have equal length,
+              <m>\ds \Delta x_i = \Delta x = \frac{b-a}n</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The <m>i^\text{ th }</m> term of the partition is <m>x_i = a + (i-1)\Delta x</m>.
-            (This makes <m>x_{n+1} = b</m>.)
-          </p>
-        </li>
+          <li>
+            <p>
+              The <m>i^\text{ th }</m> term of the partition is <m>x_i = a + (i-1)\Delta x</m>.
+              (This makes <m>x_{n+1} = b</m>.)
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The Left Hand Rule summation is:
-            <m>\ds \sum_{i=1}^n f(x_i)\Delta x</m>.
-          </p>
-        </li>
+          <li>
+            <p>
+              The Left Hand Rule summation is:
+              <m>\ds \sum_{i=1}^n f(x_i)\Delta x</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The Right Hand Rule summation is:
-            <m>\ds \sum_{i=1}^n f(x_{i+1})\Delta x</m>.
-          </p>
-        </li>
+          <li>
+            <p>
+              The Right Hand Rule summation is:
+              <m>\ds \sum_{i=1}^n f(x_{i+1})\Delta x</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The Midpoint Rule summation is:
-            <m>\ds \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              The Midpoint Rule summation is:
+              <m>\ds \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
     </insight>
 
     <p>
@@ -936,7 +926,6 @@
 
         <figure xml:id="fig_rie8">
           <caption>Approximating <m>\int_{-2}^3 (5x+2)\ dx</m> using the Midpoint Rule and 10 evenly spaced subintervals in <xref ref="ex_rie8">Example</xref>.</caption>
-          <!-- START figures/fig_rie8.tex -->
           <image xml:id="img_rie8"  width="47%">
             <description></description>
             <latex-image>
@@ -970,7 +959,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_rie8.tex END -->
         </figure>
 
         <p>
@@ -1153,7 +1141,6 @@
 
         <figure xml:id="fig_rie9">
           <caption>Approximating <m>\int_{-1}^5 x^3\ dx</m> using the Right Hand Rule and 10 evenly spaced subintervals.</caption>
-          <!-- START figures/fig_rie9.tex -->
           <image xml:id="img_rie9"  width="47%">
             <description></description>
             <latex-image>
@@ -1185,7 +1172,6 @@
             ]]>
             </latex-image>
           </image>
-          <!-- figures/fig_rie9.tex END -->
         </figure>
 
         <p>
@@ -1230,28 +1216,30 @@
       Given a definite integral <m>\int_a^b f(x)\ dx</m>, let:
     </p>
 
-    <ul>
-      <li>
-        <p>
-          <m>\ds S_L(n) = \sum_{i=1}^n f(x_i)\Delta x</m>,
-          the sum of equally spaced rectangles formed using the Left Hand Rule,
-        </p>
-      </li>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <m>\ds S_L(n) = \sum_{i=1}^n f(x_i)\Delta x</m>,
+            the sum of equally spaced rectangles formed using the Left Hand Rule,
+          </p>
+        </li>
 
-      <li>
-        <p>
-          <m>\ds S_R(n) = \sum_{i=1}^n f(x_{i+1})\Delta x</m>,
-          the sum of equally spaced rectangles formed using the Right Hand Rule, and
-        </p>
-      </li>
+        <li>
+          <p>
+            <m>\ds S_R(n) = \sum_{i=1}^n f(x_{i+1})\Delta x</m>,
+            the sum of equally spaced rectangles formed using the Right Hand Rule, and
+          </p>
+        </li>
 
-      <li>
-        <p>
-          <m>\ds S_M(n) = \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>,
-          the sum of equally spaced rectangles formed using the Midpoint Rule.
-        </p>
-      </li>
-    </ul>
+        <li>
+          <p>
+            <m>\ds S_M(n) = \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>,
+            the sum of equally spaced rectangles formed using the Midpoint Rule.
+          </p>
+        </li>
+      </ul>
+    </p>
 
     <p>
       Recall the definition of a limit as <m>n\to\infty</m>:
@@ -1311,25 +1299,27 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\lim\limits_{n\to\infty} S_L(n) = \lim_{n\to\infty} S_R(n) = \lim_{n\to\infty} S_M(n) = \lim_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x</m>,
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\lim\limits_{n\to\infty} S_L(n) = \lim_{n\to\infty} S_R(n) = \lim_{n\to\infty} S_M(n) = \lim_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x</m>,
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\lim\limits_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x = \int_a^b f(x)\ dx</m>, and
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\lim\limits_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x = \int_a^b f(x)\ dx</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\lim\limits_{\abs{\Delta x}\to 0} \sum_{i=1}^n f(c_i)\Delta x_i = \int_a^b f(x)\ dx</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\lim\limits_{\abs{\Delta x}\to 0} \sum_{i=1}^n f(c_i)\Delta x_i = \int_a^b f(x)\ dx</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -1337,42 +1327,44 @@
       We summarize what we have learned over the past few sections here.
     </p>
 
-    <ul>
-      <li>
-        <p>
-          Knowing the <q>area under the curve</q> can be useful.
-          One common example is: the area under a velocity curve is displacement.
-        </p>
-      </li>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Knowing the <q>area under the curve</q> can be useful.
+            One common example is: the area under a velocity curve is displacement.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          We have defined the definite integral, <m>\int_a^b f(x)\ dx</m>,
-          to be the signed area under <m>f</m> on the interval <m>[a,b]</m>.
-        </p>
-      </li>
+        <li>
+          <p>
+            We have defined the definite integral, <m>\int_a^b f(x)\ dx</m>,
+            to be the signed area under <m>f</m> on the interval <m>[a,b]</m>.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          While we can approximate a definite integral many ways,
-          we have focused on using rectangles whose heights can be determined using:
-          the Left Hand Rule, the Right Hand Rule and the Midpoint Rule.
-        </p>
-      </li>
+        <li>
+          <p>
+            While we can approximate a definite integral many ways,
+            we have focused on using rectangles whose heights can be determined using:
+            the Left Hand Rule, the Right Hand Rule and the Midpoint Rule.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Sums of rectangles of this type are called Riemann sums.
-        </p>
-      </li>
+        <li>
+          <p>
+            Sums of rectangles of this type are called Riemann sums.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          The exact value of the definite integral can be computed using the limit of a Riemann sum.
-          We generally use one of the above methods as it makes the algebra simpler.
-        </p>
-      </li>
-    </ul>
+        <li>
+          <p>
+            The exact value of the definite integral can be computed using the limit of a Riemann sum.
+            We generally use one of the above methods as it makes the algebra simpler.
+          </p>
+        </li>
+      </ul>
+    </p>
 
     <p>
       We first learned of derivatives through limits then learned rules that made the process simpler.
@@ -2137,28 +2129,27 @@
           <m>\ds \int_a^b f(x) \ dx</m> is given.
         </p>
 
-        <ol>
-          <li>
-            <title>(a)</title>
-            <p>
-              Graph <m>f(x)</m> on <m>[a,b]</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Graph <m>f(x)</m> on <m>[a,b]</m>.
+              </p>
+            </li>
 
-          <li>
-            <title>(b)</title>
-            <p>
-              Add to the sketch rectangles using the provided rule.
-            </p>
-          </li>
+            <li>
+              <p>
+                Add to the sketch rectangles using the provided rule.
+              </p>
+            </li>
 
-          <li>
-            <title>(c)</title>
-            <p>
-              Approximate <m>\ds \int_a^b f(x) \ dx</m> by summing the areas of the rectangles.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+               Approximate <m>\ds \int_a^b f(x) \ dx</m> by summing the areas of the rectangles.
+              </p>
+            </li>
+          </ol>
+        </p>
       </introduction>
 <!-- Exercise 27 -->
       <exercise>
@@ -2422,31 +2413,30 @@
           and <xref ref="ex_rie10"></xref>, do the following.
         </p>
 
-        <ol>
-          <li>
-            <title>(a)</title>
-            <p>
-              Find a formula to approximate
-              <m>\ds \int_a^bf(x)\ dx</m> using <m>n</m> subintervals and the provided rule.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find a formula to approximate
+                <m>\ds \int_a^bf(x)\ dx</m> using <m>n</m> subintervals and the provided rule.
+              </p>
+            </li>
 
-          <li>
-            <title>(b)</title>
-            <p>
-              Evaluate the formula using <m>n=10</m>,
-              <m>100</m> and <m>1,000</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                Evaluate the formula using <m>n=10</m>,
+                <m>100</m> and <m>1,000</m>.
+              </p>
+            </li>
 
-          <li>
-            <title>(c)</title>
-            <p>
-              Find the limit of the formula, as <m>n\to \infty</m>,
-              to find the exact value of <m>\ds \int_a^bf(x)\ dx</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Find the limit of the formula, as <m>n\to \infty</m>,
+                to find the exact value of <m>\ds \int_a^bf(x)\ dx</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </introduction>
 <!-- Exercise 33 -->
       <exercise>
@@ -2700,12 +2690,10 @@
 
     </exercisegroup>
     <exercisegroup>
-
+      <title>
+        Review
+      </title>
       <introduction>
-        <p>
-          Review
-        </p>
-
         <p>
           In the following exercises,
           find the general antiderivative of the given function.
