@@ -507,7 +507,118 @@
     </p>
 
     <theorem xml:id="thm_summation">
+      <title>Properties of Summations</title>
+      <statement>
+        <sidebyside>
+          <idx><h>summation</h><h>properties</h></idx>
+
+          <ol cols="2">
+            <li>
+              <p>
+                <m>\ds \sum_{i=1}^n c = c\cdot n</m>,
+                where <m>c</m> is a constant.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ds \sum_{i=m}^n (a_i\pm b_i) = \sum_{i=m}^n a_i \pm \sum_{i=m}^n b_i</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ds \sum_{i=m}^n c\cdot a_i = c\cdot\sum_{i=m}^n a_i</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ds \sum_{i=m}^j a_i + \sum_{i=j+1}^n a_i = \sum_{i=m}^n a_i</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ds \sum_{i=1}^n i = \frac{n(n+1)}2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ds \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ds \sum_{i=1}^n i^3 = \left(\frac{n(n+1)}2\right)^2</m>
+              </p>
+            </li>
+          </ol>
+        </sidebyside>
+      </statement>
     </theorem>
+
+    <example xml:id="ex_rie4">
+      <title>Evaluating summations using <xref ref="thm_summation">Theorem</xref></title>
+      <statement>
+        <p>
+          Revisit <xref ref="ex_rie3">Example</xref> and,
+          using <xref ref="thm_summation">Theorem</xref>, evaluate
+          <me>
+            \sum_{i=1}^6 a_i = \sum_{i=1}^6 (2i-1)
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>\sum_{i=1}^6 (2i-1) \amp  = \sum_{i=1}^6 2i - \sum_{i=1}^6 (1)</mrow>
+          <mrow>\amp =  \left(2\sum_{i=1}^6 i \right)- 6</mrow>
+          <mrow>\amp = 2\frac{6(6+1)}{2} - 6</mrow>
+          <mrow>\amp = 42-6 = 36</mrow>
+        </md>
+        <p>
+          We obtained the same answer without writing out all six terms.
+          When dealing with small sizes of <m>n</m>,
+          it may be faster to write the terms out by hand.
+          However, <xref ref="thm_summation">Theorem</xref>
+          is incredibly important when dealing with large sums as we'll soon see.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Riemann Sums</title>
+    <p>
+      Consider again <m>\int_0^4(4x-x^2)\ dx</m>.
+      We will approximate this definite integral using 16 equally spaced subintervals and the Right Hand Rule in <xref ref="ex_rie7">Example</xref>.
+      Before doing so, it will pay to do some careful preparation.
+          <idx><h>Riemann Sum</h></idx>
+    </p>
+
+    <figure xml:id="fig_rie5">
+      <caption>Dividing <m>[0,4]</m> into 16 equally spaced subintervals.</caption>
+      <img src="figures/figrie5"/>
+    </figure>
+
+    <p>
+      <xref ref="fig_rie5">Figure</xref>
+      shows a number line of <m>[0,4]</m> divided,
+      or <em>partitioned</em>, into 16 equally spaced subintervals.
+      We denote <m>0</m> as <m>x_1</m>;
+      we have marked the values of <m>x_5</m>, <m>x_9</m>,
+      <m>x_{13}</m> and <m>x_{17}</m>.
+      We could mark them all, but the figure would get crowded.
+      While it is easy to figure that <m>x_{10} = 2.25</m>, in general,
+      we want a method of determining the value of <m>x_i</m> without consulting the figure.
+      Consider:
+    </p>
+
+    <p>
+      <img src="figures/figrie5a"/>
+    </p>
 
     <p>
       So <m>x_{10} = x_1 + 9(4/16) = 2.25</m>.

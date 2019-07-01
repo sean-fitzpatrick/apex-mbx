@@ -1271,61 +1271,63 @@
               states that <m>\ds \int \frac1x\,dx = \ln\abs{x} + C</m>.
             </p>
 
-            <ol>
-              <li>
-                <p>
-                  What is the domain of <m>y = \ln(x)</m>?
-                </p>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    What is the domain of <m>y = \ln(x)</m>?
+                  </p>
 
-                <p>
-                  <var name="$a" width="20" />
-                </p>
-              </li>
+                  <p>
+                    <var name="$a" width="20" />
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  Find <m>\lzoo{x}{\ln(x) }</m>.
-                </p>
+                <li>
+                  <p>
+                    Find <m>\lzoo{x}{\ln(x) }</m>.
+                  </p>
 
-                <p>
-                  <var name="$b" width="20" />
-                </p>
-              </li>
+                  <p>
+                    <var name="$b" width="20" />
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  What is the domain of <m>y = \ln(-x)</m>?
-                </p>
+                <li>
+                  <p>
+                    What is the domain of <m>y = \ln(-x)</m>?
+                  </p>
 
-                <p>
-                  <var name="$c" width="20" />
-                </p>
-              </li>
+                  <p>
+                    <var name="$c" width="20" />
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  Find <m>\lzoo{x}{\ln(-x)}</m>.
-                </p>
+                <li>
+                  <p>
+                    Find <m>\lzoo{x}{\ln(-x)}</m>.
+                  </p>
 
-                <p>
-                  <var name="$d" width="20" />
-                </p>
-              </li>
+                  <p>
+                    <var name="$d" width="20" />
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  You should find that <m>1/x</m> has two types of antiderivatives,
-                  depending on whether <m>x>0</m> or <m>x\lt 0</m>.
-                  In one expression, give a formula for
-                  <m>\ds \int \frac{1}{x}\ dx</m> that takes these different domains into account,
-                  and explain your answer.
-                </p>
+                <li>
+                  <p>
+                    You should find that <m>1/x</m> has two types of antiderivatives,
+                    depending on whether <m>x>0</m> or <m>x\lt 0</m>.
+                    In one expression, give a formula for
+                    <m>\ds \int \frac{1}{x}\ dx</m> that takes these different domains into account,
+                    and explain your answer.
+                  </p>
 
-                <p>
-                  <var form="essay" />
-                </p>
-              </li>
-            </ol>
+                  <p>
+                    <var form="essay" />
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
       </webwork>
     </exercise>
