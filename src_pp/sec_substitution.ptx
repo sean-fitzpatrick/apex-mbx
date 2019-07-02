@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_substitution">
   <title>Substitution</title>
   <introduction>
@@ -34,7 +33,7 @@
 
     <p>
       The underlying principle is to rewrite a <q>complicated</q>
-      integral of the form <m>\int f(x)\ dx</m> as a not<ndash />so<ndash />complicated integral <m>\int h(u)\ du</m>.
+      integral of the form <m>\int f(x)\ dx</m> as a not<ndash/>so<ndash/>complicated integral <m>\int h(u)\ du</m>.
       We'll formally establish later how this is done.
       First, consider again our introductory indefinite integral,
       <m>\int (20x+30)(x^2+3x-5)^9\ dx</m>.
@@ -151,7 +150,7 @@
       as the antiderivative of the derivative of <m>F</m> is just <m>F</m>,
       plus a constant.
       The <q>work</q> involved is making the proper substitution.
-      There is not a step<ndash />by<ndash />step process that one can memorize;
+      There is not a step<ndash/>by<ndash/>step process that one can memorize;
       rather, experience will be one's guide.
       To gain experience, we now embark on many examples.
     </p>
@@ -311,7 +310,7 @@
           when given an integral to evaluate,
           it is often beneficial to think
           <q>If I let <m>u</m> be <em>this</em>,
-          then <m>du</m> must be <em>that</em> <ellipsis /></q>
+          then <m>du</m> must be <em>that</em> <ellipsis/></q>
           and see if this helps simplify the integral at all.
         </p>
 
@@ -524,7 +523,7 @@
 
     <p>
       We can use similar techniques to those used in <xref ref="ex_sub6">Examples</xref>
-      and <xref ref="ex_sub7"></xref>
+      and <xref ref="ex_sub7"/>
       to find antiderivatives of <m>\cot(x)</m> and <m>\csc(x)</m>
       (which the reader can explore in the exercises.)
       We summarize our results here.
@@ -534,49 +533,53 @@
       <title>Antiderivatives of Trigonometric Functions</title>
       <statement>
 
-        <idx>
-          <h>integration</h><h>of trig. functions</h>
-        </idx>
+        <p>
+          <idx>
+            <h>integration</h><h>of trig. functions</h>
+          </idx>
+        </p>
 
-        <todo>Fix the column spacing. I don't know how to do it.</todo>
+        <!--TODO: Fix the column spacing. I don't know how to do it. -->
 
-        <ol cols="2">
-          <li>
-            <p>
-              <m>\ds \int \sin(x) \ dx = -\cos(x) +C</m>
-            </p>
-          </li>
+        <p>
+          <ol cols="2">
+            <li>
+              <p>
+                <m>\ds \int \sin(x) \ dx = -\cos(x) +C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds\int \cos(x) \ dx = \sin(x) + C</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds\int \cos(x) \ dx = \sin(x) + C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int \tan(x) \ dx = -\ln\abs{\cos(x) }+C</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int \tan(x) \ dx = -\ln\abs{\cos(x) }+C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int \csc(x) \ dx = -\ln\abs{\csc(x) +\cot(x) } +C</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int \csc(x) \ dx = -\ln\abs{\csc(x) +\cot(x) } +C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds\int \sec(x) \ dx = \ln\abs{\sec(x) +\tan(x) } + C</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds\int \sec(x) \ dx = \ln\abs{\sec(x) +\tan(x) } + C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int \cot(x) \ dx = \ln\abs{\sin(x) }+C</m>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\ds \int \cot(x) \ dx = \ln\abs{\sin(x) }+C</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -603,8 +606,7 @@
           The process we'll employ is to use a Power Reducing formula for <m>\cos^2(x)</m>
           (perhaps consult the back of this text for this formula),
           which states
-          <todo>Make an xref to the refence pages,
-          which are where????</todo>
+          <!--TODO: Make an xref to the refence pages, which are where???? -->
           <me>
             \cos^2(x) = \frac{1+\cos(2x)}{2}
           </me>.
@@ -623,7 +625,7 @@
         </p>
 
         <p>
-          We'll make significant use of this power<ndash />reducing technique in future sections.
+          We'll make significant use of this power<ndash/>reducing technique in future sections.
         </p>
       </solution>
     </example>
@@ -742,8 +744,7 @@
             <mrow>\amp = \int 2(u^4 + 2u^2 + 3)\ du</mrow>
             <mrow>\amp = \frac25u^5 + \frac43u^3 + 6u + C</mrow>
             <mrow>\amp = \frac25x^\frac52 + \frac43x^\frac32 + 6x^\frac12+C</mrow>
-            ,
-          </md>
+          </md>,
           which is obviously the same answer we obtained before.
           In this situation,
           substitution is arguably more work than our other method.
@@ -825,28 +826,30 @@
       <title>Integrals Involving Inverse Trigonomentric Functions</title>
       <statement>
         <p>
-          Let <m>a>0</m>.
+          Let <m>a&gt;0</m>.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\ds \int \frac{1}{a^2+x^2}\ dx = \frac1a\tan^{-1}\left(\frac{x}{a}\right) + C</m>
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\ds \int \frac{1}{a^2+x^2}\ dx = \frac1a\tan^{-1}\left(\frac{x}{a}\right) + C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int \frac{1}{\sqrt{a^2-x^2}}\ dx = \sin^{-1}\left(\frac{x}{a}\right)+C</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \int \frac{1}{\sqrt{a^2-x^2}}\ dx = \sin^{-1}\left(\frac{x}{a}\right)+C</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int \frac{1}{x\sqrt{x^2-a^2}}\ dx = \frac1a\sec^{-1}\left(\frac{\abs{x}}{a}\right)+C</m>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\ds \int \frac{1}{x\sqrt{x^2-a^2}}\ dx = \frac1a\sec^{-1}\left(\frac{\abs{x}}{a}\right)+C</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -933,8 +936,7 @@
           <md>
             <mrow>\int \frac{1}{x^2-4x+13}\ dx \amp = \int \frac{1}{(x-2)^2+9}\ dx</mrow>
             <mrow>\amp = \frac13\tan^{-1}\frac{x-2}{3}+C</mrow>
-            .
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -997,28 +999,30 @@
       Definite integrals that require substitution can be calculated using the following workflow:
     </p>
 
-    <ol>
-      <li>
-        <p>
-          Start with a definite integral
-          <m>\ds \int_a^b f(x)\ dx</m> that requires substitution.
-        </p>
-      </li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Start with a definite integral
+            <m>\ds \int_a^b f(x)\ dx</m> that requires substitution.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Ignore the bounds; use substitution to evaluate
-          <m>\ds \int f(x)\ dx</m> and find an antiderivative <m>F(x)</m>.
-        </p>
-      </li>
+        <li>
+          <p>
+            Ignore the bounds; use substitution to evaluate
+            <m>\ds \int f(x)\ dx</m> and find an antiderivative <m>F(x)</m>.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Evaluate <m>F(x)</m> at the bounds;
-          that is, evaluate <m>F(x)\Big|_a^b = F(b) - F(a)</m>.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <p>
+            Evaluate <m>F(x)</m> at the bounds;
+            that is, evaluate <m>F(x)\Big|_a^b = F(b) - F(a)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
 
     <p>
       This workflow works fine,
@@ -1099,13 +1103,15 @@
           we never went back to using <m>x</m>.
         </p>
 
-        <sidebyside widths="47% 47%">
-          <caption>Graphing the areas defined by the definite integrals of <xref ref="ex_sub12">Example</xref>.</caption>
+        <figure>
+<caption>Graphing the areas defined by the definite integrals of <xref ref="ex_sub12">Example</xref>.</caption>
+    <sidebyside widths="47% 47%">
+          
           <figure xml:id="fig_subst12a">
             <caption/>
           <!-- START figures/fig_subst12a.tex -->
             <image xml:id="img_subst12a">
-              <description></description>
+              <description/>
               <latex-image>
               <![CDATA[
               \begin{tikzpicture}
@@ -1129,7 +1135,7 @@
             <caption/>
           <!-- START figures/fig_subst12b.tex -->
             <image xml:id="img_subst12b">
-              <description></description>
+              <description/>
               <latex-image>
               <![CDATA[
               \begin{tikzpicture}
@@ -1144,12 +1150,13 @@
               \end{axis}
 
               \end{tikzpicture}
-              ]]>
+              ]]>              
               </latex-image>
             </image>
           <!-- figures/fig_subst12b.tex END -->
           </figure>
         </sidebyside>
+</figure>
 
         <p>
           The graphs in <xref ref="fig_subst12">Figure</xref> tell more of the story.
@@ -1201,15 +1208,17 @@
           guarantees that they have the same area.
         </p>
 
-        <sidebyside widths="47% 47%">
-          <caption>Graphing the areas defined by the definite integrals of <xref ref="ex_subst13">Example</xref>.</caption>
+       <figure xml:id="fig_subst13">
+<caption>Graphing the areas defined by the definite integrals of <xref ref="ex_subst13">Example</xref>.</caption>
+    <sidebyside widths="47% 47%">
+          
           <figure xml:id="fig_subst13a">
             <caption/>
-          <!-- START figures/fig_subst13a.tex -->
+            <!-- START figures/fig_subst13a.tex -->
             <image xml:id="img_subst13a">
-              <description></description>
+              <description/>
               <latex-image>
-              <![CDATA[
+              <![CDATA[              
               \begin{tikzpicture}
               \begin{axis}[axis on top,
               xtick=\empty,
@@ -1225,32 +1234,35 @@
               ]]>
               </latex-image>
             </image>
+            <!-- figures/fig_subst13a.tex END -->
 
           </figure>
-          <!-- figures/fig_subst13a.tex END -->
+
           <figure xml:id="fig_subst13b">
-          <!-- START figures/fig_subst13b.tex -->
-            <image xml:id="img_subst13b">
-              <description></description>
-              <latex-image>
-              <![CDATA[
-              \begin{tikzpicture}
-              \begin{axis}[axis on top, 
-              xtick={1},
-              extra x ticks={1.57},
-              extra x tick labels={$\frac{\pi}{2}$},ymin=-.6,ymax=1.1,
-              xmin=-.5,xmax=2,
-              xlabel={$u$},]
-              \addplot+[smooth,thick,domain=-.5:1.1]{x} node[pos=0.9, right]{\scriptsize $y=u$};
-              \addplot [{\coloronefill},thick,fill={\coloronefill},domain=0:1] {x} \closedcycle;
-              \end{axis}
-              \end{tikzpicture}
-              ]]>
-              </latex-image>
-            </image>
-          <!-- figures/fig_subst13b.tex END -->
+            <caption/>
+              <!-- START figures/fig_subst13b.tex -->
+              <image xml:id="img_subst13b">
+                <description/>
+                <latex-image>
+                <![CDATA[              
+                \begin{tikzpicture}
+                \begin{axis}[axis on top, 
+                xtick={1},
+                extra x ticks={1.57},
+                extra x tick labels={$\frac{\pi}{2}$},ymin=-.6,ymax=1.1,
+                xmin=-.5,xmax=2,
+                xlabel={$u$},]
+                \addplot+[smooth,thick,domain=-.5:1.1]{x} node[pos=0.9, right]{\scriptsize $y=u$};
+                \addplot [{\coloronefill},thick,fill={\coloronefill},domain=0:1] {x} \closedcycle;
+                \end{axis}
+                \end{tikzpicture}
+                ]]>
+                </latex-image>
+              </image>
+              <!-- figures/fig_subst13b.tex END -->
           </figure>
         </sidebyside>
+</figure>
       </solution>
     </example>
 
@@ -1286,7 +1298,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -1302,7 +1314,7 @@
             </setup>
             <statement>
               <p>
-                T/F: One can use algebra to rewrite the integrand of an integral to make it easier to evaluate.<var name="$true" form="popup" />
+                T/F: One can use algebra to rewrite the integrand of an integral to make it easier to evaluate.<var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -1430,7 +1442,7 @@
 
             <pg-code>
               $F = FormulaUpToConstant("sqrt(2x+3)");
-              $f = $F->D('x');
+              $f = $F-&gt;D('x');
             </pg-code>
             </setup>
             <statement>
@@ -2162,11 +2174,15 @@
             </statement>
         </webwork>
       </exercise>
+    </exercisegroup>
 
-      <p>
-        In the following exercises,
-        use Substitution to evaluate the indefinite integral involving inverse trigonometric functions.
-      </p>
+    <exercisegroup>
+      <introduction>
+        <p>
+          In the following exercises,
+          use Substitution to evaluate the indefinite integral involving inverse trigonometric functions.
+        </p>  
+      </introduction>  
 <!-- Exercise 41 -->
       <exercise>
         <webwork seed="1">
@@ -2942,7 +2958,7 @@
               $a = 1;
               $b = 3;
               $F = Formula("ln(abs(x-5))");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2951,7 +2967,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- -ln(2) -->
             </statement>
@@ -2966,7 +2982,7 @@
               $a = 2;
               $b = 6;
               $F = Formula("2/15*(x-2)^(3/2)*(3x+4)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2975,7 +2991,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 352/15 -->
             </statement>
@@ -2990,7 +3006,7 @@
               $a = -pi/2;
               $b = pi/2;
               $F = Formula("sin(x)^3/3");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2999,7 +3015,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 2/3 -->
             </statement>
@@ -3014,7 +3030,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("1/5*(x^2-1)^5");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -3023,7 +3039,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 1/5 -->
             </statement>
@@ -3038,7 +3054,7 @@
               $a = -2;
               $b = -1;
               $F = Formula("1/2*e^(x+1)^2");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -3047,7 +3063,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- (1-e)/2 -->
             </statement>
@@ -3062,7 +3078,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("atan(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -3071,7 +3087,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- pi/2 -->
             </statement>
@@ -3086,7 +3102,7 @@
               $a = 2;
               $b = 4;
               $F = Formula("-atan(3-x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -3095,7 +3111,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- pi/2 -->
             </statement>
@@ -3110,7 +3126,7 @@
               $a = 1;
               $b = sqrt(3);
               $F = Formula("asin(x/2)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -3119,7 +3135,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- pi/6 -->
             </statement>
@@ -3129,4 +3145,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
