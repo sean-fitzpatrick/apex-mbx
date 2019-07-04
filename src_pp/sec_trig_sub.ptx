@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_trig_sub">
   <title>Trigonometric Substitution</title>
   <introduction>
@@ -33,7 +32,7 @@
     </p>
 
     <p>
-      We start by demonstrating this method in evaluating the integral in <xref ref="eq_trigsub1" />.
+      We start by demonstrating this method in evaluating the integral in <xref ref="eq_trigsub1"/>.
       After the example,
       we will generalize the method and give more examples.
     </p>
@@ -89,7 +88,7 @@
       Each right triangle acts as a reference to help us understand the relationships between <m>x</m> and <m>\theta</m>.
     </p>
 
-    <todo> Consider using a table similar to what I use in my notes with the reference triangle.</todo>
+    <!-- ToDo:  Consider using a table similar to what I use in my notes with the reference triangle. -->
 
     <insight xml:id="idea_trigsub">
       <title>Trigonometric Substitution</title>
@@ -108,22 +107,23 @@
             for <m>-\pi/2\leq \theta\leq \pi/2</m>.
             On this interval, <m>\cos(\theta) \geq 0</m>,
             so <m>\sqrt{a^2-x^2} = a\cos(\theta)</m>.
+
+            </p>
             <!-- START figures/fig_trigsub_intro1.tex -->
             <image xml:id="img_trigsub_intro1" width="47%">
-              <description></description>
+              <description/>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
-		\draw [very thick] (0,0) -- node[below,pos=.5] { $\sqrt{a^2-x^2}$} (3,0) -- node [right,pos=.5] { $x$} (3,2) -- node [pos=.5,above] { $a$} (0,0);
-		\draw [thick] (2.7,0) -- (2.7,.3) -- (3,.3);
-		\draw (.75,.25) node {$\theta$};
+              \draw [very thick] (0,0) -- node[below,pos=.5] { $\sqrt{a^2-x^2}$} (3,0) -- node [right,pos=.5] { $x$} (3,2) -- node [pos=.5,above] { $a$} (0,0);
+              \draw [thick] (2.7,0) -- (2.7,.3) -- (3,.3);
+              \draw (.75,.25) node {$\theta$};
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro1.tex END -->
-          </p>
         </li>
 
         <li xml:id="idea_trigsubb">
@@ -133,20 +133,20 @@
             Let <m>x=a\tan(\theta)</m>, <m>dx = a\sec^2(\theta) \ d\theta</m>.
             Thus <m>\theta = \tan^{-1}(x/a)</m>,
             for <m>-\pi/2 \lt \theta \lt \pi/2</m>.
-            On this interval, <m>\sec(\theta) > 0</m>,
+            On this interval, <m>\sec(\theta) &gt; 0</m>,
             so <m>\sqrt{x^2+a^2} = a\sec(\theta)</m>.
             <!-- START figures/fig_trigsub_intro3.tex -->
             <image xml:id="img_trigsub_intro3" width="47%">
-              <description></description>
+              <description/>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
 		\draw [very thick] (0,0) -- node[below,pos=.5] { $a$} (3,0) -- node [right,pos=.5] { $x$} (3,2) -- node [pos=.5,above,sloped] { $\sqrt{x^2+a^2}$} (0,0);
 		\draw [thick] (2.7,0) -- (2.7,.3) -- (3,.3);
 		\draw (.75,.25) node {$\theta$};
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro3.tex END -->
@@ -167,16 +167,16 @@
             so <m>\sqrt{x^2-a^2} = a\tan(\theta)</m>.
             <!-- START figures/fig_trigsub_intro2.tex -->
             <image xml:id="img_trigsub_intro2" width="47%">
-              <description></description>
+              <description/>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
 		\draw [very thick] (0,0) -- node[below,pos=.5] { $a$} (3,0) -- node [right,pos=.5] { $\sqrt{x^2-a^2}$} (3,2) -- node [pos=.5,above] { $x$} (0,0);
 		\draw [thick] (2.7,0) -- (2.7,.3) -- (3,.3);
 		\draw (.75,.25) node {$\theta$};
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro2.tex END -->
@@ -439,7 +439,7 @@
     </example>
 
     <p>
-      The next example is similar to the previous one in that it does not involve a square<ndash />root.
+      The next example is similar to the previous one in that it does not involve a square<ndash/>root.
       It shows how several techniques and identities can be combined to obtain a solution.
     </p>
 
@@ -478,7 +478,7 @@
 
         <p>
           Finally, we return to <m>x</m> with the substitution <m>u=x+3</m>.
-          We start with the expression in Equation <xref ref="eq_extrigsub7" />:
+          We start with the expression in Equation <xref ref="eq_extrigsub7"/>:
           <md>
             <mrow>\frac12\theta + \frac14\sin(2\theta) + C \amp = \frac12\tan^{-1}(u) + \frac12\frac{u}{u^2+1}+C</mrow>
             <mrow>\amp = \frac12\tan^{-1}(x+3) + \frac{x+3}{2(x^2+6x+10)}+C</mrow>
@@ -617,7 +617,7 @@
             <statement>
               <p>
                 Trigonometric Substitution works on the same principles as Integration by Substitution,
-                though it can feel <q><fillin /></q>.
+                though it can feel <q><fillin/></q>.
               </p>
             </statement>
             <solution>
@@ -633,14 +633,14 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(theta=>"Real");
+              Context()-&gt;variables-&gt;add(theta=&gt;"Real");
               $a = Formula("5*sin(theta)");
             </pg-code>
             </setup>
             <statement>
               <p>
                 If one uses Trigonometric Substitution on an integrand containing <m>\sqrt{25-x^2}</m>,
-                then one should set <m>x=</m><var name="$a" width="12" />.
+                then one should set <m>x=</m><var name="$a" width="12"/>.
               </p>
             </statement>
             <solution>
@@ -656,7 +656,7 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(theta=>"Real");
+              Context()-&gt;variables-&gt;add(theta=&gt;"Real");
               $I = Formula("tan(theta)^2+1=sec(theta)^2");
               $S = Formula("9*sec(theta)^2");
             </pg-code>
@@ -683,7 +683,7 @@
                   </p>
 
                   <p>
-                    <var name="$S" width="20" />
+                    <var name="$S" width="20"/>
                   </p>
                 </li>
               </ol>
@@ -720,12 +720,12 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
             <solution>
               <p>
-                Because we are considering <m>a>0</m> and <m>x=a\sin(\theta)</m>,
+                Because we are considering <m>a&gt;0</m> and <m>x=a\sin(\theta)</m>,
                 which means <m>\theta = \sin^{-1}(x/a)</m>.
                 The arcsine function has a domain of <m>-\pi/2\leq \theta \leq \pi/2</m>;
                 on this domain, <m>\cos(\theta) \geq 0</m>,
@@ -761,7 +761,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -789,7 +789,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -817,7 +817,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -845,7 +845,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -873,7 +873,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -901,7 +901,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -929,7 +929,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -957,7 +957,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -985,7 +985,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1013,7 +1013,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1043,7 +1043,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1072,7 +1072,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1110,7 +1110,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1138,7 +1138,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1166,7 +1166,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1195,7 +1195,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1223,7 +1223,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1252,7 +1252,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1280,7 +1280,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1308,7 +1308,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1336,7 +1336,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1364,7 +1364,7 @@
               </p>
 
               <p>
-                <var name="$F" width="50" />
+                <var name="$F" width="50"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1397,7 +1397,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("1/2*(asin(x)+x*sqrt(1-x^2))");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1406,7 +1406,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1427,7 +1427,7 @@
               $a = 4;
               $b = 8;
               $F = Formula("1/2*x*sqrt(x^2-16)-8*ln(abs(x/4+sqrt(x^2-16)/4))");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1436,7 +1436,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1457,7 +1457,7 @@
               $a = 0;
               $b = 2;
               $F = Formula("2*(x/4*sqrt(x^2+4)+ln(abs(sqrt(x^2+4)/2+x/2)))");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1466,7 +1466,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1487,7 +1487,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("1/2*(atan(x)+x/(x^2+1))");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1496,7 +1496,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1517,7 +1517,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("1/2*(9*asin(x/3)+x*sqrt(9-x^2))");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1526,7 +1526,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1550,7 +1550,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("1/8*asin(x)-1/8*x*sqrt(1-x^2)*(1-2*x^2)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1559,7 +1559,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
             </statement>
             <solution-hidden>
@@ -1575,4 +1575,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

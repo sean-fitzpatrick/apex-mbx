@@ -1589,7 +1589,7 @@
               $a = 0;
               $b = pi;
               $F = Formula("sin(x)-x*cos(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1613,7 +1613,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("-e^(-x)*(x+1)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1637,7 +1637,7 @@
               $a = -pi/4;
               $b = pi/4;
               $F = Formula("-x^2*cos(x)+2x*sin(x)+2*cos(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1661,7 +1661,7 @@
               $a = -pi/2;
               $b = pi/2;
               $F = Formula("-x^3*cos(x)+3x^2*sin(x)+6x*cos(x)-6*sin(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1685,7 +1685,7 @@
               $a = 0;
               $b = sqrt(ln(2));
               $F = Formula("1/2*e^(x^2)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1709,7 +1709,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^3*e^x-3*x^2*e^x+6*x*e^x-6*e^x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1733,7 +1733,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("-x/2*e^(-2x)-e^(-2x)/4");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1757,7 +1757,7 @@
               $a = 0;
               $b = pi;
               $F = Formula("1/2*e^x*(sin(x)-cos(x))");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1781,7 +1781,7 @@
               $a = -pi/2;
               $b = pi/2;
               $F = Formula("1/5*e^(2x)*(sin(x)+2*cos(x))");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
