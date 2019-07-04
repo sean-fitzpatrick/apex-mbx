@@ -21,7 +21,7 @@
     <figure xml:id="fig_ftc0">
       <caption>The area of the shaded region is <m>F(x) = \int_a^x f(t)\ dt</m>.</caption>
       <image xml:id="img_ftc0" width="47%">
-        <description/>
+        <description></description>
         <latex-image>
         
         \begin{tikzpicture}
@@ -58,7 +58,7 @@
         <figure xml:id="fig_ftc1">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
           <image xml:id="img_ftc1" width="47%">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
@@ -94,7 +94,7 @@
         <figure xml:id="fig_ftc1b">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
           <image xml:id="img_ftc1b" width="47%">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
@@ -147,7 +147,7 @@
         <figure xml:id="fig_ftc1c">
           <caption>Graphs of <m>f(x)=2x</m> and <m>F(x)=x^2-1</m>.</caption>
           <image xml:id="img_ftc1c" width="47%">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
@@ -531,7 +531,7 @@
           <figure xml:id="fig_ftcmotion1a">
             <caption>The area between <m>v(t)</m> and the <m>t</m>-axis can be used to represent displacement.</caption>
             <image xml:id="img_ftcmotion1a">
-              <description/>
+              <description></description>
               <latex-image>
               
               \begin{tikzpicture}
@@ -559,7 +559,7 @@
           <figure xml:id="fig_ftcmotion1b">
             <caption>The area between <m>\abs{v(t)}</m> and the <m>t</m>-axis can be used to represent distance.</caption>
             <image xml:id="img_ftcmotion1b">
-              <description/>
+              <description></description>
               <latex-image>
               
               \begin{tikzpicture}
@@ -730,22 +730,22 @@
         <figure xml:id="fig_ftc5a">
           <caption/>
           <image xml:id="img_ftc5a">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={.5,3},
-        extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,%
+            extra x ticks={.5,3},
+            extra x tick labels={$a$,$b$},
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=2,%
-        xmin=-.5,xmax=3.5%
+            ymin=-.5,ymax=2,%
+            xmin=-.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},domain=.5:3,stack plots=y] {.25*(x-2)^2+.2};
@@ -764,22 +764,22 @@
         <figure xml:id="fig_ftc5b">
           <caption/>
           <image xml:id="img_ftc5b">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={.5,3},
-        extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,%
+            extra x ticks={.5,3},
+            extra x tick labels={$a$,$b$},
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=2,%
-        xmin=-.5,xmax=3.5%
+            ymin=-.5,ymax=2,%
+            xmin=-.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=.5:3] {.25*sin(deg(2*x))+1.25} \closedcycle;
@@ -844,7 +844,7 @@
         <figure xml:id="fig_ftc6">
           <caption>Sketching the region enclosed by <m>y=x^2+x-5</m> and <m>y=3x-2</m> in <xref ref="ex_ftc6">Example</xref>.</caption>
           <image xml:id="img_ftc6" width="47%">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
@@ -899,22 +899,22 @@
     <figure xml:id="fig_ftc7a">
       <caption>A graph of a function <m>f</m> to introduce the Mean Value Theorem.</caption>
       <image xml:id="img_ftc7a" width="47%">
-        <description/>
+        <description></description>
         <latex-image>
         
         \begin{tikzpicture}
         \begin{axis}[%
         axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
         %			extra x ticks={.5,3},
         %			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
         %			minor x tick num=4,
-			ymin=-.5,ymax=1.75,%
-			xmin=-.5,xmax=4.5%
+        ymin=-.5,ymax=1.75,%
+        xmin=-.5,xmax=4.5%
         ]
 
         \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
@@ -965,22 +965,22 @@
         <figure xml:id="fig_ftc7b2">
           <caption/>
           <image xml:id="img_ftc7b2">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={.5,3},
             %			extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=1.75,%
-        xmin=-.5,xmax=4.5%
+            ymin=-.5,ymax=1.75,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
@@ -997,22 +997,22 @@
         <figure xml:id="fig_ftc7b1">
           <caption/>
           <image xml:id="img_ftc7b1">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={.5,3},
             %			extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=1.75,%
-        xmin=-.5,xmax=4.5%
+            ymin=-.5,ymax=1.75,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
@@ -1029,22 +1029,22 @@
         <figure xml:id="fig_ftc7b3">
           <caption/>
           <image xml:id="img_ftc7b3">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={.5,3},
             %			extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=1.75,%
-        xmin=-.5,xmax=4.5%
+            ymin=-.5,ymax=1.75,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
@@ -1130,24 +1130,24 @@
         <figure xml:id="fig_ftc8">
           <caption>A graph of <m>y=\sin(x)</m> on <m>[0,\pi]</m> and the rectangle guaranteed by the Mean Value Theorem.</caption>
           <image xml:id="img_ftc8" width="47%">
-            <description/>
+            <description></description>
             <latex-image>
             
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2},%
-			extra x ticks={.69,3.14},
-			extra x tick labels={$c$,$\pi$},
-			ytick={1},
-			%
-			extra y ticks={.637},%
-			extra y tick labels={$\sin(0.69) $},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2},%
+            extra x ticks={.69,3.14},
+            extra x tick labels={$c$,$\pi$},
+            ytick={1},
+            %
+            extra y ticks={.637},%
+            extra y tick labels={$\sin(0.69) $},
             %			minor x tick num=4,
-			ymin=-.25,ymax=1.25,%
-			xmin=-.5,xmax=3.5%
+            ymin=-.25,ymax=1.25,%
+            xmin=-.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=0:3.14] {sin(deg(x))} \closedcycle;
@@ -1193,24 +1193,24 @@
       <caption>On the left, a graph of <m>y=f(x)</m> and the rectangle guaranteed by the Mean Value Theorem. On the right, <m>y=f(x)</m> is shifted down by <m>f(c)</m>; the resulting <q>area under the curve</q> is 0.</caption>
       <sidebyside widths="47% 47%">
         <image xml:id="img_ftc9a">
-          <description/>
+          <description></description>
           <latex-image>
           
           \begin{tikzpicture}
           \begin{axis}[%
           axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={1,4,1.63},
-        extra x tick labels={$a$,$b$,$c$},
-        ytick=\empty,
-        %
-        extra y ticks={1.75},%
-        extra y tick labels={$f(c)$},
+          %x=.37\marginparwidth,
+          %y=.37\marginparwidth,
+          xtick=\empty,%
+          extra x ticks={1,4,1.63},
+          extra x tick labels={$a$,$b$,$c$},
+          ytick=\empty,
+          %
+          extra y ticks={1.75},%
+          extra y tick labels={$f(c)$},
           %			minor x tick num=4,
-        ymin=-1,ymax=3.5,%
-        xmin=-.5,xmax=4.25%
+          ymin=-1,ymax=3.5,%
+          xmin=-.5,xmax=4.25%
           ]
 
           \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2+1} \closedcycle;
@@ -1225,24 +1225,24 @@
         </image>
 
         <image xml:id="img_ftc9b">
-          <description/>
+          <description></description>
           <latex-image>
           
           \begin{tikzpicture}
           \begin{axis}[%
           axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={1,4,1.63},
-        extra x tick labels={$a$,$b$,$c$},
-        ytick=\empty,
-        %
-        extra y ticks={1.75},%
-        extra y tick labels={$f(c)$},
+          %x=.37\marginparwidth,
+          %y=.37\marginparwidth,
+          xtick=\empty,%
+          extra x ticks={1,4,1.63},
+          extra x tick labels={$a$,$b$,$c$},
+          ytick=\empty,
+          %
+          extra y ticks={1.75},%
+          extra y tick labels={$f(c)$},
           %			minor x tick num=4,
-        ymin=-1,ymax=3.5,%
-        xmin=-.5,xmax=4.25%
+          ymin=-1,ymax=3.5,%
+          xmin=-.5,xmax=4.25%
           ]
 
           \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2-.75} \closedcycle;
@@ -1504,7 +1504,7 @@
               $a = 1;
               $b = 3;
               $F = Formula("x^3-x^2+x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1528,7 +1528,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^3/3-x^2+x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1552,7 +1552,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("x^4/4-x^6/6");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1576,7 +1576,7 @@
               $a = pi/2;
               $b = pi;
               $F = Formula("sin(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1600,7 +1600,7 @@
               $a = 0;
               $b = pi/4;
               $F = Formula("tan(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1624,7 +1624,7 @@
               $a = 1;
               $b = Compute("e^1");
               $F = Formula("ln(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1648,7 +1648,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("5^x/ln(5)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1672,7 +1672,7 @@
               $a = -2;
               $b = -1;
               $F = Formula("4x-x^4/2");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1696,7 +1696,7 @@
               $a = 0;
               $b = pi;
               $F = Formula("2*sin(x) + 2*cos(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1720,7 +1720,7 @@
               $a = 1;
               $b = 3;
               $F = Formula("e^x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1744,7 +1744,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("2/3*x^(3/2)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1768,7 +1768,7 @@
               $a = 9;
               $b = 25;
               $F = Formula("2*sqrt(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1792,7 +1792,7 @@
               $a = 1;
               $b = 8;
               $F = Formula("3/4*x^(4/3)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1816,7 +1816,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("ln(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1840,7 +1840,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("-1/x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1864,7 +1864,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("-1/2*x^(-2)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1888,7 +1888,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^2/2");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1912,7 +1912,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^3/3");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1936,7 +1936,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^4/4");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1960,7 +1960,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^101/101");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -1984,7 +1984,7 @@
               $a = -4;
               $b = 4;
               $F = Formula("x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2008,7 +2008,7 @@
               $a = -10;
               $b = -5;
               $F = Formula("3x");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2032,7 +2032,7 @@
               $a = -2;
               $b = 2;
               $F = Formula("1");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2056,7 +2056,7 @@
               $a = pi/6;
               $b = pi/3;
               $F = Formula("-csc(x)");
-              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
+              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2131,8 +2131,8 @@
               $b = 2;
               $F = Formula("x^3/3");
               $f_inv = Formula("sqrt(x)");
-              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
-              $c = $f_inv-&gt;eval(x=&gt;$f_c);
+              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $c = $f_inv->eval(x=>$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2157,8 +2157,8 @@
               $b = 2;
               $F = Formula("x^3/3");
               $f_inv = Formula("sqrt(x)");
-              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
-              $c = $f_inv-&gt;eval(x=&gt;$f_c);
+              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $c = $f_inv->eval(x=>$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2183,8 +2183,8 @@
               $b = 1;
               $F = Formula("e^x");
               $f_inv = Formula("ln(x)");
-              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
-              $c = $f_inv-&gt;eval(x=&gt;$f_c);
+              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $c = $f_inv->eval(x=>$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2209,8 +2209,8 @@
               $b = 16;
               $F = Formula("2/3*x^(3/2)");
               $f_inv = Formula("x^2");
-              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
-              $c = $f_inv-&gt;eval(x=&gt;$f_c);
+              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $c = $f_inv->eval(x=>$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2244,7 +2244,7 @@
               $a = 0;
               $b = pi/2;
               $F = Formula("-cos(x)");
-              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2268,7 +2268,7 @@
               $a = 0;
               $b = pi;
               $F = Formula("-cos(x)");
-              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2292,7 +2292,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^2/2");
-              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2316,7 +2316,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^3/3");
-              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2340,7 +2340,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^4/4");
-              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2364,7 +2364,7 @@
               $a = 1;
               $b = Compute("e^1");
               $F = Formula("ln(x)");
-              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2396,13 +2396,13 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $a = -16;
               $v0 = 20;
               $t0 = 0;
               $t1 = 5;
               $s = Formula("$a*t^2+$v0*t");
-              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
+              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2424,13 +2424,13 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $a = -16;
               $v0 = 200;
               $t0 = 0;
               $t1 = 10;
               $s = Formula("$a*t^2+$v0*t");
-              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
+              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2452,11 +2452,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = -1;
               $t1 = 1;
               $s = Formula("2^t/ln(2)");
-              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
+              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
               $disp = NumberWithUnits("$disp mi");
             </pg-code>
             </setup>
@@ -2478,11 +2478,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = 0;
               $t1 = 3*pi/2;
               $s = Formula("sin(t)");
-              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
+              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2504,11 +2504,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = 0;
               $t1 = 16;
               $s = Formula("4/5*t^(5/4)");
-              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
+              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2541,11 +2541,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = 0;
               $t1 = 2;
               $v = Formula("-32t");
-              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
+              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2567,11 +2567,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = 0;
               $t1 = 5;
               $v = Formula("10t");
-              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
+              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2593,11 +2593,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = 0;
               $t1 = 2;
               $v = Formula("t^2/2");
-              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
+              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2619,11 +2619,11 @@
             <setup>
 
             <pg-code>
-              Context()-&gt;variables-&gt;add(t=&gt;"Real");
+              Context()->variables->add(t=>"Real");
               $t0 = 0;
               $t1 = pi;
               $v = Formula("sin(t)");
-              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
+              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2660,7 +2660,7 @@
               $F = Formula("5x^2/2");
               $G = Formula("x^2");
               $D = Formula("$F - $G");
-              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
+              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2686,7 +2686,7 @@
               $F = Formula("3x^2/2+6x");
               $G = Formula("-x^2/2+x");
               $D = Formula("$F - $G");
-              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
+              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2713,7 +2713,7 @@
               $F = Formula("x^3/3-x^2+5x");
               $G = Formula("5x^2/2-5x");
               $D = Formula("$F - $G");
-              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
+              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>
@@ -2739,7 +2739,7 @@
               $F = Formula("x^3/3+3x^2/2+7x");
               $G = Formula("2x^3/3+x^2-5x");
               $D = Formula("$F - $G");
-              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
+              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
             </pg-code>
             </setup>
             <statement>

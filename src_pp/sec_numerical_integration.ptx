@@ -505,10 +505,10 @@
               <cell><m>\sin(x_i^3)</m></cell>
             </row>
             <row bottom="minor">
-              <cell/>
-              <cell/>
-              <cell/>
-              <cell/>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
             </row>
             <row>
               <cell><m>x_1</m></cell>
@@ -577,7 +577,7 @@
               <cell><m>-0.6700</m></cell>
             </row>
             <row>
-              <cell/>
+              <cell></cell>
             </row>
           </tabular>
 
@@ -924,8 +924,8 @@
               <cell><m>e^{-x_i^2}</m></cell>
             </row>
             <row bottom="minor">
-              <cell/>
-              <cell/>
+              <cell></cell>
+              <cell></cell>
             </row>
             <row>
               <cell><m>0</m></cell>
@@ -1120,8 +1120,8 @@
               <cell><m>e^{-x_i^2}</m></cell>
             </row>
             <row bottom="minor">
-              <cell/>
-              <cell/>
+              <cell></cell>
+              <cell></cell>
             </row>
             <row>
               <cell><m>0.1</m></cell>
@@ -1190,10 +1190,10 @@
               <cell><m>\sin(x_i^3)</m></cell>
             </row>
             <row bottom="minor">
-              <cell/>
-              <cell/>
-              <cell/>
-              <cell/>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
             </row>
             <row>
               <cell><m>\overline{x_1}</m></cell>
@@ -1256,7 +1256,7 @@
               <cell><m>0.0740</m></cell>
             </row>
             <row>
-              <cell/>
+              <cell></cell>
             </row>
           </tabular>
 
@@ -1526,8 +1526,8 @@
                 <cell><m>e^{-x_i^2}</m></cell>
               </row>
               <row bottom="minor">
-                <cell/>
-                <cell/>
+                <cell></cell>
+                <cell></cell>
               </row>
               <row>
                 <cell><m>0</m></cell>
@@ -1550,7 +1550,7 @@
                 <cell><m>0.368</m></cell>
               </row>
               <row>
-                <cell/>
+                <cell></cell>
               </row>
             </tabular>
 
