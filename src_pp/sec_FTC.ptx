@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_FTC">
   <title>The Fundamental Theorem of Calculus</title>
   <introduction>
@@ -21,10 +20,10 @@
 
     <figure xml:id="fig_ftc0">
       <caption>The area of the shaded region is <m>F(x) = \int_a^x f(t)\ dt</m>.</caption>
-      <image xml:id="img_ftc0"  width="47%">
-        <description></description>
+      <image xml:id="img_ftc0" width="47%">
+        <description/>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[axis on top,
         xtick=\empty,
@@ -40,7 +39,7 @@
 
         \end{axis}
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -58,10 +57,10 @@
 
         <figure xml:id="fig_ftc1">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
-          <image xml:id="img_ftc1"  width="47%">
-            <description></description>
+          <image xml:id="img_ftc1" width="47%">
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[xtick=\empty,
             extra x ticks={1,2.5},
@@ -77,7 +76,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -94,10 +93,10 @@
 
         <figure xml:id="fig_ftc1b">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
-          <image xml:id="img_ftc1b"  width="47%">
-            <description></description>
+          <image xml:id="img_ftc1b" width="47%">
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[ xtick=\empty,
             extra x ticks={1,2.5},
@@ -111,13 +110,13 @@
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {2*x} \closedcycle;
             \addplot[lineseg, domain=0:2]({1},{x}) node[pos=0.5, right]{$2$};
             \addplot[lineseg, domain=0:1]({x},{0}) node[pos=0.5, above]{$1$};
-            \addplot[lineseg,<->, domain=0:2.5]({x},{-1}) node[pos=0.5, below]{$x$};
+            \addplot[lineseg,&lt;-&gt;, domain=0:2.5]({x},{-1}) node[pos=0.5, below]{$x$};
             \addplot[lineseg, domain=0:5]({2.5},{x}) node[pos=0.5, right]{$2x$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -147,10 +146,10 @@
 
         <figure xml:id="fig_ftc1c">
           <caption>Graphs of <m>f(x)=2x</m> and <m>F(x)=x^2-1</m>.</caption>
-          <image xml:id="img_ftc1c"  width="47%">
-            <description></description>
+          <image xml:id="img_ftc1c" width="47%">
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[ymin=-2,ymax=8,
             xmin=-1,xmax=3.5
@@ -161,7 +160,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -175,7 +174,7 @@
       In <xref ref="ex_ftc1">Example</xref>,
       <m>F(x)=x^2-1</m>, so <m>F'(x)=2x=f(x)</m>.
       While this may seem like an innocuous thing to do,
-      it has far<ndash />reaching implications,
+      it has far<ndash/>reaching implications,
       as demonstrated by the fact that the result is given as an important theorem.
     </p>
 
@@ -532,9 +531,9 @@
           <figure xml:id="fig_ftcmotion1a">
             <caption>The area between <m>v(t)</m> and the <m>t</m>-axis can be used to represent displacement.</caption>
             <image xml:id="img_ftcmotion1a">
-              <description></description>
+              <description/>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
               \begin{axis}[ xtick=\empty,
               extra x ticks={0.625,1},
@@ -552,7 +551,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
           </figure>
@@ -560,9 +559,9 @@
           <figure xml:id="fig_ftcmotion1b">
             <caption>The area between <m>\abs{v(t)}</m> and the <m>t</m>-axis can be used to represent distance.</caption>
             <image xml:id="img_ftcmotion1b">
-              <description></description>
+              <description/>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
               \begin{axis}[ xtick=\empty,
               extra x ticks={0.625,1},
@@ -582,7 +581,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
           </figure>
@@ -731,9 +730,9 @@
         <figure xml:id="fig_ftc5a">
           <caption/>
           <image xml:id="img_ftc5a">
-            <description></description>
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
@@ -757,7 +756,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -765,9 +764,9 @@
         <figure xml:id="fig_ftc5b">
           <caption/>
           <image xml:id="img_ftc5b">
-            <description></description>
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
@@ -791,7 +790,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -844,10 +843,10 @@
 
         <figure xml:id="fig_ftc6">
           <caption>Sketching the region enclosed by <m>y=x^2+x-5</m> and <m>y=3x-2</m> in <xref ref="ex_ftc6">Example</xref>.</caption>
-          <image xml:id="img_ftc6"  width="47%">
-            <description></description>
+          <image xml:id="img_ftc6" width="47%">
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[axis on top,
             xtick={-2,-1,1,2,3,4},
@@ -863,7 +862,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -899,10 +898,10 @@
     <title>The Mean Value Theorem and Average Value</title>
     <figure xml:id="fig_ftc7a">
       <caption>A graph of a function <m>f</m> to introduce the Mean Value Theorem.</caption>
-      <image xml:id="img_ftc7a"  width="47%">
-        <description></description>
+      <image xml:id="img_ftc7a" width="47%">
+        <description/>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[%
         axis on top,%
@@ -923,7 +922,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -966,9 +965,9 @@
         <figure xml:id="fig_ftc7b2">
           <caption/>
           <image xml:id="img_ftc7b2">
-            <description></description>
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
@@ -990,7 +989,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -998,9 +997,9 @@
         <figure xml:id="fig_ftc7b1">
           <caption/>
           <image xml:id="img_ftc7b1">
-            <description></description>
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
@@ -1022,7 +1021,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1030,9 +1029,9 @@
         <figure xml:id="fig_ftc7b3">
           <caption/>
           <image xml:id="img_ftc7b3">
-            <description></description>
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
@@ -1054,7 +1053,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1130,10 +1129,10 @@
 
         <figure xml:id="fig_ftc8">
           <caption>A graph of <m>y=\sin(x)</m> on <m>[0,\pi]</m> and the rectangle guaranteed by the Mean Value Theorem.</caption>
-          <image xml:id="img_ftc8"  width="47%">
-            <description></description>
+          <image xml:id="img_ftc8" width="47%">
+            <description/>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
@@ -1157,7 +1156,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1183,7 +1182,7 @@
 
     <p>
       When <m>f(x)</m> is shifted by <m>-f(c)</m>,
-      the amount of area under <m>f</m> above the <m>x</m><ndash />axis on <m>[a,b]</m> is the same as the amount of area below the <m>x</m><ndash />axis above <m>f</m>;
+      the amount of area under <m>f</m> above the <m>x</m><ndash/>axis on <m>[a,b]</m> is the same as the amount of area below the <m>x</m><ndash/>axis above <m>f</m>;
       see <xref ref="fig_ftc9">Figure</xref> for an illustration of this.
       In this sense,
       we can say that <m>f(c)</m> is the <em>average value</em>
@@ -1194,9 +1193,9 @@
       <caption>On the left, a graph of <m>y=f(x)</m> and the rectangle guaranteed by the Mean Value Theorem. On the right, <m>y=f(x)</m> is shifted down by <m>f(c)</m>; the resulting <q>area under the curve</q> is 0.</caption>
       <sidebyside widths="47% 47%">
         <image xml:id="img_ftc9a">
-          <description></description>
+          <description/>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
           \begin{axis}[%
           axis on top,%
@@ -1221,14 +1220,14 @@
           \end{axis}
 
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
 
         <image xml:id="img_ftc9b">
-          <description></description>
+          <description/>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
           \begin{axis}[%
           axis on top,%
@@ -1253,7 +1252,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </sidebyside>
@@ -1318,7 +1317,7 @@
       <statement>
         <p>
           Let <m>f</m> be continuous on <m>[a,b]</m>.
-          The <term>average value of<nbsp /> <m>f</m><nbsp /> on <m>[a,b]</m></term> is <m>f(c)</m>,
+          The <term>average value of<nbsp/> <m>f</m><nbsp/> on <m>[a,b]</m></term> is <m>f(c)</m>,
           where <m>c</m> is a value in <m>[a,b]</m> guaranteed by the Mean Value Theorem.
 
           <idx>
@@ -1429,7 +1428,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -1461,7 +1460,7 @@
             <statement>
               <p>
                 T/F: If <m>f</m> is a continuous function,
-                then <m>\ds F(x) = \int_a^x f(t)\ dt</m> is also a continuous function.<var name="$true" form="popup" />
+                then <m>\ds F(x) = \int_a^x f(t)\ dt</m> is also a continuous function.<var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -1482,7 +1481,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -1505,7 +1504,7 @@
               $a = 1;
               $b = 3;
               $F = Formula("x^3-x^2+x");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1514,7 +1513,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 20 -->
             </statement>
@@ -1529,7 +1528,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^3/3-x^2+x");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1538,7 +1537,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 28/3 -->
             </statement>
@@ -1553,7 +1552,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("x^4/4-x^6/6");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1562,7 +1561,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 0 -->
             </statement>
@@ -1577,7 +1576,7 @@
               $a = pi/2;
               $b = pi;
               $F = Formula("sin(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1586,7 +1585,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- -1 -->
             </statement>
@@ -1601,7 +1600,7 @@
               $a = 0;
               $b = pi/4;
               $F = Formula("tan(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1610,7 +1609,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1 -->
             </statement>
@@ -1625,7 +1624,7 @@
               $a = 1;
               $b = Compute("e^1");
               $F = Formula("ln(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1634,7 +1633,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1 -->
             </statement>
@@ -1649,7 +1648,7 @@
               $a = -1;
               $b = 1;
               $F = Formula("5^x/ln(5)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1658,7 +1657,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- (5-1/5)/ln(5) -->
             </statement>
@@ -1673,7 +1672,7 @@
               $a = -2;
               $b = -1;
               $F = Formula("4x-x^4/2");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1682,7 +1681,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 23/2 -->
             </statement>
@@ -1697,7 +1696,7 @@
               $a = 0;
               $b = pi;
               $F = Formula("2*sin(x) + 2*cos(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1706,7 +1705,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- -4 -->
             </statement>
@@ -1721,7 +1720,7 @@
               $a = 1;
               $b = 3;
               $F = Formula("e^x");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1730,7 +1729,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- e^3-e -->
             </statement>
@@ -1745,7 +1744,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("2/3*x^(3/2)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1754,7 +1753,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 16/3 -->
             </statement>
@@ -1769,7 +1768,7 @@
               $a = 9;
               $b = 25;
               $F = Formula("2*sqrt(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1778,7 +1777,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 4 -->
             </statement>
@@ -1793,7 +1792,7 @@
               $a = 1;
               $b = 8;
               $F = Formula("3/4*x^(4/3)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1802,7 +1801,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 45/4 -->
             </statement>
@@ -1817,7 +1816,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("ln(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1826,7 +1825,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- ln(2) -->
             </statement>
@@ -1841,7 +1840,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("-1/x");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1850,7 +1849,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/2 -->
             </statement>
@@ -1865,7 +1864,7 @@
               $a = 1;
               $b = 2;
               $F = Formula("-1/2*x^(-2)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1874,7 +1873,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 3/8 -->
             </statement>
@@ -1889,7 +1888,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^2/2");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1898,7 +1897,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/2 -->
             </statement>
@@ -1913,7 +1912,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^3/3");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1922,7 +1921,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/3 -->
             </statement>
@@ -1937,7 +1936,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^4/4");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1946,7 +1945,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/4 -->
             </statement>
@@ -1961,7 +1960,7 @@
               $a = 0;
               $b = 1;
               $F = Formula("x^101/101");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1970,7 +1969,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/101 -->
             </statement>
@@ -1985,7 +1984,7 @@
               $a = -4;
               $b = 4;
               $F = Formula("x");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -1994,7 +1993,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 8 -->
             </statement>
@@ -2009,7 +2008,7 @@
               $a = -10;
               $b = -5;
               $F = Formula("3x");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2018,7 +2017,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 15 -->
             </statement>
@@ -2033,7 +2032,7 @@
               $a = -2;
               $b = 2;
               $F = Formula("1");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2042,7 +2041,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 0 -->
             </statement>
@@ -2057,7 +2056,7 @@
               $a = pi/6;
               $b = pi/3;
               $F = Formula("-csc(x)");
-              $r = $F->eval(x=>$b) - $F->eval(x=>$a);
+              $r = $F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2066,7 +2065,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 2-2/sqrt(3) -->
             </statement>
@@ -2107,7 +2106,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -2132,8 +2131,8 @@
               $b = 2;
               $F = Formula("x^3/3");
               $f_inv = Formula("sqrt(x)");
-              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
-              $c = $f_inv->eval(x=>$f_c);
+              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $c = $f_inv-&gt;eval(x=&gt;$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2142,7 +2141,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- 2/sqrt(3) -->
             </statement>
@@ -2158,8 +2157,8 @@
               $b = 2;
               $F = Formula("x^3/3");
               $f_inv = Formula("sqrt(x)");
-              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
-              $c = $f_inv->eval(x=>$f_c);
+              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $c = $f_inv-&gt;eval(x=&gt;$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2168,7 +2167,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- +/- 2/sqrt(3) -->
             </statement>
@@ -2184,8 +2183,8 @@
               $b = 1;
               $F = Formula("e^x");
               $f_inv = Formula("ln(x)");
-              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
-              $c = $f_inv->eval(x=>$f_c);
+              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $c = $f_inv-&gt;eval(x=&gt;$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2194,7 +2193,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- ln(e-1), approx 0.5413-->
             </statement>
@@ -2210,8 +2209,8 @@
               $b = 16;
               $F = Formula("2/3*x^(3/2)");
               $f_inv = Formula("x^2");
-              $f_c = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
-              $c = $f_inv->eval(x=>$f_c);
+              $f_c = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
+              $c = $f_inv-&gt;eval(x=&gt;$f_c);
             </pg-code>
             </setup>
             <statement>
@@ -2220,7 +2219,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- 64/9 -->
             </statement>
@@ -2245,7 +2244,7 @@
               $a = 0;
               $b = pi/2;
               $F = Formula("-cos(x)");
-              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2254,7 +2253,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 2/pi -->
             </statement>
@@ -2269,7 +2268,7 @@
               $a = 0;
               $b = pi;
               $F = Formula("-cos(x)");
-              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2278,7 +2277,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 2/pi -->
             </statement>
@@ -2293,7 +2292,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^2/2");
-              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2302,7 +2301,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 2 -->
             </statement>
@@ -2317,7 +2316,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^3/3");
-              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2326,7 +2325,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 16/3 -->
             </statement>
@@ -2341,7 +2340,7 @@
               $a = 0;
               $b = 4;
               $F = Formula("x^4/4");
-              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2350,7 +2349,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 16 -->
             </statement>
@@ -2365,7 +2364,7 @@
               $a = 1;
               $b = Compute("e^1");
               $F = Formula("ln(x)");
-              $f_avg = ($F->eval(x=>$b) - $F->eval(x=>$a))/($b-$a);
+              $f_avg = ($F-&gt;eval(x=&gt;$b) - $F-&gt;eval(x=&gt;$a))/($b-$a);
             </pg-code>
             </setup>
             <statement>
@@ -2374,7 +2373,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 1/(e-1) -->
             </statement>
@@ -2397,13 +2396,13 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $a = -16;
               $v0 = 20;
               $t0 = 0;
               $t1 = 5;
               $s = Formula("$a*t^2+$v0*t");
-              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
+              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2413,7 +2412,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- -300ft -->
             </statement>
@@ -2425,13 +2424,13 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $a = -16;
               $v0 = 200;
               $t0 = 0;
               $t1 = 10;
               $s = Formula("$a*t^2+$v0*t");
-              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
+              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2441,7 +2440,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- 400ft -->
             </statement>
@@ -2453,11 +2452,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = -1;
               $t1 = 1;
               $s = Formula("2^t/ln(2)");
-              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
+              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
               $disp = NumberWithUnits("$disp mi");
             </pg-code>
             </setup>
@@ -2467,7 +2466,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- 1.5/ln(2) miles -->
             </statement>
@@ -2479,11 +2478,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = 0;
               $t1 = 3*pi/2;
               $s = Formula("sin(t)");
-              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
+              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2493,7 +2492,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- -1 ft -->
             </statement>
@@ -2505,11 +2504,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = 0;
               $t1 = 16;
               $s = Formula("4/5*t^(5/4)");
-              $disp = $s->eval(t=>$t1) - $s->eval(t=>$t0);
+              $disp = $s-&gt;eval(t=&gt;$t1) - $s-&gt;eval(t=&gt;$t0);
               $disp = NumberWithUnits("$disp ft");
             </pg-code>
             </setup>
@@ -2519,7 +2518,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- 128/5ft -->
             </statement>
@@ -2542,11 +2541,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = 0;
               $t1 = 2;
               $v = Formula("-32t");
-              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
+              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2556,7 +2555,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- -64 ft/s -->
             </statement>
@@ -2568,11 +2567,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = 0;
               $t1 = 5;
               $v = Formula("10t");
-              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
+              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2582,7 +2581,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- 50 ft/s -->
             </statement>
@@ -2594,11 +2593,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = 0;
               $t1 = 2;
               $v = Formula("t^2/2");
-              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
+              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2608,7 +2607,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- 2 ft/s -->
             </statement>
@@ -2620,11 +2619,11 @@
             <setup>
 
             <pg-code>
-              Context()->variables->add(t=>"Real");
+              Context()-&gt;variables-&gt;add(t=&gt;"Real");
               $t0 = 0;
               $t1 = pi;
               $v = Formula("sin(t)");
-              $delta_v = $v->eval(t=>$t1) - $v->eval(t=>$t0);
+              $delta_v = $v-&gt;eval(t=&gt;$t1) - $v-&gt;eval(t=&gt;$t0);
               $delta_v = NumberWithUnits("$delta_v ft/s");
             </pg-code>
             </setup>
@@ -2634,7 +2633,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- 0 ft/s -->
             </statement>
@@ -2661,7 +2660,7 @@
               $F = Formula("5x^2/2");
               $G = Formula("x^2");
               $D = Formula("$F - $G");
-              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
+              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2670,7 +2669,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 27/2 -->
             </statement>
@@ -2687,7 +2686,7 @@
               $F = Formula("3x^2/2+6x");
               $G = Formula("-x^2/2+x");
               $D = Formula("$F - $G");
-              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
+              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2697,7 +2696,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 21 -->
             </statement>
@@ -2714,7 +2713,7 @@
               $F = Formula("x^3/3-x^2+5x");
               $G = Formula("5x^2/2-5x");
               $D = Formula("$F - $G");
-              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
+              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2723,7 +2722,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 9/2 -->
             </statement>
@@ -2740,7 +2739,7 @@
               $F = Formula("x^3/3+3x^2/2+7x");
               $G = Formula("2x^3/3+x^2-5x");
               $D = Formula("$F - $G");
-              $r = $D->eval(x=>$b) - $D->eval(x=>$a);
+              $r = $D-&gt;eval(x=&gt;$b) - $D-&gt;eval(x=&gt;$a);
             </pg-code>
             </setup>
             <statement>
@@ -2749,7 +2748,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 54 -->
             </statement>
@@ -2786,7 +2785,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2806,7 +2805,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2826,7 +2825,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2846,7 +2845,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2855,4 +2854,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
