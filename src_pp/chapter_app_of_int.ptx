@@ -58,37 +58,39 @@
 
       </p>
 
-      <ol>
-        <li>
-          <p>
-            Divide the quantity into <m>n</m> smaller
-            <q>subquantities</q> of value <m>Q_i</m>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Divide the quantity into <m>n</m> smaller
+              <q>subquantities</q> of value <m>Q_i</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            Identify a variable <m>x</m> and function <m>f(x)</m> such that each subquantity can be approximated with the product <m>f(c_i)\dx</m>,
-            where <m>\dx</m> represents a small change in <m>x</m>.
-            Thus <m>Q_i \approx f(c_i)\dx</m>.
-            A sample approximation <m>f(c_i)\dx</m> of <m>Q_i</m> is called a
-            <em>differential element</em>.
-          </p>
-        </li>
+          <li>
+            <p>
+              Identify a variable <m>x</m> and function <m>f(x)</m> such that each subquantity can be approximated with the product <m>f(c_i)\dx</m>,
+              where <m>\dx</m> represents a small change in <m>x</m>.
+              Thus <m>Q_i \approx f(c_i)\dx</m>.
+              A sample approximation <m>f(c_i)\dx</m> of <m>Q_i</m> is called a
+              <em>differential element</em>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            Recognize that <m>\ds Q= \sum_{i=1}^n Q_i \approx \sum_{i=1}^n f(c_i)\dx</m>,
-            which is a Riemann Sum.
-          </p>
-        </li>
+          <li>
+            <p>
+              Recognize that <m>\ds Q= \sum_{i=1}^n Q_i \approx \sum_{i=1}^n f(c_i)\dx</m>,
+              which is a Riemann Sum.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            Taking the appropriate limit gives <m>\ds Q = \int_a^b f(x)\ dx</m>
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              Taking the appropriate limit gives <m>\ds Q = \int_a^b f(x)\ dx</m>
+            </p>
+          </li>
+        </ol>
+      </p>
     </insight>
 
     <p>
@@ -99,8 +101,8 @@
     </p>
   </introduction>
 
-  <xi:include  href="sec_ABC.ptx" />
-  <xi:include  href="sec_disk.ptx" />
+  <!-- <xi:include  href="sec_ABC.ptx" /> -->
+  <!-- <xi:include  href="sec_disk.ptx" /> -->
   <xi:include  href="sec_shell_method.ptx" />
   <xi:include  href="sec_arc_length.ptx" />
   <xi:include  href="sec_work.ptx" />
