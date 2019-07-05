@@ -107,8 +107,10 @@
             for <m>-\pi/2\leq \theta\leq \pi/2</m>.
             On this interval, <m>\cos(\theta) \geq 0</m>,
             so <m>\sqrt{a^2-x^2} = a\cos(\theta)</m>.
+          </p>
 
-            </p>
+          <figure xml:id="fig_trigsub_intro1">
+            <caption></caption>
             <!-- START figures/fig_trigsub_intro1.tex -->
             <image xml:id="img_trigsub_intro1" width="47%">
               <description></description>
@@ -124,6 +126,7 @@
               </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro1.tex END -->
+          </figure>
         </li>
 
         <li xml:id="idea_trigsubb">
@@ -135,6 +138,10 @@
             for <m>-\pi/2 \lt \theta \lt \pi/2</m>.
             On this interval, <m>\sec(\theta) \gt 0</m>,
             so <m>\sqrt{x^2+a^2} = a\sec(\theta)</m>.
+          </p>
+
+          <figure xml:id="fig_trigsub_intro3">
+            <caption></caption>
             <!-- START figures/fig_trigsub_intro3.tex -->
             <image xml:id="img_trigsub_intro3" width="47%">
               <description></description>
@@ -150,7 +157,7 @@
               </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro3.tex END -->
-          </p>
+          </figure>
         </li>
 
         <li xml:id="idea_trigsubc">
@@ -165,6 +172,10 @@
             so <m>x/a\geq 1</m>, and <m>0\leq\theta\lt \pi/2</m>.
             On this interval, <m>\tan(\theta) \geq 0</m>,
             so <m>\sqrt{x^2-a^2} = a\tan(\theta)</m>.
+          </p>
+
+          <figure xml:id="fig_trigsub_intro2">
+            <caption></caption>
             <!-- START figures/fig_trigsub_intro2.tex -->
             <image xml:id="img_trigsub_intro2" width="47%">
               <description></description>
@@ -180,7 +191,7 @@
               </latex-image>
             </image>
             <!-- figures/fig_trigsub_intro2.tex END -->
-          </p>
+          </figure>
         </li>
       </ol>
     </p>
