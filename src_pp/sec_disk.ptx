@@ -2107,7 +2107,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
               -->
           <!-- START figures/figwash2b_3D.asy -->
-          <figure xml:id="img_wash2b_3D">
+          <figure xml:id="fig_wash2b_3D">
             <caption/>
             <image xml:id="img_wash2b_3D">
               <description></description>
