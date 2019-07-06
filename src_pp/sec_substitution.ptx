@@ -1103,7 +1103,7 @@
           we never went back to using <m>x</m>.
         </p>
 
-        <figure>
+        <figure xml:id="fig_subst12">
           <caption>Graphing the areas defined by the definite integrals of <xref ref="ex_sub12">Example</xref>.</caption>
           <sidebyside widths="47% 47%">             
             <figure xml:id="fig_subst12a">
