@@ -110,7 +110,7 @@
           </p>
 
           <figure xml:id="fig_trigsub_intro1">
-            <caption></caption>
+            <caption/>
             <!-- START figures/fig_trigsub_intro1.tex -->
             <image xml:id="img_trigsub_intro1" width="47%">
               <description></description>
@@ -141,7 +141,7 @@
           </p>
 
           <figure xml:id="fig_trigsub_intro3">
-            <caption></caption>
+            <caption/>
             <!-- START figures/fig_trigsub_intro3.tex -->
             <image xml:id="img_trigsub_intro3" width="47%">
               <description></description>
@@ -175,7 +175,7 @@
           </p>
 
           <figure xml:id="fig_trigsub_intro2">
-            <caption></caption>
+            <caption/>
             <!-- START figures/fig_trigsub_intro2.tex -->
             <image xml:id="img_trigsub_intro2" width="47%">
               <description></description>
