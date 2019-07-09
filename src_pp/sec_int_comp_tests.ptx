@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_int_comp_tests">
   <title>Integral and Comparison Tests</title>
   <introduction>
@@ -7,7 +6,7 @@
       Knowing whether or not a series converges is very important,
       especially when we discuss Power Series in <xref ref="sec_power_series">Section</xref>.
       <xref ref="thm_geom_series">Theorems</xref>
-      and <xref ref="thm_pseries"></xref>
+      and <xref ref="thm_pseries"/>
       give criteria for when Geometric and <m>p</m>-series converge,
       and <xref ref="thm_series_nth_term">Theorem</xref>
       gives a quick test to determine if a series diverges.
@@ -77,93 +76,96 @@
       </men>.
     </p>
 
-    <sidebyside widths="47% 47%">
+    <figure xml:id="fig_integral_test">
       <caption>Illustrating the truth of the Integral Test.</caption>
-      <figure xml:id="fig_integral_test_a">
-        <caption/>
-        <!-- START figures/fig_integral_test_a.tex -->
-        <image xml:id="img_integral_test_a">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4,5},
-			%minor x tick num=4,%
-          %			extra x ticks={.33},
-          %			extra x tick labels={$1/3$},
-			ytick={1,2},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=2.5,%
-			xmin=-.5,xmax=5.6%
-          ]
+      <sidebyside widths="47% 47%">
+        
+        <figure xml:id="fig_integral_test_a">
+          <caption/>
+          <!-- START figures/fig_integral_test_a.tex -->
+          <image xml:id="img_integral_test_a">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
+            \begin{axis}[%
+            %
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4,5},
+            %minor x tick num=4,%
+            %			extra x ticks={.33},
+            %			extra x tick labels={$1/3$},
+            ytick={1,2},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-.1,ymax=2.5,%
+            xmin=-.5,xmax=5.6%
+            ]
 
-          %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-          %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-          \addplot [very thick,{\colorone}, smooth,domain=-.5:5.6,samples=20] ({x},{2/(x+1)});
+            %\draw (axis cs:4,-1) node (A) {}
+            %(axis cs:4,3) node (B) {} ;
+            %\draw [-&gt;,&gt;=latex] (A) parabola bend (axis cs:0,1) (B);
+            \addplot [very thick,{\colorone}, smooth,domain=-.5:5.6,samples=20] ({x},{2/(x+1)});
 
-          \draw [very thick,{\colortwo}] (axis cs: 1,0) -- (axis cs:1,1) -- (axis cs: 2,1) -- (axis cs: 2,0)
-													(axis cs: 2,0) -- (axis cs:2,.667) -- (axis cs: 3,.667) -- (axis cs: 3,0)
-													(axis cs: 3,0) -- (axis cs:3,.5) -- (axis cs: 4,.5) -- (axis cs: 4,0)
-													(axis cs: 4,0) -- (axis cs:4,.4) -- (axis cs: 5,.4) -- (axis cs: 5,0);
- 
-          \draw (axis cs: .95,1.75) node {\scriptsize $y=a(x)$};
-          \end{axis}
+            \draw [very thick,{\colortwo}] (axis cs: 1,0) -- (axis cs:1,1) -- (axis cs: 2,1) -- (axis cs: 2,0)
+                            (axis cs: 2,0) -- (axis cs:2,.667) -- (axis cs: 3,.667) -- (axis cs: 3,0)
+                            (axis cs: 3,0) -- (axis cs:3,.5) -- (axis cs: 4,.5) -- (axis cs: 4,0)
+                            (axis cs: 4,0) -- (axis cs:4,.4) -- (axis cs: 5,.4) -- (axis cs: 5,0);
+  
+            \draw (axis cs: .95,1.75) node {\scriptsize $y=a(x)$};
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-        <!-- figures/fig_integral_test_a.tex END -->
-      </figure>
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+          <!-- figures/fig_integral_test_a.tex END -->
+        </figure>
 
-      <figure xml:id="fig_integral_test_b">
-        <caption/>
-        <!-- START figures/fig_integral_test_b.tex -->
-        <image xml:id="img_integral_test_b">
-          <description></description>
-          <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-          \begin{axis}[%
-          %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4,5},
-			%minor x tick num=4,%
-          %			extra x ticks={.33},
-          %			extra x tick labels={$1/3$},
-			ytick={1,2},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=2.5,%
-			xmin=-.5,xmax=5.6%
-          ]
+        <figure xml:id="fig_integral_test_b">
+          <caption/>
+          <!-- START figures/fig_integral_test_b.tex -->
+          <image xml:id="img_integral_test_b">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
+            \begin{axis}[%
+            %
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4,5},
+            %minor x tick num=4,%
+            %			extra x ticks={.33},
+            %			extra x tick labels={$1/3$},
+            ytick={1,2},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-.1,ymax=2.5,%
+            xmin=-.5,xmax=5.6%
+            ]
 
-          %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-          %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-          \addplot [very thick,{\colorone}, smooth,domain=-.5:5.6,samples=20] ({x},{2/(x+1)});
+            %\draw (axis cs:4,-1) node (A) {}
+            %(axis cs:4,3) node (B) {} ;
+            %\draw [-&gt;,&gt;=latex] (A) parabola bend (axis cs:0,1) (B);
+            \addplot [very thick,{\colorone}, smooth,domain=-.5:5.6,samples=20] ({x},{2/(x+1)});
 
-          \draw [very thick,{\colortwo}]
-													(axis cs: 1,0) -- (axis cs:1,.667) -- (axis cs: 2,.667) -- (axis cs: 2,0)
-													(axis cs: 2,0) -- (axis cs:2,.5) -- (axis cs: 3,.5) -- (axis cs: 3,0)
-													(axis cs: 3,0) -- (axis cs:3,.4) -- (axis cs: 4,.4) -- (axis cs: 4,0)
-													(axis cs: 4,0) -- (axis cs:4,.333) -- (axis cs: 5,.333) -- (axis cs: 5,0);
- 
-          \draw (axis cs: .95,1.75) node {\scriptsize $y=a(x)$};
-          \end{axis}
+            \draw [very thick,{\colortwo}]
+                            (axis cs: 1,0) -- (axis cs:1,.667) -- (axis cs: 2,.667) -- (axis cs: 2,0)
+                            (axis cs: 2,0) -- (axis cs:2,.5) -- (axis cs: 3,.5) -- (axis cs: 3,0)
+                            (axis cs: 3,0) -- (axis cs:3,.4) -- (axis cs: 4,.4) -- (axis cs: 4,0)
+                            (axis cs: 4,0) -- (axis cs:4,.333) -- (axis cs: 5,.333) -- (axis cs: 5,0);
+  
+            \draw (axis cs: .95,1.75) node {\scriptsize $y=a(x)$};
+            \end{axis}
 
-          \end{tikzpicture}
-          ]]>
-          </latex-image>
-        </image>
-        <!-- figures/fig_integral_test_b.tex END -->
-      </figure>
-    </sidebyside>
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+          <!-- figures/fig_integral_test_b.tex END -->
+        </figure>
+      </sidebyside>
+    </figure>
 
     <p>
       In <xref ref="fig_integral_test_b">Figure</xref>,
@@ -179,40 +181,42 @@
     </p>
 
     <p>
-      Combining Equations <xref ref="eq_integral_testa" /> and <xref ref="eq_integral_testb" />, we have
+      Combining Equations <xref ref="eq_integral_testa"/> and <xref ref="eq_integral_testb"/>, we have
       <men xml:id="eq_integral_testc">
         \infser a_n\lt  a_1 +\int_1^\infty a(x)\ dx \lt  a_1 + \infser a_n
       </men>.
     </p>
 
     <p>
-      From Equation <xref ref="eq_integral_testc" /> we can make the following two statements:
+      From Equation <xref ref="eq_integral_testc"/> we can make the following two statements:
     </p>
 
-    <ol>
-      <li>
-        <p>
-          If <m>\ds \infser a_n</m> diverges,
-          so does <m>\ds\int_1^\infty a(x)\ dx</m> (because <m>\ds \infser a_n \lt a_1 +\int_1^\infty a(x)\ dx</m>)
-        </p>
-      </li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            If <m>\ds \infser a_n</m> diverges,
+            so does <m>\ds\int_1^\infty a(x)\ dx</m> (because <m>\ds \infser a_n \lt a_1 +\int_1^\infty a(x)\ dx</m>)
+          </p>
+        </li>
 
-      <li>
-        <p>
-          If <m>\ds \infser a_n</m> converges,
-          so does <m>\ds\int_1^\infty a(x)\ dx</m> (because <m>\ds \ds \int_1^\infty a(x)\ dx \lt \infser a_n</m>.)
-        </p>
-      </li>
-    </ol>
+        <li>
+          <p>
+            If <m>\ds \infser a_n</m> converges,
+            so does <m>\ds\int_1^\infty a(x)\ dx</m> (because <m>\ds \ds \int_1^\infty a(x)\ dx \lt \infser a_n</m>.)
+          </p>
+        </li>
+      </ol>
+    </p>
 
     <p>
       Therefore the series and integral either both converge or both diverge.
       <xref ref="thm_series_behavior">Theorem</xref>
-      allows us to extend this theorem to series where <m>a(n)</m> is positive and decreasing on <m>[b,\infty)</m> for some <m>b>1</m>.
-      A formal proof of the <xref ref="thm_integral_test" autoname="title"/> is shown below.
+      allows us to extend this theorem to series where <m>a(n)</m> is positive and decreasing on <m>[b,\infty)</m> for some <m>b \gt 1</m>.
+      A formal proof of the <xref ref="thm_integral_test" text="title"/> is shown below.
     </p>
 
-    <proof statement="thm_integral_test">
+    <proof xml:id="thm_integral_test">
       <p>
         Let <m>a(x)=a_x</m> be a postive,
         continuous, decreasing function on <m>[1,\infty)</m>.
@@ -247,7 +251,7 @@
               Furthermore,
               <m>S_n</m> is a monotonically increasing sequence since all of the terms <m>a_n</m> are positive.
               Since <m>S_n</m> is both bounded and monotonic,
-              <m>S_n</m> converges by <xref ref="thm_converge_bounded" autoname="title"/> and by <xref ref="def_series">Definition</xref>,
+              <m>S_n</m> converges by <xref ref="thm_converge_bounded" text="title"/> and by <xref ref="def_series">Definition</xref>,
               the series <m>\infser a_n</m> converges as well.
             </p>
           </li>
@@ -284,18 +288,18 @@
           <image xml:id="img_itest1">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			xtick={2,4,...,20},%
+            xtick={2,4,...,20},%
             %			extra x ticks={3.14,1.57},
             %			extra x tick labels={$\pi$,$\pi/2$},
             %			ytick={-1,-2,1,2},
-			%%extra y ticks={-5,-3,...,7},%
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.05,ymax=.85,%
-			xmin=-1,xmax=20.9%
+            ymin=-.05,ymax=.85,%
+            xmin=-1,xmax=20.9%
             ]
 
             \addplot [only marks,{\colortwo},mark size={1.5pt}] coordinates{(1.,0)(2.,0.1733)(3.,0.2954)(4.,0.382)(5.,0.4464)(6.,0.4961)(7.,0.5359)(8.,0.5684)(9.,0.5955)(10.,0.6185)(11.,0.6383)(12.,0.6556)(13.,0.6708)(14.,0.6842)(15.,0.6963)(16.,0.7071)(17.,0.7169)(18.,0.7258)(19.,0.734)(20.,0.7415)};
@@ -315,7 +319,7 @@
 																\end{tikzpicture}};
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_itest1.tex END -->
@@ -330,7 +334,7 @@
             <mrow>\int_1^\infty \frac{\ln(x) }{x^2}\ dx \amp = \lim_{b\to\infty} \int_1^b \frac{\ln(x) }{x^2}\ dx</mrow>
             <mrow>\amp = \lim_{b\to\infty} -\frac1x\ln(x) \Big|_1^b + \int_1^b\frac1{x^2}\ dx</mrow>
             <mrow>\amp = \lim_{b\to\infty} -\frac1x\ln(x) -\frac 1x\Big|_1^b</mrow>
-            <mrow>\amp = \lim_{b\to\infty}1-\frac1b-\frac{\ln(b) }{b}. \text{ Apply L'H&#xf4;pital's Rule Rule: }</mrow>
+            <mrow>\amp = \lim_{b\to\infty}1-\frac1b-\frac{\ln(b) }{b}. \text{ Apply L'Hôpital's Rule Rule: }</mrow>
             <mrow>\amp = 1</mrow>
           </md>.
         </p>
@@ -347,7 +351,7 @@
       was given without justification,
       stating that the general <m>p</m>-series
       <m>\ds \infser \frac 1{(an+b)^p}</m> converges if, and only if,
-      <m>p>1</m>.
+      <m>p \gt 1</m>.
       In the following example,
       we prove this to be true by applying the Integral Test.
     </p>
@@ -358,7 +362,7 @@
         <p>
           Use the Integral Test to prove that
           <m>\ds \infser \frac1{(an+b)^p}</m> converges if, and only if,
-          <m>p>1</m>.
+          <m>p \gt 1</m>.
         </p>
       </statement>
       <solution>
@@ -382,7 +386,7 @@
         <p>
           Therefore <m>\ds \infser \frac 1{(an+b)^p}</m> converges if,
           and only if,
-          <m>p>1</m>.
+          <m>p \gt 1</m>.
         </p>
       </solution>
     </example>
@@ -421,33 +425,35 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If <m>\ds \infser b_n</m> converges,
-              then <m>\ds \infser a_n</m> converges.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>\ds \infser b_n</m> converges,
+                then <m>\ds \infser a_n</m> converges.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>\ds \infser a_n</m> diverges,
-              then <m>\ds \infser b_n</m> diverges.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>\ds \infser a_n</m> diverges,
+                then <m>\ds \infser b_n</m> diverges.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
     <aside>
       <p>
         A sequence <m>\{a_n\}</m> is a <em>positive sequence</em>
-        if <m>a_n>0</m> for all <m>n</m>.
+        if <m>a_n \gt 0</m> for all <m>n</m>.
       </p>
 
       <p>
         Because of <xref ref="thm_series_behavior">Theorem</xref>,
-        any theorem that relies on a positive sequence still holds true when <m>a_n>0</m> for all but a finite number of values of <m>n</m>.
+        any theorem that relies on a positive sequence still holds true when <m>a_n \gt 0</m> for all but a finite number of values of <m>n</m>.
 
         <idx>
           <h>sequence</h><h>positive</h>
@@ -456,57 +462,59 @@
       </p>
     </aside>
 
-    <proof statement="thm_series_direct_compare">
+    <proof>
       <p>
         Let <m>0\lt a_n\leq b_n</m> for all <m>n\geq N \geq 1</m>.
         Note that both partial sums for both series are positive and increasing since the terms of both sequences are positive.
       </p>
 
-      <ol>
-        <li>
-          <p>
-            Suppose that <m>\ds \infser b_n</m> converges,
-            so <m>\ds \infser b_n=S</m>, where <m>S</m> is a finite,
-            positive number.
-            (<m>S</m> must be positive since <m>b_n \gt 0</m>.)
-          </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Suppose that <m>\ds \infser b_n</m> converges,
+              so <m>\ds \infser b_n=S</m>, where <m>S</m> is a finite,
+              positive number.
+              (<m>S</m> must be positive since <m>b_n \gt 0</m>.)
+            </p>
 
-          <p>
-            Comparing the partial sums,
-            we must have <m>\ds \sum_{i=N}^n a_i \leq \sum_{i=N}^n b_i</m> since
-            <m>a_n\leq b_n</m> for all <m>n\geq N</m>.
-            Furthermore since <m>\ds \infser b_n</m> converges to <m>S</m>,
-            our partial sums for <m>a_n</m> are bounded
-            (note that the partial sums started at <m>i=N</m>,
-            but a finite number of terms will not affect the boundedness of the partial sums).
-            <me>
-              0\lt \sum_{i=N}^n a_i \leq \sum_{i=N}^n b_i \lt S
-            </me>.
-            Since the sequence of partial sums,
-            <m>s_n=\sum_{i=1}^n a_i </m> is both monotonically increasing and bounded,
-            we can say that <m>s_n</m> converges
-            (by <xref ref="thm_converge_bounded" autoname="title"/>),
-            and therefore so does <m>\infser a_n </m>.
-          </p>
-        </li>
+            <p>
+              Comparing the partial sums,
+              we must have <m>\ds \sum_{i=N}^n a_i \leq \sum_{i=N}^n b_i</m> since
+              <m>a_n\leq b_n</m> for all <m>n\geq N</m>.
+              Furthermore since <m>\ds \infser b_n</m> converges to <m>S</m>,
+              our partial sums for <m>a_n</m> are bounded
+              (note that the partial sums started at <m>i=N</m>,
+              but a finite number of terms will not affect the boundedness of the partial sums).
+              <me>
+                0\lt \sum_{i=N}^n a_i \leq \sum_{i=N}^n b_i \lt S
+              </me>.
+              Since the sequence of partial sums,
+              <m>s_n=\sum_{i=1}^n a_i </m> is both monotonically increasing and bounded,
+              we can say that <m>s_n</m> converges
+              (by <xref ref="thm_converge_bounded" text="title"/>),
+              and therefore so does <m>\infser a_n </m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            Suppose that <m>\ds \infser a_n</m> diverges,
-            so <m>\ds \sum_{i=1}^n a_n=\infty</m>. (We can say that the series diverges to <m>\infty</m> since the terms of the series are always positive).
-            Comparing the partial sums, we have
-            <me>
-              \ds \sum_{i=N}^n a_i \leq \sum_{i=N}^n b_i
-            </me>
-            Then applying limits, we get
-            <me>
-              \ds \lim\limits_{n \to \infty}\sum_{i=N}^n a_i \leq \lim\limits_{n \to \infty}\sum_{i=N}^n b_i
-            </me>.
-            Since the limit on the left side diverges to <m>\infty</m>,
-            we can say that <m>\lim\limits_{n \to \infty}\sum_{i=N}^n b_i</m> also diverges to <m>\infty</m>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              Suppose that <m>\ds \infser a_n</m> diverges,
+              so <m>\ds \sum_{i=1}^n a_n=\infty</m>. (We can say that the series diverges to <m>\infty</m> since the terms of the series are always positive).
+              Comparing the partial sums, we have
+              <me>
+                \ds \sum_{i=N}^n a_i \leq \sum_{i=N}^n b_i
+              </me>
+              Then applying limits, we get
+              <me>
+                \ds \lim\limits_{n \to \infty}\sum_{i=N}^n a_i \leq \lim\limits_{n \to \infty}\sum_{i=N}^n b_i
+              </me>.
+              Since the limit on the left side diverges to <m>\infty</m>,
+              we can say that <m>\lim\limits_{n \to \infty}\sum_{i=N}^n b_i</m> also diverges to <m>\infty</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
     </proof>
 
     <example xml:id="ex_dct1">
@@ -527,7 +535,7 @@
 
         <p>
           Since <m>3^n \lt 3^n+n^2</m>,
-          <m>\ds \frac1{3^n}> \frac1{3^n+n^2}</m> for all <m>n\geq1</m>.
+          <m>\ds \frac1{3^n} \gt  \frac1{3^n+n^2}</m> for all <m>n\geq1</m>.
           The series <m>\ds\infser \frac{1}{3^n}</m> is a convergent geometric series;
           by <xref ref="thm_series_direct_compare">Theorem</xref>,
           <m>\ds \infser \frac1{3^n+n^2}</m> converges.
@@ -613,32 +621,34 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If <m>\lim\limits_{n\to\infty} \fdrac{a_n}{b_n} = L</m>,
-              where <m>L</m> is a positive real number,
-              then <m>\ds \infser a_n</m> and
-              <m>\ds \infser b_n</m> either both converge or both diverge.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>\lim\limits_{n\to\infty} \fdrac{a_n}{b_n} = L</m>,
+                where <m>L</m> is a positive real number,
+                then <m>\ds \infser a_n</m> and
+                <m>\ds \infser b_n</m> either both converge or both diverge.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>\lim\limits_{n\to\infty} \dfrac{a_n}{b_n} = 0</m>,
-              then if <m>\ds \infser b_n</m> converges,
-              then so does <m>\ds \infser a_n</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>\lim\limits_{n\to\infty} \dfrac{a_n}{b_n} = 0</m>,
+                then if <m>\ds \infser b_n</m> converges,
+                then so does <m>\ds \infser a_n</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>\lim\limits_{n\to\infty} \dfrac{a_n}{b_n} = \infty</m>,
-              then if <m>\ds \infser b_n</m> diverges,
-              then so does <m>\ds \infser a_n</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>\lim\limits_{n\to\infty} \dfrac{a_n}{b_n} = \infty</m>,
+                then if <m>\ds \infser b_n</m> diverges,
+                then so does <m>\ds \infser a_n</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -665,7 +675,7 @@
           We compare the terms of <m>\ds\infser \frac1{n+\ln(n) }</m> to the terms of the Harmonic Sequence <m>\ds\infser \frac1{n}</m>:
           <md>
             <mrow>\lim_{n\to\infty}\frac{1/(n+\ln(n) )}{1/n} \amp = \lim_{n\to\infty} \frac{n}{n+\ln(n) }</mrow>
-            <mrow>\amp = 1 \text{ (after applying L'H&#xf4;pital's Rule) } </mrow>
+            <mrow>\amp = 1 \text{ (after applying L'Hôpital's Rule) } </mrow>
           </md>.
         </p>
 
@@ -695,7 +705,7 @@
           Instead, we use the Limit Comparison Test and compare with the series <m>\ds\infser \frac1{3^n}</m>:
           <md>
             <mrow>\lim_{n\to\infty}\frac{1/(3^n-n^2)}{1/3^n} \amp = \lim_{n\to\infty}\frac{3^n}{3^n-n^2}</mrow>
-            <mrow>\amp = 1  \text{ (after applying L'H&#xf4;pital's Rule twice) } </mrow>
+            <mrow>\amp = 1  \text{ (after applying L'Hôpital's Rule twice) } </mrow>
           </md>.
         </p>
 
@@ -717,7 +727,7 @@
       the dominant term of <m>\ds\frac{1}{3^n-n^2}</m> was <m>3^n</m>,
       so we compared the series to <m>\ds \infser \frac1{3^n}</m>.
       It is hard to apply the Limit Comparison Test to series containing factorials, though,
-      as we have not learned how to apply L'H&#xf4;pital's Rule to <m>n!</m>.
+      as we have not learned how to apply L'Hôpital's Rule to <m>n!</m>.
     </p>
 
     <example xml:id="ex_lct3">
@@ -729,12 +739,12 @@
       </statement>
       <solution>
         <p>
-          We na&#xef;vely attempt to apply the rule of thumb given above and note that the dominant term in the expression of the series is <m>1/n^2</m>.
+          We naïvely attempt to apply the rule of thumb given above and note that the dominant term in the expression of the series is <m>1/n^2</m>.
           Knowing that <m>\ds \infser \frac1{n^2}</m> converges,
           we attempt to apply the Limit Comparison Test:
           <md>
             <mrow>\lim_{n\to\infty}\frac{(\sqrt{n}+3)/(n^2-n+1)}{1/n^2} \amp = \lim_{n\to\infty}\frac{n^2(\sqrt n+3)}{n^2-n+1}</mrow>
-            <mrow>\amp = \infty  \text{ (Apply L'H&#xf4;pital's Rule) } </mrow>
+            <mrow>\amp = \infty  \text{ (Apply L'Hôpital's Rule) } </mrow>
           </md>.
         </p>
 
@@ -756,7 +766,7 @@
           Thus we should compare the terms of the given series to <m>n^{1/2}/n^2 = 1/n^{3/2}</m>:
           <md>
             <mrow>\lim_{n\to\infty}\frac{(\sqrt{n}+3)/(n^2-n+1)}{1/n^{3/2}} \amp = \lim_{n\to \infty} \frac{n^{3/2}(\sqrt n+3)}{n^2-n+1}</mrow>
-            <mrow>\amp = 1 \text{ (Apply L'H&#xf4;pital's Rule) } </mrow>
+            <mrow>\amp = 1 \text{ (Apply L'Hôpital's Rule) } </mrow>
           </md>.
         </p>
 
@@ -796,7 +806,7 @@
               <p>
                 In order to apply the Integral Test to a sequence <m>\{a_n\}</m>,
                 the function <m>a(n) = a_n</m> must be
-                \underlinespace, \underlinespace<nbsp />and \underlinespace.
+                \underlinespace, \underlinespace<nbsp/>and \underlinespace.
               </p>
             </statement>
             <solution>
@@ -1044,11 +1054,16 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        use the Direct Comparison Test to determine the convergence of the given series;
-        state what series is used for comparison.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          use the Direct Comparison Test to determine the convergence of the given series;
+          state what series is used for comparison.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1065,7 +1080,7 @@
             <solution>
               <p>
                 Converges; compare to <m>\ds \infser \frac{1}{n^2}</m>,
-                as <m>1/(n^2+3n-5) \leq 1/n^2</m> for all <m>n>1</m>.
+                as <m>1/(n^2+3n-5) \leq 1/n^2</m> for all <m>n \gt 1</m>.
               </p>
             </solution>
         </webwork>
@@ -1149,7 +1164,7 @@
             <solution>
               <p>
                 Diverges; compare to <m>\ds \infser \frac{1}{n}</m>.
-                Since <m>n=\sqrt{n^2} > \sqrt{n^2-1}</m>,
+                Since <m>n=\sqrt{n^2}  \gt  \sqrt{n^2-1}</m>,
                 <m>1/n \leq 1/\sqrt{n^2-1}</m> for all <m>n\geq 2</m>.
               </p>
             </solution>
@@ -1239,9 +1254,9 @@
                 Diverges; compare to <m>\ds \infser \frac 1n</m>.
                 Note that
                 <me>
-                  \frac{n}{n^2-1} = \frac{n^2}{n^2-1}\cdot\frac1n > \frac 1n
+                  \frac{n}{n^2-1} = \frac{n^2}{n^2-1}\cdot\frac1n  \gt  \frac 1n
                 </me>,
-                as <m>\frac{n^2}{n^2-1}>1</m>, for all <m>n\geq 2</m>.
+                as <m>\frac{n^2}{n^2-1} \gt 1</m>, for all <m>n\geq 2</m>.
               </p>
             </solution>
         </webwork>
@@ -1268,11 +1283,16 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        use the Limit Comparison Test to determine the convergence of the given series;
-        state what series is used for comparison.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          use the Limit Comparison Test to determine the convergence of the given series;
+          state what series is used for comparison.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1476,10 +1496,15 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises, determine the convergence of the given series.
-        State the test used; more than one test may be appropriate.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises, determine the convergence of the given series.
+          State the test used; more than one test may be appropriate.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1516,7 +1541,7 @@
             <solution>
               <p>
                 Converges; Integral Test,
-                <m>p</m>-Series Test, Direct <ampersand /> Limit Comparison Tests can all be used.
+                <m>p</m>-Series Test, Direct &amp; Limit Comparison Tests can all be used.
               </p>
             </solution>
         </webwork>
@@ -1659,73 +1684,77 @@
                 may converge, or does not converge.
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \infser \frac{a_n}n</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \infser \frac{a_n}n</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \infser a_na_{n+1}</m>
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>\ds \infser a_na_{n+1}</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \infser (a_n)^2</m>
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>\ds \infser (a_n)^2</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \infser na_n</m>
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>\ds \infser na_n</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \infser \frac{1}{a_n}</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \infser \frac{1}{a_n}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Converges; use Direct Comparison Test as <m>\frac{a_n}{n}\lt n</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Converges; use Direct Comparison Test as <m>\frac{a_n}{n}\lt n</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Converges; since original series converges,
-                    we know <m>\lim_{n\to\infty}a_n = 0</m>.
-                    Thus for large <m>n</m>, <m>a_na_{n+1} \lt a_n</m>.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      Converges; since original series converges,
+                      we know <m>\lim_{n\to\infty}a_n = 0</m>.
+                      Thus for large <m>n</m>, <m>a_na_{n+1} \lt a_n</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Converges; similar logic to part (b) so <m>(a_n)^2\lt a_n</m>.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      Converges; similar logic to part (b) so <m>(a_n)^2\lt a_n</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    May converge;
-                    certainly <m>na_n > a_n</m> but that does not mean it does not converge.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      May converge;
+                      certainly <m>na_n  \gt  a_n</m> but that does not mean it does not converge.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Does not converge, using logic from (b) and <m>n^{th}</m> Term Test.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Does not converge, using logic from (b) and <m>n^{th}</m> Term Test.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1733,4 +1762,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
