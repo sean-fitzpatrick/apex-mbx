@@ -541,7 +541,7 @@
         <cell><term>Interval of</term></cell>
       </row>
       <row>
-        <cell><term>Convergence</term> }</cell>
+        <cell><term>Convergence</term></cell>
       </row>
       <row>
         <cell><m>\ds e^x = \infser[0] \frac{x^n}{n!}</m></cell>
@@ -571,7 +571,7 @@
       <row>
         <cell><m>\small\ds (1+x)^k=\infser[0] \frac{k(k-1)\cdots\big(k-(n-1)\big)}{n!}x^n</m></cell>
         <cell><m>\ds 1+kx+\frac{k(k-1)}{2!}x^2 + \cdots</m></cell>
-        <cell><m>(-1,1)</m>Convergence at <m>x=\pm1</m> depends on the value of <m>k</m>.</cell>
+        <cell><m>(-1,1)</m><fn>Convergence at test <m>x=\pm1</m> depends on the value of <m>k</m>.</fn></cell>
       </row>
       <row>
         <cell><m>\ds \tan^{-1}(x) = \infser[0] (-1)^n\frac{x^{2n+1}}{2n+1}</m></cell>

@@ -770,7 +770,7 @@
     </statement>
   </theorem>
 
-  <proof xml:id="thm_abs_val_seq">
+  <proof>
     <p>
       Let <m>\lim\limits_{n\to\infty} \abs{a_n} = 0</m>.
       We start by noting that <m>-\abs{a_n}\leq a_n \leq \abs{a_n}</m>.
@@ -1460,157 +1460,151 @@
 
       <figure xml:id="fig_seq7">
         <caption>Plots of sequences in <xref ref="ex_seq7">Example</xref>.</caption>
-        <sidebyside widths="47% 47%">
-          <figure>
-            <caption/>
-            <sidebyside widths="47% 47%">
-              <figure xml:id="fig_seq7a">
-                <caption/>
-              <!-- START figures/fig_seq7a.tex -->
-                <image xml:id="img_seq7a">
-                  <description></description>
-                  <latex-image>
-                  
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-                  %     xtick={20,40,60,80,100},%
-                  %     extra x ticks={3.14,1.57},
-                  %     extra x tick labels={$\pi$,$\pi/2$},
-                  ytick={-1,-2,1,2},
-                  %%extra y ticks={-5,-3,...,7},%
-                  %     minor x tick num=4,
-                  ymin=-.1,ymax=2.5,%
-                  xmin=-1,xmax=11%
-                  ]
+        <sbsgroup widths="47% 47%">
+          <sidebyside widths="47% 47%">
+            <figure xml:id="fig_seq7a">
+              <caption/>
+            <!-- START figures/fig_seq7a.tex -->
+              <image xml:id="img_seq7a">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %     xtick={20,40,60,80,100},%
+                %     extra x ticks={3.14,1.57},
+                %     extra x tick labels={$\pi$,$\pi/2$},
+                ytick={-1,-2,1,2},
+                %%extra y ticks={-5,-3,...,7},%
+                %     minor x tick num=4,
+                ymin=-.1,ymax=2.5,%
+                xmin=-1,xmax=11%
+                ]
 
-                  \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x+1)/x};
+                \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x+1)/x};
 
-                  \draw (axis cs:6,1.9) node {\scriptsize $\ds a_n = \frac{n+1}{n}$};
+                \draw (axis cs:6,1.9) node {\scriptsize $\ds a_n = \frac{n+1}{n}$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \node [right] at (myplot.right of origin) {\scriptsize $n$};
+                \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
-                  \end{tikzpicture}
-                  
-                  </latex-image>
-                </image>
-              <!-- figures/fig_seq7a.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+            <!-- figures/fig_seq7a.tex END -->
+            </figure>
 
-              <figure xml:id="fig_seq7b">
-                <caption/>
-              <!-- START figures/fig_seq7b.tex -->
-                <image xml:id="img_seq7b">
-                  <description></description>
-                  <latex-image>
-                  
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-                  %     xtick={20,40,60,80,100},%
-                  %     extra x ticks={3.14,1.57},
-                  %     extra x tick labels={$\pi$,$\pi/2$},
-                  %     ytick={-1,-2,1,2},
-                  %%extra y ticks={-5,-3,...,7},%
-                  %     minor x tick num=4,
-                  ymin=-1,ymax=11,%
-                  xmin=-1,xmax=11%
-                  ]
+            <figure xml:id="fig_seq7b">
+              <caption/>
+            <!-- START figures/fig_seq7b.tex -->
+              <image xml:id="img_seq7b">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %     xtick={20,40,60,80,100},%
+                %     extra x ticks={3.14,1.57},
+                %     extra x tick labels={$\pi$,$\pi/2$},
+                %     ytick={-1,-2,1,2},
+                %%extra y ticks={-5,-3,...,7},%
+                %     minor x tick num=4,
+                ymin=-1,ymax=11,%
+                xmin=-1,xmax=11%
+                ]
 
-                  \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x^2+1)/(x+1)};
+                \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x^2+1)/(x+1)};
 
-                  \draw (axis cs:7.5,1.9) node {\scriptsize $\ds a_n = \frac{n^2+1}{n+1}$};
+                \draw (axis cs:7.5,1.9) node {\scriptsize $\ds a_n = \frac{n^2+1}{n+1}$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \node [right] at (myplot.right of origin) {\scriptsize $n$};
+                \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
-                  \end{tikzpicture}
-                  
-                  </latex-image>
-                </image>
-              <!-- figures/fig_seq7b.tex END -->
-              </figure>
-            </sidebyside>
-          </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+            <!-- figures/fig_seq7b.tex END -->
+            </figure>
+          </sidebyside>
 
-          <figure>
-            <caption/>
-            <sidebyside widths="47% 47%">
-              <figure xml:id="fig_seq7c">
-                <caption/>
-              <!-- START figures/fig_seq7c.tex -->
-                <image xml:id="img_seq7c">
-                  <description></description>
-                  <latex-image>
-                  
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-                  %     xtick={20,40,60,80,100},%
-                  %     extra x ticks={3.14,1.57},
-                  %     extra x tick labels={$\pi$,$\pi/2$},
-                  %     ytick={-1,-2,1,2},
-                  %%extra y ticks={-5,-3,...,7},%
-                  %     minor x tick num=4,
-                  ymin=-1,ymax=16,%
-                  xmin=-1,xmax=11%
-                  ]
+          <sidebyside widths="47% 47%">
+            <figure xml:id="fig_seq7c">
+              <caption/>
+            <!-- START figures/fig_seq7c.tex -->
+              <image xml:id="img_seq7c">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %     xtick={20,40,60,80,100},%
+                %     extra x ticks={3.14,1.57},
+                %     extra x tick labels={$\pi$,$\pi/2$},
+                %     ytick={-1,-2,1,2},
+                %%extra y ticks={-5,-3,...,7},%
+                %     minor x tick num=4,
+                ymin=-1,ymax=16,%
+                xmin=-1,xmax=11%
+                ]
 
-                  \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x^2-9)/(x^2-10*x+26)};
+                \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x^2-9)/(x^2-10*x+26)};
 
-                  \draw (axis cs:3.4,11) node {\scriptsize $\ds a_n = \frac{n^2-9}{n^2-10n+26}$};
+                \draw (axis cs:3.4,11) node {\scriptsize $\ds a_n = \frac{n^2-9}{n^2-10n+26}$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \node [right] at (myplot.right of origin) {\scriptsize $n$};
+                \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
-                  \end{tikzpicture}
-                  
-                  </latex-image>
-                </image>
-              <!-- figures/fig_seq7c.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+            <!-- figures/fig_seq7c.tex END -->
+            </figure>
 
-              <figure xml:id="fig_seq7d">
-                <caption>A plot of <m>\{a_n\} = \{n^2/n!\}</m> in <xref ref="ex_seq7_4">Example</xref>.</caption>
-              <!-- START figures/fig_seq7d.tex -->
-                <image xml:id="img_seq7d">
-                  <description></description>
-                  <latex-image>
-                  
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-                  %     xtick={20,40,60,80,100},%
-                  %     extra x ticks={3.14,1.57},
-                  %     extra x tick labels={$\pi$,$\pi/2$},
-                  %     ytick={-1,-2,1,2},
-                  %%extra y ticks={-5,-3,...,7},%
-                  %     minor x tick num=4,
-                  ymin=-.1,ymax=2.1,%
-                  xmin=-1,xmax=11%
-                  ]
+            <figure xml:id="fig_seq7d">
+              <caption>A plot of <m>\{a_n\} = \{n^2/n!\}</m> in <xref ref="ex_seq7_4">Example</xref>.</caption>
+            <!-- START figures/fig_seq7d.tex -->
+              <image xml:id="img_seq7d">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %     xtick={20,40,60,80,100},%
+                %     extra x ticks={3.14,1.57},
+                %     extra x tick labels={$\pi$,$\pi/2$},
+                %     ytick={-1,-2,1,2},
+                %%extra y ticks={-5,-3,...,7},%
+                %     minor x tick num=4,
+                ymin=-.1,ymax=2.1,%
+                xmin=-1,xmax=11%
+                ]
 
-                  \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x^2)/(factorial(x))};
+                \addplot [only marks,{\colorone},mark size={1.5pt},domain=1:10,samples=10] {(x^2)/(factorial(x))};
 
-                  \draw (axis cs:7,1.25) node {\scriptsize $\ds a_n = \frac{n^2}{n!}$};
+                \draw (axis cs:7,1.25) node {\scriptsize $\ds a_n = \frac{n^2}{n!}$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \node [right] at (myplot.right of origin) {\scriptsize $n$};
+                \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
-                  \end{tikzpicture}
-                  
-                  </latex-image>
-                </image>
-              <!-- figures/fig_seq7d.tex END -->
-              </figure>
-            </sidebyside>
-          </figure>
-        </sidebyside>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+            <!-- figures/fig_seq7d.tex END -->
+            </figure>
+          </sidebyside>
+        </sbsgroup>
       </figure>
     </solution>
   </example>

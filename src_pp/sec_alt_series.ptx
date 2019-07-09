@@ -1523,18 +1523,15 @@
         </webwork>
       </exercise>
 
-    </exercisegroup>
-    <exercisegroup>
+      <!-- TODO: Figure out what the heck this is below. Commenting out for now... -->
 
-      <introduction>
-        <p>
-          { Let <m>S_n</m> be the <m>n^\text{ th }</m> partial sum of a series.
-          In Exercises}
-          {, a convergent alternating series is given and a value of <m>n</m>.
-          Compute <m>S_n</m> and <m>S_{n+1}</m> and use these values to find bounds on the sum of the series.
-          }
-        </p>
-      </introduction>
+      <!-- <p>
+        { Let <m>S_n</m> be the <m>n^\text{ th }</m> partial sum of a series.
+        In Exercises}
+        {, a convergent alternating series is given and a value of <m>n</m>.
+        Compute <m>S_n</m> and <m>S_{n+1}</m> and use these values to find bounds on the sum of the series.
+        }
+      </p> -->
 
       <exercise>
         <webwork seed="1">

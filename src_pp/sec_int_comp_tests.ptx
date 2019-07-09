@@ -216,7 +216,7 @@
       A formal proof of the <xref ref="thm_integral_test" text="title"/> is shown below.
     </p>
 
-    <proof xml:id="thm_integral_test">
+    <proof>
       <p>
         Let <m>a(x)=a_x</m> be a postive,
         continuous, decreasing function on <m>[1,\infty)</m>.

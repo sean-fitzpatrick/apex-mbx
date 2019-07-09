@@ -382,7 +382,7 @@
       </statement>
     </theorem>
 
-    <proof xml:id="thm_geom_series">
+    <proof>
       <p>
         We begin by proving the formula for the simplied form for the partial sums.
         Consider the <m>n^\text{ th }</m> partial sum of the geometric series,
