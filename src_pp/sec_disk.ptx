@@ -591,8 +591,8 @@
       <figure xml:id="fig_disk1">
         <caption>Sketching a solid in <xref ref="ex_disk1">Example</xref>.</caption>
         <sidebyside>
-          <figure xml:id="fig_disk1_3D">
-            <caption>(a)</caption>
+          <figure xml:id="fig_disk1a_3D">
+            <caption/>
           <!--
             \includemedia[width=110pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=126.0060482236849,
@@ -603,7 +603,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figdisk1_3D.asy -->
-            <image xml:id="img_disk1_3D">
+            <image xml:id="img_disk1a_3D">
               <description></description>
               <asymptote>
             
@@ -702,7 +702,7 @@
           </figure>
 
           <figure xml:id="fig_disk1b_3D">
-            <caption>(b)</caption>
+            <caption/>
           <!--
             \includemedia[width=110pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=126.0060482236849,
@@ -876,8 +876,8 @@
       <figure xml:id="fig_disk2">
         <caption>Sketching a solid in <xref ref="ex_disk2">Example</xref>.</caption>
         <sidebyside>
-          <figure xml:id="fig_disk1a_3D">
-            <caption>(a)</caption>
+          <figure xml:id="fig_disk2a_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=112.9954735907269,
@@ -888,7 +888,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figdisk1a_3D.asy -->
-            <image xml:id="img_disk1a_3D">
+            <image xml:id="img_disk2a_3D">
               <description></description>
               <asymptote>
                 
@@ -988,8 +988,8 @@
           <!-- figures/figdisk1a_3D.asy END -->
           </figure>
 
-          <figure xml:id="fig_disk2a_3D">
-            <caption>(b)</caption>
+          <figure xml:id="fig_disk2b_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=112.9954735907269,
@@ -1000,7 +1000,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figdisk2a_3D.asy -->
-            <image xml:id="img_disk2a_3D">
+            <image xml:id="img_disk2b_3D">
               <description></description>
               <asymptote>
                 
@@ -1622,8 +1622,8 @@
       <figure xml:id="fig_wash1">
         <caption>Sketching the differential element and solid in <xref ref="ex_wash1">Example</xref>.</caption>
         <sidebyside>
-          <figure xml:id="fig_wash1_3D">
-            <caption>(a)</caption>
+          <figure xml:id="fig_wash1a_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.32968340849395,
@@ -1634,7 +1634,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figwash1_3D.asy -->
-            <image xml:id="img_wash1_3D">
+            <image xml:id="img_wash1a_3D">
               <description></description>
               <asymptote>
                 
@@ -1718,8 +1718,8 @@
           <!-- figures/figwash1_3D.asy END -->
           </figure>
 
-          <figure xml:id="fig_wash1c_3D">
-            <caption>(b)</caption>
+          <figure xml:id="fig_wash1b_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.32968340849395,
@@ -1730,7 +1730,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figwash1c_3D.asy -->
-            <image xml:id="img_wash1c_3D">
+            <image xml:id="img_wash1b_3D">
               <description></description>
               <asymptote>
                 
@@ -1828,8 +1828,8 @@
           <!-- figures/figwash1c_3D.asy END -->
           </figure>
 
-          <figure xml:id="fig_wash1b_3D">
-            <caption>(c)</caption>
+          <figure xml:id="fig_wash1c_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.32968340849395,
@@ -1840,7 +1840,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figwash1b_3D.asy -->
-            <image xml:id="img_wash1b_3D">
+            <image xml:id="img_wash1c_3D">
               <description></description>
               <asymptote>
                 

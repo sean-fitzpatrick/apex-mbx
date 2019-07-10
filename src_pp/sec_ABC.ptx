@@ -53,10 +53,9 @@
 
   <figure xml:id="fig_abcintro">
     <caption>Subdividing a region into vertical slices and approximating the areas with rectangles.</caption>
-
     <sidebyside>
       <figure xml:id="fig_abcintroa">
-        <caption>(a)</caption>
+        <caption/>
       <!-- START figures/fig_abcintroa.tex -->
         <image xml:id="img_abcintroa">
           <description></description>
@@ -92,7 +91,7 @@
       </figure>
 
       <figure xml:id="fig_abcintrob">
-        <caption>(b)</caption>
+        <caption/>
       <!-- START figures/fig_abcintrob.tex -->
         <image xml:id="img_abcintrob">
           <description></description>
@@ -135,7 +134,7 @@
       </figure>
 
       <figure xml:id="fig_abcintroc">
-        <caption>(c)</caption>
+        <caption/>
       <!-- START figures/fig_abcintroc.tex -->
         <image xml:id="img_abcintroc">
           <description></description>
@@ -630,7 +629,7 @@
         <caption>(a) A sketch of a lake, and (b) the lake with length measurements.</caption>
         <sidebyside>
           <figure xml:id="fig_abc5b">
-            <caption>(a)</caption>
+            <caption/>
           <!-- START figures/fig_abc5b.tex -->
             <image xml:id="img_abc5b">
               <description></description>
@@ -665,7 +664,7 @@
           </figure>
 
           <figure xml:id="fig_abc5">
-            <caption>(b)</caption>
+            <caption/>
           <!-- START figures/fig_abc5.tex -->
             <image xml:id="img_abc5">
               <description></description>

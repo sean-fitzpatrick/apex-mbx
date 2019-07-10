@@ -312,7 +312,7 @@
         <!-- START figures/fig_work_spring1.tex -->
         <figure xml:id="fig_spring1">
           <caption>Illustrating the important aspects of stretching a spring in computing work in <xref ref="ex_spring1">Example</xref>.</caption>
-          <image xml:id="img_work_spring1">
+          <image xml:id="img_spring1">
             <description></description>
             <latex-image>
             
@@ -789,10 +789,10 @@
           <!-- figures/fig_pump4.tex END -->
         </figure>
 
-        <figure xml:id="fig_pump3b">
+        <figure xml:id="fig_pump_3a">
           <caption>Orienting the pool and showing differential elements for <xref ref="ex_pump3">Example</xref>.</caption>
           <!-- START figures/fig_pump4b.tex -->
-          <image xml:id="img_pump3b">
+          <image xml:id="img_pump3a">
             <description></description>
             <latex-image>
             
@@ -829,7 +829,7 @@
         </figure>
 
         <p>
-          <xref ref="fig_pump3b">Figure</xref>
+          <xref ref="fig_pump_3a">Figure</xref>
           shows the pool oriented with this <m>y</m>-axis,
           along with 2 differential elements as the pool must be split into two different regions.
         </p>

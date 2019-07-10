@@ -473,10 +473,10 @@
     <figure xml:id="fig_surface_intro">
       <caption>Establishing the formula for surface area.</caption>
       <sidebyside>
-        <figure xml:id="fig_arc4b">
-          <caption>(a)</caption>
+        <figure xml:id="fig_arc4a">
+          <caption/>
         <!-- START figures/fig_arc4b.tex -->
-          <image xml:id="img_arc4b">
+          <image xml:id="img_arc4a">
             <description></description>
             <latex-image>
             
@@ -534,8 +534,8 @@
         <!-- figures/fig_arc4b.tex END -->
         </figure>
 
-        <figure xml:id="fig_arc4_3D">
-          <caption>(b)</caption>
+        <figure xml:id="fig_arc4b_3D">
+          <caption/>
         <!--
          \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
         3Droll=121.00092658103458,
@@ -546,7 +546,7 @@
         3Dlights=Headlamp,add3Djscript=asylabels.js]
          -->
         <!-- START figures/figarc4_3D.asy -->
-          <image xml:id="img_arc4_3D">
+          <image xml:id="img_arc4b_3D">
             <description></description>
             <asymptote>
               

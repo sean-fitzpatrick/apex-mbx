@@ -43,7 +43,7 @@
       3Dlights=Headlamp,add3Djscript=asylabels.js]
         -->
       <!-- START figures/figshell_intro_b_3D.asy -->
-        <image xml:id="img_shell_intro_b_3D">
+        <image xml:id="img_soupcana">
           <description></description>
           <asymptote>
             
@@ -139,7 +139,7 @@
       3Dlights=Headlamp,add3Djscript=asylabels.js]
         -->
       <!-- START figures/figshell_intro_a_3D.asy -->
-        <image xml:id="img_shell_intro_a_3D">
+        <image xml:id="img_soupcanb">
           <description></description>
           <asymptote>
             
@@ -241,7 +241,7 @@
       3Dlights=Headlamp,add3Djscript=asylabels.js]
         -->
       <!-- START figures/figshell_intro_d_3D.asy -->
-        <image xml:id="img_shell_intro_d_3D">
+        <image xml:id="img_soupcanc">
           <description></description>
           <asymptote>
             
@@ -655,11 +655,13 @@
         and in part (c) the whole solid is shown.
       </p>
 
+      <!-- TODO: The above paragraph references 3 parts to the figure below but there are only 2. -->
+
       <figure xml:id="fig_shell2">
         <caption>Graphing a region in <xref ref="ex_shell2">Example</xref>.</caption>
         <sidebyside>
           <figure xml:id="fig_shell2a">
-            <caption>(a)</caption>
+            <caption/>
           <!-- START figures/fig_shell2a.tex -->
             <image xml:id="img_shell2a">
               <description></description>
@@ -705,12 +707,8 @@
           <!-- figures/fig_shell2a.tex END -->
           </figure>
 
-          <p>
-            (b)
-          </p>
-
-          <figure xml:id="fig_shell2c_3D">
-            <caption>(c)</caption>
+          <figure xml:id="fig_shell2b_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=138.26595091591264,
@@ -721,7 +719,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figshell2c_3D.asy -->
-            <image xml:id="img_shell2c_3D">
+            <image xml:id="img_shell2b_3D">
               <description></description>
               <asymptote>
             
@@ -895,7 +893,7 @@
         <caption>Graphing a region in <xref ref="ex_shell3">Example</xref>.</caption>
         <sidebyside>
           <figure xml:id="fig_shell3a">
-            <caption>(a)</caption>
+            <caption/>
           <!-- START figures/fig_shell3a.tex -->
             <image xml:id="img_shell3a">
               <description></description>
@@ -935,7 +933,7 @@
           </figure>
 
           <figure xml:id="fig_shell3b_3D">
-            <caption>(b)</caption>
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.25039174241927,
@@ -1064,7 +1062,7 @@
           </figure>
 
           <figure xml:id="fig_shell3c_3D">
-            <caption>(c)</caption>
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.25039174241927,
@@ -1233,7 +1231,7 @@
         <caption>Graphing a region in <xref ref="ex_shell4">Example</xref>.</caption>
         <sidebyside>
           <figure xml:id="fig_shell4a">
-            <caption>(a)</caption>
+            <caption/>
           <!-- START figures/fig_shell4a.tex -->
             <image xml:id="img_shell4a">
               <description></description>
@@ -1275,8 +1273,8 @@
           <!-- figures/fig_shell4a.tex END -->
           </figure>
 
-          <figure xml:id="fig_shell4c_3D">
-            <caption>(b)</caption>
+          <figure xml:id="fig_shell4b_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.25039174241927,
@@ -1287,7 +1285,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figshell4c_3D.asy -->
-            <image xml:id="img_shell4c_3D">
+            <image xml:id="img_shell4b_3D">
               <description></description>
               <asymptote>
                 
@@ -1397,8 +1395,8 @@
           <!-- figures/figshell4c_3D.asy END -->
           </figure>
 
-          <figure xml:id="fig_shell4b_3D">
-            <caption>(c)</caption>
+          <figure xml:id="fig_shell4c_3D">
+            <caption/>
           <!--
             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=97.25039174241927,
@@ -1409,7 +1407,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
             -->
           <!-- START figures/figshell4b_3D.asy -->
-            <image xml:id="img_shell4b_3D">
+            <image xml:id="img_shell4c_3D">
               <description></description>
               <asymptote>
                 
