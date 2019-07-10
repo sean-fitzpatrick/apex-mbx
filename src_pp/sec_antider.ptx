@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_antider">
   <title>Antiderivatives and Indefinite Integration</title>
   <introduction>
@@ -121,10 +120,12 @@
     <figure xml:id="fig_anti1">
       <caption/>
 
+      <!-- Todo: Fix this weird image -->
+
       <image width="100%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \tikz[]{
         \node[] (integral)
         {$\displaystyle\int$};
@@ -151,7 +152,7 @@
         \node[above right of=constant, anchor=south west] (l5) {Constant of Integration};
         \draw[-{latex}] (l5) edge [out=-90, in=0] (constant);
         }
-        ]]>
+        
         </latex-image>
       </image>
 
@@ -528,7 +529,7 @@
       Therefore we cannot ask <q>What is <em>the</em>
       velocity of an object whose acceleration is
       <quantity>
-        <mag>-32</mag><unit base="foot" /><per base="second" exp="2" />
+        <mag>-32</mag><unit base="foot"/><per base="second" exp="2"/>
       </quantity>?</q>, since there is more than one answer.
     </p>
 
@@ -545,11 +546,11 @@
         <p>
           The acceleration due to gravity of a falling object is
           <quantity>
-            <mag>-32</mag><unit base="foot" /><per base="second" exp="2" />
+            <mag>-32</mag><unit base="foot"/><per base="second" exp="2"/>
           </quantity>.
           At time <m>t=3</m>, a falling object had a velocity of
           <quantity>
-            <mag>-10</mag><unit base="foot" /><per base="second" />
+            <mag>-10</mag><unit base="foot"/><per base="second"/>
           </quantity>.
           Find the equation of the object's velocity.
         </p>
@@ -597,7 +598,7 @@
           Thus <m>v(t)= -32t+86</m>.
           We can use this equation to understand the motion of the object:
           when <m>t=0</m>, the object had a velocity of <m>v(0) = 86</m><quantity>
-            <unit base="foot" /><per base="second" />
+            <unit base="foot"/><per base="second"/>
           </quantity>.
           Since the velocity is positive,
           the object was moving upward.
@@ -706,7 +707,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -728,7 +729,7 @@
               </p>
 
               <p>
-                <var name="$A" form="popup" />
+                <var name="$A" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -747,7 +748,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -765,7 +766,7 @@
             <statement>
               <p>
                 Fill in the blanks:
-                <q>Inverse operations do the <fillin /><var name="$A" form="popup" /> things in the <fillin /> <var name="$B" form="popup" /> order.</q>
+                <q>Inverse operations do the <fillin/><var name="$A" form="popup"/> things in the <fillin/> <var name="$B" form="popup"/> order.</q>
               </p>
             </statement>
         </webwork>
@@ -784,7 +785,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -799,7 +800,7 @@
             </setup>
             <statement>
               <p>
-                The derivative of a position function is a <fillin /> function.
+                The derivative of a position function is a <fillin/> function.
               </p>
             </statement>
             <solution>
@@ -819,7 +820,7 @@
             </setup>
             <statement>
               <p>
-                The antiderivative of an acceleration function is a <fillin /> function.
+                The antiderivative of an acceleration function is a <fillin/> function.
               </p>
             </statement>
             <solution>
@@ -854,7 +855,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -875,7 +876,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -896,7 +897,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -918,7 +919,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -940,7 +941,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -962,7 +963,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -984,7 +985,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1005,7 +1006,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1027,7 +1028,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1049,7 +1050,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1070,7 +1071,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1093,7 +1094,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1115,7 +1116,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1137,7 +1138,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1159,7 +1160,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1181,7 +1182,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1202,7 +1203,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1223,7 +1224,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1245,7 +1246,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1279,7 +1280,7 @@
                   </p>
 
                   <p>
-                    <var name="$a" width="20" />
+                    <var name="$a" width="20"/>
                   </p>
                 </li>
 
@@ -1289,7 +1290,7 @@
                   </p>
 
                   <p>
-                    <var name="$b" width="20" />
+                    <var name="$b" width="20"/>
                   </p>
                 </li>
 
@@ -1299,7 +1300,7 @@
                   </p>
 
                   <p>
-                    <var name="$c" width="20" />
+                    <var name="$c" width="20"/>
                   </p>
                 </li>
 
@@ -1309,21 +1310,21 @@
                   </p>
 
                   <p>
-                    <var name="$d" width="20" />
+                    <var name="$d" width="20"/>
                   </p>
                 </li>
 
                 <li>
                   <p>
                     You should find that <m>1/x</m> has two types of antiderivatives,
-                    depending on whether <m>x>0</m> or <m>x\lt 0</m>.
+                    depending on whether <m>x \gt 0</m> or <m>x\lt 0</m>.
                     In one expression, give a formula for
                     <m>\ds \int \frac{1}{x}\ dx</m> that takes these different domains into account,
                     and explain your answer.
                   </p>
 
                   <p>
-                    <var form="essay" />
+                    <var form="essay"/>
                   </p>
                 </li>
               </ol>
@@ -1355,7 +1356,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1375,7 +1376,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1395,7 +1396,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1415,7 +1416,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1435,7 +1436,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1455,7 +1456,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1475,7 +1476,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1495,7 +1496,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1517,7 +1518,7 @@
               </p>
 
               <p>
-                <m>f(\theta) = </m><var name="$F" width="40" />
+                <m>f(\theta) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1539,7 +1540,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1559,7 +1560,7 @@
               </p>
 
               <p>
-                <m>f(x) = </m><var name="$F" width="40" />
+                <m>f(x) = </m><var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1590,11 +1591,11 @@
               </p>
 
               <p>
-                The function is decreasing on the interval <var name="$a" width="20" />.
+                The function is decreasing on the interval <var name="$a" width="20"/>.
               </p>
 
               <p>
-                The function has an inflection point at <m>x = </m><var name="$b" width="20" />.
+                The function has an inflection point at <m>x = </m><var name="$b" width="20"/>.
               </p>
             </statement>
         </webwork>
@@ -1617,7 +1618,7 @@
               </p>
 
               <p>
-                <m>dy = </m><var name="$dy" width="40" />
+                <m>dy = </m><var name="$dy" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1626,4 +1627,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

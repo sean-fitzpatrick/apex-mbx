@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_FTC">
   <title>The Fundamental Theorem of Calculus</title>
   <introduction>
@@ -21,10 +20,10 @@
 
     <figure xml:id="fig_ftc0">
       <caption>The area of the shaded region is <m>F(x) = \int_a^x f(t)\ dt</m>.</caption>
-      <image xml:id="img_ftc0"  width="47%">
+      <image xml:id="img_ftc0" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[axis on top,
         xtick=\empty,
@@ -40,7 +39,7 @@
 
         \end{axis}
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -58,10 +57,10 @@
 
         <figure xml:id="fig_ftc1">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
-          <image xml:id="img_ftc1"  width="47%">
+          <image xml:id="img_ftc1" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[xtick=\empty,
             extra x ticks={1,2.5},
@@ -77,7 +76,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -94,10 +93,10 @@
 
         <figure xml:id="fig_ftc1b">
           <caption>The area of the shaded region is <m>F(x) = \int_1^x 2t\ dt</m>.</caption>
-          <image xml:id="img_ftc1b"  width="47%">
+          <image xml:id="img_ftc1b" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[ xtick=\empty,
             extra x ticks={1,2.5},
@@ -111,13 +110,13 @@
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {2*x} \closedcycle;
             \addplot[lineseg, domain=0:2]({1},{x}) node[pos=0.5, right]{$2$};
             \addplot[lineseg, domain=0:1]({x},{0}) node[pos=0.5, above]{$1$};
-            \addplot[lineseg,<->, domain=0:2.5]({x},{-1}) node[pos=0.5, below]{$x$};
+            \addplot[lineseg,&lt;-&gt;, domain=0:2.5]({x},{-1}) node[pos=0.5, below]{$x$};
             \addplot[lineseg, domain=0:5]({2.5},{x}) node[pos=0.5, right]{$2x$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -147,10 +146,10 @@
 
         <figure xml:id="fig_ftc1c">
           <caption>Graphs of <m>f(x)=2x</m> and <m>F(x)=x^2-1</m>.</caption>
-          <image xml:id="img_ftc1c"  width="47%">
+          <image xml:id="img_ftc1c" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[ymin=-2,ymax=8,
             xmin=-1,xmax=3.5
@@ -161,7 +160,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -175,7 +174,7 @@
       In <xref ref="ex_ftc1">Example</xref>,
       <m>F(x)=x^2-1</m>, so <m>F'(x)=2x=f(x)</m>.
       While this may seem like an innocuous thing to do,
-      it has far<ndash />reaching implications,
+      it has far<ndash/>reaching implications,
       as demonstrated by the fact that the result is given as an important theorem.
     </p>
 
@@ -534,7 +533,7 @@
             <image xml:id="img_ftcmotion1a">
               <description></description>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
               \begin{axis}[ xtick=\empty,
               extra x ticks={0.625,1},
@@ -552,7 +551,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
           </figure>
@@ -562,7 +561,7 @@
             <image xml:id="img_ftcmotion1b">
               <description></description>
               <latex-image>
-              <![CDATA[
+              
               \begin{tikzpicture}
               \begin{axis}[ xtick=\empty,
               extra x ticks={0.625,1},
@@ -582,7 +581,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              ]]>
+              
               </latex-image>
             </image>
           </figure>
@@ -733,20 +732,20 @@
           <image xml:id="img_ftc5a">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={.5,3},
-        extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,%
+            extra x ticks={.5,3},
+            extra x tick labels={$a$,$b$},
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=2,%
-        xmin=-.5,xmax=3.5%
+            ymin=-.5,ymax=2,%
+            xmin=-.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},domain=.5:3,stack plots=y] {.25*(x-2)^2+.2};
@@ -757,7 +756,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -767,20 +766,20 @@
           <image xml:id="img_ftc5b">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={.5,3},
-        extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,%
+            extra x ticks={.5,3},
+            extra x tick labels={$a$,$b$},
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=2,%
-        xmin=-.5,xmax=3.5%
+            ymin=-.5,ymax=2,%
+            xmin=-.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=.5:3] {.25*sin(deg(2*x))+1.25} \closedcycle;
@@ -791,7 +790,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -844,10 +843,10 @@
 
         <figure xml:id="fig_ftc6">
           <caption>Sketching the region enclosed by <m>y=x^2+x-5</m> and <m>y=3x-2</m> in <xref ref="ex_ftc6">Example</xref>.</caption>
-          <image xml:id="img_ftc6"  width="47%">
+          <image xml:id="img_ftc6" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[axis on top,
             xtick={-2,-1,1,2,3,4},
@@ -863,7 +862,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -899,23 +898,23 @@
     <title>The Mean Value Theorem and Average Value</title>
     <figure xml:id="fig_ftc7a">
       <caption>A graph of a function <m>f</m> to introduce the Mean Value Theorem.</caption>
-      <image xml:id="img_ftc7a"  width="47%">
+      <image xml:id="img_ftc7a" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[%
         axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
         %			extra x ticks={.5,3},
         %			extra x tick labels={$a$,$b$},
-			ytick=\empty,
-			%%extra y ticks={-5,-3,...,7},%
+        ytick=\empty,
+        %%extra y ticks={-5,-3,...,7},%
         %			minor x tick num=4,
-			ymin=-.5,ymax=1.75,%
-			xmin=-.5,xmax=4.5%
+        ymin=-.5,ymax=1.75,%
+        xmin=-.5,xmax=4.5%
         ]
 
         \addplot [smooth,thick, {\colorone},domain=-.5:4.5] {.3*cos(deg(x))+1};
@@ -923,7 +922,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -968,20 +967,20 @@
           <image xml:id="img_ftc7b2">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={.5,3},
             %			extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=1.75,%
-        xmin=-.5,xmax=4.5%
+            ymin=-.5,ymax=1.75,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
@@ -990,7 +989,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1000,20 +999,20 @@
           <image xml:id="img_ftc7b1">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={.5,3},
             %			extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=1.75,%
-        xmin=-.5,xmax=4.5%
+            ymin=-.5,ymax=1.75,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
@@ -1022,7 +1021,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1032,20 +1031,20 @@
           <image xml:id="img_ftc7b3">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={.5,3},
             %			extra x tick labels={$a$,$b$},
-        ytick=\empty,
-        %%extra y ticks={-5,-3,...,7},%
+            ytick=\empty,
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-        ymin=-.5,ymax=1.75,%
-        xmin=-.5,xmax=4.5%
+            ymin=-.5,ymax=1.75,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
@@ -1054,7 +1053,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1130,25 +1129,25 @@
 
         <figure xml:id="fig_ftc8">
           <caption>A graph of <m>y=\sin(x)</m> on <m>[0,\pi]</m> and the rectangle guaranteed by the Mean Value Theorem.</caption>
-          <image xml:id="img_ftc8"  width="47%">
+          <image xml:id="img_ftc8" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2},%
-			extra x ticks={.69,3.14},
-			extra x tick labels={$c$,$\pi$},
-			ytick={1},
-			%
-			extra y ticks={.637},%
-			extra y tick labels={$\sin(0.69) $},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2},%
+            extra x ticks={.69,3.14},
+            extra x tick labels={$c$,$\pi$},
+            ytick={1},
+            %
+            extra y ticks={.637},%
+            extra y tick labels={$\sin(0.69) $},
             %			minor x tick num=4,
-			ymin=-.25,ymax=1.25,%
-			xmin=-.5,xmax=3.5%
+            ymin=-.25,ymax=1.25,%
+            xmin=-.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},thick,fill={\coloronefill},domain=0:3.14] {sin(deg(x))} \closedcycle;
@@ -1157,7 +1156,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -1183,7 +1182,7 @@
 
     <p>
       When <m>f(x)</m> is shifted by <m>-f(c)</m>,
-      the amount of area under <m>f</m> above the <m>x</m><ndash />axis on <m>[a,b]</m> is the same as the amount of area below the <m>x</m><ndash />axis above <m>f</m>;
+      the amount of area under <m>f</m> above the <m>x</m><ndash/>axis on <m>[a,b]</m> is the same as the amount of area below the <m>x</m><ndash/>axis above <m>f</m>;
       see <xref ref="fig_ftc9">Figure</xref> for an illustration of this.
       In this sense,
       we can say that <m>f(c)</m> is the <em>average value</em>
@@ -1196,22 +1195,22 @@
         <image xml:id="img_ftc9a">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
           \begin{axis}[%
           axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={1,4,1.63},
-        extra x tick labels={$a$,$b$,$c$},
-        ytick=\empty,
-        %
-        extra y ticks={1.75},%
-        extra y tick labels={$f(c)$},
+          %x=.37\marginparwidth,
+          %y=.37\marginparwidth,
+          xtick=\empty,%
+          extra x ticks={1,4,1.63},
+          extra x tick labels={$a$,$b$,$c$},
+          ytick=\empty,
+          %
+          extra y ticks={1.75},%
+          extra y tick labels={$f(c)$},
           %			minor x tick num=4,
-        ymin=-1,ymax=3.5,%
-        xmin=-.5,xmax=4.25%
+          ymin=-1,ymax=3.5,%
+          xmin=-.5,xmax=4.25%
           ]
 
           \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2+1} \closedcycle;
@@ -1221,29 +1220,29 @@
           \end{axis}
 
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
 
         <image xml:id="img_ftc9b">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
           \begin{axis}[%
           axis on top,%
-        %x=.37\marginparwidth,
-        %y=.37\marginparwidth,
-        xtick=\empty,%
-        extra x ticks={1,4,1.63},
-        extra x tick labels={$a$,$b$,$c$},
-        ytick=\empty,
-        %
-        extra y ticks={1.75},%
-        extra y tick labels={$f(c)$},
+          %x=.37\marginparwidth,
+          %y=.37\marginparwidth,
+          xtick=\empty,%
+          extra x ticks={1,4,1.63},
+          extra x tick labels={$a$,$b$,$c$},
+          ytick=\empty,
+          %
+          extra y ticks={1.75},%
+          extra y tick labels={$f(c)$},
           %			minor x tick num=4,
-        ymin=-1,ymax=3.5,%
-        xmin=-.5,xmax=4.25%
+          ymin=-1,ymax=3.5,%
+          xmin=-.5,xmax=4.25%
           ]
 
           \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2-.75} \closedcycle;
@@ -1253,7 +1252,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </sidebyside>
@@ -1318,7 +1317,7 @@
       <statement>
         <p>
           Let <m>f</m> be continuous on <m>[a,b]</m>.
-          The <term>average value of<nbsp /> <m>f</m><nbsp /> on <m>[a,b]</m></term> is <m>f(c)</m>,
+          The <term>average value of<nbsp/> <m>f</m><nbsp/> on <m>[a,b]</m></term> is <m>f(c)</m>,
           where <m>c</m> is a value in <m>[a,b]</m> guaranteed by the Mean Value Theorem.
 
           <idx>
@@ -1429,7 +1428,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -1461,7 +1460,7 @@
             <statement>
               <p>
                 T/F: If <m>f</m> is a continuous function,
-                then <m>\ds F(x) = \int_a^x f(t)\ dt</m> is also a continuous function.<var name="$true" form="popup" />
+                then <m>\ds F(x) = \int_a^x f(t)\ dt</m> is also a continuous function.<var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -1482,7 +1481,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -1514,7 +1513,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 20 -->
             </statement>
@@ -1538,7 +1537,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 28/3 -->
             </statement>
@@ -1562,7 +1561,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 0 -->
             </statement>
@@ -1586,7 +1585,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- -1 -->
             </statement>
@@ -1610,7 +1609,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1 -->
             </statement>
@@ -1634,7 +1633,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1 -->
             </statement>
@@ -1658,7 +1657,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- (5-1/5)/ln(5) -->
             </statement>
@@ -1682,7 +1681,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 23/2 -->
             </statement>
@@ -1706,7 +1705,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- -4 -->
             </statement>
@@ -1730,7 +1729,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- e^3-e -->
             </statement>
@@ -1754,7 +1753,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 16/3 -->
             </statement>
@@ -1778,7 +1777,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 4 -->
             </statement>
@@ -1802,7 +1801,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 45/4 -->
             </statement>
@@ -1826,7 +1825,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- ln(2) -->
             </statement>
@@ -1850,7 +1849,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/2 -->
             </statement>
@@ -1874,7 +1873,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 3/8 -->
             </statement>
@@ -1898,7 +1897,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/2 -->
             </statement>
@@ -1922,7 +1921,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/3 -->
             </statement>
@@ -1946,7 +1945,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/4 -->
             </statement>
@@ -1970,7 +1969,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 1/101 -->
             </statement>
@@ -1994,7 +1993,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 8 -->
             </statement>
@@ -2018,7 +2017,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 15 -->
             </statement>
@@ -2042,7 +2041,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 0 -->
             </statement>
@@ -2066,7 +2065,7 @@
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
    <!-- 2-2/sqrt(3) -->
             </statement>
@@ -2107,7 +2106,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -2142,7 +2141,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- 2/sqrt(3) -->
             </statement>
@@ -2168,7 +2167,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- +/- 2/sqrt(3) -->
             </statement>
@@ -2194,7 +2193,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- ln(e-1), approx 0.5413-->
             </statement>
@@ -2220,7 +2219,7 @@
               </p>
 
               <p>
-                <m>c = </m><var name="$c" width="10" />
+                <m>c = </m><var name="$c" width="10"/>
               </p>
    <!-- 64/9 -->
             </statement>
@@ -2254,7 +2253,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 2/pi -->
             </statement>
@@ -2278,7 +2277,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 2/pi -->
             </statement>
@@ -2302,7 +2301,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 2 -->
             </statement>
@@ -2326,7 +2325,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 16/3 -->
             </statement>
@@ -2350,7 +2349,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 16 -->
             </statement>
@@ -2374,7 +2373,7 @@
               </p>
 
               <p>
-                <var name="$f_avg" width="10" />
+                <var name="$f_avg" width="10"/>
               </p>
    <!-- 1/(e-1) -->
             </statement>
@@ -2413,7 +2412,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- -300ft -->
             </statement>
@@ -2441,7 +2440,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- 400ft -->
             </statement>
@@ -2467,7 +2466,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- 1.5/ln(2) miles -->
             </statement>
@@ -2493,7 +2492,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- -1 ft -->
             </statement>
@@ -2519,7 +2518,7 @@
               </p>
 
               <p>
-                Displacement: <var name="$disp" width="20" />
+                Displacement: <var name="$disp" width="20"/>
               </p>
   <!-- 128/5ft -->
             </statement>
@@ -2556,7 +2555,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- -64 ft/s -->
             </statement>
@@ -2582,7 +2581,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- 50 ft/s -->
             </statement>
@@ -2608,7 +2607,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- 2 ft/s -->
             </statement>
@@ -2634,7 +2633,7 @@
               </p>
 
               <p>
-                Change in velocity: <var name="$delta_v" width="20" />
+                Change in velocity: <var name="$delta_v" width="20"/>
               </p>
   <!-- 0 ft/s -->
             </statement>
@@ -2670,7 +2669,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 27/2 -->
             </statement>
@@ -2697,7 +2696,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 21 -->
             </statement>
@@ -2723,7 +2722,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 9/2 -->
             </statement>
@@ -2749,7 +2748,7 @@
               </p>
 
               <p>
-                Enclosed area: <var name="$r" width="10" />
+                Enclosed area: <var name="$r" width="10"/>
               </p>
    <!-- 54 -->
             </statement>
@@ -2786,7 +2785,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2806,7 +2805,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2826,7 +2825,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2846,7 +2845,7 @@
               </p>
 
               <p>
-                <m>F'(x)</m>: <var name="$fx" width="30" />
+                <m>F'(x)</m>: <var name="$fx" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2855,4 +2854,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

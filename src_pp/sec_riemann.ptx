@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_riemann">
   <title>Riemann Sums</title>
   <introduction>
     <p>
-      In the previous section we defined the definite integral of a function on <m>[a,b]</m> to be the signed area between the curve and the <m>x</m><ndash />axis.
+      In the previous section we defined the definite integral of a function on <m>[a,b]</m> to be the signed area between the curve and the <m>x</m><ndash/>axis.
       Some areas were simple to compute;
       we ended the section with a region whose area was not simple to compute.
       In this section we develop a technique to find such areas.
@@ -25,16 +24,16 @@
     <p>
       Consider the region given in <xref ref="fig_rie1a">Figure</xref>,
       which is the area under <m>y=4x-x^2</m> on <m>[0,4]</m>.
-      What is the signed area of this region <mdash /> i.e., what is <m>\int_0^4(4x-x^2)\ dx</m>?
+      What is the signed area of this region <mdash/> i.e., what is <m>\int_0^4(4x-x^2)\ dx</m>?
     </p>
 
     <figure xml:id="fig_rie1a">
       <caption>A graph of <m>f(x) = 4x-x^2</m>. What is the area of the shaded region?</caption>
       <!-- START figures/fig_rie1a.tex -->
-      <image xml:id="img_rie1a"  width="47%">
+      <image xml:id="img_rie1a" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[axis on top,
         xtick={1,2,3,4},
@@ -47,7 +46,7 @@
         \addplot+[{\coloronefill},fill={\coloronefill},area style,domain=0:4] {4*x-x^2} \closedcycle;
         \end{axis}
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_rie1a.tex END -->
@@ -56,16 +55,16 @@
     <p>
       We start by approximating.
       We can surround the region with a rectangle with height and width of 4 and find the area is approximately 16 square units.
-      This is obviously an <em>over<ndash />approximation</em>;
+      This is obviously an <em>over<ndash/>approximation</em>;
       we are including area in the rectangle that is not under the parabola.
     </p>
 
     <figure xml:id="fig_rie1a2">
       <caption>Approximating area under a curve with one rectangle</caption>
-      <image xml:id="img_rie1a2"  width="47%">
+      <image xml:id="img_rie1a2" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[axis on top,
         xtick={1,2,3,4},
@@ -81,7 +80,7 @@
 
         \end{axis}
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
 
@@ -106,7 +105,7 @@
       the <em>Left Hand Rule</em>,
       the <em>Right Hand Rule</em>,
       and the <em>Midpoint Rule</em>.
-      The <em>Left Hand Rule</em> says to evaluate the function at the left<ndash />hand endpoint of the subinterval and make the rectangle that height.
+      The <em>Left Hand Rule</em> says to evaluate the function at the left<ndash/>hand endpoint of the subinterval and make the rectangle that height.
       In <xref ref="fig_rie1b">Figure</xref>,
       the rectangle drawn on the interval <m>[2,3]</m> has height determined by the Left Hand Rule;
       it has a height of <m>f(2)</m>. (The rectangle is labeled <q>LHR.</q>)
@@ -128,23 +127,23 @@
     <figure xml:id="fig_rie1b">
       <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using rectangles. The heights of the rectangles are determined using different rules.</caption>
       <!-- START figures/fig_rie1b.tex -->
-      <image xml:id="img_rie1b"  width="47%">
+      <image xml:id="img_rie1b" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[%
         axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
         %			extra x ticks={2,6,8},
         %			extra x tick labels={$\ a$,$b\ $,$\ c$},
-			ytick={1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
+        ytick={1,2,3,4},
+        %%extra y ticks={-5,-3,...,7},%
         %			minor x tick num=4,
-			ymin=-1,ymax=5,%
-			xmin=-.5,xmax=4.5%
+        ymin=-1,ymax=5,%
+        xmin=-.5,xmax=4.5%
         ]
 
         \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:4] {4*x-x^2} \closedcycle;
@@ -167,7 +166,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_rie1b.tex END -->
@@ -225,10 +224,10 @@
         <figure xml:id="fig_rie2a">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using the Left Hand Rule in <xref ref="ex_rie2">Example</xref>.</caption>
           <!-- START figures/fig_rie2a.tex -->
-          <image xml:id="img_rie2a"  width="47%">
+          <image xml:id="img_rie2a" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[axis on top,
             xtick={1,2,3,4},
@@ -257,7 +256,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_rie2a.tex END -->
@@ -266,7 +265,7 @@
         <p>
           Note how in the first subinterval,
           <m>[0,1]</m>, the rectangle has height <m>f(0)=0</m>.
-          We add up the areas of each rectangle (height<times /> width) for our Left Hand Rule approximation:
+          We add up the areas of each rectangle (height<times/> width) for our Left Hand Rule approximation:
           <md>
             <mrow>\amp f(0)\cdot 1 + f(1)\cdot 1+ f(2)\cdot 1+f(3)\cdot 1</mrow>
             <mrow>=\amp 0+3+4+3 = 10</mrow>
@@ -282,23 +281,23 @@
         <figure xml:id="fig_rie2b">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using the Right Hand Rule in <xref ref="ex_rie2">Example</xref>.</caption>
           <!-- START figures/fig_rie2b.tex -->
-          <image xml:id="img_rie2b"  width="47%">
+          <image xml:id="img_rie2b" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={2,6,8},
             %			extra x tick labels={$\ a$,$b\ $,$\ c$},
-			ytick={1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
+            ytick={1,2,3,4},
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-1,ymax=5,%
-			xmin=-.5,xmax=4.5%
+            ymin=-1,ymax=5,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:4] {4*x-x^2} \closedcycle;
@@ -321,7 +320,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_rie2b.tex END -->
@@ -347,23 +346,23 @@
         <figure xml:id="fig_rie2c">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> using the Midpoint Rule in <xref ref="ex_rie2">Example</xref>.</caption>
           <!-- START figures/fig_rie2c.tex -->
-          <image xml:id="img_rie2c"  width="47%">
+          <image xml:id="img_rie2c" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={2,6,8},
             %			extra x tick labels={$\ a$,$b\ $,$\ c$},
-			ytick={1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
+            ytick={1,2,3,4},
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-1,ymax=5,%
-			xmin=-.5,xmax=4.5%
+            ymin=-1,ymax=5,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:4] {4*x-x^2} \closedcycle;
@@ -386,7 +385,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_rie2c.tex END -->
@@ -426,7 +425,7 @@
     <p>
       Suppose we wish to add up a list of numbers <m>a_1</m>,
       <m>a_2</m>,
-      <m>a_3</m>, <ellipsis />, <m>a_9</m>.
+      <m>a_3</m>, <ellipsis/>, <m>a_9</m>.
       Instead of writing
       <me>
         a_1+a_2+a_3+a_4+a_5+a_6+a_7+a_8+a_9
@@ -510,52 +509,54 @@
       <title>Properties of Summations</title>
       <statement>
         <sidebyside>
-          <idx><h>summation</h><h>properties</h></idx>
+          <p><idx><h>summation</h><h>properties</h></idx></p>
 
-          <ol cols="2">
-            <li>
-              <p>
-                <m>\ds \sum_{i=1}^n c = c\cdot n</m>,
-                where <m>c</m> is a constant.
-              </p>
-            </li>
+          <p>
+            <ol cols="2">
+              <li>
+                <p>
+                  <m>\ds \sum_{i=1}^n c = c\cdot n</m>,
+                  where <m>c</m> is a constant.
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>\ds \sum_{i=m}^n (a_i\pm b_i) = \sum_{i=m}^n a_i \pm \sum_{i=m}^n b_i</m>
-              </p>
-            </li>
+              <li>
+                <p>
+                  <m>\ds \sum_{i=m}^n (a_i\pm b_i) = \sum_{i=m}^n a_i \pm \sum_{i=m}^n b_i</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>\ds \sum_{i=m}^n c\cdot a_i = c\cdot\sum_{i=m}^n a_i</m>
-              </p>
-            </li>
+              <li>
+                <p>
+                  <m>\ds \sum_{i=m}^n c\cdot a_i = c\cdot\sum_{i=m}^n a_i</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>\ds \sum_{i=m}^j a_i + \sum_{i=j+1}^n a_i = \sum_{i=m}^n a_i</m>
-              </p>
-            </li>
+              <li>
+                <p>
+                  <m>\ds \sum_{i=m}^j a_i + \sum_{i=j+1}^n a_i = \sum_{i=m}^n a_i</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>\ds \sum_{i=1}^n i = \frac{n(n+1)}2</m>
-              </p>
-            </li>
+              <li>
+                <p>
+                  <m>\ds \sum_{i=1}^n i = \frac{n(n+1)}2</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>\ds \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}6</m>
-              </p>
-            </li>
+              <li>
+                <p>
+                  <m>\ds \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}6</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>\ds \sum_{i=1}^n i^3 = \left(\frac{n(n+1)}2\right)^2</m>
-              </p>
-            </li>
-          </ol>
+              <li>
+                <p>
+                  <m>\ds \sum_{i=1}^n i^3 = \left(\frac{n(n+1)}2\right)^2</m>
+                </p>
+              </li>
+            </ol>
+          </p>
         </sidebyside>
       </statement>
     </theorem>
@@ -572,12 +573,14 @@
         </p>
       </statement>
       <solution>
-        <md>
-          <mrow>\sum_{i=1}^6 (2i-1) \amp  = \sum_{i=1}^6 2i - \sum_{i=1}^6 (1)</mrow>
-          <mrow>\amp =  \left(2\sum_{i=1}^6 i \right)- 6</mrow>
-          <mrow>\amp = 2\frac{6(6+1)}{2} - 6</mrow>
-          <mrow>\amp = 42-6 = 36</mrow>
-        </md>
+        <p>
+          <md>
+            <mrow>\sum_{i=1}^6 (2i-1) \amp  = \sum_{i=1}^6 2i - \sum_{i=1}^6 (1)</mrow>
+            <mrow>\amp =  \left(2\sum_{i=1}^6 i \right)- 6</mrow>
+            <mrow>\amp = 2\frac{6(6+1)}{2} - 6</mrow>
+            <mrow>\amp = 42-6 = 36</mrow>
+          </md>
+        </p>
         <p>
           We obtained the same answer without writing out all six terms.
           When dealing with small sizes of <m>n</m>,
@@ -600,7 +603,31 @@
 
     <figure xml:id="fig_rie5">
       <caption>Dividing <m>[0,4]</m> into 16 equally spaced subintervals.</caption>
-      <img src="figures/figrie5"/>
+      <image xml:id="img_rie5" width="47%">
+        <description></description>
+        <latex-image>
+
+        \begin{tikzpicture}
+        \draw [&lt;->] (-.5,0) -- (4.5,0);
+        \foreach \x in {0,.25,...,4}
+          {\draw (\x,-.1) -- (\x,.1);
+          }
+        \draw (0,-.25) node {\scriptsize $0$};
+        \draw (1,-.25) node {\scriptsize $1$};
+        \draw (2,-.25) node {\scriptsize $2$};
+        \draw (3,-.25) node {\scriptsize $3$};
+        \draw (4,-.25) node {\scriptsize $4$};
+
+        \draw (0,-.55) node {\scriptsize $x_1$};
+        \draw (1,-.55) node {\scriptsize $x_5$};
+        \draw (2,-.55) node {\scriptsize $x_9$};
+        \draw (3,-.55) node {\scriptsize $x_{13}$};
+        \draw (4,-.55) node {\scriptsize $x_{17}$};
+
+        \end{tikzpicture}
+
+        </latex-image>
+      </image>
     </figure>
 
     <p>
@@ -616,9 +643,26 @@
       Consider:
     </p>
 
-    <p>
-      <img src="figures/figrie5a"/>
-    </p>
+    <image xml:id="img_rie5a" width="47%">
+      <description></description>
+      <latex-image>
+
+      \begin{tikzpicture}
+      \draw (1.5,1) node {$\displaystyle x_i = x_1 + (i-1)\Delta x$};
+
+      \draw [{\colorone}] (1,0) node [text width=32pt,align=center] (a) {\scriptsize \centering starting\\[-5pt] value};
+      \draw [{\colorone},->] (a) -- (.95,.75);
+
+      \draw [{\colorone}] (2,2.25) node [text width=60pt,align=center] (b) {\scriptsize \centering number of subintervals\\[-5pt] between $x_1$ and $x_i$};
+      \draw [{\colorone},->] (b) -- (1.95,1.25);
+
+      \draw [{\colorone}] (3,0) node [text width=60pt,align=center] (c) {\scriptsize \centering subinterval\\[-5pt] size};
+      \draw [{\colorone},->] (c) -- (2.75,.75);
+
+      \end{tikzpicture}
+
+      </latex-image>
+    </image>
 
     <p>
       So <m>x_{10} = x_1 + 9(4/16) = 2.25</m>.
@@ -727,14 +771,14 @@
           We were able to sum up the areas of 16 rectangles with very little computation.
           In <xref ref="fig_rie7">Figure</xref>
           the function and the 16 rectangles are graphed.
-          While some rectangles over<ndash />approximate the area,
-          other under<ndash />approximate the area
+          While some rectangles over<ndash/>approximate the area,
+          other under<ndash/>approximate the area
           (by about the same amount).
           Thus our approximate area of 10.625 is likely a fairly good approximation.
         </p>
 
         <p>
-          Notice Equation <xref ref="eq_rie7" />;
+          Notice Equation <xref ref="eq_rie7"/>;
           by changing the 16's to 1,000's
           (and appropriately changing the value of <m>\Delta x</m>),
           we can use that equation to sum up 1000 rectangles!
@@ -743,23 +787,23 @@
         <figure xml:id="fig_rie7">
           <caption>Approximating <m>\int_0^4(4x-x^2)\ dx</m> with the Right Hand Rule and 16 evenly spaced subintervals.</caption>
           <!-- START figures/fig_rie7.tex -->
-          <image xml:id="img_rie7"  width="47%">
+          <image xml:id="img_rie7" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,3,4},%
             %			extra x ticks={2,6,8},
             %			extra x tick labels={$\ a$,$b\ $,$\ c$},
-			ytick={1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
+            ytick={1,2,3,4},
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-1,ymax=5,%
-			xmin=-.5,xmax=4.5%
+            ymin=-1,ymax=5,%
+            xmin=-.5,xmax=4.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:4] {4*x-x^2} \closedcycle;
@@ -768,8 +812,8 @@
             \foreach \x / \y in {0.25 / 0.9375, 0.5 / 1.75, 0.75 / 2.4375, 1. / 3., 1.25 / 3.4375,%
             1.5 / 3.75, 1.75 / 3.9375, 2. / 4., 2.25 / 3.9375, 2.5 / 3.75,%
             2.75 /3.4375, 3. / 3., 3.25 / 2.4375, 3.5 / 1.75, 3.75 / 0.9375, 4. / 0.}
-	{\addplot [thick,draw={\colortwo}] coordinates {(\x-.25,0) (\x-.25,\y) (\x,\y) (\x,0) (\x-.25,0)};
-	}
+            {\addplot [t hick,draw={\colortwo}] coordinates {(\x-.25,0) (\x-.25,\y) (\x,\y) (\x,0) (\x-.25,0)};
+            }
 
             %\foreach \p in {1,2,3}{
             %	\addplot[{\colortwo}] coordinates {(\p};};
@@ -791,7 +835,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_rie7.tex END -->
@@ -799,7 +843,7 @@
 
         <p>
           We do so here,
-          skipping from the original summand to the equivalent of Equation <xref ref="eq_rie7" /> to save space.
+          skipping from the original summand to the equivalent of Equation <xref ref="eq_rie7"/> to save space.
           Note that <m>\Delta x = 4/1000 = 0.004</m>.
           <md>
             <mrow>\int_0^4 (4x-x^2)\ dx \amp \approx \sum_{i=1}^{1000} f(x_{i+1})\Delta x</mrow>
@@ -827,22 +871,24 @@
       Each had the same basic structure, which was:
     </p>
 
-    <ol>
-      <li>
-        <p>
-          each rectangle has the same width,
-          which we referred to as <m>\Delta x</m>, and
-        </p>
-      </li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            each rectangle has the same width,
+            which we referred to as <m>\Delta x</m>, and
+          </p>
+        </li>
 
-      <li>
-        <p>
-          each rectangle's height is determined by evaluating <m>f</m> at a particular point in each subinterval.
-          For instance,
-          the Left Hand Rule states that each rectangle's height is determined by evaluating <m>f</m> at the left hand endpoint of the subinterval the rectangle lives on.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <p>
+            each rectangle's height is determined by evaluating <m>f</m> at a particular point in each subinterval.
+            For instance,
+            the Left Hand Rule states that each rectangle's height is determined by evaluating <m>f</m> at the left hand endpoint of the subinterval the rectangle lives on.
+          </p>
+        </li>
+      </ol>
+    </p>
 
     <p>
       One could partition an interval <m>[a,b]</m> with subintervals that did not have the same size.
@@ -900,23 +946,23 @@
     <figure xml:id="fig_riedef">
       <caption>An example of a general Riemann sum to approximate <m>\int_0^4(4x-x^2)\ dx</m>.</caption>
       <!-- START figures/fig_riedef.tex -->
-      <image xml:id="img_riedef"  width="47%">
+      <image xml:id="img_riedef" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
         \begin{axis}[%
         axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick={1,2,3,4},%
         %			extra x ticks={2,6,8},
         %			extra x tick labels={$\ a$,$b\ $,$\ c$},
-			ytick={1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
+        ytick={1,2,3,4},
+        %%extra y ticks={-5,-3,...,7},%
         %			minor x tick num=4,
-			ymin=-1,ymax=5,%
-			xmin=-.5,xmax=4.5%
+        ymin=-1,ymax=5,%
+        xmin=-.5,xmax=4.5%
         ]
 
         \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:4] {4*x-x^2} \closedcycle;
@@ -939,7 +985,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_riedef.tex END -->
@@ -965,42 +1011,44 @@
         Consider <m>\ds \int_a^b f(x) \ dx \approx \sum_{i=1}^n f(c_i)\Delta x_i</m>.
       </p>
 
-      <ol>
-        <li>
-          <p>
-            When the <m>n</m> subintervals have equal length,
-            <m>\ds \Delta x_i = \Delta x = \frac{b-a}n</m>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              When the <m>n</m> subintervals have equal length,
+              <m>\ds \Delta x_i = \Delta x = \frac{b-a}n</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The <m>i^\text{ th }</m> term of the partition is <m>x_i = a + (i-1)\Delta x</m>.
-            (This makes <m>x_{n+1} = b</m>.)
-          </p>
-        </li>
+          <li>
+            <p>
+              The <m>i^\text{ th }</m> term of the partition is <m>x_i = a + (i-1)\Delta x</m>.
+              (This makes <m>x_{n+1} = b</m>.)
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The Left Hand Rule summation is:
-            <m>\ds \sum_{i=1}^n f(x_i)\Delta x</m>.
-          </p>
-        </li>
+          <li>
+            <p>
+              The Left Hand Rule summation is:
+              <m>\ds \sum_{i=1}^n f(x_i)\Delta x</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The Right Hand Rule summation is:
-            <m>\ds \sum_{i=1}^n f(x_{i+1})\Delta x</m>.
-          </p>
-        </li>
+          <li>
+            <p>
+              The Right Hand Rule summation is:
+              <m>\ds \sum_{i=1}^n f(x_{i+1})\Delta x</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The Midpoint Rule summation is:
-            <m>\ds \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              The Midpoint Rule summation is:
+              <m>\ds \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
     </insight>
 
     <p>
@@ -1048,23 +1096,23 @@
         <figure xml:id="fig_rie8">
           <caption>Approximating <m>\int_{-2}^3 (5x+2)\ dx</m> using the Midpoint Rule and 10 evenly spaced subintervals in <xref ref="ex_rie8">Example</xref>.</caption>
           <!-- START figures/fig_rie8.tex -->
-          <image xml:id="img_rie8"  width="47%">
+          <image xml:id="img_rie8" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-2,-1,1,2,3},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={-2,-1,1,2,3},%
             %			extra x ticks={2,6,8},
             %			extra x tick labels={$\ a$,$b\ $,$\ c$},
-			ytick={10,17,-8},
-			%%extra y ticks={-5,-3,...,7},%
+            ytick={10,17,-8},
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-9,ymax=19,%
-			xmin=-2.5,xmax=3.5%
+            ymin=-9,ymax=19,%
+            xmin=-2.5,xmax=3.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=-2:3] {5*x+2} \closedcycle;
@@ -1073,12 +1121,12 @@
             \foreach \x / \y in {-1.75 / -6.75, -1.25 / -4.25, -0.75 / -1.75, -0.25 / 0.75,%
             0.25 /3.25, 0.75 / 5.75, 1.25 / 8.25, 1.75 / 10.75, 2.25 / 13.25,%
             2.75 /15.75}
-	{\addplot [thick,draw={\colortwo}] coordinates {(\x-.25,0) (\x-.25,\y) (\x+.25,\y) (\x+.25,0) (\x-.25,0)};
-	}
+            {\addplot [thick,draw={\colortwo}] coordinates {(\x-.25,0) (\x-.25,\y) (\x+.25,\y) (\x+.25,0) (\x-.25,0)};
+            }
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_rie8.tex END -->
@@ -1187,7 +1235,7 @@
         </p>
 
         <p>
-          Both common sense and high<ndash />level mathematics tell us that as <m>n</m> gets large,
+          Both common sense and high<ndash/>level mathematics tell us that as <m>n</m> gets large,
           the approximation gets better.
           In fact, if we take the <em>limit</em>
           as <m>n\rightarrow \infty</m>,
@@ -1202,9 +1250,9 @@
 
         <p>
           This is a fantastic result.
-          By considering <m>n</m> equally<ndash />spaced subintervals,
+          By considering <m>n</m> equally<ndash/>spaced subintervals,
           we obtained a formula for an approximation of the definite integral that involved our variable <m>n</m>.
-          As <m>n</m> grows large <mdash /> without bound <mdash /> the error shrinks to zero and we obtain the exact area.
+          As <m>n</m> grows large <mdash/> without bound <mdash/> the error shrinks to zero and we obtain the exact area.
         </p>
       </solution>
     </example>
@@ -1265,35 +1313,35 @@
         <figure xml:id="fig_rie9">
           <caption>Approximating <m>\int_{-1}^5 x^3\ dx</m> using the Right Hand Rule and 10 evenly spaced subintervals.</caption>
           <!-- START figures/fig_rie9.tex -->
-          <image xml:id="img_rie9"  width="47%">
+          <image xml:id="img_rie9" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1,2,3,4,5},%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={-1,1,2,3,4,5},%
             %			extra x ticks={2,6,8},
             %			extra x tick labels={$\ a$,$b\ $,$\ c$},
             %			ytick={10,17,-8},
-			%%extra y ticks={-5,-3,...,7},%
+			      %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-2,ymax=130,%
-			xmin=-1.5,xmax=5.5%
+            ymin=-2,ymax=130,%
+            xmin=-1.5,xmax=5.5%
             ]
 
             \addplot [{\coloronefill},fill={\coloronefill},area style,domain=-1:5] {x^3} \closedcycle;
             \addplot [smooth,thick, {\colorone},domain=-1:5] {x^3};
 
             \foreach \x / \y in {-0.4 / -0.064, 0.2 / 0.008, 0.8 / 0.512, 1.4 / 2.744, 2. / 8., 2.6 /17.576, 3.2 / 32.768, 3.8 / 54.872, 4.4 / 85.184, 5. / 125.}
-	{\addplot [thick,draw={\colortwo}] coordinates {(\x-.6,0) (\x-.6,\y) (\x,\y) (\x,0) (\x-.6,0)};
-	}
+            {\addplot [thick,draw={\colortwo}] coordinates {(\x-.6,0) (\x-.6,\y) (\x,\y) (\x,0) (\x-.6,0)};
+            }
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_rie9.tex END -->
@@ -1315,7 +1363,7 @@
       We have used limits to evaluate exactly given definite limits.
       Will this always work?
       We will show,
-      given not<ndash />very<ndash />restrictive conditions,
+      given not<ndash/>very<ndash/>restrictive conditions,
       that yes, it will always work.
     </p>
 
@@ -1341,32 +1389,34 @@
       Given a definite integral <m>\int_a^b f(x)\ dx</m>, let:
     </p>
 
-    <ul>
-      <li>
-        <p>
-          <m>\ds S_L(n) = \sum_{i=1}^n f(x_i)\Delta x</m>,
-          the sum of equally spaced rectangles formed using the Left Hand Rule,
-        </p>
-      </li>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <m>\ds S_L(n) = \sum_{i=1}^n f(x_i)\Delta x</m>,
+            the sum of equally spaced rectangles formed using the Left Hand Rule,
+          </p>
+        </li>
 
-      <li>
-        <p>
-          <m>\ds S_R(n) = \sum_{i=1}^n f(x_{i+1})\Delta x</m>,
-          the sum of equally spaced rectangles formed using the Right Hand Rule, and
-        </p>
-      </li>
+        <li>
+          <p>
+            <m>\ds S_R(n) = \sum_{i=1}^n f(x_{i+1})\Delta x</m>,
+            the sum of equally spaced rectangles formed using the Right Hand Rule, and
+          </p>
+        </li>
 
-      <li>
-        <p>
-          <m>\ds S_M(n) = \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>,
-          the sum of equally spaced rectangles formed using the Midpoint Rule.
-        </p>
-      </li>
-    </ul>
+        <li>
+          <p>
+            <m>\ds S_M(n) = \sum_{i=1}^n f\left(\frac{x_i+x_{i+1}}{2}\right)\Delta x</m>,
+            the sum of equally spaced rectangles formed using the Midpoint Rule.
+          </p>
+        </li>
+      </ul>
+    </p>
 
     <p>
       Recall the definition of a limit as <m>n\to\infty</m>:
-		<m>\lim\limits_{n\to\infty}S_L(n) = K</m> if, given any <m>\varepsilon>0</m>, there exists <m>N>0</m> such that
+		<m>\lim\limits_{n\to\infty}S_L(n) = K</m> if, given any <m>\varepsilon \gt 0</m>, there exists <m>N \gt 0</m> such that
       <me>
         \abs{S_L(n)-K} \lt  \varepsilon  \text{ when }  n\geq N
       </me>.
@@ -1422,25 +1472,27 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\lim\limits_{n\to\infty} S_L(n) = \lim_{n\to\infty} S_R(n) = \lim_{n\to\infty} S_M(n) = \lim_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x</m>,
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\lim\limits_{n\to\infty} S_L(n) = \lim_{n\to\infty} S_R(n) = \lim_{n\to\infty} S_M(n) = \lim_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x</m>,
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\lim\limits_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x = \int_a^b f(x)\ dx</m>, and
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\lim\limits_{n\to\infty}\sum_{i=1}^n f(c_i)\Delta x = \int_a^b f(x)\ dx</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\lim\limits_{\abs{\Delta x}\to 0} \sum_{i=1}^n f(c_i)\Delta x_i = \int_a^b f(x)\ dx</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\lim\limits_{\abs{\Delta x}\to 0} \sum_{i=1}^n f(c_i)\Delta x_i = \int_a^b f(x)\ dx</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -1448,42 +1500,44 @@
       We summarize what we have learned over the past few sections here.
     </p>
 
-    <ul>
-      <li>
-        <p>
-          Knowing the <q>area under the curve</q> can be useful.
-          One common example is: the area under a velocity curve is displacement.
-        </p>
-      </li>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Knowing the <q>area under the curve</q> can be useful.
+            One common example is: the area under a velocity curve is displacement.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          We have defined the definite integral, <m>\int_a^b f(x)\ dx</m>,
-          to be the signed area under <m>f</m> on the interval <m>[a,b]</m>.
-        </p>
-      </li>
+        <li>
+          <p>
+            We have defined the definite integral, <m>\int_a^b f(x)\ dx</m>,
+            to be the signed area under <m>f</m> on the interval <m>[a,b]</m>.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          While we can approximate a definite integral many ways,
-          we have focused on using rectangles whose heights can be determined using:
-          the Left Hand Rule, the Right Hand Rule and the Midpoint Rule.
-        </p>
-      </li>
+        <li>
+          <p>
+            While we can approximate a definite integral many ways,
+            we have focused on using rectangles whose heights can be determined using:
+            the Left Hand Rule, the Right Hand Rule and the Midpoint Rule.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          Sums of rectangles of this type are called Riemann sums.
-        </p>
-      </li>
+        <li>
+          <p>
+            Sums of rectangles of this type are called Riemann sums.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          The exact value of the definite integral can be computed using the limit of a Riemann sum.
-          We generally use one of the above methods as it makes the algebra simpler.
-        </p>
-      </li>
-    </ul>
+        <li>
+          <p>
+            The exact value of the definite integral can be computed using the limit of a Riemann sum.
+            We generally use one of the above methods as it makes the algebra simpler.
+          </p>
+        </li>
+      </ul>
+    </p>
 
     <p>
       We first learned of derivatives through limits then learned rules that made the process simpler.
@@ -1512,7 +1566,7 @@
             </setup>
             <statement>
               <p>
-                A fundamental calculus technique is to use <fillin /> to refine approximations to get an exact answer.
+                A fundamental calculus technique is to use <fillin/> to refine approximations to get an exact answer.
               </p>
             </statement>
             <solution>
@@ -1537,7 +1591,7 @@
               </p>
 
               <p>
-                <var name = "$ub" width="10" />
+                <var name="$ub" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -1579,7 +1633,7 @@
               </p>
 
               <p>
-                <var name = "$true" form="popup" />
+                <var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -1621,7 +1675,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1653,7 +1707,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1685,7 +1739,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
             <solution>
@@ -1722,7 +1776,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
             <solution>
@@ -1759,7 +1813,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
             <solution>
@@ -1796,7 +1850,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
             <solution>
@@ -1833,7 +1887,7 @@
               </p>
 
               <p>
-                Sum: <var name="$sum" width="20" />
+                Sum: <var name="$sum" width="20"/>
               </p>
             </statement>
             <solution>
@@ -1962,7 +2016,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 325 -->
             </statement>
@@ -1987,7 +2041,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 1045 -->
             </statement>
@@ -2012,7 +2066,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 28650 -->
             </statement>
@@ -2037,7 +2091,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- -8525 -->
             </statement>
@@ -2062,7 +2116,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 2050 -->
             </statement>
@@ -2086,7 +2140,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 5050 -->
             </statement>
@@ -2110,7 +2164,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 2870 -->
             </statement>
@@ -2126,11 +2180,11 @@
         </p>
 
         <p>
-          <m>\ds \sum_{i=1}^na_i = \sum_{i=1}^k a_i + \sum_{i=k+1}^n a_i</m><nbsp />, so
+          <m>\ds \sum_{i=1}^na_i = \sum_{i=1}^k a_i + \sum_{i=k+1}^n a_i</m><nbsp/>, so
         </p>
 
         <p>
-          <m>\ds \sum_{i=k+1}^na_i = \sum_{i=1}^n a_i - \sum_{i=1}^k a_i</m><nbsp />.
+          <m>\ds \sum_{i=k+1}^na_i = \sum_{i=1}^n a_i - \sum_{i=1}^k a_i</m><nbsp/>.
         </p>
 
         <p>
@@ -2157,7 +2211,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 155 -->
             </statement>
@@ -2181,7 +2235,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 91225 -->
             </statement>
@@ -2205,7 +2259,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 24 -->
             </statement>
@@ -2229,7 +2283,7 @@
               </p>
 
               <p>
-                <var name="$sum" width="20" />
+                <var name="$sum" width="20"/>
               </p>
    <!-- 11700 -->
             </statement>
@@ -2248,28 +2302,27 @@
           <m>\ds \int_a^b f(x) \ dx</m> is given.
         </p>
 
-        <ol>
-          <li>
-            <title>(a)</title>
-            <p>
-              Graph <m>f(x)</m> on <m>[a,b]</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Graph <m>f(x)</m> on <m>[a,b]</m>.
+              </p>
+            </li>
 
-          <li>
-            <title>(b)</title>
-            <p>
-              Add to the sketch rectangles using the provided rule.
-            </p>
-          </li>
+            <li>
+              <p>
+                Add to the sketch rectangles using the provided rule.
+              </p>
+            </li>
 
-          <li>
-            <title>(c)</title>
-            <p>
-              Approximate <m>\ds \int_a^b f(x) \ dx</m> by summing the areas of the rectangles.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Approximate <m>\ds \int_a^b f(x) \ dx</m> by summing the areas of the rectangles.
+              </p>
+            </li>
+          </ol>
+        </p>
       </introduction>
 <!-- Exercise 27 -->
       <exercise>
@@ -2307,7 +2360,7 @@
               </p>
 
               <p>
-                Sum of areas: <var name="$left" width="10" />
+                Sum of areas: <var name="$left" width="10"/>
               </p>
    <!-- 19 -->
             </statement>
@@ -2348,7 +2401,7 @@
               </p>
 
               <p>
-                Sum of areas: <var name="$mid" width="10" />
+                Sum of areas: <var name="$mid" width="10"/>
               </p>
    <!-- 59/8 -->
             </statement>
@@ -2389,7 +2442,7 @@
               </p>
 
               <p>
-                Sum of areas: <var name="$right" width="10" />
+                Sum of areas: <var name="$right" width="10"/>
               </p>
    <!-- pi/3 + pi/(2*sqrt(3)), 1.954 -->
             </statement>
@@ -2430,7 +2483,7 @@
               </p>
 
               <p>
-                Sum of areas: <var name="$left" width="10" />
+                Sum of areas: <var name="$left" width="10"/>
               </p>
    <!-- 8.144 -->
             </statement>
@@ -2471,7 +2524,7 @@
               </p>
 
               <p>
-                Sum of areas: <var name="$mid" width="10" />
+                Sum of areas: <var name="$mid" width="10"/>
               </p>
    <!-- 0.388584 -->
             </statement>
@@ -2512,7 +2565,7 @@
               </p>
 
               <p>
-                Sum of areas: <var name="$right" width="10" />
+                Sum of areas: <var name="$right" width="10"/>
               </p>
    <!-- 496/315, 1.5746 -->
             </statement>
@@ -2530,34 +2583,33 @@
         <p>
           <m>\ds \int_a^b f(x) \ dx</m> is given.
           As demonstrated in <xref ref="ex_rie9">Examples</xref>
-          and <xref ref="ex_rie10"></xref>, do the following.
+          and <xref ref="ex_rie10"/>, do the following.
         </p>
 
-        <ol>
-          <li>
-            <title>(a)</title>
-            <p>
-              Find a formula to approximate
-              <m>\ds \int_a^bf(x)\ dx</m> using <m>n</m> subintervals and the provided rule.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find a formula to approximate
+                <m>\ds \int_a^bf(x)\ dx</m> using <m>n</m> subintervals and the provided rule.
+              </p>
+            </li>
 
-          <li>
-            <title>(b)</title>
-            <p>
-              Evaluate the formula using <m>n=10</m>,
-              <m>100</m> and <m>1,000</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                Evaluate the formula using <m>n=10</m>,
+                <m>100</m> and <m>1,000</m>.
+              </p>
+            </li>
 
-          <li>
-            <title>(c)</title>
-            <p>
-              Find the limit of the formula, as <m>n\to \infty</m>,
-              to find the exact value of <m>\ds \int_a^bf(x)\ dx</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Find the limit of the formula, as <m>n\to \infty</m>,
+                to find the exact value of <m>\ds \int_a^bf(x)\ dx</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </introduction>
 <!-- Exercise 33 -->
       <exercise>
@@ -2580,23 +2632,23 @@
               </p>
 
               <p>
-                Sum in terms of n: <var name="$f" width="30" />
+                Sum in terms of n: <var name="$f" width="30"/>
               </p>
 
               <p>
-                n = 10: <var name="$sum10" width="20" />
+                n = 10: <var name="$sum10" width="20"/>
               </p>
    <!-- 121/400 -->
               <p>
-                n = 100: <var name="$sum100" width="20" />
+                n = 100: <var name="$sum100" width="20"/>
               </p>
    <!-- 10201/40000 -->
               <p>
-                n = 1000: <var name="$sum1000" width="20" />
+                n = 1000: <var name="$sum1000" width="20"/>
               </p>
    <!-- 1002001/4000000 -->
               <p>
-                Area in limit: <var name="$exact" width="20" />
+                Area in limit: <var name="$exact" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2621,23 +2673,23 @@
               </p>
 
               <p>
-                Sum in terms of n: <var name="$f" width="30" />
+                Sum in terms of n: <var name="$f" width="30"/>
               </p>
 
               <p>
-                n = 10: <var name="$sum10" width="20" />
+                n = 10: <var name="$sum10" width="20"/>
               </p>
    <!-- 51/25 -->
               <p>
-                n = 100: <var name="$sum100" width="20" />
+                n = 100: <var name="$sum100" width="20"/>
               </p>
    <!-- 5001/2500 -->
               <p>
-                n = 1000: <var name="$sum1000" width="20" />
+                n = 1000: <var name="$sum1000" width="20"/>
               </p>
    <!-- 500001/250000 -->
               <p>
-                Area in limit: <var name="$exact" width="20" />
+                Area in limit: <var name="$exact" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2662,23 +2714,23 @@
               </p>
 
               <p>
-                Sum in terms of n: <var name="$f" width="30" />
+                Sum in terms of n: <var name="$f" width="30"/>
               </p>
 
               <p>
-                n = 10: <var name="$sum10" width="20" />
+                n = 10: <var name="$sum10" width="20"/>
               </p>
    <!-- 8 -->
               <p>
-                n = 100: <var name="$sum100" width="20" />
+                n = 100: <var name="$sum100" width="20"/>
               </p>
    <!-- 8 -->
               <p>
-                n = 1000: <var name="$sum1000" width="20" />
+                n = 1000: <var name="$sum1000" width="20"/>
               </p>
    <!-- 8 -->
               <p>
-                Area in limit: <var name="$exact" width="20" />
+                Area in limit: <var name="$exact" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2703,23 +2755,23 @@
               </p>
 
               <p>
-                Sum in terms of n: <var name="$f" width="30" />
+                Sum in terms of n: <var name="$f" width="30"/>
               </p>
 
               <p>
-                n = 10: <var name="$sum10" width="20" />
+                n = 10: <var name="$sum10" width="20"/>
               </p>
    <!-- 28.59 -->
               <p>
-                n = 100: <var name="$sum100" width="20" />
+                n = 100: <var name="$sum100" width="20"/>
               </p>
    <!-- 32.55 -->
               <p>
-                n = 1000: <var name="$sum1000" width="20" />
+                n = 1000: <var name="$sum1000" width="20"/>
               </p>
    <!-- 32.96 -->
               <p>
-                Area in limit: <var name="$exact" width="20" />
+                Area in limit: <var name="$exact" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2745,23 +2797,23 @@
               </p>
 
               <p>
-                Sum in terms of n: <var name="$f" width="30" />
+                Sum in terms of n: <var name="$f" width="30"/>
               </p>
 
               <p>
-                n = 10: <var name="$sum10" width="20" />
+                n = 10: <var name="$sum10" width="20"/>
               </p>
    <!-- 80.00 -->
               <p>
-                n = 100: <var name="$sum100" width="20" />
+                n = 100: <var name="$sum100" width="20"/>
               </p>
    <!-- 98.00 -->
               <p>
-                n = 1000: <var name="$sum1000" width="20" />
+                n = 1000: <var name="$sum1000" width="20"/>
               </p>
    <!-- 99.80 -->
               <p>
-                Area in limit: <var name="$exact" width="20" />
+                Area in limit: <var name="$exact" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2787,23 +2839,23 @@
               </p>
 
               <p>
-                Sum in terms of n: <var name="$f" width="30" />
+                Sum in terms of n: <var name="$f" width="30"/>
               </p>
 
               <p>
-                n = 10: <var name="$sum10" width="20" />
+                n = 10: <var name="$sum10" width="20"/>
               </p>
    <!-- -33/400 -->
               <p>
-                n = 100: <var name="$sum100" width="20" />
+                n = 100: <var name="$sum100" width="20"/>
               </p>
    <!-- -3333/40000 -->
               <p>
-                n = 1000: <var name="$sum1000" width="20" />
+                n = 1000: <var name="$sum1000" width="20"/>
               </p>
    <!-- -333333/4000000 -->
               <p>
-                Area in limit: <var name="$exact" width="20" />
+                Area in limit: <var name="$exact" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2838,7 +2890,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2859,7 +2911,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2881,7 +2933,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2903,7 +2955,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2925,7 +2977,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2946,7 +2998,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2955,4 +3007,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
