@@ -29,7 +29,7 @@
     <figure xml:id="fig_hfcircle">
       <caption>Using trigonometric functions to define points on a circle and hyperbolic functions to define points on a hyperbola. The area of the shaded regions are included in them.</caption>
       <sidebyside widths="47% 47%">
-      
+
         <figure xml:id="fig_hf_circlearea">
           <caption/>
         <!-- START figures/fig_hf_circlearea.tex -->
@@ -201,7 +201,7 @@
     <figure xml:id="fig_hyperbolic1">
       <caption>Graphs of <m>\sinh(x)</m> and <m>\cosh(x)</m>.</caption>
       <sidebyside widths="47% 47%">
-      
+
         <!-- START figures/fig_hf_cosh.tex -->
         <figure xml:id="fig_hf_cosh">
           <caption/>
@@ -276,7 +276,7 @@
     <figure xml:id="fig_hyperbolic2">
       <caption>Graphs of <m>\tanh(x), \coth(x), \csch(x)</m> and <m>\cosh(x)</m>.</caption>
       <sidebyside widths="47% 47%">
-      
+
         <figure xml:id="fig_hf_tanh_coth">
           <caption/>
         <!-- START figures/fig_hf_tanh_coth.tex -->
@@ -475,6 +475,7 @@
       <title>Useful Hyperbolic Function Properties</title>
       <!-- ToDo: I'd like these to be in a sidebyside like the current pdf, but that doesn't seem to be supported. For now I've commented out the sbs. -->
  <!--</sidebyside>-->
+      <!-- ToDo: lists aren't allowed inside an insight. Do we rework this somehow, or hope for a schema change?-->
       <list>
         <title>Basic Identities</title>
         <ol>

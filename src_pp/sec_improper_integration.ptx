@@ -564,6 +564,7 @@
                 </md>.
                 It turns out that the region does have a finite area even though it has no upper bound
                 (strange things can occur in mathematics when considering the infinite).
+              </p>
                 <aside>
                   <p>
                     In <xref ref="def_imp_int2">Definition</xref>,
@@ -573,7 +574,7 @@
                     there is only one limit to consider as part of the definition.
                   </p>
                 </aside>
-              </p>
+
 
               <figure xml:id="fig_impint3">
                 <caption>A graph of <m>f(x)=\frac{1}{\sqrt{x}}</m> in <xref ref="ex_impint3">Example</xref>.</caption>
@@ -790,7 +791,7 @@
       A similar result is proved in the exercises about improper integrals of the form <m>\ds \int_0^1\frac1{x^p}\ dx</m>.
       These results are summarized in the following Key Idea.
     </p>
-
+<!--TODO: the nonbreaking spaces in the title don't pass validation. Also, displaymath in a title doesn't seem like a good idea. Rewrite?-->
     <insight xml:id="idea_impint1">
       <title>Convergence of Improper Integrals <m>\ds \int_1^\infty\frac1{x^p}<nbsp/>dx</m> and <m>\ds \int_0^1\frac1{x^p}<nbsp/>dx</m>.</title>
       <p>
