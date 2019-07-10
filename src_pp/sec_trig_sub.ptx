@@ -664,7 +664,8 @@
         </webwork>
       </exercise>
 <!-- Exercise 3 -->
-      <exercise>
+<!--ToDo: code is not compiling for this problem-->
+      <!--<exercise>
         <webwork seed="1">
             <setup>
 
@@ -721,7 +722,7 @@
               </p>
             </solution>
         </webwork>
-      </exercise>
+      </exercise>-->
 <!-- Exercise 4 -->
       <exercise>
         <webwork seed="1">
