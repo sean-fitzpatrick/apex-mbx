@@ -273,9 +273,9 @@
 
     <!-- <xi:include href="./chapter_graphbehavior.ptx" /> -->
 
-    <xi:include href="./chapter_deriv_apps.ptx" />
+    <!-- <xi:include href="./chapter_deriv_apps.ptx" /> -->
 
-    <xi:include href="./chapter_integration.ptx" />
+    <!-- <xi:include href="./chapter_integration.ptx" /> -->
 
     <!-- <xi:include href="./chapter_anti_tech.ptx" /> -->
 
@@ -283,7 +283,7 @@
 
     <!-- <xi:include href="./chapter_sequences_series.ptx" /> -->
 
-    <!-- <xi:include href="./chapter9.ptx" /> -->
+    <xi:include href="./chapter9.ptx" />
 
     <!-- <xi:include href="./chapter10.ptx" /> -->
 
