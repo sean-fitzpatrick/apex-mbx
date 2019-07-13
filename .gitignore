@@ -6,5 +6,11 @@ output/images/*
 output/*.txt
 *.tex
 *.swp
+jing.txt
+*.html
+src_pp/knowl/*
+src_pp/webwork-extraction/*
+src_pp/images/*
+src_pp/dep-fix-output/*
 
 Makefile.paths
