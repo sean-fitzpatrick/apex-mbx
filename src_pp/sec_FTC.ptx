@@ -37,13 +37,13 @@
         xmin=-.5,xmax=3.5
         ]
 
-        \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {.5*sin(deg(x))+1} \closedcycle;
-        \addplot [firstcurvestyle,domain=0:3.25] {.5*sin(deg(x))+1};
+        \addplot [firstcurvestyle,areastyle,domain=1:2.5] {.5*sin(deg(x))+1} \closedcycle;
+        \addplot [firstcurvestyle,-,domain=0:3.25,samples=30] {.5*sin(deg(x))+1};
 
         \end{axis}
         
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
     </figure>
@@ -77,8 +77,8 @@
             xmin=-1,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {2*x} \closedcycle; 
-            \addplot [firstcurvestyle,domain=-1:3.25] {2*x};
+            \addplot [firstcurvestyle,areastyle,domain=1:2.5] {2*x} \closedcycle; 
+            \addplot [firstcurvestyle,-,domain=-1:3.25] {2*x};
 
             \end{axis}
 
@@ -116,8 +116,9 @@
             xmin=-1,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},fill={\coloronefill},area style,domain=1:2.5] {2*x} \closedcycle;
-            \addplot [firstcurvestyle,domain=-1:3.25] {2*x};
+            \addplot [firstcurvestyle,areastyle,domain=1:2.5] {2*x} \closedcycle;
+            \addplot [firstcurvestyle,-,domain=-1:3.25] {2*x};
+            
             \addplot [lineseg,domain=0:2]({1},{x}) node [pos=0.5, right] {$2$};
             \addplot [lineseg,domain=0:1]({x},{0}) node [pos=0.5, above] {$1$};
             \addplot [lineseg,&lt;-&gt;, domain=0:2.5] ({x},{-1}) node [pos=0.5, below] {$x$};
@@ -167,8 +168,8 @@
             xmin=-1,xmax=3.5
             ]
 
-            \addplot+ [domain=-1:3.25] {2*x};
-            \addplot+ [domain=-1:3.25] {x^2-1};
+            \addplot+ [-,domain=-1:3.25] {2*x};
+            \addplot+ [-,domain=-1:3.25] {x^2-1};
 
             \end{axis}
 
@@ -559,8 +560,9 @@
               xmin=-1,xmax=1.5
               ]
 
-              \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:1] {-32*x+20} \closedcycle;
-              \addplot [firstcurvestyle,domain=-.5:1.5] {-32*x+20};
+              \addplot [firstcurvestyle,areastyle,domain=0:1] {-32*x+20} \closedcycle;
+              \addplot [firstcurvestyle,-,domain=-.5:1.5] {-32*x+20};
+
               \node at (axis cs:.3125,5) {\scriptsize $A_1$};
               \node at (axis cs:.8125,-3) {\scriptsize $A_2$};
 
@@ -590,10 +592,12 @@
               xmin=-1,xmax=1.5
               ]
 
-              \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:5/8] {-32*x+20} \closedcycle;
-              \addplot [{\coloronefill},fill={\coloronefill},area style,domain=5/8:1] {32*x-20} \closedcycle;
+              \addplot [firstcurvestyle,areastyle,domain=0:5/8] {-32*x+20} \closedcycle;
+              \addplot [firstcurvestyle,areastyle,domain=5/8:1] {32*x-20} \closedcycle;
+
               \addplot [firstcurvestyle,-,domain=-.5:5/8] {-32*x+20};
               \addplot [firstcurvestyle,-,domain=5/8:1.5] {32*x-20};
+
               \node at (axis cs:.3125,5) {\scriptsize $A_1$};
               \node at (axis cs:.8125,3) {\scriptsize $A_3$};
 
@@ -764,10 +768,11 @@
             xmin=-.5,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},domain=.5:3,stack plots=y] {.25*(x-2)^2+.2};
-            \addplot [{\coloronefill},thick,fill={\coloronefill},area style,domain=.5:3,stack plots=y] {.25*sin(deg(2*x))+1.25-(.25*(x-2)^2+.2)} \closedcycle;
-            \addplot [firstcurvestyle,domain=-.25:3.25,samples=50] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)} ,black] {\scriptsize $f(x)$};
-            \addplot [firstcurvestyle,domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)} ,black] {\scriptsize $g(x)$};
+            \addplot [firstcolor,domain=.5:3,stack plots=y] {.25*(x-2)^2+.2};
+            \addplot [firstcurvestyle,areastyle,domain=.5:3,stack plots=y] {.25*sin(deg(2*x))+1.25-(.25*(x-2)^2+.2)} \closedcycle;
+
+            \addplot [firstcurvestyle,-,domain=-.25:3.25,samples=40] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)},black] {\scriptsize $f(x)$};
+            \addplot [firstcurvestyle,-,domain=-.25:3.25] {.25*(x-2)^2+.2} node [shift={(5pt,7pt)},black] {\scriptsize $g(x)$};
 
             \end{axis}
 
@@ -795,10 +800,11 @@
             xmin=-.5,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},fill={\coloronefill},area style,domain=.5:3] {.25*sin(deg(2*x))+1.25} \closedcycle;
-            \addplot [{\colortwofill},fill={\colortwofill},domain=.5:3,fill opacity=.5] {.25*(x-2)^2+.2} \closedcycle;
-            \addplot [firstcurvestyle,domain=-.25:3.25,samples=50] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)} ,black] {\scriptsize $f(x)$};
-            \addplot [secondcurvestyle,domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)} ,black] {\scriptsize $g(x)$};
+            \addplot [firstcurvestyle,areastyle,area style,domain=.5:3] {.25*sin(deg(2*x))+1.25} \closedcycle;
+            \addplot [secondcurvestyle,areastyle,domain=.5:3] {.25*(x-2)^2+.2} \closedcycle;
+
+            \addplot [firstcurvestyle,-,domain=-.25:3.25,samples=40] {.25*sin(deg(2*x))+1.25} node [shift={(5pt,7pt)},black] {\scriptsize $f(x)$};
+            \addplot [secondcurvestyle,-,domain=-.25:3.25] {.25*(x-2)^2+.2}node [shift={(5pt,7pt)},black] {\scriptsize $g(x)$};
 
             \end{axis}
 
@@ -870,9 +876,9 @@
             xmin=-2.5,xmax=4.5
             ]
 
-            \addplot+ [name path=F,domain={-2:4}] {x^2+x-5} node [pos=1, left] {\scriptsize $y=x^2+x-5$};
-            \addplot+ [name path=G,domain={-2:4}] {3*x-2}node [pos=0.7, above left] {\scriptsize $y=3x-2$};
-            \addplot [color=gray!50] fill between [of=F and G, soft clip={domain=-1:3}];
+            \addplot+ [-,name path=F,domain={-2:4},samples=40] {x^2+x-5} node [pos=1, left] {\scriptsize $y=x^2+x-5$};
+            \addplot+ [-,name path=G,domain={-2:4}] {3*x-2} node [pos=0.7, above left] {\scriptsize $y=3x-2$};
+            \addplot [gray!50] fill between [of=F and G, soft clip={domain=-1:3}];
 
             \end{axis}
 
@@ -927,7 +933,7 @@
         xmin=-.5,xmax=4.5
         ]
 
-        \addplot+ [domain=-.5:4.5,samples=50] {.3*cos(deg(x))+1};
+        \addplot+ [-,domain=-.5:4.5,samples=40] {.3*cos(deg(x))+1};
 
         \end{axis}
 
@@ -988,8 +994,9 @@
             xmin=-.5,xmax=4.5
             ]
 
-            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
-            \addplot [firstcurvestyle,domain=-.5:4.5,samples=50] {.3*cos(deg(x))+1};
+            \addplot [firstcurvestyle,areastyle,domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
+            \addplot [firstcurvestyle,-,domain=-.5:4.5,samples=40] {.3*cos(deg(x))+1};
+
             \draw [thick,secondcolor] (axis cs: 1,0) rectangle (axis cs:4,1.35);
             
             \end{axis}
@@ -1016,8 +1023,9 @@
             xmin=-.5,xmax=4.5
             ]
 
-            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
-            \addplot [firstcurvestyle,domain=-.5:4.5,samples=50] {.3*cos(deg(x))+1};
+            \addplot [firstcurvestyle,areastyle,domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
+            \addplot [firstcurvestyle,-,domain=-.5:4.5,samples=40] {.3*cos(deg(x))+1};
+
             \draw [thick,secondcolor] (axis cs: 1,0) rectangle (axis cs:4,.65);
 
             \end{axis}
@@ -1044,8 +1052,9 @@
             xmin=-.5,xmax=4.5
             ]
 
-            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
-            \addplot [firstcurvestyle,domain=-.5:4.5,samples=50] {.3*cos(deg(x))+1};
+            \addplot [firstcurvestyle,areastyle,domain=1:4] {.3*cos(deg(x))+1} \closedcycle;
+            \addplot [firstcurvestyle,-,domain=-.5:4.5,samples=50] {.3*cos(deg(x))+1};
+            
             \draw [thick,secondcolor] (axis cs: 1,0) rectangle (axis cs:4,.84);
             
             \end{axis}
@@ -1145,8 +1154,9 @@
             xmin=-.5,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},thick,fill={\coloronefill},domain=0:3.14] {sin(deg(x))};
-            \addplot [firstcurvestyle,domain=-.5:3.5,samples=50] {sin(deg(x))};
+            \addplot [firstcurvestyle,areastyle,domain=0:3.14] {sin(deg(x))};
+            \addplot [firstcurvestyle,-,domain=-.5:3.5,samples=40] {sin(deg(x))};
+
             \draw [thick,secondcolor] (axis cs: 0,0) rectangle (axis cs:3.14,.637);
 
             \end{axis}
@@ -1206,8 +1216,9 @@
           xmin=-.5,xmax=4.25
           ]
 
-          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2+1} \closedcycle;
-          \addplot [firstcurvestyle,domain=-.5:4.25,samples=50] {(x-2.5)^2+1};
+          \addplot [firstcurvestyle,areastyle,domain=1:4] {(x-2.5)^2+1} \closedcycle;
+          \addplot [firstcurvestyle,-,domain=-.5:4.25,samples=40] {(x-2.5)^2+1};
+
           \draw [thick,secondcolor] (axis cs: 1,0) rectangle (axis cs:4,1.75);
           \draw (axis cs:3.35,3) node {\scriptsize $y=f(x)$};
           
@@ -1236,8 +1247,9 @@
           xmin=-.5,xmax=4.25
           ]
 
-          \addplot [{\coloronefill},thick,fill={\coloronefill},domain=1:4] {(x-2.5)^2-.75} \closedcycle;
-          \addplot [firstcurvestyle,domain=.75:4.25,samples=50] {(x-2.5)^2-.75};
+          \addplot [firstcurvestyle,areastyle,domain=1:4] {(x-2.5)^2-.75} \closedcycle;
+          \addplot [firstcurvestyle,-,domain=.75:4.25,samples=40] {(x-2.5)^2-.75};
+
           \draw (axis cs:3.2,2.5) node {\scriptsize $y=f(x)-f(c)$};
 
           \end{axis}
