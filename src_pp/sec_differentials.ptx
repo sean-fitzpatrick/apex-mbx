@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_differentials">
   <title>Differentials</title>
   <p>
@@ -41,8 +40,9 @@
         <image xml:id="img_diffal1a">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
           xtick=\empty,
           extra x ticks={1.047},
@@ -53,14 +53,16 @@
           ymin=-.1,ymax=1.1,
           xmin=-.1,xmax=2.36,
           ]
+
           \addplot+[domain=0:2.1, rightarrow] {sin(deg(x))};
           \addplot [tangentline, domain=-.1:1.5] {.5*(x-1.047197551)+0.866025};
-          \addplot[soliddot]coordinates{(1.047,0.866)} node[below right]{\small $(\pi/3,\sqrt{3}/3)$};
-          %\filldraw (axis cs:1.047,0.866) circle (1pt);
+          \addplot [soliddot] coordinates {(1.047,0.866)} node [below right] {\small $(\pi/3,\sqrt{3}/3)$};
           \draw (axis cs:1.04,.86) rectangle (axis cs:1.122,.9);
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -70,30 +72,32 @@
         <image xml:id="img_diffal1b">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
-          xtick=\empty,%
+          xtick=\empty,
           extra x ticks={1.047,1.1},
           extra x tick labels={$\frac{\pi}{3}$,$1.1$},
           extra y ticks={0.866},
           extra y tick labels={$\frac{\sqrt{3}}{2}$},
           ytick={0.86,0.87,0.88,0.89},
-          %extra y ticks={0.866},
-          %extra y tick labels={$\frac{\sqrt{3}}{2}$},
           xdiscontinuity,
           ydiscontinuity,
-          ymin=.86,ymax=.9,%
+          ymin=.86,ymax=.9,
           xmin=1.04,xmax=1.122,
           ]
+
           \addplot+[domain=1.04:1.12] {sin(deg(x))};
-          \addplot [tangentline, domain=1.04:1.115] {.5*(x-1.0471)+0.866025};
-          \addplot[soliddot]coordinates{(1.047,0.866)} node[below right]{\small $\left(\pi/3,\sqrt{3}/3\right)$};
-          \addplot[soliddot,guideline]coordinates{(1.1,.8925)} node[pin={180:{$\ell(1.1)\approx \sin(1.1)$}}] {};
-          \addplot[soliddot]coordinates{(1.1,.8912)} node[  pin={0:{$\sin(1.1)$}}] {};
+          \addplot [tangentline,domain=1.04:1.115] {.5*(x-1.0471)+0.866025};
+          \addplot [soliddot] coordinates{(1.047,0.866)} node [below right] {\small $\left(\pi/3,\sqrt{3}/3\right)$};
+          \addplot [soliddot,guideline] coordinates {(1.1,.8925)} node [pin={180:{$\ell(1.1)\approx \sin(1.1)$}}] {};
+          \addplot [soliddot] coordinates {(1.1,.8912)} node [pin={0:{$\sin(1.1)$}}] {};
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -310,7 +314,7 @@
   <p>
     In <q>most</q> real life situations,
     we do not know the function that describes a particular behavior.
-    Instead, we can only take measurements of how things change <mdash /> measurements of the derivative.
+    Instead, we can only take measurements of how things change <mdash/> measurements of the derivative.
   </p>
 
   <p>
@@ -440,7 +444,7 @@
             <p>
               <m>y = e^x\left(x^2+2\right)</m>: Let <m>f(x) = e^x\left(x^2+2\right)</m>.
               We need <m>\fp(x)</m>,
-              requiring the <xref ref="thm_ProductRule" />.
+              requiring the <xref ref="thm_ProductRule"/>.
             </p>
 
             <p>
@@ -455,7 +459,7 @@
             <p>
               <m>y = \sqrt{x^2+3x-1}</m>: Let <m>f(x) = \sqrt{x^2+3x-1}</m>;
               we need <m>\fp(x)</m>,
-              requiring the <xref ref="thm_chain_rule" />.
+              requiring the <xref ref="thm_chain_rule"/>.
             </p>
 
             <p>
@@ -510,15 +514,15 @@
       <p>
         A steel ball bearing is to be manufactured with a diameter of
         <quantity>
-          <mag>2</mag><unit base="meter" prefix="centi" />
+          <mag>2</mag><unit base="meter" prefix="centi"/>
         </quantity>.
         The manufacturing process has a tolerance of <m>\pm 0.1</m><quantity>
-          <unit base="meter" prefix="milli" />
+          <unit base="meter" prefix="milli"/>
         </quantity>
         in the diameter.
         Given that the density of steel is about
         <quantity>
-          <mag>7.85</mag><unit base="gram" prefix="centi" /><per base="meter" prefix="centi" exp="3" />
+          <mag>7.85</mag><unit base="gram" prefix="centi"/><per base="meter" prefix="centi" exp="3"/>
         </quantity>, estimate the propagated error in the mass of the ball bearing.
       </p>
     </statement>
@@ -537,11 +541,11 @@
       <p>
         The radius is to be
         <quantity>
-          <mag>1</mag><unit base="meter" prefix="centi" />
+          <mag>1</mag><unit base="meter" prefix="centi"/>
         </quantity>; the manufacturing tolerance in the radius is <m>\pm 0.05</m><quantity>
-          <unit base="meter" prefix="milli" />
+          <unit base="meter" prefix="milli"/>
         </quantity>, or <m>\pm 0.005</m><quantity>
-          <unit base="meter" prefix="centi" />
+          <unit base="meter" prefix="centi"/>
         </quantity>.
         The propagated error is approximately:
         <md>
@@ -569,9 +573,9 @@
         We leave it to the reader to confirm this,
         but if the diameter of the ball was supposed to be
         <quantity>
-          <mag>10</mag><unit base="meter" prefix="centi" />
+          <mag>10</mag><unit base="meter" prefix="centi"/>
         </quantity>, the same manufacturing tolerance would give a propagated error in mass of <m>\pm12.33</m><quantity>
-          <unit base="gram" />
+          <unit base="gram"/>
         </quantity>, which corresponds to a
         <em>percent error</em> of <m>\pm0.188\%</m>.
         While the amount of error is much greater (<m>12.33 \gt 0.493</m>),
@@ -607,7 +611,7 @@
               </p>
 
               <p>
-                <var name="$true" form="popup" />
+                <var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -632,7 +636,7 @@
               </p>
 
               <p>
-                <var name="$true" form="popup" />
+                <var name="$true" form="popup"/>
               </p>
 
               <p>
@@ -659,7 +663,7 @@
               </p>
 
               <p>
-                <var name="$false" form="popup" />
+                <var name="$false" form="popup"/>
               </p>
  <!--Not clear in text how this is false but above is true -->
               <p>
@@ -685,7 +689,7 @@
               </p>
 
               <p>
-                <var name = "$true" form="popup" />
+                <var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -704,7 +708,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -737,11 +741,11 @@
             </setup>
             <statement>
               <p>
-                <m><var name="$x1" />^2</m>
+                <m><var name="$x1"/>^2</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -763,11 +767,11 @@
             </setup>
             <statement>
               <p>
-                <m><var name="$x1" />^2</m>
+                <m><var name="$x1"/>^2</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -789,11 +793,11 @@
             </setup>
             <statement>
               <p>
-                <m><var name="$x1" />^3</m>
+                <m><var name="$x1"/>^3</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -815,11 +819,11 @@
             </setup>
             <statement>
               <p>
-                <m><var name="$x1" />^3</m>
+                <m><var name="$x1"/>^3</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -841,11 +845,11 @@
             </setup>
             <statement>
               <p>
-                <m>\sqrt{<var name="$x1" />}</m>
+                <m>\sqrt{<var name="$x1"/>}</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -867,11 +871,11 @@
             </setup>
             <statement>
               <p>
-                <m>\sqrt{<var name="$x1" />}</m>
+                <m>\sqrt{<var name="$x1"/>}</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -893,11 +897,11 @@
             </setup>
             <statement>
               <p>
-                <m>\sqrt[3]{<var name="$x1" />}</m>
+                <m>\sqrt[3]{<var name="$x1"/>}</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -919,11 +923,11 @@
             </setup>
             <statement>
               <p>
-                <m>\sqrt[3]{<var name="$x1" />}</m>
+                <m>\sqrt[3]{<var name="$x1"/>}</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -946,11 +950,11 @@
             </setup>
             <statement>
               <p>
-                <m>\sin(<var name="$x1" />)</m>
+                <m>\sin(<var name="$x1"/>)</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -973,11 +977,11 @@
             </setup>
             <statement>
               <p>
-                <m>\cos(<var name="$x1" />)</m>
+                <m>\cos(<var name="$x1"/>)</m>
               </p>
 
               <p>
-                <var name="$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -999,11 +1003,11 @@
             </setup>
             <statement>
               <p>
-                <m>e^{<var name="$x1" />}</m>
+                <m>e^{<var name="$x1"/>}</m>
               </p>
 
               <p>
-                <var name = "$r" width="10" />
+                <var name="$r" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -1036,7 +1040,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1059,7 +1063,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1082,7 +1086,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1105,7 +1109,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1128,7 +1132,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1151,7 +1155,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1174,7 +1178,7 @@
               </p>
 
               <p>
-                <var name="$A" width="40" />
+                <var name="$A" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1197,7 +1201,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1220,7 +1224,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1243,7 +1247,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1266,7 +1270,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1289,7 +1293,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1312,7 +1316,7 @@
               </p>
 
               <p>
-                <var name="$A" width="20" />
+                <var name="$A" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1342,7 +1346,7 @@
               </p>
 
               <p>
-                <var name="$err" width="20" />
+                <var name="$err" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1382,7 +1386,7 @@
                     </p>
 
                     <p>
-                      <var name="$err_a" width="20" />
+                      <var name="$err_a" width="20"/>
                     </p>
                   </li>
 
@@ -1392,7 +1396,7 @@
                     </p>
 
                     <p>
-                      <var name="$err_b" width="20" />
+                      <var name="$err_b" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1421,7 +1425,7 @@
               </p>
 
               <p>
-                <var name="$err" width="20" />
+                <var name="$err" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1447,7 +1451,7 @@
               </p>
 
               <p>
-                <var name="$err" width="10" />
+                <var name="$err" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -1494,9 +1498,14 @@
               <image xml:id="img_diffal1X">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}\draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(l=\)?}(1,1);
-                \draw [dashed] (1,1) -- (-1,-1) node [xshift=10pt,yshift=5pt] { \(\theta\)} -- node [pos=.5,below] { \(25'\)} (1,-1);\end{tikzpicture}]]>
+                
+                \begin{tikzpicture}
+
+                \draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(l=\)?} (1,1);
+                \draw [dashed] (1,1) -- (-1,-1) node [xshift=10pt,yshift=5pt] { \(\theta\)} -- node [pos=.5,below] { \(25'\)} (1,-1);
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
@@ -1508,7 +1517,7 @@
                     </p>
 
                     <p>
-                      <var name="$l" width="20" />
+                      <var name="$l" width="20"/>
                     </p>
                   </li>
 
@@ -1518,7 +1527,7 @@
                     </p>
 
                     <p>
-                      <var name="$err" width="20" />
+                      <var name="$err" width="20"/>
                     </p>
                   </li>
 
@@ -1528,7 +1537,7 @@
                     </p>
 
                     <p>
-                      <var name="$err_pct" width="20" />
+                      <var name="$err_pct" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1570,7 +1579,7 @@
                     </p>
 
                     <p>
-                      <var name="$l" width="20" />
+                      <var name="$l" width="20"/>
                     </p>
                   </li>
 
@@ -1580,7 +1589,7 @@
                     </p>
 
                     <p>
-                      <var name="$err" width="20" />
+                      <var name="$err" width="20"/>
                     </p>
                   </li>
 
@@ -1590,7 +1599,7 @@
                     </p>
 
                     <p>
-                      <var name="$err_pct" width="20" />
+                      <var name="$err_pct" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1629,10 +1638,15 @@
               <image xml:id="img_diffal1X1">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}\draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(l=\)?}(1,1);
+                
+                \begin{tikzpicture}
+
+                \draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(l=\)?} (1,1);
                 \draw [dashed] (1,1) -- (-1,0) node [xshift=10pt] { \(\theta\)} -- (1,-1);
-                \draw (-.5,0) -- node [pos=.5,draw=white,fill=white] { \(50'\)} (1,0);\end{tikzpicture}]]>
+                \draw (-.5,0) -- node [pos=.5,draw=white,fill=white] { \(50'\)} (1,0);
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
@@ -1644,7 +1658,7 @@
                     </p>
 
                     <p>
-                      <var name="$l" width="20" />
+                      <var name="$l" width="20"/>
                     </p>
                   </li>
 
@@ -1654,7 +1668,7 @@
                     </p>
 
                     <p>
-                      <var name="$err" width="20" />
+                      <var name="$err" width="20"/>
                     </p>
                   </li>
 
@@ -1664,7 +1678,7 @@
                     </p>
 
                     <p>
-                      <var name="$err_pct" width="20" />
+                      <var name="$err_pct" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1685,12 +1699,12 @@
             <statement>
               <p>
                 The length of the walls in <xref ref="exer_04_04_ex_35">Exercises</xref>
-                <mdash /> <xref ref="exer_04_04_ex_34"></xref> are essentially the same.
+                <mdash/> <xref ref="exer_04_04_ex_34"/> are essentially the same.
                 Which setup gives the most accurate result?
               </p>
 
               <p>
-                <var name="$A" form="popup" />
+                <var name="$A" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -1724,7 +1738,7 @@
 
               <p>
                 What is the approximate percent error?
-                <var name="$err_pct" width="20" />
+                <var name="$err_pct" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1733,4 +1747,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

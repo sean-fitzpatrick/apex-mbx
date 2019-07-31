@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_IBP">
   <title>Integration by Parts</title>
   <introduction>
@@ -357,9 +356,11 @@
             </md>
           </p>
         </sidebyside>
-        <me>
-          \int x^2\cos(x) \,dx = x^2\sin(x) - \left(-2x\cos(x) - \int -2\cos(x) \,dx\right)
-        </me>.
+        <p>
+          <me>
+            \int x^2\cos(x) \,dx = x^2\sin(x) - \left(-2x\cos(x) - \int -2\cos(x) \,dx\right)
+          </me>.
+        </p>
         <p>
           The integral all the way on the right is now something we can evaluate.
           It evaluates to <m>-2\sin(x)</m>.
@@ -716,7 +717,7 @@
       We are developing tools for handling a large array of integrals,
       and experience will tell us when one tool is preferable/necessary over another.
       For instance,
-      consider the three similar<ndash />looking integrals
+      consider the three similar<ndash/>looking integrals
       <me>
         \int xe^x\,dx, \qquad  \int x e^{x^2}\,dx \qquad \text{ and }  \qquad \int xe^{x^3}\,dx
       </me>.
@@ -760,7 +761,7 @@
             </setup>
             <statement>
               <p>
-                Integration by Parts is useful in evaluating integrands that contain products of functions.<var name="$true" form="popup" />
+                Integration by Parts is useful in evaluating integrands that contain products of functions.<var name="$true" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -778,7 +779,7 @@
             <statement>
               <p>
                 Integration by Parts can be thought of as the
-                <q>opposite of the Chain Rule.</q><var name="$false" form="popup" />
+                <q>opposite of the Chain Rule.</q><var name="$false" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -797,7 +798,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
             <solution>
@@ -833,7 +834,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
             <solution>
@@ -859,7 +860,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -880,7 +881,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -901,7 +902,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -922,7 +923,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -943,7 +944,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -964,7 +965,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -985,7 +986,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1006,7 +1007,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1027,7 +1028,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1048,7 +1049,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1069,7 +1070,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1090,7 +1091,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1111,7 +1112,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1132,7 +1133,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1154,7 +1155,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1175,7 +1176,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1196,7 +1197,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1217,7 +1218,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1238,7 +1239,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1259,7 +1260,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1280,7 +1281,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1301,7 +1302,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1322,7 +1323,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1343,7 +1344,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1364,7 +1365,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1385,7 +1386,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1406,7 +1407,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1427,7 +1428,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1448,7 +1449,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1479,7 +1480,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1500,7 +1501,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1521,7 +1522,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1542,7 +1543,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1563,7 +1564,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1576,7 +1577,7 @@
         <p>
           In the following exercises, evaluate the definite integral.
           Note: the corresponding indefinite integrals appear in <xref ref="ibp_prob_4">Exercises</xref>
-          <mdash /> <xref ref="ibp_prob_12"></xref>.
+          <mdash/> <xref ref="ibp_prob_12"/>.
         </p>
       </introduction>
 <!-- Exercise 39 -->
@@ -1597,7 +1598,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- pi -->
             </statement>
@@ -1621,7 +1622,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- -2/e -->
             </statement>
@@ -1645,7 +1646,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 0 -->
             </statement>
@@ -1669,7 +1670,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 3*pi^2/2-12 -->
             </statement>
@@ -1693,7 +1694,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 1/2 -->
             </statement>
@@ -1717,7 +1718,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 6-2e -->
             </statement>
@@ -1741,7 +1742,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 3/4*e^-2 - 5/4*e^-4 -->
             </statement>
@@ -1765,7 +1766,7 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
    <!-- 1/2+e^pi/2 -->
             </statement>
@@ -1789,10 +1790,12 @@
               </p>
 
               <p>
-                <var name="$r" width="20" />
+                <var name="$r" width="20"/>
               </p>
 
-              1/5*(e^pi+e^-pi)
+              <p>
+                1/5*(e^pi+e^-pi)
+              </p>
             </statement>
         </webwork>
       </exercise>
@@ -1800,4 +1803,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

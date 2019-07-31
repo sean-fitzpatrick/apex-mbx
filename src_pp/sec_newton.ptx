@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_newton">
   <title>Newton's Method</title>
   <introduction>
@@ -33,7 +32,7 @@
       Draw the tangent line to the graph at
       <m>(x_0,f(x_0))</m> and see where it meets the <m>x</m>-axis.
       Call this point <m>x_1</m>.
-      Then repeat the process <mdash /> draw the tangent line to the graph at
+      Then repeat the process <mdash/> draw the tangent line to the graph at
       <m>(x_1, f(x_1))</m> and see where it meets the <m>x</m>-axis.
       (See <xref ref="fig_newt1b">Figure</xref>.)
       Call this point <m>x_2</m>.
@@ -49,22 +48,26 @@
         <image xml:id="img_newt1a">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
-          xtick=\empty,%
+          xtick=\empty,
           extra x ticks={.45,2.52},
           extra x tick labels={$x_0$,$x_1$},
           ymin=-1.1,ymax=1.1,
           xmin=-.3,xmax=2.7
           ]
-          \addplot+[domain=-.3:2.7] {cos(deg(x))};
-          \addplot[tangentlineseg,domain=.45:2.52] {-0.434*(x-.45)+.9};
-          \addplot[guideline] coordinates {(0.45,0) (0.45,0.9)};
-          \addplot[soliddot] coordinates{(0.45,0.9)};
+
+          \addplot+ [domain=-.3:2.7] {cos(deg(x))};
+          \addplot [tangentlineseg,domain=.45:2.52] {-0.434*(x-.45)+.9};
+          \addplot [guideline] coordinates {(0.45,0) (0.45,0.9)};
+          \addplot [soliddot] coordinates {(0.45,0.9)};
+          
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
 
@@ -74,22 +77,26 @@
         <image xml:id="img_newt1b">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
           xtick=\empty,
           extra x ticks={.5,2.52,1.12},
           extra x tick labels={$x_0$,$x_1$,$x_2$},
-          ymin=-1.1,ymax=1.1,%
-          xmin=-.3,xmax=2.7%
+          ymin=-1.1,ymax=1.1,
+          xmin=-.3,xmax=2.7
           ]
-          \addplot+[domain=-.3:2.7] {cos(deg(x))};
-          \addplot[tangentlineseg,domain=1.12:2.52] {-0.58*(x-2.52)-.813};
-          \addplot[guideline] coordinates {(2.52,0) (2.52,-0.813)};
-          \addplot[soliddot] coordinates{(2.52,-.813)};
+
+          \addplot+ [domain=-.3:2.7] {cos(deg(x))};
+          \addplot [tangentlineseg,domain=1.12:2.52] {-0.58*(x-2.52)-.813};
+          \addplot [guideline] coordinates {(2.52,0) (2.52,-0.813)};
+          \addplot [soliddot] coordinates {(2.52,-.813)};
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -99,22 +106,26 @@
         <image xml:id="img_newt1c">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
-          xtick=\empty,%
+          xtick=\empty,
           extra x ticks={.5,2.52,1.12,1.6},
           extra x tick labels={$x_0$,$x_1$,$x_2$,$x_3$},
-          ymin=-1.1,ymax=1.1,%
-          xmin=-.3,xmax=2.7%
+          ymin=-1.1,ymax=1.1,
+          xmin=-.3,xmax=2.7
           ]
-          \addplot+[domain=-.3:2.7] {cos(deg(x))};
-          \addplot[tangentlineseg,domain=1.12:1.6] {-.9*(x-1.12)+.432};
-          \addplot[guideline] coordinates {(1.12,0) (1.12,0.432)};
-          \addplot[soliddot] coordinates{(1.12,.432)};
+
+          \addplot+ [domain=-.3:2.7] {cos(deg(x))};
+          \addplot [tangentlineseg,domain=1.12:1.6] {-.9*(x-1.12)+.432};
+          \addplot [guideline] coordinates {(1.12,0) (1.12,0.432)};
+          \addplot [soliddot] coordinates {(1.12,.432)};
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -271,16 +282,20 @@
           <image xml:id="img_newt2" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[
-            ymin=-1.5,ymax=.6,%
-            xmin=-0.1,xmax=1.6%
+            ymin=-1.5,ymax=.6,
+            xmin=-0.1,xmax=1.6
             ]
-            \addplot+[domain=-.05:1.58] {x^3-x^2-1};
+
+            \addplot+ [domain=-.05:1.58] {x^3-x^2-1};
+
             \end{axis}
+
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -348,22 +363,26 @@
 
         <figure xml:id="fig_newt3">
           <caption>A graph of <m>f(x)=\cos(x) -x</m> used to find an initial approximation of its root.</caption>
-          <image xml:id="img_newt3"  width="47%">
+          <image xml:id="img_newt3" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[
-            ymin=-1.1,ymax=1.1,%
-            xmin=-1.1,xmax=1.1%
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.1,xmax=1.1
             ]
-            \addplot+[domain=-.1:1] {cos(deg(x))-x};
-            \addplot+[domain=-1:1] {cos(deg(x))};
-            \addplot+[domain=-1:1] {x};
-            \addplot[guideline] coordinates {(0.739,0) (0.739,0.739)};
+
+            \addplot+ [domain=-.1:1] {cos(deg(x))-x};
+            \addplot+ [domain=-1:1] {cos(deg(x))};
+            \addplot+ [domain=-1:1] {x};
+            \addplot [guideline] coordinates {(0.739,0) (0.739,0.739)};
+
             \end{axis}
+
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -465,17 +484,21 @@
       <image xml:id="img_newt2a" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
+
         \begin{axis}[
         ymin=-1.5,ymax=.6,
         xmin=-0.6,xmax=1.6
         ]
-        \addplot+[domain=-.5:1.55] {-1};
-        \addplot[tangentline,domain=-.5:1.55] {x^3-x^2-1};
+
+        \addplot+ [domain=-.5:1.55] {-1};
+        \addplot [tangentline,domain=-.5:1.55] {x^3-x^2-1};
+
         \end{axis}
+
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -521,22 +544,26 @@
         <image xml:id="img_newt4a">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
           xtick={-1,1},
           extra x ticks={.1,-.2},
           extra x tick labels={$x_0$,$x_1$},
-          ymin=-1.6,ymax=1.6,%
-          xmin=-1.6,xmax=1.6%
+          ymin=-1.6,ymax=1.6,
+          xmin=-1.6,xmax=1.6
           ]
-          \addplot+[domain=-1.16:1.16]({x^3},{x});
-          \addplot[tangentlineseg,domain = -.2:.1] {1.547*(x-.1)+.464};
-          \addplot[guideline] coordinates {(0.1,0) (0.1,0.464)};
-          \addplot[soliddot] coordinates{(.1,.464)};
+
+          \addplot+ [domain=-1.16:1.16] ({x^3},{x});
+          \addplot [tangentlineseg,domain = -.2:.1] {1.547*(x-.1)+.464};
+          \addplot [guideline] coordinates {(0.1,0) (0.1,0.464)};
+          \addplot [soliddot] coordinates {(.1,.464)};
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
 
@@ -546,22 +573,26 @@
         <image xml:id="img_newt4b">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
           xtick={-1,1},
           extra x ticks={.1,-.2,.4},
           extra x tick labels={$x_0$, $x_1$,$x_2$},
-          ymin=-1.6,ymax=1.6,%
-          xmin=-1.6,xmax=1.6%
+          ymin=-1.6,ymax=1.6,
+          xmin=-1.6,xmax=1.6
           ]
-          \addplot+[domain=-1.16:1.16]({x^3},{x});
-          \addplot[tangentlineseg,domain = -.2:.4] {.975*(x+.2)-.585};
-          \addplot[guideline] coordinates {(-0.2,0) (-0.2,-0.585)};
-          \addplot[soliddot] coordinates{(-.2,-.585)};
+
+          \addplot+ [domain=-1.16:1.16]({x^3},{x});
+          \addplot [tangentlineseg,domain = -.2:.4] {.975*(x+.2)-.585};
+          \addplot [guideline] coordinates {(-0.2,0) (-0.2,-0.585)};
+          \addplot [soliddot] coordinates {(-.2,-.585)};
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -571,22 +602,26 @@
         <image xml:id="img_newt4c">
           <description></description>
           <latex-image>
-          <![CDATA[
+          
           \begin{tikzpicture}
+
           \begin{axis}[
           xtick={-1,1},
           extra x ticks={.1,-.2,.4,-.8},
           extra x tick labels={$x_0$,$x_1$,$x_2$,$x_3$},
-          ymin=-1.6,ymax=1.6,%
-          xmin=-1.6,xmax=1.6%
+          ymin=-1.6,ymax=1.6,
+          xmin=-1.6,xmax=1.6
           ]
-          \addplot+[domain=-1.16:1.16]({x^3},{x});
+
+          \addplot+ [domain=-1.16:1.16] ({x^3},{x});
           \addplot [tangentlineseg,domain = -.8:.4] {.614*(x-.4)+.737};
-          \addplot[guideline] coordinates {(0.4,0) (0.4,0.737)};
-          \addplot[soliddot] coordinates{(.4,.737)};
+          \addplot [guideline] coordinates {(0.4,0) (0.4,0.737)};
+          \addplot [soliddot] coordinates {(.4,.737)};
+
           \end{axis}
+
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -691,14 +726,14 @@
             </setup>
             <statement>
               <p>
-                Let <m>f(x) = <var name="$f" /></m>.
-                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
+                Let <m>f(x) = <var name="$f"/></m>.
+                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]"/></m> to approximate the root.
               </p>
 
               <tabular>
                 <row>
                   <cell><m>x_0=</m></cell>
-                  <cell><var name="$x[0]" /></cell>
+                  <cell><var name="$x[0]"/></cell>
                 </row>
                 <row>
                   <cell><m>x_1=</m></cell>
@@ -752,14 +787,14 @@
             </setup>
             <statement>
               <p>
-                Let <m>f(x) = <var name="$f" /></m>.
-                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
+                Let <m>f(x) = <var name="$f"/></m>.
+                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]"/></m> to approximate the root.
               </p>
 
               <tabular>
                 <row>
                   <cell><m>x_0=</m></cell>
-                  <cell><m><var name="$x[0]" /></m></cell>
+                  <cell><m><var name="$x[0]"/></m></cell>
                 </row>
                 <row>
                   <cell><m>x_1=</m></cell>
@@ -813,14 +848,14 @@
             </setup>
             <statement>
               <p>
-                Let <m>f(x) = <var name="$f" /></m>.
-                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
+                Let <m>f(x) = <var name="$f"/></m>.
+                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]"/></m> to approximate the root.
               </p>
 
               <tabular>
                 <row>
                   <cell><m>x_0=</m></cell>
-                  <cell><m><var name="$x[0]" /></m></cell>
+                  <cell><m><var name="$x[0]"/></m></cell>
                 </row>
                 <row>
                   <cell><m>x_1=</m></cell>
@@ -874,14 +909,14 @@
             </setup>
             <statement>
               <p>
-                Let <m>f(x) = <var name="$f" /></m>.
-                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
+                Let <m>f(x) = <var name="$f"/></m>.
+                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]"/></m> to approximate the root.
               </p>
 
               <tabular>
                 <row>
                   <cell><m>x_0=</m></cell>
-                  <cell><m><var name="$x[0]" /></m></cell>
+                  <cell><m><var name="$x[0]"/></m></cell>
                 </row>
                 <row>
                   <cell><m>x_1=</m></cell>
@@ -935,14 +970,14 @@
             </setup>
             <statement>
               <p>
-                Let <m>f(x) = <var name="$f" /></m>.
-                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]" /></m> to approximate the root.
+                Let <m>f(x) = <var name="$f"/></m>.
+                Use five iterations of Newton's Method with <m>x_0=<var name="$x[0]"/></m> to approximate the root.
               </p>
 
               <tabular>
                 <row>
                   <cell><m>x_0=</m></cell>
-                  <cell><m><var name="$x[0]" /></m></cell>
+                  <cell><m><var name="$x[0]"/></m></cell>
                 </row>
                 <row>
                   <cell><m>x_1=</m></cell>
@@ -1000,7 +1035,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f" /></m> accurate to three places after the decimal.
+                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f"/></m> accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
 
@@ -1025,7 +1060,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f" /></m> accurate to three places after the decimal.
+                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f"/></m> accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
 
@@ -1052,7 +1087,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f" /></m> on the interval <m><var name="$I" /></m> accurate to three places after the decimal.
+                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f"/></m> on the interval <m><var name="$I"/></m> accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
 
@@ -1079,7 +1114,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f" /></m> on the interval <m><var name="$I" /></m> accurate to three places after the decimal.
+                Use Newton's Method to approximate all roots of <m>f(x)=<var name="$f"/></m> on the interval <m><var name="$I"/></m> accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
 
@@ -1120,7 +1155,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate when <m>f(x)=<var name="$f" /></m> is equal to <m>g(x)=<var name="$g" /></m>,
+                Use Newton's Method to approximate when <m>f(x)=<var name="$f"/></m> is equal to <m>g(x)=<var name="$g"/></m>,
                 accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
@@ -1149,7 +1184,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate when <m>f(x)=<var name="$f" /></m> is equal to <m>g(x)=<var name="$g" /></m>,
+                Use Newton's Method to approximate when <m>f(x)=<var name="$f"/></m> is equal to <m>g(x)=<var name="$g"/></m>,
                 accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
@@ -1179,7 +1214,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate when <m>f(x)=<var name="$f" /></m> is equal to <m>g(x)=<var name="$g" /></m>,
+                Use Newton's Method to approximate when <m>f(x)=<var name="$f"/></m> is equal to <m>g(x)=<var name="$g"/></m>,
                 accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
@@ -1210,7 +1245,7 @@
             </setup>
             <statement>
               <p>
-                Use Newton's Method to approximate when <m>f(x)=<var name="$f" /></m> is equal to <m>g(x)=<var name="$g" /></m> on the interval <m><var name="$I" /></m>,
+                Use Newton's Method to approximate when <m>f(x)=<var name="$f"/></m> is equal to <m>g(x)=<var name="$g"/></m> on the interval <m><var name="$I"/></m>,
                 accurate to three places after the decimal.
                 Use technology to obtain good initial approximations.
               </p>
@@ -1232,7 +1267,7 @@
             </p>
 
             <p>
-              <var form="essay" />
+              <var form="essay"/>
             </p>
           </statement>
           <solution>
@@ -1251,7 +1286,7 @@
             </p>
 
             <p>
-              <var form="essay" />
+              <var form="essay"/>
             </p>
           </statement>
           <solution>
@@ -1265,4 +1300,3 @@
 
   </exercises>
 </section>
-

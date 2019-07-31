@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_def_int">
   <title>The Definite Integral</title>
   <introduction>
@@ -11,8 +10,8 @@
 
     <p>
       We approach this problem with the familiar
-      <q>Distance <m>=</m> Rate <times /> Time</q> equation.
-      In this case, Distance = 5ft/s <times /> 10s <m>=</m> 50 feet.
+      <q>Distance <m>=</m> Rate <times/> Time</q> equation.
+      In this case, Distance = 5ft/s <times/> 10s <m>=</m> 50 feet.
     </p>
 
     <p>
@@ -28,25 +27,30 @@
 
     <figure xml:id="fig_defint1">
       <caption>The area under a constant velocity function corresponds to distance traveled.</caption>
-      <image xml:id="img_defint1"  width="47%">
+      <image xml:id="img_defint1" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
-        \begin{axis}[%
+
+        \begin{axis}[
+        axis on top,
         x label style={at={(axis description cs:0.85,0.05)},anchor=north},
         y label style={at={(axis description cs:0,.85)},rotate=90,anchor=south},
         xlabel={$t$ (s)},
         ylabel={$y$ (ft/s)},
-			                ytick={5},
-			                ymin=-.9,ymax=5.9,
-			                xmin=-.9,xmax=10.9]
+        ytick={5},
+        ymin=-.9,ymax=5.9,
+        xmin=-.9,xmax=10.9
+        ]
 
-        \addplot+[-,domain=0:10] {5};
-        \addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-        \end{axis}
+        \addplot [firstcurvestyle,areastyle,domain=0:10] {5} \closedcycle;
+        \addplot [firstcurvestyle,-,domain=0:10] {5};
+        
+        \end{axis} 
+        
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -57,11 +61,11 @@
       then instantly reverses course at a rate of 2ft/s for 4 seconds.
       (Since the object is traveling in the opposite direction when reversing course,
       we say the velocity is a constant <m>-2</m>ft/s.)
-      How far away from the starting point is the object <mdash /> what is its <em>displacement</em>?
+      How far away from the starting point is the object <mdash/> what is its <em>displacement</em>?
     </p>
 
     <p>
-      Here we use <q>Displacement <m>=</m> Rate<m>_1</m> <times /> Time<m>_1</m> + Rate<m>_2</m> <times /> Time<m>_2</m>,</q> which is
+      Here we use <q>Displacement <m>=</m> Rate<m>_1</m> <times/> Time<m>_1</m> + Rate<m>_2</m> <times/> Time<m>_2</m>,</q> which is
       <me>
         \text{ Displacement }  \ = 5\cdot10 + (-2)\cdot 4 = 42\text{ ft. }
       </me>
@@ -80,7 +84,7 @@
     </p>
 
     <p>
-      <q>Area above the <m>t</m><ndash />axis <m>-</m>Area below the <m>t</m><ndash />axis,</q>
+      <q>Area above the <m>t</m><ndash/>axis <m>-</m>Area below the <m>t</m><ndash/>axis,</q>
     </p>
 
     <p>
@@ -88,31 +92,35 @@
     </p>
 
     <figure xml:id="fig_defint2">
-      <caption>The total displacement is the area above the <m>t</m><ndash />axis minus the area below the <m>t</m><ndash />axis.</caption>
-      <image xml:id="img_defint2"  width="47%">
+      <caption>The total displacement is the area above the <m>t</m><ndash/>axis minus the area below the <m>t</m><ndash/>axis.</caption>
+      <image xml:id="img_defint2" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
-        \begin{axis}[%
+        
+        \begin{axis}[
         axis on top,
         x label style={at={(axis description cs:0.85,0.3)},anchor=south},
         y label style={at={(axis description cs:0,.85)},rotate=90,anchor=south},
         xlabel={$t$ (s)},
         ylabel={$y$ (ft/s)},
-			                ytick={-2,5},
-			                minor x tick num=4,
+        ytick={-2,5},
+        minor x tick num=4,
         ymin=-2.9,ymax=5.9,
-        xmin=-.9,xmax=15.9]
+        xmin=-.9,xmax=15.9
+        ]
 
-        \addplot+[-,domain=0:10] {5};
-        \addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} \closedcycle;
+        \addplot [firstcurvestyle,areastyle,domain=0:10] {5} \closedcycle;
+        \addplot [firstcurvestyle,-,domain=0:10] {5};
 
-        \addplot [{\coloronefill},fill={\coloronefill},domain=10:14,area style] {-2} \closedcycle;
-        \addplot [thick, {\colorone},domain=10:14] {-2};
+        \addplot [secondcurvestyle,areastyle,domain=10:14] {-2} \closedcycle;
+        \addplot [secondcurvestyle,-,domain=10:14] {-2};
+
         \end{axis}
+
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -229,24 +237,29 @@
 
         <figure xml:id="fig_defint3">
           <caption>A graph of <m>v(t)=-32t+48</m>; the shaded areas help determine displacement.</caption>
-          <image xml:id="img_defint3"  width="47%">
+          <image xml:id="img_defint3" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             ymin=-55,ymax=55,
             xmin=-.5,xmax=3.2,
             x label style={at={(axis description cs:0.85,0.3)},anchor=south},
             y label style={at={(axis description cs:0,.85)},rotate=90,anchor=south},
             xlabel={$t$ (s)},
-            ylabel={$y$ (ft/s)},]
+            ylabel={$y$ (ft/s)},
+            ]
 
-            \addplot+[-,domain=0:3] {-32*x+48};
-            \addplot [{\coloronefill},fill={\coloronefill},domain=0:3,area style] {-32*x+48} \closedcycle; 
+            \addplot [firstcurvestyle,areastyle,domain=0:3] {-32*x+48} \closedcycle; 
+            \addplot [firstcurvestyle,-,domain=0:3] {-32*x+48};
+            
             \end{axis}
+
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -255,9 +268,9 @@
           Recall how in our previous work that the displacement of the object
           (in this case, its height)
           was found as the area under the velocity curve, as shaded in the figure.
-          Moreover, the area between the curve and the <m>t</m><ndash />axis that is below the <m>t</m><ndash />axis counted as <q>negative</q> area.
+          Moreover, the area between the curve and the <m>t</m><ndash/>axis that is below the <m>t</m><ndash/>axis counted as <q>negative</q> area.
           That is, it represents the object coming back toward its starting position.
-          So to find the maximum distance from the starting point <mdash /> the maximum height <mdash /> we find the area under the velocity line that is above the <m>t</m><ndash />axis,
+          So to find the maximum distance from the starting point <mdash/> the maximum height <mdash/> we find the area under the velocity line that is above the <m>t</m><ndash/>axis,
           i.e., from <m>t=0</m> to <m>t=1.5</m>.
           This region is a triangle; its area is
           <md>
@@ -276,7 +289,7 @@
         </p>
 
         <p>
-          Displacement = Area above the <m>t</m><ndash />axis <m>-</m> Area below <m>t</m><ndash />axis.
+          Displacement = Area above the <m>t</m><ndash/>axis <m>-</m> Area below <m>t</m><ndash/>axis.
         </p>
 
         <p>
@@ -348,8 +361,8 @@
         </p>
 
         <p>
-          (area under <m>f</m> and above the <m>x</m><ndash />axis on <m>[a,b]</m>) <m>-</m>
-          (area above <m>f</m> and under the <m>x</m><ndash />axis on <m>[a,b]</m>).
+          (area under <m>f</m> and above the <m>x</m><ndash/>axis on <m>[a,b]</m>) <m>-</m>
+          (area above <m>f</m> and under the <m>x</m><ndash/>axis on <m>[a,b]</m>).
         </p>
 
         <p>
@@ -402,22 +415,25 @@
 
         <figure xml:id="fig_defint4">
           <caption>A graph of <m>f(x)</m> in <xref ref="ex_defint4">Example</xref>.</caption>
-          <image xml:id="img_defint4"  width="47%">
+          <image xml:id="img_defint4" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
-            ymin=-1.1,ymax=1.1,%
-            xmin=-.5,xmax=5.5]
 
-            \addplot [-] coordinates {(0,0) (1,1) (5,-1)};
-            \addplot [{\coloronefill},fill={\coloronefill},area style] coordinates {(0,0) (1,1) (5,-1)} \closedcycle;
+            \begin{axis}[
+            axis on top,
+            ymin=-1.1,ymax=1.1,
+            xmin=-.5,xmax=5.5
+            ]
+
+            \addplot [firstcurvestyle,areastyle] coordinates {(0,0) (1,1) (5,-1)} \closedcycle;
+            \addplot [firstcurvestyle,-] coordinates {(0,0) (1,1) (5,-1)};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -473,10 +489,10 @@
 
             <li>
               <p>
-                <m>\int_3^5 f(x)\ dx</m> represents the area of the triangle found under the <m>x</m><ndash />axis on <m>[3,5]</m>.
+                <m>\int_3^5 f(x)\ dx</m> represents the area of the triangle found under the <m>x</m><ndash/>axis on <m>[3,5]</m>.
                 The area is <m>\frac12(2)(1) = 1</m>;
                 since it is found <em>under</em>
-                the <m>x</m><ndash />axis,
+                the <m>x</m><ndash/>axis,
                 this is <q>negative area.</q> Therefore <m>\int_3^5 f(x)\ dx = -1</m>.
               </p>
             </li>
@@ -502,17 +518,22 @@
                 <image xml:id="img_defint4a" width="47%">
                   <description></description>
                   <latex-image>
-                  <![CDATA[
+                  
                   \begin{tikzpicture}
-                  \begin{axis}[axis on top,
+
+                  \begin{axis}[
+                  axis on top,
                   ymin=-5.5,ymax=5.5,
-                  xmin=-.5,xmax=5.5]
-                  \addplot+[-] coordinates {(0,0) (1,5) (5,-5)};
-                  \addplot [{\coloronefill},fill={\coloronefill},area style] coordinates {(0,0) (1,5) (5,-5)} \closedcycle;
+                  xmin=-.5,xmax=5.5
+                  ]
+
+                  \addplot [firstcurvestyle,areastyle] coordinates {(0,0) (1,5) (5,-5)} \closedcycle;
+                  \addplot [firstcurvestyle,-] coordinates {(0,0) (1,5) (5,-5)};
+                  
                   \end{axis}
 
                   \end{tikzpicture}
-                  ]]>
+                  
                   </latex-image>
                 </image>
               </figure>
@@ -632,14 +653,14 @@
             <men xml:id="eq_defint2">
               \int_a^b f(x)\ dx + \int_b^c f(x)\ dx = \int_a^c f(x)\ dx
             </men>.
-            How do Equations <xref ref="eq_defint1" /> and <xref ref="eq_defint2" /> relate?
-            Start with Equation <xref ref="eq_defint1" />:
+            How do Equations <xref ref="eq_defint1"/> and <xref ref="eq_defint2"/> relate?
+            Start with Equation <xref ref="eq_defint1"/>:
             <md>
               <mrow>\int_b^a f(x)\ dx + \int_a^c f(x)\ dx \amp = \int_b^c f(x)\ dx</mrow>
               <mrow>\int_a^c f(x)\ dx \amp = -\int_b^a f(x)\ dx + \int_b^c f(x)\ dx</mrow>
             </md>
             Property <m>(3)</m> justifies changing the sign and switching the bounds of integration on the <m>\ds -\int_b^a f(x)\ dx</m> term;
-            when this is done, Equations <xref ref="eq_defint1" /> and <xref ref="eq_defint2" /> are equivalent.
+            when this is done, Equations <xref ref="eq_defint1"/> and <xref ref="eq_defint2"/> are equivalent.
 
             The conclusion is this:
             by adopting the convention of Property (3), Property (2) holds no matter the order of <m>a</m>,
@@ -650,7 +671,7 @@
 
         <li>
           <p>
-            Each of these may be non<ndash />intuitive.
+            Each of these may be non<ndash/>intuitive.
             Property (5) states that when one scales a function by,
             for instance, 7, the area of the enclosed region also is scaled by a factor of 7.
             Both Properties (4) and (5) can be proved using geometry.
@@ -669,23 +690,29 @@
 
         <figure xml:id="fig_defint5">
           <caption>A graph of a function in <xref ref="ex_defint5">Example</xref>.</caption>
-          <image xml:id="img_defint5"  width="47%">
+          <image xml:id="img_defint5" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             xtick=\empty,
             extra x ticks={.5,1.5,3},
             extra x tick labels={$a$,$b$,$\ c$},
             ytick=\empty,
             ymin=-1.1,ymax=1.1,
-            xmin=-.2,xmax=3.5]
-            \addplot+[-,domain=0.5:3,samples=50] {(x-.5)*(x-1.5)*(x-3)};
-            \addplot[smooth,{\coloronefill},fill={\coloronefill},area style,domain=0.5:3] {(x-.5)*(x-1.5)*(x-3)} \closedcycle;
+            xmin=-.2,xmax=3.5
+            ]
+
+            \addplot [firstcurvestyle,areastyle,domain=0.5:3] {(x-.5)*(x-1.5)*(x-3)} \closedcycle;
+            \addplot [firstcurvestyle,-,domain=0.5:3,samples=40] {(x-.5)*(x-1.5)*(x-3)};
+
             \end{axis}
+            
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         </figure>
@@ -724,7 +751,7 @@
             <li>
               <p>
                 <m>\int_a^b f(x)\ dx</m> has a positive value
-                (since the area is above the <m>x</m><ndash />axis)
+                (since the area is above the <m>x</m><ndash/>axis)
                 whereas <m>\int_b^c f(x)\ dx</m> has a negative value.
                 Hence <m>\int_a^b f(x)\ dx</m> is bigger.
               </p>
@@ -733,7 +760,7 @@
             <li>
               <p>
                 <m>\int_a^c f(x)\ dx</m> is the total signed area under <m>f</m> between <m>x=a</m> and <m>x=c</m>.
-                Since the region below the <m>x</m><ndash />axis looks to be larger than the region above,
+                Since the region below the <m>x</m><ndash/>axis looks to be larger than the region above,
                 we conclude that the definite integral has a value less than 0.
               </p>
             </li>
@@ -778,7 +805,7 @@
                 <me>
                   R_1: \frac12(4)(8) = 16 \qquad R_2: \frac12(3)6 = 9
                 </me>.
-                Region <m>R_1</m> lies under the <m>x</m><ndash />axis,
+                Region <m>R_1</m> lies under the <m>x</m><ndash/>axis,
                 hence it is counted as negative area
                 (we can think of the triangle's height as being <q><m>-8</m></q>),
                 so
@@ -805,22 +832,28 @@
                   <image xml:id="img_defint8a">
                     <description></description>
                     <latex-image>
-                    <![CDATA[
+                    
                     \begin{tikzpicture}
-                    \begin{axis}[axis on top,
-                    ymin=-11,ymax=11,%
-                    xmin=-3.5,xmax=5.5]
-                    \addplot+[-,domain=-2:5] {2*x-4};
-                    \addplot [{\coloronefill},fill={\coloronefill},area style,domain=-2:5] {2*x-4} \closedcycle;
-                    \addplot[soliddot] coordinates{(-2,-8)} node[right]{\small $(-2,-8)$};
-                    \addplot[soliddot] coordinates{(5,6)} node[left]{\small $(5,6)$}; 
+
+                    \begin{axis}[
+                    axis on top,
+                    ymin=-11,ymax=11,
+                    xmin=-3.5,xmax=5.5
+                    ]
+
+                    \addplot [firstcurvestyle,areastyle,domain=-2:5] {2*x-4} \closedcycle;
+                    \addplot [firstcurvestyle,-,domain=-2:5] {2*x-4};
+
+                    \addplot [soliddot] coordinates {(-2,-8)} node[right] {\small $(-2,-8)$};
+                    \addplot [soliddot] coordinates {(5,6)} node[left] {\small $(5,6)$}; 
+
                     \draw (axis cs:-1,-2) node {\scriptsize $R_1$};
                     \draw (axis cs:4.2,2) node {\scriptsize $R_2$};
 
                     \end{axis}
 
                     \end{tikzpicture}
-                    ]]>
+                    
                     </latex-image>
                   </image>
                 </figure>
@@ -830,9 +863,11 @@
                   <image xml:id="img_defint8b">
                     <description></description>
                     <latex-image>
-                    <![CDATA[
+                    
                     \begin{tikzpicture}
-                    \begin{axis}[axis on top,
+                    
+                    \begin{axis}[
+                    axis on top,
                     xtick={-3,3},
                     extra y ticks={1,2,3,4},
                     extra y tick labels=\empty,
@@ -840,11 +875,13 @@
                     ymin=-.5,ymax=5.5,
                     xmin=-3.5,xmax=3.5]
 
-                    \addplot+[-,domain=0:180,samples=50] ({3*cos (x)},{3*sin(x)});
-                    \addplot [smooth,{\coloronefill},fill={\coloronefill},area style,domain=0:180] ({3*cos (x)},{3*sin(x)}) \closedcycle;
+                    \addplot [firstcurvestyle,areastyle,domain=0:180] ({3*cos (x)},{3*sin(x)}) \closedcycle;
+                    \addplot [firstcurvestyle,-,domain=0:180,samples=40] ({3*cos (x)},{3*sin(x)});
+                    
                     \end{axis}
+
                     \end{tikzpicture}
-                    ]]>
+                    
                     </latex-image>
                   </image>
                 </figure>
@@ -868,12 +905,14 @@
 
         <figure xml:id="fig_defint6">
           <caption>A graph of a velocity in <xref ref="ex_defint6">Example</xref>.</caption>
-          <image xml:id="img_defint6"  width="47%">
+          <image xml:id="img_defint6" width="47%">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             x label style={at={(axis description cs:0.85,0.35)},anchor=south},
             y label style={at={(axis description cs:-.05,.85)},rotate=90,anchor=south},
             xlabel={$t$ (s)},
@@ -883,17 +922,20 @@
             extra x tick labels={$\ a$,$b\ $,$\ c$},
             ytick={-5,5,10,15},
             ymin=-9,ymax=17,
-            xmin=-.5,xmax=8.5]
+            xmin=-.5,xmax=8.5
+            ]
 
-            \addplot+[-,domain=0:8, samples=50] {15/64*x*(x-2)*(x-6)*(x-8)};
-            \addplot [smooth,{\coloronefill},fill={\coloronefill},area style,domain=0:8] {15/64*x*(x-2)*(x-6)*(x-8)} \closedcycle;
+            \addplot [firstcurvestyle,areastyle,domain=0:8,samples=40] {15/64*x*(x-2)*(x-6)*(x-8)} \closedcycle;
+            \addplot [firstcurvestyle,-,domain=0:8,samples=70] {15/64*x*(x-2)*(x-6)*(x-8)};
 
             \draw (axis cs:.9,-4) node {\scriptsize $11$};
             \draw (axis cs:7.1,-4) node {\scriptsize $11$};
             \draw (axis cs:4,8) node {\scriptsize $38$};
+
             \end{axis}
+            
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         </figure>
@@ -932,20 +974,26 @@
 
     <figure xml:id="fig_defint7">
       <caption>What is the area below <m>y=x^2</m> on <m>[0,3]</m>? The region is not a usual geometric shape.</caption>
-      <image xml:id="img_defint7"  width="47%">
+      <image xml:id="img_defint7" width="47%">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
-        \begin{axis}[axis on top,
+
+        \begin{axis}[
+        axis on top,
         xtick={1,2,3},
         ymin=-1,ymax=11,
-        xmin=-1,xmax=3.5]
-        \addplot+[-,domain=0:3] {x^2};
-        \addplot [{\coloronefill},fill={\coloronefill},area style,domain=0:3] {x^2} \closedcycle;
+        xmin=-1,xmax=3.5
+        ]
+
+        \addplot [firstcurvestyle,areastyle,domain=0:3] {x^2} \closedcycle;
+        \addplot [firstcurvestyle,-,domain=0:3] {x^2};
+        
         \end{axis}
+
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
     </figure>
@@ -978,7 +1026,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -992,7 +1040,7 @@
               </p>
 
               <p>
-                <var form="essay" />
+                <var form="essay"/>
               </p>
             </statement>
         </webwork>
@@ -1012,7 +1060,7 @@
               </p>
 
               <p>
-                <var name="$A" width="10" />
+                <var name="$A" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -1078,70 +1126,62 @@
             </setup>
             <statement>
 
-                <image xml:id="img_05_02_ex_05"  width="47%">
+                <image xml:id="img_05_02_ex_05" width="47%">
                   <description></description>
                   <latex-image>
-                  <![CDATA[
+                  
                   \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-                  %			xtick={1,2,3,4},%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-                  %			ytick={5},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-4.5,ymax=4.5,%
-			xmin=-.9,xmax=4.5%
+                  
+                  \begin{axis}[
+                  ymin=-4.5,ymax=4.5,
+                  xmin=-.9,xmax=4.5
                   ]
 
-                  %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                  \addplot [thick, {\colorone},domain=0:4] {-2*x+4};
+                  \addplot+ [-,domain=0:4] {-2*x+4};
 
                   \draw (axis cs:2,2.5) node {\scriptsize $y = -2x+4$};
 
                   \end{axis}
 
                   \end{tikzpicture}
-                  ]]>
+                  
                   </latex-image>
                 </image>
                 <p>
                   <ol cols="2">
                     <li>
                       <p>
-                        <m>\ds \int_0^1 (-2x+4)\ dx = </m><var name="$a" width="3" />
+                        <m>\ds \int_0^1 (-2x+4)\ dx = </m><var name="$a" width="3"/>
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        <m>\ds \int_0^2 (-2x+4)\ dx = </m><var name="$b" width="3" />
+                        <m>\ds \int_0^2 (-2x+4)\ dx = </m><var name="$b" width="3"/>
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        <m>\ds \int_0^3 (-2x+4)\ dx = </m><var name="$c" width="3" />
+                        <m>\ds \int_0^3 (-2x+4)\ dx = </m><var name="$c" width="3"/>
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        <m>\ds \int_1^3 (-2x+4)\ dx = </m><var name="$d" width="3" />
+                        <m>\ds \int_1^3 (-2x+4)\ dx = </m><var name="$d" width="3"/>
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        <m>\ds \int_2^4 (-2x+4)\ dx = </m><var name="$e" width="3" />
+                        <m>\ds \int_2^4 (-2x+4)\ dx = </m><var name="$e" width="3"/>
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        <m>\ds \int_0^1 (-6x+12)\ dx = </m><var name="$f" width="3" />
+                        <m>\ds \int_0^1 (-6x+12)\ dx = </m><var name="$f" width="3"/>
                       </p>
                     </li>
                   </ol>
@@ -1164,72 +1204,65 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_06"  width="47%">
+              <image xml:id="img_05_02_ex_06" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3,4,5},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={5},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-2.2,ymax=2.2,%
-    xmin=-.9,xmax=5.5%
+
+                \begin{axis}[
+                xtick={1,2,3,4,5},
+                ymin=-2.2,ymax=2.2,
+                xmin=-.9,xmax=5.5
                 ]
 
-                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},domain=0:2] {-2};
-                \addplot [thick, {\colorone},domain=2:3] {2*x-6};
-                \addplot [thick, {\colorone},domain=3:5] {x-3};
+                \addplot+ [-,domain=0:2] {-2};
+                \addplot [firstcurvestyle,-,domain=2:3] {2*x-6};
+                \addplot [firstcurvestyle,-,domain=3:5] {x-3};
 
                 \draw (axis cs:3.2,-1.5) node {\scriptsize $y = f(x)$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
               <p>
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$a" width="3" />
+                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$a" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^3 f(x)\ dx = </m><var name="$b" width="3" />
+                      <m>\ds \int_0^3 f(x)\ dx = </m><var name="$b" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^5 f(x)\ dx = </m><var name="$c" width="3" />
+                      <m>\ds \int_0^5 f(x)\ dx = </m><var name="$c" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^5 f(x)\ dx = </m><var name="$d" width="3" />
+                      <m>\ds \int_2^5 f(x)\ dx = </m><var name="$d" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_5^3 f(x)\ dx = </m><var name="$e" width="3" />
+                      <m>\ds \int_5^3 f(x)\ dx = </m><var name="$e" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^3 -2f(x)\ dx = </m><var name="$f" width="3" />
+                      <m>\ds \int_0^3 -2f(x)\ dx = </m><var name="$f" width="3"/>
                     </p>
                   </li>
                 </ol>
@@ -1252,36 +1285,29 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_07"  width="47%">
+              <image xml:id="img_05_02_ex_07" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3,4,5},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={5},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-.5,ymax=4.5,%
-    xmin=-.9,xmax=4.5%
+
+                \begin{axis}[
+                xtick={1,2,3,4,5},
+                ymin=-.5,ymax=4.5,
+                xmin=-.9,xmax=4.5
                 ]
 
-                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},domain=0:1] {4*x};
-                \addplot [thick, {\colorone},domain=1:2] {-4*(x-2)};
-                \addplot [thick, {\colorone},domain=2:3] {2*(x-2)};
-                \addplot [thick, {\colorone},domain=3:4] {-2*(x-4)};
+                \addplot+ [-,domain=0:1] {4*x};
+                \addplot [firstcurvestyle,-,domain=1:2] {-4*(x-2)};
+                \addplot [firstcurvestyle,-,domain=2:3] {2*(x-2)};
+                \addplot [firstcurvestyle,-,domain=3:4] {-2*(x-4)};
 
                 \draw (axis cs:3,2.5) node {\scriptsize $y = f(x)$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
 
@@ -1289,37 +1315,37 @@
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$a" width="3" />
+                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$a" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^4 f(x)\ dx = </m><var name="$b" width="3" />
+                      <m>\ds \int_2^4 f(x)\ dx = </m><var name="$b" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^4 2f(x)\ dx = </m><var name="$c" width="3" />
+                      <m>\ds \int_2^4 2f(x)\ dx = </m><var name="$c" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^1 4x\ dx = </m><var name="$d" width="3" />
+                      <m>\ds \int_0^1 4x\ dx = </m><var name="$d" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^3 (2x-4)\ dx = </m><var name="$e" width="3" />
+                      <m>\ds \int_2^3 (2x-4)\ dx = </m><var name="$e" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^3 (4x-8)\ dx = </m><var name="$f" width="3" />
+                      <m>\ds \int_2^3 (4x-8)\ dx = </m><var name="$f" width="3"/>
                     </p>
                   </li>
                 </ol>
@@ -1342,70 +1368,64 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_08"  width="47%">
+              <image xml:id="img_05_02_ex_08" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3,4,5},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-    ytick={-1,1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-1.5,ymax=3.5,%
-    xmin=-.9,xmax=4.5%
+
+                \begin{axis}[
+                xtick={1,2,3,4,5},
+                ytick={-1,1,2,3},
+                ymin=-1.5,ymax=3.5,
+                xmin=-.9,xmax=4.5
                 ]
 
-                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},domain=0:4] {x-1};
+                \addplot+ [-,domain=0:4] {x-1};
 
                 \draw (axis cs:2,2.5) node {\scriptsize $y = x-1$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
               <p>
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_0^1 (x-1)\ dx = </m><var name="$a" width="3" />
+                      <m>\ds \int_0^1 (x-1)\ dx = </m><var name="$a" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^2 (x-1)\ dx = </m><var name="$b" width="3" />
+                      <m>\ds \int_0^2 (x-1)\ dx = </m><var name="$b" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^3 (x-1)\ dx = </m><var name="$c" width="3" />
+                      <m>\ds \int_0^3 (x-1)\ dx = </m><var name="$c" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^3 (x-1)\ dx = </m><var name="$d" width="3" />
+                      <m>\ds \int_2^3 (x-1)\ dx = </m><var name="$d" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_1^4 (x-1)\ dx = </m><var name="$e" width="3" />
+                      <m>\ds \int_1^4 (x-1)\ dx = </m><var name="$e" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_1^4 \big((x-1)+1\big)\ dx = </m><var name="$f" width="3" />
+                      <m>\ds \int_1^4 \big((x-1)+1\big)\ dx = </m><var name="$f" width="3"/>
                     </p>
                   </li>
                 </ol>
@@ -1427,33 +1447,27 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_09"  width="47%">
+              <image xml:id="img_05_02_ex_09" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3,4},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-    ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-.5,ymax=3.5,%
-    xmin=-.9,xmax=4.5%
+
+                \begin{axis}[
+                xtick={1,2,3,4},
+                ytick={1,2,3},
+                ymin=-.5,ymax=3.5,
+                xmin=-.9,xmax=4.5
                 ]
 
-                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:10,area style] {5} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},smooth,samples=40,domain=0:3.14159] ({2*cos(deg(x))+2}, {2*sin(deg(x))});
+                \addplot+ [-,samples=40,domain=0:3.14159] ({2*cos(deg(x))+2}, {2*sin(deg(x))});
 
                 \draw (axis cs:3,2.4) node {\scriptsize $f(x) = \sqrt{4-(x-2)^2}$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
       
@@ -1461,25 +1475,25 @@
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_0^2 f(x)\ dx</m><var name="$a" width="3" />
+                      <m>\ds \int_0^2 f(x)\ dx</m><var name="$a" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^4 f(x)\ dx</m><var name="$b" width="3" />
+                      <m>\ds \int_2^4 f(x)\ dx</m><var name="$b" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^4 f(x)\ dx</m><var name="$c" width="3" />
+                      <m>\ds \int_0^4 f(x)\ dx</m><var name="$c" width="3"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^4 5f(x)\ dx</m><var name="$d" width="3" />
+                      <m>\ds \int_0^4 5f(x)\ dx</m><var name="$d" width="3"/>
                     </p>
                   </li>
                 </ol>
@@ -1511,26 +1525,21 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_10"  width="47%">
+              <image xml:id="img_05_02_ex_10" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-105,ymax=55,%
-    xmin=-.9,xmax=3.5%
+
+                \begin{axis}[            
+                axis on top,   
+                xtick={1,2,3},
+                ymin=-105,ymax=55,
+                xmin=-.9,xmax=3.5
                 ]
 
-                \addplot [{\coloronefill},fill={\coloronefill},domain=0:3,area style,smooth] {60*x*(1-x)*(x-2)*(x-2)*(x-3)} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},smooth,samples=40,domain=0:3] {60*x*(1-x)*(x-2)*(x-2)*(x-3)};
+                \addplot [firstcurvestyle,areastyle,domain=0:3,samples=40] {60*x*(1-x)*(x-2)*(x-2)*(x-3)} \closedcycle;
+                \addplot [firstcurvestyle,-,domain=0:3,samples=90] {60*x*(1-x)*(x-2)*(x-2)*(x-3)};
 
                 \draw (axis cs:1.5,30) node {\scriptsize $y=f(x)$};
                 \draw (axis cs:.45,-10) node {\scriptsize $59$};
@@ -1540,7 +1549,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
           
@@ -1548,25 +1557,25 @@
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_0^1 f(x)\ dx = </m><var name="$a" width="4" />
+                      <m>\ds \int_0^1 f(x)\ dx = </m><var name="$a" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$b" width="4" />
+                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$b" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^3 f(x)\ dx = </m><var name="$c" width="4" />
+                      <m>\ds \int_0^3 f(x)\ dx = </m><var name="$c" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_1^2 -3f(x)\ dx = </m><var name="$d" width="4" />
+                      <m>\ds \int_1^2 -3f(x)\ dx = </m><var name="$d" width="4"/>
                     </p>
                   </li>
                 </ol>
@@ -1587,36 +1596,30 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_11"  width="47%">
+              <image xml:id="img_05_02_ex_11" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3,4},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-1.5,ymax=1.5,%
-    xmin=-.9,xmax=4.5%
+
+                \begin{axis}[           
+                axis on top,
+                xtick={1,2,3,4},
+                ymin=-1.5,ymax=1.5,
+                xmin=-.9,xmax=4.5
                 ]
 
-                \addplot [{\coloronefill},fill={\coloronefill},domain=0:4,area style,smooth] {sin(deg(3.14159*x/2))} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},smooth,samples=40,domain=0:4] {sin(deg(3.14159*x/2))};
+                \addplot [firstcurvestyle,areastyle,domain=0:4] {sin(deg(3.14159*x/2))} \closedcycle;
+                \addplot [firstcurvestyle,-,domain=0:4,samples=50] {sin(deg(3.14159*x/2))};
 
                 \draw (axis cs:3,0.75) node {\scriptsize $f(x)=\sin(\pi x/2)$};
                 \draw (axis cs:1,.6) node {\scriptsize $4/\pi$};
                 \draw (axis cs:3,-.6) node {\scriptsize $4/\pi$};
-                %\draw (axis cs:2.6,10) node {\scriptsize $21$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
     
@@ -1624,25 +1627,25 @@
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$a" width="4" />
+                      <m>\ds \int_0^2 f(x)\ dx = </m><var name="$a" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^4 f(x)\ dx=</m><var name="$b" width="4" />
+                      <m>\ds \int_2^4 f(x)\ dx=</m><var name="$b" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^4 f(x)\ dx =</m><var name="$c" width="4" />
+                      <m>\ds \int_0^4 f(x)\ dx =</m><var name="$c" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^1 f(x)\ dx= </m><var name="$d" width="4" />
+                      <m>\ds \int_0^1 f(x)\ dx= </m><var name="$d" width="4"/>
                     </p>
                   </li>
                 </ol>
@@ -1663,28 +1666,22 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_12"  width="47%">
+              <image xml:id="img_05_02_ex_12" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={-2,-1,1,2},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-5.5,ymax=11,%
-    xmin=-2.5,xmax=2.5%
+
+                \begin{axis}[
+                axis on top,
+                xtick={-2,-1,1,2},
+                ymin=-5.5,ymax=11,
+                xmin=-2.5,xmax=2.5
                 ]
 
-                \addplot [{\coloronefill},fill={\coloronefill},domain=-2:2,area style] {3*x^2-3} |- (axis cs:-2,0) --cycle;
-                \addplot [thick, {\colorone},smooth,samples=40,domain=-2:2] {3*x^2-3};
+                \addplot [firstcurvestyle,areastyle,domain=-2:2] {3*x^2-3} \closedcycle;
+                \addplot [firstcurvestyle,-,domain=-2:2,samples=40] {3*x^2-3};
 
-                %\draw (axis cs:-.9,8) node {\scriptsize $f(x)=3x^2-3$};
                 \draw (axis cs:1.5,10) node {\scriptsize $f(x)=3x^2-3$};
                 \draw (axis cs:-1.5,1) node {\scriptsize $4$};
                 \draw (axis cs:1.5,1) node {\scriptsize $4$};
@@ -1693,7 +1690,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
           
@@ -1701,25 +1698,25 @@
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_{-2}^{-1} f(x)\ dx = </m><var name="$a" width="4" />
+                      <m>\ds \int_{-2}^{-1} f(x)\ dx = </m><var name="$a" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_1^2 f(x)\ dx = </m><var name="$b" width="4" />
+                      <m>\ds \int_1^2 f(x)\ dx = </m><var name="$b" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_{-1}^1 f(x)\ dx = </m><var name="$c" width="4" />
+                      <m>\ds \int_{-1}^1 f(x)\ dx = </m><var name="$c" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^1 f(x)\ dx = </m><var name="$d" width="4" />
+                      <m>\ds \int_0^1 f(x)\ dx = </m><var name="$d" width="4"/>
                     </p>
                   </li>
                 </ol>
@@ -1740,38 +1737,32 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_13"  width="47%">
+              <image xml:id="img_05_02_ex_13" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-.1,ymax=4.2,%
-    xmin=-.2,xmax=2.1%
+
+                \begin{axis}[
+                axis on top,
+                xtick={1,2},
+                ymin=-.1,ymax=4.2,
+                xmin=-.2,xmax=2.1
                 ]
 
-                \addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},smooth,samples=40,domain=0:2] {x^2};
+                \addplot [firstcurvestyle,areastyle,domain=0:2] {x^2} \closedcycle;
+                \addplot [firstcurvestyle,-,domain=0:2] {x^2};
 
-                \draw [thick,{\colorone},dashed] (axis cs:1,0) -- (axis cs:1,1);
+                \draw [thick,firstcolor,dashed] (axis cs:1,0) -- (axis cs:1,1);
 
                 \draw (axis cs:1,3) node {\scriptsize $f(x)=x^2$};
                 \draw (axis cs:.7,.2) node {\scriptsize $1/3$};
                 \draw (axis cs:1.5,.2) node {\scriptsize $7/3$};
-                %\draw (axis cs:.3,-1) node {\scriptsize $-4$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
           
@@ -1779,25 +1770,25 @@
                 <ol cols="2">
                   <li>
                     <p>
-                      <m>\ds \int_{0}^{2} 5x^2\ dx = </m><var name="$a" width="4" />
+                      <m>\ds \int_{0}^{2} 5x^2\ dx = </m><var name="$a" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_0^2 (x^2+3)\ dx = </m><var name="$b" width="4" />
+                      <m>\ds \int_0^2 (x^2+3)\ dx = </m><var name="$b" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_{1}^3 (x-1)^2\ dx = </m><var name="$c" width="4" />
+                      <m>\ds \int_{1}^3 (x-1)^2\ dx = </m><var name="$c" width="4"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_2^4 \big((x-2)^2+5\big)\ dx = </m><var name="$d" width="4" />
+                      <m>\ds \int_2^4 \big((x-2)^2+5\big)\ dx = </m><var name="$d" width="4"/>
                     </p>
                   </li>
                 </ol>
@@ -1831,33 +1822,27 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_14"  width="47%">
+              <image xml:id="img_05_02_ex_14" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-1.1,ymax=2.2,%
-    xmin=-.2,xmax=3.1%
+
+                \begin{axis}[
+                xtick={1,2,3},
+                ymin=-1.1,ymax=2.2,
+                xmin=-.2,xmax=3.1
                 ]
 
-                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},domain=0:3] {-x+2};
+                \addplot+ [-,domain=0:3] {-x+2};
 
                 \end{axis}
 
                 \node [right] at (myplot.right of origin) {\scriptsize $t$ (s)};
                 \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
+
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
 
@@ -1869,7 +1854,7 @@
                     </p>
 
                     <p>
-                      <var name="$mv" width="20" />
+                      <var name="$mv" width="20"/>
                     </p>
                   </li>
 
@@ -1879,7 +1864,7 @@
                     </p>
 
                     <p>
-                      <var name="$md" width="20" />
+                      <var name="$md" width="20"/>
                     </p>
                   </li>
 
@@ -1889,7 +1874,7 @@
                     </p>
 
                     <p>
-                      <var name="$td" width="20" />
+                      <var name="$td" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1912,36 +1897,31 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_05_02_ex_15"  width="47%">
+              <image xml:id="img_05_02_ex_15" width="47%">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-    %x=.37\marginparwidth,
-    %y=.37\marginparwidth,
-    xtick={1,2,3,4,5},%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %			ytick={1,2,3},
-    %%extra y ticks={-5,-3,...,7},%
-    ymin=-.5,ymax=3.2,%
-    xmin=-.2,xmax=5.3%
+
+                \begin{axis}[
+                axis on top,
+                xtick={1,2,3,4,5},
+                ymin=-.5,ymax=3.2,
+                xmin=-.2,xmax=5.3
                 ]
 
-                %\addplot [{\coloronefill},fill={\coloronefill},domain=0:2,area style] {x^2} |- (axis cs:0,0) --cycle;
-                \addplot [thick, {\colorone},domain=0:1] {3};
-                \addplot [thick, {\colorone},domain=1:2] {-3*(x-2)};
-                \addplot [thick, {\colorone},domain=2:3] {2*(x-2)};
-                \addplot [thick, {\colorone},domain=3:5] {2};
+                \addplot+ [-,domain=0:1] {3};
+                \addplot [firstcurvestyle,-,domain=1:2] {-3*(x-2)};
+                \addplot [firstcurvestyle,-,domain=2:3] {2*(x-2)};
+                \addplot [firstcurvestyle,-,domain=3:5] {2};
 
                 \end{axis}
 
                 \node [right] at (myplot.right of origin) {\scriptsize $t$ (s)};
                 \node [above] at (myplot.above origin) {\scriptsize $y$ (ft/s)};
+
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
 
@@ -1953,7 +1933,7 @@
                     </p>
 
                     <p>
-                      <var name="$mv" width="20" />
+                      <var name="$mv" width="20"/>
                     </p>
                   </li>
 
@@ -1963,7 +1943,7 @@
                     </p>
 
                     <p>
-                      <var name="$md" width="20" />
+                      <var name="$md" width="20"/>
                     </p>
                   </li>
 
@@ -1973,7 +1953,7 @@
                     </p>
 
                     <p>
-                      <var name="$td" width="20" />
+                      <var name="$td" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -2012,7 +1992,7 @@
                     </p>
 
                     <p>
-                      <var name="$mv" width="20" />
+                      <var name="$mv" width="20"/>
                     </p>
                   </li>
 
@@ -2022,7 +2002,7 @@
                     </p>
 
                     <p>
-                      <var name="$md" width="20" />
+                      <var name="$md" width="20"/>
                     </p>
                   </li>
 
@@ -2032,7 +2012,7 @@
                     </p>
 
                     <p>
-                      At t = <var name="$md_t" width="20" />
+                      At t = <var name="$md_t" width="20"/>
                     </p>
                   </li>
 
@@ -2043,7 +2023,7 @@
                     </p>
 
                     <p>
-                      At t = <var name="$h0_t" width="20" />
+                      At t = <var name="$h0_t" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -2082,7 +2062,7 @@
                     </p>
 
                     <p>
-                      <var name="$v0" width="20" />
+                      <var name="$v0" width="20"/>
                     </p>
                   </li>
 
@@ -2092,7 +2072,7 @@
                     </p>
 
                     <p>
-                      <var name="$d" width="20" />
+                      <var name="$d" width="20"/>
                     </p>
                   </li>
 
@@ -2102,7 +2082,7 @@
                     </p>
 
                     <p>
-                      <var name="$h0_2" width="20" />
+                      <var name="$h0_2" width="20"/>
                     </p>
                   </li>
 
@@ -2112,7 +2092,7 @@
                     </p>
 
                     <p>
-                      <var name="$hmax" width="20" />
+                      <var name="$hmax" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -2176,7 +2156,7 @@
               </p>
 
               <p>
-                <var name="$a" width="10" />
+                <var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2196,7 +2176,7 @@
               </p>
 
               <p>
-                <var name="$a" width="10" />
+                <var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2216,7 +2196,7 @@
               </p>
 
               <p>
-                <var name="$a" width="10" />
+                <var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2241,7 +2221,7 @@
               </p>
 
               <p>
-                <m>a = </m><var name="$a" width="20" />
+                <m>a = </m><var name="$a" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -2302,7 +2282,7 @@
               </p>
 
               <p>
-                <var name="$a" width="10" />
+                <var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2322,7 +2302,7 @@
               </p>
 
               <p>
-                <var name="$a" width="10" />
+                <var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2342,7 +2322,7 @@
               </p>
 
               <p>
-                <m>a = </m><var name="$a" width="10" />
+                <m>a = </m><var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2367,7 +2347,7 @@
               </p>
 
               <p>
-                <var name="$a" width="10" />
+                <var name="$a" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2397,7 +2377,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2418,7 +2398,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2440,7 +2420,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2461,7 +2441,7 @@
               </p>
 
               <p>
-                <var name="$F" width="40" />
+                <var name="$F" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2470,4 +2450,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

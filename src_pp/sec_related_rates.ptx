@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_related_rates">
   <title>Related Rates</title>
   <p>
@@ -9,11 +8,11 @@
     the circumference and radius of a circle are related by <m>C=2\pi r</m>;
     knowing that <m>C</m> is
     <quantity>
-      <mag>6\pi</mag><unit base="inch" />
+      <mag>6\pi</mag><unit base="inch"/>
     </quantity>
     determines the radius must be
     <quantity>
-      <mag>3</mag><unit base="inch" />
+      <mag>3</mag><unit base="inch"/>
     </quantity>.
   </p>
 
@@ -52,7 +51,7 @@
       <p>
         The radius of a circle is growing at a rate of
         <quantity>
-          <mag>5</mag><unit base="inch" /><per base="hour" />
+          <mag>5</mag><unit base="inch"/><per base="hour"/>
         </quantity>.
         At what rate is the circumference growing?
       </p>
@@ -63,7 +62,7 @@
         We are given information about how the length of <m>r</m> changes with respect to time;
         that is, we are told <m>\lz{r}{t}</m> is
         <quantity>
-          <mag>5</mag><unit base="inch" /><per base="hour" />
+          <mag>5</mag><unit base="inch"/><per base="hour"/>
         </quantity>.
         We want to know how the length of <m>C</m> changes with respect to time,
         i.e., we want to know <m>\lz{C}{t}</m>.
@@ -82,7 +81,7 @@
       <p>
         As we know <m>\lz{r}{t}</m> is
         <quantity>
-          <mag>5</mag><unit base="inch" /><per base="hour" />
+          <mag>5</mag><unit base="inch"/><per base="hour"/>
         </quantity>, we know
         <me>
           \lz{C}{t} = 2\pi 5 = 10\pi \approx 31.4\text{ in/hr }
@@ -175,12 +174,12 @@
       <p>
         Water streams out of a faucet at a rate of
         <quantity>
-          <mag>2</mag><unit base="inch" exp="3" /><per base="second" />
+          <mag>2</mag><unit base="inch" exp="3"/><per base="second"/>
         </quantity>
         onto a flat surface at a constant rate,
         forming a circular puddle that is
         <quantity>
-          <mag>1/8</mag><unit base="inch" />
+          <mag>1/8</mag><unit base="inch"/>
         </quantity>
         deep.
       </p>
@@ -212,17 +211,17 @@
               using <q>common sense</q> or related rates.
               The common sense method states that the volume of the puddle is growing by
               <quantity>
-                <mag>2</mag><unit base="inch" exp="3" /><per base="second" />
+                <mag>2</mag><unit base="inch" exp="3"/><per base="second"/>
               </quantity>, where
               <me>
                 \text{volume of puddle}=\text{area of circle}\times\text{depth}
               </me>.
               Since the depth is constant at
               <quantity>
-                <mag>1/8</mag><unit base="inch" />
+                <mag>1/8</mag><unit base="inch"/>
               </quantity>, the area must be growing by
               <quantity>
-                <mag>16</mag><unit base="inch" exp="2" /><per base="second" />
+                <mag>16</mag><unit base="inch" exp="2"/><per base="second"/>
               </quantity>
               since <m>16\cdot \frac{1}{8}=2</m>.
               This approach reveals the underlying related rates principle.
@@ -254,7 +253,7 @@
               and hence <m>\lz{A}{t} = 16</m>.
               Thus the area is growing by
               <quantity>
-                <mag>16</mag><unit base="inch" exp="2" /><per base="second" />
+                <mag>16</mag><unit base="inch" exp="2"/><per base="second"/>
               </quantity>.
             </p>
           </li>
@@ -268,10 +267,10 @@
               we will use a known volume formula,
               <m>V=\pi r^2 h</m> where <m>V</m> is the volume of the puddle (in
               <quantity>
-                <unit base="inch" exp="3" />
+                <unit base="inch" exp="3"/>
               </quantity>, <m>r</m> is the radius
               (in inches)
-              and <m>h</m> is the height (<ie /> depth) of the puddle in inches. (Notice that this formula is equivalent to <m>V=\text{area} \times \text{depth}</m>.
+              and <m>h</m> is the height (<ie/> depth) of the puddle in inches. (Notice that this formula is equivalent to <m>V=\text{area} \times \text{depth}</m>.
               We know that the height (depth) is a constant <m>1/8</m> inch.
               Since this quantity does not change in the problem,
               we can safely substitute this value now.
@@ -288,7 +287,7 @@
               </md>
               We know that  <m>\lz{V}{t}</m> is
               <quantity>
-                <mag>2</mag><unit base="inch" exp="3" /><per base="second" />
+                <mag>2</mag><unit base="inch" exp="3"/><per base="second"/>
               </quantity>.
               So we have:
               <me>
@@ -304,7 +303,7 @@
               <em>the rate at which the radius is growing depends on how big the circle already is.</em>
               If the circle is very large, adding
               <quantity>
-                <mag>2</mag><unit base="inch" exp="3" /><per base="second" />
+                <mag>2</mag><unit base="inch" exp="3"/><per base="second"/>
               </quantity>
               of water will not make the circle much bigger at all.
               If the circle dime-sized,
@@ -316,7 +315,7 @@
               We need to specify a current (instantaneous) value of the radius in order to know a rate of change.
               When the puddle has a radius of
               <quantity>
-                <mag>10</mag><unit base="inch" />
+                <mag>10</mag><unit base="inch"/>
               </quantity>, the radius is growing at a rate of
               <me>
                 \lz{r}{t} = \frac{8}{10\pi} = \frac{4}{5\pi} \approx 0.25\text{ in/s }
@@ -334,10 +333,10 @@
       <p>
         Radar guns measure the rate of distance change between the gun and the object it is measuring.
         For instance, a reading of <q><quantity>
-          <mag>55</mag><unit base="mileperhour" />
+          <mag>55</mag><unit base="mileperhour"/>
         </quantity></q> means the object is moving away from the gun at a rate of <m>55</m> miles per hour,
         whereas a measurement of <q><quantity>
-          <mag>-25</mag><unit base="mileperhour" />
+          <mag>-25</mag><unit base="mileperhour"/>
         </quantity></q> would mean that the object is approaching the gun at a rate of <m>25</m> miles per hour.
       </p>
 
@@ -346,15 +345,15 @@
         attached to a police car) then radar readouts are only immediately understandable if the gun and the object are moving along the same line.
         If a police officer is traveling
         <quantity>
-          <mag>60</mag><unit base="mileperhour" />
+          <mag>60</mag><unit base="mileperhour"/>
         </quantity>
         and gets a readout of
         <quantity>
-          <mag>15</mag><unit base="mileperhour" />
+          <mag>15</mag><unit base="mileperhour"/>
         </quantity>, he knows that the car ahead of him is moving away at a rate of <m>15</m> miles an hour,
         meaning the car is traveling
         <quantity>
-          <mag>75</mag><unit base="mileperhour" />
+          <mag>75</mag><unit base="mileperhour"/>
         </quantity>. (This straight-line principle is one reason officers park on the side of the highway and try to shoot straight back down the road.
         It gives the most accurate reading.)
       </p>
@@ -362,13 +361,13 @@
       <p>
         Suppose an officer is driving due north at
         <quantity>
-          <mag>30</mag><unit base="mileperhour" />
+          <mag>30</mag><unit base="mileperhour"/>
         </quantity>
         and sees a car moving due east,
         as shown in <xref ref="fig_rr3">Figure</xref>.
         Using his radar gun, he measures a reading of
         <quantity>
-          <mag>20</mag><unit base="mileperhour" />
+          <mag>20</mag><unit base="mileperhour"/>
         </quantity>.
         By using landmarks,
         he believes both he and the other car are about <m>1/2</m> mile from the intersection of their two roads.
@@ -379,20 +378,22 @@
         <image xml:id="img_rr3" width="47%">
           <description></description>
           <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}[>=latex]
+          
+          \begin{tikzpicture}[&gt;=latex]
+          
           \draw(0,0) -- (3,0) node [pos=.5,above] {\scriptsize $B=1/2$} -- (0,-3) node [pos=.4,below] {\scriptsize $C$}-- (0,0) node [pos=.5,rotate=90,shift={(.1,.2)}] {\scriptsize $A=1/2$};
 
-          \draw[thick] (0,-3.5) -- (0,.5) node [above] {\scriptsize $N$};
-          \draw[thick] (-.5,0) -- (3.5,0) node [right] {\scriptsize $E$};
-          \filldraw[fill={\colortwo},draw={\colortwo}] (0,-3) circle (2pt) node [right] {\scriptsize Officer};
-          \filldraw[fill=black,draw=black] (3,0) circle (2pt) node [below ] {\scriptsize \quad Car};
+          \draw [thick] (0,-3.5) -- (0,.5) node [above] {\scriptsize $N$};
+          \draw [thick] (-.5,0) -- (3.5,0) node [right] {\scriptsize $E$};
 
-          \draw[->,thick] (-.2,-3.3) -- (-.2,-2.7);
-          \draw[->,thick] (2.7,.2) -- (3.3,.2);
+          \filldraw [fill=firstcolor,draw=secondcolor] (0,-3) circle (2pt) node [right] {\scriptsize Officer};
+          \filldraw [fill=black,draw=black] (3,0) circle (2pt) node [below ] {\scriptsize \quad Car};
+
+          \draw[-&gt;,thick] (-.2,-3.3) -- (-.2,-2.7);
+          \draw[-&gt;,thick] (2.7,.2) -- (3.3,.2);
 
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -400,7 +401,7 @@
       <p>
         If the speed limit on the other road is
         <quantity>
-          <mag>55</mag><unit base="mileperhour" />
+          <mag>55</mag><unit base="mileperhour"/>
         </quantity>, is the other driver speeding?
       </p>
     </statement>
@@ -443,7 +444,7 @@
       <p>
         We know the police officer is traveling at
         <quantity>
-          <mag>30</mag><unit base="mileperhour" />
+          <mag>30</mag><unit base="mileperhour"/>
         </quantity>; that is, <m>\lz{A}{t} = -30</m>.
         The reason this rate of change is negative is that <m>A</m> is getting smaller;
         the distance between the officer and the intersection is shrinking.
@@ -494,12 +495,12 @@
       <p>
         A camera is placed on a tripod
         <quantity>
-          <mag>10</mag><unit base="foot" />
+          <mag>10</mag><unit base="foot"/>
         </quantity>
         from the side of a road.
         The camera is to turn to track a car that is to drive by at
         <quantity>
-          <mag>100</mag><unit base="mileperhour" />
+          <mag>100</mag><unit base="mileperhour"/>
         </quantity>
         for a promotional video.
         The video's planners want to know what kind of motor the tripod should be equipped with in order to properly track the car as it passes by.
@@ -511,17 +512,17 @@
         <image xml:id="img_rr4" width="47%">
           <description></description>
           <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}[>=latex]
+          
+          \begin{tikzpicture}[&gt;=latex]
 
-          \draw (-3,0) -- (0,0) -- (0,-2) node [shift={(-5pt,10pt)}] {\small $\theta$} node [right,pos=.5] {\scriptsize 10ft}-- cycle;
-          \draw [<->, thick] (-3.5,0) -- node [below,pos=.5] {\scriptsize $x$} (.5,0);
-          \draw [fill={\colortwo},draw={\colortwo}] (-3,0) circle (2pt);
+          \draw (-3,0) -- (0,0) -- (0,-2) node [shift={(-5pt,10pt)}] {\small $\theta$} node [right,pos=.5] {\scriptsize 10ft} -- cycle;
+          \draw [&lt;-&gt;, thick] (-3.5,0) -- node [below,pos=.5] {\scriptsize $x$} (.5,0);
+          \draw [fill=firstcolor,draw=secondcolor] (-3,0) circle (2pt);
           \draw [fill=black] (0,-2) circle (2pt);
-          \draw [->] (-3,.2) -- (-2,.2) node [above,pos=.5] {\scriptsize 100mph};
+          \draw [-&gt;] (-3,.2) -- (-2,.2) node [above,pos=.5] {\scriptsize 100mph};
 
           \end{tikzpicture}
-          ]]>
+          
           </latex-image>
         </image>
       </figure>
@@ -548,7 +549,7 @@
       </p>
 
       <p>
-        Now take the derivative of both sides of Equation <xref ref="eq_rr4" /> using implicit differentiation:
+        Now take the derivative of both sides of Equation <xref ref="eq_rr4"/> using implicit differentiation:
         <md>
           <mrow>\tan(\theta) \amp = \frac{x}{10}</mrow>
           <mrow>\lzoo{t}{\tan(\theta)} \amp = \lzoo{t}{\frac{x}{10}}</mrow>
@@ -563,10 +564,10 @@
       <p>
         As the car is moving at
         <quantity>
-          <mag>100</mag><unit base="mileperhour" />
+          <mag>100</mag><unit base="mileperhour"/>
         </quantity>, we have that <m>\lz{x}{t}</m> is
         <quantity>
-          <mag>-100</mag><unit base="mileperhour" />
+          <mag>-100</mag><unit base="mileperhour"/>
         </quantity>
         (as in the last example,
         since <m>x</m> is getting smaller as the car travels,
@@ -574,15 +575,15 @@
         We need to convert the measurements so they use the same units
         (we chose
         <quantity>
-          <unit base="foot" />
+          <unit base="foot"/>
         </quantity>);
         rewrite
         <quantity>
-          <mag>-100</mag><unit base="mileperhour" />
+          <mag>-100</mag><unit base="mileperhour"/>
         </quantity>
         in terms of
         <quantity>
-          <unit base="foot" /><per base="second" />
+          <unit base="foot"/><per base="second"/>
         </quantity>:
         <md>
           <mrow>\lz{x}{t} \amp = -100\frac{\text{mi} }{\text{ hr } }</mrow>
@@ -601,7 +602,7 @@
         or when <m>\theta = 0</m>.
         We also know that we should get an answer that is in
         <quantity>
-          <unit base="radian" /><per base="second" />
+          <unit base="radian"/><per base="second"/>
         </quantity>.
         Since <m>\cos(\theta)</m> is a <q>dimensionless</q> measure,
         it won't contribute to the units.
@@ -614,7 +615,7 @@
       <p>
         With <m>\lz{x}{t}</m> approximately
         <quantity>
-          <mag>-146.7</mag><unit base="foot" /><per base="second" />
+          <mag>-146.7</mag><unit base="foot"/><per base="second"/>
         </quantity>, we have
         <md>
           <mrow>\lz{\theta}{t} \amp \approx -\frac{1}{10\text{ ft } }146.67\text{ ft/s }</mrow>
@@ -631,11 +632,11 @@
       <p>
         What is the practical meaning of
         <quantity>
-          <mag>-14.667</mag><unit base="radian" /><per base="second" />
+          <mag>-14.667</mag><unit base="radian"/><per base="second"/>
         </quantity>?
         Recall that <m>1</m> circular revolution goes through <m>2\pi</m> radians, thus
         <quantity>
-          <mag>14.667</mag><unit base="radian" /><per base="second" />
+          <mag>14.667</mag><unit base="radian"/><per base="second"/>
         </quantity>
         means <m>14.667/(2\pi)\approx 2.33</m> revolutions per second.
         The negative sign indicates the camera is rotating in a clockwise fashion.
@@ -729,7 +730,7 @@
               <p>
                 Water flows onto a flat surface at a rate of
                 <quantity>
-                  <mag>5</mag><unit prefix="centi" base="meter" exp="3" /><per base="second" />
+                  <mag>5</mag><unit prefix="centi" base="meter" exp="3"/><per base="second"/>
                 </quantity>
                 forming a circular puddle 10mm deep.
                 How fast is the radius growing when the radius is:
@@ -853,7 +854,7 @@
               </p>
 
               <p>
-                <var name="$a" width="20" />
+                <var name="$a" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -927,7 +928,7 @@
             </setup>
             <statement>
               <p>
-                An F-22 aircraft is flying at 500mph with an elevation of 10,000ft on a straight<ndash />line path that will take it directly over an anti<ndash />aircraft gun.
+                An F-22 aircraft is flying at 500mph with an elevation of 10,000ft on a straight<ndash/>line path that will take it directly over an anti<ndash/>aircraft gun.
               </p>
 
               <p>
@@ -993,7 +994,7 @@
             </setup>
             <statement>
               <p>
-                An F-22 aircraft is flying at 500mph with an elevation of 100ft on a straight<ndash />line path that will take it directly over an anti<ndash />aircraft gun as in <xref ref="exer_04_02_ex_07">Exercise</xref>
+                An F-22 aircraft is flying at 500mph with an elevation of 100ft on a straight<ndash/>line path that will take it directly over an anti<ndash/>aircraft gun as in <xref ref="exer_04_02_ex_07">Exercise</xref>
                 (note the lower elevation here).
               </p>
 
@@ -1064,8 +1065,8 @@
               <image xml:id="img_04_02_ex_09">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=latex]
+                
+                \begin{tikzpicture}[&gt;=latex]
 
                 \draw [top color=brown, bottom color=brown!50!white,draw=black] (0,0) rectangle (20pt,30pt);
                 \draw [fill=black] (0,30pt) -- (10pt,38pt) -- (20pt,30pt) -- cycle;
@@ -1075,9 +1076,10 @@
                 \draw [thick] (20pt,25pt) -- node [pos=.5,rotate=-67,yshift=5pt] {\scriptsize 24 ft} (30pt,0);
 
                 \draw [thick] (0,0) -- (35pt,0);
-                \draw [->,>=latex] (34pt,2pt) -- node [above right,pos=.5] {\scriptsize 1 ft/s} (50pt,2pt);
+                \draw [-&gt;] (34pt,2pt) -- node [above right,pos=.5] {\scriptsize 1 ft/s} (50pt,2pt);
+
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
 
@@ -1157,8 +1159,8 @@
               <image xml:id="img_04_02_ex_10">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=latex]
+                
+                \begin{tikzpicture}[&gt;=latex]
 
                 \draw [top color=blue!60!white, bottom color=blue!10!white,draw=blue] (-5pt,5pt) rectangle (100pt,-5pt);
                 \draw [thick,fill=brown] (-10pt,20pt) rectangle (8pt,22pt);
@@ -1171,20 +1173,10 @@
                 \draw [fill=black] (8pt,35pt) circle (2pt);
                 \draw (45pt,15pt) [dashed] -- (8pt,15pt) -- (8pt,35pt) node [pos=.4,xshift=7pt] {\scriptsize 10ft};
 
-                \draw [,>=latex,thick] (8pt,35pt) -- (45pt,15pt);
+                \draw [-,thick] (8pt,35pt) -- (45pt,15pt);
 
-                %
-                %
-                %\draw [fill=black] (0,30pt) -- (10pt,38pt) -- (20pt,30pt) -- cycle;
-                %\draw [fill=white] (7pt,15pt) rectangle (13pt,25pt);
-                %\draw (10pt,15pt) -- (10pt,25pt) (7pt,20pt) -- (13pt,20pt);
-                %
-                %\draw [thick] (20pt,25pt) -- node [pos=.5,rotate=-67,yshift=5pt] {\scriptsize 24 ft} (30pt,0);
-                %
-                %\draw [thick] (0,0) -- (35pt,0);
-                %\draw [->,>=latex] (34pt,2pt) -- node [above right,pos=.5] {\scriptsize 1 ft/s} (50pt,2pt);
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
 
@@ -1266,7 +1258,7 @@
                     </p>
 
                     <p>
-                      <var name="$a" width="20" />
+                      <var name="$a" width="20"/>
                     </p>
                   </li>
 
@@ -1276,7 +1268,7 @@
                     </p>
 
                     <p>
-                      <var name="$b" width="20" />
+                      <var name="$b" width="20"/>
                     </p>
                   </li>
 
@@ -1286,7 +1278,7 @@
                     </p>
 
                     <p>
-                      <var name="$c" width="20" />
+                      <var name="$c" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1297,7 +1289,7 @@
                 </p>
 
                 <p>
-                  <var name="$d" width="20" />
+                  <var name="$d" width="20"/>
                 </p>
             </statement>
         </webwork>
@@ -1329,8 +1321,8 @@
               <image xml:id="img_04_02_ex_12">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=latex,x=1pt,y=1pt]
+                
+                \begin{tikzpicture}[&gt;=latex,x=1pt,y=1pt]
 
                 \draw [thick](0,40) -- (55,40);
                 \draw [thick] (0,0) -- (55,0);
@@ -1342,11 +1334,12 @@
                 \draw (35,8) -- (35,4) -- (33,0) (35,4) -- (37,0) (33,6) -- (37,6);
 
                 \draw (-4,5) -- (-1,5)  (-2.5,5) -- (-2.5,35) node [pos=.5,draw,fill=white,draw=white,rotate=90] {\scriptsize 30 ft}
-                (-4,35) -- (-1,35);
+                      (-4,35) -- (-1,35);
 
-                \draw [thick,->](40,5) --(55,5) node[pos=.5,above] {\scriptsize 2 ft/s};
+                \draw [thick,-&gt;] (40,5) --(55,5) node[pos=.5,above] {\scriptsize 2 ft/s};
+                
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
 
@@ -1363,7 +1356,7 @@
                     </p>
 
                     <p>
-                      <var name="$a" width="20" />
+                      <var name="$a" width="20"/>
                     </p>
                   </li>
 
@@ -1373,7 +1366,7 @@
                     </p>
 
                     <p>
-                      <var name="$b" width="20" />
+                      <var name="$b" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1384,7 +1377,7 @@
               </p>
 
               <p>
-                <var name="$c" width="20" />
+                <var name="$c" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1423,7 +1416,7 @@
                     </p>
 
                     <p>
-                      <var name="$a" width="20" />
+                      <var name="$a" width="20"/>
                     </p>
                   </li>
 
@@ -1433,7 +1426,7 @@
                     </p>
 
                     <p>
-                      <var name="$b" width="20" />
+                      <var name="$b" width="20"/>
                     </p>
                   </li>
 
@@ -1443,7 +1436,7 @@
                     </p>
 
                     <p>
-                      <var name="$c" width="20" />
+                      <var name="$c" width="20"/>
                     </p>
                   </li>
 
@@ -1453,7 +1446,7 @@
                     </p>
 
                     <p>
-                      <var name="$d" width="20" />
+                      <var name="$d" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1490,7 +1483,7 @@
                     </p>
 
                     <p>
-                      <var name="$a" width="20" />
+                      <var name="$a" width="20"/>
                     </p>
                   </li>
 
@@ -1500,7 +1493,7 @@
                     </p>
 
                     <p>
-                      <var name="$b" width="20" />
+                      <var name="$b" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1532,7 +1525,7 @@
               </p>
 
               <p>
-                <var name="$a" width="20" />
+                <var name="$a" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1541,4 +1534,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
