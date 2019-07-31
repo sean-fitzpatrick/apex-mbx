@@ -101,11 +101,11 @@
     </p>
   </introduction>
 
-  <xi:include  href="sec_ABC.ptx" />
-  <xi:include  href="sec_disk.ptx" />
-  <xi:include  href="sec_shell_method.ptx" />
-  <xi:include  href="sec_arc_length.ptx" />
-  <xi:include  href="sec_work.ptx" />
+  <!-- <xi:include  href="sec_ABC.ptx" /> -->
+  <!-- <xi:include  href="sec_disk.ptx" /> -->
+  <!-- <xi:include  href="sec_shell_method.ptx" /> -->
+  <!-- <xi:include  href="sec_arc_length.ptx" /> -->
+  <!-- <xi:include  href="sec_work.ptx" /> -->
   <xi:include  href="sec_fluid_force.ptx" />
 </chapter>
 
