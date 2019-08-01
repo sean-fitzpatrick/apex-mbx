@@ -38,7 +38,9 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[axis equal image,
+
+            \begin{axis}[
+            axis equal image,
             axis on top,
             extra x tick labels={$a$,$b$},
             ytick={-1,1},
@@ -46,9 +48,8 @@
             xmin=-1.1,xmax=1.1
             ]
 
-            \addplot [{\coloronefill},fill={\coloronefill},domain=0:45] ({cos(x)},{sin(x)}) -- (axis cs:0,0)--cycle;
-
-            \addplot [{\colorone},domain=0:360,thick,smooth,samples=40] ({cos(x)},{sin(x)});
+            \addplot [firstcurvestyle,areastyle,domain=0:45] ({cos(x)},{sin(x)}) -- (axis cs:0,0) -- cycle;
+            \addplot [firstcurvestyle,-,domain=0:360,samples=80] ({cos(x)},{sin(x)});
 
             \filldraw (axis cs:.707,.707) circle (1pt) node [shift={(6pt,11pt)}] {\scriptsize ($\cos(\theta) $,$\sin(\theta) $)};
 
@@ -72,24 +73,17 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %			xtick={.25,.5,.75,1},%
-            %			extra x ticks={.5,3},
-            %			extra x tick labels={$a$,$b$},
-            %			ytick=\empty,
-            %%extra y ticks={-5,-3,...,7},%
-            %			minor x tick num=4,
-            ymin=-3.1,ymax=3.1,%
-            xmin=-3.1,xmax=3.1%
+
+            \begin{axis}[
+            axis on top,
+            ymin=-3.1,ymax=3.1,
+            xmin=-3.1,xmax=3.1
             ]
 
-            \addplot [{\coloronefill},fill={\coloronefill},domain=0:1.6] ({cosh(x)},{sinh(x)}) -- (axis cs:0,0)--cycle;
+            \addplot [firstcurvestyle,areastyle,domain=0:1.6] ({cosh(x)},{sinh(x)}) -- (axis cs:0,0) -- cycle;
 
-            \addplot [{\colorone},domain=-2:2,thick,smooth] ({cosh(x)},{sinh(x)});
-            \addplot [{\colorone},domain=-2:2,thick,smooth] ({-cosh(x)},{sinh(x)});
+            \addplot [firstcurvestyle,-,domain=-2:2,samples=40] ({cosh(x)},{sinh(x)});
+            \addplot [firstcurvestyle,-,domain=-2:2,samples=40] ({-cosh(x)},{sinh(x)});
 
             \filldraw (axis cs:2.577,2.376) circle (1pt) node [left] {\scriptsize ($\cosh(\theta) $,$\sinh(\theta) $)};
 
@@ -211,14 +205,18 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             ymin=-11,ymax=11,
             xmin=-3.5,xmax=3.5,
             scaled ticks=false
             ]
-            \addplot+[domain=-3.1:3.1]{0.5*(2.71828^x+2.71828^(-x))} node [pos=0.9, above left] {\scriptsize $f(x)=\cosh(x)$};
-            \addplot+[domain=-3:3]{0.5*(2.71828^x)} node [pos=0, above right] {\scriptsize $e^x/2$};
-            \addplot+[domain=-3:3, secondcurvestyle]{0.5*(2.71828^(-x)} node [pos=0.9, above right] {\scriptsize $e^{-x}/2$};
+
+            \addplot+ [domain=-3.1:3.1] {cosh(x)} node [pos=0.9, above left] {\scriptsize $f(x)=\cosh(x)$};
+            \addplot+ [domain=-3:3] {e^x/2} node [pos=0, above right] {\scriptsize $e^x/2$};
+            \addplot [secondcurvestyle,domain=-3:3] {e^(-x)/2} node [pos=0.9, above right] {\scriptsize $e^{-x}/2$};
+
             \end{axis}
 
             \end{tikzpicture}
@@ -237,14 +235,18 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             ymin=-11,ymax=11,
             xmin=-3.5,xmax=3.5,
             scaled ticks=false
             ]
-            \addplot+[domain=-3.1:3.1]{0.5*(2.71828^x-2.71828^(-x))} node [pos=0.9, above left] {\scriptsize $f(x)=\sinh(x)$};
-            \addplot+[domain=-3:3]{0.5*(2.71828^x)} node [pos=0, above right] {\scriptsize $e^x/2$};
-            \addplot+[domain=-3:3, secondcurvestyle]{-0.5*(2.71828^(-x)} node [pos=0.9, above right] {\scriptsize $-e^{-x}/2$};
+
+            \addplot+ [domain=-3.1:3.1] {0.5*(e^x-e^(-x))} node [pos=0.9, above left] {\scriptsize $f(x)=\sinh(x)$};
+            \addplot+ [domain=-3:3] {0.5*(e^x)} node [pos=0, above right] {\scriptsize $e^x/2$};
+            \addplot+ [secondcurvestyle,domain=-3:3] {-0.5*(e^(-x)} node [pos=0.9, above right] {\scriptsize $-e^{-x}/2$};
+
             \end{axis}
 
             \end{tikzpicture}
@@ -285,17 +287,20 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             ymin=-3.5,ymax=3.5,
             xmin=-3.5,xmax=3.5,
-            scaled ticks=false]
+            scaled ticks=false
+            ]
 
-            \addplot+[domain=-3:3]{(2.71828^x-2.71828^(-x))/(2.71828^x+2.71828^(-x))} node [pos=0.60,pin={120:$\scriptsize \tanh(x)$},inner sep=0pt] {};
+            \addplot+ [domain=-3:3] {(e^x-e^(-x))/(e^x+e^(-x))} node [pos=0.60,pin={120:$\scriptsize \tanh(x)$},inner sep=0pt] {};
 
-            \addplot+[solid,domain=-3:-.33]{(2.71828^x+2.71828^(-x))/(2.71828^x-2.71828^(-x))};
-            \addplot+[secondcurvestyle, solid,domain=.33:3]{(2.71828^x+2.71828^(-x))/(2.71828^x-2.71828^(-x))} node [pos=0.5,pin={45:$\scriptsize \coth(x)$},inner sep=0pt] {};
-            \addplot+[lineseg,dotted,domain=-3:3]{1};
-            \addplot+[lineseg,dotted,domain=-3:3]{-1};
+            \addplot+ [solid,domain=-3:-.33] {(e^x+e^(-x))/(e^x-e^(-x))};
+            \addplot [secondcurvestyle,solid,domain=.33:3,samples=30] {(e^x+e^(-x))/(e^x-e^(-x))} node [pos=0.5,pin={45:$\scriptsize \coth(x)$},inner sep=0pt] {};
+            \addplot+ [lineseg,dotted,domain=-3:3] {1};
+            \addplot+ [lineseg,dotted,domain=-3:3] {-1};
 
             \end{axis}
 
@@ -315,15 +320,17 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[axis on top,
+
+            \begin{axis}[
+            axis on top,
             ymin=-3.5,ymax=3.5,
             xmin=-3.5,xmax=3.5,
-            scaled ticks=false]
+            scaled ticks=false
+            ]
 
-            \addplot+[domain=-3:3]{(2/(2.71828^x+2.71828^(-x))} node [pos=0.50,pin={120:$\scriptsize \sech(x)$},inner sep=0pt] {};
-
-            \addplot+[solid,domain=-3:-.33]{2/(2.71828^x-2.71828^(-x))};
-            \addplot+[secondcurvestyle, solid,domain=.33:3]{2/(2.71828^x-2.71828^(-x))} node [pos=0.5,pin={45:$\scriptsize \csch(x)$},inner sep=0pt] {};
+            \addplot+ [domain=-3:3] {(2/(e^x+e^(-x))} node [pos=0.50,pin={120:$\scriptsize \sech(x)$},inner sep=0pt] {};
+            \addplot+ [solid,domain=-3:-.33] {2/(e^x-e^(-x))};
+            \addplot+ [secondcurvestyle,solid,domain=.33:3,samples=30] {2/(e^x-e^(-x))} node [pos=0.5,pin={45:$\scriptsize \csch(x)$},inner sep=0pt] {};
 
             \end{axis}
 
@@ -848,34 +855,22 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %     xtick=\empty,%
-            %     extra x ticks={.5,3},
-            %     extra x tick labels={$a$,$b$},
-            %     ytick={-.002,.002,.004},
-            %     yticklabels={$-0.002$,$0.002$,$0.004$},
-            %
-            %     extra y ticks={0.001},%
-            %     minor x tick num=4,
-            ymin=-.9,ymax=10.9,%
-            xmin=-.9,xmax=10.9,%
+
+            \begin{axis}[
+            axis on top,
+            ymin=-.9,ymax=10.9,
+            xmin=-.9,xmax=10.9,
             scaled ticks=false
             ]
 
-            \addplot [{\colorone},thick,smooth] coordinates {(0,1.)(0.1,1.01) (0.2,1.02) (0.3,1.05) (0.4,1.08) (0.5,1.13) (0.6,1.19)(0.7,1.26) (0.8,1.34) (0.9,1.43) (1.,1.54) (1.1,1.67) (1.2,1.81) (1.3,1.97) (1.4,2.15) (1.5,2.35) (1.6,2.58) (1.7,2.83) (1.8,3.11)(1.9,3.42) (2.,3.76) (2.1,4.14) (2.2,4.57) (2.3,5.04) (2.4,5.56)
-            (2.5,6.13) (2.6,6.77) (2.7,7.47) (2.8,8.25) (2.9,9.11) (3.,10.1)};
+            \addplot+ [-,domain=0:3] {cosh(x)};
+            \addplot+ [-,domain=0:3,swapaxes] (cosh(x),x);
+
+            \addplot [dashed,domain=-.5:10] {x};
 
             \draw (axis cs:8,4) node {\scriptsize $y=\cosh^{-1}(x) $};
             \draw (axis cs:5.6,10) node {\scriptsize $y=\cosh(x) $};
 
-            \addplot [{\colortwo},smooth,thick] coordinates {(1.,0)(1.1,0.444)(1.2,0.622)(1.3,0.756)(1.4,0.867)(1.5,0.962)(1.6,1.05)(1.7,1.12)(1.8,1.19)(1.9,1.26)(2.,1.32)(2.1,1.37)(2.2,1.43)(2.3,1.48)(2.4,1.52)(2.5,1.57)(2.6,1.61)(2.7,1.65)(2.8,1.69)(2.9,1.73)(3.,1.76)(3.1,1.8)(3.2,1.83)(3.3,1.86)(3.4,1.89)(3.5,1.92)(3.6,1.95)(3.7,1.98)(3.8,2.01)(3.9,2.04)(4.,2.06)(4.1,2.09)(4.2,2.11)(4.3,2.14)(4.4,2.16)(4.5,2.18)(4.6,2.21)(4.7,2.23)(4.8,2.25)(4.9,2.27)(5.,2.29)(5.1,2.31)(5.2,2.33)(5.3,2.35)(5.4,2.37)(5.5,2.39)(5.6,2.41)(5.7,2.43)(5.8,2.44)(5.9,2.46)(6.,2.48)(6.1,2.49)(6.2,2.51)(6.3,2.53)(6.4,2.54)(6.5,2.56)(6.6,2.57)(6.7,2.59)(6.8,2.6)(6.9,2.62)(7.,2.63)(7.1,2.65)(7.2,2.66)(7.3,2.68)(7.4,2.69)(7.5,2.7)(7.6,2.72)(7.7,2.73)(7.8,2.74)(7.9,2.76)(8.,2.77)(8.1,2.78)(8.2,2.79)(8.3,2.81)(8.4,2.82)(8.5,2.83)(8.6,2.84)(8.7,2.85)(8.8,2.86)(8.9,2.88)(9.,2.89)(9.1,2.9)(9.2,2.91)(9.3,2.92)(9.4,2.93)(9.5,2.94)(9.6,2.95)(9.7,2.96)(9.8,2.97)(9.9,2.98)(10.,2.99)};
-
-            \addplot [dashed,domain=-.5:10] {x};
-
-            %\draw (axis cs:2.4,-0.002) node {\scriptsize $f(x)$};
             \end{axis}
 
             \end{tikzpicture}
@@ -894,35 +889,25 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %     xtick=\empty,%
-            %     extra x ticks={.5,3},
-            %     extra x tick labels={$a$,$b$},
-            %     ytick={-.002,.002,.004},
-            %     yticklabels={$-0.002$,$0.002$,$0.004$},
-            %
-            %     extra y ticks={0.001},%
-            %     minor x tick num=4,
-            ymin=-10.9,ymax=10.9,%
-            xmin=-10.9,xmax=10.9,%
+
+            \begin{axis}[
+            axis on top,
+            ymin=-10.9,ymax=10.9,
+            xmin=-10.9,xmax=10.9,
             scaled ticks=false
             ]
 
-            \addplot [{\colorone},thick,smooth] coordinates {(-3.,-10.) (-2.9,-9.06) (-2.8,-8.19) (-2.7,-7.41) (-2.6,-6.69)(-2.5,-6.05) (-2.4,-5.47) (-2.3,-4.94) (-2.2,-4.46) (-2.1,-4.02)(-2.,-3.63) (-1.9,-3.27) (-1.8,-2.94) (-1.7,-2.65) (-1.6,-2.38)(-1.5,-2.13) (-1.4,-1.9) (-1.3,-1.7) (-1.2,-1.51) (-1.1,-1.34)(-1.,-1.18) (-0.9,-1.03) (-0.8,-0.888) (-0.7,-0.759) (-0.6,-0.637)(-0.5,-0.521) (-0.4,-0.411) (-0.3,-0.305) (-0.2,-0.201) (-0.1,-0.1)(0,0) (0.1,0.1) (0.2,0.201) (0.3,0.305) (0.4,0.411) (0.5,0.521)(0.6,0.637) (0.7,0.759) (0.8,0.888) (0.9,1.03) (1.,1.18) (1.1,1.34)(1.2,1.51) (1.3,1.7) (1.4,1.9) (1.5,2.13) (1.6,2.38) (1.7,2.65)(1.8,2.94) (1.9,3.27) (2.,3.63) (2.1,4.02) (2.2,4.46) (2.3,4.94)(2.4,5.47) (2.5,6.05) (2.6,6.69) (2.7,7.41) (2.8,8.19) (2.9,9.06)(3.,10.) };
-
-            \draw (axis cs:-6,7) node {\scriptsize $y=\sinh(x) $};
-            \draw (axis cs:6,-5) node {\scriptsize $y=\sinh^{-1}(x) $};
-            \draw[-&gt;,&gt;=stealth] (axis cs:-1,7) -- (axis cs:2,7);
-            \draw[-&gt;,&gt;=stealth] (axis cs:7,-3) -- (axis cs:7,2);
-
-            \addplot [{\colortwo},smooth,thick] coordinates {(-10.,-3.)(-9.6,-2.96)(-9.2,-2.92)(-8.8,-2.87)(-8.4,-2.82)(-8.,-2.78)(-7.6,-2.73)(-7.2,-2.67)(-6.8,-2.62)(-6.4,-2.56)(-6.,-2.49)(-5.6,-2.42)(-5.2,-2.35)(-4.8,-2.27)(-4.4,-2.19)(-4.,-2.09)(-3.6,-1.99)(-3.2,-1.88)(-2.8,-1.75)(-2.4,-1.61)(-2.,-1.44)(-1.6,-1.25)(-1.2,-1.02)(-0.8,-0.733)(-0.4,-0.39)(0,0)(0.4,0.39)(0.8,0.733)(1.2,1.02)(1.6,1.25)(2.,1.44)(2.4,1.61)(2.8,1.75)(3.2,1.88)(3.6,1.99)(4.,2.09)(4.4,2.19)(4.8,2.27)(5.2,2.35)(5.6,2.42)(6.,2.49)(6.4,2.56)(6.8,2.62)(7.2,2.67)(7.6,2.73)(8.,2.78)(8.4,2.82)(8.8,2.87)(9.2,2.92)(9.6,2.96)(10.,3.)};
+            \addplot+ [-,domain=-3:3] {sinh(x)};
+            \addplot+ [-,domain=-3:3,swapaxes] (sinh(x),x);
 
             \addplot [dashed,domain=-10:10] {x};
 
-            %\draw (axis cs:2.4,-0.002) node {\scriptsize $f(x)$};
+            \draw (axis cs:-6,7) node {\scriptsize $y=\sinh(x) $};
+            \draw (axis cs:6,-5) node {\scriptsize $y=\sinh^{-1}(x) $};
+            \draw[-&gt;,&gt;=stealth] (axis cs:-3,7) -- (axis cs:2,7);
+            \draw[-&gt;,&gt;=stealth] (axis cs:7,-3) -- (axis cs:7,2);
+
+
             \end{axis}
 
             \end{tikzpicture}
@@ -946,38 +931,25 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            xtick={-2,2},%
-            %			xticklabels={$-1\qquad $,$\quad 1$},
-            %			extra x ticks={.5,3},
-            %			extra x tick labels={$a$,$b$},
+
+            \begin{axis}[
+            axis on top,
             ytick={-2,2},
-            %			yticklabels={$-0.002$,$0.002$,$0.004$},
-            %
-            %			extra y ticks={0.001},%
-            %			minor x tick num=4,
-            ymin=-3.2,ymax=3.2,%
-            xmin=-3.2,xmax=3.2,%
+            ymin=-3.2,ymax=3.2,
+            xmin=-3.2,xmax=3.2,
             scaled ticks=false
             ]
 
-            %\addplot [{\colorone},thick,smooth] coordinates {(-3.,-0.995)(-2.9,-0.994)(-2.8,-0.993)(-2.7,-0.991)(-2.6,-0.989)(-2.5,-0.987)(-2.4,-0.984)(-2.3,-0.98)(-2.2,-0.976)(-2.1,-0.97)(-2.,-0.964)(-1.9,-0.956)(-1.8,-0.947)(-1.7,-0.935)(-1.6,-0.922)(-1.5,-0.905)(-1.4,-0.885)(-1.3,-0.862)(-1.2,-0.834)(-1.1,-0.8)(-1.,-0.762)(-0.9,-0.716)(-0.8,-0.664)(-0.7,-0.604)(-0.6,-0.537)(-0.5,-0.462)(-0.4,-0.38)(-0.3,-0.291)(-0.2,-0.197)(-0.1,-0.0997)(0,0)(0.1,0.0997)(0.2,0.197)(0.3,0.291)(0.4,0.38)(0.5,0.462)(0.6,0.537)(0.7,0.604)(0.8,0.664)(0.9,0.716)(1.,0.762)(1.1,0.8)(1.2,0.834)(1.3,0.862)(1.4,0.885)(1.5,0.905)(1.6,0.922)(1.7,0.935)(1.8,0.947)(1.9,0.956)(2.,0.964)(2.1,0.97)(2.2,0.976)(2.3,0.98)(2.4,0.984)(2.5,0.987)(2.6,0.989)(2.7,0.991)(2.8,0.993)(2.9,0.994)(3.,0.995)};
-
-            \addplot [{\colortwo},thick,smooth] coordinates {(1.005,2.997)(1.01,2.65)(1.02,2.31)(1.03,2.11)(1.04,1.97)(1.05,1.86)(1.06,1.77)(1.07,1.69)(1.08,1.63)(1.09,1.57)(1.1,1.52)(1.2,1.2)(1.3,1.02)(1.4,0.896)(1.5,0.805)(1.6,0.733)(1.7,0.675)(1.8,0.626)(1.9,0.585)(2.,0.549)(2.1,0.518)(2.2,0.49)(2.3,0.466)(2.4,0.444)(2.5,0.424)(2.6,0.405)(2.7,0.389)(2.8,0.374)(2.9,0.36)(3.,0.347)};
-
-            \addplot [{\colortwo},thick,smooth] coordinates {(-3.,-0.347)(-2.9,-0.36)(-2.8,-0.374)(-2.7,-0.389)(-2.6,-0.405)(-2.5,-0.424)(-2.4,-0.444)(-2.3,-0.466)(-2.2,-0.49)(-2.1,-0.518)(-2.,-0.549)(-1.9,-0.585)(-1.8,-0.626)(-1.7,-0.675)(-1.6,-0.733)(-1.5,-0.805)(-1.4,-0.896)(-1.3,-1.02)(-1.2,-1.2)(-1.1,-1.52)(-1.09,-1.57)(-1.08,-1.63)(-1.07,-1.69)(-1.06,-1.77)(-1.05,-1.86)(-1.04,-1.97)(-1.03,-2.11)(-1.02,-2.31)(-1.01,-2.65)(-1.005,-2.997)};
+            \addplot+ [-,domain=-3:3,swapaxes] (tanh(x),x);
+            \addplot+ [solid,-,smooth] coordinates {(1.005,2.997)(1.01,2.65)(1.02,2.31)(1.03,2.11)(1.04,1.97)(1.05,1.86)(1.06,1.77)(1.07,1.69)(1.08,1.63)(1.09,1.57)(1.1,1.52)(1.2,1.2)(1.3,1.02)(1.4,0.896)(1.5,0.805)(1.6,0.733)(1.7,0.675)(1.8,0.626)(1.9,0.585)(2.,0.549)(2.1,0.518)(2.2,0.49)(2.3,0.466)(2.4,0.444)(2.5,0.424)(2.6,0.405)(2.7,0.389)(2.8,0.374)(2.9,0.36)(3.,0.347)};
+            \addplot [secondcurvestyle,-,solid,smooth] coordinates {(-3.,-0.347)(-2.9,-0.36)(-2.8,-0.374)(-2.7,-0.389)(-2.6,-0.405)(-2.5,-0.424)(-2.4,-0.444)(-2.3,-0.466)(-2.2,-0.49)(-2.1,-0.518)(-2.,-0.549)(-1.9,-0.585)(-1.8,-0.626)(-1.7,-0.675)(-1.6,-0.733)(-1.5,-0.805)(-1.4,-0.896)(-1.3,-1.02)(-1.2,-1.2)(-1.1,-1.52)(-1.09,-1.57)(-1.08,-1.63)(-1.07,-1.69)(-1.06,-1.77)(-1.05,-1.86)(-1.04,-1.97)(-1.03,-2.11)(-1.02,-2.31)(-1.01,-2.65)(-1.005,-2.997)};
 
             \draw (axis cs:2.2,1.5) node {\tiny $y=\coth^{-1}(x) $};
             \draw (axis cs:2.2,-1.5) node {\tiny $y=\tanh^{-1}(x) $};
             \draw [-&gt;,&gt;=stealth] (axis cs:1.8,-1.3) -- (axis cs:.2,-.2);
-            %\draw [-&gt;,&gt;=stealth] (axis cs:-.1,2.5) -- (axis cs:.7,2.5);
-            \draw [loosely dashed] (axis cs:-1,-3)--(axis cs:-1,3);
-            \draw [loosely dashed] (axis cs:1,-3)--(axis cs:1,3);
 
-            \addplot [{\colorone},smooth,thick] coordinates {(-0.999,-3.8)(-0.99,-2.65)(-0.945,-1.78)(-0.9,-1.47)(-0.855,-1.27)(-0.81,-1.13)(-0.765,-1.01)(-0.72,-0.908)(-0.675,-0.82)(-0.63,-0.741)(-0.585,-0.67)(-0.54,-0.604)(-0.495,-0.543)(-0.45,-0.485)(-0.405,-0.43)(-0.36,-0.377)(-0.315,-0.326)(-0.27,-0.277)(-0.225,-0.229)(-0.18,-0.182)(-0.135,-0.136)(-0.09,-0.0902)(-0.045,-0.045)(0,0)(0.045,0.045)(0.09,0.0902)(0.135,0.136)(0.18,0.182)(0.225,0.229)(0.27,0.277)(0.315,0.326)(0.36,0.377)(0.405,0.43)(0.45,0.485)(0.495,0.543)(0.54,0.604)(0.585,0.67)(0.63,0.741)(0.675,0.82)(0.72,0.908)(0.765,1.01)(0.81,1.13)(0.855,1.27)(0.9,1.47)(0.945,1.78)(0.99,2.65)(0.994,2.95)(0.999,3.8)};
+            \addplot [asymptote] coordinates {(-1,-5) (-1,5)};
+            \addplot [asymptote] coordinates {(1,-5) (1,5)};
 
             \end{axis}
 
@@ -996,33 +968,25 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %			xtick=\empty,%
-            %			extra x ticks={.5,3},
-            %			extra x tick labels={$a$,$b$},
+
+            \begin{axis}[
+            axis on top,
             ytick={-3,-2,-1,1,2,3},
-            %			yticklabels={$-0.002$,$0.002$,$0.004$},
-            %
-            %			extra y ticks={0.001},%
-            %			minor x tick num=4,
-            ymin=-3.5,ymax=3.5,%
-            xmin=-3.5,xmax=3.5,%
+            ymin=-3.5,ymax=3.5,
+            xmin=-3.5,xmax=3.5,
             scaled ticks=false
             ]
 
-            \draw (axis cs:1.5,-1.5) node {\tiny $y=\sech^{-1}(x) $};
-            \draw (axis cs:-2.2,-1.6) node {\tiny $y=\csch^{-1}(x) $};
-            \draw [-&gt;,&gt;=latex] (axis cs:1,-1.2) -- (axis cs:1,-.2);
-
-            \addplot [{\colortwo},smooth,thick] coordinates {(-3.,-0.3275)(-2.9,-0.3383)(-2.8,-0.35)(-2.7,-0.3624)(-2.6,-0.3757)(-2.5,-0.39)(-2.4,-0.4055)(-2.3,-0.4221)(-2.2,-0.4402)(-2.1,-0.4598)(-2.,-0.4812)(-1.9,-0.5046)(-1.8,-0.5303)(-1.7,-0.5587)(-1.6,-0.5901)(-1.5,-0.6251)(-1.4,-0.6643)(-1.3,-0.7085)(-1.2,-0.7585)(-1.1,-0.8156)(-1.,-0.8814)(-0.9,-0.9578)(-0.8,-1.048)(-0.7,-1.154)(-0.6,-1.284)(-0.5,-1.444)(-0.4,-1.647)(-0.3,-1.919)(-0.2,-2.312)(-0.1,-2.998)};
-
-            \addplot [{\colortwo},smooth,thick] coordinates {(0.1,2.998)(0.2,2.312)(0.3,1.919)(0.4,1.647)(0.5,1.444)(0.6,1.284)(0.7,1.154)(0.8,1.048)(0.9,0.9578)(1.,0.8814)(1.1,0.8156)(1.2,0.7585)(1.3,0.7085)(1.4,0.6643)(1.5,0.6251)(1.6,0.5901)(1.7,0.5587)(1.8,0.5303)(1.9,0.5046)(2.,0.4812)(2.1,0.4598)(2.2,0.4402)(2.3,0.4221)(2.4,0.4055)(2.5,0.39)(2.6,0.3757)(2.7,0.3624)(2.8,0.35)(2.9,0.3383)(3.,0.3275)};
-
-            \addplot [{\colorone},thick,smooth] coordinates {(0.1,2.993)(0.2,2.292)(0.3,1.874)(0.4,1.567)(0.5,1.317)
+            \addplot+ [-,smooth] coordinates {(0.1,2.993)(0.2,2.292)(0.3,1.874)(0.4,1.567)(0.5,1.317)
             (0.55,1.205)(0.6,1.099)(0.65,0.9961)(0.7,0.8956)(0.75,0.7954)(0.8,0.6931)(0.85,0.5857)(0.9,0.4671)(0.95,0.323)(1.,0)};
+
+            \addplot+ [-,solid,smooth] coordinates {(-3.,-0.3275)(-2.9,-0.3383)(-2.8,-0.35)(-2.7,-0.3624)(-2.6,-0.3757)(-2.5,-0.39)(-2.4,-0.4055)(-2.3,-0.4221)(-2.2,-0.4402)(-2.1,-0.4598)(-2.,-0.4812)(-1.9,-0.5046)(-1.8,-0.5303)(-1.7,-0.5587)(-1.6,-0.5901)(-1.5,-0.6251)(-1.4,-0.6643)(-1.3,-0.7085)(-1.2,-0.7585)(-1.1,-0.8156)(-1.,-0.8814)(-0.9,-0.9578)(-0.8,-1.048)(-0.7,-1.154)(-0.6,-1.284)(-0.5,-1.444)(-0.4,-1.647)(-0.3,-1.919)(-0.2,-2.312)(-0.1,-2.998)};
+            \addplot+ [secondcurvestyle,solid,-,smooth] coordinates {(0.1,2.998)(0.2,2.312)(0.3,1.919)(0.4,1.647)(0.5,1.444)(0.6,1.284)(0.7,1.154)(0.8,1.048)(0.9,0.9578)(1.,0.8814)(1.1,0.8156)(1.2,0.7585)(1.3,0.7085)(1.4,0.6643)(1.5,0.6251)(1.6,0.5901)(1.7,0.5587)(1.8,0.5303)(1.9,0.5046)(2.,0.4812)(2.1,0.4598)(2.2,0.4402)(2.3,0.4221)(2.4,0.4055)(2.5,0.39)(2.6,0.3757)(2.7,0.3624)(2.8,0.35)(2.9,0.3383)(3.,0.3275)};
+
+            \draw (axis cs:-1.2,.5) node {\tiny $y=\sech^{-1}(x) $};
+            \draw (axis cs:-2.2,-1.6) node {\tiny $y=\csch^{-1}(x) $};
+            \draw [-&gt;,&gt;=latex] (axis cs:-.2,.5) -- (axis cs:0.7,.5);
+
             \end{axis}
 
             \end{tikzpicture}
