@@ -76,21 +76,23 @@
 
                 \begin{scope}[xscale=2]
 
-                \draw [left color={\coloronefill},right color={\coloronefill!20},thick](-2,10) -- (-2,0) arc (180:360:2) -- (2,10);
-                \draw [right color={\coloronefill},left color={\coloronefill!30},thick] (0,10) circle (2);
-                \draw [thick] (0,12) circle (2);
-                \draw [thick] (-2,12)--(-2,10)
-                              (2,12)--(2,10);
-                \draw [dashed,thick] (-2,0) arc (180:0:2);
-                \draw (0,0) -- node [above,pos=.5] {\scriptsize 2 ft} (2,0);
-                %\draw [dashed] (-2,10) arc (180:0:2);
-                %\draw [] (-2,10) arc (180:360:2);
+                  \draw [left color=firstcolor!15,right color=firstcolor!40,thick] (-2,10) -- (-2,0) arc (180:360:2) -- (2,10);
+                  \draw [right color=firstcolor!15,left color=firstcolor!40,thick] (0,10) circle (2);
+                  \draw [thick] (0,12) circle (2);
+                  \draw [thick] (-2,12) -- (-2,10)
+                                (2,12) -- (2,10);
+
+                  \draw [dashed,thick] (-2,0) arc (180:0:2);
+                  \draw (0,0) -- node [above,pos=.5] {\scriptsize 2 ft} (2,0);
+
                 \end{scope}
 
                 \begin{scope}[shift={(5,0)}]
-                \draw (-.5,0) -- (.5,0)
-                      (-.5,10) -- (.5,10)
-                      (0,0) -- node [pos=.5,fill=white,rotate=90] {\scriptsize 10 ft} (0,10);
+
+                  \draw (-.5,0) -- (.5,0)
+                        (-.5,10) -- (.5,10)
+                        (0,0) -- node [pos=.5,fill=white,rotate=90] {\scriptsize 10 ft} (0,10);
+
                 \end{scope}
 
                 \end{tikzpicture}
@@ -119,68 +121,61 @@
                 \begin{tikzpicture}[x=.25cm,y=.25cm,&gt;=stealth]
 
                 \begin{scope}[xscale=2]
+                  \begin{scope}[rotate=-30]
 
-                \begin{scope}[rotate=-30]
-                \draw [thick] (-2.5,0) node (A) {}
-                              (2.5,0) node (B) {}
-                              (2.5,5) node (C) {};
-                \draw [dashed,thick] (A.center) -- (-2.5,5) node (D) {} -- (C.center);
+                    \draw [thick] (-2.5,0) node (A) {}
+                                  (2.5,0) node (B) {}
+                                  (2.5,5) node (C) {};
+                    \draw [dashed,thick] (A.center) -- (-2.5,5) node (D) {} -- (C.center);
 
-                \draw (0,2.5) node (O) {}
-                      (-1,.77) node (OC) {};
-                \end{scope}
+                    \draw (0,2.5) node (O) {}
+                          (-1,.77) node (OC) {};
+                          
+                  \end{scope}
 
-                \begin{scope}[shift={(0,10)}]
-                \begin{scope}[rotate=-30,]
-                \draw	(-2.5,0) node (AAA) {}
-                      (2.5,0) node (BBB) {}
-                      (2.5,5) node (CCC) {}
-                      (-2.5,5) node (DDD) {};
+                  \begin{scope}[shift={(0,10)}]
+                    \begin{scope}[rotate=-30]
+                      
+                      \draw	(-2.5,0) node (AAA) {}
+                            (2.5,0) node (BBB) {}
+                            (2.5,5) node (CCC) {}
+                            (-2.5,5) node (DDD) {};
 
-                %\draw [left color={\coloronefill},right color={\coloronefill!20},thick] (-1.5,0) node (AAA) {} -- (1.5,0) node (BBB) {} -- (1.5,3) node (CCC) {}-- (-1.5,3) node (DDD) {} -- cycle;
-                \end{scope}
-                \end{scope}
+                    \end{scope}
+                  \end{scope}
 
-                \begin{scope}[shift={(0,12)}]
-                \begin{scope}[rotate=-30,]
-                \draw [thick]	(-2.5,0) node (AA) {}
-                              (2.5,0) node (BB) {}
-                              (2.5,5) node (CC) {}
-                              (-2.5,5) node (DD) {};
-                \end{scope}
-                \end{scope}
+                  \begin{scope}[shift={(0,12)}]
+                    \begin{scope}[rotate=-30]
 
-                \begin{scope}[shift={(0,10)}]
-                \begin{scope}[rotate=-30,]
-                %\draw  	(-1.5,0) node (AAA) {}
-                %				(1.5,0) node (BBB) {}
-                %				(1.5,3) node (CCC)
-                %				(-1.5,3) node (DDD) {};
+                      \draw [thick]	(-2.5,0) node (AA) {}
+                                    (2.5,0) node (BB) {}
+                                    (2.5,5) node (CC) {}
+                                    (-2.5,5) node (DD) {};
 
-                \end{scope}
-                \end{scope}
+                    \end{scope}
+                  \end{scope}
 
-                \draw [left color={\coloronefill},right color={\coloronefill!20},thick](AAA.center) -- (A.center)-- node [pos=.5,rotate=-15,below] {\scriptsize 5 ft} (B.center)--node [pos=.5,rotate=45,below] {\scriptsize 5 ft}(C.center)--(CCC.center);
+                  \draw [left color=firstcolor!15,right color=firstcolor!40,thick] (AAA.center) -- (A.center)-- node [pos=.5,rotate=-15,below] {\scriptsize 5 ft} (B.center)--node [pos=.5,rotate=45,below] {\scriptsize 5 ft} (C.center) -- (CCC.center);
+                  \draw [right color=firstcolor!15,left color=firstcolor!40,thick] (AAA.center) -- (BBB.center) -- (CCC.center)--(DDD.center) -- cycle;
 
-                \draw [right color={\coloronefill},left color={\coloronefill!20},thick] (AAA.center) -- (BBB.center) -- (CCC.center)--(DDD.center) -- cycle;
+                  \draw [thick] (AA.center) -- (BB.center) -- (CC.center) -- (DD.center) -- cycle
+                                (AA.center) -- (AAA.center)
+                                (CC.center) -- (CCC.center)
+                                (B.center) -- (BB.center)
+                                (DD.center) --(DDD.center);
 
-                \draw [thick] (AA.center) -- (BB.center) -- (CC.center)--(DD.center) -- cycle
-                              (AA.center) -- (AAA.center)
-                              (CC.center) -- (CCC.center)
-                              (B.center) -- (BB.center)
-                              (DD.center) --(DDD.center);
+                  \draw [thick,dashed]	(DDD.center)--(D.center) -- (C.center)
+                                        (D.center) -- (A.center)
+                                        (O.center) circle (2)
+                                        (O.center) -- node [pos=.5,above,rotate=15] {\scriptsize 2 ft} (OC.center);
 
-                \draw [thick,dashed]	(DDD.center)--(D.center)--(C.center)
-                    (D.center) -- (A.center)
-                    (O.center) circle (2)
-                    (O.center) -- node [pos=.5,above,rotate=15] {\scriptsize 2 ft} (OC.center);
+                  \begin{scope}[shift={(5.5,3)}]
 
-                \begin{scope}[shift={(5.5,3)}]
-                \draw (-.5,0) -- (.5,0)
-                      (-.5,10) -- (.5,10)
-                      (0,0) -- node [pos=.5,fill=white,rotate=90] {\scriptsize 10 ft} (0,10);
-                \end{scope}
-
+                    \draw (-.5,0) -- (.5,0)
+                          (-.5,10) -- (.5,10)
+                          (0,0) -- node [pos=.5,fill=white,rotate=90] {\scriptsize 10 ft} (0,10);
+                          
+                  \end{scope}
                 \end{scope}
 
                 \end{tikzpicture}
@@ -260,26 +255,25 @@
       \begin{tikzpicture}[x=1.25cm,y=1.25cm,&gt;=stealth]
 
       \begin{scope}
-      \draw [thick] (0,0) -- (1,2) -- (2,2) -- (4,0)--cycle;
 
-      \draw [{\colortwo},fill={\colortwofill},thick] (.5,.9) rectangle (3,1.1);
+        \draw [thick] (0,0) -- (1,2) -- (2,2) -- (4,0)--cycle;
+        \draw [secondcolor,fill=secondcolor!15,thick] (.5,.9) rectangle (3,1.1);
+        \draw (3,1) node [right] {\scriptsize $\left. \rule{0pt}{.2cm}\right\}\Delta y_i$};
 
-      \draw (3,1) node [right] {\scriptsize $\left. \rule{0pt}{.2cm}\right\}\Delta y_i$};
+        \draw (.5,.5) -- (.5,.7)
+              (3,.5) -- (3,.7)
+              (.5,.6) -- node [pos=.5,below,] {\scriptsize $\ell(c_i)$} (3,.6);
 
-      \draw (.5,.5) -- (.5,.7)
-            (3,.5) -- (3,.7)
-            (.5,.6) -- node [pos=.5,below,] {\scriptsize $\ell(c_i)$} (3,.6);
+        \foreach \x in {0,1,2,3}
+        {
+          \begin{scope}[shift={(\x*1,2.5)}] 
+            \draw [firstcolor,thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+          \end{scope}
+        }
 
-      \foreach \x in {0,1,2,3}
-      {%
-      \begin{scope}[shift={(\x*1,2.5)}] 
-      \draw [{\colorone},thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-      \end{scope}
-      }
-
-      \draw (.2,1) -- (.4,1)
-            (.2,2.5) -- (.4,2.5)
-            (.3,1) -- node [pos=.5,left] {\scriptsize $d_i$} (.3,2.5);
+        \draw (.2,1) -- (.4,1)
+              (.2,2.5) -- (.4,2.5)
+              (.3,1) -- node [pos=.5,left] {\scriptsize $d_i$} (.3,2.5);
 
       \end{scope}
 
@@ -400,6 +394,7 @@
           <latex-image>
           
           \begin{tikzpicture}[x=.4cm,y=.4cm,&gt;=stealth]
+
           \draw[thick] (0,0) -- (2,4) -- node [pos=.5,above] {\scriptsize 4 ft} (-2,4) -- cycle;
 
           \draw (2.2,0) -- (2.6,0)
@@ -441,14 +436,14 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[x=.4cm,y=.4cm,&gt;=stealth]
+
                 \draw[thick] (0,0) -- (2,4) --  (-2,4) -- cycle;
 
-                \draw [fill=black] 	(2,4) circle (1pt) node [right] {\scriptsize $(2,-6)$}
-                  (-2,4)circle (1pt) node [left] {\scriptsize $(-2,-6)$}
-                  (0,0)circle (1pt) node [below right] {\scriptsize $(0,-10)$};
+                \draw [fill=black] (2,4) circle (1pt) node [right] {\scriptsize $(2,-6)$}
+                                   (-2,4) circle (1pt) node [left] {\scriptsize $(-2,-6)$}
+                                   (0,0) circle (1pt) node [below right] {\scriptsize $(0,-10)$};
 
-                \draw [{\colortwo},thick]  (-1.5,3) -- (1.5,3) node [right,black] {\scriptsize $y$};
-
+                \draw [secondcolor,thick]  (-1.5,3) -- (1.5,3) node [right,black] {\scriptsize $y$};
                 \draw [-&gt;] (0,-1) -- (0,12) node [above] {\scriptsize $y$};
                 \draw [-&gt;] (-3,10) -- (3,10) node [right] {\scriptsize $x$};
 
@@ -463,7 +458,7 @@
                 }
 
                 \foreach \x in {-2,-1,0,1,2}
-                {%
+                {
                   \begin{scope}[shift={(\x*1,10)}] 
                   \draw [{\colorone},thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
@@ -511,14 +506,14 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[x=.4cm,y=.4cm,&gt;=stealth]
+
                 \draw[thick] (0,0) -- (2,4) --  (-2,4) -- cycle;
 
-                \draw [fill=black] 	(2,4) circle (1pt) node [right] {\scriptsize $(2,4)$}
-                  (-2,4)circle (1pt) node [left] {\scriptsize $(-2,4)$}
-                  (0,0)circle (1pt);
+                \draw [fill=black] (2,4) circle (1pt) node [right] {\scriptsize $(2,4)$}
+                                   (-2,4)circle (1pt) node [left] {\scriptsize $(-2,4)$}
+                                   (0,0)circle (1pt);
 
-                \draw [{\colortwo},thick]  (-1.5,3) -- (1.5,3) node [right,black] {\scriptsize $y$};
-
+                \draw [secondcolor,thick]  (-1.5,3) -- (1.5,3) node [right,black] {\scriptsize $y$};
                 \draw [-&gt;] (0,-1) -- (0,12) node [above] {\scriptsize $y$};
                 \draw [-&gt;] (-3,0) -- (3,0) node [right] {\scriptsize $x$};
 
@@ -533,12 +528,12 @@
                 }
 
                 \foreach \x in {-2,-1,0,1,2}
-                {%
+                {
                   \begin{scope}[shift={(\x*1,10)}] 
-                  \draw [{\colorone},thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                  \draw [firstcolor,thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
-                %
+                
                 \draw (2,11) node {\scriptsize water line};
 
                 \draw (4.1,3) -- (4.5,3)
@@ -615,40 +610,24 @@
           <latex-image>
           
           \begin{tikzpicture}[x=.5cm,y=.5cm,&gt;=stealth]
-          \draw[thick] (0,0) -- (3.33,0) --  (3.33,-2.25) -- (0,-2.25) --cycle;
 
-          \draw [fill=black] 	(3.33,0) circle (1pt) node [above right] {\scriptsize $(3.\overline{3},0)$}
-                  (3.33,-2.25)circle (1pt) node [below right] {\scriptsize $(3.\overline{3},-2.25)$}
-                  (0,-2.25)circle (1pt) node [below left] {\scriptsize $(0,-2.25)$};
-                  \draw [fill=black] 	(0,0) circle (1pt) node [above left] {\scriptsize $(0,0)$};
+          \draw [thick] (0,0) -- (3.33,0) -- (3.33,-2.25) -- (0,-2.25) -- cycle;
 
-          \draw [{\colortwo},thick]  (0,-1.5) -- (3.33,-1.5) node [right,black] {\scriptsize $y$};
-          % 
+          \draw [fill=black] (3.33,0) circle (1pt) node [above right] {\scriptsize $(3.\overline{3},0)$}
+                             (3.33,-2.25) circle (1pt) node [below right] {\scriptsize $(3.\overline{3},-2.25)$}
+                             (0,-2.25) circle (1pt) node [below left] {\scriptsize $(0,-2.25)$};
+
+          \draw [fill=black] 	(0,0) circle (1pt) node [above left] {\scriptsize $(0,0)$};
+          \draw [secondcolor,thick]  (0,-1.5) -- (3.33,-1.5) node [right,black] {\scriptsize $y$};
           \draw [-&gt;] (0,-3) -- (0,1) node [above] {\scriptsize $y$};
           \draw [-&gt;] (-1,0) -- (6,0) node [right] {\scriptsize $x$};
-          %
-          %\foreach \x in {-2,-1,1,2}
-          %{
-          %	\draw (\x,10.2) -- (\x,9.8) node [below] {\scriptsize $\x$};
-          %}
-          %
-          %\foreach \x in {-10,-8,-4,-2}
-          %{
-          %	\draw (.2,{\x+10}) -- (-.2,{\x+10}) node [left] {\scriptsize $\x$};
-          %}
-          %
+
           \foreach \x in {-1,0,1,2,3,4}
-          {%
+          {
             \begin{scope}[shift={(\x*1,0)}] 
-            \draw [{\colorone},thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+              \draw [firstcolor,thick] (-.5,.25) parabola bend (0,0) (.5,.25);
             \end{scope}
           }
-          %
-          %\draw (7,1) node {\scriptsize water line};
-
-          %\draw (4.3,3) -- (4.7,3)
-          %			(4.3,10) -- (4.7,10)
-          %			(4.5,3) -- node [pos=.5,rotate=-90,above] {\scriptsize $d(y) = -y$} (4.5,10);
 
           \end{tikzpicture}
           
@@ -678,10 +657,8 @@
           
           \begin{tikzpicture}[x=.6cm,y=.6cm,&gt;=stealth]
 
-          \draw[thick] (0,0) circle (1.5);
-
-          \draw [{\colortwo},thick]  (-1.3,.75) -- (1.3,.75) node [right,black] {\scriptsize $y$};
-
+          \draw [thick] (0,0) circle (1.5);
+          \draw [secondcolor,thick]  (-1.3,.75) -- (1.3,.75) node [right,black] {\scriptsize $y$};
           \draw [-&gt;] (0,-2.2) -- (0,3)--(-.25,3.25) -- (0,3.5) -- (.25,3.75) -- (0,4) --(0,6) node [above] {\scriptsize $y$};
           \draw [-&gt;] (-2.5,0) -- (2.5,0) node [right] {\scriptsize $x$};
 
@@ -698,12 +675,12 @@
           \draw (.2,5) -- (-.2,5) node [left] {\scriptsize $50$};
 
           \foreach \x in {-1.5,-0.5,0.5,1.5}
-          {%
+          {
             \begin{scope}[shift={(\x*1,5)}] 
-            \draw [{\colorone},thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+              \draw [firstcolor,thick] (-.5,.25) parabola bend (0,0) (.5,.25);
             \end{scope}
           }
-          %
+
           \draw (2,6) node {\scriptsize water line}
                 (2,-2.5) node {\scriptsize \textit{not to scale}};
 
@@ -865,14 +842,19 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.7] 
-                \draw [shift={(-1,0)},thick] (0,0) -- node [below,pos=.5] { 2 ft} (2,0)-- node [right,pos=.5] { 2 ft} (2,2) -- (0,2) -- cycle;
+
+                \draw [shift={(-1,0)},thick] (0,0) -- node [below,pos=.5] {2 ft} (2,0) -- node [right,pos=.5] {2 ft} (2,2) -- (0,2) -- cycle;
+
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,3)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] { 1 ft} (0,2.9);\end{tikzpicture}
+                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -897,14 +879,20 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.7] 
-                \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] { 1 ft} (1,0)-- node [right,pos=.5] { 2 ft} (1,2) -- (0,2) -- cycle;
+
+                \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] {1 ft} (1,0)-- node [right,pos=.5] {2 ft} (1,2) -- (0,2) -- cycle;
+
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,3)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] { 1 ft} (0,2.9);\end{tikzpicture}
+
+                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -929,20 +917,24 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.5,yscale=.4] 
-                \draw [thick] (0,0) -- (-2,-6) -- node [below,pos=.5] { 4 ft} (2,-6) -- cycle;
+
+                \draw [thick] (0,0) -- (-2,-6) -- node [below,pos=.5] {4 ft} (2,-6) -- cycle;
 
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,3)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
-                \draw [dashed] (0,0.1) -- node [right,pos=.5] { 5 ft} (0,2.9);
+                \draw [dashed] (0,0.1) -- node [right,pos=.5] {5 ft} (0,2.9);
 
                 \draw (2.2,-6) -- (2.6,-6)
                       (2.2,0) -- (2.6,0)
-                      (2.4,-6) -- node [pos=.5,right] { 6 ft} (2.4,0);\end{tikzpicture}
+                      (2.4,-6) -- node [pos=.5,right] {6 ft} (2.4,0);
+                      
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -967,20 +959,24 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.5,yscale=.4] 
-                \draw [thick] (0,0) -- (-2,6) -- node [below,pos=.5] { 4 ft} (2,6) -- cycle;
+
+                \draw [thick] (0,0) -- (-2,6) -- node [below,pos=.5] {4 ft} (2,6) -- cycle;
 
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,9)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
-                \draw [dashed] (0,6.1) -- node [right,pos=.5] { 5 ft} (0,8.9);
+                \draw [dashed] (0,6.1) -- node [right,pos=.5] {5 ft} (0,8.9);
 
                 \draw (2.2,6) -- (2.6,6)
                       (2.2,0) -- (2.6,0)
-                      (2.4,6) -- node [pos=.5,right] { 6 ft} (2.4,0);\end{tikzpicture}
+                      (2.4,6) -- node [pos=.5,right] {6 ft} (2.4,0);
+                      
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1004,21 +1000,25 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}[xscale=.5,yscale=.5] 
+                \begin{tikzpicture}[xscale=.5,yscale=.5]
+
                 \draw [thick] (0,0) circle (2);
 
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,5)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
-                \draw [dashed] (0,0) -- node [above,pos=.5] { 2 ft} (2,0);
+                \draw [dashed] (0,0) -- node [above,pos=.5] {2 ft} (2,0);
 
                 \draw (2.2,5) -- (2.6,5)
                       (2.2,0) -- (2.6,0)
-                      (2.4,5) -- node [pos=.5,right] { 5 ft} (2.4,0);\end{tikzpicture}
+                      (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
+                      
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1043,20 +1043,24 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.5,yscale=.5] 
+
                 \draw [thick] (0,0) circle (4);
 
                 \foreach \x in {-3,-2,-1,0,1,2,3}
                 {
                   \begin{scope}[shift={(\x*1,5)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
-                \draw [dashed] (0,0) -- node [above,pos=.5] { 4 ft} (4,0);
+                \draw [dashed] (0,0) -- node [above,pos=.5] {4 ft} (4,0);
 
                 \draw (4.2,5) -- (4.6,5)
                       (4.2,0) -- (4.6,0)
-                      (4.4,5) -- node [pos=.5,right] { 5 ft} (4.4,0);\end{tikzpicture}
+                      (4.4,5) -- node [pos=.5,right] {5 ft} (4.4,0);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1081,18 +1085,22 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.5,yscale=.5] 
-                \draw [thick] (-2,-1) -- node [below,pos=.5] { 4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [left,pos=.5] { 2 ft} (-2,-1);
+                
+                \draw [thick] (-2,-1) -- node [below,pos=.5] {4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [left,pos=.5] {2 ft} (-2,-1);
 
                 \foreach \x in {-3,-2,-1,0,1,2,3}
                 {
                   \begin{scope}[shift={(\x*1,5)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
                 \draw (2.2,5) -- (2.6,5)
                       (2.2,0) -- (2.6,0)
-                      (2.4,5) -- node [pos=.5,right] { 5 ft} (2.4,0);\end{tikzpicture}
+                      (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1117,18 +1125,22 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.5,yscale=.5] 
-                \draw [thick,rotate=90] (-2,-1) -- node [right,pos=.5] { 4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [below,pos=.5] { 2 ft} (-2,-1);
+
+                \draw [thick,rotate=90] (-2,-1) -- node [right,pos=.5] {4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [below,pos=.5] {2 ft} (-2,-1);
 
                 \foreach \x in {-3,-2,-1,0,1,2,3}
                 {
                   \begin{scope}[shift={(\x*1,5)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
                 \draw (2.2,5) -- (2.6,5)
                       (2.2,0) -- (2.6,0)
-                      (2.4,5) -- node [pos=.5,right] { 5 ft} (2.4,0);\end{tikzpicture}
+                      (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1153,16 +1165,20 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.7] 
-                \draw [shift={(0,-.85)},thick,rotate=45] (0,0) -- node [shift={(8pt,-5pt)},pos=.5] { 2 ft} (2,0)-- node [shift={(8pt,5pt)},pos=.5] { 2 ft} (2,2) -- (0,2) -- cycle;
+
+                \draw [shift={(0,-.85)},thick,rotate=45] (0,0) -- node [shift={(8pt,-5pt)},pos=.5] {2 ft} (2,0)-- node [shift={(8pt,5pt)},pos=.5] {2 ft} (2,2) -- (0,2) -- cycle;
 
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,3)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
 
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] { 1 ft} (0,2.9);\end{tikzpicture}
+                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1187,14 +1203,19 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.7] 
-                \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] { 2 ft} (2,0)--   (0,2) -- node [left,pos=.5] { 2 ft} (0,0);
+
+                \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] {2 ft} (2,0) -- (0,2) -- node [left,pos=.5] {2 ft} (0,0);
+
                 \foreach \x in {-2,-1,0,1,2}
                 {
                   \begin{scope}[shift={(\x*1,3)}] 
-                  \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
                   \end{scope}
                 }
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] { 1 ft} (0,2.9);\end{tikzpicture}
+                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1246,7 +1267,11 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[scale=.5] 
-                \draw [thick] (0,0) -- node [below,pos=.5] { 3 ft} (3,0)-- node [right,pos=.5] { 5 ft} (3,5) -- (0,5) -- cycle;\end{tikzpicture}
+                
+                \draw [thick] (0,0) -- node [below,pos=.5] {3 ft} (3,0) -- node [right,pos=.5] {5 ft} (3,5) -- (0,5) -- cycle;
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1283,11 +1308,17 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[scale=.5] 
-                \draw [thick] (-2,4) parabola bend (0,0) (2,4) --  node [above,pos=.5] { 4 ft} (-2,4);
-                \draw (0,0) node [below] { \(y=x^2\)};
+
+                \draw [thick] (-2,4) parabola bend (0,0) (2,4) -- node [above,pos=.5] {4 ft} (-2,4);
+
+                \draw (0,0) node [below] {\(y=x^2\)};
+
                 \draw (2.2,0) -- (2.6,0)
                       (2.2,4) -- (2.6,4)
-                      (2.4,0) -- node [pos=.5,right] { 4 ft} (2.4,4);\end{tikzpicture}
+                      (2.4,0) -- node [pos=.5,right] {4 ft} (2.4,4);
+                      
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1324,11 +1355,17 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[scale=.5] 
-                \draw [thick] (-2,0) parabola bend (0,4) (2,0) --  node [below,pos=.5] { 4 ft} (-2,0);
-                \draw (0,4) node [above] { \(y=4-x^2\)};
+
+                \draw [thick] (-2,0) parabola bend (0,4) (2,0) --  node [below,pos=.5] {4 ft} (-2,0);
+
+                \draw (0,4) node [above] {\(y=4-x^2\)};
+                
                 \draw (2.2,0) -- (2.6,0)
                       (2.2,4) -- (2.6,4)
-                      (2.4,0) -- node [pos=.5,right] { 4 ft} (2.4,4);\end{tikzpicture}
+                      (2.4,0) -- node [pos=.5,right] {4 ft} (2.4,4);
+                      
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1365,8 +1402,12 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[scale=1] 
-                \draw [thick] (-1,0) arc (180:360:1) --  node [above,pos=.5] { 2 ft} (-1,0);
-                \draw (0,-1) node [below] { \(y=-\sqrt{1-x^2}\)};\end{tikzpicture}
+
+                \draw [thick] (-1,0) arc (180:360:1) -- node [above,pos=.5] {2 ft} (-1,0);
+                \draw (0,-1) node [below] {\(y=-\sqrt{1-x^2}\)};
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1403,8 +1444,12 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[scale=1] 
-                \draw [thick] (-1,0) arc (180:0:1) --  node [below,pos=.5] { 2 ft} (-1,0);
-                \draw (0,1) node [above] { \(y=\sqrt{1-x^2}\)};\end{tikzpicture}
+
+                \draw [thick] (-1,0) arc (180:0:1) -- node [below,pos=.5] {2 ft} (-1,0);
+                \draw (0,1) node [above] {\(y=\sqrt{1-x^2}\)};
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
             </statement>
@@ -1441,8 +1486,12 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[scale=.5] 
-                \draw [thick] (-3,0) arc (180:360:3) --  node [above,pos=.5] { 6 ft} (-3,0);
-                \draw (0,-3) node [below] { \(y=-\sqrt{9-x^2}\)};\end{tikzpicture}
+
+                \draw [thick] (-3,0) arc (180:360:3) -- node [above,pos=.5] {6 ft} (-3,0);
+                \draw (0,-3) node [below] {\(y=-\sqrt{9-x^2}\)};
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
               </statement>
