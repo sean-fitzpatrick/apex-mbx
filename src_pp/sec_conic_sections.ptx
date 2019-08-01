@@ -99,6 +99,7 @@
         <latex-image>
         
         \begin{tikzpicture}[scale=.8]
+        
  
         \draw [thick,{\colorone}] (-3,-1) node [above,black,shift={(12pt,0pt)}] {\scriptsize Directrix} %node [below,black,shift={(12pt,0pt)}] {\scriptsize $y=-p$}
         -- (3,-1);
