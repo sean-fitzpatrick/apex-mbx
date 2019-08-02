@@ -1058,456 +1058,511 @@
     </p>
 
     <p>
-      <em> Lines</em>
-    </p>
-    
-    <!-- TODO: Fix this disaster below. -->
-
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>Through the origin:</em> &amp; <em>Horizontal line:</em> &amp; <em>Vertical line:</em> &amp; <em>Not through origin:</em> \\
-      <m>\theta = \alpha</m> &amp; <m>r=a\csc(\theta)</m> &amp; <m>r=a\sec(\theta)</m> &amp; <m>\ds r=\frac{b}{\sin(\theta) -m\cos(\theta) }</m> \\
-      <!-- START figures/fig_polarline1.tex -->
-      <image xml:id="img_polarline1">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},rotate=50] (-2.1,0) -- (2.1,0);
-
-        \draw [-&gt;] (.5,0) arc (0:50:.5);
-        \draw [rotate=25] (.7,0) node {\scriptsize $\alpha$};
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarline2.tex -->
-      <image xml:id="img_polarline2">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone}] (-2,.6) -- (2,.6);
-
-        \draw (-.2,.3) node {\scriptsize $a\left\{\rule[-.23cm]{0pt}{.23cm}\right.$};
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarline4.tex -->
-      <image xml:id="img_polarline4">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
-
-        \draw [thick,{\colorone}] (.6,-2) -- (.6,2);
-
-        \draw (.3,.2) node {\scriptsize $\overbrace{\rule{.55cm}{0pt}}$};
-        \draw (.3,.4) node {\scriptsize $a$};
-
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline4.tex END -->
-      &amp;
-      <!-- START figures/fig_polarline3.tex -->
-      <image xml:id="img_polarline3">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},shift={(0,.6)},rotate=50] (-2.1,0) -- (1.7,0) node [pos=.82,rotate=50,black,shift={(0,-5pt)}] {\scriptsize slope $=m$};
-
-        \draw (.2,.3) node {\scriptsize $\left.\rule[-.23cm]{0pt}{.23cm}\right\}b$};
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline3.tex END -->
-    </tabular>
-
-    <p>
-      <em> Circles</em> <em> Spiral</em>
+      <em>Lines</em>
     </p>
 
-    <!-- TODO: Fix this disaster below. -->
+    <figure xml:id="fig_polar_lines">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_lines1">
+            <caption>Through the origin: <m>\theta = \alpha</m></caption>
+            <!-- START figures/fig_polarline1.tex -->
+            <image xml:id="img_polar_lines1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,rotate=50] (-2.1,0) -- (2.1,0);
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>Centered on <m>x</m>-axis:</em> &amp; <em>Centered on <m>y</m>-axis:</em> &amp; <em>Centered on origin:</em> &amp;<em>Archimedean spiral</em>\\
-      <m>r=a\cos(\theta)</m> &amp; <m>r=a\sin(\theta)</m> &amp; <m>r=a</m> &amp; <m>r=\theta</m>\\
-      <!-- START figures/fig_polarcircle1.tex -->
-      <image xml:id="img_polarcircle1">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone}] (.9,0) circle (.9);
+              \draw [-&gt;] (.5,0) arc (0:50:.5);
+              \draw [rotate=25] (.7,0) node {\scriptsize $\alpha$};
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_lines2">
+            <caption>Horizontal line: <m>r=a\csc(\theta)</m></caption>
+            <!-- START figures/fig_polarline2.tex -->
+            <image xml:id="img_polar_lines2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (-2,.6) -- (2,.6);
 
-        \draw (.9,.1) node {\scriptsize $\overbrace{\rule{1.7cm}{0cm}}$};
-        \draw (.9,.3) node {\scriptsize $a$};
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarcircle1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarcircle2.tex -->
-      <image xml:id="img_polarcircle2">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone}] (0,.9) circle (.9);
+              \draw (-.2,.3) node {\scriptsize $a\left\{\rule[-.23cm]{0pt}{.23cm}\right.$};
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_lines3">
+            <caption>Vertical line: <m>r=a\sec(\theta)</m></caption>
+            <!-- START figures/fig_polarline4.tex -->
+            <image xml:id="img_polar_lines3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
 
-        \draw (-.2,.9) node {\scriptsize $a\left\{\rule[-.8cm]{0cm}{0.8cm}\right.$};
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarcircle2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarcircle3.tex -->
-      <image xml:id="img_polarcircle3">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone}] (0,0) circle (.9);
+              \draw [thick,firstcolor] (.6,-2) -- (.6,2);
 
-        \draw (.45,.1) node {\scriptsize $\overbrace{\rule{.8cm}{0cm}}$};
-        \draw (.45,.3) node {\scriptsize $a$};
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarcircle3.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspiral.tex -->
-      <image xml:id="img_polarspiral">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:18.85,samples=100,smooth] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspiral.tex END -->
-    </tabular>
-  </subsection>
+              \draw (.3,.2) node {\scriptsize $\overbrace{\rule{.55cm}{0pt}}$};
+              \draw (.3,.4) node {\scriptsize $a$};
 
-  <subsection>
-    <title>Limaçons</title>
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline4.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_lines4">
+            <caption>Not through origin: <m>\ds r=\frac{b}{\sin(\theta) -m\cos(\theta)}</m></caption>
+            <!-- START figures/fig_polarline3.tex -->
+            <image xml:id="img_polar_lines4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,shift={(0,.6)},rotate=50] (-2.1,0) -- (1.7,0) node [pos=.82,rotate=50,black,shift={(0,-5pt)}] {\scriptsize slope $=m$};
+
+              \draw (.2,.3) node {\scriptsize $\left.\rule[-.23cm]{0pt}{.23cm}\right\}b$};
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline3.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
     <p>
-      Symmetric about <m>x</m>-axis:
-      <m>r=a\pm b\cos(\theta)</m>; Symmetric about <m>y</m>-axis:
-      <m>r=a\pm b\sin(\theta)</m>; <m>a,b \gt 0</m>
+      <em>Circles and Spirals</em>
     </p>
- 
-    <!-- TODO: Fix this disaster below. -->
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>With inner loop:</em> &amp; <em>Cardiod:</em> &amp; <em>Dimpled:</em> &amp; <em>Convex:</em> \\
-      <m>\ds \frac ab \lt  1</m> &amp; <m>\ds \frac ab=1</m> &amp; <m>\ds 1\lt \frac ab \lt 2</m> &amp; <m>\ds \frac ab \gt 2</m> \\
-      <!-- START figures/fig_polarlimacon1.tex -->
-      <image xml:id="img_polarlimacon1">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
+    <figure xml:id="fig_polar_circle_spiral">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_circle1">
+            <caption>Centered on <m>x</m>-axis: <m>r=a\cos(\theta)</m></caption>
+            <!-- START figures/fig_polarcircle1.tex -->
+            <image xml:id="img_polar_circle1">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (.9,0) circle (.9);
 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarlimacon2.tex -->
-      <image xml:id="img_polarlimacon2">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarlimacon3.tex -->
-      <image xml:id="img_polarlimacon3">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
+              \draw (.9,.1) node {\scriptsize $\overbrace{\rule{1.7cm}{0cm}}$};
+              \draw (.9,.3) node {\scriptsize $a$};
+      
+              \end{tikzpicture}
+                    
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarcircle1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_circle2">
+            <caption>Centered on <m>y</m>-axis: <m>r=a\sin(\theta)</m></caption>
+            <!-- START figures/fig_polarcircle2.tex -->
+            <image xml:id="img_polar_circle2">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (0,.9) circle (.9);
 
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon3.tex END -->
-      &amp;
-      <!-- START figures/fig_polarlimacon4.tex -->
-      <image xml:id="img_polarlimacon4">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
+              \draw (-.2,.9) node {\scriptsize $a\left\{\rule[-.8cm]{0cm}{0.8cm}\right.$};
+      
+              \end{tikzpicture}
+                    
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarcircle2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_circle3">
+            <caption>Centered on origin: <m>r=a</m></caption>
+            <!-- START figures/fig_polarcircle3.tex -->
+            <image xml:id="img_polar_circle3">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (0,0) circle (.9);
 
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon4.tex END -->
-    </tabular>
-  </subsection>
+              \draw (.45,.1) node {\scriptsize $\overbrace{\rule{.8cm}{0cm}}$};
+              \draw (.45,.3) node {\scriptsize $a$};
+      
+              \end{tikzpicture}
+                    
+              </latex-image>
+            </image>
+           <!-- figures/fig_polarcircle3.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_spiral">
+            <caption>Archimedean spiral: <m>r=\theta</m></caption>
+            <!-- START figures/fig_polarspiral.tex -->
+            <image xml:id="img_polar_spiral">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:18.85,samples=240] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspiral.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
 
-  <subsection>
-    <title>Rose Curves</title>
     <p>
-      Symmetric about <m>x</m>-axis:
-      <m>r=a \cos(n\theta)</m>; Symmetric about <m>y</m>-axis:
-      <m>r=a\sin(n\theta)</m>
+      <em>Limaçons</em>
+    </p>
+
+    <p>
+      Symmetric about <m>x</m>-axis: <m>r=a\pm b\cos(\theta)</m>
+    </p>
+    <p>
+      Symmetric about <m>y</m>-axis: <m>r=a\pm b\sin(\theta)</m>; <m>a,b \gt 0</m>
+    </p>
+
+    <figure xml:id="fig_polar_limacons">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_limacon1">
+            <caption>With inner loop: <m>\ds \frac ab \lt  1</m></caption>
+            <!-- START figures/fig_polarlimacon1.tex -->
+            <image xml:id="img_polar_limacon1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
+
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_limacon2">
+            <caption>Cardiod: <m>\ds \frac ab=1</m></caption>
+            <!-- START figures/fig_polarlimacon2.tex -->
+            <image xml:id="img_polar_limacon2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_limacon3">
+            <caption>Dimpled: <m>\ds 1\lt \frac ab \lt 2</m></caption>
+            <!-- START figures/fig_polarlimacon3.tex -->
+            <image xml:id="img_polar_limacon3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon3.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_limacon4">
+            <caption>Convex: <m>\ds \frac ab \gt 2</m></caption>
+            <!-- START figures/fig_polarlimacon4.tex -->
+            <image xml:id="img_polar_limacon4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);    
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
+
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon4.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
+    <p>
+      <em>Rose Curves</em>
+    </p>
+
+    <p>
+      Symmetric about <m>x</m>-axis: <m>r=a \cos(n\theta)</m>
+    </p>
+    <p>
+      Symmetric about <m>y</m>-axis: <m>r=a\sin(n\theta)</m>
     </p>
 
     <p>
       Curve contains <m>2n</m> petals when <m>n</m> is even and <m>n</m> petals when <m>n</m> is odd.
     </p>
 
-    <!-- TODO: Fix this disaster below. -->
+    <figure xml:id="fig_polar_roses">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_rose1">
+            <caption><m>r=a\cos(2\theta)</m></caption>
+            <!-- START figures/fig_polarrose1.tex -->
+            <image xml:id="img_polar_rose1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <m>r=a\cos(2\theta)</m> &amp; <m>r=a\sin(2\theta)</m> &amp; <m>r=a\cos(3\theta)</m> &amp; <m>r=a\sin(3\theta)</m> \\
-      <!-- START figures/fig_polarrose1.tex -->
-      <image xml:id="img_polarrose1">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarrose2.tex -->
-      <image xml:id="img_polarrose2">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarrose4.tex -->
-      <image xml:id="img_polarrose4">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_rose2">
+            <caption><m>r=a\sin(2\theta)</m></caption>
+            <!-- START figures/fig_polarrose2.tex -->
+            <image xml:id="img_polar_rose2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose4.tex END -->
-      &amp;
-      <!-- START figures/fig_polarrose3.tex -->
-      <image xml:id="img_polarrose3">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose3.tex END -->
-    </tabular>
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_rose3">
+            <caption><m>r=a\cos(3\theta)</m></caption>
+            <!-- START figures/fig_polarrose4.tex -->
+            <image xml:id="img_polar_rose3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
+
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose4.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_rose4">
+            <caption><m>r=a\sin(3\theta)</m></caption>
+            <!-- START figures/fig_polarrose3.tex -->
+            <image xml:id="img_polar_rose4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose3.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
 
     <p>
-      <em> Special Curves</em>
+      <em>Special Curves</em>
     </p>
 
-    <!-- TODO: Fix this disaster below. -->
-
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>Rose curves</em> &amp;  &amp; <em>Lemniscate:</em> &amp; <em>Eight Curve:</em> \\
-      <m>r=a\sin(\theta/5)</m> &amp; <m>r=a\sin(2\theta/5)</m> &amp; <m>r^2=a^2\cos(2\theta)</m> &amp; <m>r^2=a^2\sec^4(\theta) \cos(2\theta)</m> \\
-      <!-- START figures/fig_polarspecial1.tex -->
-      <image xml:id="img_polarspecial1">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:900,samples=100,smooth] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspecial2.tex -->
-      <image xml:id="img_polarspecial2">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=0:1800,samples=200,smooth] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspecial3.tex -->
-      <image xml:id="img_polarspecial3">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial3.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspecial4.tex -->
-      <image xml:id="img_polarspecial4">
-        <description></description>
-        <latex-image>
-        
-        \begin{tikzpicture}
- 
-        \draw [&lt;-&gt;,] (-2.1,0) -- (2.1,0);
-        \draw [&lt;-&gt;,] (0,-2.1) -- (0,2.1);
- 
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
- 
-        \end{tikzpicture}
-        
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial4.tex END -->
-    </tabular>
+    <figure xml:id="fig_polar_special">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_special1">
+            <caption>Rose curve: <m>r=a\sin(\theta/5)</m></caption>
+            <!-- START figures/fig_polarspecial1.tex -->
+            <image xml:id="img_polar_special1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:900,samples=100] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_special2">
+            <caption>Rose curve: <m>r=a\sin(2\theta/5)</m></caption>
+            <!-- START figures/fig_polarspecial2.tex -->
+            <image xml:id="img_polar_special2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:1800,samples=200] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_special3">
+            <caption>Lemniscate: <m>r^2=a^2\cos(2\theta)</m></caption>
+            <!-- START figures/fig_polarspecial3.tex -->
+            <image xml:id="img_polar_special3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial3.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_special4">
+            <caption>Eight Curve: <m>r^2=a^2\sec^4(\theta) \cos(2\theta)</m></caption>
+            <!-- START figures/fig_polarspecial4.tex -->
+            <image xml:id="img_polar_special3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial4.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
 
     <p>
       Earlier we discussed how each point in the plane does not have a unique representation in polar form.
