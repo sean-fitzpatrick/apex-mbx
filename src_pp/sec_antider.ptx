@@ -126,32 +126,35 @@
         <description></description>
         <latex-image>
         
-        \tikz[]{
+        \begin{tikzpicture}[&gt;=latex]
+
         \node[] (integral)
         {$\displaystyle\int$};
         \node[above left of=integral, anchor=south east] (l1) {Integration Symbol};
-        \draw[-{latex}] (l1) edge [out=-90, in=180] (integral);
+        \draw[-&gt;] (l1) edge [out=-90, in=180] (integral);
         \node[right of=integral] (integrand)
         {$\displaystyle f(x)$};
         \node[below of=integrand, anchor=north east] (l2) {Integration Symbol};
-        \draw[-{latex}] (l2) edge [out=0, in=-90] (integrand);
+        \draw[-&gt;] (l2) edge [out=0, in=-90] (integrand);
         \node[right of=integrand] (differential)
         {$\displaystyle dx$};
         \node[above of=differential, anchor=south west] (l3) {Differential of $x$};
-        \draw[-{latex}] (l3) edge [out=-90, in=90] (differential);
+        \draw[-&gt;] (l3) edge [out=-90, in=90] (differential);
         \node[right of=differential] (equals)
         {$\displaystyle =$};
         \node[right of=equals] (antiderivative)
         {$\displaystyle F(x)$};
         \node[below of=antiderivative, anchor=north west] (l4) {One Antiderivative};
-        \draw[-{latex}] (l4) edge [out=180, in=-90] (antiderivative);
+        \draw[-&gt;] (l4) edge [out=180, in=-90] (antiderivative);
         \node[right of=antiderivative] (plus)
         {$\displaystyle {+}$};
         \node[right of=plus] (constant)
         {$\displaystyle C$};
         \node[above right of=constant, anchor=south west] (l5) {Constant of Integration};
-        \draw[-{latex}] (l5) edge [out=-90, in=0] (constant);
-        }
+        \draw[-&gt;] (l5) edge [out=-90, in=0] (constant);
+        }        
+        
+        \end{tikzpicture}
         
         </latex-image>
       </image>
