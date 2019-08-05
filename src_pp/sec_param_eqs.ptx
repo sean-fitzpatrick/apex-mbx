@@ -129,58 +129,53 @@
           This information helps us determine the direction in which the graph is <q>moving.</q>
         </p>
 
-        <table xml:id="fig_pareq1">
-          <title>A table of values of the parametric equations in <xref ref="ex_pareq1">Example</xref> along with a sketch of their graph.</title>
-          <tabular>
-          <row>
-          <cell><tabular>
-            <row>
-              <cell><m>t</m></cell>
-              <cell><m>x</m></cell>
-              <cell><m>y</m></cell>
-            </row>
-            <row bottom="minor">
-              <cell></cell>
-              <cell></cell>
-              <cell></cell>
-            </row>
-            <row>
-              <cell><m>-2</m></cell>
-              <cell><m>4</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-1</m></cell>
-              <cell><m>1</m></cell>
-              <cell><m>0</m></cell>
-            </row>
-            <row>
-              <cell><m>0</m></cell>
-              <cell><m>0</m></cell>
-              <cell><m>1</m></cell>
-            </row>
-            <row>
-              <cell><m>1</m></cell>
-              <cell><m>1</m></cell>
-              <cell><m>2</m></cell>
-            </row>
-            <row>
-              <cell><m>2</m></cell>
-              <cell><m>4</m></cell>
-              <cell><m>3</m></cell>
-            </row>
-          </tabular></cell>
-          </row>
-          <row>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>(a)</cell>
-          </row>
-          <row>
-            <cell>
-          <!-- START figures/fig_pareq1.tex -->
-              <image xml:id="img_pareq1">
+        <figure xml:id="fig_pareq1">
+          <caption>A table of values of the parametric equations in <xref ref="ex_pareq1">Example</xref> along with a sketch of their graph.</caption>
+          <sidebyside>
+            <figure xml:id="fig_pareq1a">
+              <caption/>
+              <tabular>
+                <row>
+                  <cell><m>t</m></cell>
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>4</m></cell>
+                  <cell><m>-1</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>1</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>0</m></cell>
+                  <cell><m>1</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>1</m></cell>
+                  <cell><m>2</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>4</m></cell>
+                  <cell><m>3</m></cell>
+                </row>
+              </tabular>
+            </figure>
+            <figure xml:id="fig_pareq1b">
+              <caption/>
+              <!-- START figures/fig_pareq1.tex -->
+              <image xml:id="img_pareq1b">
                 <description></description>
                 <latex-image>
                 
@@ -218,14 +213,10 @@
                 
                 </latex-image>
               </image>
-          <!-- figures/fig_pareq1.tex END -->
-            </cell>
-          </row>
-          <row>
-            <cell>(b)</cell>
-          </row>
-          </tabular>
-        </table>
+              <!-- figures/fig_pareq1.tex END -->
+            </figure>
+          </sidebyside>
+        </figure>
       </solution>
     </example>
 
@@ -250,58 +241,53 @@
           then plot the points <m>(x,y)</m> on the Cartesian plane in <xref ref="fig_pareq2">Figure</xref>(b).
         </p>
 
-        <table xml:id="fig_pareq2">
-          <title>A table of values of the parametric equations in <xref ref="ex_pareq2">Example</xref> along with a sketch of their graph.</title>
-          <tabular>
-          <row>
-          <cell><tabular>
-            <row>
-              <cell><m>t</m></cell>
-              <cell><m>x</m></cell>
-              <cell><m>y</m></cell>
-            </row>
-            <row bottom="minor">
-              <cell></cell>
-              <cell></cell>
-              <cell></cell>
-            </row>
-            <row>
-              <cell><m>0</m></cell>
-              <cell><m>1</m></cell>
-              <cell><m>2</m></cell>
-            </row>
-            <row>
-              <cell><m>\pi/4</m></cell>
-              <cell><m>1/2</m></cell>
-              <cell><m>1+\sqrt{2}/2</m></cell>
-            </row>
-            <row>
-              <cell><m>\pi/2</m></cell>
-              <cell><m>0</m></cell>
-              <cell><m>1</m></cell>
-            </row>
-            <row>
-              <cell><m>3\pi/4</m></cell>
-              <cell><m>1/2</m></cell>
-              <cell><m>1-\sqrt{2}/2</m></cell>
-            </row>
-            <row>
-              <cell><m>\pi</m></cell>
-              <cell><m>1</m></cell>
-              <cell><m>0</m></cell>
-            </row>
-          </tabular></cell>
-          </row>
-          <row>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>(a)</cell>
-          </row>
-          <row>
-            <cell>
-          <!-- START figures/fig_pareq2.tex -->
-              <image xml:id="img_pareq2">
+        <figure xml:id="fig_pareq2">
+          <caption>A table of values of the parametric equations in <xref ref="ex_pareq2">Example</xref> along with a sketch of their graph.</caption>
+          <sidebyside>
+            <figure xml:id="fig_pareq2a">
+              <caption/>
+              <tabular>
+                <row>
+                  <cell><m>t</m></cell>
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>1</m></cell>
+                  <cell><m>2</m></cell>
+                </row>
+                <row>
+                  <cell><m>\pi/4</m></cell>
+                  <cell><m>1/2</m></cell>
+                  <cell><m>1+\sqrt{2}/2</m></cell>
+                </row>
+                <row>
+                  <cell><m>\pi/2</m></cell>
+                  <cell><m>0</m></cell>
+                  <cell><m>1</m></cell>
+                </row>
+                <row>
+                  <cell><m>3\pi/4</m></cell>
+                  <cell><m>1/2</m></cell>
+                  <cell><m>1-\sqrt{2}/2</m></cell>
+                </row>
+                <row>
+                  <cell><m>\pi</m></cell>
+                  <cell><m>1</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+              </tabular>
+            </figure>
+            <figure xml:id="fig_pareq2b">
+              <caption/>
+              <!-- START figures/fig_pareq2.tex -->
+              <image xml:id="img_pareq2b">
                 <description></description>
                 <latex-image>
                 
@@ -339,15 +325,10 @@
                 
                 </latex-image>
               </image>
-          <!-- figures/fig_pareq2.tex END -->
-            </cell>
-          </row>
-          <row>
-            <cell>(b)</cell>
-          </row>
-          </tabular>
-
-        </table>
+              <!-- figures/fig_pareq2.tex END -->
+            </figure>
+          </sidebyside>
+        </figure>
 
         <p>
           It is not difficult to show that the curves in <xref ref="ex_pareq1">Examples</xref>
