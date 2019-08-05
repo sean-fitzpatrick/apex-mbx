@@ -12,5 +12,6 @@ src_pp/knowl/*
 src_pp/webwork-extraction/*
 src_pp/images/*
 src_pp/dep-fix-output/*
+index_t.ptx
 
 Makefile.paths

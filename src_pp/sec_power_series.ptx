@@ -1,36 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_power_series">
   <title>Power Series</title>
-  <introduction>
-    <p>
-      So far, our study of series has examined the question of
-      <q>Is the sum of these infinite terms finite?,</q>
-      i.e., <q>Does the series converge?</q>
-      We now approach series from a different perspective: as a function.
-      Given a value of <m>x</m>,
-      we evaluate <m>f(x)</m> by finding the sum of a particular series that depends on <m>x</m>
-      (assuming the series converges).
-      We start this new approach to series with a definition.
-    </p>
+  <p>
+    So far, our study of series has examined the question of
+    <q>Is the sum of these infinite terms finite?,</q>
+    i.e., <q>Does the series converge?</q>
+    We now approach series from a different perspective: as a function.
+    Given a value of <m>x</m>,
+    we evaluate <m>f(x)</m> by finding the sum of a particular series that depends on <m>x</m>
+    (assuming the series converges).
+    We start this new approach to series with a definition.
+  </p>
 
-    <definition xml:id="def_power_series">
-      <title>Power Series</title>
-      <statement>
-        <p>
-          Let <m>\{a_n\}</m> be a sequence,
-          let <m>x</m> be a variable, and let <m>c</m> be a real number.
+  <definition xml:id="def_power_series">
+    <title>Power Series</title>
+    <statement>
+      <p>
+        Let <m>\{a_n\}</m> be a sequence,
+        let <m>x</m> be a variable, and let <m>c</m> be a real number.
 
-          <idx>
-            <h>power series</h>
-          </idx>
+        <idx>
+          <h>power series</h>
+        </idx>
 
-          <idx>
-            <h>series</h><h>power</h>
-          </idx>
+        <idx>
+          <h>series</h><h>power</h>
+        </idx>
 
-        </p>
+      </p>
 
+      <p>
         <ol>
           <li>
             <p>
@@ -50,21 +49,23 @@
             </p>
           </li>
         </ol>
-      </statement>
-    </definition>
+      </p>
+    </statement>
+  </definition>
 
-    <example xml:id="ex_ps1">
-      <title>Examples of power series</title>
-      <statement>
-        <p>
-          Write out the first five terms of the following power series:
-        </p>
+  <example xml:id="ex_ps1">
+    <title>Examples of power series</title>
+    <statement>
+      <p>
+        Write out the first five terms of the following power series:
+      </p>
 
-        <p>
-          <m>\ds 1.\ \infser[0] x^n \qquad\qquad 2.\ \infser (-1)^{n+1}\frac{(x+1)^n}n\qquad\qquad 3.\ \infser[0] (-1)^{n+1} \frac{(x-\pi)^{2n}}{(2n)!}</m>.
-        </p>
-      </statement>
-      <solution>
+      <p>
+        <m>\ds 1.\ \infser[0] x^n \qquad\qquad 2.\ \infser (-1)^{n+1}\frac{(x+1)^n}n\qquad\qquad 3.\ \infser[0] (-1)^{n+1} \frac{(x-\pi)^{2n}}{(2n)!}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
         <ol>
           <li>
             <p>
@@ -101,46 +102,48 @@
             </p>
           </li>
         </ol>
-      </solution>
-    </example>
+      </p>
+    </solution>
+  </example>
 
-    <p>
-      We introduced power series as a type of function,
-      where a value of <m>x</m> is given and the sum of a series is returned.
-      Of course, not every series converges.
-      For instance, in part 1 of <xref ref="ex_ps1">Example</xref>,
-      we recognized the series <m>\ds \infser[0] x^n</m> as a geometric series in <m>x</m>.
-      <xref ref="thm_geom_series">Theorem</xref>
-      states that this series converges only when <m>\abs{x}\lt 1</m>.
-    </p>
+  <p>
+    We introduced power series as a type of function,
+    where a value of <m>x</m> is given and the sum of a series is returned.
+    Of course, not every series converges.
+    For instance, in part 1 of <xref ref="ex_ps1">Example</xref>,
+    we recognized the series <m>\ds \infser[0] x^n</m> as a geometric series in <m>x</m>.
+    <xref ref="thm_geom_series">Theorem</xref>
+    states that this series converges only when <m>\abs{x}\lt 1</m>.
+  </p>
 
-    <p>
-      This raises the question:
-      <q>For what values of <m>x</m> will a given power series converge?,</q>
-      which leads us to a theorem and definition.
-    </p>
+  <p>
+    This raises the question:
+    <q>For what values of <m>x</m> will a given power series converge?,</q>
+    which leads us to a theorem and definition.
+  </p>
 
-    <theorem xml:id="thm_radius_converge">
-      <title>Convergence of Power Series</title>
-      <statement>
-        <p>
-          Let a power series <m>\ds \infser[0] a_n(x-c)^n</m> be given.
-          Then one of the following is true:
+  <theorem xml:id="thm_radius_converge">
+    <title>Convergence of Power Series</title>
+    <statement>
+      <p>
+        Let a power series <m>\ds \infser[0] a_n(x-c)^n</m> be given.
+        Then one of the following is true:
 
-          <idx>
-            <h>convergence</h><h>of power series</h>
-          </idx>
+        <idx>
+          <h>convergence</h><h>of power series</h>
+        </idx>
 
-          <idx>
-            <h>power series</h><h>convergence</h>
-          </idx>
+        <idx>
+          <h>power series</h><h>convergence</h>
+        </idx>
 
-          <idx>
-            <h>series</h><h>power</h>
-          </idx>
+        <idx>
+          <h>series</h><h>power</h>
+        </idx>
 
-        </p>
+      </p>
 
+      <p>
         <ol>
           <li>
             <p>
@@ -150,9 +153,9 @@
 
           <li>
             <p>
-              There is an <m>R>0</m> such that the series converges for all <m>x</m> in
- 
-	<m>(c-R,c+R)</m> and diverges for all <m>x\lt c-R</m> and <m>x>c+R</m>.
+              There is an <m>R \gt 0</m> such that the series converges for all <m>x</m> in
+
+              <m>(c-R,c+R)</m> and diverges for all <m>x\lt c-R</m> and <m>x \gt c+R</m>.
             </p>
           </li>
 
@@ -162,21 +165,23 @@
             </p>
           </li>
         </ol>
-      </statement>
-    </theorem>
+      </p>
+    </statement>
+  </theorem>
 
-    <p>
-      The value of <m>R</m> is important when understanding a power series,
-      hence it is given a name in the following definition.
-      Also, note that part 2 of <xref ref="thm_radius_converge">Theorem</xref>
-      makes a statement about the interval <m>(c-R,c+R)</m>,
-      but the not the endpoints of that interval.
-      A series may/may not converge at these endpoints.
-    </p>
+  <p>
+    The value of <m>R</m> is important when understanding a power series,
+    hence it is given a name in the following definition.
+    Also, note that part 2 of <xref ref="thm_radius_converge">Theorem</xref>
+    makes a statement about the interval <m>(c-R,c+R)</m>,
+    but the not the endpoints of that interval.
+    A series may/may not converge at these endpoints.
+  </p>
 
-    <definition xml:id="def_radius_converge">
-      <title>Radius and Interval of Convergence</title>
-      <statement>
+  <definition xml:id="def_radius_converge">
+    <title>Radius and Interval of Convergence</title>
+    <statement>
+      <p>
         <ol>
           <li>
             <p>
@@ -222,42 +227,44 @@
             </p>
           </li>
         </ol>
-      </statement>
-    </definition>
+      </p>
+    </statement>
+  </definition>
 
-    <p>
-      To find the values of <m>x</m> for which a given series converges,
-      we will use the convergence tests we studied previously
-      (especially the Ratio Test).
-      However, the tests all required that the terms of a series be positive.
-      The following theorem gives us a work<ndash />around to this problem.
-    </p>
+  <p>
+    To find the values of <m>x</m> for which a given series converges,
+    we will use the convergence tests we studied previously
+    (especially the Ratio Test).
+    However, the tests all required that the terms of a series be positive.
+    The following theorem gives us a work<ndash/>around to this problem.
+  </p>
 
-    <theorem xml:id="thm_abs_power">
-      <title>The Radius of Convergence of a Series and Absolute Convergence</title>
-      <statement>
-        <p>
-          The series <m>\ds \infser[0] a_n(x-c)^n</m> and
-          <m>\ds \infser[0] \abs{a_n(x-c)^n}</m> have the same radius of convergence <m>R</m>.
-        </p>
-      </statement>
-    </theorem>
+  <theorem xml:id="thm_abs_power">
+    <title>The Radius of Convergence of a Series and Absolute Convergence</title>
+    <statement>
+      <p>
+        The series <m>\ds \infser[0] a_n(x-c)^n</m> and
+        <m>\ds \infser[0] \abs{a_n(x-c)^n}</m> have the same radius of convergence <m>R</m>.
+      </p>
+    </statement>
+  </theorem>
 
-    <p>
-      <xref ref="thm_abs_power">Theorem</xref>
-      allows us to find the radius of convergence <m>R</m> of a series by applying the Ratio Test
-      (or any applicable test)
-      to the absolute value of the terms of the series.
-      We practice this in the following example.
-    </p>
+  <p>
+    <xref ref="thm_abs_power">Theorem</xref>
+    allows us to find the radius of convergence <m>R</m> of a series by applying the Ratio Test
+    (or any applicable test)
+    to the absolute value of the terms of the series.
+    We practice this in the following example.
+  </p>
 
-    <example xml:id="ex_ps2">
-      <title>Determining the radius and interval of convergence.</title>
-      <statement>
-        <p>
-          Find the radius and interval of convergence for each of the following series:
-        </p>
+  <example xml:id="ex_ps2">
+    <title>Determining the radius and interval of convergence.</title>
+    <statement>
+      <p>
+        Find the radius and interval of convergence for each of the following series:
+      </p>
 
+      <p>
         <ol cols="4">
           <li>
             <p>
@@ -283,8 +290,10 @@
             </p>
           </li>
         </ol>
-      </statement>
-      <solution>
+      </p>
+    </statement>
+    <solution>
+      <p>
         <ol>
           <li>
             <p>
@@ -314,16 +323,18 @@
               therefore, the power series converges when <m>\abs{x} \lt 1</m>,
               or when <m>x</m> is in <m>(-1,1)</m>.
               Thus the radius of convergence is <m>R=1</m>.
- 
- 
-	To determine the interval of convergence, we need to check the endpoints of <m>(-1,1)</m>. When <m>x=-1</m>, we have the opposite of the Harmonic Series:
+
+
+              To determine the interval of convergence, we need to check the endpoints of <m>(-1,1)</m>. When <m>x=-1</m>,
+              we have the opposite of the Harmonic Series:
               <md>
                 <mrow>\infser (-1)^{n+1}\frac{(-1)^n}{n} \amp = \infser \frac{-1}{n}</mrow>
                 <mrow>\amp = -\infty</mrow>
               </md>.
               The series diverges when <m>x=-1</m>.
- 
-	When <m>x=1</m>, we have the series <m>\ds \infser (-1)^{n+1}\frac{(1)^n}{n}</m>, which is the Alternating Harmonic Series, which converges. Therefore the interval of convergence is <m>(-1,1]</m>.
+
+              When <m>x=1</m>, we have the series <m>\ds \infser (-1)^{n+1}\frac{(1)^n}{n}</m>,
+              which is the Alternating Harmonic Series, which converges. Therefore the interval of convergence is <m>(-1,1]</m>.
             </p>
           </li>
 
@@ -364,27 +375,29 @@
             </p>
           </li>
         </ol>
-      </solution>
-    </example>
+      </p>
+    </solution>
+  </example>
 
-    <p>
-      We can use a power series to define a function:
-      <me>
-        f(x) = \infser[0] a_nx^n
-      </me>
-      where the domain of <m>f</m> is a subset of the interval of convergence of the power series.
-      One can apply calculus techniques to such functions;
-      in particular, we can find derivatives and antiderivatives.
-    </p>
+  <p>
+    We can use a power series to define a function:
+    <me>
+      f(x) = \infser[0] a_nx^n
+    </me>
+    where the domain of <m>f</m> is a subset of the interval of convergence of the power series.
+    One can apply calculus techniques to such functions;
+    in particular, we can find derivatives and antiderivatives.
+  </p>
 
-    <theorem xml:id="thm_calc_power_series">
-      <title>Derivatives and Indefinite Integrals of Power Series Functions</title>
-      <statement>
-        <p>
-          Let <m>\ds f(x) = \infser[0] a_n(x-c)^n</m> be a function defined by a power series,
-          with radius of convergence <m>R</m>.
-        </p>
+  <theorem xml:id="thm_calc_power_series">
+    <title>Derivatives and Indefinite Integrals of Power Series Functions</title>
+    <statement>
+      <p>
+        Let <m>\ds f(x) = \infser[0] a_n(x-c)^n</m> be a function defined by a power series,
+        with radius of convergence <m>R</m>.
+      </p>
 
+      <p>
         <ol>
           <li>
             <p>
@@ -423,13 +436,15 @@
             </p>
           </li>
         </ol>
-      </statement>
-    </theorem>
+      </p>
+    </statement>
+  </theorem>
 
-    <p>
-      A few notes about <xref ref="thm_calc_power_series">Theorem</xref>:
-    </p>
+  <p>
+    A few notes about <xref ref="thm_calc_power_series">Theorem</xref>:
+  </p>
 
+  <p>
     <ol>
       <li>
         <p>
@@ -449,26 +464,28 @@
 
       <li>
         <p>
-          Differentiation and integration are simply calculated term<ndash />by<ndash />term using the Power Rules.
+          Differentiation and integration are simply calculated term<ndash/>by<ndash/>term using the Power Rules.
         </p>
       </li>
     </ol>
+  </p>
 
-    <example xml:id="ex_ps3">
-      <title>Derivatives and indefinite integrals of power series</title>
-      <statement>
-        <p>
-          Let <m>\ds f(x) = \infser[0] x^n</m>.
-          Find <m>\fp(x)</m> and <m>\ds F(x) =\int f(x)\ dx</m>,
-          along with their respective intervals of convergence.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          We find the derivative and indefinite integral of <m>f(x)</m>,
-          following <xref ref="thm_calc_power_series">Theorem</xref>.
-        </p>
+  <example xml:id="ex_ps3">
+    <title>Derivatives and indefinite integrals of power series</title>
+    <statement>
+      <p>
+        Let <m>\ds f(x) = \infser[0] x^n</m>.
+        Find <m>\fp(x)</m> and <m>\ds F(x) =\int f(x)\ dx</m>,
+        along with their respective intervals of convergence.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We find the derivative and indefinite integral of <m>f(x)</m>,
+        following <xref ref="thm_calc_power_series">Theorem</xref>.
+      </p>
 
+      <p>
         <ol>
           <li>
             <p>
@@ -518,257 +535,257 @@
             </p>
           </li>
         </ol>
-      </solution>
-    </example>
+      </p>
+    </solution>
+  </example>
 
-    <p>
-      The previous example showed how to take the derivative and indefinite integral of a power series without motivation for why we care about such operations.
-      We may care for the sheer mathematical enjoyment <q>that we can</q>,
-      which is motivation enough for many.
-      However, we would be remiss to not recognize that we can learn a great deal from taking derivatives and indefinite integrals.
-    </p>
+  <p>
+    The previous example showed how to take the derivative and indefinite integral of a power series without motivation for why we care about such operations.
+    We may care for the sheer mathematical enjoyment <q>that we can</q>,
+    which is motivation enough for many.
+    However, we would be remiss to not recognize that we can learn a great deal from taking derivatives and indefinite integrals.
+  </p>
 
-    <p>
-      Recall that <m>\ds f(x) = \infser[0] x^n</m> in <xref ref="ex_ps3">Example</xref> is a geometric series.
-      According to <xref ref="thm_geom_series">Theorem</xref>,
-      this series converges to <m>1/(1-x)</m> when <m>\abs{x}\lt 1</m>.
-      Thus we can say
-      <me>
-        f(x) = \infser[0] x^n = \frac 1{1-x}, \text{ on }  (-1,1)
-      </me>.
-    </p>
+  <p>
+    Recall that <m>\ds f(x) = \infser[0] x^n</m> in <xref ref="ex_ps3">Example</xref> is a geometric series.
+    According to <xref ref="thm_geom_series">Theorem</xref>,
+    this series converges to <m>1/(1-x)</m> when <m>\abs{x}\lt 1</m>.
+    Thus we can say
+    <me>
+      f(x) = \infser[0] x^n = \frac 1{1-x}, \text{ on }  (-1,1)
+    </me>.
+  </p>
 
-    <p>
-      Integrating the power series,
-      (as done in <xref ref="ex_ps3">Example</xref>,)
-      we find
-      <men xml:id="eq_ps3a">
-        F(x)  = C_1+\infser[0] \frac{x^{n+1}}{n+1}
-      </men>,
-      while integrating the function <m>f(x) = 1/(1-x)</m> gives
-      <men xml:id="eq_ps3b">
-        F(x)  = -\ln\abs{1-x} + C_2
-      </men>.
-    </p>
+  <p>
+    Integrating the power series,
+    (as done in <xref ref="ex_ps3">Example</xref>,)
+    we find
+    <men xml:id="eq_ps3a">
+      F(x)  = C_1+\infser[0] \frac{x^{n+1}}{n+1}
+    </men>,
+    while integrating the function <m>f(x) = 1/(1-x)</m> gives
+    <men xml:id="eq_ps3b">
+      F(x)  = -\ln\abs{1-x} + C_2
+    </men>.
+  </p>
 
-    <p>
-      Equating Equations <xref ref="eq_ps3a" /> and <xref ref="eq_ps3b" />, we have
-      <me>
-        F(x) = C_1+\infser[0] \frac{x^{n+1}}{n+1} = -\ln\abs{1-x} + C_2
-      </me>.
-    </p>
+  <p>
+    Equating Equations <xref ref="eq_ps3a"/> and <xref ref="eq_ps3b"/>, we have
+    <me>
+      F(x) = C_1+\infser[0] \frac{x^{n+1}}{n+1} = -\ln\abs{1-x} + C_2
+    </me>.
+  </p>
 
-    <p>
-      Letting <m>x=0</m>, we have <m>F(0) = C_1 = C_2</m>.
-      This implies that we can drop the constants and conclude
-      <me>
-        \infser[0] \frac{x^{n+1}}{n+1} = -\ln\abs{1-x}
-      </me>.
-    </p>
+  <p>
+    Letting <m>x=0</m>, we have <m>F(0) = C_1 = C_2</m>.
+    This implies that we can drop the constants and conclude
+    <me>
+      \infser[0] \frac{x^{n+1}}{n+1} = -\ln\abs{1-x}
+    </me>.
+  </p>
 
-    <p>
-      We established in <xref ref="ex_ps3">Example</xref>
-      that the series on the left converges at <m>x=-1</m>;
-      substituting <m>x=-1</m> on both sides of the above equality gives
-      <me>
-        -1+\frac12-\frac13+\frac14-\frac15+\cdots = -\ln(2) 
-      </me>.
-    </p>
+  <p>
+    We established in <xref ref="ex_ps3">Example</xref>
+    that the series on the left converges at <m>x=-1</m>;
+    substituting <m>x=-1</m> on both sides of the above equality gives
+    <me>
+      -1+\frac12-\frac13+\frac14-\frac15+\cdots = -\ln(2) 
+    </me>.
+  </p>
 
-    <p>
-      On the left we have the opposite of the Alternating Harmonic Series;
-      on the right, we have <m>-\ln(2)</m>.
-      We conclude that
-      <me>
-        1-\frac12+\frac13-\frac14+\cdots = \ln(2) 
-      </me>.
-    </p>
+  <p>
+    On the left we have the opposite of the Alternating Harmonic Series;
+    on the right, we have <m>-\ln(2)</m>.
+    We conclude that
+    <me>
+      1-\frac12+\frac13-\frac14+\cdots = \ln(2) 
+    </me>.
+  </p>
 
-    <p>
-      <em>Important:</em> We stated in <xref ref="idea_famous_series">Key Idea</xref>
-      (in <xref ref="sec_series">Section</xref>)
-      that the Alternating Harmonic Series converges to <m>\ln(2)</m>,
-      and referred to this fact again in <xref ref="ex_alt1">Example</xref>
-      of <xref ref="sec_alt_series">Section</xref>.
-      However, we never gave an argument for why this was the case.
-      The work above finally shows how we conclude that the Alternating Harmonic Series converges to <m>\ln(2)</m>.
+  <p>
+    <em>Important:</em> We stated in <xref ref="idea_famous_series">Key Idea</xref>
+    (in <xref ref="sec_series">Section</xref>)
+    that the Alternating Harmonic Series converges to <m>\ln(2)</m>,
+    and referred to this fact again in <xref ref="ex_alt1">Example</xref>
+    of <xref ref="sec_alt_series">Section</xref>.
+    However, we never gave an argument for why this was the case.
+    The work above finally shows how we conclude that the Alternating Harmonic Series converges to <m>\ln(2)</m>.
 
-      <idx>
-        <h>Alternating Harmonic Series</h>
-      </idx>
+    <idx>
+      <h>Alternating Harmonic Series</h>
+    </idx>
 
-    </p>
+  </p>
 
-    <p>
-      We use this type of analysis in the next example.
-    </p>
+  <p>
+    We use this type of analysis in the next example.
+  </p>
 
-    <example xml:id="ex_ps4">
-      <title>Analyzing power series functions</title>
-      <statement>
-        <p>
-          Let <m>\ds f(x) = \infser[0] \frac{x^n}{n!}</m>.
-          Find <m>\ds \fp(x)</m> and <m>\ds \int f(x)\ dx</m>,
-          and use these to analyze the behavior of <m>f(x)</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          We start by making two notes:
-          first, in <xref ref="ex_ps2">Example</xref>,
-          we found the interval of convergence of this power series is <m>(-\infty,\infty)</m>.
-          Second, we will find it useful later to have a few terms of the series written out:
-          <men xml:id="eq_ps4">
-            \infser[0] \frac{x^n}{n!} = 1 + x + \frac{x^2}2+\frac{x^3}{6} + \frac{x^4}{24} +\cdots
-          </men>
-        </p>
+  <example xml:id="ex_ps4">
+    <title>Analyzing power series functions</title>
+    <statement>
+      <p>
+        Let <m>\ds f(x) = \infser[0] \frac{x^n}{n!}</m>.
+        Find <m>\ds \fp(x)</m> and <m>\ds \int f(x)\ dx</m>,
+        and use these to analyze the behavior of <m>f(x)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We start by making two notes:
+        first, in <xref ref="ex_ps2">Example</xref>,
+        we found the interval of convergence of this power series is <m>(-\infty,\infty)</m>.
+        Second, we will find it useful later to have a few terms of the series written out:
+        <men xml:id="eq_ps4">
+          \infser[0] \frac{x^n}{n!} = 1 + x + \frac{x^2}2+\frac{x^3}{6} + \frac{x^4}{24} +\cdots
+        </men>
+      </p>
 
-        <p>
-          We now find the derivative:
-          <md>
-            <mrow>\fp(x) \amp = \infser n\frac{x^{n-1}}{n!}</mrow>
-            <mrow>\amp =\infser \frac{x^{n-1}}{(n-1)!} = 1+x+\frac{x^2}{2!}+\cdots.</mrow>
-            <intertext>Since the series starts at <m>n=1</m> and each term refers to <m>(n-1)</m>, we can re-index the series starting with <m>n=0</m>:</intertext>
-            <mrow>\amp = \infser[0] \frac{x^{n}}{n!}</mrow>
-            <mrow>\amp = f(x)</mrow>
-          </md>.
-        </p>
+      <p>
+        We now find the derivative:
+        <md>
+          <mrow>\fp(x) \amp = \infser n\frac{x^{n-1}}{n!}</mrow>
+          <mrow>\amp =\infser \frac{x^{n-1}}{(n-1)!} = 1+x+\frac{x^2}{2!}+\cdots.</mrow>
+          <intertext>Since the series starts at <m>n=1</m> and each term refers to <m>(n-1)</m>, we can re-index the series starting with <m>n=0</m>:</intertext>
+          <mrow>\amp = \infser[0] \frac{x^{n}}{n!}</mrow>
+          <mrow>\amp = f(x)</mrow>
+        </md>.
+      </p>
 
-        <p>
-          We found the derivative of <m>f(x)</m> is <m>f(x)</m>.
-          The only functions for which this is true are of the form <m>y=ce^x</m> for some constant <m>c</m>.
-          As <m>f(0) = 1</m>
-          (see Equation <xref ref="eq_ps4" />),
-          <m>c</m> must be 1.
-          Therefore we conclude that
-          <me>
-            f(x) = \infser[0] \frac{x^n}{n!} = e^x
-          </me>
-          for all <m>x</m>.
-        </p>
+      <p>
+        We found the derivative of <m>f(x)</m> is <m>f(x)</m>.
+        The only functions for which this is true are of the form <m>y=ce^x</m> for some constant <m>c</m>.
+        As <m>f(0) = 1</m>
+        (see Equation <xref ref="eq_ps4"/>),
+        <m>c</m> must be 1.
+        Therefore we conclude that
+        <me>
+          f(x) = \infser[0] \frac{x^n}{n!} = e^x
+        </me>
+        for all <m>x</m>.
+      </p>
 
-        <p>
-          We can also find <m>\ds \int f(x)\ dx</m>:
-          <md>
-            <mrow>\int f(x)\ dx \amp = C+\infser[0] \frac{x^{n+1}}{n!(n+1)}</mrow>
-            <mrow>\amp = C+ \infser[0] \frac{x^{n+1}}{(n+1)!}</mrow>
-          </md>
-        </p>
+      <p>
+        We can also find <m>\ds \int f(x)\ dx</m>:
+        <md>
+          <mrow>\int f(x)\ dx \amp = C+\infser[0] \frac{x^{n+1}}{n!(n+1)}</mrow>
+          <mrow>\amp = C+ \infser[0] \frac{x^{n+1}}{(n+1)!}</mrow>
+        </md>
+      </p>
 
-        <p>
-          We write out a few terms of this last series:
-          <me>
-            C+ \infser[0] \frac{x^{n+1}}{(n+1)!} = C+ x+ \frac{x^2}2+\frac{x^3}{6}+\frac{x^4}{24}+\cdots
-          </me>
-        </p>
+      <p>
+        We write out a few terms of this last series:
+        <me>
+          C+ \infser[0] \frac{x^{n+1}}{(n+1)!} = C+ x+ \frac{x^2}2+\frac{x^3}{6}+\frac{x^4}{24}+\cdots
+        </me>
+      </p>
 
-        <p>
-          The integral of <m>f(x)</m> differs from <m>f(x)</m> only by a constant,
-          again indicating that <m>f(x) = e^x</m>.
-        </p>
-      </solution>
-    </example>
+      <p>
+        The integral of <m>f(x)</m> differs from <m>f(x)</m> only by a constant,
+        again indicating that <m>f(x) = e^x</m>.
+      </p>
+    </solution>
+  </example>
 
-    <p>
-      <xref ref="ex_ps4">Example</xref>
-      and the work following <xref ref="ex_ps3">Example</xref>
-      established relationships between a power series function and <q>regular</q>
-      functions that we have dealt with in the past.
-      In general, given a power series function, it is difficult
-      (if not impossible)
-      to express the function in terms of elementary functions.
-      We chose examples where things worked out nicely.
-    </p>
+  <p>
+    <xref ref="ex_ps4">Example</xref>
+    and the work following <xref ref="ex_ps3">Example</xref>
+    established relationships between a power series function and <q>regular</q>
+    functions that we have dealt with in the past.
+    In general, given a power series function, it is difficult
+    (if not impossible)
+    to express the function in terms of elementary functions.
+    We chose examples where things worked out nicely.
+  </p>
 
-    <p>
-      In this section's last example,
-      we show how to solve a simple differential equation with a power series.
-    </p>
+  <p>
+    In this section's last example,
+    we show how to solve a simple differential equation with a power series.
+  </p>
 
-    <example xml:id="ex_ps5">
-      <title>Solving a differential equation with a power series.</title>
-      <statement>
-        <p>
-          Give the first 4 terms of the power series solution to <m>y' = 2y</m>,
-          where <m>y(0) = 1</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          The differential equation <m>y' = 2y</m> describes a function <m>y=f(x)</m> where the derivative of <m>y</m> is twice <m>y</m> and <m>y(0)=1</m>.
-          This is a rather simple differential equation;
-          with a bit of thought one should realize that if <m>y=Ce^{2x}</m>,
-          then <m>y' = 2Ce^{2x}</m>, and hence <m>y' = 2y</m>.
-          By letting <m>C=1</m> we satisfy the initial condition of <m>y(0)=1</m>.
-        </p>
+  <example xml:id="ex_ps5">
+    <title>Solving a differential equation with a power series.</title>
+    <statement>
+      <p>
+        Give the first 4 terms of the power series solution to <m>y' = 2y</m>,
+        where <m>y(0) = 1</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The differential equation <m>y' = 2y</m> describes a function <m>y=f(x)</m> where the derivative of <m>y</m> is twice <m>y</m> and <m>y(0)=1</m>.
+        This is a rather simple differential equation;
+        with a bit of thought one should realize that if <m>y=Ce^{2x}</m>,
+        then <m>y' = 2Ce^{2x}</m>, and hence <m>y' = 2y</m>.
+        By letting <m>C=1</m> we satisfy the initial condition of <m>y(0)=1</m>.
+      </p>
 
-        <p>
-          Let's ignore the fact that we already know the solution and find a power series function that satisfies the equation.
-          The solution we seek will have the form
-          <me>
-            f(x)  = \infser[0] a_nx^n = a_0+a_1x+a_2x^2+a_3x^3+\cdots
-          </me>
-          for unknown coefficients <m>a_n</m>.
-          We can find <m>\fp(x)</m> using <xref ref="thm_calc_power_series">Theorem</xref>:
-          <me>
-            \fp(x) = \infser a_n\cdot n\cdot x^{n-1} = a_1+2a_2x+3a_3x^2+4a_4x^3\cdots
-          </me>.
-        </p>
+      <p>
+        Let's ignore the fact that we already know the solution and find a power series function that satisfies the equation.
+        The solution we seek will have the form
+        <me>
+          f(x)  = \infser[0] a_nx^n = a_0+a_1x+a_2x^2+a_3x^3+\cdots
+        </me>
+        for unknown coefficients <m>a_n</m>.
+        We can find <m>\fp(x)</m> using <xref ref="thm_calc_power_series">Theorem</xref>:
+        <me>
+          \fp(x) = \infser a_n\cdot n\cdot x^{n-1} = a_1+2a_2x+3a_3x^2+4a_4x^3\cdots
+        </me>.
+      </p>
 
-        <p>
-          Since <m>\fp(x) = 2f(x)</m>, we have
-          <md>
-            <mrow>a_1+2a_2x+3a_3x^2+4a_4x^3\cdots \amp = 2\big(a_0+a_1x+a_2x^2+a_3x^3+\cdots\big)</mrow>
-            <mrow>\amp =2a_0+2a_1x+2a_2x^2+2a_3x^3+\cdots</mrow>
-          </md>
-        </p>
+      <p>
+        Since <m>\fp(x) = 2f(x)</m>, we have
+        <md>
+          <mrow>a_1+2a_2x+3a_3x^2+4a_4x^3\cdots \amp = 2\big(a_0+a_1x+a_2x^2+a_3x^3+\cdots\big)</mrow>
+          <mrow>\amp =2a_0+2a_1x+2a_2x^2+2a_3x^3+\cdots</mrow>
+        </md>
+      </p>
 
-        <p>
-          The coefficients of like powers of <m>x</m> must be equal,
-          so we find that
-          <me>
-            a_1 = 2a_0, 2a_2 = 2a_1, 3a_3 = 2a_2, 4a_4 = 2a_3, \text{ etc. }
-          </me>
-        </p>
+      <p>
+        The coefficients of like powers of <m>x</m> must be equal,
+        so we find that
+        <me>
+          a_1 = 2a_0, 2a_2 = 2a_1, 3a_3 = 2a_2, 4a_4 = 2a_3, \text{ etc. }
+        </me>
+      </p>
 
-        <p>
-          The initial condition <m>y(0) = f(0) = 1</m> indicates that <m>a_0 = 1</m>;
-          with this, we can find the values of the other coefficients:
-          <md>
-            <mrow>a_0 = 1 \text{ and }  a_1=2a_0 \amp \Rightarrow a_1 = 2;</mrow>
-            <mrow>a_1 = 2 \text{ and }  2a_2 = 2a_1 \amp \Rightarrow a_2=4/2 =2;</mrow>
-            <mrow>a_2=2 \text{ and }  3a_3 = 2a_2 \amp \Rightarrow a_3=8/(2\cdot3)=4/3;</mrow>
-            <mrow>a_3=4/3 \text{ and }  4a_4 = 2a_3 \amp \Rightarrow a_4 =16/(2\cdot3\cdot4)= 2/3</mrow>
-          </md>.
-        </p>
+      <p>
+        The initial condition <m>y(0) = f(0) = 1</m> indicates that <m>a_0 = 1</m>;
+        with this, we can find the values of the other coefficients:
+        <md>
+          <mrow>a_0 = 1 \text{ and }  a_1=2a_0 \amp \Rightarrow a_1 = 2;</mrow>
+          <mrow>a_1 = 2 \text{ and }  2a_2 = 2a_1 \amp \Rightarrow a_2=4/2 =2;</mrow>
+          <mrow>a_2=2 \text{ and }  3a_3 = 2a_2 \amp \Rightarrow a_3=8/(2\cdot3)=4/3;</mrow>
+          <mrow>a_3=4/3 \text{ and }  4a_4 = 2a_3 \amp \Rightarrow a_4 =16/(2\cdot3\cdot4)= 2/3</mrow>
+        </md>.
+      </p>
 
-        <p>
-          Thus the first 5 terms of the power series solution to the differential equation <m>y'=2y</m> is
-          <me>
-            f(x) = 1+ 2x+2x^2 + \frac43x^3+\frac23x^4+\cdots
-          </me>
-        </p>
+      <p>
+        Thus the first 5 terms of the power series solution to the differential equation <m>y'=2y</m> is
+        <me>
+          f(x) = 1+ 2x+2x^2 + \frac43x^3+\frac23x^4+\cdots
+        </me>
+      </p>
 
-        <p>
-          In <xref ref="sec_taylor_series">Section</xref>,
-          as we study Taylor Series,
-          we will learn how to recognize this series as describing <m>y=e^{2x}</m>.
-        </p>
-      </solution>
-    </example>
+      <p>
+        In <xref ref="sec_taylor_series">Section</xref>,
+        as we study Taylor Series,
+        we will learn how to recognize this series as describing <m>y=e^{2x}</m>.
+      </p>
+    </solution>
+  </example>
 
-    <p>
-      Our last example illustrates that it can be difficult to recognize an elementary function by its power series expansion.
-      It is far easier to start with a known function,
-      expressed in terms of elementary functions,
-      and represent it as a power series function.
-      One may wonder why we would bother doing so,
-      as the latter function probably seems more complicated.
-      In the next two sections,
-      we show both <em>how</em> to do this and <em>why</em>
-      such a process can be beneficial.
-    </p>
-  </introduction>
+  <p>
+    Our last example illustrates that it can be difficult to recognize an elementary function by its power series expansion.
+    It is far easier to start with a known function,
+    expressed in terms of elementary functions,
+    and represent it as a power series function.
+    One may wonder why we would bother doing so,
+    as the latter function probably seems more complicated.
+    In the next two sections,
+    we show both <em>how</em> to do this and <em>why</em>
+    such a process can be beneficial.
+  </p>
 
   <exercises>
     <exercisegroup>
@@ -948,25 +965,30 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises, a power series is given.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
 
-      <ol>
-        <li>
-          <title>(a)</title>
-          <p>
-            Find the radius of convergence.
-          </p>
-        </li>
+      <introduction>
+        <p>
+          In the following exercises, a power series is given.
+        </p>
 
-        <li>
-          <title>(b)</title>
-          <p>
-            Find the interval of convergence.
-          </p>
-        </li>
-      </ol>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find the radius of convergence.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the interval of convergence.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -981,19 +1003,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=\infty</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=\infty</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1011,19 +1035,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-1,1)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-1,1)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1041,19 +1067,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(2,4]</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(2,4]</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1071,19 +1099,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=\infty</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=\infty</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1101,19 +1131,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=2</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=2</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-2,2)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-2,2)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1131,19 +1163,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=10</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=10</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-5,15)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-5,15)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1161,19 +1195,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1/5</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1/5</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(4/5,6/5)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(4/5,6/5)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1191,19 +1227,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1/2</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1/2</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-1/2,1/2)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-1/2,1/2)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1221,19 +1259,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-1,1)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-1,1)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1251,19 +1291,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=3</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=3</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-3,3)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-3,3)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1281,19 +1323,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=\infty</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=\infty</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1311,19 +1355,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=0</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=0</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>x=10</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>x=10</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1341,19 +1387,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>[-1,1]</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>[-1,1]</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1371,19 +1419,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=1</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=1</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>[-3,-1]</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>[-3,-1]</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1401,19 +1451,21 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=0</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=0</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>x=0</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>x=0</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1431,43 +1483,50 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>R=4</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>R=4</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>x=(-8,0)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>x=(-8,0)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
 
+    </exercisegroup>
+    <exercisegroup>
+
+    <introduction>
       <p>
         In the following exercises,
         a function <m>\ds f(x) = \infser[0] a_nx^n</m> is given.
       </p>
 
-      <ol>
-        <li>
-          <title>(a)</title>
-          <p>
-            Give a power series for <m>\fp(x)</m> and its interval of convergence.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Give a power series for <m>\fp(x)</m> and its interval of convergence.
+            </p>
+          </li>
 
-        <li>
-          <title>(b)</title>
-          <p>
-            Give a power series for <m>\int f(x)\ dx</m> and its interval of convergence.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              Give a power series for <m>\int f(x)\ dx</m> and its interval of convergence.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1482,20 +1541,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \fp(x) = \infser n^2x^{n-1}</m>; <m>(-1,1)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \fp(x) = \infser n^2x^{n-1}</m>; <m>(-1,1)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int f(x)\ dx = C+\infser[0] \frac{n}{n+1}x^{n+1}</m>;
-                    <m>(-1,1)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int f(x)\ dx = C+\infser[0] \frac{n}{n+1}x^{n+1}</m>;
+                      <m>(-1,1)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1513,20 +1574,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \fp(x) = \infser x^{n-1}</m>; <m>(-1,1)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \fp(x) = \infser x^{n-1}</m>; <m>(-1,1)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int f(x)\ dx = C+\infser \frac{1}{n(n+1)}x^{n+1}</m>;
-                    <m>[-1,1]</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int f(x)\ dx = C+\infser \frac{1}{n(n+1)}x^{n+1}</m>;
+                      <m>[-1,1]</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1544,20 +1607,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \fp(x) = \infser \frac{n}{2^n}x^{n-1}</m>; <m>(-2,2)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \fp(x) = \infser \frac{n}{2^n}x^{n-1}</m>; <m>(-2,2)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int f(x)\ dx = C+\infser[0] \frac{1}{(n+1)2^n}x^{n+1}</m>;
-                    <m>[-2,2)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int f(x)\ dx = C+\infser[0] \frac{1}{(n+1)2^n}x^{n+1}</m>;
+                      <m>[-2,2)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1575,20 +1640,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \fp(x) = \infser n(-3)^nx^{n-1}</m>; <m>(-1/3,1/3)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \fp(x) = \infser n(-3)^nx^{n-1}</m>; <m>(-1/3,1/3)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int f(x)\ dx = C+\infser[0] \frac{(-3)^n}{n+1}x^{n+1}</m>;
-                    <m>(-1/3,1/3]</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int f(x)\ dx = C+\infser[0] \frac{(-3)^n}{n+1}x^{n+1}</m>;
+                      <m>(-1/3,1/3]</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1606,21 +1673,23 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \fp(x) = \infser \frac{(-1)^nx^{2n-1}}{(2n-1)!} =\infser[0] \frac{(-1)^{n+1}x^{2n+1}}{(2n+1)!}</m>;
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \fp(x) = \infser \frac{(-1)^nx^{2n-1}}{(2n-1)!} =\infser[0] \frac{(-1)^{n+1}x^{2n+1}}{(2n+1)!}</m>;
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int f(x)\ dx = C+\infser[0] \frac{(-1)^nx^{2n+1}}{(2n+1)!}</m>;
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int f(x)\ dx = C+\infser[0] \frac{(-1)^nx^{2n+1}}{(2n+1)!}</m>;
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1638,29 +1707,36 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \fp(x) = \infser \frac{(-1)^nx^{n-1}}{(n-1)!} =\infser[0] \frac{(-1)^{n+1}x^{n}}{n!}</m>;
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \fp(x) = \infser \frac{(-1)^nx^{n-1}}{(n-1)!} =\infser[0] \frac{(-1)^{n+1}x^{n}}{n!}</m>;
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int f(x)\ dx = C+\infser[0] \frac{(-1)^{n}x^{n+1}}{(n+1)!}</m>;
-                    <m>(-\infty,\infty)</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int f(x)\ dx = C+\infser[0] \frac{(-1)^{n}x^{n+1}}{(n+1)!}</m>;
+                      <m>(-\infty,\infty)</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        give the first 5 terms of the series that is a solution to the given differential equation.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          give the first 5 terms of the series that is a solution to the given differential equation.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1785,4 +1861,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
