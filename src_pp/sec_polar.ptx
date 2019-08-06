@@ -58,8 +58,10 @@
         \begin{tikzpicture}
 
         \draw[thick,-&gt;] (0,0) node [below] {\(O\)} -- (3,0) node [below] {initial ray};
+
         \filldraw (0,0) circle (1.5pt);
         \filldraw [rotate=55] (2,0) circle (1.5pt);
+        
         \draw [thick,rotate=55] (0,0)-- node [rotate=55,pos=.5,above] {\(r\)} (2,0) node [above] {\(P=P(r,\theta)\)};
         \draw [-&gt;] (.75,0) arc(0:55:.75);
         \draw [rotate=27.5] (1,0) node {\(\theta\)};
@@ -1283,7 +1285,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:18.85,samples=240] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
+              \draw [thick,firstcolor,domain=0:18.85,samples=200] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
       
               \end{tikzpicture}
               
@@ -1322,7 +1324,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=90] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
 
               \end{tikzpicture}
               
@@ -1342,7 +1344,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=90] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
       
               \end{tikzpicture}
               
@@ -1364,7 +1366,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=90] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
       
               \end{tikzpicture}
               
@@ -1384,7 +1386,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);    
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=80] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
 
               \end{tikzpicture}
               
@@ -1427,7 +1429,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
 
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=180] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
 
               \end{tikzpicture}
               
@@ -1447,7 +1449,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=180] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
 
               \end{tikzpicture}
               
@@ -1465,10 +1467,11 @@
               <latex-image>
               
               \begin{tikzpicture}
+              
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=160] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
 
               \end{tikzpicture}
               
@@ -1488,7 +1491,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=160] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
       
               \end{tikzpicture}
               
@@ -1520,7 +1523,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:900,samples=100] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
+              \draw [thick,firstcolor,domain=0:900,samples=200] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
       
               \end{tikzpicture}
               
@@ -1540,7 +1543,7 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=0:1800,samples=200] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
+              \draw [thick,firstcolor,domain=0:1800,samples=500] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
       
               \end{tikzpicture}
               
@@ -1562,8 +1565,8 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
-              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=70] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=70] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
       
               \end{tikzpicture}
               
@@ -1583,8 +1586,8 @@
               \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
               \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
       
-              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
-              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=80] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=80] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
       
               \end{tikzpicture}
               
@@ -1663,12 +1666,13 @@
                 \begin{tikzpicture}
 
                 \begin{axis}[
+                axis on top,
                 ymin=-.6,ymax=.6,
                 xmin=-.72,xmax=.72
                 ]
 
                 \addplot+ [-,domain=0:360,samples=180] ({cos(x)*(1+3*cos(x))},{sin(x)*(1+3*cos(x))});
-                \addplot+ [-,solid,domain=0:180,samples=70] ({cos(x)*cos(x)},{sin(x)*cos(x)});
+                \addplot+ [-,solid,domain=0:180,samples=80] ({cos(x)*cos(x)},{sin(x)*cos(x)});
 
                 \end{axis}
 
@@ -1899,15 +1903,21 @@
               <latex-image>
               
               \begin{tikzpicture}
+
               \foreach \x in {1,2}
-              {\draw (0,0) circle (\x);
-              \draw (\x,0) node [below right] { \(\x\)};
+              {
+                \draw (0,0) circle (\x);
+                \draw (\x,0) node [below right] {\(\x\)};
               }
-              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] { \(O\)} -- (2.5,0);
-              \filldraw (xyz polar cs: angle=0,radius=2) circle (2pt) node [above right] { \(A\)}
-                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] { \(B\)}
-                        (xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] { \(C\)}
-                        (xyz polar cs: angle=45,radius=1)circle (2pt) node [right] { \(D\)};\end{tikzpicture}
+              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (2.5,0);
+
+              \filldraw (xyz polar cs: angle=0,radius=2) circle (2pt) node [above right] {\(A\)}
+                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] {\(B\)}
+                        (xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] {\(C\)}
+                        (xyz polar cs: angle=45,radius=1)circle (2pt) node [right] {\(D\)};
+                        
+              \end{tikzpicture}
+
               </latex-image>
             </image>
           </solution>
@@ -1960,15 +1970,21 @@
               <latex-image>
               
               \begin{tikzpicture}
+
               \foreach \x in {1,2}
-              {\draw (0,0) circle (\x);
-              \draw (\x,0) node [below right] { \(\x\)};
+              {
+                \draw (0,0) circle (\x);
+                \draw (\x,0) node [below right] {\(\x\)};
               }
-              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] { \(O\)} -- (2.5,0);
-              \filldraw (xyz polar cs: angle=180,radius=2) circle (2pt) node [above] { \(A\)}
-                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] { \(B\)}
-                        (xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] { \(C\)}
-                        (xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}
+              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (2.5,0);
+
+              \filldraw (xyz polar cs: angle=180,radius=2) circle (2pt) node [above] {\(A\)}
+                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] {\(B\)}
+                        (xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] {\(C\)}
+                        (xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] {\(D\)};
+                        
+              \end{tikzpicture}
+
               </latex-image>
             </image>
           </solution>
@@ -1993,20 +2009,30 @@
               <latex-image>
               
               \begin{tikzpicture}
+
               \draw [dashed,gray] (-3.1,0) -- (0,0);
-              \draw[thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (3.5,0) ;
+              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (3.5,0);
+
               \filldraw (0,0) circle (1.5pt);
+
               \foreach \x in {1,2,3}
-              {\draw (0,0) circle (\x cm);
-              \draw (\x,0) node [below right] {\x};
+              {
+                \draw (0,0) circle (\x cm);
+                \draw (\x,0) node [below right] {\x};
               }
+
               \foreach \x in {30,45,60,90,120,135,150}
-              {\draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
+              {
+                \draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
               }
-              \filldraw (xyz polar cs: angle=45,radius=2.5) circle (2pt) node [above] { \(A\)}
-                        (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] { \(B\)}
-                        (xyz polar cs: angle=240,radius=3)circle (2pt) node [right] { \(C\)}
-                        (xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}
+
+              \filldraw (xyz polar cs: angle=45,radius=2.5) circle (2pt) node [above] {\(A\)}
+                        (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] {\(B\)}
+                        (xyz polar cs: angle=240,radius=3)circle (2pt) node [right] {\(C\)}
+                        (xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] {\(D\)};
+                        
+              \end{tikzpicture}
+
               </latex-image>
             </image>
 
@@ -2358,21 +2384,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-.5,ymax=2.1,%
-                xmin=-.5,xmax=2.6%
+
+                \begin{axis}[
+                ymin=-.5,ymax=2.1,
+                xmin=-.5,xmax=2.6
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:90] ({2*cos(x)},{2*sin(x)});
+                \addplot+ [-,domain=0:90] ({2*cos(x)},{2*sin(x)});
 
                 \end{axis}
 
@@ -2404,21 +2422,14 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
+
+                \begin{axis}[
                 xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-2.1,ymax=2.1,%
-                xmin=-2.5,xmax=2.5%
+                ymin=-2.1,ymax=2.1,
+                xmin=-2.5,xmax=2.5
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=-.866:1.73] ({x},{.577*x});
+                \addplot+ [-,domain=-.866:1.73] ({x},{.577*x});
 
                 \end{axis}
 
@@ -2450,21 +2461,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-2.1,ymax=2.1,%
-                xmin=-2.5,xmax=2.5%
+
+                \begin{axis}[
+                ymin=-2.1,ymax=2.1,
+                xmin=-2.5,xmax=2.5
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:360] ({cos(x)*(1-cos(x))},{sin(x)*(1-cos(x))});
+                \addplot+ [-,domain=0:360,samples=80] ({cos(x)*(1-cos(x))},{sin(x)*(1-cos(x))});
 
                 \end{axis}
 
@@ -2496,21 +2499,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-2.6,ymax=3.6,%
-                xmin=-3.7,xmax=3.7%
+
+                \begin{axis}[
+                ymin=-2.6,ymax=3.6,
+                xmin=-3.7,xmax=3.7
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(2+sin(x))},{sin(x)*(2+sin(x))});
+                \addplot+ [-,domain=0:360,samples=80] ({cos(x)*(2+sin(x))},{sin(x)*(2+sin(x))});
 
                 \end{axis}
 
@@ -2542,21 +2537,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-3.6,ymax=2.6,%
-                xmin=-3.7,xmax=3.7%
+
+                \begin{axis}[
+                ymin=-3.6,ymax=2.6,
+                xmin=-3.7,xmax=3.7
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:360] ({cos(x)*(2-sin(x))},{sin(x)*(2-sin(x))});
+                \addplot+ [-,domain=0:360,samples=70] ({cos(x)*(2-sin(x))},{sin(x)*(2-sin(x))});
 
                 \end{axis}
 
@@ -2588,21 +2575,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-3.6,ymax=2.6,%
-                xmin=-3.7,xmax=3.7%
+
+                \begin{axis}[
+                ymin=-3.6,ymax=2.6,
+                xmin=-3.7,xmax=3.7
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(1-2*sin(x))},{sin(x)*(1-2*sin(x))});
+                \addplot+ [-,domain=0:360,samples=90] ({cos(x)*(1-2*sin(x))},{sin(x)*(1-2*sin(x))});
 
                 \end{axis}
 
@@ -2634,21 +2613,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-3,-2,-1,1,2,3},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-2.6,ymax=3.6,%
-                xmin=-3.7,xmax=3.7%
+
+                \begin{axis}[
+                ymin=-2.6,ymax=3.6,
+                xmin=-3.7,xmax=3.7
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(1+2*sin(x))},{sin(x)*(1+2*sin(x))});
+                \addplot+ [-,domain=0:360,samples=90] ({cos(x)*(1+2*sin(x))},{sin(x)*(1+2*sin(x))});
 
                 \end{axis}
 
@@ -2680,21 +2651,15 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
+
+                \begin{axis}[
+                axis on top,
                 ytick={-1,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-1.1,ymax=1.1,%
-                xmin=-1.3,xmax=1.3%
+                ymin=-1.1,ymax=1.1,
+                xmin=-1.3,xmax=1.3
                 ]
             
-                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=60] ({cos(x)*(cos(2*x))},{sin(x)*(cos(2*x))});
+                \addplot+ [-,domain=0:360,samples=150] ({cos(x)*(cos(2*x))},{sin(x)*(cos(2*x))});
 
                 \end{axis}
 
@@ -2726,21 +2691,14 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
+
+                \begin{axis}[
                 ytick={-1,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-1.1,ymax=1.1,%
-                xmin=-1.3,xmax=1.3%
+                ymin=-1.1,ymax=1.1,
+                xmin=-1.3,xmax=1.3
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:180,samples=60] ({cos(x)*(sin(3*x))},{sin(x)*(sin(3*x))});
+                \addplot+ [-,domain=0:180,samples=100] ({cos(x)*(sin(3*x))},{sin(x)*(sin(3*x))});
 
                 \end{axis}
 
@@ -2772,21 +2730,15 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
+
+                \begin{axis}[
+                axis on top,
                 ytick={-1,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-1.1,ymax=1.1,%
-                xmin=-1.3,xmax=1.3%
+                ymin=-1.1,ymax=1.1,
+                xmin=-1.3,xmax=1.3
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:540,samples=60] ({cos(x)*(cos(x/3))},{sin(x)*(cos(x/3))});
+                \addplot+ [-,domain=0:540,samples=120] ({cos(x)*(cos(x/3))},{sin(x)*(cos(x/3))});
 
                 \end{axis}
 
@@ -2818,21 +2770,14 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
+
+                \begin{axis}[
                 ytick={-1,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-1.1,ymax=1.1,%
-                xmin=-1.3,xmax=1.3%
+                ymin=-1.1,ymax=1.1,
+                xmin=-1.3,xmax=1.3
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:1080,samples=120] ({cos(x)*(cos(2*x/3))},{sin(x)*(cos(2*x/3))});
+                \addplot+ [-,domain=0:1080,samples=300] ({cos(x)*(cos(2*x/3))},{sin(x)*(cos(2*x/3))});
 
                 \end{axis}
 
@@ -2864,21 +2809,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-1,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-5.9,ymax=4.9,%
-                xmin=-6.5,xmax=6.5%
+
+                \begin{axis}[
+                ymin=-5.9,ymax=4.9,
+                xmin=-6.5,xmax=6.5
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:720,samples=60] ({cos(x)*(x*3.14/360)},{sin(x)*(x*3.14/360)});
+                \addplot+ [-,domain=0:720,samples=150] ({cos(x)*(x*3.14/360)},{sin(x)*(x*3.14/360)});
 
                 \end{axis}
 
@@ -2910,21 +2847,14 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
+
+                \begin{axis}[
                 ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-.9,ymax=3.9,%
-                xmin=-2.9,xmax=2.9%
+                ymin=-.9,ymax=3.9,
+                xmin=-2.9,xmax=2.9
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:180,samples=60] ({cos(x)*(3*sin(x))},{sin(x)*(3*sin(x))});
+                \addplot+ [-,domain=0:180,samples=60] ({cos(x)*(3*sin(x))},{sin(x)*(3*sin(x))});
 
                 \end{axis}
 
@@ -2956,21 +2886,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-1.1,ymax=1.1,%
-                xmin=-1.3,xmax=1.3%
+
+                \begin{axis}[
+                ymin=-1.1,ymax=1.1,
+                xmin=-1.3,xmax=1.3
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=60] ({cos(x)*(cos(x)*sin(x))},{sin(x)*(cos(x)*sin(x))});
+                \addplot+ [-,domain=0:360,samples=120] ({cos(x)*(cos(x)*sin(x))},{sin(x)*(cos(x)*sin(x))});
 
                 \end{axis}
 
@@ -3002,21 +2924,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-3.75,ymax=3.75,%
-                xmin=-8.1,xmax=.9%
+
+                \begin{axis}[
+                ymin=-3.75,ymax=3.75,
+                xmin=-8.1,xmax=.9
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=-3.14:3.14,samples=60] ({cos(deg(x))*(x^2-2.4674)},{sin(deg(x))*(x^2-2.4674)});
+                \addplot+ [-,domain=-3.14:3.14,samples=120] ({cos(deg(x))*(x^2-2.4674)},{sin(deg(x))*(x^2-2.4674)});
 
                 \end{axis}
 
@@ -3048,21 +2962,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-4.9,ymax=4.96,%
-                xmin=-5.9,xmax=5.9%
+
+                \begin{axis}[
+                ymin=-4.9,ymax=4.96,
+                xmin=-5.9,xmax=5.9
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=.1:3,samples=20] ({cos(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))},{sin(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))});
+                \addplot+ [-,domain=.1:3] ({cos(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))},{sin(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))});
 
                 \end{axis}
 
@@ -3094,21 +3000,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-4.9,ymax=4.96,%
-                xmin=-5.9,xmax=5.9%
+
+                \begin{axis}[
+                ymin=-4.9,ymax=4.96,
+                xmin=-5.9,xmax=5.9
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=.1:3,samples=20] ({cos(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))},{sin(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))});
+                \addplot+ [-,domain=.1:3] ({cos(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))},{sin(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))});
 
                 \end{axis}
 
@@ -3140,21 +3038,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-4.9,ymax=4.96,%
-                xmin=-5.9,xmax=5.9%
+
+                \begin{axis}[
+                ymin=-4.9,ymax=4.96,
+                xmin=-5.9,xmax=5.9
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=-5:5,samples=10] ({3},{x});
+                \addplot+ [-,domain=-5:5] ({3},{x});
 
                 \end{axis}
 
@@ -3186,21 +3076,13 @@
                 <latex-image>
                 
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={1,2,-1,-2},
-                %minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={2,3,1},
-                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                ymin=-4.9,ymax=4.96,%
-                xmin=-5.9,xmax=5.9%
+
+                \begin{axis}[
+                ymin=-4.9,ymax=4.96,
+                xmin=-5.9,xmax=5.9
                 ]
 
-                \addplot [thick,{\colorone}, smooth,domain=-5:5,samples=10] ({x},{4});
+                \addplot+ [-,domain=-5:5] ({x},{4});
 
                 \end{axis}
 
