@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_polar">
   <title>Introduction to Polar Coordinates</title>
   <introduction>
@@ -55,14 +54,18 @@
       <image xml:id="img_polar_intro1">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[>=latex]
-	\draw[thick,->] (0,0) node [below] {\(O\)} -- (3,0) node [below] {initial ray} ;
-	\filldraw (0,0) circle (1.5pt);
-	\filldraw [rotate=55] (2,0) circle (1.5pt);
-	\draw [thick,rotate=55] (0,0)-- node [rotate=55,pos=.5,above] {\(r\)} (2,0) node [above] {\(P=P(r,\theta)\)};
-	\draw [->] (.75,0) arc(0:55:.75);
-	\draw [rotate=27.5] (1,0) node {\(\theta\)};\end{tikzpicture}]]>
+        
+        \begin{tikzpicture}
+
+        \draw[thick,-&gt;] (0,0) node [below] {\(O\)} -- (3,0) node [below] {initial ray} ;
+        \filldraw (0,0) circle (1.5pt);
+        \filldraw [rotate=55] (2,0) circle (1.5pt);
+        \draw [thick,rotate=55] (0,0)-- node [rotate=55,pos=.5,above] {\(r\)} (2,0) node [above] {\(P=P(r,\theta)\)};
+        \draw [-&gt;] (.75,0) arc(0:55:.75);
+        \draw [rotate=27.5] (1,0) node {\(\theta\)};
+
+        \end{tikzpicture}
+
         </latex-image>
       </image>
 
@@ -88,30 +91,29 @@
         </p>
       </statement>
       <solution>
-        <p>
-          \AddToShipoutPicture*{\put(\LenToUnit{.4\paperwidth},\LenToUnit{.04\paperheight}){
-        </p>
-
         <image>
           <description></description>
           <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}[scale=.8]
-	\draw [dashed,gray] (-3.1,0) -- (0,0);
-	\draw[thick,->,>=stealth] (0,0) node [below] {\(O\)} -- (3.5,0) ;
-	\filldraw (0,0) circle (1.5pt);
-	\foreach \x in {1,2,3}
-	{\draw (0,0) circle (\x cm);
-	\draw (\x,0) node [below right] {\x};
-	}
-	\foreach \x in {30,45,60,90,120,135,150}
-	{\draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
-	}\end{tikzpicture}]]>
+          
+          \begin{tikzpicture}
+
+          \draw [dashed,gray] (-3.1,0) -- (0,0);
+          \draw[thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (3.5,0) ;
+          \filldraw (0,0) circle (1.5pt);
+          \foreach \x in {1,2,3}
+          {\draw (0,0) circle (\x cm);
+          \draw (\x,0) node [below right] {\x};
+          }
+          \foreach \x in {30,45,60,90,120,135,150}
+          {\draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
+          }
+
+          \end{tikzpicture}
+
           </latex-image>
         </image>
 
         <p>
-          }}
           To aid in the drawing,
           a polar grid is provided at the bottom of this page.
           To place the point <m>A</m>, go out 1 unit along the initial ray
@@ -138,7 +140,7 @@
 
         <p>
           To plot <m>D</m>, move along the initial ray <q><m>-1</m></q>
-          units <mdash /> in other words,
+          units <mdash/> in other words,
           <q>back up</q> 1 unit, then rotate counter-clockwise by <m>\pi/4</m>.
           The results are given in <xref ref="fig_polar1">Figure</xref>.
         </p>
@@ -149,21 +151,22 @@
           <image xml:id="img_polar1">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[scale=.75,>=latex]
-            \draw[thick,->] (0,0) node [below] {$O$} -- (3.5,0) ;
-	\filldraw (0,0) circle (1.5pt);
-	\foreach \x in {1,2,3}
-	{\draw (0,0) circle (\x cm);
-	\draw (\x,0) node [below right] {\x};
-		}
+            
+            \begin{tikzpicture}
+
+            \draw[thick,-&gt;] (0,0) node [below] {$O$} -- (3.5,0) ;
+            \filldraw (0,0) circle (1.5pt);
+            \foreach \x in {1,2,3}
+            {\draw (0,0) circle (\x cm);
+            \draw (\x,0) node [below right] {\x};
+              }
             \filldraw [rotate=45] (1,0) circle (1.5pt) node [above right] {$A$};
             \filldraw [rotate=180] (1.5,0) circle (1.5pt) node [above] {$B$};
             \filldraw [rotate=-60] (2,0) circle (1.5pt) node [below right] {$C$};
             \filldraw [rotate=45] (-1,0) circle (1.5pt) node [below] {$D$};
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_polar1.tex END -->
@@ -209,19 +212,19 @@
       <image xml:id="img_polar_intro2">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=.75,>=latex]
+        
+        \begin{tikzpicture}
 
         \draw [thick] (0,0) -- node [below,pos=.5] {$x$} (4,0) -- node [right,pos=.5] {$y$} (4,2) -- node [above,rotate=26.57,pos=.5] {$r$} (0,0);
 
-        \draw [->,thick] (1.5,0) arc (0:26:1.5);
+        \draw [-&gt;,thick] (1.5,0) arc (0:26:1.5);
         \draw [rotate=13] (1.8,0) node {$\theta$};
 
         \filldraw (0,0) circle (1.5pt) node [below] {$O$}
 					(4,2) circle (1.5pt) node [above] {$P$};
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_polarintro2.tex END -->
@@ -249,184 +252,189 @@
     <example xml:id="ex_polar2">
       <title>Converting Between Polar and Rectangular Coordinates</title>
       <statement>
-        <ol>
-          <li>
-            <p>
-              Convert the polar coordinates <m>P(2,2\pi/3)</m> and
-              <m>P(-1,5\pi/4)</m> to rectangular coordinates.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Convert the polar coordinates <m>P(2,2\pi/3)</m> and
+                <m>P(-1,5\pi/4)</m> to rectangular coordinates.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Convert the rectangular coordinates <m>(1,2)</m> and <m>(-1,1)</m> to polar coordinates.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Convert the rectangular coordinates <m>(1,2)</m> and <m>(-1,1)</m> to polar coordinates.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <ol>
-              <li>
-                <p>
-                  We start with <m>P(2,2\pi/3)</m>.
-                  Using <xref ref="idea_polarconvert">Key Idea</xref>, we have
-                  <me>
-                    x= 2\cos(2\pi/3) = -1\qquad y = 2\sin(2\pi/3) = \sqrt{3}
-                  </me>.
-                  So the rectangular coordinates are <m>(-1,\sqrt{3}) \approx (-1,1.732)</m>.
-                </p>
-              </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      We start with <m>P(2,2\pi/3)</m>.
+                      Using <xref ref="idea_polarconvert">Key Idea</xref>, we have
+                      <me>
+                        x= 2\cos(2\pi/3) = -1\qquad y = 2\sin(2\pi/3) = \sqrt{3}
+                      </me>.
+                      So the rectangular coordinates are <m>(-1,\sqrt{3}) \approx (-1,1.732)</m>.
+                    </p>
+                  </li>
 
-              <li>
-                <p>
-                  The polar point <m>P(-1,5\pi/4)</m> is converted to rectangular with:
-                  <me>
-                    x=-1\cos(5\pi/4) = \sqrt{2}/2\qquad y= -1\sin(5\pi/4) = \sqrt{2}/2
-                  </me>.
-                  So the rectangular coordinates are <m>(\sqrt{2}/2,\sqrt{2}/2) \approx (0.707,0.707)</m>.
-                </p>
-              </li>
-            </ol>
+                  <li>
+                    <p>
+                      The polar point <m>P(-1,5\pi/4)</m> is converted to rectangular with:
+                      <me>
+                        x=-1\cos(5\pi/4) = \sqrt{2}/2\qquad y= -1\sin(5\pi/4) = \sqrt{2}/2
+                      </me>.
+                      So the rectangular coordinates are <m>(\sqrt{2}/2,\sqrt{2}/2) \approx (0.707,0.707)</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
-            <p>
-              These points are plotted in <xref ref="fig_polar2">Figure</xref> (a).
-              The rectangular coordinate system is drawn lightly under the polar coordinate system so that the relationship between the two can be seen.
-            </p>
+              <p>
+                These points are plotted in <xref ref="fig_polar2">Figure</xref> (a).
+                The rectangular coordinate system is drawn lightly under the polar coordinate system so that the relationship between the two can be seen.
+              </p>
 
-            <figure xml:id="fig_polar2">
-              <caption>Plotting rectangular and polar points in <xref ref="ex_polar2">Example</xref>.</caption>
-              <sidebyside>
-                <figure>
-                  <caption>[5pt]
-                  (a)</caption>
-            <!-- START figures/fig_polar2.tex -->
-                  <image xml:id="img_polar2">
-                    <description></description>
-                    <latex-image>
-                    <![CDATA[
-                    \begin{tikzpicture}[>=latex]
+              <figure xml:id="fig_polar2">
+                <caption>Plotting rectangular and polar points in <xref ref="ex_polar2">Example</xref>.</caption>
+                <sidebyside>
+                  <figure xml:id="fig_polar2a">
+                    <caption/>
+              <!-- START figures/fig_polar2.tex -->
+                    <image xml:id="img_polar2">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    \draw [thin,gray] (-2.5,-2.5) grid (2.5,2.5);
+                      \draw [thin,gray] (-2.5,-2.5) grid (2.5,2.5);
 
-                    \draw [thick,->] (0,0) node [below] {$O$} -- (2.5,0);
+                      \draw [thick,-&gt;] (0,0) node [below] {$O$} -- (2.5,0);
 
-                    \foreach \x in {1,2}
-	{\draw [very thick] (0,0) circle (\x cm);
-	%\draw (\x,0) node [below right] {\x};
-		}
-                    \filldraw (0,0) circle (1.5pt);
+                      \foreach \x in {1,2}
+                      {\draw [very thick] (0,0) circle (\x cm);
+                      %\draw (\x,0) node [below right] {\x};
+                        }
+                      \filldraw (0,0) circle (1.5pt);
 
-                    \filldraw [rotate=120] (2,0) circle (1.5pt) node [ left] {\scriptsize $P(2,\frac{2\pi}{3})$};
-                    \filldraw [rotate=225] (-1,0) circle (1.5pt) node [shift={(0pt,12pt)}] {\scriptsize$P(-1,\frac{5\pi}{4})$};
+                      \filldraw [rotate=120] (2,0) circle (1.5pt) node [ left] {\scriptsize $P(2,\frac{2\pi}{3})$};
+                      \filldraw [rotate=225] (-1,0) circle (1.5pt) node [shift={(0pt,12pt)}] {\scriptsize$P(-1,\frac{5\pi}{4})$};
 
-                    \end{tikzpicture}
-                    ]]>
-                    </latex-image>
-                  </image>
-            <!-- figures/fig_polar2.tex END -->
-                </figure>
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+              <!-- figures/fig_polar2.tex END -->
+                  </figure>
 
-                <figure>
-                  <caption>[5pt]
-                  (b)</caption>
-            <!-- START figures/fig_polar2b.tex -->
-                  <image xml:id="img_polar2b">
-                    <description></description>
-                    <latex-image>
-                    <![CDATA[
-                    \begin{tikzpicture}[>=latex]
+                  <figure xml:id="fig_polar2b">
+                    <caption/>
+              <!-- START figures/fig_polar2b.tex -->
+                    <image xml:id="img_polar2b">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    \draw [very thick] (-2.5,-2.5) grid (2.5,2.5);
+                      \draw [very thick] (-2.5,-2.5) grid (2.5,2.5);
 
-                    \draw [thin,gray,->] (0,0) node [below left,black] {\scriptsize$(0,0)$} -- (2.5,0);
+                      \draw [thin,gray,-&gt;] (0,0) node [below left,black] {\scriptsize$(0,0)$} -- (2.5,0);
 
-                    \foreach \x in {1,2}
-	{\draw [thin,gray] (0,0) circle (\x cm);
-	%\draw (\x,0) node [below right] {\x};
-		}
-                    \filldraw (0,0) circle (1.5pt);
+                      \foreach \x in {1,2}
+                      {\draw [thin,gray] (0,0) circle (\x cm);
+                      %\draw (\x,0) node [below right] {\x};
+                        }
+                      \filldraw (0,0) circle (1.5pt);
 
-                    \filldraw [] (1,2) circle (1.5pt) node [above left] {\scriptsize $(1,2)$};
-                    \filldraw [] (-1,1) circle (1.5pt) node [above right] {\scriptsize$(-1,1)$};
+                      \filldraw [] (1,2) circle (1.5pt) node [above left] {\scriptsize $(1,2)$};
+                      \filldraw [] (-1,1) circle (1.5pt) node [above right] {\scriptsize$(-1,1)$};
 
-                    \draw [gray,dashed] (0,0) -- ($(0,0)!2.2!(-1,1)$);
-                    \draw [gray,->] (.5,0) arc (0:135:.5);
-                    \draw [rotate=35,gray ] (.65,0) node [] {\scriptsize$\frac{3\pi}{4}$};
+                      \draw [gray,dashed] (0,0) -- ($(0,0)!2.2!(-1,1)$);
+                      \draw [gray,-&gt;] (.5,0) arc (0:135:.5);
+                      \draw [rotate=35,gray ] (.65,0) node [] {\scriptsize$\frac{3\pi}{4}$};
 
-                    \draw [gray,dashed] (0,0) -- ($(0,0)!1.2!(1,2)$);
-                    \draw [gray,->] (.5,0) arc (0:135:.5);
-                    \draw [gray,->] (-.5,0) arc (180:135:.5);
-                    \draw [rotate=35,gray ] (.65,0) node [] {\scriptsize$\frac{3\pi}{4}$};
-                    \draw [rotate=-30,gray ] (-.65,0) node [shift={(-3pt,0pt)}] {\scriptsize$\frac{-\pi}{4}$};
+                      \draw [gray,dashed] (0,0) -- ($(0,0)!1.2!(1,2)$);
+                      \draw [gray,-&gt;] (.5,0) arc (0:135:.5);
+                      \draw [gray,-&gt;] (-.5,0) arc (180:135:.5);
+                      \draw [rotate=35,gray ] (.65,0) node [] {\scriptsize$\frac{3\pi}{4}$};
+                      \draw [rotate=-30,gray ] (-.65,0) node [shift={(-3pt,0pt)}] {\scriptsize$\frac{-\pi}{4}$};
 
-                    \draw [gray,->] (1.5,0) arc (0:63.4:1.5);
-                    \draw [rotate=28,gray ] (1.75,0) node [] {\scriptsize$1.11$};
+                      \draw [gray,-&gt;] (1.5,0) arc (0:63.4:1.5);
+                      \draw [rotate=28,gray ] (1.75,0) node [] {\scriptsize$1.11$};
 
-                    \end{tikzpicture}
-                    ]]>
-                    </latex-image>
-                  </image>
-            <!-- figures/fig_polar2b.tex END -->
-                </figure>
-              </sidebyside>
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+              <!-- figures/fig_polar2b.tex END -->
+                  </figure>
+                </sidebyside>
+              </figure>
 
-            </figure>
+            </li>
 
-          </li>
+            <li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      To convert the rectangular point <m>(1,2)</m> to polar coordinates,
+                      we use the Key Idea to form the following two equations:
+                      <me>
+                        1^2+2^2 = r^2 \qquad \tan(\theta) = \frac{2}{1}
+                      </me>.
+                      The first equation tells us that <m>r=\sqrt{5}</m>.
+                      Using the inverse tangent function, we find
+                      <me>
+                        \tan(\theta) = 2  \Rightarrow  \theta = \tan^{-1}(2) \approx 1.11\approx 63.43^\circ
+                      </me>.
+                      Thus polar coordinates of <m>(1,2)</m> are <m>P(\sqrt{5},1.11)</m>.
+                    </p>
+                  </li>
 
-          <li>
-            <ol>
-              <li>
-                <p>
-                  To convert the rectangular point <m>(1,2)</m> to polar coordinates,
-                  we use the Key Idea to form the following two equations:
-                  <me>
-                    1^2+2^2 = r^2 \qquad \tan(\theta) = \frac{2}{1}
-                  </me>.
-                  The first equation tells us that <m>r=\sqrt{5}</m>.
-                  Using the inverse tangent function, we find
-                  <me>
-                    \tan(\theta) = 2  \Rightarrow  \theta = \tan^{-1}(2) \approx 1.11\approx 63.43^\circ
-                  </me>.
-                  Thus polar coordinates of <m>(1,2)</m> are <m>P(\sqrt{5},1.11)</m>.
-                </p>
-              </li>
+                  <li>
+                    <p>
+                      To convert <m>(-1,1)</m> to polar coordinates, we form the equations
+                      <me>
+                        (-1)^2+1^2=r^2 \qquad \tan(\theta) = \frac{1}{-1}
+                      </me>.
+                      Thus <m>r=\sqrt{2}</m>.
+                      We need to be careful in computing <m>\theta</m>:
+                      using the inverse tangent function, we have
+                      <me>
+                        \tan(\theta) = -1  \Rightarrow  \theta = \tan^{-1}(-1) = -\pi/4 = -45^\circ
+                      </me>.
+                      This is not the angle we desire.
+                      The range of <m>\tan^{-1}(x)</m> is <m>(-\pi/2,\pi/2)</m>;
+                      that is, it returns angles that lie in the
+                      <m>1^\text{ st }</m> and <m>4^\text{ th }</m> quadrants.
+                      To find locations in the <m>2^\text{ nd }</m>  and <m>3^\text{ rd }</m> quadrants,
+                      add <m>\pi</m> to the result of <m>\tan^{-1}(x)</m>.
+                      So  <m>\pi+(-\pi/4)</m> puts the angle at <m>3\pi/4</m>.
+                      Thus the polar point is <m>P(\sqrt{2},3\pi/4)</m>.
+    
+                      An alternate method is to use the angle <m>\theta</m> given by arctangent, but change the sign of <m>r</m>. Thus we could also refer to <m>(-1,1)</m> as
+                      <m>P(-\sqrt{2},-\pi/4)</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
-              <li>
-                <p>
-                  To convert <m>(-1,1)</m> to polar coordinates, we form the equations
-                  <me>
-                    (-1)^2+1^2=r^2 \qquad \tan(\theta) = \frac{1}{-1}
-                  </me>.
-                  Thus <m>r=\sqrt{2}</m>.
-                  We need to be careful in computing <m>\theta</m>:
-                  using the inverse tangent function, we have
-                  <me>
-                    \tan(\theta) = -1  \Rightarrow  \theta = \tan^{-1}(-1) = -\pi/4 = -45^\circ
-                  </me>.
-                  This is not the angle we desire.
-                  The range of <m>\tan^{-1}(x)</m> is <m>(-\pi/2,\pi/2)</m>;
-                  that is, it returns angles that lie in the
-                  <m>1^\text{ st }</m> and <m>4^\text{ th }</m> quadrants.
-                  To find locations in the <m>2^\text{ nd }</m>  and <m>3^\text{ rd }</m> quadrants,
-                  add <m>\pi</m> to the result of <m>\tan^{-1}(x)</m>.
-                  So  <m>\pi+(-\pi/4)</m> puts the angle at <m>3\pi/4</m>.
-                  Thus the polar point is <m>P(\sqrt{2},3\pi/4)</m>.
- 
-		An alternate method is to use the angle <m>\theta</m> given by arctangent, but change the sign of <m>r</m>. Thus we could also refer to <m>(-1,1)</m> as
-                  <m>P(-\sqrt{2},-\pi/4)</m>.
-                </p>
-              </li>
-            </ol>
-
-            <p>
-              These points are plotted in <xref ref="fig_polar2">Figure</xref> (b).
-              The polar system is drawn lightly under the rectangular grid with rays to demonstrate the angles used.
-            </p>
-          </li>
-        </ol>
+              <p>
+                These points are plotted in <xref ref="fig_polar2">Figure</xref> (b).
+                The polar system is drawn lightly under the rectangular grid with rays to demonstrate the angles used.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
   </subsection>
@@ -459,66 +467,70 @@
           Describe the graphs of the following polar functions.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>r = 1.5</m>
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>r = 1.5</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\theta = \pi/4</m>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\theta = \pi/4</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              The equation <m>r=1.5</m> describes all points that are 1.5 units from the pole;
-              as the angle is not specified,
-              any <m>\theta</m> is allowable.
-              All points 1.5 units from the pole describes a circle of radius 1.5.
+        <p>
+          <ol>
+            <li>
+              <p>
+                The equation <m>r=1.5</m> describes all points that are 1.5 units from the pole;
+                as the angle is not specified,
+                any <m>\theta</m> is allowable.
+                All points 1.5 units from the pole describes a circle of radius 1.5.
 
-              We can consider the rectangular equivalent of this equation;
-              using <m>r^2=x^2+y^2</m>, we see that <m>1.5^2=x^2+y^2</m>,
-              which we recognize as the equation of a circle centered at <m>(0,0)</m> with radius 1.5.
-              This is sketched in <xref ref="fig_polar3">Figure</xref>.
-            </p>
-          </li>
+                We can consider the rectangular equivalent of this equation;
+                using <m>r^2=x^2+y^2</m>, we see that <m>1.5^2=x^2+y^2</m>,
+                which we recognize as the equation of a circle centered at <m>(0,0)</m> with radius 1.5.
+                This is sketched in <xref ref="fig_polar3">Figure</xref>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The equation <m>\theta = \pi/4</m> describes all points such that the line through them and the pole make an angle of <m>\pi/4</m> with the initial ray.
-              As the radius <m>r</m> is not specified, it can be any value
-              (even negative).
-              Thus <m>\theta = \pi/4</m> describes the line through the pole that makes an angle of
-              <m>\pi/4 = 45^\circ</m> with the initial ray.
+            <li>
+              <p>
+                The equation <m>\theta = \pi/4</m> describes all points such that the line through them and the pole make an angle of <m>\pi/4</m> with the initial ray.
+                As the radius <m>r</m> is not specified, it can be any value
+                (even negative).
+                Thus <m>\theta = \pi/4</m> describes the line through the pole that makes an angle of
+                <m>\pi/4 = 45^\circ</m> with the initial ray.
 
-              We can again consider the rectangular equivalent of this equation.
-              Combine <m>\tan(\theta) =y/x</m> and <m>\theta =\pi/4</m>:
-              <me>
-                \tan(\pi) /4 = y/x  \Rightarrow x\tan(\pi) /4 = y  \Rightarrow y = x
-              </me>.
-              This graph is also plotted in <xref ref="fig_polar3">Figure</xref>.
-
+                We can again consider the rectangular equivalent of this equation.
+                Combine <m>\tan(\theta) =y/x</m> and <m>\theta =\pi/4</m>:
+                <me>
+                  \tan(\pi) /4 = y/x  \Rightarrow x\tan(\pi) /4 = y  \Rightarrow y = x
+                </me>.
+                This graph is also plotted in <xref ref="fig_polar3">Figure</xref>.
+              </p>
+            
               <figure xml:id="fig_polar3">
                 <caption>Plotting standard polar plots.</caption>
             <!-- START figures/fig_polar3.tex -->
                 <image xml:id="img_polar3">
                   <description></description>
                   <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=latex]
+                  
+                  \begin{tikzpicture}
 
-                  \draw [thick,->] (0,0) node [below] {$O$} -- (2.5,0);
+                  \draw [thick,-&gt;] (0,0) node [below] {$O$} -- (2.5,0);
 
                   \foreach \x in {1,2}
-	{\draw [thin] (0,0) circle (\x cm);
-	\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize\x};
-		}
+                  {\draw [thin] (0,0) circle (\x cm);
+                  \draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize\x};
+                    }
                   \filldraw (0,0) circle (1.5pt);
 
                   \draw [very thick] (0,0) circle (1.5);
@@ -527,15 +539,14 @@
                   \draw [thick] (-2,-2) -- node [pos=1,left] {\scriptsize $\theta = \frac{\pi}4$} (2,2);
 
                   \end{tikzpicture}
-                  ]]>
+                  
                   </latex-image>
                 </image>
             <!-- figures/fig_polar3.tex END -->
               </figure>
-
-            </p>
-          </li>
-        </ol>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
@@ -569,17 +580,17 @@
           A common question when sketching curves by plotting points is
           <q>Which points should I plot?</q>
           With rectangular equations,
-          we often choose <q>easy</q> values <mdash /> integers,
+          we often choose <q>easy</q> values <mdash/> integers,
           then added more if needed.
           When plotting polar equations,
-          start with the <q>common</q> angles <mdash /> multiples of <m>\pi/6</m> and <m>\pi/4</m>.
+          start with the <q>common</q> angles <mdash/> multiples of <m>\pi/6</m> and <m>\pi/4</m>.
           <xref ref="fig_polar4">Figure</xref>
           gives a table of just a few values of <m>\theta</m> in <m>[0,\pi]</m>.
         </p>
 
         <p>
           Consider the point <m>P(0,2)</m> determined by the first line of the table.
-          The angle is 0 radians <mdash /> we do not rotate from the initial ray <mdash /> then we go out 2 units from the pole.
+          The angle is 0 radians <mdash/> we do not rotate from the initial ray <mdash/> then we go out 2 units from the pole.
           When <m>\theta=\pi/6</m>,
           <m>r = 1.866</m> (actually, it is <m>1+\sqrt{3}/2</m>);
           so rotate by <m>\pi/6</m> radians and go out 1.866 units.
@@ -595,64 +606,68 @@
     </example>
 
     <table xml:id="fig_polar4">
-      <caption>Graphing a polar function in <xref ref="ex_polar4">Example</xref> by plotting points.</caption>
+      <title>Graphing a polar function in <xref ref="ex_polar4">Example</xref> by plotting points.</title>
       <tabular>
         <row>
-          <cell><m>\begin{array}{cc}
-		\theta \amp  r=1+\cos(\theta) \\ \hline
-            0 \amp  2 \\
-            \pi/6 \amp  1.86603 \\
-            \pi/2 \amp  1 \\
-            4\pi/3 \amp  0.5 \\
-            7 \pi /4 \amp  1.70711 \\
-            \end{array}</m></cell>
+          <cell>
+            <m>
+              \begin{array}{cc}
+              \theta \amp  r=1+\cos(\theta) \\ \hline
+              0 \amp  2 \\
+              \pi/6 \amp  1.86603 \\
+              \pi/2 \amp  1 \\
+              4\pi/3 \amp  0.5 \\
+              7 \pi /4 \amp  1.70711 \\
+              \end{array}
+            </m>
+          </cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><figure>
-<!-- START figures/fig_polar4.tex -->
-              <image xml:id="img_polar4">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[scale=1]
-	\draw [dashed,gray] (-2.1,0) -- (0,0);
-	\draw[thick,->,>=stealth] (0,0) node [below] {$O$} -- (2.5,0) ;
-	\filldraw (0,0) circle (1.5pt);
-	\foreach \x in {1,2}
-	{\draw (0,0) circle (\x cm);
-	\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize\x};
-	}
-	\foreach \x in {30,45,60,90,120,135,150}
-	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	}
- 
-	\draw [thick,{\colorone}] (2,0)--(1.616,0.933)--(1.207,1.207) -- (0.75,1.299) -- (0,1.) -- (-0.25,0.433) -- (-0.2071,0.2071) -- (-0.116,0.06699) -- (0,0) -- (-0.116,-0.06699) -- (-0.2071,-0.2071) -- (-0.25,-0.433) -- (0,-1) -- (0.75,-1.299) -- (1.207,-1.207) -- (1.616,-0.933) -- (2,0);
- 
-	\filldraw (2.,0) circle (2pt)
-	(1.616,0.933) circle (2pt)
-	(1.207,1.207) circle (1pt)
-	(0.75,1.299) circle (1pt)
-	(0,1.) circle (2pt)
-	(-0.25,0.433) circle (1pt)
-	(-0.2071,0.2071) circle (1pt)
-	(-0.116,0.06699) circle (1pt)
-	(0,0)	 circle (1pt)
-	(-0.116,-0.06699) circle (1pt)
-	(-0.2071,-0.2071) circle (1pt)
-	(-0.25,-0.433) circle (2pt)
-	(0,-1.) circle (1pt)
-	(0.75,-1.299)	 circle (1pt)
-	(1.207,-1.207) circle (2pt)
-	(1.616,-0.933) circle (1pt) ;
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
+          <cell>
+          <!-- START figures/fig_polar4.tex -->
+            <image xml:id="img_polar4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+              \draw [dashed,gray] (-2.1,0) -- (0,0);
+              \draw[thick,-&gt;,&gt;=stealth] (0,0) node [below] {$O$} -- (2.5,0) ;
+              \filldraw (0,0) circle (1.5pt);
+              \foreach \x in {1,2}
+              {\draw (0,0) circle (\x cm);
+              \draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize\x};
+              }
+              \foreach \x in {30,45,60,90,120,135,150}
+              {\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
+              }
+
+              \draw [thick,{\colorone}] (2,0)--(1.616,0.933)--(1.207,1.207) -- (0.75,1.299) -- (0,1.) -- (-0.25,0.433) -- (-0.2071,0.2071) -- (-0.116,0.06699) -- (0,0) -- (-0.116,-0.06699) -- (-0.2071,-0.2071) -- (-0.25,-0.433) -- (0,-1) -- (0.75,-1.299) -- (1.207,-1.207) -- (1.616,-0.933) -- (2,0);
+
+              \filldraw (2.,0) circle (2pt)
+                        (1.616,0.933) circle (2pt)
+                        (1.207,1.207) circle (1pt)
+                        (0.75,1.299) circle (1pt)
+                        (0,1.) circle (2pt)
+                        (-0.25,0.433) circle (1pt)
+                        (-0.2071,0.2071) circle (1pt)
+                        (-0.116,0.06699) circle (1pt)
+                        (0,0)	 circle (1pt)
+                        (-0.116,-0.06699) circle (1pt)
+                        (-0.2071,-0.2071) circle (1pt)
+                        (-0.25,-0.433) circle (2pt)
+                        (0,-1.) circle (1pt)
+                        (0.75,-1.299)	 circle (1pt)
+                        (1.207,-1.207) circle (2pt)
+                        (1.616,-0.933) circle (1pt) ;
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
           <!-- figures/fig_polar4.tex END -->
-            </figure></cell>
+          </cell>
         </row>
       </tabular>
 
@@ -672,7 +687,7 @@
       so additional information needs to be provided.
       Often with the <q>window</q> settings are the settings for the beginning and ending <m>\theta</m> values
       (often called <m>\theta_{\text{ min } }</m> and <m>\theta_{\text{ max } }</m>)
-      as well as the <m>\theta_{\text{ step } }</m> <mdash /> that is,
+      as well as the <m>\theta_{\text{ step } }</m> <mdash/> that is,
       how far apart the <m>\theta</m> values are spaced.
       The smaller the <m>\theta_{\text{ step } }</m> value,
       the more accurate the graph
@@ -688,24 +703,24 @@
       <image xml:id="img_polar4b">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1]
-	\draw [dashed,gray] (-2.1,0) -- (0,0);
-	\draw[thick,->,>=stealth] (0,0) node [below] {$O$} -- (2.5,0) ;
-	\filldraw (0,0) circle (1.5pt);
-	\foreach \x in {1,2}
-	{\draw (0,0) circle (\x cm);
-	\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize\x};
-	}
-	\foreach \x in {30,45,60,90,120,135,150}
-	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	}
- 
-	\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1+cos(\x))},{sin(\x)*(1+cos(\x))});
+        
+        \begin{tikzpicture}
+        \draw [dashed,gray] (-2.1,0) -- (0,0);
+        \draw[thick,-&gt;,&gt;=stealth] (0,0) node [below] {$O$} -- (2.5,0) ;
+        \filldraw (0,0) circle (1.5pt);
+        \foreach \x in {1,2}
+        {\draw (0,0) circle (\x cm);
+        \draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize\x};
+        }
+        \foreach \x in {30,45,60,90,120,135,150}
+        {\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
+        }
+      
+        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1+cos(\x))},{sin(\x)*(1+cos(\x))});
  
  
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_polar4b.tex END -->
@@ -718,7 +733,7 @@
           Sketch the polar function <m>r=\cos(2\theta)</m> on <m>[0,2\pi]</m> by plotting points.
         </p>
       </statement>
-      <solution xml:id="fig_polar5table">
+      <solution>
         <p>
           We start by making a table of
           <m>\cos(2\theta)</m> evaluated at common angles <m>\theta</m>,
@@ -730,31 +745,41 @@
           we numbered each point in the table and on the graph.
         </p>
 
-        <sidebyside>
-          <m>\begin{array}{ccc}
-          \text{ Pt. }  \amp  \theta \amp  \cos(2\theta)\\ \hline
-          1 \amp  0 \amp  1. \\
-          2 \amp  \pi /6 \amp  0.5 \\
-          3 \amp  \pi /4 \amp  0. \\
-          4 \amp  \pi /3 \amp  -0.5 \\
-          5 \amp  \pi /2 \amp  -1. \\
-          6 \amp  2 \pi /3 \amp  -0.5 \\
-          7 \amp  3 \pi /4 \amp  0. \\
-          8 \amp  5 \pi /6 \amp  0.5 \\
-          9 \amp  \pi  \amp  1. \\
-          \end{array}</m>
-          <m>\begin{array}{ccc}
-          \text{ Pt. }  \amp  \theta \amp  \cos(2\theta)\\ \hline
-          10 \amp  7 \pi /6 \amp  0.5 \\
-          11 \amp  5 \pi /4 \amp  0. \\
-          12 \amp  4 \pi /3 \amp  -0.5 \\
-          13 \amp  3 \pi /2 \amp  -1. \\
-          14 \amp  5 \pi /3 \amp  -0.5 \\
-          15 \amp  7 \pi /4 \amp  0. \\
-          16 \amp  11 \pi /6 \amp  0.5 \\
-          17 \amp  2 \pi  \amp  1. \\
-          \end{array}</m>
-        </sidebyside>
+        <figure xml:id="fig_polar5table">
+          <caption/>
+          <sidebyside>
+            <p>
+              <m>\begin{array}{ccc}
+              \text{ Pt. }  \amp  \theta \amp  \cos(2\theta)\\ \hline
+              1 \amp  0 \amp  1. \\
+              2 \amp  \pi /6 \amp  0.5 \\
+              3 \amp  \pi /4 \amp  0. \\
+              4 \amp  \pi /3 \amp  -0.5 \\
+              5 \amp  \pi /2 \amp  -1. \\
+              6 \amp  2 \pi /3 \amp  -0.5 \\
+              7 \amp  3 \pi /4 \amp  0. \\
+              8 \amp  5 \pi /6 \amp  0.5 \\
+              9 \amp  \pi  \amp  1. \\
+              \end{array}
+              </m>
+            </p>
+            <p>
+              <m>
+              \begin{array}{ccc}
+              \text{ Pt. }  \amp  \theta \amp  \cos(2\theta)\\ \hline
+              10 \amp  7 \pi /6 \amp  0.5 \\
+              11 \amp  5 \pi /4 \amp  0. \\
+              12 \amp  4 \pi /3 \amp  -0.5 \\
+              13 \amp  3 \pi /2 \amp  -1. \\
+              14 \amp  5 \pi /3 \amp  -0.5 \\
+              15 \amp  7 \pi /4 \amp  0. \\
+              16 \amp  11 \pi /6 \amp  0.5 \\
+              17 \amp  2 \pi  \amp  1. \\
+              \end{array}
+              </m>
+            </p>
+          </sidebyside>
+        </figure>
 
         <p>
           \captionof{figure}{Tables of points for plotting a polar curve.} Using more points
@@ -766,27 +791,26 @@
         <figure xml:id="fig_polar5">
           <caption>Polar plots from <xref ref="ex_polar5">Example</xref>.</caption>
           <sidebyside>
-            <figure>
-              <caption>[0pt]
-              (a)</caption>
+            <figure xml:id="fig_polar5a">
+              <caption/>
             <!-- START figures/fig_polar5.tex -->
               <image xml:id="img_polar5">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[scale=1]
-	\draw [dashed,gray] (-2.1,0) -- (0,0);
-	\draw[thick,->,>=latex] (0,0) node [below] {} -- (2.5,0) ;
-	\filldraw (0,0) circle (1.5pt);
-	\foreach \x/\y in {1/{},2/{}}
-	{\draw (0,0) circle (\x cm);
-	\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
-	}
-	\foreach \x in {30,45,60,90,120,135,150}
-	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	}
- 
-	\draw [thick,{\colorone}] plot coordinates {(2.,0)(0.866,0.5)(0,0)(-0.5,-0.866)(0,-2.)(0.5,-0.866)(0,0)(-0.866,0.5)(-2.,0)(-0.866,-0.5)(0,0)(0.5,0.866)(0,2.)(-0.5,0.866)(0,0)(0.866,-0.5)(2,0)};
+                
+                \begin{tikzpicture}
+                \draw [dashed,gray] (-2.1,0) -- (0,0);
+                \draw[thick,-&gt;,&gt;=latex] (0,0) node [below] {} -- (2.5,0) ;
+                \filldraw (0,0) circle (1.5pt);
+                \foreach \x/\y in {1/{},2/{}}
+                {\draw (0,0) circle (\x cm);
+                \draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
+                }
+                \foreach \x in {30,45,60,90,120,135,150}
+                {\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
+                }
+              
+                \draw [thick,{\colorone}] plot coordinates {(2.,0)(0.866,0.5)(0,0)(-0.5,-0.866)(0,-2.)(0.5,-0.866)(0,0)(-0.866,0.5)(-2.,0)(-0.866,-0.5)(0,0)(0.5,0.866)(0,2.)(-0.5,0.866)(0,0)(0.866,-0.5)(2,0)};
  
  
                 \foreach \x/\y/\z/\w in {2./0/1/{above right},0.866/0.5/2/above,0/0/3/above,-0.5/-0.866/4/above,
@@ -794,48 +818,31 @@
                 -0.866/0.5/8/above,-2./0/9/above left,-0.866/-0.5/10/above,0/0/11/right,0.5/0.866/12/above,0/2./13/above,-0.5/0.866/14/above,0/0/15/below,0.866/-0.5/16/above,2/0/17/{below right}}
                 {\filldraw (\x,\y) circle (1.5pt) node [\w] {\scriptsize \z};
                 } 
-	%\filldraw (2.,0) circle (2pt)
-	%(1.616,0.933) circle (2pt)
-	%(1.207,1.207) circle (1pt)
-	%(0.75,1.299) circle (1pt)
-	%(0,1.) circle (2pt)
-	%(-0.25,0.433) circle (1pt)
-	%(-0.2071,0.2071) circle (1pt)
-	%(-0.116,0.06699) circle (1pt)
-	%(0,0)	 circle (1pt)
-	%(-0.116,-0.06699) circle (1pt)
-	%(-0.2071,-0.2071) circle (1pt)
-	%(-0.25,-0.433) circle (2pt)
-	%(0,-1.) circle (1pt)
-	%(0.75,-1.299)	 circle (1pt)
-	%(1.207,-1.207) circle (2pt)
-	%(1.616,-0.933) circle (1pt) ;
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_polar5.tex END -->
             </figure>
 
-            <figure>
-              <caption>[0pt]
-              (b)</caption>
+            <figure xml:id="fig_polar5b">
+              <caption/>
             <!-- START figures/fig_polar5b.tex -->
               <image xml:id="img_polar5b">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[scale=1]
-	\draw [dashed,gray] (-2.1,0) -- (0,0);
-	\draw[thick,->,>=latex] (0,0) node [below] {$O$} -- (2.5,0) ;
-	\filldraw (0,0) circle (1.5pt);
-	\foreach \x/\y in {1/{},2/1}
-	{\draw (0,0) circle (\x cm);
-	\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
-	}
-	\foreach \x in {30,45,60,90,120,135,150}
-	{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	}
+                
+                \begin{tikzpicture}
+                \draw [dashed,gray] (-2.1,0) -- (0,0);
+                \draw[thick,-&gt;,&gt;=latex] (0,0) node [below] {$O$} -- (2.5,0) ;
+                \filldraw (0,0) circle (1.5pt);
+                \foreach \x/\y in {1/{},2/1}
+                {\draw (0,0) circle (\x cm);
+                \draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
+                }
+                \foreach \x in {30,45,60,90,120,135,150}
+                {\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
+                }
  
                 \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
  
@@ -844,24 +851,9 @@
                 -0.866/0.5,-2./0,-0.866/-0.5,0/0,0.5/0.866,0/2.,-0.5/0.866,0/0,0.866/-0.5}
                 {\filldraw (\x,\y) circle (1.5pt);
                 } 
-	%\filldraw (2.,0) circle (2pt)
-	%(1.616,0.933) circle (2pt)
-	%(1.207,1.207) circle (1pt)
-	%(0.75,1.299) circle (1pt)
-	%(0,1.) circle (2pt)
-	%(-0.25,0.433) circle (1pt)
-	%(-0.2071,0.2071) circle (1pt)
-	%(-0.116,0.06699) circle (1pt)
-	%(0,0)	 circle (1pt)
-	%(-0.116,-0.06699) circle (1pt)
-	%(-0.2071,-0.2071) circle (1pt)
-	%(-0.25,-0.433) circle (2pt)
-	%(0,-1.) circle (1pt)
-	%(0.75,-1.299)	 circle (1pt)
-	%(1.207,-1.207) circle (2pt)
-	%(1.616,-0.933) circle (1pt) ;
+
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_polar5b.tex END -->
@@ -884,153 +876,153 @@
       <title>Converting between rectangular and polar equations.</title>
       <statement>
         <sidebyside>
-          Convert from rectangular to polar.
+          <p>
+            Convert from rectangular to polar.
 
-          <ol>
-            <li>
-              <p>
-                <m>y=x^2</m>
-              </p>
-            </li>
+            <ol>
+              <li>
+                <p>
+                  <m>y=x^2</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>xy = 1</m>
-              </p>
-            </li>
-          </ol>
+              <li>
+                <p>
+                  <m>xy = 1</m>
+                </p>
+              </li>
+            </ol>
+          </p>
 
-          Convert from polar to rectangular.
+          <p>
+            Convert from polar to rectangular.
 
-          <ol>
-            <li>
-              <p>
-                <m>\ds r=\frac{2}{\sin(\theta) -\cos(\theta) }</m>
-              </p>
-            </li>
+            <ol>
+              <li>
+                <p>
+                  <m>\ds r=\frac{2}{\sin(\theta) -\cos(\theta) }</m>
+                </p>
+              </li>
 
-            <li>
-              <p>
-                <m>r=2\cos(\theta)</m>
-              </p>
-            </li>
-          </ol>
+              <li>
+                <p>
+                  <m>r=2\cos(\theta)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
         </sidebyside>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              Replace <m>y</m> with <m>r\sin(\theta)</m> and replace <m>x</m> with <m>r\cos(\theta)</m>, giving:
-              <md>
-                <mrow>y \amp =x^2</mrow>
-                <mrow>r\sin(\theta) \amp = r^2\cos^2(\theta)</mrow>
-                <mrow>\frac{\sin(\theta) }{\cos^2(\theta) } \amp = r</mrow>
-              </md>
-              We have found that <m>r=\sin(\theta) /\cos^2(\theta) = \tan(\theta) \sec(\theta)</m>.
-              The domain of this polar function is <m>(-\pi/2,\pi/2)</m>;
-              plot a few points to see how the familiar parabola is traced out by the polar equation.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Replace <m>y</m> with <m>r\sin(\theta)</m> and replace <m>x</m> with <m>r\cos(\theta)</m>, giving:
+                <md>
+                  <mrow>y \amp =x^2</mrow>
+                  <mrow>r\sin(\theta) \amp = r^2\cos^2(\theta)</mrow>
+                  <mrow>\frac{\sin(\theta) }{\cos^2(\theta) } \amp = r</mrow>
+                </md>
+                We have found that <m>r=\sin(\theta) /\cos^2(\theta) = \tan(\theta) \sec(\theta)</m>.
+                The domain of this polar function is <m>(-\pi/2,\pi/2)</m>;
+                plot a few points to see how the familiar parabola is traced out by the polar equation.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              We again replace <m>x</m> and <m>y</m> using the standard identities and work to solve for <m>r</m>:
-              <md>
-                <mrow>xy \amp = 1</mrow>
-                <mrow>r\cos(\theta) \cdot r\sin(\theta) \amp  = 1</mrow>
-                <mrow>r^2 \amp  = \frac{1}{\cos(\theta) \sin(\theta) }</mrow>
-                <mrow>r \amp  = \frac{1}{\sqrt{\cos(\theta) \sin(\theta) }}</mrow>
-              </md>
-              This function is valid only when the product of <m>\cos(\theta) \sin(\theta)</m> is positive.
-              This occurs in the first and third quadrants,
-              meaning the domain of this polar function is <m>(0,\pi/2) \cup (\pi,3\pi/2)</m>.
- 
-	We can rewrite the original rectangular equation <m>xy=1</m> as <m>y=1/x</m>. This is graphed in <xref ref="fig_polar6">Figure</xref>; note how it only exists in the first and third quadrants.
-
+            <li>
+              <p>
+                We again replace <m>x</m> and <m>y</m> using the standard identities and work to solve for <m>r</m>:
+                <md>
+                  <mrow>xy \amp = 1</mrow>
+                  <mrow>r\cos(\theta) \cdot r\sin(\theta) \amp  = 1</mrow>
+                  <mrow>r^2 \amp  = \frac{1}{\cos(\theta) \sin(\theta) }</mrow>
+                  <mrow>r \amp  = \frac{1}{\sqrt{\cos(\theta) \sin(\theta) }}</mrow>
+                </md>
+                This function is valid only when the product of <m>\cos(\theta) \sin(\theta)</m> is positive.
+                This occurs in the first and third quadrants,
+                meaning the domain of this polar function is <m>(0,\pi/2) \cup (\pi,3\pi/2)</m>.
+  
+                We can rewrite the original rectangular equation <m>xy=1</m> as <m>y=1/x</m>. This is graphed in <xref ref="fig_polar6">Figure</xref>; note how it only exists in the first and third quadrants.
+              </p>
+            
               <figure xml:id="fig_polar6">
                 <caption>Graphing <m>xy=1</m> from <xref ref="ex_polar6">Example</xref>.</caption>
             <!-- START figures/fig_polar6.tex -->
                 <image xml:id="img_polar6">
                   <description></description>
                   <latex-image>
-                  <![CDATA[
+                  
                   \begin{tikzpicture}
                   \begin{axis}[%
                   %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			minor x tick num=4,%
+                  %x=.37\marginparwidth,
+                  %y=.37\marginparwidth,
+                  %xtick={-1,1,2,-2},
+                  minor x tick num=4,%
                   %			extra x ticks={.33},
                   %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-5.3,ymax=5.3,%
-			xmin=-5.3,xmax=5.3%
+                  %ytick={-1,1},
+                  minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                  ymin=-5.3,ymax=5.3,%
+                  xmin=-5.3,xmax=5.3%
                   ]
 
                   \addplot [{\colorone},thick, smooth,domain=-5:-.1,samples=30] ({x},{1/x});
                   \addplot [{\colorone},thick, smooth,domain=.1:5,samples=30] ({x},{1/x});
 
-                  %\addplot [{\colortwo},thick,domain=-1:1] ({x},{2*x});
-
-                  %\filldraw (axis cs: .447,.894) circle (1.5pt);
-
-                  %\draw (axis cs:0,0) circle (50pt);
                   \end{axis}
 
                   \end{tikzpicture}
-                  ]]>
+                  
                   </latex-image>
                 </image>
             <!-- figures/fig_polar6.tex END -->
               </figure>
+            </li>
 
-            </p>
-          </li>
+            <li>
+              <p>
+                There is no set way to convert from polar to rectangular;
+                in general, we look to form the products
+                <m>r\cos(\theta)</m> and <m>r\sin(\theta)</m>,
+                and then replace these with <m>x</m> and <m>y</m>, respectively.
+                We start in this problem by multiplying both sides by <m>\sin(\theta) -\cos(\theta)</m>:
+                <md>
+                  <mrow>r \amp = \frac{2}{\sin(\theta) -\cos(\theta) }</mrow>
+                  <mrow>r(\sin(\theta) -\cos(\theta) ) \amp = 2</mrow>
+                  <mrow>r\sin(\theta) -r\cos(\theta) \amp = 2. \qquad \text{ Now replace with \(y\) and \(x\): }</mrow>
+                  <mrow>y-x \amp = 2</mrow>
+                  <mrow>y \amp = x+2</mrow>
+                </md>.
+                The original polar equation,
+                <m>r=2/(\sin(\theta) -\cos(\theta) )</m> does not easily reveal that its graph is simply a line.
+                However, our conversion shows that it is.
+                The upcoming gallery of polar curves gives the general equations of lines in polar form.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              There is no set way to convert from polar to rectangular;
-              in general, we look to form the products
-              <m>r\cos(\theta)</m> and <m>r\sin(\theta)</m>,
-              and then replace these with <m>x</m> and <m>y</m>, respectively.
-              We start in this problem by multiplying both sides by <m>\sin(\theta) -\cos(\theta)</m>:
-              <md>
-                <mrow>r \amp = \frac{2}{\sin(\theta) -\cos(\theta) }</mrow>
-                <mrow>r(\sin(\theta) -\cos(\theta) ) \amp = 2</mrow>
-                <mrow>r\sin(\theta) -r\cos(\theta) \amp = 2. \qquad \text{ Now replace with \(y\) and \(x\): }</mrow>
-                <mrow>y-x \amp = 2</mrow>
-                <mrow>y \amp = x+2</mrow>
-              </md>.
-              The original polar equation,
-              <m>r=2/(\sin(\theta) -\cos(\theta) )</m> does not easily reveal that its graph is simply a line.
-              However, our conversion shows that it is.
-              The upcoming gallery of polar curves gives the general equations of lines in polar form.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              By multiplying both sides by <m>r</m>,
-              we obtain both an <m>r^2</m> term and an <m>r\cos(\theta)</m> term,
-              which we replace with <m>x^2+y^2</m> and <m>x</m>, respectively.
-              <md>
-                <mrow>r \amp =2\cos(\theta)</mrow>
-                <mrow>r^2 \amp = 2r\cos(\theta)</mrow>
-                <mrow>x^2+y^2 \amp = 2x.</mrow>
-                <intertext>We recognize this as a circle; by completing the square we can find its radius and center.</intertext>
-                <mrow>x^2-2x+y^2 \amp = 0</mrow>
-                <mrow>(x-1)^2 + y^2 \amp =1</mrow>
-              </md>.
-              The circle is centered at <m>(1,0)</m> and has radius 1.
-              The upcoming gallery of polar curves gives the equations of
-              <em>some</em> circles in polar form;
-              circles with arbitrary centers have a complicated polar equation that we do not consider here.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                By multiplying both sides by <m>r</m>,
+                we obtain both an <m>r^2</m> term and an <m>r\cos(\theta)</m> term,
+                which we replace with <m>x^2+y^2</m> and <m>x</m>, respectively.
+                <md>
+                  <mrow>r \amp =2\cos(\theta)</mrow>
+                  <mrow>r^2 \amp = 2r\cos(\theta)</mrow>
+                  <mrow>x^2+y^2 \amp = 2x.</mrow>
+                  <intertext>We recognize this as a circle; by completing the square we can find its radius and center.</intertext>
+                  <mrow>x^2-2x+y^2 \amp = 0</mrow>
+                  <mrow>(x-1)^2 + y^2 \amp =1</mrow>
+                </md>.
+                The circle is centered at <m>(1,0)</m> and has radius 1.
+                The upcoming gallery of polar curves gives the equations of
+                <em>some</em> circles in polar form;
+                circles with arbitrary centers have a complicated polar equation that we do not consider here.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
@@ -1039,7 +1031,7 @@
       For instance, the equation
       <m>r=1+\cos(\theta)</m> describes a <em>cardiod</em>
       (a shape important the sensitivity of microphones, among other things;
-      one is graphed in the gallery in the Lima&#xe7;on section).
+      one is graphed in the gallery in the Limaçon section).
       It's rectangular form is not nearly as simple;
       it is the implicit equation
       <m>x^4+y^4+2x^2y^2-2xy^2-2x^3-y^2=0</m>.
@@ -1066,535 +1058,511 @@
     </p>
 
     <p>
-      \newlength{\gallerywidth}
+      <em>Lines</em>
+    </p>
 
-      \rule{25pt+\marginparwidth+\textwidth}{1pt}
+    <figure xml:id="fig_polar_lines">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_lines1">
+            <caption>Through the origin: <m>\theta = \alpha</m></caption>
+            <!-- START figures/fig_polarline1.tex -->
+            <image xml:id="img_polar_lines1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,rotate=50] (-2.1,0) -- (2.1,0);
+
+              \draw [-&gt;] (.5,0) arc (0:50:.5);
+              \draw [rotate=25] (.7,0) node {\scriptsize $\alpha$};
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_lines2">
+            <caption>Horizontal line: <m>r=a\csc(\theta)</m></caption>
+            <!-- START figures/fig_polarline2.tex -->
+            <image xml:id="img_polar_lines2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (-2,.6) -- (2,.6);
+
+              \draw (-.2,.3) node {\scriptsize $a\left\{\rule[-.23cm]{0pt}{.23cm}\right.$};
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_lines3">
+            <caption>Vertical line: <m>r=a\sec(\theta)</m></caption>
+            <!-- START figures/fig_polarline4.tex -->
+            <image xml:id="img_polar_lines3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+
+              \draw [thick,firstcolor] (.6,-2) -- (.6,2);
+
+              \draw (.3,.2) node {\scriptsize $\overbrace{\rule{.55cm}{0pt}}$};
+              \draw (.3,.4) node {\scriptsize $a$};
+
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline4.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_lines4">
+            <caption>Not through origin: <m>\ds r=\frac{b}{\sin(\theta) -m\cos(\theta)}</m></caption>
+            <!-- START figures/fig_polarline3.tex -->
+            <image xml:id="img_polar_lines4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,shift={(0,.6)},rotate=50] (-2.1,0) -- (1.7,0) node [pos=.82,rotate=50,black,shift={(0,-5pt)}] {\scriptsize slope $=m$};
+
+              \draw (.2,.3) node {\scriptsize $\left.\rule[-.23cm]{0pt}{.23cm}\right\}b$};
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarline3.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
+    <p>
+      <em>Circles and Spirals</em>
+    </p>
+
+    <figure xml:id="fig_polar_circle_spiral">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_circle1">
+            <caption>Centered on <m>x</m>-axis: <m>r=a\cos(\theta)</m></caption>
+            <!-- START figures/fig_polarcircle1.tex -->
+            <image xml:id="img_polar_circle1">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (.9,0) circle (.9);
+
+              \draw (.9,.1) node {\scriptsize $\overbrace{\rule{1.7cm}{0cm}}$};
+              \draw (.9,.3) node {\scriptsize $a$};
+      
+              \end{tikzpicture}
+                    
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarcircle1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_circle2">
+            <caption>Centered on <m>y</m>-axis: <m>r=a\sin(\theta)</m></caption>
+            <!-- START figures/fig_polarcircle2.tex -->
+            <image xml:id="img_polar_circle2">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (0,.9) circle (.9);
+
+              \draw (-.2,.9) node {\scriptsize $a\left\{\rule[-.8cm]{0cm}{0.8cm}\right.$};
+      
+              \end{tikzpicture}
+                    
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarcircle2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_circle3">
+            <caption>Centered on origin: <m>r=a</m></caption>
+            <!-- START figures/fig_polarcircle3.tex -->
+            <image xml:id="img_polar_circle3">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor] (0,0) circle (.9);
+
+              \draw (.45,.1) node {\scriptsize $\overbrace{\rule{.8cm}{0cm}}$};
+              \draw (.45,.3) node {\scriptsize $a$};
+      
+              \end{tikzpicture}
+                    
+              </latex-image>
+            </image>
+           <!-- figures/fig_polarcircle3.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_spiral">
+            <caption>Archimedean spiral: <m>r=\theta</m></caption>
+            <!-- START figures/fig_polarspiral.tex -->
+            <image xml:id="img_polar_spiral">
+              <description></description>
+              <latex-image>
+                    
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:18.85,samples=240] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspiral.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
+    <p>
+      <em>Limaçons</em>
     </p>
 
     <p>
-      <em> Lines</em>
+      Symmetric about <m>x</m>-axis: <m>r=a\pm b\cos(\theta)</m>
+    </p>
+    <p>
+      Symmetric about <m>y</m>-axis: <m>r=a\pm b\sin(\theta)</m>; <m>a,b \gt 0</m>
     </p>
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>Through the origin:</em> &amp; <em>Horizontal line:</em> &amp; <em>Vertical line:</em> &amp; <em>Not through origin:</em> \\
-      <m>\theta = \alpha</m> &amp; <m>r=a\csc(\theta)</m> &amp; <m>r=a\sec(\theta)</m> &amp; <m>\ds r=\frac{b}{\sin(\theta) -m\cos(\theta) }</m> \\
-      <!-- START figures/fig_polarline1.tex -->
-      <image xml:id="img_polarline1">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
-	%\draw [dashed,gray] (-2.1,0) -- (0,0);
-	%\draw[thick,->,>=latex] (0,0) node [below] {$O$} -- (2.5,0) ;
-	%\filldraw (0,0) circle (1.5pt);
-	%\foreach \x/\y in {1/{},2/1}
-	%{\draw (0,0) circle (\x cm);
-	%\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
-	%}
-	%\foreach \x in {30,45,60,90,120,135,150}
-	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	%}
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
- 
-        \draw [thick,{\colorone},rotate=50] (-2.1,0) -- (2.1,0);
+    <figure xml:id="fig_polar_limacons">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_limacon1">
+            <caption>With inner loop: <m>\ds \frac ab \lt  1</m></caption>
+            <!-- START figures/fig_polarlimacon1.tex -->
+            <image xml:id="img_polar_limacon1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
 
-        \draw [->] (.5,0) arc (0:50:.5);
-        \draw [rotate=25] (.7,0) node {\scriptsize $\alpha$};
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarline2.tex -->
-      <image xml:id="img_polarline2">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
-	%\draw [dashed,gray] (-2.1,0) -- (0,0);
-	%\draw[thick,->,>=latex] (0,0) node [below] {$O$} -- (2.5,0) ;
-	%\filldraw (0,0) circle (1.5pt);
-	%\foreach \x/\y in {1/{},2/1}
-	%{\draw (0,0) circle (\x cm);
-	%\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
-	%}
-	%\foreach \x in {30,45,60,90,120,135,150}
-	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	%}
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
- 
-        \draw [thick,{\colorone}] (-2,.6) -- (2,.6);
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_limacon2">
+            <caption>Cardiod: <m>\ds \frac ab=1</m></caption>
+            <!-- START figures/fig_polarlimacon2.tex -->
+            <image xml:id="img_polar_limacon2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_limacon3">
+            <caption>Dimpled: <m>\ds 1\lt \frac ab \lt 2</m></caption>
+            <!-- START figures/fig_polarlimacon3.tex -->
+            <image xml:id="img_polar_limacon3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon3.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_limacon4">
+            <caption>Convex: <m>\ds \frac ab \gt 2</m></caption>
+            <!-- START figures/fig_polarlimacon4.tex -->
+            <image xml:id="img_polar_limacon4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);    
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
 
-        \draw (-.2,.3) node {\scriptsize $a\left\{\rule[-.23cm]{0pt}{.23cm}\right.$};
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarline4.tex -->
-      <image xml:id="img_polarline4">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
-	%\draw [dashed,gray] (-2.1,0) -- (0,0);
-	%\draw[thick,->,>=latex] (0,0) node [below] {$O$} -- (2.5,0) ;
-	%\filldraw (0,0) circle (1.5pt);
-	%\foreach \x/\y in {1/{},2/1}
-	%{\draw (0,0) circle (\x cm);
-	%\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
-	%}
-	%\foreach \x in {30,45,60,90,120,135,150}
-	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	%}
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
- 
-        \draw [thick,{\colorone}] (.6,-2) -- (.6,2);
-
-        \draw (.3,.2) node {\scriptsize $\overbrace{\rule{.55cm}{0pt}}$};
-        \draw (.3,.4) node {\scriptsize $a$};
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline4.tex END -->
-      &amp;
-      <!-- START figures/fig_polarline3.tex -->
-      <image xml:id="img_polarline3">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
-	%\draw [dashed,gray] (-2.1,0) -- (0,0);
-	%\draw[thick,->,>=latex] (0,0) node [below] {$O$} -- (2.5,0) ;
-	%\filldraw (0,0) circle (1.5pt);
-	%\foreach \x/\y in {1/{},2/1}
-	%{\draw (0,0) circle (\x cm);
-	%\draw (\x,0) node [shift={(3pt,-4pt)}] {\scriptsize $\y$};
-	%}
-	%\foreach \x in {30,45,60,90,120,135,150}
-	%{\draw [rotate=\x,dashed,gray] (-2.3,0) -- (2.3,0);
-	%}
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        %\draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({2*cos(\x)*cos(2*\x)},{2*sin(\x)*cos(2*\x)});
- 
-        \draw [thick,{\colorone},shift={(0,.6)},rotate=50] (-2.1,0) -- (1.7,0) node [pos=.82,rotate=50,black,shift={(0,-5pt)}] {\scriptsize slope $=m$};
-
-        \draw (.2,.3) node {\scriptsize $\left.\rule[-.23cm]{0pt}{.23cm}\right\}b$};
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarline3.tex END -->
-    </tabular>
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarlimacon4.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
 
     <p>
-      <em> Circles</em> <em> Spiral</em>
+      <em>Rose Curves</em>
     </p>
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>Centered on <m>x</m>-axis:</em> &amp; <em>Centered on <m>y</m>-axis:</em> &amp; <em>Centered on origin:</em> &amp;<em>Archimedean spiral</em>\\
-      <m>r=a\cos(\theta)</m> &amp; <m>r=a\sin(\theta)</m> &amp; <m>r=a</m> &amp; <m>r=\theta</m>\\
-      <!-- START figures/fig_polarcircle1.tex -->
-      <image xml:id="img_polarcircle1">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone}] (.9,0) circle (.9);
-
-        \draw (.9,.1) node {\scriptsize $\overbrace{\rule{1.7cm}{0cm}}$};
-        \draw (.9,.3) node {\scriptsize $a$};
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarcircle1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarcircle2.tex -->
-      <image xml:id="img_polarcircle2">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone}] (0,.9) circle (.9);
-
-        \draw (-.2,.9) node {\scriptsize $a\left\{\rule[-.8cm]{0cm}{0.8cm}\right.$};
-        %\draw (.9,.3) node {\scriptsize $a$};
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarcircle2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarcircle3.tex -->
-      <image xml:id="img_polarcircle3">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone}] (0,0) circle (.9);
-
-        \draw (.45,.1) node {\scriptsize $\overbrace{\rule{.8cm}{0cm}}$};
-        \draw (.45,.3) node {\scriptsize $a$};
- 
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarcircle3.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspiral.tex -->
-      <image xml:id="img_polarspiral">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:18.85,samples=100,smooth] plot ({cos(deg(\x))*(\x/9.5)},{sin(deg(\x))*(\x/9.5)});
-        %\draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspiral.tex END -->
-    </tabular>
-  </subsection>
-
-  <subsection>
-    <title>Lima&#xe7;ons</title>
     <p>
-      Symmetric about <m>x</m>-axis:
-      <m>r=a\pm b\cos(\theta)</m>; Symmetric about <m>y</m>-axis:
-      <m>r=a\pm b\sin(\theta)</m>; <m>a,b>0</m>
+      Symmetric about <m>x</m>-axis: <m>r=a \cos(n\theta)</m>
     </p>
-
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>With inner loop:</em> &amp; <em>Cardiod:</em> &amp; <em>Dimpled:</em> &amp; <em>Convex:</em> \\
-      <m>\ds \frac ab \lt  1</m> &amp; <m>\ds \frac ab=1</m> &amp; <m>\ds 1\lt \frac ab \lt 2</m> &amp; <m>\ds \frac ab>2</m> \\
-      <!-- START figures/fig_polarlimacon1.tex -->
-      <image xml:id="img_polarlimacon1">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(.6+1.2*cos(\x))},{sin(\x)*(.6+1.2*cos(\x))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarlimacon2.tex -->
-      <image xml:id="img_polarlimacon2">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(.9+.9*cos(\x))},{sin(\x)*(.9+.9*cos(\x))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarlimacon3.tex -->
-      <image xml:id="img_polarlimacon3">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1+.8*cos(\x))},{sin(\x)*(1+.8*cos(\x))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon3.tex END -->
-      &amp;
-      <!-- START figures/fig_polarlimacon4.tex -->
-      <image xml:id="img_polarlimacon4">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.3+.6*cos(\x))},{sin(\x)*(1.3+.6*cos(\x))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarlimacon4.tex END -->
-    </tabular>
-  </subsection>
-
-  <subsection>
-    <title>Rose Curves</title>
     <p>
-      Symmetric about <m>x</m>-axis:
-      <m>r=a \cos(n\theta)</m>; Symmetric about <m>y</m>-axis:
-      <m>r=a\sin(n\theta)</m>
+      Symmetric about <m>y</m>-axis: <m>r=a\sin(n\theta)</m>
     </p>
 
     <p>
       Curve contains <m>2n</m> petals when <m>n</m> is even and <m>n</m> petals when <m>n</m> is odd.
     </p>
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <m>r=a\cos(2\theta)</m> &amp; <m>r=a\sin(2\theta)</m> &amp; <m>r=a\cos(3\theta)</m> &amp; <m>r=a\sin(3\theta)</m> \\
-      <!-- START figures/fig_polarrose1.tex -->
-      <image xml:id="img_polarrose1">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
+    <figure xml:id="fig_polar_roses">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_rose1">
+            <caption><m>r=a\cos(2\theta)</m></caption>
+            <!-- START figures/fig_polarrose1.tex -->
+            <image xml:id="img_polar_rose1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
 
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarrose2.tex -->
-      <image xml:id="img_polarrose2">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
 
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarrose4.tex -->
-      <image xml:id="img_polarrose4">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*cos(2*\x))},{sin(\x)*(1.9*cos(2*\x))});
 
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose4.tex END -->
-      &amp;
-      <!-- START figures/fig_polarrose3.tex -->
-      <image xml:id="img_polarrose3">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:360,samples=60,smooth] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_rose2">
+            <caption><m>r=a\sin(2\theta)</m></caption>
+            <!-- START figures/fig_polarrose2.tex -->
+            <image xml:id="img_polar_rose2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*sin(2*\x))},{sin(\x)*(1.9*sin(2*\x))});
 
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarrose3.tex END -->
-    </tabular>
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_rose3">
+            <caption><m>r=a\cos(3\theta)</m></caption>
+            <!-- START figures/fig_polarrose4.tex -->
+            <image xml:id="img_polar_rose3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*cos(3*\x))},{sin(\x)*(1.9*cos(3*\x))});
+
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose4.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_rose4">
+            <caption><m>r=a\sin(3\theta)</m></caption>
+            <!-- START figures/fig_polarrose3.tex -->
+            <image xml:id="img_polar_rose4">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:360,samples=60] plot ({cos(\x)*(1.9*sin(3*\x))},{sin(\x)*(1.9*sin(3*\x))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarrose3.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
 
     <p>
-      <em> Special Curves</em>
+      <em>Special Curves</em>
     </p>
 
-    <tabular>
-      {p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}p{\gallerywidth}}
-      <em>Rose curves</em> &amp;  &amp; <em>Lemniscate:</em> &amp; <em>Eight Curve:</em> \\
-      <m>r=a\sin(\theta/5)</m> &amp; <m>r=a\sin(2\theta/5)</m> &amp; <m>r^2=a^2\cos(2\theta)</m> &amp; <m>r^2=a^2\sec^4(\theta) \cos(2\theta)</m> \\
-      <!-- START figures/fig_polarspecial1.tex -->
-      <image xml:id="img_polarspecial1">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:900,samples=100,smooth] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial1.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspecial2.tex -->
-      <image xml:id="img_polarspecial2">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=0:1800,samples=200,smooth] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial2.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspecial3.tex -->
-      <image xml:id="img_polarspecial3">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial3.tex END -->
-      &amp;
-      <!-- START figures/fig_polarspecial4.tex -->
-      <image xml:id="img_polarspecial4">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1,>=stealth]
- 
-	\draw [<->,] (-2.1,0) -- (2.1,0);
-	\draw [<->,] (0,-2.1) -- (0,2.1);
- 
- 
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
-        \draw [thick,{\colorone},domain=-45:45,samples=60,smooth] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
-
- 
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_polarspecial4.tex END -->
-    </tabular>
+    <figure xml:id="fig_polar_special">
+      <caption/>
+      <sbsgroup>
+        <sidebyside>
+          <figure xml:id="fig_polar_special1">
+            <caption>Rose curve: <m>r=a\sin(\theta/5)</m></caption>
+            <!-- START figures/fig_polarspecial1.tex -->
+            <image xml:id="img_polar_special1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:900,samples=100] plot ({cos(\x)*(1.9*sin(\x/5))},{sin(\x)*(1.9*sin(\x/5))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial1.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_special2">
+            <caption>Rose curve: <m>r=a\sin(2\theta/5)</m></caption>
+            <!-- START figures/fig_polarspecial2.tex -->
+            <image xml:id="img_polar_special2">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=0:1800,samples=200] plot ({cos(\x)*(1.9*cos(2*\x/5))},{sin(\x)*(1.9*cos(2*\x/5))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial2.tex END -->
+          </figure>
+        </sidebyside>
+        <sidebyside>
+          <figure xml:id="fig_polar_special3">
+            <caption>Lemniscate: <m>r^2=a^2\cos(2\theta)</m></caption>
+            <!-- START figures/fig_polarspecial3.tex -->
+            <image xml:id="img_polar_special3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({cos(\x)*(1.9*sqrt(cos(2*\x)))},{sin(\x)*(1.9*sqrt(cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({-cos(\x)*(1.9*sqrt(cos(2*\x)))},{-sin(\x)*(1.9*sqrt(cos(2*\x)))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial3.tex END -->
+          </figure>
+          <figure xml:id="fig_polar_special4">
+            <caption>Eight Curve: <m>r^2=a^2\sec^4(\theta) \cos(2\theta)</m></caption>
+            <!-- START figures/fig_polarspecial4.tex -->
+            <image xml:id="img_polar_special3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+      
+              \draw [&lt;-&gt;] (-2.1,0) -- (2.1,0);
+              \draw [&lt;-&gt;] (0,-2.1) -- (0,2.1);
+      
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
+              \draw [thick,firstcolor,domain=-45:45,samples=60] plot ({-cos(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))},{-sin(\x)*(1.9*sqrt(sec(\x)^4*cos(2*\x)))});
+      
+              \end{tikzpicture}
+              
+              </latex-image>
+            </image>
+            <!-- figures/fig_polarspecial4.tex END -->
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
 
     <p>
       Earlier we discussed how each point in the plane does not have a unique representation in polar form.
@@ -1624,83 +1592,73 @@
         <figure xml:id="fig_polar7">
           <caption>Graphs to help determine the points of intersection of the polar functions given in <xref ref="ex_polar7">Example</xref>.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_polar7a">
+              <caption/>
             <!-- START figures/fig_polar7.tex -->
               <image xml:id="img_polar7">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
                 \begin{axis}[%
                 %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={-1,1,2,-2},
+                %
                 %			extra x ticks={.33},
                 %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-2.6,ymax=2.6,%
-			xmin=-1.5,xmax=4.5%
+                %ytick={-1,1},
+                %extra y ticks={-5,-3,...,7},%
+                ymin=-2.6,ymax=2.6,%
+                xmin=-1.5,xmax=4.5%
                 ]
 
                 \addplot [{\colorone},thick, smooth,domain=0:360,samples=60] ({cos(x)*(1+3*cos(x))},{sin(x)*(1+3*cos(x))});
                 \addplot [{\colortwo},thick, smooth,domain=0:180,samples=30] ({cos(x)*cos(x)},{sin(x)*cos(x)});
 
-                %\addplot [{\colortwo},thick,domain=-1:1] ({x},{2*x});
-
-                %\filldraw (axis cs: .447,.894) circle (1.5pt);
-
-                %\draw (axis cs:0,0) circle (50pt);
                 \end{axis}
 
                 \node [right] at (myplot.right of origin) {\scriptsize $0$};
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_polar7.tex END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_polar7b">
+              <caption/>
             <!-- START figures/fig_polar7b.tex -->
               <image xml:id="img_polar7b">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
                 \begin{axis}[%
                 %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1},
-			%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={-1,1},
+                %
                 %			extra x ticks={.33},
                 %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.6,ymax=.6,%
-			xmin=-.72,xmax=.72%
+                %ytick={-1,1},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.6,ymax=.6,%
+                xmin=-.72,xmax=.72%
                 ]
 
                 \addplot [{\colorone},thick, smooth,domain=0:360,samples=60] ({cos(x)*(1+3*cos(x))},{sin(x)*(1+3*cos(x))});
                 \addplot [{\colortwo},thick, smooth,domain=0:180,samples=30] ({cos(x)*cos(x)},{sin(x)*cos(x)});
 
-                %\addplot [{\colortwo},thick,domain=-1:1] ({x},{2*x});
-
-                %\filldraw (axis cs: .447,.894) circle (1.5pt);
-
-                %\draw (axis cs:.5,0) circle (25pt);
                 \end{axis}
 
                 \node [right] at (myplot.right of origin) {\scriptsize $0$};
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_polar7b.tex END -->
@@ -1722,7 +1680,7 @@
         <p>
           (There are, of course,
           infinite solutions to the equation <m>\cos(\theta) =-1/2</m>;
-          as the lima&#xe7;on is traced out once on <m>[0,2\pi]</m>,
+          as the limaçon is traced out once on <m>[0,2\pi]</m>,
           we restrict our solutions to this interval.)
         </p>
 
@@ -1759,13 +1717,13 @@
           Considering the circle <m>r=\cos(\theta)</m>,
           <m>r=0</m> when <m>\theta = \pi/2</m>
           (and odd multiples thereof, as the circle is repeatedly traced).
-          The lima&#xe7;on intersects the pole when <m>1+3\cos(\theta) =0</m>;
+          The limaçon intersects the pole when <m>1+3\cos(\theta) =0</m>;
           this occurs when <m>\cos(\theta) = -1/3</m>,
           or for <m>\theta = \cos^{-1}(-1/3)</m>.
           This is a nonstandard angle,
           approximately <m>\theta = 1.9106 = 109.47^\circ</m>.
-          The lima&#xe7;on intersects the pole twice in <m>[0,2\pi]</m>;
-          the other angle at which the lima&#xe7;on is at the pole is the reflection of the first angle across the <m>x</m>-axis.
+          The limaçon intersects the pole twice in <m>[0,2\pi]</m>;
+          the other angle at which the limaçon is at the pole is the reflection of the first angle across the <m>x</m>-axis.
           That is, <m>\theta = 4.3726 = 250.53^\circ</m>.
         </p>
       </solution>
@@ -1889,53 +1847,51 @@
               Plot the points with the given polar coordinates.
             </p>
 
-            <ol cols="2">
-              <li>
-                <p>
-                  <m>A=P(2,0)</m>
-                </p>
-              </li>
+            <p>
+              <ol cols="2">
+                <li>
+                  <p>
+                    <m>A=P(2,0)</m>
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  <m>B=P(1,\pi)</m>
-                </p>
-              </li>
+                <li>
+                  <p>
+                    <m>B=P(1,\pi)</m>
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  <m>C=P(-2,\pi/2)</m>
-                </p>
-              </li>
+                <li>
+                  <p>
+                    <m>C=P(-2,\pi/2)</m>
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  <m>D=P(1,\pi/4)</m>
-                </p>
-              </li>
-            </ol>
+                <li>
+                  <p>
+                    <m>D=P(1,\pi/4)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
           <solution>
-            <figure>
-
-              <image xml:id="img_polar7bX1">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[scale=.5]
-                \foreach \x in {1,2}
-                {\draw (0,0) circle (\x);
-	\draw (\x,0) node [below right] { \(\x\)};
-                }
-                \draw [thick,->,>=stealth] (0,0) node [below] { \(O\)} -- (2.5,0);
-                \filldraw (xyz polar cs: angle=0,radius=2) circle (2pt) node [above right] { \(A\)}
-                (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] { \(B\)}
-			(xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] { \(C\)}
-			(xyz polar cs: angle=45,radius=1)circle (2pt) node [right] { \(D\)};\end{tikzpicture}]]>
-                </latex-image>
-              </image>
-
-            </figure>
+            <image xml:id="img_polar7bX1">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+              \foreach \x in {1,2}
+              {\draw (0,0) circle (\x);
+              \draw (\x,0) node [below right] { \(\x\)};
+              }
+              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] { \(O\)} -- (2.5,0);
+              \filldraw (xyz polar cs: angle=0,radius=2) circle (2pt) node [above right] { \(A\)}
+                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] { \(B\)}
+                        (xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] { \(C\)}
+                        (xyz polar cs: angle=45,radius=1)circle (2pt) node [right] { \(D\)};\end{tikzpicture}
+              </latex-image>
+            </image>
           </solution>
       </webwork>
     </exercise>
@@ -1952,53 +1908,51 @@
               Plot the points with the given polar coordinates.
             </p>
 
-            <ol cols="2">
-              <li>
-                <p>
-                  <m>A=P(2,3\pi)</m>
-                </p>
-              </li>
+            <p>
+              <ol cols="2">
+                <li>
+                  <p>
+                    <m>A=P(2,3\pi)</m>
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  <m>B=P(1,-\pi)</m>
-                </p>
-              </li>
+                <li>
+                  <p>
+                    <m>B=P(1,-\pi)</m>
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  <m>C=P(1,2)</m>
-                </p>
-              </li>
+                <li>
+                  <p>
+                    <m>C=P(1,2)</m>
+                  </p>
+                </li>
 
-              <li>
-                <p>
-                  <m>D=P(1/2,5\pi/6)</m>
-                </p>
-              </li>
-            </ol>
+                <li>
+                  <p>
+                    <m>D=P(1/2,5\pi/6)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
           </statement>
           <solution>
-            <figure>
-
-              <image xml:id="img_polar7bX3">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[scale=.5]
-                \foreach \x in {1,2}
-                {\draw (0,0) circle (\x);
-	\draw (\x,0) node [below right] { \(\x\)};
-                }
-                \draw [thick,->,>=stealth] (0,0) node [below] { \(O\)} -- (2.5,0);
-                \filldraw (xyz polar cs: angle=180,radius=2) circle (2pt) node [above] { \(A\)}
-                (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] { \(B\)}
-			(xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] { \(C\)}
-			(xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}]]>
-                </latex-image>
-              </image>
-
-            </figure>
+            <image xml:id="img_polar7bX3">
+              <description></description>
+              <latex-image>
+              
+              \begin{tikzpicture}
+              \foreach \x in {1,2}
+              {\draw (0,0) circle (\x);
+              \draw (\x,0) node [below right] { \(\x\)};
+              }
+              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] { \(O\)} -- (2.5,0);
+              \filldraw (xyz polar cs: angle=180,radius=2) circle (2pt) node [above] { \(A\)}
+                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] { \(B\)}
+                        (xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] { \(C\)}
+                        (xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}
+              </latex-image>
+            </image>
           </solution>
       </webwork>
     </exercise>
@@ -2019,10 +1973,10 @@
             <image xml:id="img_polar7bX4">
               <description></description>
               <latex-image>
-              <![CDATA[
-              \begin{tikzpicture}[scale=.5]
+              
+              \begin{tikzpicture}
               \draw [dashed,gray] (-3.1,0) -- (0,0);
-              \draw[thick,->,>=stealth] (0,0) node [below] {\(O\)} -- (3.5,0) ;
+              \draw[thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (3.5,0) ;
               \filldraw (0,0) circle (1.5pt);
               \foreach \x in {1,2,3}
               {\draw (0,0) circle (\x cm);
@@ -2032,9 +1986,9 @@
               {\draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
               }
               \filldraw (xyz polar cs: angle=45,radius=2.5) circle (2pt) node [above] { \(A\)}
-              (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] { \(B\)}
-			(xyz polar cs: angle=240,radius=3)circle (2pt) node [right] { \(C\)}
-			(xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}]]>
+                        (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] { \(B\)}
+                        (xyz polar cs: angle=240,radius=3)circle (2pt) node [right] { \(C\)}
+                        (xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] { \(D\)};\end{tikzpicture}
               </latex-image>
             </image>
 
@@ -2062,22 +2016,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
           <pg-code>
             $gr = init_graph(-3.5,-3.5,3.5,3.5,size=>[400,400]);
             $gr->moveTo(0,0); $gr->arrowTo(3.4,0,'black',1);
@@ -2126,56 +2065,52 @@
               where <m>-\pi\lt \theta\leq \pi</m>.
             </p>
 
-            <figure>
-              <image pg-name="$gr" />
-            </figure>
+            <sidebyside width="67%">
+              <image pg-name="$gr"/>
+            </sidebyside>
 
-            <table>
-
-              <tabular>
-                <col right="minor" />
-                <col halign='center' />
-                <col right="minor" halign='center' />
-                <col halign='center' />
-                <col halign='center' />
-                <row bottom="medium">
-                  <cell>Point</cell>
-                  <cell><m>(positive) r_1</m></cell>
-                  <cell><m>\theta_1</m></cell>
-                  <cell><m>r_2</m></cell>
-                  <cell><m>(negative) \theta_2</m></cell>
-                </row>
-                <row>
-                  <cell><m>A</m></cell>
-                  <cell><var name="$r[0]" width="5" /></cell>
-                  <cell><var name="$t[0]" width="5" /></cell>
-                  <cell><var name="$s[0]" width="5" /></cell>
-                  <cell><var name="$u[0]" width="5" /></cell>
-                </row>
-                <row>
-                  <cell><m>B</m></cell>
-                  <cell><var name="$r[1]" width="5" /></cell>
-                  <cell><var name="$t[1]" width="5" /></cell>
-                  <cell><var name="$s[1]" width="5" /></cell>
-                  <cell><var name="$u[1]" width="5" /></cell>
-                </row>
-                <row>
-                  <cell><m>C</m></cell>
-                  <cell><var name="$r[2]" width="5" /></cell>
-                  <cell><var name="$t[2]" width="5" /></cell>
-                  <cell><var name="$s[2]" width="5" /></cell>
-                  <cell><var name="$u[2]" width="5" /></cell>
-                </row>
-                <row>
-                  <cell><m>D</m></cell>
-                  <cell><var name="$r[3]" width="5" /></cell>
-                  <cell><var name="$t[3]" width="5" /></cell>
-                  <cell><var name="$s[3]" width="5" /></cell>
-                  <cell><var name="$u[3]" width="5" /></cell>
-                </row>
-              </tabular>
-
-            </table>
+            <tabular>
+              <col right="minor"/>
+              <col halign="center"/>
+              <col right="minor" halign="center"/>
+              <col halign="center"/>
+              <col halign="center"/>
+              <row bottom="medium">
+                <cell>Point</cell>
+                <cell><m>(positive) r_1</m></cell>
+                <cell><m>\theta_1</m></cell>
+                <cell><m>r_2</m></cell>
+                <cell><m>(negative) \theta_2</m></cell>
+              </row>
+              <row>
+                <cell><m>A</m></cell>
+                <cell><var name="$r[0]" width="5"/></cell>
+                <cell><var name="$t[0]" width="5"/></cell>
+                <cell><var name="$s[0]" width="5"/></cell>
+                <cell><var name="$u[0]" width="5"/></cell>
+              </row>
+              <row>
+                <cell><m>B</m></cell>
+                <cell><var name="$r[1]" width="5"/></cell>
+                <cell><var name="$t[1]" width="5"/></cell>
+                <cell><var name="$s[1]" width="5"/></cell>
+                <cell><var name="$u[1]" width="5"/></cell>
+              </row>
+              <row>
+                <cell><m>C</m></cell>
+                <cell><var name="$r[2]" width="5"/></cell>
+                <cell><var name="$t[2]" width="5"/></cell>
+                <cell><var name="$s[2]" width="5"/></cell>
+                <cell><var name="$u[2]" width="5"/></cell>
+              </row>
+              <row>
+                <cell><m>D</m></cell>
+                <cell><var name="$r[3]" width="5"/></cell>
+                <cell><var name="$t[3]" width="5"/></cell>
+                <cell><var name="$s[3]" width="5"/></cell>
+                <cell><var name="$u[3]" width="5"/></cell>
+              </row>
+            </tabular>
 
           </statement>
           <solution>
@@ -2232,7 +2167,7 @@
                   </p>
 
                   <p>
-                    <m>(x,y)=</m><var name="$xy[0]" width="30" />
+                    <m>(x,y)=</m><var name="$xy[0]" width="30"/>
                   </p>
                 </li>
 
@@ -2242,7 +2177,7 @@
                   </p>
 
                   <p>
-                    <m>(x,y)=</m><var name="$xy[1]" width="30" />
+                    <m>(x,y)=</m><var name="$xy[1]" width="30"/>
                   </p>
                 </li>
 
@@ -2252,7 +2187,7 @@
                   </p>
 
                   <p>
-                    <m>P(r,\theta)=P</m><var name="$rt[0]" evaluator="$rtev[0]" width="30" />
+                    <m>P(r,\theta)=P</m><var name="$rt[0]" evaluator="$rtev[0]" width="30"/>
                   </p>
                 </li>
 
@@ -2262,7 +2197,7 @@
                   </p>
 
                   <p>
-                    <m>P(r,\theta)=P</m><var name="$rt[1]" evaluator="$rtev[1]" width="30" />
+                    <m>P(r,\theta)=P</m><var name="$rt[1]" evaluator="$rtev[1]" width="30"/>
                   </p>
                 </li>
               </ol>
@@ -2322,7 +2257,7 @@
                   </p>
 
                   <p>
-                    <m>(x,y)=</m><var name="$xy[0]" width="30" />
+                    <m>(x,y)=</m><var name="$xy[0]" width="30"/>
                   </p>
                 </li>
 
@@ -2332,7 +2267,7 @@
                   </p>
 
                   <p>
-                    <m>(x,y)=</m><var name="$xy[1]" width="30" />
+                    <m>(x,y)=</m><var name="$xy[1]" width="30"/>
                   </p>
                 </li>
 
@@ -2342,7 +2277,7 @@
                   </p>
 
                   <p>
-                    <m>P(r,\theta)=P</m><var name="$rt[0]" evaluator="$rtev[0]" width="30" />
+                    <m>P(r,\theta)=P</m><var name="$rt[0]" evaluator="$rtev[0]" width="30"/>
                   </p>
                 </li>
 
@@ -2352,7 +2287,7 @@
                   </p>
 
                   <p>
-                    <m>P(r,\theta)=P</m><var name="$rt[1]" evaluator="$rtev[1]" width="30" />
+                    <m>P(r,\theta)=P</m><var name="$rt[1]" evaluator="$rtev[1]" width="30"/>
                   </p>
                 </li>
               </ol>
@@ -2399,40 +2334,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_11.tex -->
-                <image xml:id="img_09_04_ex_11X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=2.1,%
-			xmin=-.5,xmax=2.6%
-                  ]
+          <!-- START figures/fig_09_04_ex_11.tex -->
+              <image xml:id="img_09_04_ex_11X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=2.1,%
+                xmin=-.5,xmax=2.6%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:90] ({2*cos(x)},{2*sin(x)});
+                \addplot [thick,{\colorone}, smooth,domain=0:90] ({2*cos(x)},{2*sin(x)});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_11.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_11.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2450,41 +2380,36 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_12.tex -->
-                <image xml:id="img_09_04_ex_12X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-2.1,ymax=2.1,%
-			xmin=-2.5,xmax=2.5%
-                  ]
+          <!-- START figures/fig_09_04_ex_12.tex -->
+              <image xml:id="img_09_04_ex_12X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-2.1,ymax=2.1,%
+                xmin=-2.5,xmax=2.5%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=-.866:1.73] ({x},{.577*x});
+                \addplot [thick,{\colorone}, smooth,domain=-.866:1.73] ({x},{.577*x});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_12.tex END -->
-              </figure>
-            </solution>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_12.tex END -->
+          </solution>
         </webwork>
       </exercise>
 
@@ -2501,40 +2426,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_13.tex -->
-                <image xml:id="img_09_04_ex_13X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-2.1,ymax=2.1,%
-			xmin=-2.5,xmax=2.5%
-                  ]
+          <!-- START figures/fig_09_04_ex_13.tex -->
+              <image xml:id="img_09_04_ex_13X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-2.1,ymax=2.1,%
+                xmin=-2.5,xmax=2.5%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360] ({cos(x)*(1-cos(x))},{sin(x)*(1-cos(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:360] ({cos(x)*(1-cos(x))},{sin(x)*(1-cos(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_13.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_13.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2552,40 +2472,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_14.tex -->
-                <image xml:id="img_09_04_ex_14X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-2.6,ymax=3.6,%
-			xmin=-3.7,xmax=3.7%
-                  ]
+          <!-- START figures/fig_09_04_ex_14.tex -->
+              <image xml:id="img_09_04_ex_14X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-2.6,ymax=3.6,%
+                xmin=-3.7,xmax=3.7%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(2+sin(x))},{sin(x)*(2+sin(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(2+sin(x))},{sin(x)*(2+sin(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_14.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_14.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2603,40 +2518,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_15.tex -->
-                <image xml:id="img_09_04_ex_15X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-3.6,ymax=2.6,%
-			xmin=-3.7,xmax=3.7%
-                  ]
+          <!-- START figures/fig_09_04_ex_15.tex -->
+              <image xml:id="img_09_04_ex_15X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-3.6,ymax=2.6,%
+                xmin=-3.7,xmax=3.7%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360] ({cos(x)*(2-sin(x))},{sin(x)*(2-sin(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:360] ({cos(x)*(2-sin(x))},{sin(x)*(2-sin(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_15.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_15.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2654,40 +2564,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_16.tex -->
-                <image xml:id="img_09_04_ex_16X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-3.6,ymax=2.6,%
-			xmin=-3.7,xmax=3.7%
-                  ]
+          <!-- START figures/fig_09_04_ex_16.tex -->
+              <image xml:id="img_09_04_ex_16X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-3.6,ymax=2.6,%
+                xmin=-3.7,xmax=3.7%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(1-2*sin(x))},{sin(x)*(1-2*sin(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(1-2*sin(x))},{sin(x)*(1-2*sin(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_16.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_16.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2705,40 +2610,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_17.tex -->
-                <image xml:id="img_09_04_ex_17X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-2.6,ymax=3.6,%
-			xmin=-3.7,xmax=3.7%
-                  ]
+          <!-- START figures/fig_09_04_ex_17.tex -->
+              <image xml:id="img_09_04_ex_17X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-2.6,ymax=3.6,%
+                xmin=-3.7,xmax=3.7%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(1+2*sin(x))},{sin(x)*(1+2*sin(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=40] ({cos(x)*(1+2*sin(x))},{sin(x)*(1+2*sin(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_17.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_17.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2756,40 +2656,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_18.tex -->
-                <image xml:id="img_09_04_ex_18X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.3,xmax=1.3%
-                  ]
+          <!-- START figures/fig_09_04_ex_18.tex -->
+              <image xml:id="img_09_04_ex_18X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-1,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-1.1,ymax=1.1,%
+                xmin=-1.3,xmax=1.3%
+                ]
+            
+                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=60] ({cos(x)*(cos(2*x))},{sin(x)*(cos(2*x))});
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360,samples=60] ({cos(x)*(cos(2*x))},{sin(x)*(cos(2*x))});
+                \end{axis}
 
-                  \end{axis}
-
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_18.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_18.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2807,40 +2702,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_19.tex -->
-                <image xml:id="img_09_04_ex_19X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.3,xmax=1.3%
-                  ]
+          <!-- START figures/fig_09_04_ex_19.tex -->
+              <image xml:id="img_09_04_ex_19X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-1,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-1.1,ymax=1.1,%
+                xmin=-1.3,xmax=1.3%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:180,samples=60] ({cos(x)*(sin(3*x))},{sin(x)*(sin(3*x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:180,samples=60] ({cos(x)*(sin(3*x))},{sin(x)*(sin(3*x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_19.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_19.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2858,40 +2748,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_20.tex -->
-                <image xml:id="img_09_04_ex_20X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.3,xmax=1.3%
-                  ]
+          <!-- START figures/fig_09_04_ex_20.tex -->
+              <image xml:id="img_09_04_ex_20X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-1,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-1.1,ymax=1.1,%
+                xmin=-1.3,xmax=1.3%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:540,samples=60] ({cos(x)*(cos(x/3))},{sin(x)*(cos(x/3))});
+                \addplot [thick,{\colorone}, smooth,domain=0:540,samples=60] ({cos(x)*(cos(x/3))},{sin(x)*(cos(x/3))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_20.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_20.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2909,40 +2794,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_21.tex -->
-                <image xml:id="img_09_04_ex_21X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.3,xmax=1.3%
-                  ]
+          <!-- START figures/fig_09_04_ex_21.tex -->
+              <image xml:id="img_09_04_ex_21X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-1,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-1.1,ymax=1.1,%
+                xmin=-1.3,xmax=1.3%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:1080,samples=120] ({cos(x)*(cos(2*x/3))},{sin(x)*(cos(2*x/3))});
+                \addplot [thick,{\colorone}, smooth,domain=0:1080,samples=120] ({cos(x)*(cos(2*x/3))},{sin(x)*(cos(2*x/3))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_21.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_21.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -2960,40 +2840,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_22.tex -->
-                <image xml:id="img_09_04_ex_22X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-5.9,ymax=4.9,%
-			xmin=-6.5,xmax=6.5%
-                  ]
+          <!-- START figures/fig_09_04_ex_22.tex -->
+              <image xml:id="img_09_04_ex_22X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-1,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-5.9,ymax=4.9,%
+                xmin=-6.5,xmax=6.5%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:720,samples=60] ({cos(x)*(x*3.14/360)},{sin(x)*(x*3.14/360)});
+                \addplot [thick,{\colorone}, smooth,domain=0:720,samples=60] ({cos(x)*(x*3.14/360)},{sin(x)*(x*3.14/360)});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_22.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_22.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3011,40 +2886,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_23.tex -->
-                <image xml:id="img_09_04_ex_23X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.9,ymax=3.9,%
-			xmin=-2.9,xmax=2.9%
-                  ]
+          <!-- START figures/fig_09_04_ex_23.tex -->
+              <image xml:id="img_09_04_ex_23X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-.9,ymax=3.9,%
+                xmin=-2.9,xmax=2.9%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:180,samples=60] ({cos(x)*(3*sin(x))},{sin(x)*(3*sin(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:180,samples=60] ({cos(x)*(3*sin(x))},{sin(x)*(3*sin(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_23.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_23.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3062,40 +2932,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_24.tex -->
-                <image xml:id="img_09_04_ex_24X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.3,xmax=1.3%
-                  ]
+          <!-- START figures/fig_09_04_ex_24.tex -->
+              <image xml:id="img_09_04_ex_24X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-1.1,ymax=1.1,%
+                xmin=-1.3,xmax=1.3%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=0:360,samples=60] ({cos(x)*(cos(x)*sin(x))},{sin(x)*(cos(x)*sin(x))});
+                \addplot [thick,{\colorone}, smooth,domain=0:360,samples=60] ({cos(x)*(cos(x)*sin(x))},{sin(x)*(cos(x)*sin(x))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_24.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_24.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3113,40 +2978,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_25.tex -->
-                <image xml:id="img_09_04_ex_25X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-3.75,ymax=3.75,%
-			xmin=-8.1,xmax=.9%
-                  ]
+          <!-- START figures/fig_09_04_ex_25.tex -->
+              <image xml:id="img_09_04_ex_25X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-3.75,ymax=3.75,%
+                xmin=-8.1,xmax=.9%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=-3.14:3.14,samples=60] ({cos(deg(x))*(x^2-2.4674)},{sin(deg(x))*(x^2-2.4674)});
+                \addplot [thick,{\colorone}, smooth,domain=-3.14:3.14,samples=60] ({cos(deg(x))*(x^2-2.4674)},{sin(deg(x))*(x^2-2.4674)});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_25.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_25.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3164,40 +3024,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_26.tex -->
-                <image xml:id="img_09_04_ex_26X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-4.9,ymax=4.96,%
-			xmin=-5.9,xmax=5.9%
-                  ]
+          <!-- START figures/fig_09_04_ex_26.tex -->
+              <image xml:id="img_09_04_ex_26X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-4.9,ymax=4.96,%
+                xmin=-5.9,xmax=5.9%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=.1:3,samples=20] ({cos(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))},{sin(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))});
+                \addplot [thick,{\colorone}, smooth,domain=.1:3,samples=20] ({cos(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))},{sin(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_26.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_26.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3215,40 +3070,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_27.tex -->
-                <image xml:id="img_09_04_ex_27X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-4.9,ymax=4.96,%
-			xmin=-5.9,xmax=5.9%
-                  ]
+          <!-- START figures/fig_09_04_ex_27.tex -->
+              <image xml:id="img_09_04_ex_27X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-4.9,ymax=4.96,%
+                xmin=-5.9,xmax=5.9%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=.1:3,samples=20] ({cos(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))},{sin(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))});
+                \addplot [thick,{\colorone}, smooth,domain=.1:3,samples=20] ({cos(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))},{sin(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_27.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_27.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3266,40 +3116,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_28.tex -->
-                <image xml:id="img_09_04_ex_28X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-4.9,ymax=4.96,%
-			xmin=-5.9,xmax=5.9%
-                  ]
+          <!-- START figures/fig_09_04_ex_28.tex -->
+              <image xml:id="img_09_04_ex_28X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-4.9,ymax=4.96,%
+                xmin=-5.9,xmax=5.9%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=-5:5,samples=10] ({3},{x});
+                \addplot [thick,{\colorone}, smooth,domain=-5:5,samples=10] ({3},{x});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_28.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_28.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3317,40 +3162,35 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_09_04_ex_29.tex -->
-                <image xml:id="img_09_04_ex_29X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}[>=stealth]
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={2,3,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-4.9,ymax=4.96,%
-			xmin=-5.9,xmax=5.9%
-                  ]
+          <!-- START figures/fig_09_04_ex_29.tex -->
+              <image xml:id="img_09_04_ex_29X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                %
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={2,3,1},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-4.9,ymax=4.96,%
+                xmin=-5.9,xmax=5.9%
+                ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick,{\colorone}, smooth,domain=-5:5,samples=10] ({x},{4});
+                \addplot [thick,{\colorone}, smooth,domain=-5:5,samples=10] ({x},{4});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_04_ex_29.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_04_ex_29.tex END -->
             </solution>
         </webwork>
       </exercise>
@@ -3384,7 +3224,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3409,7 +3249,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3434,7 +3274,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3459,7 +3299,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3484,7 +3324,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3509,7 +3349,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3554,7 +3394,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3579,7 +3419,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3616,7 +3456,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3643,7 +3483,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3670,7 +3510,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3697,7 +3537,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3724,7 +3564,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3772,7 +3612,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -3832,7 +3672,7 @@
               </p>
 
               <p>
-                <var name="$rts" evaluator="$rtsev" width="60" />
+                <var name="$rts" evaluator="$rtsev" width="60"/>
               </p>
             </statement>
         </webwork>
@@ -3882,7 +3722,7 @@
               </p>
 
               <p>
-                <var name="$rts" evaluator="$rtsev" width="60" />
+                <var name="$rts" evaluator="$rtsev" width="60"/>
               </p>
             </statement>
         </webwork>
@@ -3956,7 +3796,7 @@
               </p>
 
               <p>
-                <var name="$rts" evaluator="$rtsev" width="60" />
+                <var name="$rts" evaluator="$rtsev" width="60"/>
               </p>
             </statement>
         </webwork>
@@ -4056,4 +3896,3 @@
 
   </exercises>
 </section>
-
