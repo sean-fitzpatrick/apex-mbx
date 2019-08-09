@@ -19,6 +19,51 @@
       (usually taken to be the origin).
     </p>
 
+    <figure xml:id="fig-conic-sections">
+      <caption>Conic Sections</caption>
+      <sbsgroup>
+        <sidebyside widths="24% 24% 24% 24%">
+          <figure>
+            <caption>Parabola</caption>
+            <image source="images/conic_parabola.png"/>
+          </figure>
+
+          <figure>
+            <caption>Ellipse</caption>
+            <image source="images/conic_ellipse.png"/>
+          </figure>
+
+          <figure>
+            <caption>Circle</caption>
+            <image source="images/conic_circle.png"/>
+          </figure>
+
+          <figure>
+            <caption>Hyperbola</caption>
+            <image source="images/conic_hyperbola.png"/>
+          </figure>
+        </sidebyside>
+
+        <sidebyside widths="24% 24% 24%">
+          <figure>
+            <caption>Point</caption>
+            <image source="images/conic_singlept.png"/>
+          </figure>
+
+          <figure>
+            <caption>Line</caption>
+            <image source="images/conic_oneline.png"/>
+          </figure>
+
+          <figure>
+            <caption>Crossed Lines</caption>
+            <image source="images/conic_crossedlines.png"/>
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
+
     <p>
       When the plane does contain the origin,
       three <em>degenerate</em> cones can be formed as shown the bottom row of <xref ref="fig_nondeg_conic">Figure</xref>:
@@ -97,7 +142,7 @@
       <image xml:id="img_parabola_def">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[scale=.8]
  
         \draw [thick,firstcolor] (-3,-1) node [above,black,shift={(12pt,0pt)}] {\scriptsize Directrix} -- (3,-1);
@@ -108,15 +153,15 @@
 
         \draw (.3,.5) node[] {\scriptsize $\left.\rule{0pt}{12pt}\right\}p$};
         \draw (.3,-.5) node[] {\scriptsize $\left.\rule{0pt}{12pt}\right\}p$};
-      
+
         \coordinate (A) at (2.5,1.5625);
 
         \filldraw [black] (A) circle (1.5pt) node [right] {\scriptsize $(x,y)$};
         \draw [thick,dashed] (0,1) -- (A) node [pos=.5,above] {\scriptsize $d$} -- (2.5,-1) node [pos=.5,right] {\scriptsize $d$};
         \draw [thick,dashed] (0,-1.5) -- node [pos=.85,above,rotate=90] {\scriptsize Axis of} node [pos=.85,below,rotate=90] {\scriptsize Symmetry} (0,3.2);
- 
+
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_parabola_def.tex END -->
@@ -235,7 +280,7 @@
           <image xml:id="img_conic1">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -248,7 +293,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_conic1.tex END -->
@@ -296,7 +341,7 @@
           <image xml:id="img_conic2">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -314,7 +359,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_conic2.tex END -->
@@ -341,10 +386,10 @@
     <p>
       One of the fascinating things about the nondegenerate conic sections is their reflective properties.
       Parabolas have the following reflective property:
- 
+
 	Any ray emanating from the focus that intersects the parabola reflects off along a line perpendicular to the directrix.
- 
- 
+
+
 	This is illustrated in <xref ref="fig_conic_reflect">Figure</xref>. The following theorem states this more rigorously.
     </p>
 
@@ -354,7 +399,7 @@
       <image xml:id="img_conic_reflect">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
         
         \begin{axis}[
@@ -380,7 +425,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_conic_reflect.tex END -->
@@ -470,9 +515,9 @@
       <image xml:id="img_ellipse_def">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
- 
+
         \draw [thick,dashed] (0,0) circle [x radius=2,y radius=1.5];
 
         \filldraw (1.3,0) circle (1.5pt)
@@ -480,7 +525,7 @@
       
         \draw (1.3,0) -- node [right,pos=.5] {\scriptsize $d_1$} (1.39,1.07) -- node [above,pos=.5] {\scriptsize $d_2$} (-1.3,0);
         \draw (0,-.7) node {\scriptsize $d_1+d_2=$ constant};
-      
+
         \begin{scope}[shift={(1.9cm,1.225cm)}]
           \begin{scope}[rotate=120]
             \begin{scope}[xscale=.25,yscale=.5]
@@ -494,7 +539,7 @@
         \end{scope}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_ellipse_def.tex END -->
@@ -561,13 +606,13 @@
 
         \filldraw [firstcolor] (2,0) circle (1.5pt)
                   (-2,0) circle (1.5pt);
-      
+
         \draw (-1,-.25) node {\scriptsize $\underbrace{\rule{1.8cm}{0pt}}_a$};
         \draw (.65,-.25) node {\scriptsize $\underbrace{\rule{1.1cm}{0pt}}_c$};
         \draw (-.25,.75) node [] {\scriptsize $b\left\{\rule[-.65cm]{0pt}{1.3cm}\right.$};
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_ellipse_label.tex END -->
@@ -583,7 +628,7 @@
       The <q>constant sum of distances</q>
       that defines the ellipse is the length of the major axis,
       i.e., <m>2a</m>.
- 
+
 	    Allowing for the shifting of the ellipse gives the following standard equations.
     </p>
 
@@ -645,7 +690,7 @@
           <image xml:id="img_conic3">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
             \begin{axis}[
             ytick={-4,-2,2,4,6},
@@ -659,7 +704,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_conic3.tex END -->
@@ -715,7 +760,7 @@
           <image xml:id="img_conic4">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -737,7 +782,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_conic4.tex END -->
@@ -779,7 +824,7 @@
           <image xml:id="img_ellipse_ecca">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -798,7 +843,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_ecca.tex END -->
@@ -810,7 +855,7 @@
           <image xml:id="img_ellipse_eccb">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -830,7 +875,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_eccb.tex END -->
@@ -842,7 +887,7 @@
           <image xml:id="img_ellipse_eccc">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -854,15 +899,15 @@
 
             \addplot+ [-,domain=0:360,samples=60] ({cos(x)},{.6*sin(x)});
 
-            \draw (axis cs:.8,-.9) node {\scriptsize $e=0.8$};
-
             \filldraw (axis cs:.8,0) circle (1.5pt)
 				            	(axis cs:-.8,0) circle (1.5pt);
+
+            \draw (axis cs:.8,-.9) node {\scriptsize $e=0.8$};
 
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_eccc.tex END -->
@@ -874,7 +919,7 @@
           <image xml:id="img_ellipse_eccd">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -894,7 +939,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_eccd.tex END -->
@@ -970,7 +1015,7 @@
         \draw [-&gt;,secondcolor,thick]  ({2*cos(250)},{1.2*sin(250)}) -- (1.55,0);
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_ellipse_reflect.tex END -->
@@ -1104,7 +1149,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_def.tex END -->
@@ -1163,7 +1208,7 @@
       <image xml:id="img_hyperbola_asy1">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
 
         \begin{axis}[
@@ -1180,7 +1225,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_asy1.tex END -->
@@ -1201,7 +1246,7 @@
       <image xml:id="img_hyperbola_asy2">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
 
         \begin{axis}[
@@ -1231,7 +1276,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_asy2.tex END -->
@@ -1290,7 +1335,7 @@
           <image xml:id="img_conic5">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1318,7 +1363,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_conic5.tex END -->
@@ -1360,7 +1405,7 @@
           <image xml:id="img_conic6">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1387,7 +1432,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_conic6.tex END -->
@@ -1437,7 +1482,7 @@
           <image xml:id="img_hyperbola_ecca">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1459,12 +1504,12 @@
             \filldraw [secondcolor] (axis cs:1.05,0) circle (1.5pt);
             \filldraw [secondcolor] (axis cs:-1.05,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.05$}; 
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.05$};
 
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_ecca.tex END -->
@@ -1476,7 +1521,7 @@
           <image xml:id="img_hyperbola_eccb">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1498,12 +1543,12 @@
             \filldraw [secondcolor] (axis cs:1.5,0) circle (1.5pt);
             \filldraw [secondcolor] (axis cs:-1.5,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.5$}; 
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.5$};
 
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_eccb.tex END -->
@@ -1515,7 +1560,7 @@
           <image xml:id="img_hyperbola_eccc">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1537,12 +1582,12 @@
             \filldraw [secondcolor] (axis cs:3,0) circle (1.5pt);
             \filldraw [secondcolor] (axis cs:-3,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 3$}; 
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 3$};
 
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_eccc.tex END -->
@@ -1554,7 +1599,7 @@
           <image xml:id="img_hyperbola_eccd">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1576,12 +1621,12 @@
             \filldraw [secondcolor] (axis cs:10,0) circle (1.5pt);
             \filldraw [secondcolor] (axis cs:-10,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 10$}; 
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 10$};
 
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_eccd.tex END -->
@@ -1716,7 +1761,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_reflect.tex END -->
@@ -1876,7 +1921,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1899,7 +1944,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1919,7 +1964,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1940,7 +1985,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1966,7 +2011,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2000,7 +2045,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2020,7 +2065,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2040,7 +2085,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2060,7 +2105,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2080,7 +2125,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2100,7 +2145,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2120,7 +2165,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2140,7 +2185,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2172,7 +2217,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2193,7 +2238,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2224,7 +2269,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2242,7 +2287,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2271,7 +2316,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2280,7 +2325,7 @@
               <image xml:id="img_09_01_ex_20">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -2294,7 +2339,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_09_01_ex_20.tex END -->
@@ -2311,7 +2356,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2320,7 +2365,7 @@
               <image xml:id="img_09_01_ex_21">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -2334,7 +2379,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_09_01_ex_21.tex END -->
@@ -2363,7 +2408,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2383,7 +2428,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2404,7 +2449,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2424,7 +2469,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2455,7 +2500,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2475,7 +2520,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2495,7 +2540,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2515,7 +2560,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2535,7 +2580,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2594,7 +2639,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2603,7 +2648,7 @@
               <image xml:id="img_09_01_ex_27">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -2622,7 +2667,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_09_01_ex_27.tex END -->
@@ -2638,7 +2683,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2647,7 +2692,7 @@
               <image xml:id="img_09_01_ex_28">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -2667,7 +2712,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_09_01_ex_28.tex END -->
@@ -2683,7 +2728,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2692,7 +2737,7 @@
               <image xml:id="img_09_01_ex_29">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -2715,7 +2760,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_09_01_ex_29.tex END -->
@@ -2731,7 +2776,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2740,7 +2785,7 @@
               <image xml:id="img_09_01_ex_30">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -2762,7 +2807,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_09_01_ex_30.tex END -->
@@ -2789,7 +2834,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2807,7 +2852,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2836,7 +2881,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2856,7 +2901,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2876,7 +2921,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2897,7 +2942,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2928,7 +2973,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2948,7 +2993,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2968,7 +3013,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2988,7 +3033,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3008,7 +3053,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3098,7 +3143,7 @@
 
                   <li>
                     <p>
-                      Mercury: <m>x^2/(0.387)^2 + y^2/(0.3787)^2=1</m> 
+                      Mercury: <m>x^2/(0.387)^2 + y^2/(0.3787)^2=1</m>
 
                       Earth:	<m>x^2+y^2/(0.99986)^2 = 1</m>
 
@@ -3108,7 +3153,7 @@
 
                   <li>
                     <p>
-                      Mercury: <m>(x-0.08)^2/(0.387)^2 + y^2/(0.3787)^2=1</m> 
+                      Mercury: <m>(x-0.08)^2/(0.387)^2 + y^2/(0.3787)^2=1</m>
 
                       Earth: <m>(x-0.0167)^2+y^2/(0.99986)^2 = 1</m>
 
@@ -3124,7 +3169,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3139,7 +3184,7 @@
               <image>
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \draw [fill=black] (0,0) circle (1.5pt) node [below] {\(A\)} -- node [pos=.5,above] {1000m} (1.5,0) circle (1.5pt) node [below] {\(B\)} -- node [pos=.5,above] {2000m} (4.5,0) circle (1.5pt) node [below] {\(C\)};
