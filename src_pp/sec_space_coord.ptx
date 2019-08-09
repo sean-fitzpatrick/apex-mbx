@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_space_coord">
   <title>Introduction to Cartesian Coordinates in Space</title>
   <introduction>
     <p>
-      Up to this point in this text we have considered mathematics in a 2<ndash />dimensional world.
+      Up to this point in this text we have considered mathematics in a 2<ndash/>dimensional world.
       We have plotted graphs on the <m>x</m>-<m>y</m> plane using rectangular and polar coordinates and found the area of regions in the plane.
       We have considered properties of <em>solid</em> objects,
       such as volume and surface area,
@@ -29,7 +28,7 @@
 
     <p>
       Visualizing points in space on paper can be problematic,
-      as we are trying to represent a 3-dimensional concept on a 2<ndash />dimensional medium.
+      as we are trying to represent a 3-dimensional concept on a 2<ndash/>dimensional medium.
       We cannot draw three lines representing the three axes in which each line is perpendicular to the other two.
       Despite this issue,
       standard conventions exist for plotting shapes in space that we will discuss that are more than adequate.
@@ -73,7 +72,7 @@
       <image xml:id="img_cartcoord1">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figcartcoord1.pdf in Chapter 10.1
@@ -137,7 +136,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figcartcoord1_3D.asy END -->
@@ -180,7 +179,7 @@
       <image xml:id="img_cartcoord2">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figcartcoord2.pdf in Chapter 10
@@ -247,7 +246,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figcartcoord2_3D.asy END -->
@@ -324,7 +323,7 @@
           <image xml:id="img_space1">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace1.pdf in Chapter 10.1
@@ -402,7 +401,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figspace1_3D.asy END -->
@@ -525,7 +524,7 @@
       <image xml:id="img_spacexy_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figspacexy.pdf in Chapter 10
@@ -588,7 +587,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figspacexy_3D.asy END -->
@@ -606,7 +605,7 @@
       <image xml:id="img_spaceyz_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figspaceyz.pdf in Chapter 10
@@ -669,7 +668,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figspaceyz_3D.asy END -->
@@ -687,7 +686,7 @@
       <image xml:id="img_spacexz_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figspacexz.pdf in Chapter 10
@@ -750,7 +749,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figspacexz_3D.asy END -->
@@ -778,7 +777,7 @@
       <image xml:id="img_space2">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figspace2.pdf in Chapter 10.1
@@ -841,7 +840,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figspace2_3D.asy END -->
@@ -878,7 +877,7 @@
           <image xml:id="img_space3">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace3.pdf in Chapter 10.1
@@ -948,7 +947,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figspace3_3D.asy END -->
@@ -998,7 +997,7 @@
           <image xml:id="img_spacecylinder1_3D">
 
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figspacecylinder1.pdf in Chapter 10.1
@@ -1065,7 +1064,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figspacecylinder1_3D.asy END -->
@@ -1087,7 +1086,7 @@
           <image xml:id="img_spacecylinder1b_3D">
 
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figspacecylinder1b.pdf in Chapter 10
@@ -1162,7 +1161,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figspacecylinder1b_3D.asy END -->
@@ -1251,7 +1250,7 @@
                 <image xml:id="img_space4a_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace4a.pdf in Chapter 10
@@ -1318,7 +1317,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/figspace4a_3D.asy END -->
@@ -1336,7 +1335,7 @@
                 <image xml:id="img_space4b_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace4b.pdf in Chapter 10.1
@@ -1447,7 +1446,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/figspace4b_3D.asy END -->
@@ -1465,7 +1464,7 @@
                 <image xml:id="img_space4c_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace4c.pdf in Chapter 10.1
@@ -1532,7 +1531,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/figspace4c_3D.asy END -->
@@ -1567,7 +1566,7 @@
                 <image xml:id="img_space4d_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace4d.pdf in Chapter 10.1
@@ -1640,7 +1639,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/figspace4d_3D.asy END -->
@@ -1658,7 +1657,7 @@
                 <image xml:id="img_space4e_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace4e.pdf in Chapter 10.1
@@ -1731,7 +1730,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/figspace4e_3D.asy END -->
@@ -1749,7 +1748,7 @@
                 <image xml:id="img_space4f_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace4f.pdf in Chapter 10.1
@@ -1810,7 +1809,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/figspace4f_3D.asy END -->
@@ -1827,14 +1826,14 @@
   <subsection>
     <title>Surfaces of Revolution</title>
     <p>
-      One of the applications of integration we learned previously was to find the volume of solids of revolution <mdash /> solids formed by revolving a curve about a horizontal or vertical axis.
+      One of the applications of integration we learned previously was to find the volume of solids of revolution <mdash/> solids formed by revolving a curve about a horizontal or vertical axis.
       We now consider how to find the equation of the surface of such a solid.
     </p>
 
     <p>
       Consider the surface formed by revolving
       <m>y=\sqrt{x}</m> about the <m>x</m>-axis.
-      Cross<ndash />sections of this surface parallel to the <m>y</m>-<m>z</m> plane are circles,
+      Cross<ndash/>sections of this surface parallel to the <m>y</m>-<m>z</m> plane are circles,
       as shown in <xref ref="fig_surf_rev_intro">Figure</xref>(a).
       Each circle has equation of the form
       <m>y^2+z^2=r^2</m> for some radius <m>r</m>.
@@ -1861,7 +1860,7 @@
           <image xml:id="img_surf_rev_intro_3D">
 
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figsurf_rev_intro.pdf in Chapter 10
@@ -1942,7 +1941,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figsurf_rev_intro_3D.asy END -->
@@ -1963,7 +1962,7 @@
           <image xml:id="img_surf_rev_introb_3D">
 
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figsurf_rev_introb.pdf in Chapter 10
@@ -2031,7 +2030,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figsurf_rev_introb_3D.asy END -->
@@ -2119,7 +2118,7 @@
           <image xml:id="img_surfrev1a_3D">
 
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figsurfrev1a.pdf in Chapter 10
@@ -2184,7 +2183,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figsurfrev1a_3D.asy END -->
@@ -2205,7 +2204,7 @@
           <image xml:id="img_surfrev1b_3D">
 
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figsurfrev1b.pdf in Chapter 10
@@ -2272,7 +2271,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figsurfrev1b_3D.asy END -->
@@ -2357,7 +2356,7 @@
               <image xml:id="img_surfrev2a_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figsurfrev2a.pdf in Chapter 10
@@ -2416,7 +2415,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figsurfrev2a_3D.asy END -->
@@ -2437,7 +2436,7 @@
               <image xml:id="img_surfrev2b_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figsurfrev2b.pdf in Chapter 10
@@ -2504,7 +2503,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figsurfrev2b_3D.asy END -->
@@ -2530,7 +2529,7 @@
       <title>Quadric Surface</title>
       <statement>
         <p>
-          A <term>quadric surface</term> is the graph of the general second<ndash />degree equation in three variables:
+          A <term>quadric surface</term> is the graph of the general second<ndash/>degree equation in three variables:
 
           <idx>
             <h>quadric surface</h><h>definition</h>
@@ -2570,7 +2569,7 @@
       <image xml:id="img_quadric1">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_parb.pdf in Chapter 10.1
@@ -2651,7 +2650,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_parb_3D.asy END -->
@@ -2672,7 +2671,7 @@
       For instance,
       consider the elliptic paraboloid <m>z= x^2/4+y^2</m>,
       shown in <xref ref="fig_quadric1">Figure</xref>.
-      If we intersect this shape with the plane <m>z=d</m><nbsp /> (i.e., replace <m>z</m> with <m>d</m>),
+      If we intersect this shape with the plane <m>z=d</m><nbsp/> (i.e., replace <m>z</m> with <m>d</m>),
       we have the equation:
       <md>
         <mrow>d \amp = \frac{x^2}4+y^2.</mrow>
@@ -2682,7 +2681,7 @@
     </p>
 
     <p>
-      This describes an ellipse <mdash /> so cross sections parallel to the <m>x</m>-<m>y</m> coordinate plane are ellipses.
+      This describes an ellipse <mdash/> so cross sections parallel to the <m>x</m>-<m>y</m> coordinate plane are ellipses.
       This ellipse is drawn in the figure.
     </p>
 
@@ -2711,7 +2710,7 @@
       <em>Elliptic Paraboloid, <m>\ds z=\frac{x^2}{a^2}+\frac{y^2}{b^2}</m></em>
     </p>
 
-    <figure>
+    <sidebyside>
       <!--
        \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
@@ -2725,7 +2724,7 @@
       <image xml:id="img_quadric_par_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_par.pdf in Chapter 10
@@ -2792,34 +2791,34 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_par_3D.asy END -->
       <tabular>
         <row>
           <cell><em>Plane</em></cell>
-          <cell></cell>
+          <cell/>
           <cell><em>Trace</em></cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell/>
+          <cell/>
+          <cell/>
         </row>
         <row>
           <cell><m>x=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Parabola</cell>
         </row>
         <row>
           <cell><m>y=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Parabola</cell>
         </row>
         <row>
           <cell><m>z=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
       </tabular>
@@ -2836,7 +2835,7 @@
       <image xml:id="img_quadric_parb_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_parb.pdf in Chapter 10.1
@@ -2917,7 +2916,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_parb_3D.asy END -->
@@ -2933,7 +2932,7 @@
         <h>quadric surface</h><h>elliptic paraboloid</h>
       </idx>
 
-    </figure>
+    </sidebyside>
 
     <p>
       \rule{1.1\linewidth}{.5pt}
@@ -2944,7 +2943,7 @@
       <m>\ds z^2=\frac{x^2}{a^2}+\frac{y^2}{b^2}</m></em>
     </p>
 
-    <figure>
+    <sidebyside>
       <!--
        \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
@@ -2958,7 +2957,7 @@
       <image xml:id="img_quadric_cone_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_cone.pdf in Chapter 10
@@ -3025,47 +3024,47 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_cone_3D.asy END -->
       <tabular>
         <row>
           <cell><em>Plane</em></cell>
-          <cell></cell>
+          <cell/>
           <cell><em>Trace</em></cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell/>
+          <cell/>
+          <cell/>
         </row>
         <row>
           <cell><m>x=0</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Crossed Lines</cell>
         </row>
         <row>
           <cell><m>y=0</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Crossed Lines</cell>
         </row>
         <row>
-          <cell></cell>
+          <cell/>
         </row>
         <row>
           <cell><m>x=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
         <row>
           <cell><m>y=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
         <row>
           <cell><m>z=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
       </tabular>
@@ -3082,7 +3081,7 @@
       <image xml:id="img_quadric_coneb_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_coneb.pdf in Chapter 10.1
@@ -3163,7 +3162,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_coneb_3D.asy END -->
@@ -3180,7 +3179,7 @@
       <image xml:id="img_quadric_conec_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_conec.pdf in Chapter 10.1
@@ -3258,7 +3257,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_conec_3D.asy END -->
@@ -3268,14 +3267,14 @@
         <h>quadric surface</h><h>elliptic cone</h>
       </idx>
 
-    </figure>
+    </sidebyside>
 
     <p>
       <em>Ellipsoid,
       <m>\ds \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1</m></em>
     </p>
 
-    <figure>
+    <sidebyside>
       <!--
        \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
@@ -3289,7 +3288,7 @@
       <image xml:id="img_quadric_ellipsoid_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_ellipsoid.pdf in Chapter 10.1
@@ -3369,34 +3368,34 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_ellipsoid_3D.asy END -->
       <tabular>
         <row>
           <cell><em>Plane</em></cell>
-          <cell></cell>
+          <cell/>
           <cell><em>Trace</em></cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell/>
+          <cell/>
+          <cell/>
         </row>
         <row>
           <cell><m>x=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
         <row>
           <cell><m>y=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
         <row>
           <cell><m>z=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
       </tabular>
@@ -3413,7 +3412,7 @@
       <image xml:id="img_quadric_ellipsoidb_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_ellipsoidb.pdf in Chapter 10
@@ -3500,7 +3499,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_ellipsoidb_3D.asy END -->
@@ -3514,7 +3513,7 @@
         <h>quadric surface</h><h>sphere</h>
       </idx>
 
-    </figure>
+    </sidebyside>
 
     <p>
       \rule{1.1\linewidth}{.5pt}
@@ -3525,7 +3524,7 @@
       <m>\ds \frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1</m></em>
     </p>
 
-    <figure>
+    <sidebyside>
       <!--
        \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
@@ -3539,7 +3538,7 @@
       <image xml:id="img_quadric_hyp_one_sheet_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_one_sheet.pdf in Chapter 10.1
@@ -3583,7 +3582,7 @@
 	return (cos(t.y)/cos(t.x),sin(t.y)/cos(t.x),tan(t.x));//({cos(y)*sec(x)},{sec(x)*sin(y)},{tan(x)});
           }
 
-          bool cond(pair t) {return tan(t.x)<1;}
+          bool cond(pair t) {return tan(t.x)&lt;1;}
 
           surface s=surface(f,(-1,0),(1,2*pi),32,16,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
           pen p=rgb(0,0,.7);
@@ -3622,34 +3621,34 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_one_sheet_3D.asy END -->
       <tabular>
         <row>
           <cell><em>Plane</em></cell>
-          <cell></cell>
+          <cell/>
           <cell><em>Trace</em></cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell/>
+          <cell/>
+          <cell/>
         </row>
         <row>
           <cell><m>x=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
         <row>
           <cell><m>y=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
         <row>
           <cell><m>z=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
       </tabular>
@@ -3666,7 +3665,7 @@
       <image xml:id="img_quadric_hyp_one_sheetb_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_one_sheetb.pdf in Chapter 10.1
@@ -3759,7 +3758,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_one_sheetb_3D.asy END -->
@@ -3769,14 +3768,14 @@
         <h>quadric surface</h><h>hyperboloid of one sheet</h>
       </idx>
 
-    </figure>
+    </sidebyside>
 
     <p>
       <em>Hyperboloid of Two Sheets,
       <m>\ds \frac{z^2}{c^2}-\frac{x^2}{a^2}-\frac{y^2}{b^2}=1</m></em>
     </p>
 
-    <figure>
+    <sidebyside>
       <!--
        \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
@@ -3790,7 +3789,7 @@
       <image xml:id="img_quadric_hyp_two_sheet_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_two_sheetb.pdf in Chapter 10.1
@@ -3836,7 +3835,7 @@
 	return (cos(t.y)*tan(t.x),sin(t.y)*tan(t.x),-1/cos(t.x));//({cos(y)*tan(x)},{tan(x)*sin(y)},{sec(x)})
           }
 
-          bool cond(pair t) {return 1/cos(t.x) <= 1.6;}
+          bool cond(pair t) {return 1/cos(t.x) &lt;= 1.6;}
 
           surface s=surface(f,(-1,0),(1,pi),32,16);
           pen p=rgb(0,0,.7);
@@ -3885,34 +3884,34 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_two_sheet_3D.asy END -->
       <tabular>
         <row>
           <cell><em>Plane</em></cell>
-          <cell></cell>
+          <cell/>
           <cell><em>Trace</em></cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell/>
+          <cell/>
+          <cell/>
         </row>
         <row>
           <cell><m>x=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
         <row>
           <cell><m>y=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
         <row>
           <cell><m>z=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Ellipse</cell>
         </row>
       </tabular>
@@ -3929,7 +3928,7 @@
       <image xml:id="img_quadric_hyp_two_sheetb_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_two_sheetb.pdf in Chapter 10.1
@@ -4025,7 +4024,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_two_sheetb_3D.asy END -->
@@ -4035,7 +4034,7 @@
         <h>quadric surface</h><h>hyperboloid of two sheets</h>
       </idx>
 
-    </figure>
+    </sidebyside>
 
     <p>
       \rule{1.1\linewidth}{.5pt}
@@ -4045,7 +4044,7 @@
       <em>Hyperbolic Paraboloid, <m>\ds z=\frac{x^2}{a^2}-\frac{y^2}{b^2}</m></em>
     </p>
 
-    <figure>
+    <sidebyside>
       <!--
        \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
@@ -4059,7 +4058,7 @@
       <image xml:id="img_quadric_hyp_par_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_par.pdf in Chapter 10.1
@@ -4147,34 +4146,34 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_par_3D.asy END -->
       <tabular>
         <row>
           <cell><em>Plane</em></cell>
-          <cell></cell>
+          <cell/>
           <cell><em>Trace</em></cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
+          <cell/>
+          <cell/>
+          <cell/>
         </row>
         <row>
           <cell><m>x=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Parabola</cell>
         </row>
         <row>
           <cell><m>y=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Parabola</cell>
         </row>
         <row>
           <cell><m>z=d</m></cell>
-          <cell></cell>
+          <cell/>
           <cell>Hyperbola</cell>
         </row>
       </tabular>
@@ -4191,7 +4190,7 @@
       <image xml:id="img_quadric_hyp_parb_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_parb.pdf in Chapter 10.1
@@ -4273,7 +4272,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_parb_3D.asy END -->
@@ -4290,7 +4289,7 @@
       <image xml:id="img_quadric_hyp_parc_3D">
 
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figquadric_hyp_parb.pdf in Chapter 10.1
@@ -4351,10 +4350,10 @@
 
           //Add labels
           label("\noindent\centering Hyperbolas in \\plane $z=d$",(.7,0,1),N);
-          label("\noindent\centering $(d>0)$",(.5,0,.6),N);
+          label("\noindent\centering $(d&gt;0)$",(.5,0,.6),N);
           draw((.52,0,.6)--(.5,0,.25),linewidth(.75),Arrow3);
           draw((.48,0,.6)--(-.5,0,.25),linewidth(.75),Arrow3);
-          label("\noindent\centering $(d<0)$",(1,0,-0.5),S);
+          label("\noindent\centering $(d&lt;0)$",(1,0,-0.5),S);
           draw((1,.1,-0.5)--(.8,.9,-.25),linewidth(.75),Arrow3);
           draw((1,-.1,-0.5)--(.8,-.9,-.25),linewidth(.75),Arrow3);
 
@@ -4380,7 +4379,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_parc_3D.asy END -->
@@ -4394,7 +4393,7 @@
         <h>quadric surface</h><h>hyperbolic paraboloid</h>
       </idx>
 
-    </figure>
+    </sidebyside>
 
     <example xml:id="ex_space5">
       <title>Sketching quadric surfaces</title>
@@ -4415,7 +4414,7 @@
             <p>
               <m>\ds y=\frac{x^2}{4}+\frac{z^2}{16}</m>:
 
-	We first identify the quadric by pattern<ndash />matching with the equations given previously. Only two surfaces have equations where one variable is raised to the first power, the elliptic paraboloid and the hyperbolic paraboloid. In the latter case, the other variables have different signs, so we conclude that this describes a hyperbolic paraboloid. As the variable with the first power is <m>y</m>, we note the paraboloid opens along the <m>y</m>-axis.
+	We first identify the quadric by pattern<ndash/>matching with the equations given previously. Only two surfaces have equations where one variable is raised to the first power, the elliptic paraboloid and the hyperbolic paraboloid. In the latter case, the other variables have different signs, so we conclude that this describes a hyperbolic paraboloid. As the variable with the first power is <m>y</m>, we note the paraboloid opens along the <m>y</m>-axis.
  
 	To make a decent sketch by hand, we need only draw a few traces. In this case, the traces <m>x=0</m> and <m>z=0</m> form parabolas that outline the shape.
  
@@ -4443,7 +4442,7 @@
                     <image xml:id="img_space5ab_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace5ab.pdf in Chapter 10.1
@@ -4521,7 +4520,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                     </image>
             <!-- figures/figspace5ab_3D.asy END -->
@@ -4542,7 +4541,7 @@
                     <image xml:id="img_space5a_3D">
 
                     <asymptote>
-                      <![CDATA[
+                      
                       import graph3;
 
                       //ASY file for figspace5a.pdf in Chapter 10.1
@@ -4620,7 +4619,7 @@
                       //draw(s,paleblue);
                       //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                       //draw(mypath,2bp+blue);
-                      ]]>
+                      
                     </asymptote>
                     </image>
             <!-- figures/figspace5a_3D.asy END -->
@@ -4638,7 +4637,7 @@
 
 	This is an ellipsoid. We can get a good idea of its shape by drawing the traces in the coordinate planes.
  
-	<m>x=0</m>: 	The trace is the ellipse <m>\ds\frac{y^2}{9}+\frac{z^2}{4}=1</m>. The major axis is along the <m>y</m><ndash />axis with length 6 (as <m>b=3</m>, the length of the axis is 6); the minor axis is along the <m>z</m>-axis with length 4.
+	<m>x=0</m>: 	The trace is the ellipse <m>\ds\frac{y^2}{9}+\frac{z^2}{4}=1</m>. The major axis is along the <m>y</m><ndash/>axis with length 6 (as <m>b=3</m>, the length of the axis is 6); the minor axis is along the <m>z</m>-axis with length 4.
  
 	<m>y=0</m>:	The trace is the ellipse <m>\ds x^2+\frac{z^2}{4}=1</m>. The major axis is along the <m>z</m>-axis, and the minor axis has length 2 along the <m>x</m>-axis.
  
@@ -4664,7 +4663,7 @@
                     <image xml:id="img_space5b_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace5b.pdf in Chapter 10.1
@@ -4746,7 +4745,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                     </image>
             <!-- figures/figspace5b_3D.asy END -->
@@ -4767,7 +4766,7 @@
                     <image xml:id="img_space5bb_3D">
 
                     <asymptote>
-                      <![CDATA[
+                      
                       import graph3;
 
                       //ASY file for figspace5bb.pdf in Chapter 10.1
@@ -4849,7 +4848,7 @@
                       //draw(s,paleblue);
                       //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                       //draw(mypath,2bp+blue);
-                      ]]>
+                      
                     </asymptote>
                     </image>
             <!-- figures/figspace5bb_3D.asy END -->
@@ -4891,7 +4890,7 @@
                     <image xml:id="img_space5c_3D">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace5c.pdf in Chapter 10.1
@@ -4969,7 +4968,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                     </image>
             <!-- figures/figspace5c_3D.asy END -->
@@ -4990,7 +4989,7 @@
                     <image xml:id="img_space5cb_3D">
 
                     <asymptote>
-                      <![CDATA[
+                      
                       import graph3;
 
                       //ASY file for figspace5cb.pdf in Chapter 10.1
@@ -5068,7 +5067,7 @@
                       //draw(s,paleblue);
                       //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                       //draw(mypath,2bp+blue);
-                      ]]>
+                      
                     </asymptote>
                     </image>
             <!-- figures/figspace5cb_3D.asy END -->
@@ -5106,7 +5105,7 @@
           <image xml:id="img_space6">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figspace6.pdf in Chapter 10.1
@@ -5182,7 +5181,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figspace6_3D.asy END -->
@@ -5192,14 +5191,14 @@
           <row>
             <cell>(a)</cell>
             <cell><m>\ds x^2-y^2-\frac{z^2}{9}=0</m></cell>
-            <cell></cell>
+            <cell/>
             <cell>(c)</cell>
             <cell><m>\ds z^2-x^2-y^2=1</m></cell>
           </row>
           <row>
             <cell>(b)</cell>
             <cell><m>\ds x^2-y^2-z^2=1</m></cell>
-            <cell></cell>
+            <cell/>
             <cell>(d)</cell>
             <cell><m>\ds 4x^2-y^2-\frac{z^2}9=1</m></cell>
           </row>
@@ -5225,7 +5224,7 @@
 
         <p>
           The hyperboloid is wider in the <m>z</m>-direction than in the <m>y</m>-direction,
-          so we need an equation where <m>c>b</m>.
+          so we need an equation where <m>c \gt b</m>.
           This eliminates (b), leaving us with (d).
           We should verify that the equation given in (d),
           <m>4x^2-y^2-\frac{z^2}9=1</m>, fits.
@@ -5273,7 +5272,7 @@
             </setup>
             <statement>
               <p>
-                Axes drawn in space must conform to the <fillin /> <fillin /> rule.
+                Axes drawn in space must conform to the <fillin/> <fillin/> rule.
               </p>
             </statement>
             <solution>
@@ -5313,11 +5312,11 @@
             <statement>
               <p>
                 In the plane,
-                the equation <m>x=2</m> defines a <var name="$line" evaluator="$lineevaluator" width="10" />;
+                the equation <m>x=2</m> defines a <var name="$line" evaluator="$lineevaluator" width="10"/>;
               </p>
 
               <p>
-                in space, <m>x=2</m> defines a <var name="$plane" evaluator="$planeevaluator" width="10" />.
+                in space, <m>x=2</m> defines a <var name="$plane" evaluator="$planeevaluator" width="10"/>.
               </p>
             </statement>
         </webwork>
@@ -5332,8 +5331,8 @@
             </setup>
             <statement>
               <p>
-                In the plane, the equation <m>y=x^2</m> defines a <fillin />;
-                in space, <m>y=x^2</m> defines a <fillin />.
+                In the plane, the equation <m>y=x^2</m> defines a <fillin/>;
+                in space, <m>y=x^2</m> defines a <fillin/>.
               </p>
             </statement>
             <solution>
@@ -5354,8 +5353,8 @@
             </setup>
             <statement>
               <p>
-                Which quadric surface looks like a Pringles<trademark /><nbsp />chip?
-                <var name="$surfaces" form="popup" />
+                Which quadric surface looks like a Pringles<trademark/><nbsp/>chip?
+                <var name="$surfaces" form="popup"/>
               </p>
             </statement>
         </webwork>
@@ -5442,19 +5441,19 @@
             </p>
 
             <p>
-              <m>\left\lVert\overline{AB}\right\rVert=</m><var name="$magAB" width="10" />
+              <m>\left\lVert\overline{AB}\right\rVert=</m><var name="$magAB" width="10"/>
             </p>
 
             <p>
-              <m>\left\lVert\overline{BC}\right\rVert=</m><var name="$magBC" width="10" />
+              <m>\left\lVert\overline{BC}\right\rVert=</m><var name="$magBC" width="10"/>
             </p>
 
             <p>
-              <m>\left\lVert\overline{CA}\right\rVert=</m><var name="$magCA" width="10" />
+              <m>\left\lVert\overline{CA}\right\rVert=</m><var name="$magCA" width="10"/>
             </p>
 
             <p>
-              The three points <var name="$yn" form="popup" /> form a right triangle.
+              The three points <var name="$yn" form="popup"/> form a right triangle.
             </p>
           </statement>
           <solution>
@@ -5512,11 +5511,11 @@
             </p>
 
             <p>
-              Center at <var name="$center" width="10" />.
+              Center at <var name="$center" width="10"/>.
             </p>
 
             <p>
-              Radius of <var name="$radius" width="10" />.
+              Radius of <var name="$radius" width="10"/>.
             </p>
           </statement>
       </webwork>
@@ -5543,11 +5542,11 @@
             </p>
 
             <p>
-              Center at <var name="$center" width="10" />.
+              Center at <var name="$center" width="10"/>.
             </p>
 
             <p>
-              Radius of <var name="$radius" width="10" />.
+              Radius of <var name="$radius" width="10"/>.
             </p>
           </statement>
       </webwork>
@@ -5672,7 +5671,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -5686,7 +5685,7 @@
                 <image xml:id="img_10_01_ex_15_3DX">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig10_01_ex_153D.asy in Chapter 10
@@ -5781,11 +5780,11 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_15_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -5803,7 +5802,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -5817,7 +5816,7 @@
                 <image xml:id="img_10_01_ex_16_3DX">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig10_01_ex_173D.pdf in Chapter 10
@@ -5894,11 +5893,11 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_16_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -5916,7 +5915,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -5930,7 +5929,7 @@
                 <image xml:id="img_10_01_ex_17_3DX">
 
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig10_01_ex_173D.pdf in Chapter 10
@@ -6018,11 +6017,11 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_17_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -6040,7 +6039,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6054,7 +6053,7 @@
                 <image xml:id="img_10_01_ex_18_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_20.pdf in Chapter 10.1
@@ -6150,11 +6149,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_18_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -6186,7 +6185,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -6208,7 +6207,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -6230,7 +6229,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -6252,7 +6251,7 @@
               </p>
 
               <p>
-                <var name="$eq" width="40" />
+                <var name="$eq" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -6276,7 +6275,7 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6290,7 +6289,7 @@
                 <image xml:id="img_10_01_ex_19_3D">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_19.pdf in Chapter 10.1
@@ -6361,12 +6360,12 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_19_3D.asy END -->
                 (a)  <m>\ds x=y^2+\frac{z^2}{9}</m>    (b)  <m>\ds x=y^2+\frac{z^2}{3}</m>
-              </figure>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -6384,7 +6383,7 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6398,7 +6397,7 @@
                 <image xml:id="img_10_01_ex_20_3D">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_20.pdf in Chapter 10.1
@@ -6476,12 +6475,12 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_20_3D.asy END -->
                 (a)  <m>\ds x^2-y^2-z^2=0</m>    (b)  <m>x^2-y^2+z^2=0</m>
-              </figure>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -6499,7 +6498,7 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6513,7 +6512,7 @@
                 <image xml:id="img_10_01_ex_21_3D">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_21.pdf in Chapter 10.1
@@ -6584,12 +6583,12 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_21_3D.asy END -->
                 (a)  <m>\ds x^2+\frac{y^2}3+\frac{z^2}2=1</m>    (b)  <m>\ds x^2+\frac{y^2}9+\frac{z^2}4=1</m>
-              </figure>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -6607,7 +6606,7 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6621,7 +6620,7 @@
                 <image xml:id="img_10_01_ex_22_3D">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_22.pdf in Chapter 10.1
@@ -6699,12 +6698,12 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_22_3D.asy END -->
                 (a)  <m>y^2-x^2-z^2=1</m>    (b)  <m>y^2+x^2-z^2=1</m>
-              </figure>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -6736,7 +6735,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6750,7 +6749,7 @@
                 <image xml:id="img_10_01_ex_28_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_283D.asy in Chapter 10
@@ -6814,11 +6813,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_28_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -6836,7 +6835,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6850,7 +6849,7 @@
                 <image xml:id="img_10_01_ex_24_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -6913,11 +6912,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_24_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -6935,7 +6934,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -6949,7 +6948,7 @@
                 <image xml:id="img_10_01_ex_23_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_233D.asy in Chapter 10
@@ -7012,11 +7011,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_23_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -7034,7 +7033,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -7048,7 +7047,7 @@
                 <image xml:id="img_10_01_ex_27_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -7118,11 +7117,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_27_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -7140,7 +7139,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -7154,7 +7153,7 @@
                 <image xml:id="img_10_01_ex_26_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -7217,11 +7216,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_26_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -7239,7 +7238,7 @@
               </p>
             </statement>
             <solution>
-              <figure>
+              <sidebyside>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
             3Droll=0,
@@ -7253,7 +7252,7 @@
                 <image xml:id="img_10_01_ex_25_3DX">
 
                 <asymptote>
-                  <![CDATA[
+                  
                   import graph3;
 
                   //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -7316,11 +7315,11 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  ]]>
+                  
                 </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_25_3D.asy END -->
-              </figure>
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -7328,4 +7327,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
