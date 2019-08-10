@@ -1159,19 +1159,21 @@
                 
                 \begin{tikzpicture}
 
-                \begin{axis}[%
-			          xtick={-2,2},%
-                %			ytick={-6,-4,-2,0,2,4,6},
-                extra x ticks={-1,1},%
-                ymin=-2.5,ymax=1.5,%
-                xmin=-2.1,xmax=2.1%
+                \begin{axis}[
+			          xtick={-2,2},
+                extra x ticks={-1,1},
+                ymin=-2.5,ymax=1.5,
+                xmin=-2.1,xmax=2.1
                 ]
 
-                \draw [thick,{\colorone}] (axis cs:-1,-2)-- node [black,pos=.2,above,sloped] {\scriptsize $y=3x+1$} (axis cs:0,1)--node [black,pos=.6,below,sloped] {\scriptsize $y=-3/2x+1$} (axis cs:2,-2)--node [black,pos=.5,below,sloped] {\scriptsize $y=-2$}(axis cs:-1,-2);
+                \addplot [firstcurvestyle,-,domain=-1:0] {3*x+1} node [black,pos=.2,above,sloped] {\scriptsize $y=3x+1$};
+                \addplot [firstcurvestyle,-,domain=0:2] {-(3/2)*x+1} node [black,pos=.6,below,sloped] {\scriptsize $y=-3/2x+1$};
+                \addplot [firstcurvestyle,-,domain=-1:2] {-2} node [black,pos=.5,below] {\scriptsize $y=-2$};
 
-                \fill[black,draw=black] (axis cs:-1,-2) circle (1.5pt);
-                \fill[black,draw=black] (axis cs:2,-2) circle (1.5pt);
-                \fill[black,draw=black] (axis cs:0,1) circle (1.5pt);
+                \fill [black] (axis cs:-1,-2) circle (1.5pt);
+                \fill [black] (axis cs:2,-2) circle (1.5pt);
+                \fill [black] (axis cs:0,1) circle (1.5pt);
+
                 \end{axis}
 
                 \end{tikzpicture}
