@@ -3235,7 +3235,7 @@
 
           //Draw the surface z^2 = x^2/(1.5)^2+y^2
           triple f(pair t) {
-	return (1.5*t.y*cos(t.x),t.y*sin(t.x),t.y);//
+	        return (1.5*t.y*cos(t.x),t.y*sin(t.x),t.y);//
           }
           surface s=surface(f,(0,-2),(2*pi,2),32,16,Spline);
           pen p=rgb(0,0,.7);
