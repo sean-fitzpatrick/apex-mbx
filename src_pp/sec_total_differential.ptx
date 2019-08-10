@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_total_differential">
   <title>Differentiability and the Total Differential</title>
   <introduction>
@@ -118,39 +117,41 @@
           </me>.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>f</m> is <em>differentiable at <m>(x_0,y_0)</m></em> if,
-              given <m>\varepsilon >0</m>,
-              there is a <m>\delta >0</m> such that if <m>\norm{\la dx,dy\ra} \lt \delta</m>,
-              then <m>\norm{\la E_x,E_y\ra} \lt \varepsilon</m>.
-              That is, as <m>dx</m> and <m>dy</m> go to 0, so do <m>E_x</m> and <m>E_y</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>f</m> is <em>differentiable at <m>(x_0,y_0)</m></em> if,
+                given <m>\varepsilon \gt 0</m>,
+                there is a <m>\delta \gt 0</m> such that if <m>\norm{\la dx,dy\ra} \lt \delta</m>,
+                then <m>\norm{\la E_x,E_y\ra} \lt \varepsilon</m>.
+                That is, as <m>dx</m> and <m>dy</m> go to 0, so do <m>E_x</m> and <m>E_y</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>f</m> is <em>differentiable on <m>S</m></em>
-              if <m>f</m> is differentiable at every point in <m>S</m>.
-              If <m>f</m> is differentiable on <m>\mathbb{R}^2</m>,
-              we say that <m>f</m> is <em>differentiable everywhere</em>.
+            <li>
+              <p>
+                <m>f</m> is <em>differentiable on <m>S</m></em>
+                if <m>f</m> is differentiable at every point in <m>S</m>.
+                If <m>f</m> is differentiable on <m>\mathbb{R}^2</m>,
+                we say that <m>f</m> is <em>differentiable everywhere</em>.
 
-              <idx>
-                <h>differentiable</h>
-              </idx>
+                <idx>
+                  <h>differentiable</h>
+                </idx>
 
-              <idx>
-                <h>derivative</h><h>multivariable differentiability</h>
-              </idx>
+                <idx>
+                  <h>derivative</h><h>multivariable differentiability</h>
+                </idx>
 
-              <idx>
-                <h>multivariable function</h><h>differentiability</h>
-              </idx>
+                <idx>
+                  <h>multivariable function</h><h>differentiability</h>
+                </idx>
 
-            </p>
-          </li>
-        </ol>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -363,7 +364,7 @@
         </p>
 
         <p>
-          Returning to Equation <xref ref="eq_totaldiff2" />, we have
+          Returning to Equation <xref ref="eq_totaldiff2"/>, we have
           <me>
             f(4.1,0.8) \approx 0.039 + 1.414 = 1.4531
           </me>.
@@ -572,25 +573,27 @@
           </me>.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>f</m> is <em>differentiable at <m>(x_0,y_0,z_0)</m></em> if,
-              given <m>\varepsilon >0</m>,
-              there is a <m>\delta >0</m> such that if <m>\norm{\la dx,dy,dz\ra} \lt \delta</m>,
-              then <m>\norm{\la E_x,E_y,E_z\ra} \lt \varepsilon</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>f</m> is <em>differentiable at <m>(x_0,y_0,z_0)</m></em> if,
+                given <m>\varepsilon \gt 0</m>,
+                there is a <m>\delta \gt 0</m> such that if <m>\norm{\la dx,dy,dz\ra} \lt \delta</m>,
+                then <m>\norm{\la E_x,E_y,E_z\ra} \lt \varepsilon</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>f</m> is <em>differentiable on <m>B</m></em>
-              if <m>f</m> is differentiable at every point in <m>B</m>.
-              If <m>f</m> is differentiable on <m>\mathbb{R}^3</m>,
-              we say that <m>f</m> is <em>differentiable everywhere</em>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>f</m> is <em>differentiable on <m>B</m></em>
+                if <m>f</m> is differentiable at every point in <m>B</m>.
+                If <m>f</m> is differentiable on <m>\mathbb{R}^3</m>,
+                we say that <m>f</m> is <em>differentiable everywhere</em>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -607,31 +610,33 @@
           Let <m>w=f(x,y,z)</m> be defined on an open ball <m>B</m> containing <m>(x_0,y_0,z_0)</m>.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If <m>f</m> is differentiable at <m>(x_0,y_0,z_0)</m>,
-              then <m>f</m> is continuous at <m>(x_0,y_0,z_0)</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>f</m> is differentiable at <m>(x_0,y_0,z_0)</m>,
+                then <m>f</m> is continuous at <m>(x_0,y_0,z_0)</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>f_x</m>,
-              <m>f_y</m> and <m>f_z</m> are continuous on <m>B</m>,
-              then <m>f</m> is differentiable on <m>B</m>.
+            <li>
+              <p>
+                If <m>f_x</m>,
+                <m>f_y</m> and <m>f_z</m> are continuous on <m>B</m>,
+                then <m>f</m> is differentiable on <m>B</m>.
 
-              <idx>
-                <h>multivariable function</h><h>differentiability</h>
-              </idx>
+                <idx>
+                  <h>multivariable function</h><h>differentiability</h>
+                </idx>
 
-              <idx>
-                <h>multivariable function</h><h>continuity</h>
-              </idx>
+                <idx>
+                  <h>multivariable function</h><h>continuity</h>
+                </idx>
 
-            </p>
-          </li>
-        </ol>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -729,7 +734,7 @@
             <statement>
               <p>
                 Finish the sentence:
-                <q>The new <m>z</m>-value is approximately the old <m>z</m>-value plus the approximate <fillin />.</q>
+                <q>The new <m>z</m>-value is approximately the old <m>z</m>-value plus the approximate <fillin/>.</q>
               </p>
             </statement>
             <solution>
@@ -829,10 +834,15 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises, a function <m>z=f(x,y)</m> is given.
-        Give the indicated approximation using the total differential.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+    
+      <introduction>
+        <p>
+          In the following exercises, a function <m>z=f(x,y)</m> is given.
+          Give the indicated approximation using the total differential.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -930,9 +940,14 @@
         </webwork>
       </exercise>
 
-      <p>
-        The following exercises ask a variety of questions dealing with approximating error and sensitivity analysis.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+    
+      <introduction>
+        <p>
+          The following exercises ask a variety of questions dealing with approximating error and sensitivity analysis.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1007,18 +1022,19 @@
                 Is the measurement of the length of <m>\ell</m> more sensitive to errors in the measurement of <m>x</m> or in <m>\theta</m>?
               </p>
 
-              <figure>
+              <image>
+                <description/>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                <image>
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}\draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(\ell=\)?}(1,1);
-                  \draw [dashed] (1,1) -- (-1,-1) node [xshift=10pt,yshift=5pt] { \(\theta\)} -- node [pos=.5,below] { \(x\)} (1,-1);\end{tikzpicture}]]>
-                  </latex-image>
-                </image>
+                \draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(\ell=\)?}(1,1);
+                \draw [dashed] (1,1) -- (-1,-1) node [xshift=10pt,yshift=5pt] { \(\theta\)} -- node [pos=.5,below] { \(x\)} (1,-1);
+                \end{tikzpicture}
 
-              </figure>
+                </latex-image>
+              </image>
+
             </statement>
             <solution>
               <p>
@@ -1073,9 +1089,14 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises, find the total differential <m>dw</m>.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+    
+      <introduction>
+        <p>
+          In the following exercises, find the total differential <m>dw</m>.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1117,10 +1138,15 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        use the information provided and the total differential to make the given approximation.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+    
+      <introduction>
+        <p>
+          In the following exercises,
+          use the information provided and the total differential to make the given approximation.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1131,7 +1157,7 @@
             </setup>
             <statement>
               <p>
-                <m>f(3,1) = 7</m>,<nbsp />
+                <m>f(3,1) = 7</m>,<nbsp/>
                 <m>f_x(3,1) = 9</m>, <m>f_y(3,1) = -2</m>.
                 Approximate <m>f(3.05, 0.9)</m>.
               </p>
@@ -1155,7 +1181,7 @@
             </setup>
             <statement>
               <p>
-                <m>f(-4,2) = 13</m>,<nbsp />
+                <m>f(-4,2) = 13</m>,<nbsp/>
                 <m>f_x(-4,2) = 2.6</m>, <m>f_y(-4,2) = 5.1</m>.
                 Approximate <m>f(-4.12, 2.07)</m>.
               </p>
@@ -1179,8 +1205,8 @@
             </setup>
             <statement>
               <p>
-                <m>f(2,4,5) = -1</m>,<nbsp /> <m>f_x(2,4,5) = 2</m>,<nbsp />
-                <m>f_y(2,4,5) = -3</m>,<nbsp /> <m>f_z(2,4,5) = 3.7</m>.
+                <m>f(2,4,5) = -1</m>,<nbsp/> <m>f_x(2,4,5) = 2</m>,<nbsp/>
+                <m>f_y(2,4,5) = -3</m>,<nbsp/> <m>f_z(2,4,5) = 3.7</m>.
                 Approximate <m>f(2.5,4.1,4.8)</m>.
               </p>
             </statement>
@@ -1206,8 +1232,8 @@
             </setup>
             <statement>
               <p>
-                <m>f(3,3,3) = 5</m>,<nbsp /> <m>f_x(3,3,3) = 2</m>,<nbsp />
-                <m>f_y(3,3,3) = 0</m>,<nbsp /> <m>f_z(3,3,3) = -2</m>.
+                <m>f(3,3,3) = 5</m>,<nbsp/> <m>f_x(3,3,3) = 2</m>,<nbsp/>
+                <m>f_y(3,3,3) = 0</m>,<nbsp/> <m>f_z(3,3,3) = -2</m>.
                 Approximate <m>f(3.1, 3.1,3.1)</m>.
               </p>
             </statement>
@@ -1227,4 +1253,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
