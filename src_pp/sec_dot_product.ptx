@@ -949,12 +949,11 @@
                 That is because the angle between <m>\vec u</m> and <m>\vec v</m> is obtuse (i.e., greater than <m>90^\circ</m>).
               </p>
 
-              <table xml:id="fig_dotp4">
-                <title>Graphing the vectors used in <xref ref="ex_dotp4">Example</xref>.</title>
-                <tabular>
-                  <row>
-                    <cell>
-                  <!-- START figures/fig_dotp4a.tex -->
+              <figure xml:id="fig_dotp4">
+                <caption>Graphing the vectors used in <xref ref="ex_dotp4">Example</xref>.</caption>
+                <sidebyside widths="33% 33% 33%">
+                  <figure xml:id="fig_dotp4a">
+                    <caption/>
                       <image xml:id="img_dotp4a">
                         <description></description>
                         <latex-image>
@@ -991,14 +990,10 @@
                         
                         </latex-image>
                       </image>
-                  <!-- figures/fig_dotp4a.tex END -->
-                    </cell>
-                  </row>
-                  <row>
-                    <cell>(a)</cell>
-                  </row>
-                  <row>
-                    <cell>
+                  </figure>
+                  
+                  <figure xml:id="figdotp4b">
+                    <caption/>
                     <!--
                       \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=onclick,
                     3Droll=0,
@@ -1008,7 +1003,6 @@
                     3Droo=250,
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                       -->
-                    <!-- START figures/figdotp4b_3D.asy -->
                       <image xml:id="img_dotp4b_3D">
                         <description></description>
                         <asymptote>
@@ -1106,13 +1100,10 @@
                         </asymptote>
                       </image>
                   <!-- figures/figdotp4b_3D.asy END -->
-                    </cell>
-                  </row>
-                  <row>
-                    <cell>(b)</cell>
-                  </row>
-                  <row>
-                    <cell>
+                    </figure>
+                  
+                    <figure xml:id="figdotp4c">
+                      <caption/>
                   <!--
                       \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=onclick,
                     3Droll=0,
@@ -1220,17 +1211,10 @@
                         </asymptote>
                       </image>
                     <!-- figures/figdotp4c_3D.asy END -->
-                    </cell>
-                  </row>
-                  <row>
-                    <cell>(c)</cell>
-                  </row>
-                  <row>
-                    <cell></cell>
-                  </row>
-                </tabular>
+                    </figure>
+                </sidebyside>
 
-              </table>
+              </figure>
             </li>
 
             <li>
