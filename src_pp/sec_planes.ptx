@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_planes">
   <title>Planes</title>
   <introduction>
@@ -24,9 +23,9 @@
        -->
       <!-- START figures/figplanes_intro_3D.asy -->
       <image xml:id="img_planes_intro">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figlines3.asy in Chapter 10
@@ -100,7 +99,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figplanes_intro_3D.asy END -->
@@ -172,7 +171,7 @@
 
     <p>
       Equation (eq_planes3) is especially useful as many computer programs can graph functions in this form.
-      Equations <xref ref="eq_planes1" /> and (eq_planes2) have specific names,
+      Equations <xref ref="eq_planes1"/> and (eq_planes2) have specific names,
       given next.
     </p>
 
@@ -254,9 +253,9 @@
            -->
           <!-- START figures/figplanes1_3D.asy -->
           <image xml:id="img_planes1">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figlines_dist2.asy in Chapter 10
@@ -356,7 +355,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figplanes1_3D.asy END -->
@@ -448,9 +447,9 @@
            -->
           <!-- START figures/figplanes2_3D.asy -->
           <image xml:id="img_planes2">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figplanes2.asy in Chapter 10
@@ -525,7 +524,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figplanes2_3D.asy END -->
@@ -570,9 +569,9 @@
            -->
           <!-- START figures/figplanes3_3D.asy -->
           <image xml:id="img_planes3">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figplanes3.asy in Chapter 10
@@ -646,7 +645,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figplanes3_3D.asy END -->
@@ -736,9 +735,9 @@
            -->
           <!-- START figures/figplanes4_3D.asy -->
           <image xml:id="img_planes4">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figplanes43D.asy in Chapter 10
@@ -817,7 +816,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figplanes4_3D.asy END -->
@@ -886,9 +885,9 @@
            -->
           <!-- START figures/figplanes5_3D.asy -->
           <image xml:id="img_planes5">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figplanes53D.asy in Chapter 10
@@ -959,7 +958,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figplanes5_3D.asy END -->
@@ -987,10 +986,10 @@
     </p>
 
     <p>
-      Equation <xref ref="eq_plane_dist" /> is important as it does more than just give the distance between a point and a plane.
+      Equation <xref ref="eq_plane_dist"/> is important as it does more than just give the distance between a point and a plane.
       We will see how it allows us to find several other distances as well:
       the distance between parallel planes and the distance from a line and a plane.
-      Because Equation <xref ref="eq_plane_dist" /> is important,
+      Because Equation <xref ref="eq_plane_dist"/> is important,
       we restate it as a Key Idea.
     </p>
 
@@ -1007,9 +1006,9 @@
        -->
       <!-- START figures/figplanes_dist_3D.asy -->
       <image xml:id="img_planes_dist">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figplanes_dist3D.asy in Chapter 10
@@ -1092,7 +1091,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figplanes_dist_3D.asy END -->
@@ -1305,7 +1304,7 @@
               </p>
 
               <p>
-                <var name="$points" evaluator="$pev" width="20" />
+                <var name="$points" evaluator="$pev" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1378,7 +1377,7 @@
               </p>
 
               <p>
-                <var name="$points" evaluator="$pev" width="20" />
+                <var name="$points" evaluator="$pev" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1473,11 +1472,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -1564,11 +1563,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -1662,11 +1661,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -1760,11 +1759,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -1856,11 +1855,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -1917,11 +1916,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -1978,11 +1977,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -2040,11 +2039,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -2101,11 +2100,11 @@
               </p>
 
               <p>
-                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30" />.
+                An equation for this plane in standard form is <var name="$st" evaluator="$stev" width="30"/>.
               </p>
 
               <p>
-                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30" />.
+                An equation for this plane in general form is <var name="$ge" evaluator="$geev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -2179,7 +2178,7 @@
               </p>
 
               <p>
-                <var name="$v" evaluator="$vev" width="30" />.
+                <var name="$v" evaluator="$vev" width="30"/>.
               </p>
             </statement>
         </webwork>
@@ -2239,7 +2238,7 @@
               </p>
 
               <p>
-                <var name="$point" width="10" />
+                <var name="$point" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2289,7 +2288,7 @@
               </p>
 
               <p>
-                <var name="$point" width="10" />
+                <var name="$point" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2343,7 +2342,7 @@
               </p>
 
               <p>
-                <var name="$distance" width="10" />
+                <var name="$distance" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2393,7 +2392,7 @@
               </p>
 
               <p>
-                <var name="$distance" width="10" />
+                <var name="$distance" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2455,4 +2454,3 @@
 
   </exercises>
 </section>
-
