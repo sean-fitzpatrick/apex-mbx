@@ -131,27 +131,28 @@
           <latex-image>
           
           \begin{tikzpicture}
-          \begin{axis}[axis on top,
+
+          \begin{axis}[
+          axis on top,
           ymin=-.25,ymax=1.25,
           xmin=-1,xmax=11
           ]
-          \draw [thick, dashed] (axis cs: -.1,.614) node [left] {\scriptsize $L$} -- (axis cs: 10.25,.614);
 
-          \addplot [only marks,{\colorone},mark size={1.5pt},domain=0:10,samples=11] {2/(x+1)};
-
-          \addplot [only marks,{\colortwo},mark size={1.5pt},domain=1:10,samples=10]coordinates {(1., 1.)(2., 0.333333)(3., 0.833333)(4., 0.433333)(5.,0.766667)(6., 0.480952)(7., 0.730952)(8., 0.50873)(9.,0.70873)(10., 0.526912)};
-
-          %\fill [{\colorone}](axis cs:2,250) circle (1.5pt) node[right,black] {\scriptsize $a_n$};
-          %\fill [{\colortwo}](axis cs:2,225) circle (1.5pt) node[right,black] {\scriptsize $S_n$};
+          \addplot [only marks,firstcolor,mark size={1.5pt},domain=0:10,samples=11] {2/(x+1)};
+          \addplot [only marks,secondcolor,mark size={1.5pt},domain=1:10,samples=10] coordinates {(1., 1.)(2., 0.333333)(3., 0.833333)(4., 0.433333)(5.,0.766667)(6., 0.480952)(7., 0.730952)(8., 0.50873)(9.,0.70873)(10., 0.526912)};
+          \addplot [dashed,domain=-.1:10] {.614} node [pos=0,left] {\scriptsize $L$};
 
           \end{axis}
 
           \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
-          \node[shift={(0,-10pt)},draw] at (myplot.south) {\begin{tikzpicture}
-                                \fill [\colorone] (0,0) circle (1.5pt) node [right,black] {\scriptsize $a_n$};
-                                \fill [\colortwo] (1,0) circle (1.5pt) node [right, black] {\scriptsize $S_n$};
-                                \end{tikzpicture}};
+          \node[shift={(0,-10pt)},draw] at (myplot.south) 
+            {\begin{tikzpicture}
+
+              \fill [firstcolor] (0,0) circle (1.5pt) node [right,black] {\scriptsize $a_n$};
+              \fill [secondcolor] (1,0) circle (1.5pt) node [right, black] {\scriptsize $S_n$};
+
+            \end{tikzpicture}};
 
           \end{tikzpicture}
           
@@ -168,7 +169,9 @@
           <latex-image>
           
           \begin{tikzpicture}
-          \begin{axis}[axis on top,
+
+          \begin{axis}[
+          axis on top,
           xtick=\empty,
           extra x ticks={1, 0.3333, 0.83333, 0.43333, 0.76667, 0.4809, 0.7309, 0.612},
           extra x tick labels={\scriptsize $S_1$,\scriptsize $S_2$,\scriptsize $S_3$,\scriptsize $S_4$,\scriptsize $S_5$,\scriptsize $S_6$,\scriptsize $S_7$, $L$ },
@@ -179,15 +182,17 @@
           xmin=-.2,xmax=1.2,
           x post scale=2,
           ]
-          \addplot[-&gt;,domain=0:1] ({x},{2}) node[pos=1, right]{$a_1$};
-          \addplot[&lt;-,domain=0.333:1] ({x},{1.75}) node[pos=0, left]{$-a_2$};
-          \addplot[-&gt;,domain=0.333:.833] ({x},{1.5}) node[pos=1, right]{$a_3$};
-          \addplot[&lt;-,domain=0.433:.8333] ({x},{1.25}) node[pos=0, left]{$-a_4$};
-          \addplot[-&gt;,domain=0.4333:.76667] ({x},{1}) node[pos=1, right]{$a_5$};
-          \addplot[&lt;-,domain=0.4809:.76667] ({x},{.75}) node[pos=0, left]{$-a_6$};
-          \addplot[-&gt;,domain=0.4809:.7309] ({x},{.5}) node[pos=1, right]{$a_7$};
+
+          \addplot[-&gt;,domain=0:1] ({x},{2}) node [pos=1, right] {$a_1$};
+          \addplot[&lt;-,domain=0.333:1] ({x},{1.75}) node [pos=0, left] {$-a_2$};
+          \addplot[-&gt;,domain=0.333:.833] ({x},{1.5}) node [pos=1, right] {$a_3$};
+          \addplot[&lt;-,domain=0.433:.8333] ({x},{1.25}) node [pos=0, left] {$-a_4$};
+          \addplot[-&gt;,domain=0.4333:.76667] ({x},{1}) node [pos=1, right] {$a_5$};
+          \addplot[&lt;-,domain=0.4809:.76667] ({x},{.75}) node [pos=0, left] {$-a_6$};
+          \addplot[-&gt;,domain=0.4809:.7309] ({x},{.5}) node [pos=1, right] {$a_7$};
 
           \end{axis}
+          
           \end{tikzpicture}
           
           </latex-image>
