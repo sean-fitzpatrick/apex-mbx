@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_lines">
   <title>Lines</title>
   <introduction>
@@ -12,7 +11,9 @@
       To find the equation of a line in the <m>x</m>-<m>y</m> plane, we need two pieces of information: a point and the slope. The slope conveys <em>direction</em> information. As vertical lines have an undefined slope, the following statement is more accurate:
     </p>
 
-    To define a line, one needs a point on the line and the direction of the line.
+    <p>
+      To define a line, one needs a point on the line and the direction of the line.
+    </p>
 
     <p>
       This holds true for lines in space.
@@ -51,9 +52,9 @@
        -->
       <!-- START figures/figlines_intro_3D.asy -->
       <image xml:id="img_lines_intro">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figlines_intro.asy in Chapter 10
@@ -86,10 +87,10 @@
           label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
           label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-          //draw vector d=<-1,0,1>
+          //draw vector d=&lt;-1,0,1&gt;
           draw((0,0,0)--(-1,0,1),red,Arrow3(size=2mm));
           label("$\vec{d}$",(-1,0,1),N);
-          //draw vector p=<0,2,1>
+          //draw vector p=&lt;0,2,1&gt;
           draw((0,0,0)--(0,2,1),black,Arrow3(size=2mm));
           label("$\vec{p}$",(0,2,1),N);
           //draw vector p+d
@@ -123,7 +124,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figlines_intro_3D.asy END -->
@@ -139,26 +140,30 @@
 
     <p>
       In many ways, this is <em>not</em> a new concept.
-      Compare Equation <xref ref="eq_lines1" /> to the familiar
+      Compare Equation <xref ref="eq_lines1"/> to the familiar
       <q><m>y=mx+b</m></q> equation of a line:
     </p>
 
     <image xml:id="img_lines_intro_3D">
       <description></description>
       <latex-image>
-      <![CDATA[
-      \begin{tikzpicture}[>=stealth]
-	\draw (0,0) node (L) { \(y\ =\ b\ +\ m x\)};
-	\draw (5,0) node (R) { \(\vec \ell(t)\ =\ \vec p\ +\ t \vec d\)};
+      
+      \begin{tikzpicture}
+
+      \draw (0,0) node (L) { \(y\ =\ b\ +\ m x\)};
+      \draw (5,0) node (R) { \(\vec \ell(t)\ =\ \vec p\ +\ t \vec d\)};
       \node (A) at (1,1.5) [align=center,] {Starting\ Point};
       \node (B) at (4,1.5) [align=center] {Direction};
       \node (C) at (2.5,-1.5) [align=center] {How Far To\  Go In That \Direction};
-      \draw [->,thick] (A) -- (\((R)+(-1pt,8pt)\)); 
-      \draw [->,thick] (A) -- (\((L)+(-0pt,10pt)\));
-      \draw [->,thick] (B) -- (.9,.2);
-      \draw [->,thick] (B) -- (\((R)+(30pt,7pt)\));
-      \draw [->,thick] (C) -- (1.3,-.15);
-      \draw [->,thick] (C) -- (\((R)+(25pt,-7pt)\));\end{tikzpicture}]]>
+      \draw [-&gt;,thick] (A) -- (\((R)+(-1pt,8pt)\)); 
+      \draw [-&gt;,thick] (A) -- (\((L)+(-0pt,10pt)\));
+      \draw [-&gt;,thick] (B) -- (.9,.2);
+      \draw [-&gt;,thick] (B) -- (\((R)+(30pt,7pt)\));
+      \draw [-&gt;,thick] (C) -- (1.3,-.15);
+      \draw [-&gt;,thick] (C) -- (\((R)+(25pt,-7pt)\));
+
+      \end{tikzpicture}
+
       </latex-image>
     </image>
 
@@ -169,10 +174,10 @@
     </p>
 
     <p>
-      Equation <xref ref="eq_lines1" /> is an example of a
-      <em>vector<ndash />valued function</em>;
+      Equation <xref ref="eq_lines1"/> is an example of a
+      <em>vector<ndash/>valued function</em>;
       the input of the function is a real number and the output is a vector.
-      We will cover vector<ndash />valued functions extensively in the next chapter.
+      We will cover vector<ndash/>valued functions extensively in the next chapter.
     </p>
 
     <p>
@@ -233,34 +238,36 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The <em>vector equation</em> of the line is
-              <me>
-                \vec \ell(t) = \vec p+t\vec d
-              </me>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The <em>vector equation</em> of the line is
+                <me>
+                  \vec \ell(t) = \vec p+t\vec d
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <em>parametric equations</em> of the line are
-              <me>
-                x = x_0+at,  y=y_0+bt,  z = z_0+ct 
-              </me>.
-            </p>
-          </li>
+            <li>
+              <p>
+                The <em>parametric equations</em> of the line are
+                <me>
+                  x = x_0+at,  y=y_0+bt,  z = z_0+ct 
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <em>symmetric equations</em> of the line are
-              <me>
-                \frac{x-x_0}{a} = \frac{y-y_0}{b}=\frac{z-z_0}{c}
-              </me>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The <em>symmetric equations</em> of the line are
+                <me>
+                  \frac{x-x_0}{a} = \frac{y-y_0}{b}=\frac{z-z_0}{c}
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -280,31 +287,33 @@
           Following the definition, we have
         </p>
 
-        <ul>
-          <li>
-            <p>
-              the vector equation of the line is <m>\vec\ell(t) = \la 2,3,1\ra + t\la -1,1,2\ra</m>;
-            </p>
-          </li>
+        <p>
+          <ul>
+            <li>
+              <p>
+                the vector equation of the line is <m>\vec\ell(t) = \la 2,3,1\ra + t\la -1,1,2\ra</m>;
+              </p>
+            </li>
 
-          <li>
-            <p>
-              the parametric equations of the line are
-              <me>
-                x = 2-t, y = 3+t, z = 1+2t; \text{ and }
-              </me>
-            </p>
-          </li>
+            <li>
+              <p>
+                the parametric equations of the line are
+                <me>
+                  x = 2-t, y = 3+t, z = 1+2t; \text{ and }
+                </me>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              the symmetric equations of the line are
-              <me>
-                \frac{x-2}{-1}=\frac{y-3}{1} = \frac{z-1}{2}
-              </me>.
-            </p>
-          </li>
-        </ul>
+            <li>
+              <p>
+                the symmetric equations of the line are
+                <me>
+                  \frac{x-2}{-1}=\frac{y-3}{1} = \frac{z-1}{2}
+                </me>.
+              </p>
+            </li>
+          </ul>
+        </p>
 
         <figure xml:id="fig_lines1">
           <caption>Graphing a line in <xref ref="ex_lines1">Example</xref>.</caption>
@@ -319,9 +328,9 @@
            -->
           <!-- START figures/figlines1_3D.asy -->
           <image xml:id="img_lines1">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file forfiglines1.asy in Chapter 10
@@ -354,7 +363,7 @@
               label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
               label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              //draw vector d=<-1,1,2>
+              //draw vector d=&lt;-1,1,2&gt;
               draw((0,0,0)--(-1,1,2),black,Arrow3(size=2mm));
               label("$\vec{d}$",(-1,0,1),N);
               // dot at P=(2,3,1)
@@ -388,7 +397,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figlines1_3D.asy END -->
@@ -464,9 +473,9 @@
            -->
           <!-- START figures/figlines6_3D.asy -->
           <image xml:id="img_lines6">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figlines6.asy in Chapter 10
@@ -499,7 +508,7 @@
               label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
               label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              //draw vector PQ=<-1,4,-3>
+              //draw vector PQ=&lt;-1,4,-3&gt;
               draw((2,-1,2)--(1,3,-1),red,Arrow3(size=2mm));
               label("$\overrightarrow{PQ}$",(1.5,1,0.5),S);
               // dot at P=(2,-1,2)
@@ -532,7 +541,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figlines6_3D.asy END -->
@@ -580,13 +589,17 @@
 
     </p>
 
-    <tabular>
-      {p{100pt}p{150pt}}
-      the same line &amp; they share all points; \\
-      intersecting lines &amp; share only 1 point;\\
-      parallel lines &amp; <m>\vec d_1\parallel \vec d_2</m>, no points in common; or \\
-      skew lines &amp; <m>\vec d_1\nparallel \vec d_2</m>, no points in common.
-    </tabular>
+    <!-- TODO: Figure out what this thing below is. Locked it in the comment cage for now. -->
+
+    <!-- 
+      <tabular>
+        {p{100pt}p{150pt}}
+        the same line &amp; they share all points; \\
+        intersecting lines &amp; share only 1 point;\\
+        parallel lines &amp; <m>\vec d_1\parallel \vec d_2</m>, no points in common; or \\
+        skew lines &amp; <m>\vec d_1\nparallel \vec d_2</m>, no points in common.
+      </tabular>
+    -->
 
     <p>
       The next two examples investigate these possibilities.
@@ -635,9 +648,9 @@
            -->
           <!-- START figures/figlines2_3D.asy -->
           <image xml:id="img_lines2">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figlines2.asy in Chapter 10
@@ -712,7 +725,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figlines2_3D.asy END -->
@@ -853,9 +866,9 @@
            -->
           <!-- START figures/figlines3_3D.asy -->
           <image xml:id="img_lines3">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figlines3.asy in Chapter 10
@@ -930,7 +943,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figlines3_3D.asy END -->
@@ -968,18 +981,19 @@
       <image xml:id="img_lines_dist1">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[>=stealth]
+        
+        \begin{tikzpicture}
+
         \draw [thin,{\colorone}] (-2,-1) -- (2,1);
-        \draw [thick,->,{\colortwo}] (0,0) -- (1,.5) node [below,black] {\scriptsize $\vec d$};
+        \draw [thick,-&gt;,{\colortwo}] (0,0) -- (1,.5) node [below,black] {\scriptsize $\vec d$};
         \filldraw [black] (0,3) circle (1.5pt) node [above] {\scriptsize $Q$}
 									(0,0) circle (1.5pt) node [below] {\scriptsize $P$};
         \draw [thick,dashed] (0,3) -- (1.2,.6) node [right,pos=.5] {\scriptsize $h$};
-        \draw [thick,->] (0,0) -- (0,3) node [pos=.5,left] {\scriptsize $\vv{PQ}$};
+        \draw [thick,-&gt;] (0,0) -- (0,3) node [pos=.5,left] {\scriptsize $\vv{PQ}$};
         \draw [rotate=58.3] (.4,0) node {\scriptsize $\theta$};
  
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_lines_dist1.tex END -->
@@ -1008,9 +1022,9 @@
        -->
       <!-- START figures/figlines_dist2_3D.asy -->
       <image xml:id="img_lines_dist2">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figlines_dist23D.asy in Chapter 10
@@ -1048,11 +1062,11 @@
 
           // line 1
           triple f(real t) {
-	return (p1+t*d1);}
- 
-	// line 2
+            return (p1+t*d1);}
+        
+          // line 2
           triple g(real t) {
-	return (p2+t*d2);}
+            return (p2+t*d2);}
 
           //draw P1 (t=0) and vector d1 at P1 (t=1)
           dotfactor=3;
@@ -1099,7 +1113,7 @@
           triple sq2b = sq2a+.15*d2/length(d2);
           triple sq2c = sq2b+(f(1)+c*abs(dot(p12,c))-sq2a);
           draw(sq2a -- sq2b -- sq2c);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figlines_dist2_3D.asy END -->
@@ -1136,43 +1150,45 @@
 
     <insight xml:id="idea_line_distance">
       <title>Distances to Lines</title>
-      <ol>
-        <li>
-          <p>
-            Let <m>P</m> be a point on a line <m>\ell</m> that is parallel to <m>\vec d</m>.
-            The distance <m>h</m> from a point <m>Q</m> to the line <m>\ell</m> is:
+      <p>
+        <ol>
+          <li>
+            <p>
+              Let <m>P</m> be a point on a line <m>\ell</m> that is parallel to <m>\vec d</m>.
+              The distance <m>h</m> from a point <m>Q</m> to the line <m>\ell</m> is:
 
-            <idx>
-              <h>distance</h><h>between point and line</h>
-            </idx>
+              <idx>
+                <h>distance</h><h>between point and line</h>
+              </idx>
 
-            <idx>
-              <h>distance</h><h>between lines</h>
-            </idx>
+              <idx>
+                <h>distance</h><h>between lines</h>
+              </idx>
 
-            <idx>
-              <h>lines</h><h>distances between</h>
-            </idx>
+              <idx>
+                <h>lines</h><h>distances between</h>
+              </idx>
 
-            <me>
-              h =\frac{\norm{\vv{PQ}\times \vec d}}{\vnorm{d}}
-            </me>.
-          </p>
-        </li>
+              <me>
+                h =\frac{\norm{\vv{PQ}\times \vec d}}{\vnorm{d}}
+              </me>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            Let <m>P_1</m> be a point on line <m>\ell_1</m> that is parallel to <m>\vec d_1</m>,
-            and let <m>P_2</m> be a point on line <m>\ell_2</m> parallel to <m>\vec d_2</m>,
-            and let <m>\vec c = \vec d_1\times \vec d_2</m>,
-            where lines <m>\ell_1</m> and <m>\ell_2</m> are not parallel.
-            The distance <m>h</m> between the two lines is:
-            <me>
-              h=\frac{\abs{\vv{P_1P_2}\cdot \vec c}}{\vnorm c}
-            </me>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              Let <m>P_1</m> be a point on line <m>\ell_1</m> that is parallel to <m>\vec d_1</m>,
+              and let <m>P_2</m> be a point on line <m>\ell_2</m> parallel to <m>\vec d_2</m>,
+              and let <m>\vec c = \vec d_1\times \vec d_2</m>,
+              where lines <m>\ell_1</m> and <m>\ell_2</m> are not parallel.
+              The distance <m>h</m> between the two lines is:
+              <me>
+                h=\frac{\abs{\vv{P_1P_2}\cdot \vec c}}{\vnorm c}
+              </me>.
+            </p>
+          </li>
+        </ol>
+      </p>
     </insight>
 
     <example xml:id="ex_lines4">
@@ -1301,7 +1317,7 @@
             </setup>
             <statement>
               <p>
-                Two distinct lines in the plane can intersect or be <fillin />.
+                Two distinct lines in the plane can intersect or be <fillin/>.
               </p>
             </statement>
             <solution>
@@ -1322,7 +1338,7 @@
             <statement>
               <p>
                 Two distinct lines in space can intersect,
-                be <fillin /> or be <fillin />.
+                be <fillin/> or be <fillin/>.
               </p>
             </statement>
             <solution>
@@ -1512,17 +1528,17 @@
 
               <p>
                 A vector equation for <m>\ell</m> is
-                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30" />.
+                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30"/>.
               </p>
 
               <p>
                 Parametric equations for <m>\ell</m>
                 (separated using commas)
-                are <var name="$p" evaluator="$pev" width="50" />.
+                are <var name="$p" evaluator="$pev" width="50"/>.
               </p>
 
               <p>
-                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50" />.
+                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50"/>.
                 (Enter <c>DNE</c> if they are not defined.)
               </p>
             </statement>
@@ -1687,17 +1703,17 @@
 
               <p>
                 A vector equation for <m>\ell</m> is
-                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30" />.
+                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30"/>.
               </p>
 
               <p>
                 Parametric equations for <m>\ell</m>
                 (separated using commas)
-                are <var name="$p" evaluator="$pev" width="50" />.
+                are <var name="$p" evaluator="$pev" width="50"/>.
               </p>
 
               <p>
-                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50" />.
+                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50"/>.
                 (Enter <c>DNE</c> if they are not defined.)
               </p>
             </statement>
@@ -1813,17 +1829,17 @@
 
               <p>
                 A vector equation for <m>\ell</m> is
-                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30" />.
+                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30"/>.
               </p>
 
               <p>
                 Parametric equations for <m>\ell</m>
                 (separated using commas)
-                are <var name="$p" evaluator="$pev" width="50" />.
+                are <var name="$p" evaluator="$pev" width="50"/>.
               </p>
 
               <p>
-                Symmetric equations for <m>\ell</m> are <var name="DNE" width="50" />.
+                Symmetric equations for <m>\ell</m> are <var name="DNE" width="50"/>.
                 (Enter <c>DNE</c> if they are not defined.)
               </p>
             </statement>
@@ -1933,17 +1949,17 @@
 
               <p>
                 A vector equation for <m>\ell</m> is
-                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30" />.
+                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30"/>.
               </p>
 
               <p>
                 Parametric equations for <m>\ell</m>
                 (separated using commas)
-                are <var name="$p" evaluator="$pev" width="50" />.
+                are <var name="$p" evaluator="$pev" width="50"/>.
               </p>
 
               <p>
-                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50" />.
+                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50"/>.
                 (Enter <c>DNE</c> if they are not defined.)
               </p>
             </statement>
@@ -2053,17 +2069,17 @@
 
               <p>
                 A vector equation for <m>\ell</m> is
-                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30" />.
+                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30"/>.
               </p>
 
               <p>
                 Parametric equations for <m>\ell</m>
                 (separated using commas)
-                are <var name="$p" evaluator="$pev" width="50" />.
+                are <var name="$p" evaluator="$pev" width="50"/>.
               </p>
 
               <p>
-                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50" />.
+                Symmetric equations for <m>\ell</m> are <var name="$s" evaluator="$sev" width="50"/>.
                 (Enter <c>DNE</c> if they are not defined.)
               </p>
             </statement>
@@ -2164,17 +2180,17 @@
 
               <p>
                 A vector equation for <m>\ell</m> is
-                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30" />.
+                <m>\ell(t)=</m><var name="$v" evaluator="$vev" width="30"/>.
               </p>
 
               <p>
                 Parametric equations for <m>\ell</m>
                 (separated using commas)
-                are <var name="$p" evaluator="$pev" width="50" />.
+                are <var name="$p" evaluator="$pev" width="50"/>.
               </p>
 
               <p>
-                Symmetric equations for <m>\ell</m> are <var name="DNE" width="50" />.
+                Symmetric equations for <m>\ell</m> are <var name="DNE" width="50"/>.
                 (Enter <c>DNE</c> if they are not defined.)
               </p>
             </statement>
@@ -2215,7 +2231,7 @@
               </p>
 
               <p>
-                <var name="$answer" width="10" />
+                <var name="$answer" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2243,7 +2259,7 @@
               </p>
 
               <p>
-                <var name="$answer" width="10" />
+                <var name="$answer" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2296,7 +2312,7 @@
               </p>
 
               <p>
-                <var name="$answer" width="10" />
+                <var name="$answer" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2324,7 +2340,7 @@
               </p>
 
               <p>
-                <var name="$answer" width="10" />
+                <var name="$answer" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2352,7 +2368,7 @@
               </p>
 
               <p>
-                <var name="$answer" width="10" />
+                <var name="$answer" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2403,7 +2419,7 @@
               </p>
 
               <p>
-                <var name="$answer" width="10" />
+                <var name="$answer" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2454,7 +2470,7 @@
               </p>
 
               <p>
-                <var name="$distance" width="10" />
+                <var name="$distance" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2495,7 +2511,7 @@
               </p>
 
               <p>
-                <var name="$distance" width="10" />
+                <var name="$distance" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2550,7 +2566,7 @@
               </p>
 
               <p>
-                <var name="$distance" width="10" />
+                <var name="$distance" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2630,65 +2646,67 @@
                 Let lines <m>\ell_1(t)</m> and <m>\ell_2(t)</m> be parallel.
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Show why the distance formula for distance between lines cannot be used as stated to find the distance between the lines.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Show why the distance formula for distance between lines cannot be used as stated to find the distance between the lines.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Show why letting <m>c=(\vv{P_1P_2}\times\vec d_2)\times\vec d_2</m> allows one to the use the formula.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      Show why letting <m>c=(\vv{P_1P_2}\times\vec d_2)\times\vec d_2</m> allows one to the use the formula.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Show how one can use the formula for the distance between a point and a line to find the distance between parallel lines.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Show how one can use the formula for the distance between a point and a line to find the distance between parallel lines.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    The distance formula cannot be used because since
-                    <m>\vec d_1</m> and <m>\vec d_2</m> are parallel,
-                    <m>\vec c</m> is <m>\vec 0</m> and we cannot divide by <m>\vnorm{0}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      The distance formula cannot be used because since
+                      <m>\vec d_1</m> and <m>\vec d_2</m> are parallel,
+                      <m>\vec c</m> is <m>\vec 0</m> and we cannot divide by <m>\vnorm{0}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Since <m>\vec d_1</m> and <m>\vec d_2</m> are parallel,
-                    <m>\vv{P_1P_2}</m> lies in the plane formed by the two lines.
-                    Thus <m>\vv{P_1P_2}\times\vec d_2</m> is orthogonal to this plane,
-                    and <m>\vec c=(\vv{P_1P_2}\times\vec d_2)\times \vec d_2</m> is parallel to the plane,
-                    but still orthogonal to both <m>\vec d_1</m> and <m>\vec d_2</m>.
-                    We desire the length of the projection of <m>\vv{P_1P_2}</m> onto <m>\vec c</m>,
-                    which is what the formula provides.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      Since <m>\vec d_1</m> and <m>\vec d_2</m> are parallel,
+                      <m>\vv{P_1P_2}</m> lies in the plane formed by the two lines.
+                      Thus <m>\vv{P_1P_2}\times\vec d_2</m> is orthogonal to this plane,
+                      and <m>\vec c=(\vv{P_1P_2}\times\vec d_2)\times \vec d_2</m> is parallel to the plane,
+                      but still orthogonal to both <m>\vec d_1</m> and <m>\vec d_2</m>.
+                      We desire the length of the projection of <m>\vv{P_1P_2}</m> onto <m>\vec c</m>,
+                      which is what the formula provides.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Since the lines are parallel,
-                    one can measure the distance between the lines at any location on either line
-                    (just as to find the distance between straight railroad tracks,
-                    one can use a measuring tape anywhere along the track,
-                    not just at one specific place.)
-                    Let <m>P=P_1</m> and <m>Q=P_2</m> as given by the equations of the lines,
-                    and apply the formula for distance between a point and a line.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Since the lines are parallel,
+                      one can measure the distance between the lines at any location on either line
+                      (just as to find the distance between straight railroad tracks,
+                      one can use a measuring tape anywhere along the track,
+                      not just at one specific place.)
+                      Let <m>P=P_1</m> and <m>Q=P_2</m> as given by the equations of the lines,
+                      and apply the formula for distance between a point and a line.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
-
     </exercisegroup>
   </exercises>
 </section>
-

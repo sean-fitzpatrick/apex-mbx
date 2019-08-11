@@ -152,8 +152,9 @@
           We also highlight <m>\vec r(-1)</m> and <m>\vec r(2)</m> on the graph.
         </p>
 
-        <table xml:id="fig_vvf1">
-          <title>Sketching the vector-valued function of <xref ref="ex_vvf1">Example</xref>.</title>
+        <figure xml:id="fig_vvf1">
+          <caption>Sketching the vector-valued function of <xref ref="ex_vvf1">Example</xref>.</caption>
+          <sidebyside widths="47% 47%">
           <tabular>
             <row>
             <cell>
@@ -199,45 +200,40 @@
             <row>
               <cell>(a)</cell>
             </row>
-            <row>
-              <cell>
-              <!-- START figures/fig_vvf1.tex -->
-                <image xml:id="img_vvf1">
-                  <description></description>
-                  <latex-image>
+            </tabular>
+            
+            <!-- START figures/fig_vvf1.tex -->
+            <image xml:id="img_vvf1">
+              <description></description>
+              <latex-image>
+
+              \begin{tikzpicture}
+
+              \begin{axis}[%
+              xtick={-6,-4,-2,2,4,6},
+              ymin=-.1,ymax=1.1,%
+              xmin=-7,xmax=7%
+              ]
+
+              \addplot+[domain=-2:2] ({x^3-x},{1/(x^2+1)});
+
+              \filldraw [black] (axis cs: -6,.2) circle (1.5pt);
+              \filldraw [black] (axis cs: 6,.2) circle (1.5pt);
+              \filldraw [black] (axis cs: 0,.5) circle (1.5pt);
+              \filldraw [black] (axis cs: 0.,1) circle (1.5pt);
+
+              \draw [-&gt;,thick,{\colortwo}] (axis cs:0,0)--(axis cs: 0,.5) node [,black,pos=.4,rotate=90,above] {\scriptsize $\vec r(-1)$};
+              \draw [-&gt;,thick,{\colortwo}] (axis cs:0,0)--(axis cs: 6,.2) node [black,pos=.4,above] {\scriptsize $\vec r(2)$};
+
+              \end{axis}
+
+              \end{tikzpicture}
                   
-                  \begin{tikzpicture}[&gt;=stealth] 
-
-                  \begin{axis}[
-                  xtick={-6,-4,-2,2,4,6},
-                  ymin=-.1,ymax=1.1,
-                  xmin=-7,xmax=7
-                  ]
-
-                  \addplot+ [-,domain=-2:2,samples=60] ({x^3-x},{1/(x^2+1)});
-
-                  \filldraw [black] (axis cs: -6,.2) circle (1.5pt);
-                  \filldraw [black] (axis cs: 6,.2) circle (1.5pt);
-                  \filldraw [black] (axis cs: 0,.5) circle (1.5pt);
-                  \filldraw [black] (axis cs: 0.,1) circle (1.5pt);
-
-                  \draw [-&gt;,thick,secondcolor] (axis cs:0,0) -- (axis cs: 0,.5) node [black,pos=.4,rotate=90,below] {\scriptsize $\vec r(-1)$};
-                  \draw [-&gt;,thick,secondcolor] (axis cs:0,0) -- (axis cs: 6,.2) node [black,pos=.4,above] {\scriptsize $\vec r(2)$};
-
-                  \end{axis}
-
-                  \end{tikzpicture}
-                  
-                  </latex-image>
-                </image>
+              </latex-image>
+            </image>
               <!-- figures/fig_vvf1.tex END -->
-              </cell>
-            </row>
-            <row>
-              <cell>(b)</cell>
-            </row>
-          </tabular>
-        </table>
+          </sidebyside>
+        </figure>
       </solution>
     </example>
 
