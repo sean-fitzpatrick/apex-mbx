@@ -1014,8 +1014,8 @@
           and not in changing its direction.
         </p>
 
-        <table xml:id="fig_tannorm7a">
-          <title>A table of values of <m>a_T</m> and <m>a_N</m> in <xref ref="ex_tannorm7">Example</xref>.</title>
+        <figure xml:id="fig_tannorm7a">
+          <caption>A table of values of <m>a_T</m> and <m>a_N</m> in <xref ref="ex_tannorm7">Example</xref>.</caption>
           <tabular>
             <row>
               <cell><m>t</m></cell>
@@ -1059,7 +1059,7 @@
             </row>
           </tabular>
 
-        </table>
+        </figure>
 
       </solution>
     </example>
