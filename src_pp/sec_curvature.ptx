@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_curvature">
   <title>The Arc Length Parameter and Curvature</title>
   <introduction>
@@ -14,7 +13,7 @@
     </p>
 
     <p>
-      Currently, our vector<ndash />valued functions have defined points with a parameter <m>t</m>,
+      Currently, our vector<ndash/>valued functions have defined points with a parameter <m>t</m>,
       which we often take to represent time.
       Consider <xref ref="fig_vvfarc_intro1">Figure</xref>(a),
       where <m>\vrt = \la t^2-t,t^2+t\ra</m> is graphed and the points corresponding to <m>t=0,\ 1</m> and <m>2</m> are shown.
@@ -26,75 +25,72 @@
     <figure xml:id="fig_vvfarc_intro1">
       <caption>Introducing the arc length parameter.</caption>
       <sidebyside>
-        <figure>
-          <caption>(a)</caption>
+        <figure xml:id="fig_vvfarc_intro1a">
+          <caption/>
         <!-- START figures/fig_vvfarc_intro1.tex -->
-          <image xml:id="img_vvfarc_intro1">
+          <image xml:id="img_vvfarc_intro1a">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
+
             \begin{axis}[%
             %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-6,-4,-2,2,4,6},
-			%minor x tick num=4,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={-6,-4,-2,2,4,6},
+            %minor x tick num=4,%
             %			extra x ticks={.33},
             %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=6.5,%
-			xmin=-2.1,xmax=7%
+            %ytick={-1,1},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-1.1,ymax=6.5,%
+            xmin=-2.1,xmax=7%
             ]
 
-            \addplot [thick,{\colorone}, smooth,domain=-2:2.1,samples=30] ({x^2-x},{x^2+x});
+            \addplot+[domain=-2:2.1,samples=30] ({x^2-x},{x^2+x});
 
             \filldraw [{\colortwo}](axis cs: 0,0) circle (1.5pt) node [black,above right] {\scriptsize $t=0$};
             \filldraw [{\colortwo}](axis cs: 0,2) circle (1.5pt) node [black, right] {\scriptsize $t=1$};
             \filldraw [{\colortwo}](axis cs: 2,6) circle (1.5pt) node [black, right] {\scriptsize $t=2$};
 
-            %\filldraw [{\colortwo}](axis cs: -.24,.94) circle (1.5pt) node [black, right] {\scriptsize $s=1$};
-            %\filldraw [{\colortwo}](axis cs: -.03,1.91) circle (1.5pt) node [black, right] {\scriptsize $s=2$};
-            %\filldraw [{\colortwo}](axis cs: .33,2.84) circle (1.5pt) node [black, right] {\scriptsize $s=3$};
+            \draw [thick,-&gt;,{\colorone}] (axis cs:3.79,.77)--(axis cs:3.75,.75) node [above ,black] {\scriptsize $\vec r(t)$};
 
-            \draw [thick,->,{\colorone}] (axis cs:3.79,.77)--(axis cs:3.75,.75) node [above ,black] {\scriptsize $\vec r(t)$};
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         <!-- figures/fig_vvfarc_intro1.tex END -->
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
+        <figure xml:id="fig_vvfarc_intro1b">
+          <caption/>
         <!-- START figures/fig_vvfarc_intro1b.tex -->
           <image xml:id="img_vvfarc_intro1b">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
+
             \begin{axis}[%
             %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-6,-4,-2,2,4,6},
-			%minor x tick num=4,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={-6,-4,-2,2,4,6},
+            %minor x tick num=4,%
             %			extra x ticks={.33},
             %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=6.5,%
-			xmin=-2.1,xmax=7%
+            %ytick={-1,1},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-1.1,ymax=6.5,%
+            xmin=-2.1,xmax=7%
             ]
 
-            \addplot [thick,{\colorone}, smooth,domain=-2:2.1,samples=30] ({x^2-x},{x^2+x});
+            \addplot+[domain=-2:2.1,samples=30] ({x^2-x},{x^2+x});
 
             \filldraw [{\colortwo}](axis cs: 0,0) circle (1.5pt) node [black,above right] {\scriptsize $s=0$};
-            %\filldraw [{\colortwo}](axis cs: 0,2) circle (1.5pt) node [black, right] {\scriptsize $t=1$};
-            %\filldraw [{\colortwo}](axis cs: 2,6) circle (1.5pt) node [black, right] {\scriptsize $t=2$};
 
             \filldraw [{\colortwo}](axis cs: -.24,.94) circle (1.5pt) node [black, right] {\scriptsize $s=1$};
             \filldraw [{\colortwo}](axis cs: -.03,1.91) circle (1.5pt) node [black, right] {\scriptsize $s=2$};
@@ -103,12 +99,12 @@
             \filldraw [{\colortwo}](axis cs: 1.21,4.63) circle (1.5pt) node [black, right] {\scriptsize $s=5$};
             \filldraw [{\colortwo}](axis cs: 1.71, 5.51) circle (1.5pt) node [black, right] {\scriptsize $s=6$};
 
-            \draw [thick,->,{\colorone}] (axis cs:3.79,.77)--(axis cs:3.75,.75)node [above ,black] {\scriptsize $\vec r(s)$};
+            \draw [thick,-&gt;,{\colorone}] (axis cs:3.79,.77)--(axis cs:3.75,.75)node [above ,black] {\scriptsize $\vec r(s)$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         <!-- figures/fig_vvfarc_intro1b.tex END -->
@@ -179,7 +175,7 @@
       </statement>
       <solution>
         <p>
-          Using Equation <xref ref="eq_vvfarc" />, we write
+          Using Equation <xref ref="eq_vvfarc"/>, we write
           <me>
             s(t) = \int_0^t \norm{\vec r\,'(u)}\ du
           </me>.
@@ -218,47 +214,40 @@
           <image xml:id="img_vvfarc1">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
+
             \begin{axis}[%
             %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,-1,-2},
-			%minor x tick num=4,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={1,2,-1,-2},
+            %minor x tick num=4,%
             %			extra x ticks={.33},
             %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=6.5,%
-			xmin=-2.1,xmax=2.9%
+            %ytick={-3,-2,-1,1,2,3},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-1.1,ymax=6.5,%
+            xmin=-2.1,xmax=2.9%
             ]
 
-            %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-            %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-            \addplot [thick,{\colorone}, smooth,domain=-2.5:2.5] ({3*x-1},{4*x+2});
+          
+            \addplot+[domain=-2.5:2.5] ({3*x-1},{4*x+2});
 
             \filldraw (axis cs:-1,2) circle (1.5pt) node [left] {\scriptsize $t=0$}
-					(axis cs:2,6) circle (1.5pt) node [left] {\scriptsize $t=1$}
-					%(axis cs: 5,10) circle (1.5pt) node [right] {\scriptsize $t=2$}
-					%(axis cs: -4,-2) circle (1.5pt) node [right] {\scriptsize $t=-1$}
-					%(axis cs: -7,-6) circle (1.5pt) node [right] {\scriptsize $t=-2$}
-					(axis cs: -.4,2.8) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=1$}
-					(axis cs: .2,3.6) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=2$}
-					(axis cs: .8,4.4) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=3$}
-					(axis cs: 1.4,5.2) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=4$}
-					(axis cs: 2,6) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=5$};
+                      (axis cs:2,6) circle (1.5pt) node [left] {\scriptsize $t=1$}
+                      (axis cs: -.4,2.8) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=1$}
+                      (axis cs: .2,3.6) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=2$}
+                      (axis cs: .8,4.4) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=3$}
+                      (axis cs: 1.4,5.2) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=4$}
+                      (axis cs: 2,6) circle (1.5pt) node [right,{\colortwo}] {\scriptsize $s=5$};
  
-
             \draw (axis cs:-1,2) node [{\colortwo},shift={(10pt,-5pt)}]  {\scriptsize $s=0$};
-
-            %\filldraw
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_vvfarc1.tex END -->
@@ -283,8 +272,8 @@
       Things worked out very nicely in <xref ref="ex_vvfarc1">Example</xref>;
       we were able to establish directly that <m>s=5t</m>.
       Usually, the arc length parameter is much more difficult to describe in terms of <m>t</m>,
-      a result of integrating a square<ndash />root.
-      There are a number of things that we can learn about the arc length parameter from Equation <xref ref="eq_vvfarc" />, though,
+      a result of integrating a square<ndash/>root.
+      There are a number of things that we can learn about the arc length parameter from Equation <xref ref="eq_vvfarc"/>, though,
       that are incredibly useful.
     </p>
 
@@ -331,7 +320,7 @@
       <title>Arc Length Parameter</title>
       <statement>
         <p>
-          Let <m>\vec r(s)</m> be a vector<ndash />valued function.
+          Let <m>\vec r(s)</m> be a vector<ndash/>valued function.
           The parameter <m>s</m> is the arc length parameter if,
           and only if, <m>\norm{\vrp(s)} = 1</m>.
 
@@ -347,112 +336,94 @@
   <subsection>
     <title>Curvature</title>
     <p>
-      Consider points <m>A</m> and <m>B</m> on the curve graphed in <xref ref="fig_curvatureintro">Figure</xref>(a).
+      Consider points <m>A</m> and <m>B</m> on the curve graphed in <xref ref="fig_curvature_intro">Figure</xref>(a).
       One can readily argue that the curve curves more sharply at <m>A</m> than at <m>B</m>.
       It is useful to use a number to describe how sharply the curve bends;
       that number is the <em>curvature</em> of the curve.
     </p>
 
-    <figure xml:id="fig_curvatureintro">
+    <figure xml:id="fig_curvature_intro">
       <caption>Establishing the concept of curvature.</caption>
       <sidebyside>
-        <figure>
-          <caption>(a)</caption>
+        <figure xml:id="fig_curvature_introa">
+          <caption/>
         <!-- START figures/fig_curvature_intro.tex -->
-          <image xml:id="img_curvature_intro">
+          <image xml:id="img_curvature_introa">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
             \begin{axis}[%
             %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={1,2,-1,-2},
+            %minor x tick num=4,%
             %			extra x ticks={.33},
             %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=2.9,%
-			xmin=-.1,xmax=3.5%
+            %ytick={-3,-2,-1,1,2,3},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-.1,ymax=2.9,%
+            xmin=-.1,xmax=3.5%
             ]
 
-            %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-            %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-            \addplot [thick,{\colorone}, smooth,domain=-1:1.5] ({x^2-x+1},{x^3+1});
+            \addplot+[domain=-1:1.5] ({x^2-x+1},{x^3+1});
 
-					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
- 
-
-            %\draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
-            %\draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
-            %\draw[->,{\colortwo},thick] (axis cs:2.20203, 0.649597)  -- (axis cs:1.35163, 1.17574);
-
-            \draw[->,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
+            \draw[-&gt;,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
 
             \filldraw (axis cs:.77,1.04) circle (1.5pt) node [below] {\scriptsize $A$}
-					%(axis cs:0.8461, 1.53144) circle (1.5pt)
-					%(axis cs: 1.2684, 0.989352) circle (1.5pt)
-					(axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$};
-					%(axis cs: 2.20203, 0.649597) circle (1.5pt);
+				            	(axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         <!-- figures/fig_curvature_intro.tex END -->
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
+        <figure xml:id="fig_curvature_introb">
+          <caption/>
         <!-- START figures/fig_curvature_introb.tex -->
           <image xml:id="img_curvature_introb">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
+
             \begin{axis}[%
             %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={1,2,-1,-2},
+            %minor x tick num=4,%
             %			extra x ticks={.33},
             %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=2.9,%
-			xmin=-.1,xmax=3.5%
+            %ytick={-3,-2,-1,1,2,3},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-.1,ymax=2.9,%
+            xmin=-.1,xmax=3.5%
             ]
 
-            %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-            %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-            \addplot [thick,{\colorone}, smooth,domain=-1:1.5] ({x^2-x+1},{x^3+1});
+            \addplot+[domain=-1:1.5] ({x^2-x+1},{x^3+1});
 
-					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
- 
+            \draw[-&gt;,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
+            \draw[-&gt;,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
+            \draw[-&gt;,{\colortwo},thick] (axis cs:2.20203, 0.649597)  -- (axis cs:1.35163, 1.17574);
 
-            \draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
-            \draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
-            \draw[->,{\colortwo},thick] (axis cs:2.20203, 0.649597)  -- (axis cs:1.35163, 1.17574);
-
-            \draw[->,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
+            \draw[-&gt;,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
 
             \filldraw (axis cs:.77,1.04) circle (1.5pt) node [below] {\scriptsize $A$}
-					(axis cs:0.8461, 1.53144) circle (1.5pt)
-					(axis cs: 1.2684, 0.989352) circle (1.5pt)
-					(axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$}
-					(axis cs: 2.20203, 0.649597) circle (1.5pt);
+                      (axis cs:0.8461, 1.53144) circle (1.5pt)
+                      (axis cs: 1.2684, 0.989352) circle (1.5pt)
+                      (axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$}
+                      (axis cs: 2.20203, 0.649597) circle (1.5pt);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         <!-- figures/fig_curvature_introb.tex END -->
@@ -463,7 +434,7 @@
 
     <p>
       We derive this number in the following way.
-      Consider <xref ref="fig_curvatureintro">Figure</xref>(b),
+      Consider <xref ref="fig_curvature_intro">Figure</xref>(b),
       where unit tangent vectors are graphed around points <m>A</m> and <m>B</m>.
       Notice how the direction of the unit tangent vector changes quite a bit near <m>A</m>,
       whereas it does not change as much around <m>B</m>.
@@ -475,7 +446,7 @@
       <title>Curvature</title>
       <statement>
         <p>
-          Let <m>\vec r(s)</m> be a vector<ndash />valued function where <m>s</m> is the arc length parameter.
+          Let <m>\vec r(s)</m> be a vector<ndash/>valued function where <m>s</m> is the arc length parameter.
           The curvature <m>\kappa</m> of the graph of <m>\vec r(s)</m> is
 
           <idx>
@@ -581,35 +552,37 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If <m>C</m> is defined by <m>y=f(x)</m>, then
-              <me>
-                \kappa = \frac{\abs{\fp'(x)}}{\Big(1+\big(\fp(x)\big)^2\Big)^{3/2}}
-              </me>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>C</m> is defined by <m>y=f(x)</m>, then
+                <me>
+                  \kappa = \frac{\abs{\fp'(x)}}{\Big(1+\big(\fp(x)\big)^2\Big)^{3/2}}
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>C</m> is defined as a vector<ndash />valued function in the plane,
-              <m>\vec r(t) = \la x(t), y(t)\ra</m>, then
-              <me>
-                \kappa = \frac{\abs{x'y''-x''y'}}{\big((x')^2+(y')^2\big)^{3/2}}
-              </me>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>C</m> is defined as a vector<ndash/>valued function in the plane,
+                <m>\vec r(t) = \la x(t), y(t)\ra</m>, then
+                <me>
+                  \kappa = \frac{\abs{x'y''-x''y'}}{\big((x')^2+(y')^2\big)^{3/2}}
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>C</m> is defined in space by a vector<ndash />valued function <m>\vec r(t)</m>, then
-              <me>
-                \kappa = \frac{\norm{\vec T\,'(t)}}{\norm{\vrp(t)}} = \frac{\norm{\vrp(t)\times\vrp'(t)}}{\norm{\vrp(t)}^3} = \frac{\vec a(t)\cdot \vec N(t)}{\norm{\vec v(t)}^2}
-              </me>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>C</m> is defined in space by a vector<ndash/>valued function <m>\vec r(t)</m>, then
+                <me>
+                  \kappa = \frac{\norm{\vec T\,'(t)}}{\norm{\vrp(t)}} = \frac{\norm{\vrp(t)\times\vrp'(t)}}{\norm{\vrp(t)}^3} = \frac{\vec a(t)\cdot \vec N(t)}{\norm{\vec v(t)}^2}
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -657,11 +630,11 @@
       Before this example, if we were told
       <q>The curve has a curvature of 5 at point <m>A</m>,</q>
       we would have no idea what this really meant.
-      Is 5 <q>big</q> <mdash /> does is correspond to a really sharp turn,
+      Is 5 <q>big</q> <mdash/> does is correspond to a really sharp turn,
       or a not-so-sharp turn?
       Now we can think of 5 in terms of a circle with radius 1/5.
       Knowing the units
-      (inches vs.<nbsp />miles, for instance)
+      (inches vs.<nbsp/>miles, for instance)
       allows us to determine how sharply the curve is curving.
     </p>
 
@@ -671,31 +644,33 @@
       A circle that:
     </p>
 
-    <ul>
-      <li>
-        <p>
-          passes through <m>P</m>,
-        </p>
-      </li>
+    <p>
+      <ul>
+        <li>
+          <p>
+            passes through <m>P</m>,
+          </p>
+        </li>
 
-      <li>
-        <p>
-          lies on the concave side of <m>C</m>,
-        </p>
-      </li>
+        <li>
+          <p>
+            lies on the concave side of <m>C</m>,
+          </p>
+        </li>
 
-      <li>
-        <p>
-          has a common tangent line as <m>C</m> at <m>P</m> and
-        </p>
-      </li>
+        <li>
+          <p>
+            has a common tangent line as <m>C</m> at <m>P</m> and
+          </p>
+        </li>
 
-      <li>
-        <p>
-          has radius <m>r=1/\kappa</m> (hence has curvature <m>\kappa</m>)
-        </p>
-      </li>
-    </ul>
+        <li>
+          <p>
+            has radius <m>r=1/\kappa</m> (hence has curvature <m>\kappa</m>)
+          </p>
+        </li>
+      </ul>
+    </p>
 
     <p>
       is the <em>osculating circle</em>,
@@ -724,7 +699,7 @@
       </idx>
 
       <xref ref="fig_curvature_osculate">Figure</xref>
-      shows the graph of the curve seen earlier in <xref ref="fig_curvatureintro">Figure</xref>
+      shows the graph of the curve seen earlier in <xref ref="fig_curvature_intro">Figure</xref>
       and its osculating circles at <m>A</m> and <m>B</m>.
       A sharp turn corresponds to a circle with a small radius;
       a gradual turn corresponds to a circle with a large radius.
@@ -732,55 +707,41 @@
     </p>
 
     <figure xml:id="fig_curvature_osculate">
-      <caption>Illustrating the osculating circles for the curve seen in <xref ref="fig_curvatureintro">Figure</xref>.</caption>
+      <caption>Illustrating the osculating circles for the curve seen in <xref ref="fig_curvature_intro">Figure</xref>.</caption>
       <!-- START figures/fig_curvature_introc.tex -->
       <image xml:id="img_curvature_osculate">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[>=stealth]
+        
+        \begin{tikzpicture}
+
         \begin{axis}[%
         %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        %xtick={1,2,-1,-2},
+        %minor x tick num=4,%
         %			extra x ticks={.33},
         %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=2.9,%
-			xmin=-.1,xmax=3.5%
+        %ytick={-3,-2,-1,1,2,3},
+        %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+        ymin=-.1,ymax=2.9,%
+        xmin=-.1,xmax=3.5%
         ]
 
-        %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-        %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-        \addplot [thick,{\colorone}, smooth,domain=-1:1.5] ({x^2-x+1},{x^3+1});
+        \addplot+[domain=-1:1.5] ({x^2-x+1},{x^3+1});
+        \addplot+[domain=0:360] ({.08*cos(x)+.83},{.08*sin(x)+1.09});
+        \addplot+[domain=0:360] ({2.17*cos(x)+.99},{2.17*sin(x)+-1.15});
 
-        \addplot[thick,{\colortwo},smooth,domain=0:360] ({.08*cos(x)+.83},{.08*sin(x)+1.09});
-
-        \addplot[thick,{\colortwo},smooth,domain=0:360] ({2.17*cos(x)+.99},{2.17*sin(x)+-1.15});
-
-					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
- 
-
-        %\draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
-        %\draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
-        %\draw[->,{\colortwo},thick] (axis cs:2.20203, 0.649597)  -- (axis cs:1.35163, 1.17574);
-
-        \draw[->,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
+        \draw[-&gt;,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
 
         \filldraw (axis cs:.77,1.04) circle (1.5pt) node [below] {\scriptsize $A$}
-					%(axis cs:0.8461, 1.53144) circle (1.5pt)
-					%(axis cs: 1.2684, 0.989352) circle (1.5pt)
-					(axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$};
-					%(axis cs: 2.20203, 0.649597) circle (1.5pt);
+					        (axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$};
 
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_curvature_introc.tex END -->
@@ -815,50 +776,31 @@
           <image xml:id="img_curvature3">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
+
             \begin{axis}[%
             %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={1,2,-1,-2},
+            %minor x tick num=4,%
             %			extra x ticks={.33},
             %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-2.5,ymax=10.1,%
-			xmin=-10.2,xmax=4.9%
+            %ytick={-3,-2,-1,1,2,3},
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-2.5,ymax=10.1,%
+            xmin=-10.2,xmax=4.9%
             ]
-
-            %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-            %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-            \addplot [thick,{\colorone}, smooth,domain=-3.2:3.2] ({x},{x^2});
-
-            \addplot[thick,{\colortwo},smooth,domain=0:360] ({.5*cos(x)},{.5*sin(x)+.5});
-
-            \addplot[thick,{\colortwo},smooth,domain=0:360,samples=60] ({5.6*cos(x)-4},{5.6*sin(x)+3.5});
-
-					%(axis cs: 1.2684, 0.989352) circle (1.5pt);
- 
-
-            %\draw[->,{\colortwo},thick] (axis cs:0.8461, 1.53144)  -- (axis cs:1.14654, 2.48524);
-            %\draw[->,{\colortwo},thick] (axis cs:1.2684, 0.989352)  -- (axis cs:0.273445, 1.08968);
-            %\draw[->,{\colortwo},thick] (axis cs:2.20203, 0.649597)  -- (axis cs:1.35163, 1.17574);
-
-            %\draw[->,{\colorone},thick] (axis cs:2.44, 0.488) -- (axis cs: 2.4141, 0.506961);
-
-            %\filldraw (axis cs:.77,1.04) circle (1.5pt) node [below] {\scriptsize $A$}
-					%%(axis cs:0.8461, 1.53144) circle (1.5pt)
-					%%(axis cs: 1.2684, 0.989352) circle (1.5pt)
-					%(axis cs: 1.75, 0.875) circle (1.5pt) node [below] {\scriptsize $B$};
-					%%(axis cs: 2.20203, 0.649597) circle (1.5pt);
+           
+            \addplot+[domain=-3.2:3.2] ({x},{x^2});
+            \addplot+[domain=0:360] ({.5*cos(x)},{.5*sin(x)+.5});
+            \addplot+[domain=0:360,samples=60] ({5.6*cos(x)-4},{5.6*sin(x)+3.5});
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_curvature3.tex END -->
@@ -899,129 +841,130 @@
         <figure xml:id="fig_curvature4">
           <caption>Understanding the curvature of a curve in space.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_curvature4a">
+              <caption/>
             <!-- START figures/fig_curvature4a.tex -->
               <image xml:id="img_curvature4a">
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=stealth]
+                
+                \begin{tikzpicture}
+
                 \begin{axis}[%
                 %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={1,2,-1,-2},
-			%minor x tick num=4,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={1,2,-1,-2},
+                %minor x tick num=4,%
                 %			extra x ticks={.33},
                 %			extra x tick labels={$1/3$},
-			%ytick={-3,-2,-1,1,2,3},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=2.5,%
-			xmin=-2.1,xmax=2.1%
+                %ytick={-3,-2,-1,1,2,3},
+                %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+                ymin=-.1,ymax=2.5,%
+                xmin=-2.1,xmax=2.1%
                 ]
 
-                \addplot [thick,{\colorone}, smooth] coordinates {(-1.5,0.0122)(-1.45,0.01404)(-1.4,0.01623)(-1.35,0.01887)(-1.3,0.02207)(-1.25,0.02596)(-1.2,0.03074)(-1.15,0.03666)(-1.1,0.04403)(-1.05,0.05331)(-1.,0.06509)(-0.95,0.08019)(-0.9,0.09974)(-0.85,0.1253)(-0.8,0.159)(-0.75,0.204)(-0.7,0.2643)(-0.65,0.3457)(-0.6,0.4557)(-0.55,0.6035)(-0.5,0.7989)(-0.45,1.049)(-0.4,1.352)(-0.35,1.686)(-0.3,2.006)(-0.25,2.246)(-0.2,2.353)(-0.15,2.318)(-0.1,2.191)(-0.05,2.057)(0,2.)(0.05,2.057)(0.1,2.191)(0.15,2.318)(0.2,2.353)(0.25,2.246)(0.3,2.006)(0.35,1.686)(0.4,1.352)(0.45,1.049)(0.5,0.7989)(0.55,0.6035)(0.6,0.4557)(0.65,0.3457)(0.7,0.2643)(0.75,0.204)(0.8,0.159)(0.85,0.1253)(0.9,0.09974)(0.95,0.08019)(1.,0.06509)(1.05,0.05331)(1.1,0.04403)(1.15,0.03666)(1.2,0.03074)(1.25,0.02596)(1.3,0.02207)(1.35,0.01887)(1.4,0.01623)(1.45,0.01404)(1.5,0.0122)};
+                \addplot+ coordinates {(-1.5,0.0122)(-1.45,0.01404)(-1.4,0.01623)(-1.35,0.01887)(-1.3,0.02207)(-1.25,0.02596)(-1.2,0.03074)(-1.15,0.03666)(-1.1,0.04403)(-1.05,0.05331)(-1.,0.06509)(-0.95,0.08019)(-0.9,0.09974)(-0.85,0.1253)(-0.8,0.159)(-0.75,0.204)(-0.7,0.2643)(-0.65,0.3457)(-0.6,0.4557)(-0.55,0.6035)(-0.5,0.7989)(-0.45,1.049)(-0.4,1.352)(-0.35,1.686)(-0.3,2.006)(-0.25,2.246)(-0.2,2.353)(-0.15,2.318)(-0.1,2.191)(-0.05,2.057)(0,2.)(0.05,2.057)(0.1,2.191)(0.15,2.318)(0.2,2.353)(0.25,2.246)(0.3,2.006)(0.35,1.686)(0.4,1.352)(0.45,1.049)(0.5,0.7989)(0.55,0.6035)(0.6,0.4557)(0.65,0.3457)(0.7,0.2643)(0.75,0.204)(0.8,0.159)(0.85,0.1253)(0.9,0.09974)(0.95,0.08019)(1.,0.06509)(1.05,0.05331)(1.1,0.04403)(1.15,0.03666)(1.2,0.03074)(1.25,0.02596)(1.3,0.02207)(1.35,0.01887)(1.4,0.01623)(1.45,0.01404)(1.5,0.0122)};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_curvature4a.tex END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
-            <!--
-             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
-            3Droll=0,
-            3Dortho=0.004910729825496674,
-            3Dc2c=0.6666666865348816 0.6666666865348816 0.3333333432674408,
-            3Dcoo=-0.0000029802322387695312 -0.0000029802322387695312 -0.0000014901161193847656,
-            3Droo=150,
-            3Dlights=Headlamp,add3Djscript=asylabels.js]
-             -->
-            <!-- START figures/figcurvature4_3D.asy -->
-              <image xml:id="img_curvature4_3D">
+            <figure xml:id="fig_curvature4b_3D">
+              <caption/>
+              <!--
+              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
+              3Droll=0,
+              3Dortho=0.004910729825496674,
+              3Dc2c=0.6666666865348816 0.6666666865348816 0.3333333432674408,
+              3Dcoo=-0.0000029802322387695312 -0.0000029802322387695312 -0.0000014901161193847656,
+              3Droo=150,
+              3Dlights=Headlamp,add3Djscript=asylabels.js]
+              -->
+              <!-- START figures/figcurvature4_3D.asy -->
+              <image xml:id="img_curvature4b_3D">
+                <description></description>
+                <asymptote>
+                  
+                  import graph3;
 
-            <asymptote>
-              <![CDATA[
-              import graph3;
+                  //ASY file for figcurvature43D.asy in Chapter 11
 
-              //ASY file for figcurvature43D.asy in Chapter 11
+                  size(200,200,IgnoreAspect);
+                  //currentprojection=perspective(7,2,1);
+                  currentprojection=orthographic(4,4,2);
+                  defaultrender.merge=true;
 
-              size(200,200,IgnoreAspect);
-              //currentprojection=perspective(7,2,1);
-              currentprojection=orthographic(4,4,2);
-              defaultrender.merge=true;
+                  usepackage("mathspec");
+                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  // setup and draw the axes
+                  real[] myxchoice={};
+                  real[] myychoice={};
+                  real[] myzchoice={};
+                  defaultpen(0.5mm);
+                  pair xbounds=(-2,2);
+                  pair ybounds=(-1,2);
+                  pair zbounds=(-2,2);
 
-              // setup and draw the axes
-              real[] myxchoice={};
-              real[] myychoice={};
-              real[] myzchoice={};
-              defaultpen(0.5mm);
-              pair xbounds=(-2,2);
-              pair ybounds=(-1,2);
-              pair zbounds=(-2,2);
+                  xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                  yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                  zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
 
-              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
-              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
-              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+                  label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                  label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                  label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
-              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
-              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+                  //Draw the curve &lt;t, t^2, 2*t^3&gt; for t from -1 to 1
+                  triple g(real t) {return (t, t^2, 2*t^3);}
+                  path3 mypath=graph(g,-1,1,operator ..); draw(mypath,blue);
+                  //path3 mypath=graph(g,-1,-0.9,operator ..); draw(mypath,blue,Arrow3(size=4mm));
+                  path3 mypath=graph(g,-1,-0.7,operator ..); draw(mypath,blue,Arrow3(size=4mm));
+                  //path3 mypath=graph(g,-1,0.7,operator ..); draw(mypath,blue,Arrow3(size=4mm));
+                  //path3 mypath=graph(g,-1,0.9,operator ..); draw(mypath,blue,Arrow3(size=4mm));
 
-              //Draw the curve <t, t^2, 2*t^3> for t from -1 to 1
-              triple g(real t) {return (t, t^2, 2*t^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,blue);
-              //path3 mypath=graph(g,-1,-0.9,operator ..); draw(mypath,blue,Arrow3(size=4mm));
-              path3 mypath=graph(g,-1,-0.7,operator ..); draw(mypath,blue,Arrow3(size=4mm));
-              //path3 mypath=graph(g,-1,0.7,operator ..); draw(mypath,blue,Arrow3(size=4mm));
-              //path3 mypath=graph(g,-1,0.9,operator ..); draw(mypath,blue,Arrow3(size=4mm));
+                  //Draw points of maximum curvature (0.189,(0.189)^2,2*(0.189)^3)
+                  // cooresponding to values t=+/-0.189
+                  dotfactor=4;
+                  dot(((0.189,(0.189)^2,2*(0.189)^3)),red);
+                  dot(((-0.189,(-0.189)^2,2*(-0.189)^3)),red);
 
-              //Draw points of maximum curvature (0.189,(0.189)^2,2*(0.189)^3)
-              // cooresponding to values t=+/-0.189
-              dotfactor=4;
-              dot(((0.189,(0.189)^2,2*(0.189)^3)),red);
-              dot(((-0.189,(-0.189)^2,2*(-0.189)^3)),red);
+                  // ////////////////////////////////////
+                  //    SAMPLE CODE
 
-              // ////////////////////////////////////
-              //    SAMPLE CODE
+                  // defaultpen(fontsize(10pt));
 
-              // defaultpen(fontsize(10pt));
+                  //Draw the parabola z=y^2 for t from -2 to 2
+                  //triple g(real t) {return (0,t,t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
 
-              //Draw the parabola z=y^2 for t from -2 to 2
-              //triple g(real t) {return (0,t,t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
+                  //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                  //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
 
-              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
-              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                  //triple f(pair t) {
+                  //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                  //}
+                  //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
 
-              //triple f(pair t) {
-              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
-              //}
-              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                  //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..);
 
-              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..);
+                  //pen p=rgb(0,0,1);
+                  //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
 
-              //pen p=rgb(0,0,1);
-              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-
-              //draw(s,paleblue);
-              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
-              //draw(mypath,2bp+blue);
-              ]]>
-            </asymptote>
+                  //draw(s,paleblue);
+                  //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                  //draw(mypath,2bp+blue);
+                  
+                </asymptote>
               </image>
             <!-- figures/figcurvature4_3D.asy END -->
             </figure>
@@ -1106,7 +1049,7 @@
     </p>
 
     <p>
-      In Equation <xref ref="eq_vvfarc3" /> at the beginning of this section, we found
+      In Equation <xref ref="eq_vvfarc3"/> at the beginning of this section, we found
       <m>s\,'(t) = \norm{\vvt}</m>.
       We can combine this fact with the above formula for <m>a_\text{T}</m> to write
       <me>
@@ -1180,7 +1123,7 @@
       <solution>
 
         <table xml:id="fig_curvature5">
-          <caption>Operating speed and minimum radius in highway cloverleaf design.</caption>
+          <title>Operating speed and minimum radius in highway cloverleaf design.</title>
           <tabular>
             <row>
               <cell>\text{ Operating</cell>
@@ -1213,7 +1156,7 @@
         </table>
 
         <p>
-          Using Equation <xref ref="eq_curvature_an" />,
+          Using Equation <xref ref="eq_curvature_an"/>,
           we can compute the acceleration normal to the curve in each case.
           We start by converting each speed from
           <q>miles per hour</q> to <q>feet per second</q>
@@ -1238,7 +1181,7 @@
 
         <p>
           Note that each acceleration is similar; this is by design.
-          Considering the classic <q>Force <m>=</m> mass <times /> acceleration</q> formula,
+          Considering the classic <q>Force <m>=</m> mass <times/> acceleration</q> formula,
           this acceleration must be kept small in order for the tires of a vehicle to keep a
           <q>grip</q> on the road.
           If one travels on a turn of radius 310ft at a rate of 50mph,
@@ -1254,10 +1197,10 @@
 
     <p>
       We end this chapter with a reflection on what we've covered.
-      We started with vector<ndash />valued functions,
+      We started with vector<ndash/>valued functions,
       which may have seemed at the time to be just another way of writing parametric equations.
       However, we have seen that the vector perspective has given us great insight into the behavior of functions and the study of motion.
-      Vector<ndash />valued position functions convey displacement,
+      Vector<ndash/>valued position functions convey displacement,
       distance traveled, speed, velocity,
       acceleration and curvature information,
       each of which has great importance in science and engineering.
@@ -1282,7 +1225,7 @@
             </setup>
             <statement>
               <p>
-                It is common to describe position in terms of both <fillin /> and/or <fillin />.
+                It is common to describe position in terms of both <fillin/> and/or <fillin/>.
               </p>
             </statement>
             <solution>
@@ -1303,7 +1246,7 @@
             <statement>
               <p>
                 A measure of the <q>curviness</q>
-                of a curve is <fillin />.
+                of a curve is <fillin/>.
               </p>
             </statement>
             <solution>
@@ -1404,10 +1347,10 @@
 
       <introduction>
         <p>
-          In the following exercises, a position function \vrt<nbsp />is given,
+          In the following exercises, a position function \vrt<nbsp/>is given,
           where <m>t=0</m> corresponds to the initial position.
           Find the arc length parameter <m>s</m>,
-          and rewrite \vrt<nbsp />in terms of <m>s</m>;
+          and rewrite \vrt<nbsp/>in terms of <m>s</m>;
           that is, find <m>\vec r(s)</m>.
         </p>
       </introduction>
@@ -1451,7 +1394,7 @@
               </p>
 
               <p>
-                <m>s=</m><var name="$s" width="20" />
+                <m>s=</m><var name="$s" width="20"/>
               </p>
 
               <p>
@@ -1459,7 +1402,7 @@
               </p>
 
               <p>
-                <m>\vec{r}(s)=</m><var name="$rs" width="20" />
+                <m>\vec{r}(s)=</m><var name="$rs" width="20"/>
               </p>
             </statement>
         </webwork>
@@ -1505,7 +1448,7 @@
               </p>
 
               <p>
-                <m>s=</m><var name="$s" width="30" />
+                <m>s=</m><var name="$s" width="30"/>
               </p>
 
               <p>
@@ -1513,7 +1456,7 @@
               </p>
 
               <p>
-                <m>\vec{r}(s)=</m><var name="$rs" width="30" />
+                <m>\vec{r}(s)=</m><var name="$rs" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -1531,7 +1474,6 @@
         <p>
           <ol>
             <li>
-              <title>(a)</title>
               <p>
                 Using a sketch,
                 determine at which of these points the curvature is greater.
@@ -1539,7 +1481,6 @@
             </li>
 
             <li>
-              <title>(b)</title>
               <p>
                 Find the curvature <m>\kappa</m> of <m>C</m>,
                 and evaluate <m>\kappa</m> at each of the 2 given points.
@@ -1598,12 +1539,12 @@
               </p>
 
               <p>
-                <m>\kappa=</m><var name="$kappa" width="40" />
+                <m>\kappa=</m><var name="$kappa" width="40"/>
               </p>
 
               <p>
-                <m>\kappa(0)=</m><var name="$k[0]" width="15" /> and
-                <m>\kappa(2)=</m><var name="$k[1]" width="15" />.
+                <m>\kappa(0)=</m><var name="$k[0]" width="15"/> and
+                <m>\kappa(2)=</m><var name="$k[1]" width="15"/>.
               </p>
             </statement>
         </webwork>
@@ -1683,12 +1624,12 @@
               </p>
 
               <p>
-                <m>\kappa=</m><var name="$kappa" width="40" />
+                <m>\kappa=</m><var name="$kappa" width="40"/>
               </p>
 
               <p>
-                <m>\kappa(0)=</m><var name="$k[0]" width="15" /> and
-                <m>\kappa(\pi/4)=</m><var name="$k[1]" width="15" />.
+                <m>\kappa(0)=</m><var name="$k[0]" width="15"/> and
+                <m>\kappa(\pi/4)=</m><var name="$k[1]" width="15"/>.
               </p>
             </statement>
         </webwork>
@@ -1769,12 +1710,12 @@
               </p>
 
               <p>
-                <m>\kappa=</m><var name="$kappa" width="40" />
+                <m>\kappa=</m><var name="$kappa" width="40"/>
               </p>
 
               <p>
-                <m>\kappa(0)=</m><var name="$k[0]" width="15" /> and
-                <m>\kappa(\pi/6)=</m><var name="$k[1]" width="15" />.
+                <m>\kappa(0)=</m><var name="$k[0]" width="15"/> and
+                <m>\kappa(\pi/6)=</m><var name="$k[1]" width="15"/>.
               </p>
             </statement>
         </webwork>
@@ -1829,12 +1770,12 @@
               </p>
 
               <p>
-                <m>\kappa=</m><var name="$kappa" width="40" />
+                <m>\kappa=</m><var name="$kappa" width="40"/>
               </p>
 
               <p>
-                <m>\kappa(0)=</m><var name="$k[0]" width="15" /> and
-                <m>\kappa(1)=</m><var name="$k[1]" width="15" />.
+                <m>\kappa(0)=</m><var name="$k[0]" width="15"/> and
+                <m>\kappa(1)=</m><var name="$k[1]" width="15"/>.
               </p>
             </statement>
         </webwork>
@@ -1889,12 +1830,12 @@
               </p>
 
               <p>
-                <m>\kappa=</m><var name="$kappa" width="40" />
+                <m>\kappa=</m><var name="$kappa" width="40"/>
               </p>
 
               <p>
-                <m>\kappa(0)=</m><var name="$k[0]" width="15" /> and
-                <m>\kappa(\pi/2)=</m><var name="$k[1]" width="15" />.
+                <m>\kappa(0)=</m><var name="$k[0]" width="15"/> and
+                <m>\kappa(\pi/2)=</m><var name="$k[1]" width="15"/>.
               </p>
             </statement>
         </webwork>
@@ -1927,7 +1868,7 @@
               </p>
 
               <p>
-                <var name="$max" width="30" />
+                <var name="$max" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -1968,7 +1909,7 @@
               </p>
 
               <p>
-                <var name="$max" width="30" />
+                <var name="$max" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -1989,7 +1930,7 @@
               </p>
 
               <p>
-                <var name="$max" width="30" />
+                <var name="$max" width="30"/>
               </p>
             </statement>
         </webwork>
@@ -2040,7 +1981,7 @@
               </p>
 
               <p>
-                <var name="$radius" width="15" />
+                <var name="$radius" width="15"/>
               </p>
             </statement>
         </webwork>
@@ -2082,7 +2023,7 @@
               </p>
 
               <p>
-                <var name="$radius" width="15" />
+                <var name="$radius" width="15"/>
               </p>
             </statement>
         </webwork>
@@ -2137,7 +2078,7 @@
               </p>
 
               <p>
-                <var name="$osc" width="40" />
+                <var name="$osc" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2182,7 +2123,7 @@
               </p>
 
               <p>
-                <var name="$osc" width="40" />
+                <var name="$osc" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2191,4 +2132,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
