@@ -1775,7 +1775,7 @@
       and location <m>C</m> records the noise exactly 2 seconds after that.
       We are interested in the <em>difference</em> of times.
       Since the speed of sound is approximately 340 m/s, we can conclude quickly that the sound was created 340 meters closer to position <m>A</m> than position <m>B</m>.
-      If <m>A</m> and <m>B</m> are a known distance apart (as shown in <xref ref="fig_hyperbola_locate">Figure</xref> (a)),
+      If <m>A</m> and <m>B</m> are a known distance apart (as shown in <xref ref="fig_hyperbola_locatea">Figure</xref>),
       then we can determine a hyperbola on which <m>D</m> must lie.
     </p>
 
@@ -1862,7 +1862,7 @@
         </figure>
         <!-- figures/fig_hyperbola_locate2.tex END -->
         <!-- START figures/fig_hyperbola_locate3.tex -->
-        <figure xml:id="fig_hyperbola_locateb">
+        <figure xml:id="fig_hyperbola_locatec">
           <caption/>
           <image xml:id="img_hyperbola_locatec">
             <description></description>
