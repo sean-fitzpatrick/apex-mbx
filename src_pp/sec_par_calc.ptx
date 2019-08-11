@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_par_calc">
   <title>Calculus and Parametric Equations</title>
   <introduction>
@@ -107,19 +106,21 @@
       so we add the following to the above definition.
     </p>
 
-    <ol>
-      <li>
-        <p>
-          If the tangent line at <m>t=t_0</m> has a slope of 0, the normal line to <m>C</m> at <m>t=t_0</m> is the line <m>x=f(t_0)</m>.
-        </p>
-      </li>
+    <p>
+      <ol>
+        <li>
+          <p>
+            If the tangent line at <m>t=t_0</m> has a slope of 0, the normal line to <m>C</m> at <m>t=t_0</m> is the line <m>x=f(t_0)</m>.
+          </p>
+        </li>
 
-      <li>
-        <p>
-          If the normal line at <m>t=t_0</m> has a slope of 0, the tangent line to <m>C</m> at <m>t=t_0</m> is the line <m>x=f(t_0)</m>.
-        </p>
-      </li>
-    </ol>
+        <li>
+          <p>
+            If the normal line at <m>t=t_0</m> has a slope of 0, the tangent line to <m>C</m> at <m>t=t_0</m> is the line <m>x=f(t_0)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
 
     <example xml:id="ex_parcalc1">
       <title>Tangent and Normal Lines to Curves</title>
@@ -129,176 +130,176 @@
           and let <m>C</m> be the curve defined by these equations.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              Find the equations of the tangent and normal lines to <m>C</m> at <m>t=3</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find the equations of the tangent and normal lines to <m>C</m> at <m>t=3</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Find where <m>C</m> has vertical and horizontal tangent lines.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Find where <m>C</m> has vertical and horizontal tangent lines.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              We start by computing <m>\fp(t) = 10t-6</m> and <m>g'(t) =2t+6</m>.
-              Thus
-              <me>
-                \frac{dy}{dx} = \frac{2t+6}{10t-6}
-              </me>.
-              Make note of something that might seem unusual:
-              <m>\frac{dy}{dx}</m> is a function of <m>t</m>, not <m>x</m>.
-              Just as points on the curve are found in terms of <m>t</m>,
-              so are the slopes of the tangent lines.
- 
-		The point on <m>C</m> at <m>t=3</m> is <m>(31,26)</m>. The slope of the tangent line is <m>m=1/2</m> and the slope of the normal line is <m>m=-2</m>. Thus,
-            </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We start by computing <m>\fp(t) = 10t-6</m> and <m>g'(t) =2t+6</m>.
+                Thus
+                <me>
+                  \frac{dy}{dx} = \frac{2t+6}{10t-6}
+                </me>.
+                Make note of something that might seem unusual:
+                <m>\frac{dy}{dx}</m> is a function of <m>t</m>, not <m>x</m>.
+                Just as points on the curve are found in terms of <m>t</m>,
+                so are the slopes of the tangent lines.
+  
+                The point on <m>C</m> at <m>t=3</m> is <m>(31,26)</m>. The slope of the tangent line is <m>m=1/2</m> and the slope of the normal line is <m>m=-2</m>. Thus,
+              </p>
 
-            <ul>
-              <li>
-                <p>
-                  the equation of the tangent line is <m>\ds y=\frac12(x-31)+26</m>, and
-                </p>
-              </li>
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      the equation of the tangent line is <m>\ds y=\frac12(x-31)+26</m>, and
+                    </p>
+                  </li>
 
-              <li>
-                <p>
-                  the equation of the normal line is <m>\ds y=-2(x-31)+26</m>.
-                </p>
-              </li>
-            </ul>
+                  <li>
+                    <p>
+                      the equation of the normal line is <m>\ds y=-2(x-31)+26</m>.
+                    </p>
+                  </li>
+                </ul>
+              </p>
 
-            <p>
-              This is illustrated in <xref ref="fig_parcalc1">Figure</xref>.
-            </p>
+              <p>
+                This is illustrated in <xref ref="fig_parcalc1">Figure</xref>.
+              </p>
 
-            <figure xml:id="fig_parcalc1">
-              <caption>Graphing tangent and normal lines in <xref ref="ex_parcalc1">Example</xref>.</caption>
-            <!-- START figures/fig_parcalc1.tex -->
-              <image xml:id="img_parcalc1">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}
-                \begin{axis}[%
-                %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-20,ymax=55,%
-			xmin=-5,xmax=90%
-                ]
+              <figure xml:id="fig_parcalc1">
+                <caption>Graphing tangent and normal lines in <xref ref="ex_parcalc1">Example</xref>.</caption>
+              <!-- START figures/fig_parcalc1.tex -->
+                <image xml:id="img_parcalc1">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                \addplot [{\colorone},thick, smooth,domain=-3.5:5,samples=30] ({5*x^2-6*x+4},{x^2+6*x-1});
+                  \begin{axis}[
+                  ymin=-20,ymax=55,
+                  xmin=-5,xmax=90
+                  ]
 
-                \addplot [{\colortwo},thick,domain=-5:90] ({x},{.5*(x-31)+26});
-                \addplot[{\colortwo},thick,domain=-20:55] ({x},{-2*(x-31)+26});
-                \draw [>=latex,->] (axis cs: 12.14,-5.204) -- (axis cs: 12,-5.16);
+                  \addplot+ [-,domain=-3.5:5,samples=40] ({5*x^2-6*x+4},{x^2+6*x-1});
 
-                \filldraw (axis cs: 67,-10) circle (1.5pt)
-					(axis cs: 2.2,2.96) circle (1.5pt);
+                  \addplot [secondcurvestyle,-,solid,domain=-5:90] ({x},{.5*(x-31)+26});
+                  \addplot [secondcurvestyle,-,solid,domain=-20:55] ({x},{-2*(x-31)+26});
 
-                \end{axis}
+                  \draw [&gt;=latex,-&gt;] (axis cs: 12.14,-5.204) -- (axis cs: 12,-5.16);
 
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
-            <!-- figures/fig_parcalc1.tex END -->
-            </figure>
+                  \filldraw (axis cs: 67,-10) circle (1.5pt)
+                            (axis cs: 2.2,2.96) circle (1.5pt);
 
-          </li>
+                  \end{axis}
 
-          <li>
-            <p>
-              To find where <m>C</m> has a horizontal tangent line,
-              we set <m>\frac{dy}{dx}=0</m> and solve for <m>t</m>.
-              In this case,
-              this amounts to setting <m>g'(t)=0</m> and solving for <m>t</m> (and making sure that <m>\fp(t)\neq 0</m>).
-              <me>
-                g'(t)=0  \Rightarrow  2t+6=0  \Rightarrow  t=-3
-              </me>.
-              The point on <m>C</m> corresponding to <m>t=-3</m> is <m>(67,-10)</m>;
-              the tangent line at that point is horizontal
-              (hence with equation <m>y=-10</m>).
- 
-		To find where <m>C</m> has a vertical tangent line, we find where it has a horizontal normal line, and set <m>-\frac{\fp(t)}{g'(t)}=0</m>. This amounts to setting <m>\fp(t)=0</m> and solving for <m>t</m> (and making sure that <m>g'(t)\neq 0</m>).
-              <me>
-                \fp(t)=0  \Rightarrow  10t-6=0  \Rightarrow  t=0.6
-              </me>.
-              The point on <m>C</m> corresponding to <m>t=0.6</m> is <m>(2.2,2.96)</m>.
-              The tangent line at that point is <m>x=2.2</m>.
- 
-		The points where the tangent lines are vertical and horizontal are indicated on the graph in <xref ref="fig_parcalc1">Figure</xref>.
-            </p>
-          </li>
-        </ol>
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+              <!-- figures/fig_parcalc1.tex END -->
+              </figure>
+
+            </li>
+
+            <li>
+              <p>
+                To find where <m>C</m> has a horizontal tangent line,
+                we set <m>\frac{dy}{dx}=0</m> and solve for <m>t</m>.
+                In this case,
+                this amounts to setting <m>g'(t)=0</m> and solving for <m>t</m> (and making sure that <m>\fp(t)\neq 0</m>).
+                <me>
+                  g'(t)=0  \Rightarrow  2t+6=0  \Rightarrow  t=-3
+                </me>.
+                The point on <m>C</m> corresponding to <m>t=-3</m> is <m>(67,-10)</m>;
+                the tangent line at that point is horizontal
+                (hence with equation <m>y=-10</m>).
+  
+                To find where <m>C</m> has a vertical tangent line, we find where it has a horizontal normal line, and set <m>-\frac{\fp(t)}{g'(t)}=0</m>. This amounts to setting <m>\fp(t)=0</m> and solving for <m>t</m> (and making sure that <m>g'(t)\neq 0</m>).
+                <me>
+                  \fp(t)=0  \Rightarrow  10t-6=0  \Rightarrow  t=0.6
+                </me>.
+                The point on <m>C</m> corresponding to <m>t=0.6</m> is <m>(2.2,2.96)</m>.
+                The tangent line at that point is <m>x=2.2</m>.
+  
+                The points where the tangent lines are vertical and horizontal are indicated on the graph in <xref ref="fig_parcalc1">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
     <example xml:id="ex_parcalc2">
       <title>Tangent and Normal Lines to a Circle</title>
       <statement>
-        <ol>
-          <li>
-            <p>
-              Find where the unit circle,
-              defined by <m>x=\cos(t)</m> and <m>y=\sin(t)</m> on <m>[0,2\pi]</m>,
-              has vertical and horizontal tangent lines.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find where the unit circle,
+                defined by <m>x=\cos(t)</m> and <m>y=\sin(t)</m> on <m>[0,2\pi]</m>,
+                has vertical and horizontal tangent lines.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Find the equation of the normal line at <m>t=t_0</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Find the equation of the normal line at <m>t=t_0</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              We compute the derivative following <xref ref="idea_dydxpar">Key Idea</xref>:
-              <me>
-                \frac{dy}{dx} = \frac{g'(t)}{\fp(t)} = -\frac{\cos(t) }{\sin(t) }
-              </me>.
-              The derivative is <m>0</m> when <m>\cos(t) = 0</m>;
-              that is, when <m>t=\pi/2,\ 3\pi/2</m>.
-              These are the points <m>(0,1)</m> and <m>(0,-1)</m> on the circle.
- 
-			The normal line is horizontal (and hence, the tangent line is vertical) when <m>\sin(t) =0</m>; that is, when <m>t= 0,\ \pi,\ 2\pi</m>, corresponding to the points <m>(-1,0)</m> and <m>(0,1)</m> on the circle. These results should make intuitive sense.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We compute the derivative following <xref ref="idea_dydxpar">Key Idea</xref>:
+                <me>
+                  \frac{dy}{dx} = \frac{g'(t)}{\fp(t)} = -\frac{\cos(t) }{\sin(t) }
+                </me>.
+                The derivative is <m>0</m> when <m>\cos(t) = 0</m>;
+                that is, when <m>t=\pi/2,\ 3\pi/2</m>.
+                These are the points <m>(0,1)</m> and <m>(0,-1)</m> on the circle.
+  
+                The normal line is horizontal (and hence, the tangent line is vertical) when <m>\sin(t) =0</m>; that is, when <m>t= 0,\ \pi,\ 2\pi</m>, corresponding to the points <m>(-1,0)</m> and <m>(0,1)</m> on the circle. These results should make intuitive sense.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The slope of the normal line at <m>t=t_0</m> is <m>\ds m=\frac{\sin(t_0) }{\cos(t_0) } = \tan(t_0)</m>.
-              This normal line goes through the point <m>(\cos(t_0) ,\sin(t_0) )</m>,
-              giving the line
-              <md>
-                <mrow>y \amp =\frac{\sin(t_0) }{\cos(t_0) }(x-\cos(t_0) ) + \sin(t_0)</mrow>
-                <mrow>\amp = (\tan(t_0) )x</mrow>
-              </md>,
-              as long as <m>\cos(t_0) \neq 0</m>.
-              It is an important fact to recognize that the normal lines to a circle pass through its center,
-              as illustrated in <xref ref="fig_parcalc2">Figure</xref>.
-              Stated in another way,
-              any line that passes through the center of a circle intersects the circle at right angles.
+            <li>
+              <p>
+                The slope of the normal line at <m>t=t_0</m> is <m>\ds m=\frac{\sin(t_0) }{\cos(t_0) } = \tan(t_0)</m>.
+                This normal line goes through the point <m>(\cos(t_0) ,\sin(t_0) )</m>,
+                giving the line
+                <md>
+                  <mrow>y \amp =\frac{\sin(t_0) }{\cos(t_0) }(x-\cos(t_0) ) + \sin(t_0)</mrow>
+                  <mrow>\amp = (\tan(t_0) )x</mrow>
+                </md>,
+                as long as <m>\cos(t_0) \neq 0</m>.
+                It is an important fact to recognize that the normal lines to a circle pass through its center,
+                as illustrated in <xref ref="fig_parcalc2">Figure</xref>.
+                Stated in another way,
+                any line that passes through the center of a circle intersects the circle at right angles.
+              </p>
 
               <figure xml:id="fig_parcalc2">
                 <caption>Illustrating how a circle's normal lines pass through its center.</caption>
@@ -306,44 +307,31 @@
                 <image xml:id="img_parcalc2">
                   <description></description>
                   <latex-image>
-                  <![CDATA[
+                  
                   \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.3,xmax=1.3%
+
+                  \begin{axis}[
+                  ytick={-1,1},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.3,xmax=1.3
                   ]
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [{\colorone},thick, smooth,domain=0:360,samples=60] ({cos(x)},{sin(x)});
-
-                  \addplot [{\colortwo},thick,domain=-1:1] ({x},{2*x});
+                  \addplot+ [-,domain=0:360,samples=70] ({cos(x)},{sin(x)});
+                  \addplot+ [-,solid,domain=-1:1] ({x},{2*x});
 
                   \filldraw (axis cs: .447,.894) circle (1.5pt);
 
-                  %\draw (axis cs:0,0) circle (50pt);
                   \end{axis}
 
                   \end{tikzpicture}
-                  ]]>
+                  
                   </latex-image>
                 </image>
             <!-- figures/fig_parcalc2.tex END -->
               </figure>
-
-            </p>
-          </li>
-        </ol>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
@@ -396,31 +384,22 @@
           <image xml:id="img_parcalc3">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},
-			%minor x tick num=4,%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.1,xmax=1.1%
+
+            \begin{axis}[
+            xtick={-1,1},
+            ytick={-1,1},
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.1,xmax=1.1
             ]
 
-            %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-            %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-            \addplot [thick,{\colorone}, smooth,domain=0:360,samples=360] ({(cos(x))^3},{(sin(x))^3});
+            \addplot+ [-,domain=0:360,samples=70] ({(cos(x))^3},{(sin(x))^3});
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_planecurve1.tex END -->
@@ -533,34 +512,27 @@
           <image xml:id="img_parcalc4">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-20,ymax=55,%
-			xmin=-5,xmax=90%
+
+            \begin{axis}[
+            ymin=-20,ymax=55,
+            xmin=-5,xmax=90
             ]
 
-            \addplot [{\colorone},thick, smooth,domain=-3.5:5,samples=30] ({5*x^2-6*x+4},{x^2+6*x-1});
-            \draw [>=latex,->] (axis cs: 12.14,-5.204) -- (axis cs: 12,-5.16);
+            \addplot+ [-,domain=-3.5:5,samples=50] ({5*x^2-6*x+4},{x^2+6*x-1});
+
+            \draw [&gt;=latex,-&gt;] (axis cs: 12.14,-5.204) -- (axis cs: 12,-5.16);
 
             \filldraw (axis cs: 2.2,2.96) circle (1.5pt);
 
-            \draw (axis cs: 31,26) node [above,rotate=26.56] {\scriptsize $t>3/5$; concave down};
-            \draw (axis cs: 50.25,-9.75) node [below] {\scriptsize $t<3/5$; concave up};
+            \draw (axis cs: 31,26) node [above,rotate=26.56] {\scriptsize $t&gt;3/5$; concave down};
+            \draw (axis cs: 50.25,-9.75) node [below] {\scriptsize $t&lt;3/5$; concave up};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_parcalc4.tex END -->
@@ -568,7 +540,7 @@
 
         <p>
           The graph of the parametric functions is concave up when
-          <m>\frac{d^2y}{dx^2} > 0</m> and concave down when <m>\frac{d^2y}{dx^2} \lt 0</m>.
+          <m>\frac{d^2y}{dx^2} \gt 0</m> and concave down when <m>\frac{d^2y}{dx^2} \lt 0</m>.
           We determine the intervals when the second derivative is greater/less than 0 by first finding when it is 0 or undefined.
         </p>
 
@@ -583,14 +555,21 @@
         <image xml:id="img_parcalc4X">
           <description></description>
           <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}[>=latex]
-		\draw [<->, thick] (-2.5,0) -- (2.5,0);
-		\foreach \x / \y  in
-					{0/{\(3/5\)}}
-		{\draw (\x,-.3) node[below] { \text{ \y }} -- (\x,.3);}
-		\draw (-1,.75) node { \parbox{50pt}{\(\ds \frac{d^2y}{dx^2}>0\) \ c. up }};
-		\draw (1,.75) node { \parbox{50pt}{\(\ds\frac{d^2y}{dx^2}<0\) \ c. down }};\end{tikzpicture}]]>
+          
+          \begin{tikzpicture}
+
+          \draw [&lt;-&gt;, thick] (-2.5,0) -- (2.5,0);
+
+          \foreach \x / \y in {0/{\(3/5\)}}
+          {
+            \draw (\x,-.3) node[below] { \text{ \y }} -- (\x,.3);
+          }
+
+          \draw (-1,.75) node {\parbox{50pt}{\(\ds \frac{d^2y}{dx^2}&gt;0\) c. up }};
+          \draw (1,.75) node {\parbox{50pt}{\(\ds\frac{d^2y}{dx^2}&lt;0\) c. down }};
+
+          \end{tikzpicture}
+
           </latex-image>
         </image>
 
@@ -650,91 +629,67 @@
         <figure xml:id="fig_parcalc5">
           <caption>In (a), a graph of <m>\frac{d^2y}{dx^2}</m>, showing where it is approximately 0. In (b), graph of the parametric equations in <xref ref="ex_parcalc5">Example</xref> along with the points of inflection.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_parcalc5a">
+              <caption/>
             <!-- START figures/fig_parcalc5b.tex -->
               <image xml:id="img_parcalc5b">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={3,1,2,4},
-			minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-59,ymax=59,%
-			xmin=-.5,xmax=16.9%
+
+                \begin{axis}[
+                minor x tick num=4,
+                minor y tick num=4,
+                ymin=-59,ymax=59,
+                xmin=-.5,xmax=16.9
                 ]
 
-                \addplot [{\colorone},thick, smooth,domain=0:16,samples=60] ({x},{2*cos(deg(x))-4*x*sin(deg(x))});
-                %\addplot [{\colorone},thick, smooth,domain=3:18,samples=60] ({sqrt(x)},{sin(deg(x))});
-                \draw  (axis cs: 5,-40) node {\scriptsize $y=2\cos(t) -4t\sin(t) $};
+                \addplot+ [-,domain=0:16,samples=120] ({x},{2*cos(deg(x))-4*x*sin(deg(x))});
 
-                %\filldraw (axis cs: 0.808252, 0.607787) circle (1.5pt)
-					%(axis cs: 1.81447, -0.150147) circle (1.5pt)
-					%(axis cs: 2.52223, 0.0783547) circle (1.5pt)
-					%(axis cs: 3.07855, -0.0526833) circle (1.5pt)
-					%(axis cs: 3.55049, 0.0396324) circle (1.5pt)
-					%(axis cs:3.96733, -0.0317508) circle (1.5pt);;
-                %{0.808252, 0.607787}, {1.81447, -0.150147}, {2.52223, 0.0783547}, \
-                %{3.07855, -0.0526833}, {3.55049, 0.0396324}, {3.96733, -0.0317508}
-
+                \draw (axis cs: 5,-40) node {\scriptsize $y=2\cos(t) -4t\sin(t) $};
+           
                 \end{axis}
 
                 \node [right] at (myplot.right of origin) {\scriptsize $t$};
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_parcalc5b.tex END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_parcalc5b">
+              <caption/>
             <!-- START figures/fig_parcalc5.tex -->
               <image xml:id="img_parcalc5">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
-                \begin{axis}[%
-                %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={3,1,2,4},
-			%%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-.5,xmax=4.5%
+
+                \begin{axis}[
+                xtick={3,1,2,4},
+                ymin=-1.1,ymax=1.1,
+                xmin=-.5,xmax=4.5
                 ]
 
-                \addplot [{\colorone},thick, smooth,domain=0:3,samples=100] ({sqrt(x)},{sin(deg(x))});
-                \addplot [{\colorone},thick, smooth,domain=3:18,samples=60] ({sqrt(x)},{sin(deg(x))});
-                %\draw [>=latex,->] (axis cs: 12.14,-5.204) -- (axis cs: 12,-5.16);
+                \addplot+ [-,domain=0:.5,samples=40] ({sqrt(x)},{sin(deg(x))});
+                \addplot [firstcurvestyle,-,domain=.5:3,samples=50] ({sqrt(x)},{sin(deg(x))});
+                \addplot [firstcurvestyle,-,domain=3:18,samples=120] ({sqrt(x)},{sin(deg(x))});
 
                 \filldraw (axis cs: 0.808252, 0.607787) circle (1.5pt)
-					(axis cs: 1.81447, -0.150147) circle (1.5pt)
-					(axis cs: 2.52223, 0.0783547) circle (1.5pt)
-					(axis cs: 3.07855, -0.0526833) circle (1.5pt)
-					(axis cs: 3.55049, 0.0396324) circle (1.5pt)
-					(axis cs:3.96733, -0.0317508) circle (1.5pt);;
-                %{0.808252, 0.607787}, {1.81447, -0.150147}, {2.52223, 0.0783547}, \
-                %{3.07855, -0.0526833}, {3.55049, 0.0396324}, {3.96733, -0.0317508}
+                          (axis cs: 1.81447, -0.150147) circle (1.5pt)
+                          (axis cs: 2.52223, 0.0783547) circle (1.5pt)
+                          (axis cs: 3.07855, -0.0526833) circle (1.5pt)
+                          (axis cs: 3.55049, 0.0396324) circle (1.5pt)
+                          (axis cs:3.96733, -0.0317508) circle (1.5pt);
 
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_parcalc5.tex END -->
@@ -883,34 +838,24 @@
           <image xml:id="img_parcalc7">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,-1},
-			%minor x tick num=4,%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.1,xmax=1.1%
+
+            \begin{axis}[
+            xtick={1,-1},
+            ytick={-1,1},
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.1,xmax=1.1
             ]
 
-            \addplot [{\colorone},thick, smooth,domain=-1.5:1.5,samples=40] ({x^3-x},{x^2-1});
-            %\addplot [{\colorone},dashed,thick, smooth,domain=1:1.5,samples=20] ({x^3-x},{x^2-1});
-            %\addplot [{\colorone}, thick, smooth,domain=-1:1,samples=40] ({x^3-x},{x^2-1});
-
-            %\draw  (axis cs: 5,-40) node {\scriptsize $y=2\cos(t) -4t\sin(t) $};
+            \addplot+ [-,domain=-1.5:1.5,samples=60] ({x^3-x},{x^2-1});
 
             \end{axis}
 
             \node [right] at (myplot.right of origin) {\scriptsize $t$};
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_parcalc7.tex END -->
@@ -948,27 +893,29 @@
 
       </p>
 
-      <ol>
-        <li>
-          <p>
-            The surface area of the solid formed by revolving the graph about the <m>x</m>-axis is (where
-            <m>g(t)\geq~0</m> on <m>[t_1,t_2]</m>):
-            <me>
-              \text{ Surface Area }  = 2\pi\int_{t_1}^{t_2} g(t)\sqrt{\fp(t)^2+g'(t)^2}\ dt
-            </me>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The surface area of the solid formed by revolving the graph about the <m>x</m>-axis is (where
+              <m>g(t)\geq~0</m> on <m>[t_1,t_2]</m>):
+              <me>
+                \text{ Surface Area }  = 2\pi\int_{t_1}^{t_2} g(t)\sqrt{\fp(t)^2+g'(t)^2}\ dt
+              </me>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            The surface area of the solid formed by revolving the graph about the <m>y</m>-axis is (where
-            <m>f(t)\geq~0</m> on <m>[t_1,t_2]</m>):
-            <me>
-              \text{ Surface Area }  = 2\pi\int_{t_1}^{t_2} f(t)\sqrt{\fp(t)^2+g'(t)^2}\ dt
-            </me>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              The surface area of the solid formed by revolving the graph about the <m>y</m>-axis is (where
+              <m>f(t)\geq~0</m> on <m>[t_1,t_2]</m>):
+              <me>
+                \text{ Surface Area }  = 2\pi\int_{t_1}^{t_2} f(t)\sqrt{\fp(t)^2+g'(t)^2}\ dt
+              </me>.
+            </p>
+          </li>
+        </ol>
+      </p>
     </insight>
 
     <example xml:id="ex_parcalc8">
@@ -1017,9 +964,9 @@
            -->
           <!-- START figures/figparcalc8_3D.asy -->
           <image xml:id="img_parcalc8">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figparcalc8_3D.asy in Chapter 9
@@ -1093,7 +1040,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figparcalc8_3D.asy END -->
@@ -1153,7 +1100,7 @@
             <statement>
               <p>
                 Given parametric equations <m>x=f(t)</m> and <m>y=g(t)</m>,
-                the derivative <m>\frac{dy}{dx}</m> as given in <xref ref="idea_dydxpar">Key Idea</xref> is a function of <fillin />?
+                the derivative <m>\frac{dy}{dx}</m> as given in <xref ref="idea_dydxpar">Key Idea</xref> is a function of <fillin/>?
               </p>
             </statement>
             <solution>
@@ -1215,28 +1162,27 @@
           In the following exercises, parametric equations for a curve are given.
         </p>
 
-        <ol>
-          <li>
-            <title>(a)</title>
-            <p>
-              Find <m>\ds\frac{dy}{dx}</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Find <m>\ds\frac{dy}{dx}</m>.
+              </p>
+            </li>
 
-          <li>
-            <title>(b)</title>
-            <p>
-              Find the equations of the tangent and normal line(s) at the point(s) given.
-            </p>
-          </li>
+            <li>
+              <p>
+                Find the equations of the tangent and normal line(s) at the point(s) given.
+              </p>
+            </li>
 
-          <li>
-            <title>(c)</title>
-            <p>
-              Sketch the graph of the parametric functions along with the found tangent and normal lines.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Sketch the graph of the parametric functions along with the found tangent and normal lines.
+              </p>
+            </li>
+          </ol>
+        </p>
       </introduction>
 
       <exercise xml:id="ex_09_03_ex_05">
@@ -1252,20 +1198,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = 2t</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = 2t</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Tangent line: <m>y= 2(x-1)+1</m>; normal line:
-                    <m>y = -1/2(x-1)+1</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Tangent line: <m>y= 2(x-1)+1</m>; normal line:
+                      <m>y = -1/2(x-1)+1</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1283,20 +1231,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = 10\sqrt{t}</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = 10\sqrt{t}</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Tangent line: <m>y= 20(x-2)+22</m>; normal line:
-                    <m>y = -1/20(x-2)+22</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Tangent line: <m>y= 20(x-2)+22</m>; normal line:
+                      <m>y = -1/20(x-2)+22</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1314,20 +1264,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = \frac{2 t+1}{2 t-1}</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = \frac{2 t+1}{2 t-1}</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Tangent line: <m>y= 3x+2</m>;
-                    normal line: <m>y = -1/3x+2</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Tangent line: <m>y= 3x+2</m>;
+                      normal line: <m>y = -1/3x+2</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1345,22 +1297,24 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = \frac{3t^2}{2 t}</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = \frac{3t^2}{2 t}</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>t=0</m>: Tangent line: <m>x=-1</m>;
-                    normal line: <m>y = 0</m>
- 
-	<m>t=1</m>: Tangent line: <m>y=x</m>; normal line: <m>y=-x</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>t=0</m>: Tangent line: <m>x=-1</m>;
+                      normal line: <m>y = 0</m>
+  
+                      <m>t=1</m>: Tangent line: <m>y=x</m>; normal line: <m>y=-x</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1379,21 +1333,23 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = \csc(t)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = \csc(t)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>t=\pi/4</m>: Tangent line:
-                    <m>y=\sqrt{2}(x-\sqrt{2})+1</m>; normal line:
-                    <m>y = -1/\sqrt{2}(x-\sqrt{2})+1</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>t=\pi/4</m>: Tangent line:
+                      <m>y=\sqrt{2}(x-\sqrt{2})+1</m>; normal line:
+                      <m>y = -1/\sqrt{2}(x-\sqrt{2})+1</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1412,20 +1368,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = -2\cos(2t)\csc(t)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = -2\cos(2t)\csc(t)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>t=\pi/4</m>: Tangent line:
-                    <m>y=1</m>; normal line: <m>x=\sqrt{2}/2</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>t=\pi/4</m>: Tangent line:
+                      <m>y=1</m>; normal line: <m>x=\sqrt{2}/2</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1444,20 +1402,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = \frac{\cos(t) \sin(2t)+\sin(t) \cos(2t)}{-\sin(t) \sin(2t)+2\cos(t) \cos(2t)}</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = \frac{\cos(t) \sin(2t)+\sin(t) \cos(2t)}{-\sin(t) \sin(2t)+2\cos(t) \cos(2t)}</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Tangent line: <m>y=x-\sqrt{2}</m>;
-                    normal line: <m>y=-x-\sqrt{2}</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Tangent line: <m>y=x-\sqrt{2}</m>;
+                      normal line: <m>y=-x-\sqrt{2}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1475,20 +1435,22 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\frac{dy}{dx} = \frac{\sin(t)+10 \cos(t)}{\cos(t)-10 \sin(t)}</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\frac{dy}{dx} = \frac{\sin(t)+10 \cos(t)}{\cos(t)-10 \sin(t)}</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Tangent line: <m>y=-x/10+e^{\pi/20}</m>; normal line:
-                    <m>y=10x+e^{\pi/20}</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Tangent line: <m>y=-x/10+e^{\pi/20}</m>; normal line:
+                      <m>y=10x+e^{\pi/20}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1501,7 +1463,7 @@
           In the following exercises,
           find <m>t</m>-values where the curve defined by the given parametric equations has a horizontal tangent line.
           Note: these are the same equations as in <xref ref="ex_09_03_ex_05">Exercises</xref>
-          <mdash /> <xref ref="ex_09_03_ex_12"></xref>.
+          <mdash/> <xref ref="ex_09_03_ex_12"/>.
         </p>
       </introduction>
 
@@ -1539,7 +1501,7 @@
             </statement>
             <solution>
               <p>
-                <m>t=0</m> (though this uses a one<ndash />sided limit,
+                <m>t=0</m> (though this uses a one<ndash/>sided limit,
                 as <m>x(t)</m> is not defined for <m>t\lt 0</m>.
               </p>
             </solution>
@@ -1565,7 +1527,7 @@
               </p>
 
               <p>
-                <m>t\in\big\{</m><var name="$hort" width="20" /><m>\big\}</m>
+                <m>t\in\big\{</m><var name="$hort" width="20"/><m>\big\}</m>
               </p>
 
               <p>
@@ -1574,7 +1536,7 @@
               </p>
 
               <p>
-                <var name="$points" width="40" />
+                <var name="$points" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1641,7 +1603,7 @@
               </p>
 
               <p>
-                <m>t\in\big\{</m><var name="$hort" width="20" /><m>\big\}</m>
+                <m>t\in\big\{</m><var name="$hort" width="20"/><m>\big\}</m>
               </p>
 
               <p>
@@ -1650,7 +1612,7 @@
               </p>
 
               <p>
-                <var name="$points" width="40" />
+                <var name="$points" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -1728,11 +1690,11 @@
               </p>
 
               <p>
-                <m>t_0=</m><var name="$t0" width="5" />
+                <m>t_0=</m><var name="$t0" width="5"/>
               </p>
 
               <p>
-                <m>\lim\limits_{t\to t_0}\lz{y}{x}=</m><var name="$L" width="5" />
+                <m>\lim\limits_{t\to t_0}\lz{y}{x}=</m><var name="$L" width="5"/>
               </p>
             </statement>
         </webwork>
@@ -1756,11 +1718,11 @@
               </p>
 
               <p>
-                <m>t_0=</m><var name="$t0" width="5" />
+                <m>t_0=</m><var name="$t0" width="5"/>
               </p>
 
               <p>
-                <m>\lim\limits_{t\to t_0}\lz{y}{x}=</m><var name="$L" width="5" />
+                <m>\lim\limits_{t\to t_0}\lz{y}{x}=</m><var name="$L" width="5"/>
               </p>
             </statement>
         </webwork>
@@ -1816,7 +1778,7 @@
           Find <m>\frac{d^2y}{dx^2}</m>,
           then determine the intervals on which the graph of the curve is concave up/down.
           Note: these are the same equations as in <xref ref="ex_09_03_ex_05">Exercises</xref>
-          <mdash /> <xref ref="ex_09_03_ex_12"></xref>.
+          <mdash/> <xref ref="ex_09_03_ex_12"/>.
         </p>
       </introduction>
 
@@ -1883,17 +1845,17 @@
               </p>
 
               <p>
-                <m>\lzn{2}{y}{x}=</m><var name="$ypp" width="40" />
+                <m>\lzn{2}{y}{x}=</m><var name="$ypp" width="40"/>
               </p>
 
               <p>
-                The curve is concave up for <m>t</m> in the interval(s) <var name="$up" width="20" />.
+                The curve is concave up for <m>t</m> in the interval(s) <var name="$up" width="20"/>.
                 (If there is more than one interval,
                 use commas to separate them.)
               </p>
 
               <p>
-                The curve is concave down for <m>t</m> in the interval(s) <var name="$down" width="20" />.
+                The curve is concave down for <m>t</m> in the interval(s) <var name="$down" width="20"/>.
                 (If there is more than one interval,
                 use commas to separate them.)
               </p>
@@ -1969,17 +1931,17 @@
               </p>
 
               <p>
-                <m>\lzn{2}{y}{x}=</m><var name="$ypp" width="40" />
+                <m>\lzn{2}{y}{x}=</m><var name="$ypp" width="40"/>
               </p>
 
               <p>
-                The curve is concave up for <m>t</m> in the interval(s) <var name="$up" width="40" />.
+                The curve is concave up for <m>t</m> in the interval(s) <var name="$up" width="40"/>.
                 (If there is more than one interval,
                 use commas to separate them.)
               </p>
 
               <p>
-                The curve is concave down for <m>t</m> in the interval(s) <var name="$down" width="40" />.
+                The curve is concave down for <m>t</m> in the interval(s) <var name="$down" width="40"/>.
                 (If there is more than one interval,
                 use commas to separate them.)
               </p>
@@ -2058,7 +2020,7 @@
               </p>
 
               <p>
-                <var name="$length" width="10" />
+                <var name="$length" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2083,11 +2045,11 @@
               </p>
 
               <p>
-                On <m>[0,2\pi]</m>, the length is <var name="$length1" width="20" />.
+                On <m>[0,2\pi]</m>, the length is <var name="$length1" width="20"/>.
               </p>
 
               <p>
-                On <m>[2\pi,4\pi]</m>, the length is <var name="$length2" width="20" />.
+                On <m>[2\pi,4\pi]</m>, the length is <var name="$length2" width="20"/>.
               </p>
             </statement>
         </webwork>
@@ -2109,7 +2071,7 @@
               </p>
 
               <p>
-                <var name="$length" width="10" />
+                <var name="$length" width="10"/>
               </p>
             </statement>
         </webwork>
@@ -2253,19 +2215,21 @@
                 <m>x=2\cos(t)</m>,<m>y=2\sin(t)</m> about:
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    the <m>x</m>-axis and
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      the <m>x</m>-axis and
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    the <m>y</m>-axis.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      the <m>y</m>-axis.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
               <p>
@@ -2350,4 +2314,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

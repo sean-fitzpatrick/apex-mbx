@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_conic_sections">
   <title>Conic Sections</title>
   <introduction>
     <p>
       The ancient Greeks recognized that interesting shapes can be formed by intersecting a plane with a
-      <em>double napped</em> cone (i.e., two identical cones placed tip<ndash />to<ndash />tip as shown in the following figures).
+      <em>double napped</em> cone (i.e., two identical cones placed tip<ndash/>to<ndash/>tip as shown in the following figures).
       As these shapes are formed as sections of conics,
       they have earned the official name <q>conic sections.</q>
     </p>
@@ -19,23 +18,51 @@
       In each of these cases, the plane does not intersect the tips of the cones
       (usually taken to be the origin).
     </p>
-    <!--
-    <caption>Conic Sections</caption>
-    -->
-    <sidebyside>
-      <figure>
-        <caption>Parabola &amp; Ellipse &amp;  Circle &amp;   Hyperbola</caption>
-        &amp;
-        &amp;
-        &amp;
-      </figure>
 
-      <figure>
-        <caption>Point&amp;  Line &amp;  Crossed Lines</caption>
-        &amp;
-        &amp;
-      </figure>
-    </sidebyside>
+    <figure xml:id="fig-conic-sections">
+      <caption>Conic Sections</caption>
+      <sbsgroup>
+        <sidebyside widths="24% 24% 24% 24%">
+          <figure>
+            <caption>Parabola</caption>
+            <image source="images/conic_parabola.png"/>
+          </figure>
+
+          <figure>
+            <caption>Ellipse</caption>
+            <image source="images/conic_ellipse.png"/>
+          </figure>
+
+          <figure>
+            <caption>Circle</caption>
+            <image source="images/conic_circle.png"/>
+          </figure>
+
+          <figure>
+            <caption>Hyperbola</caption>
+            <image source="images/conic_hyperbola.png"/>
+          </figure>
+        </sidebyside>
+
+        <sidebyside widths="24% 24% 24%">
+          <figure>
+            <caption>Point</caption>
+            <image source="images/conic_singlept.png"/>
+          </figure>
+
+          <figure>
+            <caption>Line</caption>
+            <image source="images/conic_oneline.png"/>
+          </figure>
+
+          <figure>
+            <caption>Crossed Lines</caption>
+            <image source="images/conic_crossedlines.png"/>
+          </figure>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
 
     <p>
       When the plane does contain the origin,
@@ -57,7 +84,7 @@
       While the above geometric constructs define the conics in an intuitive,
       visual way,
       these constructs are not very helpful when trying to analyze the shapes algebraically or consider them as the graph of a function.
-      It can be shown that all conics can be defined by the general second<ndash />degree equation
+      It can be shown that all conics can be defined by the general second<ndash/>degree equation
       <me>
         Ax^2+Bxy+Cy^2+Dx+Ey+F=0
       </me>.
@@ -76,7 +103,7 @@
     </p>
 
     <p>
-      <em> Parabolas</em>
+      <em>Parabolas</em>
     </p>
 
     <definition xml:id="def_parabola">
@@ -115,26 +142,26 @@
       <image xml:id="img_parabola_def">
         <description></description>
         <latex-image>
-        <![CDATA[
+
         \begin{tikzpicture}[scale=.8]
  
-	\draw [thick,{\colorone}] (-3,-1) node [above,black,shift={(12pt,0pt)}] {\scriptsize Directrix} %node [below,black,shift={(12pt,0pt)}] {\scriptsize $y=-p$}
-	-- (3,-1);
- 
-	\filldraw [black] (0,1) circle (1.5pt) node [above left] {\scriptsize Focus};% node [below ] {\scriptsize $F=(0,p)$};
-	\draw [thick,{\colortwo}](-3,2.25) parabola bend (0,0) (3,2.25);
-	\filldraw (0,0) circle (1.5pt) node [below left] {\scriptsize Vertex};
-	\draw (.3,.5) node[] {\scriptsize $\left.\rule{0pt}{12pt}\right\}p$};
-	\draw (.3,-.5) node[] {\scriptsize $\left.\rule{0pt}{12pt}\right\}p$};
- 
-	\coordinate (A) at (2.5,1.5625);
-	\filldraw [black] (A) circle (1.5pt) node [right] {\scriptsize $(x,y)$};
-	\draw [thick,dashed](0,1) -- (A) node [pos=.5,above] {\scriptsize $d$} -- (2.5,-1) node [pos=.5,right] {\scriptsize $d$};
- 
-	\draw [thick,dashed] (0,-1.5) -- node [pos=.85,above,rotate=90] {\scriptsize Axis of} node [pos=.85,below,rotate=90] {\scriptsize Symmetry} (0,3.2);
- 
+        \draw [thick,firstcolor] (-3,-1) node [above,black,shift={(12pt,0pt)}] {\scriptsize Directrix} -- (3,-1);
+        \filldraw [black] (0,1) circle (1.5pt) node [above left] {\scriptsize Focus};
+
+        \draw [thick,secondcolor] (-3,2.25) parabola bend (0,0) (3,2.25);
+        \filldraw (0,0) circle (1.5pt) node [below left] {\scriptsize Vertex};
+
+        \draw (.3,.5) node[] {\scriptsize $\left.\rule{0pt}{12pt}\right\}p$};
+        \draw (.3,-.5) node[] {\scriptsize $\left.\rule{0pt}{12pt}\right\}p$};
+
+        \coordinate (A) at (2.5,1.5625);
+
+        \filldraw [black] (A) circle (1.5pt) node [right] {\scriptsize $(x,y)$};
+        \draw [thick,dashed] (0,1) -- (A) node [pos=.5,above] {\scriptsize $d$} -- (2.5,-1) node [pos=.5,right] {\scriptsize $d$};
+        \draw [thick,dashed] (0,-1.5) -- node [pos=.85,above,rotate=90] {\scriptsize Axis of} node [pos=.85,below,rotate=90] {\scriptsize Symmetry} (0,3.2);
+
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_parabola_def.tex END -->
@@ -146,7 +173,7 @@
       The line through the focus,
       perpendicular to the directrix,
       is the <em>axis of symmetry</em>,
-      as the portion of the parabola on one side of this line is the mirror<ndash />image of the portion on the opposite side.
+      as the portion of the parabola on one side of this line is the mirror<ndash/>image of the portion on the opposite side.
     </p>
 
     <p>
@@ -192,29 +219,31 @@
 
     <insight xml:id="idea_parabola">
       <title>General Equation of a Parabola</title>
-      <ol>
-        <li>
-          <p>
-            <em>Vertical Axis of Symmetry:</em>
-            The equation of the parabola with vertex at <m>(h,k)</m> and directrix <m>y=k-p</m> in standard form is
-            <me>
-              y=\frac{1}{4p}(x-h)^2+k
-            </me>.
-            The focus is at <m>(h,k+p)</m>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <em>Vertical Axis of Symmetry:</em>
+              The equation of the parabola with vertex at <m>(h,k)</m> and directrix <m>y=k-p</m> in standard form is
+              <me>
+                y=\frac{1}{4p}(x-h)^2+k
+              </me>.
+              The focus is at <m>(h,k+p)</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <em>Horizontal Axis of Symmetry:</em>
-            The  equation of the parabola with vertex at <m>(h,k)</m> and directrix <m>x=h-p</m> in standard form is
-            <me>
-              x=\frac{1}{4p}(y-k)^2+h
-            </me>.
-            The focus is at <m>(h+p,k)</m>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              <em>Horizontal Axis of Symmetry:</em>
+              The  equation of the parabola with vertex at <m>(h,k)</m> and directrix <m>x=h-p</m> in standard form is
+              <me>
+                x=\frac{1}{4p}(y-k)^2+h
+              </me>.
+              The focus is at <m>(h+p,k)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
 
       <p>
         Note: <m>p</m> is not necessarily a positive number.
@@ -251,30 +280,20 @@
           <image xml:id="img_conic1">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-            %			xtick={1,2,3,4},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			%ytick={1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-6.5,ymax=2.9,%
-			xmin=-3.5,xmax=5.5%
+
+            \begin{axis}[
+            ymin=-6.5,ymax=2.9,
+            xmin=-3.5,xmax=5.5
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-3:5] {-.5*(x-1)^2+2.5};
-            %\filldraw (axis cs:-1,10) node [shift={(0pt,-20pt)}] {\tiny \parbox{50pt}{\centering c. down \vskip 2pt $\Rightarrow$ rel. max}} circle (1pt);
-            %\filldraw (axis cs:1,-10) node [shift={(0pt,20pt)}] {\tiny \parbox{50pt}{\centering c. up \vskip 2pt $\Rightarrow$ rel. min}} circle (1pt);
-            %\filldraw (axis cs:1.16,11.04) circle (1pt);
+            \addplot+ [-,domain=-3:5,samples=40] {-.5*(x-1)^2+2.5};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
           <!-- figures/fig_conic1.tex END -->
@@ -322,32 +341,25 @@
           <image xml:id="img_conic2">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-10,-5,5,10},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			%ytick={1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-5.5,ymax=14.5,%
-			xmin=-11,xmax=14%
+
+            \begin{axis}[
+            ymin=-5.5,ymax=14.5,
+            xmin=-11,xmax=14
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-5:14] ({x^2/8-x+1},x);
-            \addplot [thick, {\colortwo},smooth,domain=-5:14] (-3,x);
+            \addplot+ [-,domain=-5:14,samples=40] ({x^2/8-x+1},x);
+            \addplot+ [solid,-,domain=-5:14] (-3,x);
 
-            \draw [dashed,{\colorone!70},thick] (axis cs:-3,12) -- node [above,pos=.5,black] {\scriptsize 10} (axis cs:7,12) -- node [pos=.6,right,black] {\scriptsize 10} (axis cs: 1,4);
-            \filldraw [{\colortwo}] (axis cs: 1,4) circle (1.5pt)
-												(axis cs: 7,12) circle (1.5pt);
+            \draw [dashed,firstcolor!70,thick] (axis cs:-3,12) -- node [above,pos=.5,black] {\scriptsize 10} (axis cs:7,12) -- node [pos=.6,right,black] {\scriptsize 10} (axis cs: 1,4);
+
+            \filldraw [secondcolor] (axis cs: 1,4) circle (1.5pt) (axis cs: 7,12) circle (1.5pt);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
           <!-- figures/fig_conic2.tex END -->
@@ -374,10 +386,10 @@
     <p>
       One of the fascinating things about the nondegenerate conic sections is their reflective properties.
       Parabolas have the following reflective property:
- 
+
 	Any ray emanating from the focus that intersects the parabola reflects off along a line perpendicular to the directrix.
- 
- 
+
+
 	This is illustrated in <xref ref="fig_conic_reflect">Figure</xref>. The following theorem states this more rigorously.
     </p>
 
@@ -387,42 +399,33 @@
       <image xml:id="img_conic_reflect">
         <description></description>
         <latex-image>
-        <![CDATA[
+
         \begin{tikzpicture}
-        \begin{axis}[%
-        axis y line=none,axis x line=none,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-10,-5,5,10},%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={1},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-6.5,ymax=14.5,%
-			xmin=-4,xmax=12%
+        
+        \begin{axis}[
+        axis y line=none,
+        axis x line=none,
+        ymin=-6.5,ymax=14.5,
+        xmin=-4,xmax=12
         ]
 
         \coordinate (focus) at (axis cs: 1,4);
 
-        \addplot [very thick, {\colorone},smooth,domain=-6:14] ({x^2/8-x+1},x);
-        \addplot [very thick, {\colortwo},smooth,domain=-6:14] (-3,x);
+        \addplot+ [-,domain=-6:14,samples=40] ({x^2/8-x+1},x);
+        \addplot+ [solid,-,domain=-6:14] (-3,x);
 
-        \draw [thick]%(axis cs: 12,10) -- (axis cs: 3.5,10) -- (focus)
-			(axis cs: 12,12) -- (axis cs: 7,12) -- (focus)
-			(axis cs: 12,8) -- (axis cs: 1,8) -- (focus)
-			(axis cs: 12,3) -- (axis cs: -.875,3)
-			(axis cs: -.875,3)-- (focus)
-			%(axis cs: 12,0) -- (axis cs: 1,0) -- (focus)
-			(axis cs: 12,-3) -- (axis cs: 5.125,-3) -- (focus);
+        \draw [thick] (axis cs: 12,12) -- (axis cs: 7,12) -- (focus)
+                      (axis cs: 12,8) -- (axis cs: 1,8) -- (focus)
+                      (axis cs: 12,3) -- (axis cs: -.875,3)
+                      (axis cs: -.875,3) -- (focus)
+                      (axis cs: 12,-3) -- (axis cs: 5.125,-3) -- (focus);
  
-        \filldraw [{\colortwo}] (focus) circle (1.5pt);
+        \filldraw [secondcolor] (focus) circle (1.5pt);
 
         \end{axis}
 
-        %
-        %
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_conic_reflect.tex END -->
@@ -436,24 +439,26 @@
           The tangent line to the parabola at <m>P</m> makes equal angles with the following two lines:
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The line containing <m>P</m> and the focus <m>F</m>, and
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The line containing <m>P</m> and the focus <m>F</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The line perpendicular to the directrix through <m>P</m>.
+            <li>
+              <p>
+                The line perpendicular to the directrix through <m>P</m>.
 
-              <idx>
-                <h>parabola</h><h>reflective property</h>
-              </idx>
+                <idx>
+                  <h>parabola</h><h>reflective property</h>
+                </idx>
 
-            </p>
-          </li>
-        </ol>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -510,31 +515,31 @@
       <image xml:id="img_ellipse_def">
         <description></description>
         <latex-image>
-        <![CDATA[
+
         \begin{tikzpicture}
- 
-	\draw [thick,dashed] (0,0) circle [x radius=2,y radius=1.5];
-	\filldraw (1.3,0) circle (1.5pt)
-						(-1.3,0) circle (1.5pt);
- 
-	\draw  (1.3,0) -- node [right,pos=.5] {\scriptsize $d_1$} (1.39,1.07) -- node [above,pos=.5] {\scriptsize $d_2$} (-1.3,0);
-	\draw (0,-.7) node {\scriptsize $d_1+d_2=$ constant};
- 
-	\begin{scope}[shift={(1.9cm,1.225cm)}]
-	\begin{scope}[rotate=120]
-	\begin{scope}[xscale=.25,yscale=.5]
- 
-	\draw (0,0) -- (0,-2) -- (1,-2)--(1,0) -- (.5,1) -- cycle;
-	\draw [fill=black] (.3,.6) -- ( .5,1)--(.7,.6)--cycle;
- 
-	\draw (0,0) cos (.5,-.1) sin (1,0);
- 
- 
-	\end{scope}
-	\end{scope}
-	\end{scope}
+
+        \draw [thick,dashed] (0,0) circle [x radius=2,y radius=1.5];
+
+        \filldraw (1.3,0) circle (1.5pt)
+                  (-1.3,0) circle (1.5pt);
+      
+        \draw (1.3,0) -- node [right,pos=.5] {\scriptsize $d_1$} (1.39,1.07) -- node [above,pos=.5] {\scriptsize $d_2$} (-1.3,0);
+        \draw (0,-.7) node {\scriptsize $d_1+d_2=$ constant};
+
+        \begin{scope}[shift={(1.9cm,1.225cm)}]
+          \begin{scope}[rotate=120]
+            \begin{scope}[xscale=.25,yscale=.5]
+          
+              \draw (0,0) -- (0,-2) -- (1,-2)--(1,0) -- (.5,1) -- cycle;
+              \draw [fill=black] (.3,.6) -- ( .5,1)--(.7,.6)--cycle; 
+              \draw (0,0) cos (.5,-.1) sin (1,0); 
+          
+            \end{scope}
+          \end{scope}
+        \end{scope}
+
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_ellipse_def.tex END -->
@@ -584,35 +589,30 @@
       <image xml:id="img_ellipse_label">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
+        
+        \begin{tikzpicture}[&gt;=latex]
  
-	\draw [thick,{\colorone}] (0,0) circle [x radius=2,y radius=1.5];
- 
- 
-	\draw [thick,dashed] (-2.4,0) -- (2.4,0)
-												(0,1.8) -- (0,-1.9);
- 
-	\filldraw [{\colortwo}] (1.3,0) circle (1.5pt)
-						(-1.3,0) circle (1.5pt);
-	\draw [->,>=latex] (-2,-2) node [fill=white] {\scriptsize Major axis} -- (-2.2,-.1);
- 
-	\draw [->,>=latex] (2,-2) node [fill=white] {\scriptsize Minor axis} -- (.1,-1.8);
- 
-	\draw [->,>=latex] 	(-2,2)  -- (-2,.3);
-	\draw [->,>=latex] 	(-2,2) node [fill=white] {\scriptsize Vertices} -- (1.9,.1);
- 
-	\draw [->,>=latex] 	(2,2)  -- (-1.2,.1);
-	\draw [->,>=latex] 	(2,2) node [fill=white] {\scriptsize Foci} -- (1.3,.1);
-	\filldraw [{\colorone}] (2,0) circle (1.5pt)
-						(-2,0) circle (1.5pt);
- 
-	\draw (-1,-.25) node {\scriptsize $\underbrace{\rule{1.8cm}{0pt}}_a$};
-	\draw (.65,-.25) node {\scriptsize $\underbrace{\rule{1.1cm}{0pt}}_c$};
-	%\draw (.25,.75) node [fill=white] {\scriptsize $\left.\rule[-.65cm]{0pt}{1.3cm}\right\}b$};
-	\draw (-.25,.75) node [] {\scriptsize $b\left\{\rule[-.65cm]{0pt}{1.3cm}\right.$};
+        \draw [thick,firstcolor] (0,0) circle [x radius=2,y radius=1.5];
+        \draw [thick,dashed] (-2.4,0) -- (2.4,0) (0,1.8) -- (0,-1.9);
+      
+        \filldraw [secondcolor] (1.3,0) circle (1.5pt) (-1.3,0) circle (1.5pt);
+
+        \draw [-&gt;] (-2,-2) node [fill=white] {\scriptsize Major axis} -- (-2.2,-.1);
+        \draw [-&gt;] (2,-2) node [fill=white] {\scriptsize Minor axis} -- (.1,-1.8);      
+        \draw [-&gt;] (-2,2)  -- (-2,.3);
+        \draw [-&gt;] (-2,2) node [fill=white] {\scriptsize Vertices} -- (1.9,.1);      
+        \draw [-&gt;] (2,2)  -- (-1.2,.1);
+        \draw [-&gt;] (2,2) node [fill=white] {\scriptsize Foci} -- (1.3,.1);
+
+        \filldraw [firstcolor] (2,0) circle (1.5pt)
+                  (-2,0) circle (1.5pt);
+
+        \draw (-1,-.25) node {\scriptsize $\underbrace{\rule{1.8cm}{0pt}}_a$};
+        \draw (.65,-.25) node {\scriptsize $\underbrace{\rule{1.1cm}{0pt}}_c$};
+        \draw (-.25,.75) node [] {\scriptsize $b\left\{\rule[-.65cm]{0pt}{1.3cm}\right.$};
+
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_ellipse_label.tex END -->
@@ -628,8 +628,8 @@
       The <q>constant sum of distances</q>
       that defines the ellipse is the length of the major axis,
       i.e., <m>2a</m>.
- 
-	Allowing for the shifting of the ellipse gives the following standard equations.
+
+	    Allowing for the shifting of the ellipse gives the following standard equations.
     </p>
 
     <insight xml:id="idea_ellipse">
@@ -638,20 +638,22 @@
         The equation of an ellipse centered at <m>(h,k)</m> with major axis of length <m>2a</m> and minor axis of length <m>2b</m> in standard form is:
       </p>
 
-      <ol>
-        <li>
-          <p>
-            <em>Horizontal major axis:</em>
-            <m>\ds \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1</m>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <em>Horizontal major axis:</em>
+              <m>\ds \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <em>Vertical major axis:</em> <m>\ds \frac{(x-h)^2}{b^2}+\frac{(y-k)^2}{a^2}=1</m>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              <em>Vertical major axis:</em> <m>\ds \frac{(x-h)^2}{b^2}+\frac{(y-k)^2}{a^2}=1</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
 
       <p>
         The foci lie along the major axis,
@@ -688,30 +690,21 @@
           <image xml:id="img_conic3">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-6,-4,-2,2,4,6},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-4,-2,2,4,6},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-4.9,ymax=6.9,%
-			xmin=-6.9,xmax=6.9%
+            \begin{axis}[
+            ytick={-4,-2,2,4,6},
+            ymin=-4.9,ymax=6.9,
+            xmin=-6.9,xmax=6.9
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=0:360,samples=60] ({2*cos(x)-3},{5*sin(x)+1});
-            \filldraw (axis cs:-3,1)  circle (1.5pt);
-            %\filldraw (axis cs:1,-10) node [shift={(0pt,20pt)}] {\tiny \parbox{50pt}{\centering c. up \vskip 2pt $\Rightarrow$ rel. min}} circle (1pt);
-            %\filldraw (axis cs:1.16,11.04) circle (1pt);
+            \addplot+ [-,domain=0:360,samples=60] ({2*cos(x)-3},{5*sin(x)+1});
+            \addplot [soliddot,color=black,fill=black] coordinates {(-3,1)};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
           <!-- figures/fig_conic3.tex END -->
@@ -767,35 +760,29 @@
           <image xml:id="img_conic4">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-2,-1,1,2,3,4},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-2,ymax=5,%
-			xmin=-3,xmax=5%
+
+            \begin{axis}[
+            xtick={-2,-1,1,2,3,4},
+            ytick={-1,1,2,3,4},
+            ymin=-2,ymax=5,
+            xmin=-3,xmax=5
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=0:360,samples=60] ({3*cos(x)+1},{2*sin(x)+2});
-            \filldraw (axis cs:1,2)  circle (1.5pt)
-					(axis cs:3.24,2) circle (1pt)
-					(axis cs:-1.24,2) circle (1pt);
- 
-            \filldraw [{\colorone}] (axis cs: 4,2) circle (1.5pt)
-												(axis cs: -2,2) circle (1.5pt);
-            %\filldraw (axis cs:1,-10) node [shift={(0pt,20pt)}] {\tiny \parbox{50pt}{\centering c. up \vskip 2pt $\Rightarrow$ rel. min}} circle (1pt);
-            %\filldraw (axis cs:1.16,11.04) circle (1pt);
+            \addplot+ [-,domain=0:360,samples=60] ({3*cos(x)+1},{2*sin(x)+2});
+
+            \filldraw (axis cs:1,2) circle (1.5pt) 
+                      (axis cs:3.24,2) circle (1pt) 
+                      (axis cs:-1.24,2) circle (1pt);
+
+            \filldraw [firstcolor] (axis cs: 4,2) circle (1.5pt) 
+                                   (axis cs: -2,2) circle (1.5pt);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
           <!-- figures/fig_conic4.tex END -->
@@ -831,142 +818,128 @@
     <figure xml:id="fig_ellipse_ecc">
       <caption>Understanding the eccentricity of an ellipse.</caption>
       <sidebyside>
-        <figure>
-          <caption>(a)</caption>
+        <figure xml:id="fig_ellipse_ecca">
+          <caption/>
         <!-- START figures/fig_ellipse_ecca.tex -->
           <image xml:id="img_ellipse_ecca">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.35,xmax=1.35%
+
+            \begin{axis}[
+            xtick={-1,1},
+            ytick={-1,1},
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.35,xmax=1.35
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=0:360,samples=60] ({cos(x)},{sin(x)});
-            \filldraw (axis cs:0,0)  circle (1.5pt);
+            \addplot+ [-,domain=0:360,samples=60] ({cos(x)},{sin(x)});
+
+            \filldraw (axis cs:0,0) circle (1.5pt);
 
             \draw (axis cs:.8,-.9) node {\scriptsize $e=0$};
-            %\draw (axis cs:0,0) circle (49pt);
- 
+
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_ecca.tex END -->
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
+        <figure xml:id="fig_ellipse_eccb">
+          <caption/>
         <!-- START figures/fig_ellipse_eccb.tex -->
           <image xml:id="img_ellipse_eccb">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.35,xmax=1.35%
+
+            \begin{axis}[
+            xtick={-1,1},
+            ytick={-1,1},
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.35,xmax=1.35
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=0:360,samples=60] ({cos(x)},{.95*sin(x)});
+            \addplot+ [-,domain=0:360,samples=60] ({cos(x)},{.95*sin(x)});
+
             \filldraw (axis cs:.3,0)  circle (1.5pt)
-					(axis cs:-.3,0)  circle (1.5pt);
+					            (axis cs:-.3,0)  circle (1.5pt);
 
             \draw (axis cs:.8,-.9) node {\scriptsize $e=0.3$}; 
+
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_eccb.tex END -->
         </figure>
 
-        <figure>
-          <caption>(c)</caption>
+        <figure xml:id="fig_ellipse_eccc">
+          <caption/>
         <!-- START figures/fig_ellipse_eccc.tex -->
           <image xml:id="img_ellipse_eccc">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.35,xmax=1.35%
+
+            \begin{axis}[
+            xtick={-1,1},
+            ytick={-1,1},
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.35,xmax=1.35
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=0:360,samples=60] ({cos(x)},{.6*sin(x)});
-            \filldraw (axis cs:.8,0)  circle (1.5pt)
-					(axis cs:-.8,0)  circle (1.5pt);
+            \addplot+ [-,domain=0:360,samples=60] ({cos(x)},{.6*sin(x)});
 
-            \draw (axis cs:.8,-.9) node {\scriptsize $e=0.8$}; 
+            \filldraw (axis cs:.8,0) circle (1.5pt)
+				            	(axis cs:-.8,0) circle (1.5pt);
+
+            \draw (axis cs:.8,-.9) node {\scriptsize $e=0.8$};
+
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_eccc.tex END -->
         </figure>
 
-        <figure>
-          <caption>(d)</caption>
+        <figure xml:id="fig_ellipse_eccd">
+          <caption/>
         <!-- START figures/fig_ellipse_eccd.tex -->
           <image xml:id="img_ellipse_eccd">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.35,xmax=1.35%
+
+            \begin{axis}[
+            xtick={-1,1},
+            ytick={-1,1},
+            ymin=-1.1,ymax=1.1,
+            xmin=-1.35,xmax=1.35
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=0:360,samples=60] ({cos(x)},{.141*sin(x)});
-            \filldraw (axis cs:.99,0)  circle (1.5pt)
-					(axis cs:-.99,0)  circle (1.5pt);
+            \addplot+ [-,domain=0:360,samples=60] ({cos(x)},{.141*sin(x)}) ;
 
             \draw (axis cs:.8,-.9) node {\scriptsize $e=0.99$}; 
+
+            \filldraw (axis cs:.99,0) circle (1.5pt)
+					            (axis cs:-.99,0) circle (1.5pt);
+            
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_ellipse_eccd.tex END -->
@@ -1005,7 +978,7 @@
       It was long assumed that planets had circular orbits.
       This is known to be incorrect;
       the orbits are elliptical.
-      Earth has an eccentricity of <m>0.0167</m> <mdash /> it has a nearly circular orbit.
+      Earth has an eccentricity of <m>0.0167</m> <mdash/> it has a nearly circular orbit.
       Mercury's orbit is the most eccentric, with <m>e=0.2056</m>.
       (Pluto's eccentricity is greater, at <m>e=0.248</m>,
       the greatest of all the currently known dwarf planets.)
@@ -1028,21 +1001,21 @@
       <image xml:id="img_ellipse_reflect">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[scale=1.2]%[width=\marginparwidth+25pt]
+        
+        \begin{tikzpicture}[scale=1.2,&gt;=latex]
 
-        \draw [thick] (0,0) circle[x radius=2cm,y radius = 1.2cm];
+        \draw [thick] (0,0) circle [x radius=2cm,y radius = 1.2cm];
 
-        \filldraw (1.6,0)  circle (1.5pt) node [above left] {\scriptsize $F_2$}
-					(-1.6,0)  circle (1.5pt) node [above] {\scriptsize $F_1$};
+        \filldraw (1.6,0) circle (1.5pt) node [above left] {\scriptsize $F_2$}
+				        	(-1.6,0) circle (1.5pt) node [above] {\scriptsize $F_1$};
  
-        \draw[->,>=latex,{\colorone},thick] (1.6,0) -- ({2*cos(30)},{1.2*sin(30)});% -- (-1.6,0);
-        \draw[->,>=latex,{\colorone},thick]({2*cos(30)},{1.2*sin(30)}) -- (-1.55,0);
-        \draw[->,>=latex,{\colortwo},thick] (-1.6,0) -- ({2*cos(250)},{1.2*sin(250)});% -- (-1.6,0);
-        \draw[->,>=latex,{\colortwo},thick]  ({2*cos(250)},{1.2*sin(250)}) -- (1.55,0);
+        \draw [-&gt;,firstcolor,thick] (1.6,0) -- ({2*cos(30)},{1.2*sin(30)});
+        \draw [-&gt;,firstcolor,thick] ({2*cos(30)},{1.2*sin(30)}) -- (-1.55,0);
+        \draw [-&gt;,secondcolor,thick] (-1.6,0) -- ({2*cos(250)},{1.2*sin(250)});
+        \draw [-&gt;,secondcolor,thick]  ({2*cos(250)},{1.2*sin(250)}) -- (1.55,0);
 
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_ellipse_reflect.tex END -->
@@ -1061,19 +1034,21 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The line through <m>F_1</m> and <m>P</m>, and
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The line through <m>F_1</m> and <m>P</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The line through <m>F_2</m> and <m>P</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The line through <m>F_2</m> and <m>P</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -1138,52 +1113,43 @@
       <image xml:id="img_hyperbola_def">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        axis y line=none,axis x line=none,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1},%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-3.2,ymax=3.2,%
-			xmin=-3.2,xmax=3.2%
+        
+        \begin{tikzpicture}[&gt;=latex]
+
+        \begin{axis}[
+        axis y line=none,
+        axis x line=none,
+        ymin=-3.2,ymax=3.2,
+        xmin=-3.2,xmax=3.2
         ]
 
-        \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({sec(x)},{tan(x)});
-        \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({-sec(x)},{tan(x)});
-        \filldraw (axis cs:0,0)  circle (1.5pt);
+        \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({sec(x)},{tan(x)});
+        \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({-sec(x)},{tan(x)});
 
+        \filldraw (axis cs:0,0) circle (1.5pt);
+
+        \draw [thick,dashed] (axis cs:-3.2,0) -- node [above,pos=.88] {\scriptsize Transverse} node [below,pos=.88] {\scriptsize axis} (axis cs:3.2,0)
+											       (axis cs:0,-3.2) -- node [below,rotate=90,pos=.8] {\scriptsize  axis }node [above,rotate=90,pos=.8] {\scriptsize Conjugate} (axis cs:0,3.2);
  
-
-        \draw [thick,dashed] 	(axis cs:-3.2,0) --  node [above,pos=.88] {\scriptsize Transverse} node [below,pos=.88] {\scriptsize axis}(axis cs:3.2,0)
-											(axis cs:0,-3.2) -- node [below,rotate=90,pos=.8] {\scriptsize  axis }node [above,rotate=90,pos=.8] {\scriptsize Conjugate}(axis cs:0,3.2);
+        \filldraw [firstcolor] (axis cs:1,0) circle (1.5pt)
+												       (axis cs:-1,0) circle (1.5pt);
  
-        \filldraw [{\colorone}] (axis cs:1,0)  circle (1.5pt)
-												(axis cs:-1,0)  circle (1.5pt);
- 
-        \filldraw [{\colortwo}] (axis cs:1.4,0)  circle (1.5pt) node (f1) {}
-												(axis cs:-1.4,0)  circle (1.5pt) node (f2) {};
+        \filldraw [secondcolor] (axis cs:1.4,0) circle (1.5pt)
+                                (axis cs:-1.4,0) circle (1.5pt);
 
-        \draw [->,>=latex] (axis cs: 1.25,-2.8) -- (axis cs: -1.35,-.1);
-        \draw [->,>=latex] (axis cs: 1.25,-2.8) node [fill=white] {\scriptsize Foci } -- (axis cs: 1.4,-.1); 
+        \draw [-&gt;] (axis cs: 1.25,-2.8) -- (axis cs: -1.35,-.1);
+        \draw [-&gt;] (axis cs: 1.25,-2.8) node [fill=white] {\scriptsize Foci } -- (axis cs: 1.4,-.1); 
 
-        \draw [->,>=latex] (axis cs: -1.25,-2.8) -- (axis cs: -1,-.1);
-        \draw [->,>=latex] (axis cs: -1.25,-2.8) node [fill=white] {\scriptsize Vertices} -- (axis cs: .95,-.1); 
+        \draw [-&gt;] (axis cs: -1.25,-2.8) -- (axis cs: -1,-.1);
+        \draw [-&gt;] (axis cs: -1.25,-2.8) node [fill=white] {\scriptsize Vertices} -- (axis cs: .95,-.1); 
 
         \draw (axis cs:-.5,.4) node {\scriptsize $\overbrace{\rule{18pt}{0pt}}^a$};
-
         \draw (axis cs:.7,.4) node {\scriptsize $\overbrace{\rule{25pt}{0pt}}^c$}; 
 
         \end{axis}
 
-        %
-        %
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_def.tex END -->
@@ -1200,21 +1166,23 @@
 
       </p>
 
-      <ol>
-        <li>
-          <p>
-            <em>Horizontal Transverse Axis:</em>
-            <m>\ds \frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1</m>.
-          </p>
-        </li>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <em>Horizontal Transverse Axis:</em>
+              <m>\ds \frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1</m>.
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <em>Vertical Transverse Axis:</em>
-            <m>\ds \frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2} = 1</m>.
-          </p>
-        </li>
-      </ol>
+          <li>
+            <p>
+              <em>Vertical Transverse Axis:</em>
+              <m>\ds \frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2} = 1</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
 
       <p>
         The vertices are located <m>a</m> units from the center and the foci are located <m>c</m> units from the center,
@@ -1240,33 +1208,24 @@
       <image xml:id="img_hyperbola_asy1">
         <description></description>
         <latex-image>
-        <![CDATA[
+
         \begin{tikzpicture}
-        \begin{axis}[%
-        %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-5,-3,-1,3,5,1},%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={-1,-2,2,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-3.2,ymax=3.2,%
-			xmin=-8.2,xmax=8.2%
+
+        \begin{axis}[
+        ymin=-3.2,ymax=3.2,
+        xmin=-8.2,xmax=8.2
         ]
 
-        \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({3*sec(x)},{tan(x)});
-        \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({-3*sec(x)},{tan(x)});
+        \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({3*sec(x)},{tan(x)});
+        \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({-3*sec(x)},{tan(x)});
 
-        \addplot [thick,dashed,{\colortwo},domain=-8:8] {x/3};
-        \addplot [thick,dashed,{\colortwo},domain=-8:8] {-x/3};
-												%
- 
+        \addplot [secondcurvestyle,-,domain=-8:8] {x/3};
+        \addplot [secondcurvestyle,-,domain=-8:8] {-x/3};
 
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_asy1.tex END -->
@@ -1287,43 +1246,37 @@
       <image xml:id="img_hyperbola_asy2">
         <description></description>
         <latex-image>
-        <![CDATA[
+
         \begin{tikzpicture}
-        \begin{axis}[%
-        %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,
-			extra x ticks={2,8,5},
-			extra x tick labels={$h-a$, $h+a$,$h$},
-			ytick=\empty,
-			%
-			extra y ticks={2,4,6},
-			extra y tick labels={$k-b$, $k$, $k+b$},%
-			ymin=-2.2,ymax=10.2,%
-			xmin=-3.2,xmax=13.2%
+
+        \begin{axis}[
+        xtick=\empty,
+        extra x ticks={2,8,5},
+        extra x tick labels={$h-a$, $h+a$,$h$},
+        ytick=\empty,
+        extra y ticks={2,4,6},
+        extra y tick labels={$k-b$, $k$, $k+b$},
+        ymin=-2.2,ymax=10.2,
+        xmin=-3.2,xmax=13.2
         ]
 
-        \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({3*sec(x)+5},{2*tan(x)+4});
-        \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({-3*sec(x)+5},{2*tan(x)+4});
+        \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({3*sec(x)+5},{2*tan(x)+4});
+        \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({-3*sec(x)+5},{2*tan(x)+4});
 
         \draw [thick,dashed] (axis cs: 2,6) -- (axis cs:8,6) -- (axis cs:8,2) -- (axis cs: 2,2) -- cycle;
-        \addplot [thick,dashed,{\colortwo},domain=-3:13] {2*(x-5)/3+4};
-        \addplot [thick,dashed,{\colortwo},domain=-3:13] {-2*(x-5)/3+4};
+
+        \addplot [secondcurvestyle,-,domain=-3:13] {2*(x-5)/3+4};
+        \addplot [secondcurvestyle,-,domain=-3:13] {-2*(x-5)/3+4};
 
         \filldraw (axis cs:5,4) circle (1.5pt);
-        \filldraw [{\colorone}] (axis cs:2,4) circle (1.5pt);
-        \filldraw [{\colorone}] (axis cs:8,4) circle (1.5pt);
 
-        %\draw (axis cs:2,3.5) node {\scriptsize $\overbrace{\rule{47pt}{0pt}}^{2b}$};
-        %\draw (axis cs:4,1) node {\scriptsize $2a\left\{\rule{0pt}{35pt}\right.$};
-												%
- 
+        \filldraw [firstcolor] (axis cs:2,4) circle (1.5pt);
+        \filldraw [firstcolor] (axis cs:8,4) circle (1.5pt);
 
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_asy2.tex END -->
@@ -1350,7 +1303,7 @@
         <cell>Transverse Axis }</cell>
       </row>
       <row>
-        <cell><nbsp /></cell>
+        <cell><nbsp/></cell>
       </row>
       <row>
         <cell><m>\ds y=\pm\frac ba(x-h)+k</m></cell>
@@ -1382,46 +1335,35 @@
           <image xml:id="img_conic5">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick=\empty,
-			minor x tick num=4,
-			%extra x ticks={2,8,5},
-			%extra x tick labels={$h-a$, $h+a$,$h$},
-			%ytick=\empty,
-			minor y tick num=4,
-			%extra y ticks={2,4,6},
-			%extra y tick labels={$k-b$, $k$, $k+b$},%
-			ymin=-7.2,ymax=11.2,%
-			xmin=-5.2,xmax=7.2%
+
+            \begin{axis}[
+            minor x tick num=4,
+            minor y tick num=4,
+            ymin=-7.2,ymax=11.2,
+            xmin=-5.2,xmax=7.2
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({2*tan(x)+1},{5*sec(x)+2});
-            \addplot [thick, {\colorone},smooth,domain=-70:70,samples=60] ({2*tan(x)+1},{-5*sec(x)+2});
+            \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({2*tan(x)+1},{5*sec(x)+2});
+            \addplot [firstcurvestyle,-,domain=-70:70,samples=40] ({2*tan(x)+1},{-5*sec(x)+2});
 
             \draw [thick,dashed] (axis cs: -1,7) -- (axis cs:3,7) -- (axis cs:3,-3) -- (axis cs: -1,-3) -- cycle;
-            \addplot [thick,dashed,{\colortwo},domain=-3:13] {5*(x-1)/2+2};
-            \addplot [thick,dashed,{\colortwo},domain=-3:13] {-5*(x-1)/2+2};
+
+            \addplot [secondcurvestyle,-,domain=-3:13] {5*(x-1)/2+2};
+            \addplot [secondcurvestyle,-,domain=-3:13] {-5*(x-1)/2+2};
 
             \filldraw (axis cs:1,2) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,7) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,-3) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:1,7.4) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:1,-3.4) circle (1.5pt);
 
-            %\draw (axis cs:2,3.5) node {\scriptsize $\overbrace{\rule{47pt}{0pt}}^{2b}$};
-            %\draw (axis cs:4,1) node {\scriptsize $2a\left\{\rule{0pt}{35pt}\right.$};
-												%
- 
+            \filldraw [firstcolor] (axis cs:1,7) circle (1.5pt);
+            \filldraw [firstcolor] (axis cs:1,-3) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:1,7.4) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:1,-3.4) circle (1.5pt);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
           <!-- figures/fig_conic5.tex END -->
@@ -1463,45 +1405,34 @@
           <image xml:id="img_conic6">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick=\empty,
-			%extra x ticks={2,8,5},
-			%extra x tick labels={$h-a$, $h+a$,$h$},
-			%ytick=\empty,
-			minor y tick num=4,
-			%extra y ticks={2,4,6},
-			%extra y tick labels={$k-b$, $k$, $k+b$},%
-			ymin=-10.9,ymax=11.9,%
-			xmin=-4.2,xmax=4.2%
+
+            \begin{axis}[
+            minor y tick num=4,
+            ymin=-10.9,ymax=11.9,
+            xmin=-4.2,xmax=4.2
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-75:75,samples=60] ({sec(x)},{3*tan(x)+1});
-            \addplot [thick, {\colorone},smooth,domain=-75:75,samples=60] ({-sec(x)},{3*tan(x)+1});
+            \addplot [firstcurvestyle,-,domain=-75:75,samples=40] ({sec(x)},{3*tan(x)+1});
+            \addplot [firstcurvestyle,-,domain=-75:75,samples=40] ({-sec(x)},{3*tan(x)+1});
 
             \draw [thick,dashed] (axis cs: -1,4) -- (axis cs:1,4) -- (axis cs:1,-2) -- (axis cs: -1,-2) -- cycle;
-            \addplot [thick,dashed,{\colortwo},domain=-4:4] {3*(x-0)/1+1};
-            \addplot [thick,dashed,{\colortwo},domain=-4:4] {-3*(x-0)/1+1};
+
+            \addplot [secondcurvestyle,-,domain=-4:4] {3*(x-0)/1+1};
+            \addplot [secondcurvestyle,-,domain=-4:4] {-3*(x-0)/1+1};
 
             \filldraw (axis cs:0,1) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:-1,1) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,1) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:3.2,1) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:-3.2,1) circle (1.5pt);
-
-            %\draw (axis cs:2,3.5) node {\scriptsize $\overbrace{\rule{47pt}{0pt}}^{2b}$};
-            %\draw (axis cs:4,1) node {\scriptsize $2a\left\{\rule{0pt}{35pt}\right.$};
-												%
- 
+            
+            \filldraw [firstcolor] (axis cs:-1,1) circle (1.5pt);
+            \filldraw [firstcolor] (axis cs:1,1) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:3.2,1) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:-3.2,1) circle (1.5pt);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
           <!-- figures/fig_conic6.tex END -->
@@ -1545,169 +1476,157 @@
     <figure xml:id="fig_hyperbola_ecc">
       <caption>Understanding the eccentricity of a hyperbola.</caption>
       <sidebyside>
-        <figure>
-          <caption>(a)</caption>
+        <figure xml:id="fig_hyperbola_ecca">
+          <caption/>
         <!-- START figures/fig_hyperbola_ecca.tex -->
           <image xml:id="img_hyperbola_ecca">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-10,-5,5,10},
-			minor x tick num=4,%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-10,-5,5,10},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-11.9,ymax=11.9,%
-			xmin=-11.9,xmax=11.9%
+
+            \begin{axis}[
+            xtick={-10,-5,5,10},
+            minor x tick num=4,
+            ytick={-10,-5,5,10},
+            minor y tick num=4,%extra y ticks={-5,-3,...,7},
+            ymin=-11.9,ymax=11.9,
+            xmin=-11.9,xmax=11.9
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({sec(x)},{.32*tan(x)});
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({-sec(x)},{.32*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({sec(x)},{.32*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({-sec(x)},{.32*tan(x)});
 
             \filldraw (axis cs:0,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:-1,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:1.05,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:-1.05,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.05$}; 
+            \filldraw [firstcolor] (axis cs:-1,0) circle (1.5pt);
+            \filldraw [firstcolor] (axis cs:1,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:1.05,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:-1.05,0) circle (1.5pt);
+
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.05$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_ecca.tex END -->
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
+        <figure xml:id="fig_hyperbola_eccb">
+          <caption/>
         <!-- START figures/fig_hyperbola_eccb.tex -->
           <image xml:id="img_hyperbola_eccb">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-10,-5,5,10},
-			minor x tick num=4,%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-10,-5,5,10},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-11.9,ymax=11.9,%
-			xmin=-11.9,xmax=11.9%
+
+            \begin{axis}[
+            xtick={-10,-5,5,10},
+            minor x tick num=4,
+            ytick={-10,-5,5,10},
+            minor y tick num=4,%extra y ticks={-5,-3,...,7},
+            ymin=-11.9,ymax=11.9,
+            xmin=-11.9,xmax=11.9
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({sec(x)},{1.12*tan(x)});
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({-sec(x)},{1.12*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({sec(x)},{1.12*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({-sec(x)},{1.12*tan(x)});
 
             \filldraw (axis cs:0,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:-1,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:1.5,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:-1.5,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.5$}; 
+            \filldraw [firstcolor] (axis cs:-1,0) circle (1.5pt);
+            \filldraw [firstcolor] (axis cs:1,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:1.5,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:-1.5,0) circle (1.5pt);
+
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 1.5$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_eccb.tex END -->
         </figure>
 
-        <figure>
-          <caption>(c)</caption>
+        <figure xml:id="fig_hyperbola_eccc">
+          <caption/>
         <!-- START figures/fig_hyperbola_eccc.tex -->
           <image xml:id="img_hyperbola_eccc">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-10,-5,5,10},
-			minor x tick num=4,%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-10,-5,5,10},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-11.9,ymax=11.9,%
-			xmin=-11.9,xmax=11.9%
+
+            \begin{axis}[
+            xtick={-10,-5,5,10},
+            minor x tick num=4,
+            ytick={-10,-5,5,10},
+            minor y tick num=4,%extra y ticks={-5,-3,...,7},
+            ymin=-11.9,ymax=11.9,
+            xmin=-11.9,xmax=11.9
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({sec(x)},{2.83*tan(x)});
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({-sec(x)},{2.83*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({sec(x)},{2.83*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({-sec(x)},{2.83*tan(x)});
 
             \filldraw (axis cs:0,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:-1,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:3,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:-3,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 3$}; 
+            \filldraw [firstcolor] (axis cs:-1,0) circle (1.5pt);
+            \filldraw [firstcolor] (axis cs:1,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:3,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:-3,0) circle (1.5pt);
+
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 3$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_eccc.tex END -->
         </figure>
 
-        <figure>
-          <caption>(d)</caption>
+        <figure xml:id="fig_hyperbola_eccd">
+          <caption/>
         <!-- START figures/fig_hyperbola_eccd.tex -->
           <image xml:id="img_hyperbola_eccd">
             <description></description>
             <latex-image>
-            <![CDATA[
+
             \begin{tikzpicture}
-            \begin{axis}[%
-            %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-10,-5,5,10},
-			minor x tick num=4,%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-			ytick={-10,-5,5,10},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-11.9,ymax=11.9,%
-			xmin=-11.9,xmax=11.9%
+
+            \begin{axis}[
+            xtick={-10,-5,5,10},
+            minor x tick num=4,
+            ytick={-10,-5,5,10},
+            minor y tick num=4,%extra y ticks={-5,-3,...,7},
+            ymin=-11.9,ymax=11.9,
+            xmin=-11.9,xmax=11.9
             ]
 
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({sec(x)},{9.95*tan(x)});
-            \addplot [thick, {\colorone},smooth,domain=-85:85,samples=60] ({-sec(x)},{9.95*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({sec(x)},{9.95*tan(x)});
+            \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({-sec(x)},{9.95*tan(x)});
 
             \filldraw (axis cs:0,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:-1,0) circle (1.5pt);
-            \filldraw [{\colorone}] (axis cs:1,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:10,0) circle (1.5pt);
-            \filldraw [{\colortwo}] (axis cs:-10,0) circle (1.5pt);
 
-            \draw (axis cs: 9,-6) node {\scriptsize $e = 10$}; 
+            \filldraw [firstcolor] (axis cs:-1,0) circle (1.5pt);
+            \filldraw [firstcolor] (axis cs:1,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:10,0) circle (1.5pt);
+            \filldraw [secondcolor] (axis cs:-10,0) circle (1.5pt);
+
+            \draw (axis cs: 9,-6) node {\scriptsize $e = 10$};
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+
             </latex-image>
           </image>
         <!-- figures/fig_hyperbola_eccd.tex END -->
@@ -1757,24 +1676,26 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The line through <m>F_1</m> and <m>P</m>, and
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The line through <m>F_1</m> and <m>P</m>, and
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The line through <m>F_2</m> and <m>P</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The line through <m>F_2</m> and <m>P</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
   </subsection>
 
-  <subsection xml:id="fig_hyperbola_locate">
+  <subsection>
     <title>Location Determination</title>
     <p>
       Determining the location of a known event has many practical uses
@@ -1809,44 +1730,38 @@
       <image xml:id="img_hyperbola_reflect">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        axis y line=none,axis x line=none,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-10,-5,5,10},
-			%minor x tick num=4,%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={-10,-5,5,10},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-11.9,ymax=11.9,%
-			xmin=-5,xmax=5%
+        
+        \begin{tikzpicture}[&gt;=latex]
+
+        \begin{axis}[
+        axis y line=none,
+        axis x line=none,
+        ymin=-11.9,ymax=11.9,
+        xmin=-5,xmax=5
         ]
 
-        \addplot [thick, smooth,domain=-85:85,samples=60] ({sec(x)},{2.83*tan(x)});
-        \addplot [thick,smooth,domain=-85:85,samples=60] ({-sec(x)},{2.83*tan(x)});
+        \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({sec(x)},{2.83*tan(x)});
+        \addplot [firstcurvestyle,-,domain=-85:85,samples=40] ({-sec(x)},{2.83*tan(x)});
 
         \filldraw (axis cs:0,0) circle (1.5pt);
-        \filldraw [{\colorone}] (axis cs:-1,0) circle (1.5pt);
-        \filldraw [{\colorone}] (axis cs:1,0) circle (1.5pt);
 
-        \draw [{\colortwo},thick,->,>=latex] (axis cs:-3,0) -- (axis cs: 1.4,2.83);
-        \draw [{\colortwo},thick,->,>=latex] (axis cs:1.4,2.83)--(axis cs: -1.8,8.49);
-        \draw [dashed,{\colortwo},thick] (axis cs:1.4,2.83)--(axis cs: 3,0);
-        \filldraw [] (axis cs:1.4,2.83) circle (1.5pt);
-        \filldraw [] (axis cs:3,0) circle (1.5pt) node [below] {\scriptsize $F_2$};
-        \filldraw [] (axis cs:-3,0) circle (1.5pt) node [below] {\scriptsize $F_1$};
+        \filldraw [firstcolor] (axis cs:-1,0) circle (1.5pt);
+        \filldraw [firstcolor] (axis cs:1,0) circle (1.5pt);
 
- 
+        \draw [secondcolor,thick,-&gt;] (axis cs:-3,0) -- (axis cs: 1.4,2.83);
+        \draw [secondcolor,thick,-&gt;] (axis cs:1.4,2.83) -- (axis cs: -1.8,8.49);
+
+        \draw [dashed,secondcolor,thick] (axis cs:1.4,2.83)--(axis cs: 3,0);
+
+        \filldraw (axis cs:1.4,2.83) circle (1.5pt);
+        
+        \filldraw (axis cs:3,0) circle (1.5pt) node [below] {\scriptsize $F_2$};
+        \filldraw (axis cs:-3,0) circle (1.5pt) node [below] {\scriptsize $F_1$};
 
         \end{axis}
 
-        %
-        %
         \end{tikzpicture}
-        ]]>
+
         </latex-image>
       </image>
       <!-- figures/fig_hyperbola_reflect.tex END -->
@@ -1860,7 +1775,7 @@
       and location <m>C</m> records the noise exactly 2 seconds after that.
       We are interested in the <em>difference</em> of times.
       Since the speed of sound is approximately 340 m/s, we can conclude quickly that the sound was created 340 meters closer to position <m>A</m> than position <m>B</m>.
-      If <m>A</m> and <m>B</m> are a known distance apart (as shown in <xref ref="fig_hyperbola_locate">Figure</xref> (a)),
+      If <m>A</m> and <m>B</m> are a known distance apart (as shown in <xref ref="fig_hyperbola_locatea">Figure</xref>),
       then we can determine a hyperbola on which <m>D</m> must lie.
     </p>
 
@@ -1888,133 +1803,96 @@
     <!--
     <caption>Using hyperbolas in location detection.</caption>
     -->
-    <figure>
-      <caption>(a) &amp; &amp; (b) &amp; &amp; (c)</caption>
+    <figure xml:id="fig_hyperbola_locate">
+      <caption/>
       <!-- START figures/fig_hyperbola_locate1.tex -->
-      <image xml:id="img_hyperbola_locate1">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-10,-5,5,10},
-			%minor x tick num=4,%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={-10,-5,5,10},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1100,ymax=1100,%
-			xmin=-1100,xmax=1100%
-        ]
+      <sidebyside>
+        <figure xml:id="fig_hyperbola_locatea">
+          <caption/>
+          <image xml:id="img_hyperbola_locatea">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
 
-        %\addplot [thick, smooth,domain=-85:85,samples=60] ({170*sec(x)},{470*tan(x)});
-        %\addplot [thick,smooth,domain=-85:85,samples=60] ({-170*sec(x)},{470*tan(x)});
+            \begin{axis}[
+            ymin=-1100,ymax=1100,
+            xmin=-1100,xmax=1100
+            ]
 
-        \filldraw (axis cs:500,0) circle (1.5pt) node [above] {\scriptsize $A$};
-        \filldraw (axis cs:-500,0) circle (1.5pt) node [above] {\scriptsize $B$};
-        \filldraw (axis cs:-500,1000) circle (1.5pt) node [left] {\scriptsize $C$};
+            \filldraw (axis cs:500,0) circle (1.5pt) node [above] {\scriptsize $A$};
+            \filldraw (axis cs:-500,0) circle (1.5pt) node [above] {\scriptsize $B$};
+            \filldraw (axis cs:-500,1000) circle (1.5pt) node [left] {\scriptsize $C$};
 
-        %\draw (axis cs:0,0) node [below] {\scriptsize $\underbrace{\rule{50pt}{0pt}}$};
-        %\draw (axis cs:0,-300) node {\scriptsize 1000m};
-        %\draw (axis cs: -500,500) node [shift={(-15pt,0pt)}] {\scriptsize 1000m$\left\{\rule{0pt}{27pt}\right.$};
+            \end{axis}
 
- 
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+        </figure>
+        <!-- figures/fig_hyperbola_locate1.tex END -->
+        <!-- START figures/fig_hyperbola_locate2.tex -->
+        <figure xml:id="fig_hyperbola_locateb">
+          <caption/>
+          <image xml:id="img_hyperbola_locateb">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
+            
+            \begin{axis}[
+            ymin=-1100,ymax=1100,
+            xmin=-1100,xmax=1100
+            ]
 
-        \end{axis}
+            \addplot+ [-,domain=-85:85] ({170*sec(x)},{470*tan(x)});
+            \addplot+ [-,domain=-85:85] ({-170*sec(x)},{470*tan(x)});
 
-        %
-        %
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_hyperbola_locate1.tex END -->
-      <!-- START figures/fig_hyperbola_locate2.tex -->
-      <image xml:id="img_hyperbola_locate2">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-10,-5,5,10},
-			%minor x tick num=4,%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={-10,-5,5,10},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1100,ymax=1100,%
-			xmin=-1100,xmax=1100%
-        ]
+            \filldraw (axis cs:500,0) circle (1.5pt) node [above] {\scriptsize $A$};
+            \filldraw (axis cs:-500,0) circle (1.5pt) node [above] {\scriptsize $B$};
+            \filldraw (axis cs:-500,1000) circle (1.5pt) node [left] {\scriptsize $C$};
 
-        \addplot [thick, smooth,domain=-85:85,samples=60] ({170*sec(x)},{470*tan(x)});
-        \addplot [dashed,thick,smooth,domain=-85:85,samples=60] ({-170*sec(x)},{470*tan(x)});
+            \end{axis}
 
-        \filldraw (axis cs:500,0) circle (1.5pt) node [above] {\scriptsize $A$};
-        \filldraw (axis cs:-500,0) circle (1.5pt) node [above] {\scriptsize $B$};
-        \filldraw (axis cs:-500,1000) circle (1.5pt) node [left] {\scriptsize $C$};
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+        </figure>
+        <!-- figures/fig_hyperbola_locate2.tex END -->
+        <!-- START figures/fig_hyperbola_locate3.tex -->
+        <figure xml:id="fig_hyperbola_locatec">
+          <caption/>
+          <image xml:id="img_hyperbola_locatec">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis on top,
+            ymin=-1100,ymax=1100,
+            xmin=-1100,xmax=1100
+            ]
 
-        %\draw (axis cs:0,0) node [below] {\scriptsize $\underbrace{\rule{50pt}{0pt}}$};
-        %\draw (axis cs:0,-300) node {\scriptsize 1000m};
-        %\draw (axis cs: -500,500) node [shift={(-15pt,0pt)}] {\scriptsize 1000m$\left\{\rule{0pt}{27pt}\right.$};
+            \addplot+ [-,domain=-85:85] ({170*sec(x)},{470*tan(x)});
+            \addplot+ [-,domain=-85:85] ({367*tan(x)-500},{340*sec(x)+500});
+            \addplot [secondcurvestyle,-,domain=-85:85] ({367*tan(x)-500},{-340*sec(x)+500});
 
- 
+            \filldraw (axis cs:500,0) circle (1.5pt) node [above] {\scriptsize $A$};
+            \filldraw (axis cs:-500,0) circle (1.5pt) node [above] {\scriptsize $B$};
+            \filldraw (axis cs:-500,1000) circle (1.5pt) node [left] {\scriptsize $C$};
+            \filldraw (axis cs:188,-222) circle (1.5pt) node [below left] {\scriptsize $D$};
 
-        \end{axis}
+            \end{axis}
 
-        %
-        %
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
-      <!-- figures/fig_hyperbola_locate2.tex END -->
-      <!-- START figures/fig_hyperbola_locate3.tex -->
-      <image xml:id="img_hyperbola_locate3">
-        <description></description>
-        <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-        \begin{axis}[%
-        %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-10,-5,5,10},
-			%minor x tick num=4,%
-        %			extra x ticks={.33},
-        %			extra x tick labels={$1/3$},
-			%ytick={-10,-5,5,10},
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1100,ymax=1100,%
-			xmin=-1100,xmax=1100%
-        ]
-
-        \addplot [thick, smooth,domain=-85:85,samples=60] ({170*sec(x)},{470*tan(x)});
-
-        \addplot [dashed,thick, smooth,domain=-85:85,samples=60] ({367*tan(x)-500},{340*sec(x)+500});
-        \addplot [thick, smooth,domain=-85:85,samples=60] ({367*tan(x)-500},{-340*sec(x)+500});
-
-        \filldraw (axis cs:500,0) circle (1.5pt) node [above] {\scriptsize $A$};
-        \filldraw (axis cs:-500,0) circle (1.5pt) node [above] {\scriptsize $B$};
-        \filldraw (axis cs:-500,1000) circle (1.5pt) node [left] {\scriptsize $C$};
-        \filldraw (axis cs:188,-222) circle (1.5pt) node [below left] {\scriptsize $D$};
-
- 
-
-        \end{axis}
-
-        %
-        %
-        \end{tikzpicture}
-        ]]>
-        </latex-image>
-      </image>
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+        </figure>
       <!-- figures/fig_hyperbola_locate3.tex END -->
+      </sidebyside>
     </figure>
 
     <p>
@@ -2043,7 +1921,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2066,7 +1944,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2086,7 +1964,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2107,7 +1985,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2121,10 +1999,10 @@
             <solution>
               <p>
                 With the equation <m>\frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1</m>,
-                the ellipse has a horizontal major axis if <m>a>b</m>.
+                the ellipse has a horizontal major axis if <m>a \gt b</m>.
                 But the coefficient of the <m>x^2</m> term is <m>1/a^2</m>
                 (not <m>a^2</m>),
-                so if <m>1/a^2\lt 1/b^2</m>, then <m>a>b</m> and the major axis is horizontal.
+                so if <m>1/a^2\lt 1/b^2</m>, then <m>a \gt b</m> and the major axis is horizontal.
               </p>
             </solution>
         </webwork>
@@ -2133,7 +2011,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2167,7 +2045,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2187,7 +2065,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2207,7 +2085,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2227,7 +2105,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2247,7 +2125,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2267,7 +2145,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2287,7 +2165,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2307,7 +2185,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2324,17 +2202,22 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        the equation of a parabola and a point on its graph are given.
-        Find the focus and directrix of the parabola,
-        and verify that the given point is equidistant from the focus and directrix.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          the equation of a parabola and a point on its graph are given.
+          Find the focus and directrix of the parabola,
+          and verify that the given point is equidistant from the focus and directrix.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2355,7 +2238,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2373,15 +2256,20 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises, sketch the ellipse defined by the given equation.
-        Label the center, foci and vertices.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises, sketch the ellipse defined by the given equation.
+          Label the center, foci and vertices.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2399,7 +2287,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2414,60 +2302,47 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        find the equation of the ellipse shown in the graph.
-        Give the location of the foci and the eccentricity of the ellipse.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          find the equation of the ellipse shown in the graph.
+          Give the location of the foci and the eccentricity of the ellipse.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_09_01_ex_20.tex -->
-                <image xml:id="img_09_01_ex_20">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1},
-			%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-1.2,ymax=5.2,%
-			xmin=-5.2,xmax=3.2%
-                  ]
+          <!-- START figures/fig_09_01_ex_20.tex -->
+              <image xml:id="img_09_01_ex_20">
+                <description></description>
+                <latex-image>
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick, smooth,domain=0:360,samples=60] ({3*cos(x)-1},{2*sin(x)+2)});
+                \begin{tikzpicture}
 
-                  %\filldraw (axis cs: 1,2) circle (1.5pt)
-					%(axis cs: 1,4.24) circle (1.5pt)
-					%(axis cs: 1,-.24) circle (1.5pt)
-					%(axis cs: 1,3.4) circle (1.5pt)
-					%(axis cs: 1,.6) circle (1.5pt);
+                \begin{axis}[
+                axis on top,
+                ymin=-1.2,ymax=5.2,
+                xmin=-5.2,xmax=3.2
+                ]
 
-                  \end{axis}
+                \addplot+ [-,domain=0:360,samples=60] ({3*cos(x)-1},{2*sin(x)+2)});
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_01_ex_20.tex END -->
-              </figure>
+                \end{axis}
+
+                \end{tikzpicture}
+
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_01_ex_20.tex END -->
             </statement>
             <solution>
               <p>
@@ -2481,51 +2356,33 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_09_01_ex_21.tex -->
-                <image xml:id="img_09_01_ex_21">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1},
-			%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-3.5,ymax=3.5,%
-			xmin=-1.2,xmax=2.2%
-                  ]
+          <!-- START figures/fig_09_01_ex_21.tex -->
+              <image xml:id="img_09_01_ex_21">
+                <description></description>
+                <latex-image>
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick, smooth,domain=0:360,samples=60] ({.5*cos(x)+1},{3*sin(x))});
+                \begin{tikzpicture}
 
-                  %\filldraw (axis cs: 1,2) circle (1.5pt)
-					%(axis cs: 1,4.24) circle (1.5pt)
-					%(axis cs: 1,-.24) circle (1.5pt)
-					%(axis cs: 1,3.4) circle (1.5pt)
-					%(axis cs: 1,.6) circle (1.5pt);
+                \begin{axis}[
+                axis on top,
+                ymin=-3.5,ymax=3.5,
+                xmin=-1.2,xmax=2.2
+                ]
 
-                  \end{axis}
+                \addplot+ [-,domain=0:360,samples=60] ({.5*cos(x)+1},{3*sin(x))});
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_01_ex_21.tex END -->
-              </figure>
+                \end{axis}
+
+                \end{tikzpicture}
+
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_01_ex_21.tex END -->
             </statement>
             <solution>
               <p>
@@ -2537,16 +2394,21 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        find the equation of the ellipse defined by the given information.
-        Sketch the elllipse.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          find the equation of the ellipse defined by the given information.
+          Sketch the elllipse.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2566,7 +2428,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2587,7 +2449,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2607,7 +2469,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2625,15 +2487,20 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        write the equation of the given ellipse in standard form.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          write the equation of the given ellipse in standard form.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2653,7 +2520,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2673,7 +2540,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2693,7 +2560,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2713,7 +2580,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2722,93 +2589,88 @@
                 Consider the ellipse given by <m>\ds \frac{(x-1)^2}{4}+\frac{(y-3)^2}{12}=1</m>.
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Verify that the foci are located at <m>(1,3\pm 2\sqrt{2})</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Verify that the foci are located at <m>(1,3\pm 2\sqrt{2})</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    The points <m>P_1 = (2,6)</m> and <m>P_2 = (1+\sqrt{2},3+\sqrt{6}) \approx (2.414,5.449)</m> lie on the ellipse.
-                    Verify that the sum of distances from each point to the foci is the same.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      The points <m>P_1 = (2,6)</m> and <m>P_2 = (1+\sqrt{2},3+\sqrt{6}) \approx (2.414,5.449)</m> lie on the ellipse.
+                      Verify that the sum of distances from each point to the foci is the same.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>c=\sqrt{12-4} = 2\sqrt{2}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>c=\sqrt{12-4} = 2\sqrt{2}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    The sum of distances for each point is <m>2\sqrt{12}\approx 6.9282</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      The sum of distances for each point is <m>2\sqrt{12}\approx 6.9282</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        find the equation of the hyperbola shown in the graph.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          find the equation of the hyperbola shown in the graph.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_09_01_ex_27.tex -->
-                <image xml:id="img_09_01_ex_27">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1,2,-2},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-3.5,ymax=3.5,%
-			xmin=-3.5,xmax=3.5%
-                  ]
+          <!-- START figures/fig_09_01_ex_27.tex -->
+              <image xml:id="img_09_01_ex_27">
+                <description></description>
+                <latex-image>
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({sec(x)},{1.73*tan(x))});
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({-sec(x)},{1.73*tan(x))});
+                \begin{tikzpicture}
 
-                  \filldraw (axis cs: 2,0) circle (1.5pt)
-					(axis cs: -2,0) circle (1.5pt);
-					%(axis cs: 1,-.24) circle (1.5pt)
-					%(axis cs: 1,3.4) circle (1.5pt)
-					%(axis cs: 1,.6) circle (1.5pt);
+                \begin{axis}[
+                axis on top,
+                xtick={-1,1,2,-2},
+                ymin=-3.5,ymax=3.5,
+                xmin=-3.5,xmax=3.5
+                ]
 
-                  \end{axis}
+                \addplot [firstcurvestyle,-,domain=-70:70] ({sec(x)},{1.73*tan(x))});
+                \addplot [firstcurvestyle,-,domain=-70:70] ({-sec(x)},{1.73*tan(x))});
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_01_ex_27.tex END -->
-              </figure>
+                \filldraw (axis cs: 2,0) circle (1.5pt)
+                          (axis cs: -2,0) circle (1.5pt);
+
+                \end{axis}
+
+                \end{tikzpicture}
+
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_01_ex_27.tex END -->
             </statement>
             <solution>
               <p>
@@ -2821,52 +2683,39 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_09_01_ex_28.tex -->
-                <image xml:id="img_09_01_ex_28">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-6.5,ymax=6.5,%
-			xmin=-8.5,xmax=8.5%
-                  ]
+          <!-- START figures/fig_09_01_ex_28.tex -->
+              <image xml:id="img_09_01_ex_28">
+                <description></description>
+                <latex-image>
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({4.9*tan(x)},{sec(x))});
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({4.9*tan(x)},{-sec(x))});
+                \begin{tikzpicture}
 
-                  \filldraw (axis cs: 0,5) circle (1.5pt)
-					(axis cs: 0,-5) circle (1.5pt);
-					%(axis cs: 1,-.24) circle (1.5pt)
-					%(axis cs: 1,3.4) circle (1.5pt)
-					%(axis cs: 1,.6) circle (1.5pt);
+                \begin{axis}[
+                axis on top,
+                minor x tick num=4,
+                minor y tick num=4,
+                ymin=-6.5,ymax=6.5,
+                xmin=-8.5,xmax=8.5
+                ]
 
-                  \end{axis}
+                \addplot [firstcurvestyle,-,domain=-70:70] ({4.9*tan(x)},{sec(x))});
+                \addplot [firstcurvestyle,-,domain=-70:70] ({4.9*tan(x)},{-sec(x))});
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_01_ex_28.tex END -->
-              </figure>
+                \filldraw (axis cs: 0,5) circle (1.5pt)
+                          (axis cs: 0,-5) circle (1.5pt);
+
+                \end{axis}
+
+                \end{tikzpicture}
+
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_01_ex_28.tex END -->
             </statement>
             <solution>
               <p>
@@ -2879,57 +2728,42 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_09_01_ex_29.tex -->
-                <image xml:id="img_09_01_ex_29">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-1.5,ymax=7.5,%
-			xmin=-4.5,xmax=6.5%
-                  ]
+          <!-- START figures/fig_09_01_ex_29.tex -->
+              <image xml:id="img_09_01_ex_29">
+                <description></description>
+                <latex-image>
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({3*tan(x)+1},{2*sec(x)+3});
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({3*tan(x)+1},{-2*sec(x)+3});
+                \begin{tikzpicture}
 
-                  \draw [thick,dashed,gray] (axis cs: -2,5) -- (axis cs:4,5) -- (axis cs:4,1) -- (axis cs: -2,1) --cycle;
+                \begin{axis}[
+                axis on top,
+                minor x tick num=4,
+                ymin=-1.5,ymax=7.5,
+                xmin=-4.5,xmax=6.5
+                ]
 
-                  \addplot[thick,dashed,domain=-8:8] (x,{2/3*(x-1)+3});
-                  \addplot[thick,dashed,domain=-8:8] (x,{-2/3*(x-1)+3});
+                \addplot [firstcurvestyle,-,domain=-70:70] ({3*tan(x)+1},{2*sec(x)+3});
+                \addplot [firstcurvestyle,-,domain=-70:70] ({3*tan(x)+1},{-2*sec(x)+3});
 
-                  \filldraw (axis cs: 1,3) circle (1.5pt);
-					%(axis cs: 0,-5) circle (1.5pt);
-					%(axis cs: 1,-.24) circle (1.5pt)
-					%(axis cs: 1,3.4) circle (1.5pt)
-					%(axis cs: 1,.6) circle (1.5pt);
+                \addplot [secondcurvestyle,-,domain=-8:8] (x,{2/3*(x-1)+3});
+                \addplot [secondcurvestyle,-,domain=-8:8] (x,{-2/3*(x-1)+3});
 
-                  \end{axis}
+                \draw [thick,dashed,gray] (axis cs: -2,5) -- (axis cs:4,5) -- (axis cs:4,1) -- (axis cs: -2,1) --cycle;
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_01_ex_29.tex END -->
-              </figure>
+                \filldraw (axis cs: 1,3) circle (1.5pt);
+
+                \end{axis}
+
+                \end{tikzpicture}
+
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_01_ex_29.tex END -->
             </statement>
             <solution>
               <p>
@@ -2942,57 +2776,41 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_09_01_ex_30.tex -->
-                <image xml:id="img_09_01_ex_30">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  %
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={-1,1,2,-2},
-			minor x tick num=4,%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-1,1},
-			%extra y ticks={-5,-3,...,7},%
-			ymin=-1.5,ymax=7.5,%
-			xmin=-4.5,xmax=6.5%
-                  ]
+          <!-- START figures/fig_09_01_ex_30.tex -->
+              <image xml:id="img_09_01_ex_30">
+                <description></description>
+                <latex-image>
 
-                  %\draw (axis cs:4,-1) node (A) {}
-			%(axis cs:4,3) node (B) {} ;
-                  %\draw [->,>=latex] (A) parabola bend (axis cs:0,1) (B);
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({3*sec(x)+1},{2*tan(x)+3});
-                  \addplot [thick, smooth,domain=-70:70,samples=30] ({-3*sec(x)+1},{2*tan(x)+3});
+                \begin{tikzpicture}
 
-                  \draw [thick,dashed,gray] (axis cs: -2,5) -- (axis cs:4,5) -- (axis cs:4,1) -- (axis cs: -2,1) --cycle;
+                \begin{axis}[
+                minor x tick num=4,
+                ymin=-1.5,ymax=7.5,
+                xmin=-4.5,xmax=6.5
+                ]
 
-                  \addplot[thick,dashed,domain=-8:8] (x,{2/3*(x-1)+3});
-                  \addplot[thick,dashed,domain=-8:8] (x,{-2/3*(x-1)+3});
+                \addplot [firstcurvestyle,-,domain=-70:70] ({3*sec(x)+1},{2*tan(x)+3});
+                \addplot [firstcurvestyle,-,domain=-70:70] ({-3*sec(x)+1},{2*tan(x)+3});
 
-                  \filldraw (axis cs: 1,3) circle (1.5pt);
-					%(axis cs: 0,-5) circle (1.5pt);
-					%(axis cs: 1,-.24) circle (1.5pt)
-					%(axis cs: 1,3.4) circle (1.5pt)
-					%(axis cs: 1,.6) circle (1.5pt);
+                \addplot [secondcurvestyle,-,domain=-8:8] (x,{2/3*(x-1)+3});
+                \addplot [secondcurvestyle,-,domain=-8:8] (x,{-2/3*(x-1)+3});
 
-                  \end{axis}
+                \draw [thick,dashed,gray] (axis cs: -2,5) -- (axis cs:4,5) -- (axis cs:4,1) -- (axis cs: -2,1) --cycle;
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_09_01_ex_30.tex END -->
-              </figure>
+                \filldraw (axis cs: 1,3) circle (1.5pt);
+
+                \end{axis}
+
+                \end{tikzpicture}
+
+                </latex-image>
+              </image>
+          <!-- figures/fig_09_01_ex_30.tex END -->
             </statement>
             <solution>
               <p>
@@ -3002,16 +2820,21 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        sketch the hyperbola defined by the given equation.
-        Label the center and foci.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          sketch the hyperbola defined by the given equation.
+          Label the center and foci.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3029,7 +2852,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3044,16 +2867,21 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        find the equation of the hyperbola defined by the given information.
-        Sketch the hyperbola.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          find the equation of the hyperbola defined by the given information.
+          Sketch the hyperbola.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3073,7 +2901,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3093,7 +2921,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3114,7 +2942,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3132,15 +2960,20 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        write the equation of the hyperbola in standard form.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          write the equation of the hyperbola in standard form.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3160,7 +2993,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3180,7 +3013,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3200,7 +3033,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3220,7 +3053,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3269,62 +3102,66 @@
                 </row>
               </tabular>
 
-              <ol>
-                <li>
-                  <p>
-                    In an ellipse,
-                    knowing <m>c^2=a^2-b^2</m> and <m>e=c/a</m> allows us to find <m>b</m> in terms of <m>a</m> and <m>e</m>.
-                    Show <m>b=a\sqrt{1-e^2}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      In an ellipse,
+                      knowing <m>c^2=a^2-b^2</m> and <m>e=c/a</m> allows us to find <m>b</m> in terms of <m>a</m> and <m>e</m>.
+                      Show <m>b=a\sqrt{1-e^2}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    For each planet,
-                    find equations of their elliptical orbit of the form
-                    <m>\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m>. (This places the center at <m>(0,0)</m>,
-                    but the Sun is in a different location for each planet.)
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      For each planet,
+                      find equations of their elliptical orbit of the form
+                      <m>\ds\frac{x^2}{a^2}+\frac{y^2}{b^2}=1</m>. (This places the center at <m>(0,0)</m>,
+                      but the Sun is in a different location for each planet.)
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Shift the equations so that the Sun lies at the origin.
-                    Plot the three elliptical orbits.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Shift the equations so that the Sun lies at the origin.
+                      Plot the three elliptical orbits.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Solve for <m>c</m> in <m>e=c/a</m>: <m>c=ae</m>.
-                    Thus <m>a^2e^2=a^2-b^2</m>, and <m>b^2=a^2-a^2e^2</m>.
-                    The result follows.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Solve for <m>c</m> in <m>e=c/a</m>: <m>c=ae</m>.
+                      Thus <m>a^2e^2=a^2-b^2</m>, and <m>b^2=a^2-a^2e^2</m>.
+                      The result follows.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Mercury: <m>x^2/(0.387)^2 + y^2/(0.3787)^2=1</m> 
+                  <li>
+                    <p>
+                      Mercury: <m>x^2/(0.387)^2 + y^2/(0.3787)^2=1</m>
 
-				Earth:	<m>x^2+y^2/(0.99986)^2 = 1</m>
+                      Earth:	<m>x^2+y^2/(0.99986)^2 = 1</m>
 
-				Mars: <m>x^2/(1.524)^2+y^2/(1.517)^2=1</m>
-                  </p>
-                </li>
+                      Mars: <m>x^2/(1.524)^2+y^2/(1.517)^2=1</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Mercury: <m>(x-0.08)^2/(0.387)^2 + y^2/(0.3787)^2=1</m> 
+                  <li>
+                    <p>
+                      Mercury: <m>(x-0.08)^2/(0.387)^2 + y^2/(0.3787)^2=1</m>
 
-				Earth: <m>(x-0.0167)^2+y^2/(0.99986)^2 = 1</m>
+                      Earth: <m>(x-0.0167)^2+y^2/(0.99986)^2 = 1</m>
 
-				Mars: <m>(x-0.1423)^2/(1.524)^2+y^2/(1.517)^2=1</m>
-                  </p>
-                </li>
-              </ol>
+                      Mars: <m>(x-0.1423)^2/(1.524)^2+y^2/(1.517)^2=1</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -3332,7 +3169,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3347,8 +3184,13 @@
               <image>
                 <description></description>
                 <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}\draw [fill=black] (0,0) circle (1.5pt) node [below] {\(A\)}  -- node [pos=.5,below] {1000m} (1.5,0) circle (1.5pt) node [below] {\(B\)} -- node [pos=.5,below] {2000m} (4.5,0) circle (1.5pt) node [below] {\(C\)};\end{tikzpicture}]]>
+
+                \begin{tikzpicture}
+
+                \draw [fill=black] (0,0) circle (1.5pt) node [below] {\(A\)} -- node [pos=.5,above] {1000m} (1.5,0) circle (1.5pt) node [below] {\(B\)} -- node [pos=.5,above] {2000m} (4.5,0) circle (1.5pt) node [below] {\(C\)};
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
@@ -3364,4 +3206,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
