@@ -319,67 +319,61 @@
             \begin{tikzpicture}
 
             \begin{scope}[xscale=.2,yscale=.5,shift={(.5,0)}]
-            \draw [thick,{\colorone}] (-1,.5)--(-.5,.5)--(0,0);
-            \foreach \x in {0,1,...,5}
-            {%
-            \begin{scope}[shift={(\x*2,0)}]
-            \draw [thick,{\colorone}] (0,0)--(1,1)--(2,0);
-            \end{scope}
-            }
+              \draw [thick,firstcolor] (-1,.5) -- (-.5,.5) -- (0,0);
+
+              \foreach \x in {0,1,...,5}
+              {
+                \begin{scope}[shift={(\x*2,0)}]
+                  \draw [thick,firstcolor] (0,0) -- (1,1) -- (2,0);
+                \end{scope}
+              }
 
               \begin{scope}[shift={(12,0)}]
-              \draw [thick,{\colorone}] (0,0) --(1,1) --(1.5,.5)--(2,.5);
+                \draw [thick,firstcolor] (0,0) -- (1,1) -- (1.5,.5) -- (2,.5);
               \end{scope}
+
             \end{scope}
 
-            \draw [shift={(.9,0)},thick,left color={\colorone!70},right color={\coloronefill},{\colorone}] (2,0) rectangle (2.5,.5);
-
+            \draw [shift={(.9,0)},thick,left color=firstcolor!70,right color=firstcolor!15,firstcolor] (2,0) rectangle (2.5,.5);
             \draw [shift={(.9,0)},-&gt;,&gt;=stealth] (2.75,.15)-= node [pos=.5,above] {$F$} (3.25,.15);
 
             \begin{scope}[shift={(0,-.25)}]
-              \draw [thick] (-.5,0)--(5.5,0);
+              \draw [thick] (-.5,0) -- (5.5,0);
 
               \foreach \x in {0,...,6}
-              {%
-              \draw (\x*.4+2.8,.1)--(\x*.4+2.8,-.1) node [below] {\scriptsize $\x$};
+              {
+              \draw (\x*.4+2.8,.1) -- (\x*.4+2.8,-.1) node [below] {\scriptsize $\x$};
               }
             \end{scope}
  
             \begin{scope}[shift={(0,-1.75)}]
 
-            \begin{scope}[xscale=.343,yscale=.5,shift={(.5,0)}]
-            \draw [thick,{\colorone}] (-1,.5)--(-.5,.5)--(0,0);
-            \foreach \x in {0,1,...,5}
-            {%
-            \begin{scope}[shift={(\x*2,0)}]
-            \draw [thick,{\colorone}] (0,0)--(1,1)--(2,0);
-            \end{scope}
-            }
+              \begin{scope}[xscale=.343,yscale=.5,shift={(.5,0)}]
+                \draw [thick,firstcolor] (-1,.5) -- (-.5,.5) -- (0,0);
+                \foreach \x in {0,1,...,5}
+                {
+                  \begin{scope}[shift={(\x*2,0)}]
+                    \draw [thick,firstcolor] (0,0) -- (1,1) -- (2,0);
+                  \end{scope}
+                }
 
-              \begin{scope}[shift={(12,0)}]
-              \draw [thick,{\colorone}] (0,0) --(1,1) --(1.5,.5)--(2,.5);
+                \begin{scope}[shift={(12,0)}]
+                  \draw [thick,firstcolor] (0,0) -- (1,1) -- (1.5,.5) -- (2,.5);
+                \end{scope}
               \end{scope}
-            \end{scope}
 
-            \begin{scope}[shift={(0,-.25)}]
-              \draw [thick] (-.5,0)--(5.5,0);
+              \begin{scope}[shift={(0,-.25)}]
+                \draw [thick] (-.5,0) -- (5.5,0);
 
-              \foreach \x in {0,...,6}
-              {%
-              \draw (\x*.4+2.8,.1)--(\x*.4+2.8,-.1) node [below] {\scriptsize $\x$};
-              }
-            \end{scope}
- 
-            \draw [shift={(2.9,0)},thick,left color={\colorone!70},right color={\coloronefill},{\colorone}] (2,0) rectangle (2.5,.5);
- 
+                \foreach \x in {0,...,6}
+                {
+                  \draw (\x*.4+2.8,.1) -- (\x*.4+2.8,-.1) node [below] {\scriptsize $\x$};
+                }
+              \end{scope}
+  
+              \draw [shift={(2.9,0)},thick,left color=firstcolor!70,right color=firstcolor!15,firstcolor] (2,0) rectangle (2.5,.5);
+  
             \end{scope} 
-
-            %\foreach \x in {0,2,4,6}
-            %{%
-            %	\begin{scope}[shift={(\x*.3,0)}]
-            %	\draw [rounded corners=.1cm,rotate=-45,thick,left color=black!80,right color=black!30] (-.1,-.5) rectangle (.1,.5);
-            %	\end{scope}
-            %}
 
             \end{tikzpicture}
             
@@ -511,37 +505,31 @@
             
             \begin{tikzpicture}[x=.1cm,y=.125cm,&gt;=stealth]
 
-            %\begin{scope}[xscale=1.5]
-
             \draw [-&gt;] (0,-2) -- (0,37) node [above] {\scriptsize $y$};
 
-            \draw		(-1,0) node [left] {\scriptsize 0} -- (1,0)
-                    (-1,30) node [left] {\scriptsize 30} -- (1,30)
-                    (-1,35) node [left] {\scriptsize 35} -- (1,35);
+            \draw	(-1,0) node [left] {\scriptsize 0} -- (1,0)
+                  (-1,30) node [left] {\scriptsize 30} -- (1,30)
+                  (-1,35) node [left] {\scriptsize 35} -- (1,35);
  
-            \draw (2,12)--(4,12)  (2,35)--(4,35)
+            \draw (2,12) -- (4,12) (2,35) -- (4,35)
                   (3,12) -- node [pos=.5,fill=white,rotate=90] {\scriptsize $35-y_i$} (3,35);
  
             \begin{scope}[xscale=4,shift={(4.5,0)}] 
 
-            \draw (0,30) -- node [pos=.5,above] {\scriptsize $10$} (2.9,29.22); 
-            \draw [thick] (3,30) --(3,0) arc (0:-180:3) -- (-3,30);
-            \draw [thick](0,30) circle (3);
-            \draw [thick,dashed] (3,0) arc (0:180:3);
+              \draw (0,30) -- node [pos=.5,above] {\scriptsize $10$} (2.9,29.22); 
+              \draw [thick] (3,30) --(3,0) arc (0:-180:3) -- (-3,30);
+              \draw [thick](0,30) circle (3);
+              \draw [thick,dashed] (3,0) arc (0:180:3);
 
-            \foreach \y/\x in {12/{$y_i$},16/{$y_{i+1}$}}
-            {%
-            \draw (3,\y) node [right] {\scriptsize\x} arc (0:-180:3);
-            \draw [dashed] (3,\y) arc (0:180:3);
-            }
+              \foreach \y/\x in {12/{$y_i$},16/{$y_{i+1}$}}
+              {
+                \draw (3,\y) node [right] {\scriptsize\x} arc (0:-180:3);
+                \draw [dashed] (3,\y) arc (0:180:3);
+              }
 
-            \draw (5.1,14) node {\scriptsize $\left.\rule{0pt}{.3cm}\right\}\Delta y_i$};
-
-            %%
-
-            \draw [left color={\colorone},right color={\coloronefill},thick] (0,16) circle (3);
-            %
-            \draw [left color={\colorone},right color={\coloronefill},thick] (-3,16) -- (-3,12)  arc (180:360:3) -- (3,16) arc (360:180:3);
+              \draw (5.1,14) node {\scriptsize $\left.\rule{0pt}{.3cm}\right\}\Delta y_i$};
+              \draw [left color=firstcolor,right color=firstcolor!15,thick] (0,16) circle (3);
+              \draw [left color=firstcolor,right color=firstcolor!15,thick] (-3,16) -- (-3,12)  arc (180:360:3) -- (3,16) arc (360:180:3);
 
             \end{scope}
 
@@ -628,24 +616,22 @@
 
         \draw [-&gt;] (0,-2) -- (0,37) node [above] {\scriptsize $y$};
 
-        \draw		(-1,0) node [left] {\scriptsize 0} -- (1,0)
-				(-1,30) node [left] {\scriptsize 30} -- (1,30)
-				(-1,35) node [left] {\scriptsize 35} -- (1,35)
-				(-1,14) node [left] {\scriptsize $y$} -- (1,14);
+        \draw	(-1,0) node [left] {\scriptsize 0} -- (1,0)
+              (-1,30) node [left] {\scriptsize 30} -- (1,30)
+              (-1,35) node [left] {\scriptsize 35} -- (1,35)
+              (-1,14) node [left] {\scriptsize $y$} -- (1,14);
  
-        \draw (2,14)--(4,14)  (2,35)--(4,35)
+        \draw (2,14) -- (4,14) (2,35)--(4,35)
 			        (3,14) -- node [pos=.5,fill=white,rotate=90] {\scriptsize $35-y$} (3,35);
  
         \begin{scope}[xscale=4,shift={(4.5,0)}] 
 
-        \draw (0,30) -- node [pos=.5,above] {\scriptsize $10$} (2.9,29.22); 
-        \draw [thick](3,30) --(3,0) arc (0:-180:3) -- (-3,30);
-        \draw [thick] (0,30) circle (3);
-        \draw [thick,dashed] (3,0) arc (0:180:3);
-
-        \draw [left color={\colorone},right color={\coloronefill},thick,draw={\colorone}] (0,14) circle (3);
-
-        \draw [-&gt;] (5.25,16) node [above] {\scriptsize $V(y)=100\pi dy$} -- (2,14);
+          \draw (0,30) -- node [pos=.5,above] {\scriptsize $10$} (2.9,29.22); 
+          \draw [thick] (3,30) --(3,0) arc (0:-180:3) -- (-3,30);
+          \draw [thick] (0,30) circle (3);
+          \draw [thick,dashed] (3,0) arc (0:180:3);
+          \draw [left color=firstcolor,right color=firstcolor!15,thick,draw=firstcolor] (0,14) circle (3);
+          \draw [-&gt;] (5.25,16) node [above] {\scriptsize $V(y)=100\pi dy$} -- (2,14);
 
         \end{scope}
 
@@ -697,24 +683,21 @@
 
             \draw [-&gt;] (0,-2) -- (0,37) node [above] {\scriptsize $y$};
 
-            \draw		(-1,0) node [left] {\scriptsize $-10$} -- (1,0)
-                    (-1,30) node [left] {\scriptsize 0} -- (1,30)
-                    (-1,35) node [left] {\scriptsize 3} -- (1,35)
-                    (-1,14) node [left] {\scriptsize $y$} -- (1,14);
+            \draw	(-1,0) node [left] {\scriptsize $-10$} -- (1,0)
+                  (-1,30) node [left] {\scriptsize 0} -- (1,30)
+                  (-1,35) node [left] {\scriptsize 3} -- (1,35)
+                  (-1,14) node [left] {\scriptsize $y$} -- (1,14);
  
-            \draw (2,14)--(4,14)  (2,35)--(4,35)
+            \draw (2,14) -- (4,14)  (2,35)--(4,35)
 		            	(3,14) -- node [pos=.5,fill=white,rotate=90] {\scriptsize $3-y$} (3,35);
  
             \begin{scope}[xscale=4,shift={(4.5,0)}] 
 
-            \draw (0,30) -- node [pos=.5,above] {\scriptsize $2$} (2.9,29.22); 
-            \draw [thick](3,30) --(0,0) -- (-3,30);
-            \draw [thick] (0,30) circle (3);
-            %\draw [thick,dashed] (3,0) arc (0:180:3);
-
-            \draw [left color={\colorone},right color={\coloronefill},thick,draw={\colorone}] (0,14) circle (1.4);
-
-            \draw [-&gt;] (3.4,6) node [below] {\scriptsize $V(y)=\pi(\frac y5+2)^2 dy$} -- (0,14);
+              \draw (0,30) -- node [pos=.5,above] {\scriptsize $2$} (2.9,29.22); 
+              \draw [thick](3,30) -- (0,0) -- (-3,30);
+              \draw [thick] (0,30) circle (3);
+              \draw [left color=firstcolor,right color=firstcolor!15,thick,draw=firstcolor] (0,14) circle (1.4);
+              \draw [-&gt;] (3.4,6) node [below,shift={(10pt,0pt)}] {\scriptsize $V(y)=\pi(\frac y5+2)^2 dy$} -- (0,14);
 
             \end{scope}
 
@@ -778,9 +761,9 @@
             
             \begin{tikzpicture}[x=.18cm,y=.2cm,&gt;=stealth]
 
-            \draw [fill={\coloronefill},draw={\coloronefill}] (0,0) -- node [below,pos=.5] {\scriptsize 10 ft.} (10,0) -- (15,3) -- node [below,pos=.5] {\scriptsize 10 ft.} (25,3)-- node [right,pos=.5] {\scriptsize 3 ft.} (25,6)--(0,6) -- node [left,pos=.5] {\scriptsize 6 ft.} (0,0);
+            \draw [fill=firstcolor!15,draw=firstcolor!15] (0,0) -- node [below,pos=.5] {\scriptsize 10 ft.} (10,0) -- (15,3) -- node [below,pos=.5] {\scriptsize 10 ft.} (25,3)-- node [right,pos=.5] {\scriptsize 3 ft.} (25,6)--(0,6) -- node [left,pos=.5] {\scriptsize 6 ft.} (0,0);
 
-            \draw [thick] (0,0) -- (10,0) -- (15,3) --(25,3)--(25,7)-- node [above,pos=.5] {\scriptsize 25 ft} (0,7) -- cycle;
+            \draw [thick] (0,0) -- (10,0) -- (15,3) -- (25,3) -- (25,7) -- node [above,pos=.5] {\scriptsize 25 ft} (0,7) -- cycle;
 
             \end{tikzpicture}
             
@@ -798,21 +781,20 @@
             
             \begin{tikzpicture}[x=.18cm,y=.2cm,&gt;=stealth]
 
-            %\draw [thick] (0,0) -- node [below,pos=.5] {\scriptsize 10 ft.} (10,0) -- (15,3) -- node [below,pos=.5] {\scriptsize 10 ft.} (25,3)-- node [right,pos=.5] {\scriptsize 3 ft.} (25,7)--node [above,pos=.5] {\scriptsize 25 ft} (0,7) -- node [left,pos=.5] {\scriptsize 6 ft.} (0,0);
-
             \draw[&gt;=stealth,-&gt;] (-2,-1) -- ( -2,10) node [above] {\scriptsize $y$};
 
             \foreach \y/\x in {0/0,1.5/$y$,3/3,6/6,8/8}
             {
 		          \draw (-2.5,\y) node [left] {\scriptsize $\x$} -- (-1.5,\y);
             }
-            \draw [thick] (0,0) --  (10,0) -- (15,3) --  (25,3)--  (25,6)-- (0,6) -- (0,0);
 
-            \draw [thick,{\colorone}] (0,5) -- (25,5)
+            \draw [thick] (0,0) -- (10,0) -- (15,3) -- (25,3) -- (25,6) -- (0,6) -- (0,0);
+
+            \draw [thick,firstcolor] (0,5) -- (25,5)
 													            (0,1.5) -- (12.5,1.5);
 
             \draw [fill=black] (10,0) circle (1.5pt) node [shift={(15pt,-2pt)}] {\scriptsize $(10,0)$}
-									              (15,3) circle (1.5pt) node [shift={(15pt,-6pt)}] {\scriptsize $(15,3)$};
+									             (15,3) circle (1.5pt) node [shift={(15pt,-6pt)}] {\scriptsize $(15,3)$};
 
             \draw[&gt;=stealth,-&gt;] (-2,-2) -- (20,-2) node [right] {\scriptsize $x$};
 
@@ -1577,13 +1559,17 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[x={(1,0)},z={(0,1)},y={(.5,.87)},xscale=.4,yscale=.3]
-                \draw [thick] (0,0,0) -- node [above,rotate=90,pos=.5] { 10} (0,0,-10) --  node [below, pos=.5] { 2} (2,0,-10) -- node [right, pos=.5] { 15} (2,5,-10) -- (5,5,0)
+
+                \draw [thick] (0,0,0) -- node [above,rotate=90,pos=.5] {10} (0,0,-10) -- node [below, pos=.5] {2} (2,0,-10) -- node [right, pos=.5] {15} (2,5,-10) -- (5,5,0)
                               (5,5,0) -- (5,0,0)
-                              (5,0,0) -- (0,0,0) -- (0,5,0) --  node [above,pos=.5] { 5}(5,5,0)
+                              (5,0,0) -- (0,0,0) -- (0,5,0) -- node [above,pos=.5] { 5}(5,5,0)
                               (5,0,0) -- (2,0,-10); 
 
                 \draw [thick,dashed] (0,0,-10) -- (0,5,-10) -- (2,5,-10)
-															    	 (0,5,-10) -- (0,5,0);\end{tikzpicture}
+															    	 (0,5,-10) -- (0,5,0);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
@@ -1682,16 +1668,22 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.5]
+
                 \draw [thick] (0,0) circle (1)
                               (-1,.1) -- (-1.5,-1.9)
                               (1,.1) -- (1.5,-1.9);
-                \draw (0,0)-- node [above,pos=.5] { 2 ft} (1,0)
-                      (0,-2) -- node [above,pos=.5] { 5 ft} (1.5,-2)
+
+                \draw (0,0)-- node [above,pos=.5] {2 ft} (1,0)
+                      (0,-2) -- node [above,pos=.5] {5 ft} (1.5,-2)
                       (1.7,0) -- (2.3,0)
                       (1.7,-2) -- (2.3,-2)
-                      (2,0) -- node [pos=.5,right] { 10 ft} (2,-2);
+                      (2,0) -- node [pos=.5,right] {10 ft} (2,-2);
+
                 \draw [thick] (-1.5,-2) arc (180:360:1.5);
-                \draw [thick,dashed] (-1.5,-2) arc (180:0:1.5);\end{tikzpicture}
+                \draw [thick,dashed] (-1.5,-2) arc (180:0:1.5);
+                
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
@@ -1724,14 +1716,20 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.7]
-                \draw [thick] (0,0) -- node [pos=.5,left]{ 2 m} (1,1) --node [above,pos=.5] { 2 m} (3,1) -- (2,0)--cycle
+
+                \draw [thick] (0,0) -- node [pos=.5,left]{2 m} (1,1) --node [above,pos=.5] {2 m} (3,1) -- (2,0) -- cycle
                               (0,0) -- (1.5,-2)
                               (3,1) -- (1.5,-2)
                               (2,0) -- (1.5,-2);
+                              
                 \draw [thick,dashed] (1,1) -- (1.5,-2);
+
                 \draw (3,.5) -- (3.6,.5)
                       (3,-2) -- (3.6,-2)
-                      (3.3,.5) -- node [pos=.5,right] { 7 m} (3.3,-2);\end{tikzpicture}
+                      (3.3,.5) -- node [pos=.5,right] {7 m} (3.3,-2);
+
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
@@ -1764,17 +1762,25 @@
                 <latex-image>
                 
                 \begin{tikzpicture}[xscale=.7,yscale=.7]
-                \draw [thick] (0,0) node (A) -- node [pos=.5,left]{ 5 m} (1,1)node (B)  --node [above,pos=.5] { 5 m} (3,1) node (C)  -- (2,0) node (D) --cycle;
+
+                \draw [thick] (0,0) node (A) -- node [pos=.5,left] {5 m} (1,1) node (B) -- node [above,pos=.5] {5 m} (3,1) node (C) -- (2,0) node (D) -- cycle;
+                
                 \begin{scope}[scale=.75,shift={(.5,-3)}]
-                \draw [thick] (0,0) node (AA)  -- (1,1) node (BB)  -- (3,1) node (CC)  -- node [right,pos=.5] { 2 m} (2,0) node (DD) -- node [pos=.5,below]{ 2 m} (0,0);
+                  \draw [thick] (0,0) node (AA) -- (1,1) node (BB) -- (3,1) node (CC) -- node [right,pos=.5] {2 m} (2,0) node (DD) -- node [pos=.5,below] {2 m} (0,0);
                 \end{scope}
+
                 \draw [dashed,thick] (BB.center) -- (B.center);
+
                 \draw [thick] (AA.center) -- (A.center)
                               (DD.center) -- (D.center)
                               (CC.center) -- (C.center);
+
                 \draw (3.2,.5) -- (3.8,.5)
                       (3.2,-2) -- (3.8,-2)
-                      (3.5,.5) -- node [pos=.5,right] { 9 m} (3.5,-2);\end{tikzpicture}
+                      (3.5,.5) -- node [pos=.5,right] { 9 m} (3.5,-2);
+                      
+                \end{tikzpicture}
+
                 </latex-image>
               </image>
 
