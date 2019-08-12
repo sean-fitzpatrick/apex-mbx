@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_multi_limit">
   <title>Limits and Continuity of Multivariable Functions</title>
   <introduction>
@@ -53,7 +52,7 @@
 
         <p>
           A set <m>S</m> is <term>bounded</term>
-          if there is an <m>M>0</m> such that the open disk,
+          if there is an <m>M \gt 0</m> such that the open disk,
           centered at the origin with radius <m>M</m>, contains <m>S</m>.
           A set that is not bounded is <term>unbounded</term>.
 
@@ -103,145 +102,134 @@
       point <m>P_2</m> is an interior point for there is an open disk centered there that lies entirely within the set.
     </p>
 
-    <table xml:id="fig_multilimit_intro">
+    <figure xml:id="fig_multilimit_intro">
       <caption>Illustrating open and closed sets in the <m>x</m>-<m>y</m> plane.</caption>
-      <tabular>
-        <row>
-          <cell><figure>
-<!-- START figures/fig_multilimit_introa.tex -->
-              <image xml:id="img_multilimit_introa">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=stealth]
-                \begin{axis}[%
-                axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,
-			%minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-			ytick=\empty,
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1,ymax=5,%
-			xmin=-1,xmax=7.5%
-                ]
+      <sidebyside>
+        <figure xml:id="fig_multilimit_introa">
+          <caption/>
+        <!-- START figures/fig_multilimit_introa.tex -->
+          <image xml:id="img_multilimit_introa">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
 
-                \addplot [thick,{\colorone},fill={\coloronefill}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
+            \begin{axis}[%
+            axis on top,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,
+            %minor x tick num=4,%
+            %			extra x ticks={.33},
+            %			extra x tick labels={$1/3$},
+            ytick=\empty,
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-1,ymax=5,%
+            xmin=-1,xmax=7.5%
+            ]
 
-                \filldraw (axis cs: 3.7,4.062) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_1$};
-                \draw [dashed] (axis cs: 3.7,4.062) circle (5pt);
+            \addplot [thick,{\colorone},fill={\coloronefill}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
 
-                \filldraw (axis cs: 2,2) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_2$};
-                \draw [dashed] (axis cs: 2,2) circle (5pt);
+            \filldraw (axis cs: 3.7,4.062) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_1$};
+            \draw [dashed] (axis cs: 3.7,4.062) circle (5pt);
 
-                \end{axis}
+            \filldraw (axis cs: 2,2) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_2$};
+            \draw [dashed] (axis cs: 2,2) circle (5pt);
 
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
-          <!-- figures/fig_multilimit_introa.tex END -->
-            </figure></cell>
-        </row>
-        <row>
-          <cell>(a)</cell>
-        </row>
-        <row>
-          <cell><figure>
-<!-- START figures/fig_multilimit_introb.tex -->
-              <image xml:id="img_multilimit_introb">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=stealth]
-                \begin{axis}[%
-                axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,
-			%minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-			ytick=\empty,
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1,ymax=5,%
-			xmin=-1,xmax=7.5%
-                ]
+            \end{axis}
 
-                \addplot [thick,dashed,{\colorone},fill={\coloronefill}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+        <!-- figures/fig_multilimit_introa.tex END -->
+        </figure>
 
-                \filldraw (axis cs: 3.7,4.062) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_1$};
-                \draw [dashed] (axis cs: 3.7,4.062) circle (5pt);
+        <figure xml:id="fig_multilimit_introb">
+          <caption/>
+        <!-- START figures/fig_multilimit_introb.tex -->
+          <image xml:id="img_multilimit_introb">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
 
-                \filldraw (axis cs: 2,2) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_2$};
-                \draw [dashed] (axis cs: 2,2) circle (5pt);
+            \begin{axis}[%
+            axis on top,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,
+            %minor x tick num=4,%
+            %			extra x ticks={.33},
+            %			extra x tick labels={$1/3$},
+            ytick=\empty,
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-1,ymax=5,%
+            xmin=-1,xmax=7.5%
+            ]
 
-                \end{axis}
+            \addplot [thick,dashed,{\colorone},fill={\coloronefill}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
 
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
-          <!-- figures/fig_multilimit_introb.tex END -->
-            </figure></cell>
-        </row>
-        <row>
-          <cell>(b)</cell>
-        </row>
-        <row>
-          <cell><figure>
-<!-- START figures/fig_multilimit_introc.tex -->
-              <image xml:id="img_multilimit_introc">
-                <description></description>
-                <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[>=stealth]
-                \begin{axis}[%
-                axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,
-			%minor x tick num=4,%
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-			ytick=\empty,
-			%minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-			ymin=-1,ymax=5,%
-			xmin=-1,xmax=7.5%
-                ]
+            \filldraw (axis cs: 3.7,4.062) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_1$};
+            \draw [dashed] (axis cs: 3.7,4.062) circle (5pt);
 
-                \addplot [thin,{\coloronefill},fill={\coloronefill}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
+            \filldraw (axis cs: 2,2) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_2$};
+            \draw [dashed] (axis cs: 2,2) circle (5pt);
 
-                \addplot [thick,dashed,{\colorone}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)};
+            \end{axis}
 
-                \addplot [thick,,{\colorone}, smooth]coordinates {(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+        <!-- figures/fig_multilimit_introb.tex END -->
+        </figure>
 
-                \filldraw (axis cs: 3.7,4.062) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_1$};
-                \draw [dashed] (axis cs: 3.7,4.062) circle (5pt);
+        <figure xml:id="fig_multilimit_introc">
+          <caption/>
+        <!-- START figures/fig_multilimit_introc.tex -->
+          <image xml:id="img_multilimit_introc">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
 
-                \filldraw (axis cs: 2,2) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_2$};
-                \draw [dashed] (axis cs: 2,2) circle (5pt);
+            \begin{axis}[%
+            axis on top,%
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick=\empty,
+            %minor x tick num=4,%
+            %			extra x ticks={.33},
+            %			extra x tick labels={$1/3$},
+            ytick=\empty,
+            %minor y tick num=4,%extra y ticks={-5,-3,...,7},%
+            ymin=-1,ymax=5,%
+            xmin=-1,xmax=7.5%
+            ]
 
-                \end{axis}
+            \addplot [thin,{\coloronefill},fill={\coloronefill}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
 
-                \end{tikzpicture}
-                ]]>
-                </latex-image>
-              </image>
-          <!-- figures/fig_multilimit_introc.tex END -->
-            </figure></cell>
-        </row>
-        <row>
-          <cell>(c)</cell>
-        </row>
-        <row>
-          <cell></cell>
-        </row>
-      </tabular>
+            \addplot [thick,dashed,{\colorone}, smooth]coordinates {(1.,3.)(1.045,3.492)(1.167,3.889)(1.346,4.196)(1.56,4.414)(1.79,4.546)(2.015,4.596)(2.226,4.574)(2.425,4.501)(2.615,4.397)(2.799,4.282)(2.98,4.177)(3.16,4.099)(3.34,4.054)(3.52,4.042)(3.7,4.062)(3.88,4.114)(4.06,4.198)(4.242,4.306)(4.432,4.415)(4.636,4.503)(4.859,4.544)(5.107,4.518)(5.385,4.402)(5.681,4.203)(5.979,3.938)(6.261,3.624)(6.508,3.279)(6.705,2.92)(6.84,2.562)(6.917,2.211)(6.943,1.873)(6.922,1.553)(6.861,1.258)(6.766,0.9942)(6.634,0.7662)(6.46,0.5803)(6.238,0.4424)(5.962,0.3583)(5.626,0.3337)(5.229,0.3693)};
 
-    </table>
+            \addplot+ coordinates {(5.229,0.3693)(4.781,0.4503)(4.292,0.5591)(3.774,0.6783)(3.24,0.7904)(2.701,0.8805)(2.182,0.9817)(1.717,1.168)(1.342,1.517)(1.091,2.102)(1.,3.)};
+
+            \filldraw (axis cs: 3.7,4.062) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_1$};
+            \draw [dashed] (axis cs: 3.7,4.062) circle (5pt);
+
+            \filldraw (axis cs: 2,2) circle (1.5pt) node [shift={(0,9pt)}] {\scriptsize $P_2$};
+            \draw [dashed] (axis cs: 2,2) circle (5pt);
+
+            \end{axis}
+
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+        <!-- figures/fig_multilimit_introc.tex END -->
+        </figure>
+      </sidebyside>
+    </figure>
 
     <p>
       The set depicted in <xref ref="fig_multilimit_intro">Figure</xref>(a) is a closed set as it contains all of its boundary points.
@@ -293,8 +281,8 @@
           <image xml:id="img_multilimit2">
             <description></description>
             <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}[>=stealth]
+            
+            \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
 			%x=.37\marginparwidth,
@@ -316,7 +304,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_multilimit2.tex END -->
@@ -336,11 +324,11 @@
   <subsection>
     <title>Limits</title>
     <p>
-      Recall a pseudo<ndash />definition of the limit of a function of one variable:
+      Recall a pseudo<ndash/>definition of the limit of a function of one variable:
       <q><m>\lim\limits_{x\to c}f(x) = L</m></q>
       means that if <m>x</m> is <q>really close</q> to <m>c</m>,
       then <m>f(x)</m> is <q>really close</q> to <m>L</m>.
-      A similar pseudo<ndash />definition holds for functions of two variables.
+      A similar pseudo<ndash/>definition holds for functions of two variables.
       We'll say that
     </p>
 
@@ -365,8 +353,8 @@
           <me>
             \lim\limits_{(x,y)\to (x_0,y_0)} f(x,y) = L
           </me>,
-          means that given any <m>\varepsilon>0</m>,
-          there exists <m>\delta>0</m> such that for all <m>(x,y)\neq (x_0,y_0)</m>,
+          means that given any <m>\varepsilon \gt 0</m>,
+          there exists <m>\delta \gt 0</m> such that for all <m>(x,y)\neq (x_0,y_0)</m>,
           if <m>(x,y)</m> is in the open disk centered at
           <m>(x_0,y_0)</m> with radius <m>\delta</m>,
           then <m>\abs{f(x,y) - L}\lt \varepsilon</m>.
@@ -386,8 +374,8 @@
     <p>
       The concept behind <xref ref="def_multilimit">Definition</xref>
       is sketched in <xref ref="fig_multilimitdef">Figure</xref>.
-      Given <m>\varepsilon>0</m>,
-      find <m>\delta>0</m> such that if <m>(x,y)</m> is any point in the open disk centered at
+      Given <m>\varepsilon \gt 0</m>,
+      find <m>\delta \gt 0</m> such that if <m>(x,y)</m> is any point in the open disk centered at
       <m>(x_0,y_0)</m> in the <m>x</m>-<m>y</m> plane with radius <m>\delta</m>,
       then <m>f(x,y)</m> should be within <m>\varepsilon</m> of <m>L</m>.
     </p>
@@ -410,9 +398,9 @@
        -->
       <!-- START figures/figmultilimit_def_3D.asy -->
       <image xml:id="img_multilimitdef">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figmultilimit_def3D.asy in Chapter 12
@@ -517,7 +505,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figmultilimit_def_3D.asy END -->
@@ -553,58 +541,60 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              Constants: <m>\lim\limits_{(x,y)\to (x_0,y_0)} b = b</m>
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Constants: <m>\lim\limits_{(x,y)\to (x_0,y_0)} b = b</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Identity 	<m>\lim\limits_{(x,y)\to (x_0,y_0)} x = x_0</m>;
-              <m>\lim\limits_{(x,y)\to (x_0,y_0)} y = y_0</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Identity 	<m>\lim\limits_{(x,y)\to (x_0,y_0)} x = x_0</m>;
+                <m>\lim\limits_{(x,y)\to (x_0,y_0)} y = y_0</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Sums/Differences:
-              <m>\lim\limits_{(x,y)\to (x_0,y_0)}\big(f(x,y)\pm g(x,y)\big) = L\pm K</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Sums/Differences:
+                <m>\lim\limits_{(x,y)\to (x_0,y_0)}\big(f(x,y)\pm g(x,y)\big) = L\pm K</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Scalar Multiples: 	<m>\lim\limits_{(x,y)\to (x_0,y_0)} b\cdot f(x,y) = bL</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Scalar Multiples: 	<m>\lim\limits_{(x,y)\to (x_0,y_0)} b\cdot f(x,y) = bL</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Products: 	<m>\lim\limits_{(x,y)\to (x_0,y_0)} f(x,y)\cdot g(x,y) = LK</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Products: 	<m>\lim\limits_{(x,y)\to (x_0,y_0)} f(x,y)\cdot g(x,y) = LK</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Quotients: <m>\lim\limits_{(x,y)\to (x_0,y_0)} f(x,y)/g(x,y) = L/K</m>, (<m>K\neq 0)</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Quotients: <m>\lim\limits_{(x,y)\to (x_0,y_0)} f(x,y)/g(x,y) = L/K</m>, (<m>K\neq 0)</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Powers:  	<m>\lim\limits_{(x,y)\to (x_0,y_0)} f(x,y)^n = L^n</m>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Powers:  	<m>\lim\limits_{(x,y)\to (x_0,y_0)} f(x,y)^n = L^n</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
     <p>
       This theorem,
       combined with <xref ref="thm_poly_rat">Theorems</xref>
-      and <xref ref="thm_lim_continuous"></xref>
+      and <xref ref="thm_lim_continuous"/>
       of <xref ref="sec_limit_analytically">Section</xref>,
       allows us to evaluate many limits.
     </p>
@@ -620,38 +610,40 @@
         </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              The aforementioned theorems allow us to simply evaluate
-              <m>y/x+\cos(xy)</m> when <m>x=1</m> and <m>y=\pi</m>.
-              If an indeterminate form is returned,
-              we must do more work to evaluate the limit;
-              otherwise, the result is the limit.
-              Therefore
-              <md>
-                <mrow>\lim_{(x,y)\to (1,\pi)} \frac yx + \cos(xy)  \amp = \frac\pi{1}+\cos(\pi)</mrow>
-                <mrow>\amp = \pi -1</mrow>
-              </md>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The aforementioned theorems allow us to simply evaluate
+                <m>y/x+\cos(xy)</m> when <m>x=1</m> and <m>y=\pi</m>.
+                If an indeterminate form is returned,
+                we must do more work to evaluate the limit;
+                otherwise, the result is the limit.
+                Therefore
+                <md>
+                  <mrow>\lim_{(x,y)\to (1,\pi)} \frac yx + \cos(xy)  \amp = \frac\pi{1}+\cos(\pi)</mrow>
+                  <mrow>\amp = \pi -1</mrow>
+                </md>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              We attempt to evaluate the limit by substituting 0 in for <m>x</m> and <m>y</m>,
-              but the result is the indeterminate form
-              <q><m>0/0</m>.</q> To evaluate this limit,
-              we must <q>do more work,</q> but we have not yet learned what
-              <q>kind</q> of work to do.
-              Therefore we cannot yet evaluate this limit.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                We attempt to evaluate the limit by substituting 0 in for <m>x</m> and <m>y</m>,
+                but the result is the indeterminate form
+                <q><m>0/0</m>.</q> To evaluate this limit,
+                we must <q>do more work,</q> but we have not yet learned what
+                <q>kind</q> of work to do.
+                Therefore we cannot yet evaluate this limit.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
     <p>
-      When dealing with functions of a single variable we also considered one<ndash />sided limits and stated
+      When dealing with functions of a single variable we also considered one<ndash/>sided limits and stated
       <me>
         \lim_{x\to c}f(x) = L \text{ if, and only if, }  \lim_{x\to c^+}f(x) =L \textbf{ and} \lim_{x\to c^-}f(x) =L
       </me>.
@@ -689,77 +681,79 @@
     <example xml:id="ex_multilimit4">
       <title>Showing limits do not exist</title>
       <statement>
-        <ol>
-          <li>
-            <p>
-              Show <m>\lim\limits_{(x,y)\to (0,0)} \frac{3xy}{x^2+y^2}</m> does not exist by finding the limits along the lines <m>y=mx</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Show <m>\lim\limits_{(x,y)\to (0,0)} \frac{3xy}{x^2+y^2}</m> does not exist by finding the limits along the lines <m>y=mx</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Show <m>\lim\limits_{(x,y)\to (0,0)} \frac{\sin(xy)}{x+y}</m> does not exist by finding the limit along the path <m>y=-\sin(x)</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Show <m>\lim\limits_{(x,y)\to (0,0)} \frac{\sin(xy)}{x+y}</m> does not exist by finding the limit along the path <m>y=-\sin(x)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              Evaluating <m>\lim\limits_{(x,y)\to (0,0)} \frac{3xy}{x^2+y^2}</m> along the lines <m>y=mx</m> means replace all <m>y</m>'s with <m>mx</m> and evaluating the resulting limit:
-              <md>
-                <mrow>\lim_{(x,mx)\to (0,0)} \frac{3x(mx)}{x^2+(mx)^2} \amp =\lim_{x\to 0} \frac{3mx^2}{x^2(m^2+1)}</mrow>
-                <mrow>\amp = \lim_{x\to 0} \frac{3m}{m^2+1}</mrow>
-                <mrow>\amp = \frac{3m}{m^2+1}</mrow>
-              </md>.
-              While the limit exists for each choice of <m>m</m>,
-              we get a <em>different</em> limit for each choice of <m>m</m>.
-              That is, along different lines we get differing limiting values,
-              meaning <em>the</em> limit does not exist.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Evaluating <m>\lim\limits_{(x,y)\to (0,0)} \frac{3xy}{x^2+y^2}</m> along the lines <m>y=mx</m> means replace all <m>y</m>'s with <m>mx</m> and evaluating the resulting limit:
+                <md>
+                  <mrow>\lim_{(x,mx)\to (0,0)} \frac{3x(mx)}{x^2+(mx)^2} \amp =\lim_{x\to 0} \frac{3mx^2}{x^2(m^2+1)}</mrow>
+                  <mrow>\amp = \lim_{x\to 0} \frac{3m}{m^2+1}</mrow>
+                  <mrow>\amp = \frac{3m}{m^2+1}</mrow>
+                </md>.
+                While the limit exists for each choice of <m>m</m>,
+                we get a <em>different</em> limit for each choice of <m>m</m>.
+                That is, along different lines we get differing limiting values,
+                meaning <em>the</em> limit does not exist.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Let <m>f(x,y) = \frac{\sin(xy)}{x+y}</m>.
-              We are to show that <m>\lim\limits_{(x,y)\to (0,0)} f(x,y)</m> does not exist by finding the limit along the path <m>y=-\sin(x)</m>.
-              First, however,
-              consider the limits found along the lines <m>y=mx</m> as done above.
-              <md>
-                <mrow>\lim_{(x,mx)\to (0,0)} \frac{\sin\big(x(mx)\big)}{x+mx} \amp = \lim_{x\to 0} \frac{\sin(mx^2)}{x(m+1)}</mrow>
-                <mrow>\amp = \lim_{x\to 0} \frac{\sin(mx^2)}{x}\cdot\frac1{m+1}</mrow>
-              </md>.
-              By applying L'H&#xf4;pital's Rule,
-              we can show this limit is 0 <em>except</em> when <m>m=-1</m>,
-              that is, along the line <m>y=-x</m>.
-              This line is not in the domain of <m>f</m>,
-              so we have found the following fact:
-              along every line <m>y=mx</m> in the domain of <m>f</m>,
-              <m>\lim\limits_{(x,y)\to(0,0)} f(x,y)=0</m>.
-
- 
-	Now consider the limit along the path <m>y=-\sin(x)</m>:
-              <md>
-                <mrow>\lim_{(x,-\sin(x) )\to (0,0)} \frac{\sin\big(-x\sin(x) \big)}{x-\sin(x) } \amp = \lim_{x\to0} \frac{\sin\big(-x\sin(x) \big)}{x-\sin(x) }</mrow>
-              </md>
-              Now apply L'H&#xf4;pital's Rule twice:
-              <md>
-                <mrow>\amp = \lim_{x\to 0}\frac{\cos\big(-x\sin(x) \big)(-\sin(x) -x\cos(x) )}{1-\cos(x) }  \left(\text{ `` } = 0/0\text{ '' } \right)</mrow>
-                <mrow>\amp = \lim_{x\to 0}\frac{-\sin\big(-x\sin(x) \big)(-\sin(x) -x\cos(x) )^2+\cos\big(-x\sin(x) \big)(-2\cos(x) +x\sin(x) )}{\sin(x) }</mrow>
-                <mrow>\amp = \text{ ``2/0'' }  \Rightarrow \text{ the limit does not exist. }</mrow>
-              </md>
-              Step back and consider what we have just discovered.
-              Along any line <m>y=mx</m> in the domain of the <m>f(x,y)</m>,
-              the limit is 0.
-              However, along the path <m>y=-\sin(x)</m>,
-              which lies in the domain of  <m>f(x,y)</m> for all <m>x\neq 0</m>,
-              the limit does not exist.
-              Since the limit is not the same along every path to <m>(0,0)</m>,
-              we say <m>\lim\limits_{(x,y)\to (0,0)}\frac{\sin(xy)}{x+y}</m> does not exist.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Let <m>f(x,y) = \frac{\sin(xy)}{x+y}</m>.
+                We are to show that <m>\lim\limits_{(x,y)\to (0,0)} f(x,y)</m> does not exist by finding the limit along the path <m>y=-\sin(x)</m>.
+                First, however,
+                consider the limits found along the lines <m>y=mx</m> as done above.
+                <md>
+                  <mrow>\lim_{(x,mx)\to (0,0)} \frac{\sin\big(x(mx)\big)}{x+mx} \amp = \lim_{x\to 0} \frac{\sin(mx^2)}{x(m+1)}</mrow>
+                  <mrow>\amp = \lim_{x\to 0} \frac{\sin(mx^2)}{x}\cdot\frac1{m+1}</mrow>
+                </md>.
+                By applying L'Hôpital's Rule,
+                we can show this limit is 0 <em>except</em> when <m>m=-1</m>,
+                that is, along the line <m>y=-x</m>.
+                This line is not in the domain of <m>f</m>,
+                so we have found the following fact:
+                along every line <m>y=mx</m> in the domain of <m>f</m>,
+                <m>\lim\limits_{(x,y)\to(0,0)} f(x,y)=0</m>.
+                Now consider the limit along the path <m>y=-\sin(x)</m>:
+                <md>
+                  <mrow>\lim_{(x,-\sin(x) )\to (0,0)} \frac{\sin\big(-x\sin(x) \big)}{x-\sin(x) } \amp = \lim_{x\to0} \frac{\sin\big(-x\sin(x) \big)}{x-\sin(x) }</mrow>
+                </md>
+                Now apply L'Hôpital's Rule twice:
+                <md>
+                  <mrow>\amp = \lim_{x\to 0}\frac{\cos\big(-x\sin(x) \big)(-\sin(x) -x\cos(x) )}{1-\cos(x) }  \left(\text{ `` } = 0/0\text{ '' } \right)</mrow>
+                  <mrow>\amp = \lim_{x\to 0}\frac{-\sin\big(-x\sin(x) \big)(-\sin(x) -x\cos(x) )^2+\cos\big(-x\sin(x) \big)(-2\cos(x) +x\sin(x) )}{\sin(x) }</mrow>
+                  <mrow>\amp = \text{ ``2/0'' }  \Rightarrow \text{ the limit does not exist. }</mrow>
+                </md>
+                Step back and consider what we have just discovered.
+                Along any line <m>y=mx</m> in the domain of the <m>f(x,y)</m>,
+                the limit is 0.
+                However, along the path <m>y=-\sin(x)</m>,
+                which lies in the domain of  <m>f(x,y)</m> for all <m>x\neq 0</m>,
+                the limit does not exist.
+                Since the limit is not the same along every path to <m>(0,0)</m>,
+                we say <m>\lim\limits_{(x,y)\to (0,0)}\frac{\sin(xy)}{x+y}</m> does not exist.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
 
@@ -782,8 +776,8 @@
 
         <p>
           To prove the limit is 0, we apply <xref ref="def_multilimit">Definition</xref>.
-          Let <m>\varepsilon >0</m> be given.
-          We want to find <m>\delta >0</m> such that if <m>\sqrt{(x-0)^2+(y-0)^2} \lt \delta</m>,
+          Let <m>\varepsilon  \gt 0</m> be given.
+          We want to find <m>\delta  \gt 0</m> such that if <m>\sqrt{(x-0)^2+(y-0)^2} \lt \delta</m>,
           then <m>\abs{f(x,y)-0} \lt \varepsilon</m>.
         </p>
 
@@ -832,32 +826,34 @@
           Let a function <m>f(x,y)</m> be defined on an open disk <m>B</m> containing the point <m>(x_0,y_0)</m>.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>f</m> is <em>continuous</em>
-              at <m>(x_0,y_0)</m> if <m>\lim\limits_{(x,y)\to(x_0,y_0)} f(x,y) = f(x_0,y_0)</m>.
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>f</m> is <em>continuous</em>
+                at <m>(x_0,y_0)</m> if <m>\lim\limits_{(x,y)\to(x_0,y_0)} f(x,y) = f(x_0,y_0)</m>.
 
-              <idx>
-                <h>continuous function</h>
-              </idx>
+                <idx>
+                  <h>continuous function</h>
+                </idx>
 
-              <idx>
-                <h>multivariable function</h><h>continuity</h>
-              </idx>
+                <idx>
+                  <h>multivariable function</h><h>continuity</h>
+                </idx>
 
-            </p>
-          </li>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>f</m> is <em>continuous on <m>B</m></em>
-              if <m>f</m> is continuous at all points in <m>B</m>.
-              If <m>f</m> is continuous at all points in <m>\mathbb{R}^2</m>,
-              we say that <m>f</m> is <em>continuous everywhere</em>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>f</m> is <em>continuous on <m>B</m></em>
+                if <m>f</m> is continuous at all points in <m>B</m>.
+                If <m>f</m> is continuous at all points in <m>\mathbb{R}^2</m>,
+                we say that <m>f</m> is <em>continuous everywhere</em>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -947,9 +943,9 @@
            -->
           <!-- START figures/figmulticont1_3D.asy -->
           <image xml:id="img_multicont1">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figmulticont13D.asy in Chapter 12
@@ -1032,7 +1028,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figmulticont1_3D.asy END -->
@@ -1064,54 +1060,56 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              Sums/Differences: 	<m>f\pm g</m>
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Sums/Differences: 	<m>f\pm g</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Constant Multiples: 	<m>c\cdot f</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Constant Multiples: 	<m>c\cdot f</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Products: 	<m>f\cdot g</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Products: 	<m>f\cdot g</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Quotients: 	<m>f/g</m> { (as longs as <m>g\neq 0</m> on <m>B</m>)}
-            </p>
-          </li>
+            <li>
+              <p>
+                Quotients: 	<m>f/g</m> { (as longs as <m>g\neq 0</m> on <m>B</m>)}
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Powers: 	<m>f^n</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Powers: 	<m>f^n</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Roots: 	<m>\sqrt[n]{f}</m> (if <m>n</m> is even then <m>f\geq 0</m> on <m>B</m>;
-              if <m>n</m> is odd, then true for all values of <m>f</m> on <m>B</m>.)
-            </p>
-          </li>
+            <li>
+              <p>
+                Roots: 	<m>\sqrt[n]{f}</m> (if <m>n</m> is even then <m>f\geq 0</m> on <m>B</m>;
+                if <m>n</m> is odd, then true for all values of <m>f</m> on <m>B</m>.)
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Compositions: Adjust the definitions of <m>f</m> and <m>g</m> to: Let <m>f</m> be continuous on <m>B</m>,
-              where the range of <m>f</m> on <m>B</m> is <m>J</m>,
-              and let <m>g</m> be a single variable function that is continuous on <m>J</m>.
-              Then <m>g\circ f</m>, i.e., <m>g(f(x,y))</m>,
-              is continuous on <m>B</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Compositions: Adjust the definitions of <m>f</m> and <m>g</m> to: Let <m>f</m> be continuous on <m>B</m>,
+                where the range of <m>f</m> on <m>B</m> is <m>J</m>,
+                and let <m>g</m> be a single variable function that is continuous on <m>J</m>.
+                Then <m>g\circ f</m>, i.e., <m>g(f(x,y))</m>,
+                is continuous on <m>B</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -1126,7 +1124,7 @@
       <solution>
         <p>
           We will apply both <xref ref="thm_continuity_algebra">Theorems</xref>
-          and <xref ref="thm_multi_continuous_prop"></xref>.
+          and <xref ref="thm_multi_continuous_prop"/>.
           Let <m>f_1(x,y) = x^2</m>.
           Since <m>y</m> is not actually used in the function,
           and polynomials are continuous
@@ -1150,64 +1148,66 @@
       variables.
       We cover the key concepts here;
       some terms from <xref ref="def_open">Definitions</xref>
-      and <xref ref="def_multi_continuous"></xref>
+      and <xref ref="def_multi_continuous"/>
       are not redefined but their analogous meanings should be clear to the reader.
     </p>
 
     <definition xml:id="def_multi3defs">
       <title>Open Balls, Limit, Continuous</title>
       <statement>
-        <ol>
-          <li>
-            <p>
-              An <em>open ball</em> in <m>\mathbb{R}^3</m> centered at
-              <m>(x_0,y_0,z_0)</m> with radius <m>r</m> is the set of all points <m>(x,y,z)</m> such that <m>\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2} = r</m>.
+        <p>
+          <ol>
+            <li>
+              <p>
+                An <em>open ball</em> in <m>\mathbb{R}^3</m> centered at
+                <m>(x_0,y_0,z_0)</m> with radius <m>r</m> is the set of all points <m>(x,y,z)</m> such that <m>\sqrt{(x-x_0)^2+(y-y_0)^2+(z-z_0)^2} = r</m>.
 
-              <idx>
-                <h>multivariable function</h><h>limit</h>
-              </idx>
+                <idx>
+                  <h>multivariable function</h><h>limit</h>
+                </idx>
 
-              <idx>
-                <h>limit</h><h>of multivariable function</h>
-              </idx>
+                <idx>
+                  <h>limit</h><h>of multivariable function</h>
+                </idx>
 
-              <idx>
-                <h>multivariable function</h><h>continuity</h>
-              </idx>
+                <idx>
+                  <h>multivariable function</h><h>continuity</h>
+                </idx>
 
-              <idx>
-                <h>open ball</h>
-              </idx>
+                <idx>
+                  <h>open ball</h>
+                </idx>
 
-            </p>
-          </li>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Let <m>D</m> be an open set in
-              <m>\mathbb{R}^3</m> containing <m>(x_0,y_0,z_0)</m>,
-              and let <m>f(x,y,z)</m> be a function of three variables defined on <m>D</m>,
-              except possibly at  <m>(x_0,y_0,z_0)</m>.
-              The <em>limit</em> of <m>f(x,y,z)</m> as <m>(x,y,z)</m> approaches <m>(x_0,y_0,z_0)</m> is <m>L</m>, denoted
-              <me>
-                \lim_{(x,y,z)\to (x_0,y_0,z_0)} f(x,y,z) = L
-              </me>,
-              means that given any <m>\varepsilon >0</m>,
-              there is a <m>\delta >0</m> such that for all  <m>(x,y,z)\neq(x_0,y_0,z_0)</m>,
-              if <m>(x,y,z)</m> is in the open ball centered at
-              <m>(x_0,y_0,z_0)</m> with radius <m>\delta</m>,
-              then <m>\abs{f(x,y,z) - L}\lt  \varepsilon</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                Let <m>D</m> be an open set in
+                <m>\mathbb{R}^3</m> containing <m>(x_0,y_0,z_0)</m>,
+                and let <m>f(x,y,z)</m> be a function of three variables defined on <m>D</m>,
+                except possibly at  <m>(x_0,y_0,z_0)</m>.
+                The <em>limit</em> of <m>f(x,y,z)</m> as <m>(x,y,z)</m> approaches <m>(x_0,y_0,z_0)</m> is <m>L</m>, denoted
+                <me>
+                  \lim_{(x,y,z)\to (x_0,y_0,z_0)} f(x,y,z) = L
+                </me>,
+                means that given any <m>\varepsilon  \gt 0</m>,
+                there is a <m>\delta  \gt 0</m> such that for all  <m>(x,y,z)\neq(x_0,y_0,z_0)</m>,
+                if <m>(x,y,z)</m> is in the open ball centered at
+                <m>(x_0,y_0,z_0)</m> with radius <m>\delta</m>,
+                then <m>\abs{f(x,y,z) - L}\lt  \varepsilon</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Let <m>f(x,y,z)</m> be defined on an open ball <m>B</m> containing <m>(x_0,y_0,z_0)</m>.
-              <m>f</m> is <em>continuous</em>
-              at <m>(x_0,y_0,z_0)</m> if <m>\lim\limits_{(x,y,z)\to (x_0,y_0,z_0)} f(x,y,z) = f(x_0,y_0,z_0)</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Let <m>f(x,y,z)</m> be defined on an open ball <m>B</m> containing <m>(x_0,y_0,z_0)</m>.
+                <m>f</m> is <em>continuous</em>
+                at <m>(x_0,y_0,z_0)</m> if <m>\lim\limits_{(x,y,z)\to (x_0,y_0,z_0)} f(x,y,z) = f(x_0,y_0,z_0)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -1373,7 +1373,7 @@
               </p>
 
               <p>
-                One possible answer: <m>\{(x,y) | y> x^2 \}</m>
+                One possible answer: <m>\{(x,y) | y \gt x^2 \}</m>
               </p>
             </solution>
         </webwork>
@@ -1386,33 +1386,30 @@
         <p>
           In the following exercises, a set <m>S</m> is given.
         </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                Give one boundary point and one interior point,
+                when possible, of <m>S</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                State whether <m>S</m> is open, closed, or neither.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                State whether <m>S</m> is bounded or unbounded.
+              </p>
+            </li>
+          </ol>
+        </p>
       </introduction>
-
-      <p>
-        <ol>
-          <li>
-            <title>(a)</title>
-            <p>
-              Give one boundary point and one interior point,
-              when possible, of <m>S</m>.
-            </p>
-          </li>
-
-          <li>
-            <title>(b)</title>
-            <p>
-              State whether <m>S</m> is open, closed, or neither.
-            </p>
-          </li>
-
-          <li>
-            <title>(c)</title>
-            <p>
-              State whether <m>S</m> is bounded or unbounded.
-            </p>
-          </li>
-        </ol>
-      </p>
 
       <exercise>
         <webwork seed="1">
@@ -1427,29 +1424,31 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Answers will vary.
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Answers will vary.
 
-                    interior point: <m>(1,3)</m>
+                      interior point: <m>(1,3)</m>
 
-                    boundary point: <m>(3,3)</m>
-                  </p>
-                </li>
+                      boundary point: <m>(3,3)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>S</m> is a closed set
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>S</m> is a closed set
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>S</m> is bounded
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>S</m> is bounded
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1494,7 +1493,7 @@
                     </p>
 
                     <p>
-                      <var name="$bp" evaluator="$bpev" width="10" />
+                      <var name="$bp" evaluator="$bpev" width="10"/>
                     </p>
                   </li>
 
@@ -1504,19 +1503,19 @@
                     </p>
 
                     <p>
-                      <var name="$ip" evaluator="$ipev" width="10" />
+                      <var name="$ip" evaluator="$ipev" width="10"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>S</m> is <var name="$ocn" form="popup" />.
+                      <m>S</m> is <var name="$ocn" form="popup"/>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>S</m> is <var name="$bu" form="popup" />.
+                      <m>S</m> is <var name="$bu" form="popup"/>.
                     </p>
                   </li>
                 </ol>
@@ -1538,29 +1537,31 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Answers will vary.
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Answers will vary.
 
-                    interior point: none
+                      interior point: none
 
-                    boundary point: <m>(0,-1)</m>
-                  </p>
-                </li>
+                      boundary point: <m>(0,-1)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>S</m> is a closed set, consisting only of boundary points
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>S</m> is a closed set, consisting only of boundary points
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>S</m> is bounded
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>S</m> is bounded
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1594,7 +1595,7 @@
             </setup>
             <statement>
               <p>
-                Let <m>S = \left\{(x,y)\mid y>\sin(x)\right\}</m>.
+                Let <m>S = \left\{(x,y)\mid y \gt \sin(x)\right\}</m>.
               </p>
 
               <p>
@@ -1605,7 +1606,7 @@
                     </p>
 
                     <p>
-                      <var name="$bp" evaluator="$bpev" width="10" />
+                      <var name="$bp" evaluator="$bpev" width="10"/>
                     </p>
                   </li>
 
@@ -1615,19 +1616,19 @@
                     </p>
 
                     <p>
-                      <var name="$ip" evaluator="$ipev" width="10" />
+                      <var name="$ip" evaluator="$ipev" width="10"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>S</m> is <var name="$ocn" form="popup" />.
+                      <m>S</m> is <var name="$ocn" form="popup"/>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>S</m> is <var name="$bu" form="popup" />.
+                      <m>S</m> is <var name="$bu" form="popup"/>.
                     </p>
                   </li>
                 </ol>
@@ -1680,25 +1681,27 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>D = \left\{(x,y)\, |\, 9-x^2-y^2\geq 0\right\}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>D = \left\{(x,y)\, |\, 9-x^2-y^2\geq 0\right\}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is a closed set.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>D</m> is a closed set.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is bounded.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>D</m> is bounded.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1716,25 +1719,27 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>D = \left\{(x,y)\, |\, y\geq x^2\right\}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>D = \left\{(x,y)\, |\, y\geq x^2\right\}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is a closed set.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>D</m> is a closed set.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is unbounded.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>D</m> is unbounded.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1752,25 +1757,27 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>D = \left\{(x,y)\, |\, y> x^2\right\}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>D = \left\{(x,y)\, |\, y \gt x^2\right\}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is an open set.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>D</m> is an open set.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is unbounded.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>D</m> is unbounded.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1788,25 +1795,27 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>D = \left\{(x,y)\, |\, (x,y)\neq (0,0) \right\}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>D = \left\{(x,y)\, |\, (x,y)\neq (0,0) \right\}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is an open set.
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>D</m> is an open set.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>D</m> is unbounded.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>D</m> is unbounded.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1834,34 +1843,38 @@
                 <m>\lim\limits_{(x,y)\to(0,0)} \frac{x^2-y^2}{x^2+y^2}</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Along the path <m>y=0</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=0</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along the path <m>x=0</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along the path <m>x=0</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Along <m>y=0</m>, the limit is 1.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along <m>y=0</m>, the limit is 1.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along <m>x=0</m>, the limit is <m>-1</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along <m>x=0</m>, the limit is <m>-1</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 Since the above limits are not equal, the limit does not exist.
@@ -1882,22 +1895,26 @@
                 <m>\lim\limits_{(x,y)\to(0,0)} \frac{x+y}{x-y}</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Along the path <m>y=mx</m>.
-                  </p>
-                </li>
-              </ol>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=mx</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Along <m>y=mx</m>, the limit is <m>\frac{m+1}{m-1}</m>.
-                  </p>
-                </li>
-              </ol>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along <m>y=mx</m>, the limit is <m>\frac{m+1}{m-1}</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 Since the above limit varies according to what <m>m</m> is used,
@@ -1919,34 +1936,38 @@
                 <m>\lim\limits_{(x,y)\to(0,0)} \frac{xy-y^2}{y^2+x}</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Along the path <m>y=mx</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=mx</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along the path <m>x=0</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along the path <m>x=0</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Along <m>y=mx</m>, the limit is <m>\ds\frac{mx(1-m)}{m^2x+1}</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along <m>y=mx</m>, the limit is <m>\ds\frac{mx(1-m)}{m^2x+1}</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along <m>x=0</m>, the limit is <m>-1</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along <m>x=0</m>, the limit is <m>-1</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 Since the above limits are not equal, the limit does not exist.
@@ -1967,44 +1988,48 @@
                 <m>\lim\limits_{(x,y)\to(0,0)} \frac{\sin(x^2)}{y}</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Along the path <m>y=mx</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=mx</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along the path <m>y=x^2</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=x^2</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Along <m>y=mx</m>, the limit is:
-                    <md>
-                      <mrow>\lim_{(x,y)\to(0,0)} \frac{\sin(x^2)}{y} \amp  =  \lim_{x\to 0} \frac{\sin(x^2)}{mx}</mrow>
-                      <intertext>apply L'H\^opital's Rule</intertext>
-                      <mrow>\amp = \lim_{x\to 0} \frac{2x\cos(x^2)}{m}</mrow>
-                      <mrow>\amp = 0</mrow>
-                    </md>.
-                  </p>
-                </li>
-            <!-- can't use &#xf4; in a WW. It leads to ô, which is not in the base64 charset -->
-                <li>
-                  <p>
-                    Along <m>x=0</m>, the limit is:
-                    <me>
-                      \lim_{(x,y)\to(0,0)} \frac{\sin(x^2)}{y} =  \lim_{x\to 0} \frac{\sin(x^2)}{x^2}
-                    </me>.
-                    This can be evaluated with L'Hospital's Rule or from known limits; it is 1.
-                  </p>
-                </li>
-              </ol>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along <m>y=mx</m>, the limit is:
+                      <md>
+                        <mrow>\lim_{(x,y)\to(0,0)} \frac{\sin(x^2)}{y} \amp  =  \lim_{x\to 0} \frac{\sin(x^2)}{mx}</mrow>
+                        <intertext>apply L'H\^opital's Rule</intertext>
+                        <mrow>\amp = \lim_{x\to 0} \frac{2x\cos(x^2)}{m}</mrow>
+                        <mrow>\amp = 0</mrow>
+                      </md>.
+                    </p>
+                  </li>
+              <!-- can't use &#xf4; in a WW. It leads to ô, which is not in the base64 charset -->
+                  <li>
+                    <p>
+                      Along <m>x=0</m>, the limit is:
+                      <me>
+                        \lim_{(x,y)\to(0,0)} \frac{\sin(x^2)}{y} =  \lim_{x\to 0} \frac{\sin(x^2)}{x^2}
+                      </me>.
+                      This can be evaluated with L'Hospital's Rule or from known limits; it is 1.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 Since the limits along the lines <m>y=mx</m> are not the same as the limit along <m>y=x^2</m>,
@@ -2026,44 +2051,48 @@
                 <m>\lim\limits_{(x,y)\to(1,2)} \frac{x+y-3}{x^2-1}</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Along the path <m>y=2</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=2</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along the path <m>y=x+1</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=x+1</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Along <m>y=2</m>, the limit is:
-                    <md>
-                      <mrow>\lim_{(x,y)\to(1,2)} \frac{x+y-3}{x^2-1} \amp  =  \lim_{x\to 1} \frac{x-1}{x^2-1}</mrow>
-                      <mrow>\amp = \lim_{x\to 1} \frac{1}{x+1}</mrow>
-                      <mrow>\amp = 1/2</mrow>
-                    </md>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along <m>y=2</m>, the limit is:
+                      <md>
+                        <mrow>\lim_{(x,y)\to(1,2)} \frac{x+y-3}{x^2-1} \amp  =  \lim_{x\to 1} \frac{x-1}{x^2-1}</mrow>
+                        <mrow>\amp = \lim_{x\to 1} \frac{1}{x+1}</mrow>
+                        <mrow>\amp = 1/2</mrow>
+                      </md>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along <m>y=x+1</m>, the limit is:
-                    <md>
-                      <mrow>\lim_{(x,y)\to(1,2)} \frac{x+y-3}{x^2-1} \amp  =  \lim_{x\to 1} \frac{2(x-1)}{x^2-1}</mrow>
-                      <mrow>\amp = \lim_{x\to 1} \frac{2}{x+1}</mrow>
-                      <mrow>\amp = 1</mrow>
-                    </md>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along <m>y=x+1</m>, the limit is:
+                      <md>
+                        <mrow>\lim_{(x,y)\to(1,2)} \frac{x+y-3}{x^2-1} \amp  =  \lim_{x\to 1} \frac{2(x-1)}{x^2-1}</mrow>
+                        <mrow>\amp = \lim_{x\to 1} \frac{2}{x+1}</mrow>
+                        <mrow>\amp = 1</mrow>
+                      </md>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 Since the limits along the lines <m>y=2</m> and <m>y=x+1</m> differ,
@@ -2085,44 +2114,48 @@
                 <m>\lim\limits_{(x,y)\to(\pi,\pi/2)} \frac{\sin(x) }{\cos(y) }</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    Along the path <m>x=\pi</m>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along the path <m>x=\pi</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along the path <m>y=x-\pi/2</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along the path <m>y=x-\pi/2</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    Along <m>x=\pi</m>, the limit is:
-                    <md>
-                      <mrow>\lim_{(x,y)\to(\pi,\pi/2)} \frac{\sin(x) }{\cos(y) } \amp  =  \lim_{y\to \pi/2} \frac{0}{\cos(y) }</mrow>
-                      <mrow>\amp = 0</mrow>
-                    </md>.
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      Along <m>x=\pi</m>, the limit is:
+                      <md>
+                        <mrow>\lim_{(x,y)\to(\pi,\pi/2)} \frac{\sin(x) }{\cos(y) } \amp  =  \lim_{y\to \pi/2} \frac{0}{\cos(y) }</mrow>
+                        <mrow>\amp = 0</mrow>
+                      </md>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    Along <m>y=x-\pi/2</m>, the limit is:
-                    <md>
-                      <mrow>\lim_{(x,y)\to(\pi,\pi/2)} \frac{\sin(x) }{\cos(y) } \amp  =  \lim_{x\to \pi} \frac{\sin(x) }{\cos(x-\pi/2)}</mrow>
-                      <intertext>Apply L'H\^opital's Rule:</intertext>
-                      <mrow>\amp = \lim_{x\to \pi} \frac{\cos(x) }{\sin(x-\pi/2)}</mrow>
-                      <mrow>\amp = -1</mrow>
-                    </md>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      Along <m>y=x-\pi/2</m>, the limit is:
+                      <md>
+                        <mrow>\lim_{(x,y)\to(\pi,\pi/2)} \frac{\sin(x) }{\cos(y) } \amp  =  \lim_{x\to \pi} \frac{\sin(x) }{\cos(x-\pi/2)}</mrow>
+                        <intertext>Apply L'H\^opital's Rule:</intertext>
+                        <mrow>\amp = \lim_{x\to \pi} \frac{\cos(x) }{\sin(x-\pi/2)}</mrow>
+                        <mrow>\amp = -1</mrow>
+                      </md>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
 
               <p>
                 Since the limits along the lines <m>x=\pi</m> and <m>y=x-\pi</m> differ,
@@ -2135,4 +2168,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

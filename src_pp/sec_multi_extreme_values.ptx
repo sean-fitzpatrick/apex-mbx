@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_multi_extreme_values">
   <title>Extreme Values</title>
   <introduction>
@@ -45,35 +44,37 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If there is an open disk <m>D</m> containing <m>P</m> such that
-              <m>f(x_0,y_0) \geq f(x,y)</m> for all <m>(x,y)</m> in <m>D</m>,
-              then <m>f</m> has a <em>relative maximum</em> at <m>P</m>;
-              if <m>f(x_0,y_0) \leq f(x,y)</m> for all <m>(x,y)</m> in <m>D</m>,
-              then <m>f</m> has a <em>relative minimum</em> at <m>P</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If there is an open disk <m>D</m> containing <m>P</m> such that
+                <m>f(x_0,y_0) \geq f(x,y)</m> for all <m>(x,y)</m> in <m>D</m>,
+                then <m>f</m> has a <em>relative maximum</em> at <m>P</m>;
+                if <m>f(x_0,y_0) \leq f(x,y)</m> for all <m>(x,y)</m> in <m>D</m>,
+                then <m>f</m> has a <em>relative minimum</em> at <m>P</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>f(x_0,y_0)\geq f(x,y)</m> for all <m>(x,y)</m> in <m>S</m>,
-              then <m>f</m> has an <em>absolute maximum</em> at <m>P</m>;
-              if <m>f(x_0,y_0)\leq f(x,y)</m> for all <m>(x,y)</m> in <m>S</m>,
-              then <m>f</m> has an <em>absolute minimum</em> at <m>P</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>f(x_0,y_0)\geq f(x,y)</m> for all <m>(x,y)</m> in <m>S</m>,
+                then <m>f</m> has an <em>absolute maximum</em> at <m>P</m>;
+                if <m>f(x_0,y_0)\leq f(x,y)</m> for all <m>(x,y)</m> in <m>S</m>,
+                then <m>f</m> has an <em>absolute minimum</em> at <m>P</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>f</m> has a relative maximum or minimum at <m>P</m>,
-              then <m>f</m> has a <em>relative extrema</em> at <m>P</m>;
-              if <m>f</m> has an absolute maximum or minimum at <m>P</m>,
-              then <m>f</m> has a <em>absolute extrema</em> at <m>P</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>f</m> has a relative maximum or minimum at <m>P</m>,
+                then <m>f</m> has a <em>relative extrema</em> at <m>P</m>;
+                if <m>f</m> has an absolute maximum or minimum at <m>P</m>,
+                then <m>f</m> has a <em>absolute extrema</em> at <m>P</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -100,19 +101,21 @@
 
         </p>
 
-        <ul>
-          <li>
-            <p>
-              <m>f_x(x_0,y_0) = 0</m> and <m>f_y(x_0,y_0) = 0</m>, or
-            </p>
-          </li>
+        <p>
+          <ul>
+            <li>
+              <p>
+                <m>f_x(x_0,y_0) = 0</m> and <m>f_y(x_0,y_0) = 0</m>, or
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>f_x(x_0,y_0)</m> and/or <m>f_y(x_0,y_0)</m> is undefined.
-            </p>
-          </li>
-        </ul>
+            <li>
+              <p>
+                <m>f_x(x_0,y_0)</m> and/or <m>f_y(x_0,y_0)</m> is undefined.
+              </p>
+            </li>
+          </ul>
+        </p>
       </statement>
     </definition>
 
@@ -186,9 +189,9 @@
            -->
           <!-- START figures/figmulti_extreme1_3D.asy -->
           <image xml:id="img_multi_extreme1">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figmulti_extreme13D.asy in Chapter 12
@@ -267,7 +270,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme1_3D.asy END -->
@@ -299,8 +302,8 @@
         </p>
 
         <p>
-          It is clear that <m>f_x=0</m> when <m>x=0</m> <ampersand /> <m>y\neq0</m>,
-          and that <m>f_y=0</m> when <m>y=0</m> <ampersand /> <m>x\neq0</m>.
+          It is clear that <m>f_x=0</m> when <m>x=0</m> &amp; <m>y\neq0</m>,
+          and that <m>f_y=0</m> when <m>y=0</m> &amp; <m>x\neq0</m>.
           At <m>(0,0)</m>, both <m>f_x</m> and <m>f_y</m> are <em>not</em>
           <m>0</m>, but rather undefined.
           The point <m>(0,0)</m> is still a critical point,
@@ -321,9 +324,9 @@
            -->
           <!-- START figures/figmulti_extreme2_3D.asy -->
           <image xml:id="img_multi_extreme2">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figmulti_extreme23D.asy in Chapter 12
@@ -402,7 +405,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme2_3D.asy END -->
@@ -471,9 +474,9 @@
            -->
           <!-- START figures/figmulti_extreme3_3D.asy -->
           <image xml:id="img_multi_extreme3">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figmulti_extreme33D.asy in Chapter 12
@@ -553,7 +556,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme3_3D.asy END -->
@@ -585,7 +588,7 @@
           for every open disk <m>D</m> containing <m>P</m>,
           there are points <m>(x_1,y_1)</m> and
           <m>(x_2,y_2)</m> in <m>D</m> such that
-          <m>f(x_0,y_0)>f(x_1,y_1)</m> and <m>f(x_0,y_0)\lt f(x_2,y_2)</m>.
+          <m>f(x_0,y_0) \gt f(x_1,y_1)</m> and <m>f(x_0,y_0)\lt f(x_2,y_2)</m>.
 
           <idx>
             <h>saddle point</h>
@@ -613,7 +616,7 @@
 
     <p>
       Recall that with single variable functions,
-      such as <m>y=f(x)</m>, if <m>\fp'(c)>0</m>,
+      such as <m>y=f(x)</m>, if <m>\fp'(c) \gt 0</m>,
       then <m>f</m> is concave up at <m>c</m>, and if <m>\fp(c) =0</m>,
       then <m>f</m> has a relative minimum at <m>x=c</m>.
       (We called this the Second Derivative Test.)
@@ -629,7 +632,7 @@
 
     <tabular>
       <row>
-        <cell><m>f_{xx}</m> and <m>f_{yy} >0</m></cell>
+        <cell><m>f_{xx}</m> and <m>f_{yy}  \gt 0</m></cell>
         <cell><m>\Rightarrow</m></cell>
         <cell>relative minimum</cell>
       </row>
@@ -650,7 +653,7 @@
       Functions <m>f</m> exist where <m>f_{xx}</m> and <m>f_{yy}</m> are both positive but a saddle point still exists.
       In such a case,
       while the concavity in the <m>x</m>-direction is up (i.e.,
-      <m>f_{xx}>0</m>) and the concavity in the <m>y</m>-direction is also up (i.e., <m>f_{yy}>0</m>),
+      <m>f_{xx} \gt 0</m>) and the concavity in the <m>y</m>-direction is also up (i.e., <m>f_{yy} \gt 0</m>),
       the concavity switches somewhere in between the <m>x</m>- and <m>y</m>-directions.
     </p>
 
@@ -660,7 +663,7 @@
       (refer back to <xref ref="thm_mixed_partial">Theorem</xref>),
       we can rewrite this as <m>D = f_{xx}f_{yy}-f_{xy}^{\,2}</m>.
       <m>D</m> can be used to test whether the concavity at a point changes depending on direction.
-      If <m>D>0</m>,
+      If <m>D \gt 0</m>,
       the concavity does not switch (i.e., at that point,
       the graph is concave up or down in all directions).
       If <m>D\lt 0</m>, the concavity does switch.
@@ -696,33 +699,35 @@
           </me>.
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If <m>D>0</m> and <m>f_{xx}(x_0,y_0)>0</m>,
-              then <m>P</m> is a relative minimum of <m>f</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>D \gt 0</m> and <m>f_{xx}(x_0,y_0) \gt 0</m>,
+                then <m>P</m> is a relative minimum of <m>f</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>D>0</m> and <m>f_{xx}(x_0,y_0)\lt 0</m>,
-              then <m>P</m> is a relative maximum of <m>f</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>D \gt 0</m> and <m>f_{xx}(x_0,y_0)\lt 0</m>,
+                then <m>P</m> is a relative maximum of <m>f</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>D\lt 0</m>, then <m>P</m> is a saddle point of <m>f</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>D\lt 0</m>, then <m>P</m> is a saddle point of <m>f</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>D=0</m>, the test is inconclusive.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>D=0</m>, the test is inconclusive.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -755,7 +760,7 @@
         </p>
 
         <p>
-          At <m>(-1,2)</m>: <m>D(-1,2) = 12>0</m>,
+          At <m>(-1,2)</m>: <m>D(-1,2) = 12 \gt 0</m>,
           and <m>f_{xx}(-1,2) = -6</m>.
           By the Second Derivative Test,
           <m>f</m> has a relative maximum at <m>(-1,2)</m>.
@@ -853,7 +858,7 @@
         </p>
 
         <p>
-          At <m>(-1/2,1/8)</m>, <m>D>0</m> and <m>f_{xx} > 0</m>,
+          At <m>(-1/2,1/8)</m>, <m>D \gt 0</m> and <m>f_{xx}  \gt  0</m>,
           so <m>(-1/2,1/8)</m> is a relative minimum.
         </p>
 
@@ -870,9 +875,9 @@
            -->
           <!-- START figures/figmulti_extreme5_3D.asy -->
           <image xml:id="img_multi_extreme5">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figmulti_extreme53D.asy in Chapter 12
@@ -951,7 +956,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme5_3D.asy END -->
@@ -960,7 +965,7 @@
         <p>
           <xref ref="fig_multi_extreme5">Figure</xref>
           shows a graph of <m>f</m> and the three critical points.
-          Note how this function does not vary much near the critical points <mdash /> that is,
+          Note how this function does not vary much near the critical points <mdash/> that is,
           visually it is difficult to determine whether a point is a saddle point or relative minimum
           (or even a critical point at all!).
           This is one reason why the Second Derivative Test is so important to have.
@@ -1037,8 +1042,8 @@
         <figure xml:id="fig_conopt1">
           <caption>Plotting the surface of <m>f</m> along with the restricted domain <m>S</m>.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_conopt1a_3D">
+              <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1049,132 +1054,128 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figconopt1_3D.asy -->
-              <image xml:id="img_conopt1_3D">
+              <image xml:id="img_conopt1a_3D">
+                <description></description>
+                <asymptote>
+                  
+                  import graph3;
 
-            <asymptote>
-              <![CDATA[
-              import graph3;
+                  //ASY file for figconopt1.asy in Chapter 12
 
-              //ASY file for figconopt1.asy in Chapter 12
+                  size(200,200,IgnoreAspect);
+                  //size(200,200,Aspect);
+                  //currentprojection=perspective(7,2,1);
+                  currentprojection=orthographic(5.6,-7.8,20.3);
+                  defaultrender.merge=true;
 
-              size(200,200,IgnoreAspect);
-              //size(200,200,Aspect);
-              //currentprojection=perspective(7,2,1);
-              currentprojection=orthographic(5.6,-7.8,20.3);
-              defaultrender.merge=true;
+                  usepackage("mathspec");
+                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  // setup and draw the axes
+                  real[] myxchoice={-1,2};
+                  real[] myychoice={-2,1,2};
+                  real[] myzchoice={5};
+                  defaultpen(0.5mm);
+                  pair xbounds=(-1.5,3);
+                  pair ybounds=(-2.5,2.5);
+                  pair zbounds=(-1,10);
 
-              // setup and draw the axes
-              real[] myxchoice={-1,2};
-              real[] myychoice={-2,1,2};
-              real[] myzchoice={5};
-              defaultpen(0.5mm);
-              pair xbounds=(-1.5,3);
-              pair ybounds=(-2.5,2.5);
-              pair zbounds=(-1,10);
+                  xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                  yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                  zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
 
-              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
-              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
-              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+                  label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                  label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                  label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
-              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
-              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+                  //Draw surface z=x^2 - y^2 + 5
+                  triple f(pair t) {
+                    return (t.x,t.y,t.x^2-t.y^2+5);
+                  }
+                  surface s=surface(f,(-1.5,-2.25),(2.25,1.75),16,16,vsplinetype=new splinetype[] {notaknot,notaknot,monotonic},usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+                  pen p=rgb(0,0,.7);
+                  draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw surface z=x^2 - y^2 + 5
-              triple f(pair t) {
-                return (t.x,t.y,t.x^2-t.y^2+5);
-              }
-              surface s=surface(f,(-1.5,-2.25),(2.25,1.75),16,16,vsplinetype=new splinetype[] {notaknot,notaknot,monotonic},usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
-              pen p=rgb(0,0,.7);
-              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                  //Draw triangle in plane
+                  draw((-1,-2,0)--(0,1,0)--(2,-2,0)--cycle,red+dashed+linewidth(1));
 
-              //Draw triangle in plane
-              draw((-1,-2,0)--(0,1,0)--(2,-2,0)--cycle,red+dashed+linewidth(1));
+                  //Draw triangle on surface
+                  triple g(real t) {return (t,-2,t^2+1);}
+                  path3 mypath=graph(g,-1,2,operator ..); draw(mypath,red); //side 1
+                  triple g(real t) {return (t,3*t+1,t^2-(3*t+1)^2+5);}
+                  path3 mypath=graph(g,-1,0,operator ..); draw(mypath,red); //side 2
+                  triple g(real t) {return (t,-3*t/2+1,t^2-(-3*t/2+1)^2+5);}
+                  path3 mypath=graph(g,0,2,operator ..); draw(mypath,red); //side 3
 
-              //Draw triangle on surface
-              triple g(real t) {return (t,-2,t^2+1);}
-              path3 mypath=graph(g,-1,2,operator ..); draw(mypath,red); //side 1
-              triple g(real t) {return (t,3*t+1,t^2-(3*t+1)^2+5);}
-              path3 mypath=graph(g,-1,0,operator ..); draw(mypath,red); //side 2
-              triple g(real t) {return (t,-3*t/2+1,t^2-(-3*t/2+1)^2+5);}
-              path3 mypath=graph(g,0,2,operator ..); draw(mypath,red); //side 3
+                  // ////////////////////////////////////
+                  //    SAMPLE CODE
 
-              // ////////////////////////////////////
-              //    SAMPLE CODE
+                  // defaultpen(fontsize(10pt));
 
-              // defaultpen(fontsize(10pt));
+                  //Draw the parabola z=y^2 for t from -2 to 2
+                  //triple g(real t) {return (0,t,t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
 
-              //Draw the parabola z=y^2 for t from -2 to 2
-              //triple g(real t) {return (0,t,t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
+                  //Draw the surface z=1/(1+x^2+y^2)
+                  //triple f(pair t) {
+                  //  return (t.x,t.y,1/(1+(t.x)^2+(t.y)^2));
+                  //}
+                  //surface s=surface(f,(-2,-2),(2,2),8,8,Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw the surface z=1/(1+x^2+y^2)
-              //triple f(pair t) {
-              //  return (t.x,t.y,1/(1+(t.x)^2+(t.y)^2));
-              //}
-              //surface s=surface(f,(-2,-2),(2,2),8,8,Spline);
-              //pen p=rgb(0,0,.7);
-              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                  //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                  //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
 
-              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
-              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                  //triple f(pair t) {
+                  //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                  //}
+                  //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
 
-              //triple f(pair t) {
-              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
-              //}
-              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                  //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..);
 
-              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..);
+                  //pen p=rgb(0,0,1);
+                  //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
 
-              //pen p=rgb(0,0,1);
-              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-
-              //draw(s,paleblue);
-              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
-              //draw(mypath,2bp+blue);
-              ]]>
-            </asymptote>
+                  //draw(s,paleblue);
+                  //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                  //draw(mypath,2bp+blue);
+                  
+                </asymptote>
               </image>
             <!-- figures/figconopt1_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_conopt1b">
+              <caption/>
             <!-- START figures/fig_conopt1b.tex -->
               <image xml:id="img_conopt1b">
                 <description></description>
                 <latex-image>
-                <![CDATA[
+                
                 \begin{tikzpicture}
+
                 \begin{axis}[%
-			xtick={-2,2},%
+			          xtick={-2,2},%
                 %			ytick={-6,-4,-2,0,2,4,6},
-			extra x ticks={-1,1},%
-			ymin=-2.5,ymax=1.5,%
-			xmin=-2.1,xmax=2.1%
+                extra x ticks={-1,1},%
+                ymin=-2.5,ymax=1.5,%
+                xmin=-2.1,xmax=2.1%
                 ]
 
-                %\addplot [thick,{\colorone},smooth,domain=0:.9] {1/(x-1)^2};
-                %\addplot [{\colorone},thick,smooth,domain=1.1:2] {1/(x-1)^2};
                 \draw [thick,{\colorone}] (axis cs:-1,-2)-- node [black,pos=.2,above,sloped] {\scriptsize $y=3x+1$} (axis cs:0,1)--node [black,pos=.6,below,sloped] {\scriptsize $y=-3/2x+1$} (axis cs:2,-2)--node [black,pos=.5,below,sloped] {\scriptsize $y=-2$}(axis cs:-1,-2);
-                %\draw [thick,{\colorone}] (axis cs:-1,-2) -- (axis cs:2,-2);
 
                 \fill[black,draw=black] (axis cs:-1,-2) circle (1.5pt);
                 \fill[black,draw=black] (axis cs:2,-2) circle (1.5pt);
                 \fill[black,draw=black] (axis cs:0,1) circle (1.5pt);
-                %\fill[black,draw=black] (axis cs:2,2) circle (1.5pt);
-                %\fill[white,draw=black] (axis cs:1,0) circle (1.5pt);
                 \end{axis}
 
                 \end{tikzpicture}
-                ]]>
+                
                 </latex-image>
               </image>
             <!-- figures/fig_conopt1b.tex END -->
@@ -1300,9 +1301,9 @@
            -->
           <!-- START figures/figconopt1c_3D.asy -->
           <image xml:id="img_conopt1bX">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figconopt1c3D.asy in Chapter 12
@@ -1396,7 +1397,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figconopt1c_3D.asy END -->
@@ -1418,7 +1419,7 @@
       This portion of the text is entitled
       <q>Constrained Optimization</q>
       because we want to optimize a function (i.e., find its maximum and/or minimum values) subject to a <em>constraint</em>
-      <mdash /> some limit to what values the function can attain.
+      <mdash/> some limit to what values the function can attain.
       In the previous example,
       we constrained ourselves by considering a function only within the boundary of a triangle.
       This was largely arbitrary;
@@ -1459,7 +1460,7 @@
           The volume of the box is <m>V(w,\ell) = wh\ell = w^2\ell</m>.
           We wish to maximize this volume subject to the constraint <m>4w+\ell\leq 130</m>,
           or <m>\ell\leq 130-4w</m>.
-          (Common sense also indicates that <m>\ell>0, w>0</m>.)
+          (Common sense also indicates that <m>\ell \gt 0, w \gt 0</m>.)
         </p>
 
         <p>
@@ -1513,9 +1514,9 @@
            -->
           <!-- START figures/figconopt2_3D.asy -->
           <image xml:id="img_conopt2">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figconopt23D.asy in Chapter 12
@@ -1603,7 +1604,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figconopt2_3D.asy END -->
@@ -1794,7 +1795,7 @@
                     </p>
 
                     <p>
-                      <var name="$max" width="30" />
+                      <var name="$max" width="30"/>
                     </p>
                   </li>
 
@@ -1804,7 +1805,7 @@
                     </p>
 
                     <p>
-                      <var name="$min" width="30" />
+                      <var name="$min" width="30"/>
                     </p>
                   </li>
 
@@ -1814,7 +1815,7 @@
                     </p>
 
                     <p>
-                      <var name="$sad" width="30" />
+                      <var name="$sad" width="30"/>
                     </p>
                   </li>
 
@@ -1824,7 +1825,7 @@
                     </p>
 
                     <p>
-                      <var name="$inc" width="30" />
+                      <var name="$inc" width="30"/>
                     </p>
                   </li>
                 </ol>
@@ -1883,7 +1884,7 @@
                     </p>
 
                     <p>
-                      <var name="$max" width="30" />
+                      <var name="$max" width="30"/>
                     </p>
                   </li>
 
@@ -1893,7 +1894,7 @@
                     </p>
 
                     <p>
-                      <var name="$min" width="30" />
+                      <var name="$min" width="30"/>
                     </p>
                   </li>
 
@@ -1903,7 +1904,7 @@
                     </p>
 
                     <p>
-                      <var name="$sad" width="30" />
+                      <var name="$sad" width="30"/>
                     </p>
                   </li>
 
@@ -1913,7 +1914,7 @@
                     </p>
 
                     <p>
-                      <var name="$inc" width="30" />
+                      <var name="$inc" width="30"/>
                     </p>
                   </li>
                 </ol>
@@ -1978,7 +1979,7 @@
                     </p>
 
                     <p>
-                      <var name="$max" width="30" />
+                      <var name="$max" width="30"/>
                     </p>
                   </li>
 
@@ -1988,7 +1989,7 @@
                     </p>
 
                     <p>
-                      <var name="$min" width="30" />
+                      <var name="$min" width="30"/>
                     </p>
                   </li>
 
@@ -1998,7 +1999,7 @@
                     </p>
 
                     <p>
-                      <var name="$sad" width="30" />
+                      <var name="$sad" width="30"/>
                     </p>
                   </li>
 
@@ -2008,7 +2009,7 @@
                     </p>
 
                     <p>
-                      <var name="$inc" width="30" />
+                      <var name="$inc" width="30"/>
                     </p>
                   </li>
                 </ol>
@@ -2069,7 +2070,7 @@
                     </p>
 
                     <p>
-                      <var name="$max" width="30" />
+                      <var name="$max" width="30"/>
                     </p>
                   </li>
 
@@ -2079,7 +2080,7 @@
                     </p>
 
                     <p>
-                      <var name="$min" width="30" />
+                      <var name="$min" width="30"/>
                     </p>
                   </li>
 
@@ -2089,7 +2090,7 @@
                     </p>
 
                     <p>
-                      <var name="$sad" width="30" />
+                      <var name="$sad" width="30"/>
                     </p>
                   </li>
 
@@ -2099,7 +2100,7 @@
                     </p>
 
                     <p>
-                      <var name="$inc" width="30" />
+                      <var name="$inc" width="30"/>
                     </p>
                   </li>
                 </ol>
@@ -2167,7 +2168,7 @@
                     </p>
 
                     <p>
-                      <var name="$max" width="30" />
+                      <var name="$max" width="30"/>
                     </p>
                   </li>
 
@@ -2177,7 +2178,7 @@
                     </p>
 
                     <p>
-                      <var name="$min" width="30" />
+                      <var name="$min" width="30"/>
                     </p>
                   </li>
 
@@ -2187,7 +2188,7 @@
                     </p>
 
                     <p>
-                      <var name="$sad" width="30" />
+                      <var name="$sad" width="30"/>
                     </p>
                   </li>
 
@@ -2197,7 +2198,7 @@
                     </p>
 
                     <p>
-                      <var name="$inc" width="30" />
+                      <var name="$inc" width="30"/>
                     </p>
                   </li>
                 </ol>
@@ -2239,11 +2240,11 @@
               </p>
 
               <p>
-                The absolute maximum value is <var name="$maxout" width="5" /> which happens for input <var name="$maxin" width="10" />.
+                The absolute maximum value is <var name="$maxout" width="5"/> which happens for input <var name="$maxin" width="10"/>.
               </p>
 
               <p>
-                The absolute minimum value is <var name="$minout" width="5" /> which happens for input <var name="$minin" width="10" />.
+                The absolute minimum value is <var name="$minout" width="5"/> which happens for input <var name="$minin" width="10"/>.
               </p>
             </statement>
             <solution>
@@ -2300,11 +2301,11 @@
               </p>
 
               <p>
-                The absolute maximum value is <var name="$maxout" width="5" /> which happens for input <var name="$maxin" width="10" />.
+                The absolute maximum value is <var name="$maxout" width="5"/> which happens for input <var name="$maxin" width="10"/>.
               </p>
 
               <p>
-                The absolute minimum value is <var name="$minout" width="5" /> which happens for input <var name="$minin" width="10" />.
+                The absolute minimum value is <var name="$minout" width="5"/> which happens for input <var name="$minin" width="10"/>.
               </p>
             </statement>
             <solution>
@@ -2436,4 +2437,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

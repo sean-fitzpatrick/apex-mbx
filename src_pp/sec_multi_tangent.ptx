@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_multi_tangent">
   <title>Tangent Lines, Normal Lines, and Tangent Planes</title>
   <introduction>
     <p>
-      Derivatives and tangent lines go hand<ndash />in<ndash />hand.
+      Derivatives and tangent lines go hand<ndash/>in<ndash/>hand.
       Given <m>y=f(x)</m>,
       the line tangent to the graph of <m>f</m> at <m>x=x_0</m> is the line through
       <m>\big(x_0,f(x_0)\big)</m> with slope <m>\fp(x_0)</m>;
@@ -32,9 +31,9 @@
        -->
       <!-- START figures/figspace_tangent_intro_3D.asy -->
       <image xml:id="img_space_tangent_intro">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figspace_tangent_intro3D.asy in Chapter 12
@@ -129,7 +128,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figspace_tangent_intro_3D.asy END -->
@@ -157,31 +156,33 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The line <m>\ell_x</m> through
-              <m>\big(x_0,y_0,f(x_0,y_0)\big)</m> parallel to <m>\la 1,0,f_x(x_0,y_0)\ra</m>	is the
-              <term>tangent line to <m>f</m> in the direction of <m>x</m> at <m>(x_0,y_0)</m></term>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The line <m>\ell_x</m> through
+                <m>\big(x_0,y_0,f(x_0,y_0)\big)</m> parallel to <m>\la 1,0,f_x(x_0,y_0)\ra</m>	is the
+                <term>tangent line to <m>f</m> in the direction of <m>x</m> at <m>(x_0,y_0)</m></term>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The line <m>\ell_y</m> through
-              <m>\big(x_0,y_0,f(x_0,y_0)\big)</m> parallel to <m>\la 0,1,f_y(x_0,y_0)\ra</m>	is the
-              <term>tangent line to <m>f</m> in the direction of <m>y</m> at <m>(x_0,y_0)</m></term>.
-            </p>
-          </li>
+            <li>
+              <p>
+                The line <m>\ell_y</m> through
+                <m>\big(x_0,y_0,f(x_0,y_0)\big)</m> parallel to <m>\la 0,1,f_y(x_0,y_0)\ra</m>	is the
+                <term>tangent line to <m>f</m> in the direction of <m>y</m> at <m>(x_0,y_0)</m></term>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The line <m>\ell_{\vec u}</m> through
-              <m>\big(x_0,y_0,f(x_0,y_0)\big)</m> parallel to <m>\la u_1,u_2,D_{\vec u\,}f(x_0,y_0)\ra</m>	is the
-              <term>tangent line to <m>f</m> in the direction of <m>\vec u</m> at <m>(x_0,y_0)</m></term>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The line <m>\ell_{\vec u}</m> through
+                <m>\big(x_0,y_0,f(x_0,y_0)\big)</m> parallel to <m>\la u_1,u_2,D_{\vec u\,}f(x_0,y_0)\ra</m>	is the
+                <term>tangent line to <m>f</m> in the direction of <m>\vec u</m> at <m>(x_0,y_0)</m></term>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -203,14 +204,14 @@
       leads to the following parametric equations of directional tangent lines:
     </p>
 
-    <sidebyside>
+    <p>
       <me>
         \ell_x(t) = \left\{\begin{array}{l} x=x_0+t \\ y=y_0\\z=z_0+f_x(x_0,y_0)t
         \end{array} \right. \ \text{,}  \ell_y(t)=\left\{\begin{array}{l} x=x_0 \\ y=y_0+t\\z=z_0+f_y(x_0,y_0)t
         \end{array} \right.\  \text{ and }  \ell_{\vec u}(t)=\left\{\begin{array}{l} x=x_0+u_1t \\ y=y_0+u_2t\\z=z_0+D_{\vec u\,}f(x_0,y_0)t
         \end{array} \right.
       </me>.
-    </sidebyside>
+    </p>
 
     <example xml:id="ex_tpl1">
       <title>Finding directional tangent lines</title>
@@ -251,221 +252,220 @@
         <figure xml:id="fig_partial4">
           <caption>A surface and directional tangent lines in <xref ref="ex_tpl1">Example</xref>.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
-            <!--
-             \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
-            3Droll=0,
-            3Dortho=0.005110511556267738,
-            3Dc2c=0.5852379202842712 0.4928830564022064 0.6438655853271484,
-            3Dcoo=1.7508834600448608 15.36020565032959 -12.730416297912598,
-            3Droo=201.00000286631447,
-            3Dlights=Headlamp,add3Djscript=asylabels.js]
-             -->
-            <!-- START figures/figpartial4a_3D.asy -->
+            <figure xml:id="fig_partial4a_3D">
+              <caption/>
+              <!--
+              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+              3Droll=0,
+              3Dortho=0.005110511556267738,
+              3Dc2c=0.5852379202842712 0.4928830564022064 0.6438655853271484,
+              3Dcoo=1.7508834600448608 15.36020565032959 -12.730416297912598,
+              3Droo=201.00000286631447,
+              3Dlights=Headlamp,add3Djscript=asylabels.js]
+              -->
+              <!-- START figures/figpartial4a_3D.asy -->
               <image xml:id="img_partial4a_3D">
+                <description></description>
+                <asymptote>
+                  
+                  import graph3;
 
-            <asymptote>
-              <![CDATA[
-              import graph3;
+                  //ASY file for figpartial4a3D.asy in Chapter 12
 
-              //ASY file for figpartial4a3D.asy in Chapter 12
+                  size(200,200,IgnoreAspect);
+                  //size(200,200,Aspect);
+                  //currentprojection=perspective(7,2,1);
+                  currentprojection=orthographic(4,4,2);
+                  defaultrender.merge=true;
 
-              size(200,200,IgnoreAspect);
-              //size(200,200,Aspect);
-              //currentprojection=perspective(7,2,1);
-              currentprojection=orthographic(4,4,2);
-              defaultrender.merge=true;
+                  usepackage("mathspec");
+                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  // setup and draw the axes
+                  real[] myxchoice={2,4};
+                  real[] myychoice={2,4};
+                  real[] myzchoice={-1,1};
+                  defaultpen(0.5mm);
+                  pair xbounds=(-0.5,5);
+                  pair ybounds=(-0.5,4.5);
+                  pair zbounds=(-1.5,1.5);
 
-              // setup and draw the axes
-              real[] myxchoice={2,4};
-              real[] myychoice={2,4};
-              real[] myzchoice={-1,1};
-              defaultpen(0.5mm);
-              pair xbounds=(-0.5,5);
-              pair ybounds=(-0.5,4.5);
-              pair zbounds=(-1.5,1.5);
+                  xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                  yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                  zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
 
-              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
-              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
-              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+                  label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                  label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                  label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
-              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
-              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+                  //Draw surface z=sin(x)cos(y)
+                  triple f(pair t) {
+                    return (t.x,t.y,sin(t.x)*cos(t.y));
+                  }
+                  surface s=surface(f,(-1,-1),(4,4),16,16,Spline);
+                  pen p=rgb(0,0,.7);
+                  draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw surface z=sin(x)cos(y)
-              triple f(pair t) {
-                return (t.x,t.y,sin(t.x)*cos(t.y));
-              }
-              surface s=surface(f,(-1,-1),(4,4),16,16,Spline);
-              pen p=rgb(0,0,.7);
-              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                  //plot point on surface
+                  dotfactor=3;dot((pi/2,pi/2,0));
 
-              //plot point on surface
-              dotfactor=3;dot((pi/2,pi/2,0));
+                  //Draw lines on the surface
+                  //L1 = (pi/2,pi/2,0)+t(1,0,0) for t=-1,1
+                  draw((0.57,1.57,0)--(2.57,1.57,0),red);
+                  //L2 = (pi/2,pi/2,0)+t(0,1,-1) for t=-1,1
+                  draw((1.57,.57,1)--(1.57,2.57,-1),red);
 
-              //Draw lines on the surface
-              //L1 = (pi/2,pi/2,0)+t(1,0,0) for t=-1,1
-              draw((0.57,1.57,0)--(2.57,1.57,0),red);
-              //L2 = (pi/2,pi/2,0)+t(0,1,-1) for t=-1,1
-              draw((1.57,.57,1)--(1.57,2.57,-1),red);
+                  // ////////////////////////////////////
+                  //    SAMPLE CODE
 
-              // ////////////////////////////////////
-              //    SAMPLE CODE
+                  // defaultpen(fontsize(10pt));
 
-              // defaultpen(fontsize(10pt));
+                  //Draw the parabola z=y^2 for t from -2 to 2
+                  //triple g(real t) {return (0,t,t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
 
-              //Draw the parabola z=y^2 for t from -2 to 2
-              //triple g(real t) {return (0,t,t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
+                  //Draw the surface z=1/(1+x^2+y^2)
+                  //triple f(pair t) {
+                  //  return (t.x,t.y,1/(1+(t.x)^2+(t.y)^2));
+                  //}
+                  //surface s=surface(f,(-2,-2),(2,2),8,8,Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw the surface z=1/(1+x^2+y^2)
-              //triple f(pair t) {
-              //  return (t.x,t.y,1/(1+(t.x)^2+(t.y)^2));
-              //}
-              //surface s=surface(f,(-2,-2),(2,2),8,8,Spline);
-              //pen p=rgb(0,0,.7);
-              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                  //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                  //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
 
-              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
-              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                  //triple f(pair t) {
+                  //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                  //}
+                  //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
 
-              //triple f(pair t) {
-              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
-              //}
-              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                  //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..);
 
-              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..);
+                  //pen p=rgb(0,0,1);
+                  //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
 
-              //pen p=rgb(0,0,1);
-              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-
-              //draw(s,paleblue);
-              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
-              //draw(mypath,2bp+blue);
-              ]]>
-            </asymptote>
+                  //draw(s,paleblue);
+                  //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                  //draw(mypath,2bp+blue);
+                  
+                </asymptote>
               </image>
             <!-- figures/figpartial4a_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
-            <!--
-             \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
-            3Droll=0,
-            3Dortho=0.005110511556267738,
-            3Dc2c=0.5852379202842712 0.4928830564022064 0.6438655853271484,
-            3Dcoo=1.7508834600448608 15.36020565032959 -12.730416297912598,
-            3Droo=201.00000286631447,
-            3Dlights=Headlamp,add3Djscript=asylabels.js]
-             -->
-            <!-- START figures/figpartial4b_3D.asy -->
+            <figure xml:id="fig_partial4b_3D">
+              <caption/>
+              <!--
+              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+              3Droll=0,
+              3Dortho=0.005110511556267738,
+              3Dc2c=0.5852379202842712 0.4928830564022064 0.6438655853271484,
+              3Dcoo=1.7508834600448608 15.36020565032959 -12.730416297912598,
+              3Droo=201.00000286631447,
+              3Dlights=Headlamp,add3Djscript=asylabels.js]
+              -->
+              <!-- START figures/figpartial4b_3D.asy -->
               <image xml:id="img_partial4b_3D">
+                <description></description>
+                <asymptote>
+                  
+                  import graph3;
 
-            <asymptote>
-              <![CDATA[
-              import graph3;
+                  //ASY file for figpartial4b3D.asy in Chapter 12
 
-              //ASY file for figpartial4b3D.asy in Chapter 12
+                  size(200,200,IgnoreAspect);
+                  //size(200,200,Aspect);
+                  //currentprojection=perspective(7,2,1);
+                  currentprojection=orthographic(4,4,2);
+                  defaultrender.merge=true;
 
-              size(200,200,IgnoreAspect);
-              //size(200,200,Aspect);
-              //currentprojection=perspective(7,2,1);
-              currentprojection=orthographic(4,4,2);
-              defaultrender.merge=true;
+                  usepackage("mathspec");
+                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
+                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  // setup and draw the axes
+                  real[] myxchoice={2,4};
+                  real[] myychoice={2,4};
+                  real[] myzchoice={-1,1};
+                  defaultpen(0.5mm);
+                  pair xbounds=(-0.5,5);
+                  pair ybounds=(-0.5,4.5);
+                  pair zbounds=(-1.5,1.5);
 
-              // setup and draw the axes
-              real[] myxchoice={2,4};
-              real[] myychoice={2,4};
-              real[] myzchoice={-1,1};
-              defaultpen(0.5mm);
-              pair xbounds=(-0.5,5);
-              pair ybounds=(-0.5,4.5);
-              pair zbounds=(-1.5,1.5);
+                  xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                  yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                  zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
 
-              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
-              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
-              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+                  label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                  label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                  label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
-              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
-              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+                  //Draw surface z=sin(x)cos(y)
+                  triple f(pair t) {
+                    return (t.x,t.y,sin(t.x)*cos(t.y));
+                  }
+                  surface s=surface(f,(-1,-1),(4,4),16,16,Spline);
+                  pen p=rgb(0,0,.7);
+                  draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw surface z=sin(x)cos(y)
-              triple f(pair t) {
-                return (t.x,t.y,sin(t.x)*cos(t.y));
-              }
-              surface s=surface(f,(-1,-1),(4,4),16,16,Spline);
-              pen p=rgb(0,0,.7);
-              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                  //plot point on surface
+                  dotfactor=3;dot((pi/2,pi/2,0));
 
-              //plot point on surface
-              dotfactor=3;dot((pi/2,pi/2,0));
+                  //Draw traces on the surface
+                  triple g(real t) {return (t,pi-t,sin(t)*cos(pi-t));}
+                  path3 mypath=graph(g,0,3.75,operator ..); draw(mypath,blue);
 
-              //Draw traces on the surface
-              triple g(real t) {return (t,pi-t,sin(t)*cos(pi-t));}
-              path3 mypath=graph(g,0,3.75,operator ..); draw(mypath,blue);
+                  //Draw lines on the surface
+                  //L1 = (pi/2,pi/2,0)+t(-0.707,0.707,-0.707) for t=-1,1
+                  draw((2.28,.864,0.707)--(.864,2.28,-0.707),red);
 
-              //Draw lines on the surface
-              //L1 = (pi/2,pi/2,0)+t(-0.707,0.707,-0.707) for t=-1,1
-              draw((2.28,.864,0.707)--(.864,2.28,-0.707),red);
+                  // ////////////////////////////////////
+                  //    SAMPLE CODE
 
-              // ////////////////////////////////////
-              //    SAMPLE CODE
+                  // defaultpen(fontsize(10pt));
 
-              // defaultpen(fontsize(10pt));
+                  //Draw the parabola z=y^2 for t from -2 to 2
+                  //triple g(real t) {return (0,t,t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
 
-              //Draw the parabola z=y^2 for t from -2 to 2
-              //triple g(real t) {return (0,t,t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
+                  //Draw the surface z=1/(1+x^2+y^2)
+                  //triple f(pair t) {
+                  //  return (t.x,t.y,1/(1+(t.x)^2+(t.y)^2));
+                  //}
+                  //surface s=surface(f,(-2,-2),(2,2),8,8,Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw the surface z=1/(1+x^2+y^2)
-              //triple f(pair t) {
-              //  return (t.x,t.y,1/(1+(t.x)^2+(t.y)^2));
-              //}
-              //surface s=surface(f,(-2,-2),(2,2),8,8,Spline);
-              //pen p=rgb(0,0,.7);
-              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                  //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                  //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
 
-              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
-              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                  //triple f(pair t) {
+                  //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                  //}
+                  //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
 
-              //triple f(pair t) {
-              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
-              //}
-              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                  //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                  //path3 mypath=graph(g,-2,2,operator ..);
 
-              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..);
+                  //pen p=rgb(0,0,1);
+                  //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
 
-              //pen p=rgb(0,0,1);
-              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-
-              //draw(s,paleblue);
-              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
-              //draw(mypath,2bp+blue);
-              ]]>
-            </asymptote>
+                  //draw(s,paleblue);
+                  //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                  //draw(mypath,2bp+blue);
+                  
+                </asymptote>
               </image>
             <!-- figures/figpartial4b_3D.asy END -->
             </figure>
           </sidebyside>
-
         </figure>
 
         <p>
@@ -546,9 +546,9 @@
            -->
           <!-- START figures/figtpl2_3D.asy -->
           <image xml:id="img_tpl2">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -585,7 +585,7 @@
               //Draw surface z=\addplot3[domain=-.1:2,y domain=-.1:2,surf,colormap={mp2}{\colormapplaneone}//,shader=faceted,faceted color=black!40,samples y=20,very thin,z buffer=sort,%opacity=.6,
               //samples=20,] (x,y,{4*x*y-x^4-y^4});
 
-              bool cond(pair t) {return 4*t.x*t.y-(t.x)^4-(t.y)^4 >-3;}
+              bool cond(pair t) {return 4*t.x*t.y-(t.x)^4-(t.y)^4 &gt;-3;}
 
               //triple f(pair t) {
               //  return (t.x,t.y,4*t.x*t.y-(t.x)^4-(t.y)^4);
@@ -643,7 +643,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtpl2_3D.asy END -->
@@ -719,21 +719,23 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              A nonzero vector parallel to <m>\vec n=\la a,b,-1\ra</m> is
-              <term>orthogonal to <m>f</m> at <m>P=\big(x_0,y_0,f(x_0,y_0)\big)</m></term>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                A nonzero vector parallel to <m>\vec n=\la a,b,-1\ra</m> is
+                <term>orthogonal to <m>f</m> at <m>P=\big(x_0,y_0,f(x_0,y_0)\big)</m></term>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The line <m>\ell_n</m> through <m>P</m> with direction parallel to <m>\vec n</m> is the
-              <term>normal line to <m>f</m> at <m>P</m></term>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The line <m>\ell_n</m> through <m>P</m> with direction parallel to <m>\vec n</m> is the
+                <term>normal line to <m>f</m> at <m>P</m></term>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -779,9 +781,9 @@
            -->
           <!-- START figures/figtpl3_3D.asy -->
           <image xml:id="img_tpl3">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -818,7 +820,7 @@
               //Draw surface z=\addplot3[domain=-.1:2,y domain=-.1:2,surf,colormap={mp2}{\colormapplaneone}//,shader=faceted,faceted color=black!40,samples y=20,very thin,z buffer=sort,%opacity=.6,
               //samples=20,] (x,y,{4*x*y-x^4-y^4});
 
-              bool cond(pair t) {return 2-(t.x)^2-(t.y)^2 >-2;}
+              bool cond(pair t) {return 2-(t.x)^2-(t.y)^2 &gt;-2;}
 
               //triple f(pair t) {
               // return (t.x,t.y,2-t.x^2-t.y^2);
@@ -826,7 +828,7 @@
 
               triple f(pair t) {
                 return (cos(t.x)*t.y,sin(t.x)*t.y,2-t.y^2);
-	}
+	            }
               surface s=surface(f,(0,0),(2*pi,2),16,16,Spline);
               pen p=rgb(0,0,.7);
               draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
@@ -882,7 +884,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtpl3_3D.asy END -->
@@ -1032,9 +1034,9 @@
            -->
           <!-- START figures/figtpl5_3D.asy -->
           <image xml:id="img_tpl5">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -1070,7 +1072,7 @@
 
               //   -y^2+x+3
 
-              bool cond(pair t) {return 4*t.x*t.y-(t.x)^4-(t.y)^4 >-3;}
+              bool cond(pair t) {return 4*t.x*t.y-(t.x)^4-(t.y)^4 &gt;-3;}
 
               triple f(pair t) {
                 return (t.x,t.y,3+t.x-t.y^2);
@@ -1125,7 +1127,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtpl5_3D.asy END -->
@@ -1209,9 +1211,9 @@
            -->
           <!-- START figures/figtpl6_3D.asy -->
           <image xml:id="img_tpl6">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -1260,7 +1262,7 @@
 
               // -2*y+3
               triple g(pair t) {
-	return (t.x,t.y,-2*t.y+3);}
+	              return (t.x,t.y,-2*t.y+3);}
               surface ss=surface(g,(-1,.5),(1,1.5),1,1);
               pen q=rgb(.9,0,0)+.1mm;
               draw(ss,rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
@@ -1303,7 +1305,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtpl6_3D.asy END -->
@@ -1343,7 +1345,7 @@
 
         <p>
           This is not a new method of approximation.
-          Compare the right hand expression for <m>z</m> in Equation <xref ref="eq_tpl7" /> to the total differential:
+          Compare the right hand expression for <m>z</m> in Equation <xref ref="eq_tpl7"/> to the total differential:
           <me>
             dz = f_xdx + f_ydy  \text{ and }   z = \underbrace{\underbrace{2}_{f_x}\underbrace{(x-3)}_{dx}+\underbrace{-1/2}_{f_y}\underbrace{(y+1)}_{dy}}_{dz}+4
           </me>.
@@ -1381,23 +1383,25 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The <term>gradient of <m>F</m></term>
-              is <m>\nabla F(x,y,z) = \la f_x(x,y,z),f_y(x,y,z),f_z(x,y,z)\ra</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The <term>gradient of <m>F</m></term>
+                is <m>\nabla F(x,y,z) = \la f_x(x,y,z),f_y(x,y,z),f_z(x,y,z)\ra</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <term>gradient</term> of <m>F</m> at <m>(x_0,y_0,z_0)</m> is
-              <me>
-                \nabla F(x_0,y_0,z_0) = \la f_x(x_0,y_0,z_0),f_y(x_0,y_0,z_0),f_z(x_0,y_0,z_0)\ra
-              </me>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The <term>gradient</term> of <m>F</m> at <m>(x_0,y_0,z_0)</m> is
+                <me>
+                  \nabla F(x_0,y_0,z_0) = \la f_x(x_0,y_0,z_0),f_y(x_0,y_0,z_0),f_z(x_0,y_0,z_0)\ra
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -1485,9 +1489,9 @@
            -->
           <!-- START figures/figtpl8_3D.asy -->
           <image xml:id="img_tpl8">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -1539,7 +1543,7 @@
               //	return (t.x,t.y,1-(t.x-1)/3-4*(t.y-2)/3);}
               //surface ss=surface(g,(.5,1.5),(1.5,2.5),1,1);
               triple g(pair t) {
-	return (1.-0.980581*t.x, 2.+0.156893*t.x+0.6*t.y,1.+0.11767*t.x-0.8*t.y);}
+              	return (1.-0.980581*t.x, 2.+0.156893*t.x+0.6*t.y,1.+0.11767*t.x-0.8*t.y);}
               surface ss=surface(g,(-.75,-.75),(.75,.75),1,1);
               pen q=rgb(.9,0,0)+.1mm;
               draw(ss,rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
@@ -1582,7 +1586,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtpl8_3D.asy END -->
@@ -1640,7 +1644,7 @@
                 The displacement of the vector is one unit in the <m>x</m>-direction and 3 units in the <m>z</m>-direction,
                 with no change in <m>y</m>.
                 Thus along a line parallel to <m>\vec v</m>,
-                the change in <m>z</m> is 3 times the change in <m>x</m> <mdash /> i.e., a <q>slope</q> of 3.
+                the change in <m>z</m> is 3 times the change in <m>x</m> <mdash/> i.e., a <q>slope</q> of 3.
                 Specifically,
                 the line in the <m>x</m>-<m>z</m> plane parallel to <m>z</m> has a slope of 3.
               </p>
@@ -1775,28 +1779,30 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ell_x(t) = \left\{\begin{array}{l} x=2+t\\ y=3 \\ z = -48-12t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ell_x(t) = \left\{\begin{array}{l} x=2+t\\ y=3 \\ z = -48-12t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ell_y(t) = \left\{\begin{array}{l} x=2\\ y=3+t \\ z = -48-40t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>\ell_y(t) = \left\{\begin{array}{l} x=2\\ y=3+t \\ z = -48-40t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ell_{\vec u\,}(t) = \left\{\begin{array}{l} x=2+t/\sqrt{10}\\ y=3+3t/\sqrt{10} \\ z = -48-66\sqrt{2/5}t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ell_{\vec u\,}(t) = \left\{\begin{array}{l} x=2+t/\sqrt{10}\\ y=3+3t/\sqrt{10} \\ z = -48-66\sqrt{2/5}t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1873,7 +1879,7 @@
                     </p>
 
                     <p>
-                      <var name="$p[0]" evaluator="$pev[0]" width="50" />
+                      <var name="$p[0]" evaluator="$pev[0]" width="50"/>
                     </p>
                   </li>
 
@@ -1883,7 +1889,7 @@
                     </p>
 
                     <p>
-                      <var name="$p[1]" evaluator="$pev[1]" width="50" />
+                      <var name="$p[1]" evaluator="$pev[1]" width="50"/>
                     </p>
                   </li>
 
@@ -1894,7 +1900,7 @@
                     </p>
 
                     <p>
-                      <var name="$p[2]" evaluator="$pev[2]" width="50" />
+                      <var name="$p[2]" evaluator="$pev[2]" width="50"/>
                     </p>
                   </li>
                 </ol>
@@ -1916,28 +1922,30 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ell_x(t) = \left\{\begin{array}{l} x = 4+t\\ y = 2 \\ z = 2 + 3t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ell_x(t) = \left\{\begin{array}{l} x = 4+t\\ y = 2 \\ z = 2 + 3t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ell_y(t) = \left\{\begin{array}{l} x = 4\\ y = 2+t\\ z = 2-5t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>\ell_y(t) = \left\{\begin{array}{l} x = 4\\ y = 2+t\\ z = 2-5t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ell_{\vec u\,}(t) = \left\{\begin{array}{l} x = 4+t/\sqrt{2}\\ y = 2+t/\sqrt{2} \\ z = 2 -\sqrt{2}t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ell_{\vec u\,}(t) = \left\{\begin{array}{l} x = 4+t/\sqrt{2}\\ y = 2+t/\sqrt{2} \\ z = 2 -\sqrt{2}t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2014,7 +2022,7 @@
                     </p>
 
                     <p>
-                      <var name="$p[0]" evaluator="$pev[0]" width="50" />
+                      <var name="$p[0]" evaluator="$pev[0]" width="50"/>
                     </p>
                   </li>
 
@@ -2024,7 +2032,7 @@
                     </p>
 
                     <p>
-                      <var name="$p[1]" evaluator="$pev[1]" width="50" />
+                      <var name="$p[1]" evaluator="$pev[1]" width="50"/>
                     </p>
                   </li>
 
@@ -2035,7 +2043,7 @@
                     </p>
 
                     <p>
-                      <var name="$p[2]" evaluator="$pev[2]" width="50" />
+                      <var name="$p[2]" evaluator="$pev[2]" width="50"/>
                     </p>
                   </li>
                 </ol>
@@ -2053,7 +2061,7 @@
           a function <m>z=f(x,y)</m> and a point <m>P</m> are given.
           Find the equation of the normal line to <m>f</m> at <m>P</m>.
           Note: these are the same functions as in <xref ref="x12_06_ex_05">Exercises</xref>
-          <mdash /> <xref ref="x12_06_ex_08"></xref>.
+          <mdash/> <xref ref="x12_06_ex_08"/>.
         </p>
       </introduction>
 
@@ -2140,7 +2148,7 @@
               </p>
 
               <p>
-                <var name="$n" evaluator="$nev" width="50" />
+                <var name="$n" evaluator="$nev" width="50"/>
               </p>
             </statement>
         </webwork>
@@ -2229,7 +2237,7 @@
               </p>
 
               <p>
-                <var name="$n" evaluator="$nev" width="50" />
+                <var name="$n" evaluator="$nev" width="50"/>
               </p>
             </statement>
         </webwork>
@@ -2376,7 +2384,7 @@
               </p>
 
               <p>
-                <var name="$t" width="40" />
+                <var name="$t" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2418,7 +2426,7 @@
               </p>
 
               <p>
-                <var name="$t" width="40" />
+                <var name="$t" width="40"/>
               </p>
             </statement>
         </webwork>
@@ -2469,20 +2477,22 @@
                 <m>\nabla F = \la 1/4, \sqrt{2}/2, \sqrt{6}/8\ra</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    <m>\ell_{\vec n}(t) = \left\{\begin{array}{l} x= 1+ t/4 \\ y = \sqrt{2}+ \sqrt{2}t/2\\ z = \sqrt{6} + \sqrt{6}t/8
-                    \end{array} \right.</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ell_{\vec n}(t) = \left\{\begin{array}{l} x= 1+ t/4 \\ y = \sqrt{2}+ \sqrt{2}t/2\\ z = \sqrt{6} + \sqrt{6}t/8
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\frac14(x-1) + \frac{\sqrt{2}}{2}(y-\sqrt{2}) + \frac{\sqrt{6}}8(z-\sqrt{6}) = 0</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\frac14(x-1) + \frac{\sqrt{2}}{2}(y-\sqrt{2}) + \frac{\sqrt{6}}8(z-\sqrt{6}) = 0</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2556,7 +2566,7 @@
                     </p>
 
                     <p>
-                      <var name="$n" evaluator="$nev" width="50" />
+                      <var name="$n" evaluator="$nev" width="50"/>
                     </p>
                   </li>
 
@@ -2566,7 +2576,7 @@
                     </p>
 
                     <p>
-                      <var name="$t" width="50" />
+                      <var name="$t" width="50"/>
                     </p>
                   </li>
                 </ol>
@@ -2593,20 +2603,22 @@
                 at <m>P</m>, <m>\nabla F = \la 0, 4, 4\ra</m>
               </p>
 
-              <ol>
-                <li>
-                  <p>
-                    <m>\ell_{\vec n}(t) = \left\{\begin{array}{l} x= 2 \\ y = 1+4t\\ z = -1+4t
-                    \end{array} \right.</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ell_{\vec n}(t) = \left\{\begin{array}{l} x= 2 \\ y = 1+4t\\ z = -1+4t
+                      \end{array} \right.</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>4(y-1) + 4(z+1) = 0</m>.
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>4(y-1) + 4(z+1) = 0</m>.
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2680,7 +2692,7 @@
                     </p>
 
                     <p>
-                      <var name="$n" evaluator="$nev" width="50" />
+                      <var name="$n" evaluator="$nev" width="50"/>
                     </p>
                   </li>
 
@@ -2690,7 +2702,7 @@
                     </p>
 
                     <p>
-                      <var name="$t" width="50" />
+                      <var name="$t" width="50"/>
                     </p>
                   </li>
                 </ol>
@@ -2702,4 +2714,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
