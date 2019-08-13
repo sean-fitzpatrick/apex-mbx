@@ -68,27 +68,21 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis y line=none,axis x line=none,axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick=\empty,
-            %%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-            %ytick=\empty,
-            %%extra y ticks={-5,-3,...,7},%
-            ymin=-.1,ymax=3.5,%
-            xmin=-.1,xmax=3.5%
+            \begin{axis}[
+            axis y line=none,
+            axis x line=none,
+            axis on top,
+            ymin=-.1,ymax=3.5,
+            xmin=-.1,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},domain=1:3,stack plots=y,samples=15] {x/2};
-            \addplot [{\coloronefill},thick,fill={\coloronefill},area style,domain=1:3,stack plots=y,samples=15] {-(x-2)^2+3-x/2} \closedcycle;
+            \addplot [firstcolor!15,domain=1:3,stack plots=y,samples=15] {x/2};
+            \addplot [firstcolor!15,thick,fill=firstcolor!15,area style,domain=1:3,stack plots=y,samples=15] {-(x-2)^2+3-x/2} \closedcycle;
 
-            \addplot+[domain=1:3,samples=20] {-(x-2)^2+3};
-            \addplot+[domain=1:3,samples=20] {x/2};
-            \addplot+[domain=.5:2,samples=2] (1,x);
-            \addplot+[domain=1.5:2,samples=2] (3,x);
+            \addplot [firstcurvestyle,-,domain=1:3] {-(x-2)^2+3};
+            \addplot [firstcurvestyle,-,domain=1:3] {x/2};
+            \addplot [firstcurvestyle,-,domain=.5:2] (1,x);
+            \addplot [firstcurvestyle,-,domain=1.5:2] (3,x);
 
             \end{axis}
 
@@ -108,30 +102,22 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick=\empty,
-            %%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-            %ytick=\empty,
-            %%extra y ticks={-5,-3,...,7},%
-            ymin=-.1,ymax=3.5,%
-            xmin=-.1,xmax=3.5%
+            \begin{axis}[
+            axis on top,
+            ymin=-.1,ymax=3.5,
+            xmin=-.1,xmax=3.5
             ]
 
-            \addplot [{\coloronefill},domain=1:3,stack plots=y,samples=15] {x/2};        
-            \addplot [{\coloronefill},thick,fill={\coloronefill},area style,domain=1:3,stack plots=y,samples=15] {-(x-2)^2+3-x/2} \closedcycle;
-            \addplot+[domain=-.1:3.5,samples=20] {-(x-2)^2+3};
-            \addplot+[domain=-.1:3.5,samples=20] {x/2};
-            \addplot+[domain=0:3,samples=2] (1,x);
-            \addplot+[domain=0:3,samples=2] (3,x);
+            \addplot [firstcolor!15,domain=1:3,stack plots=y,samples=15] {x/2};        
+            \addplot [firstcolor!15,thick,fill=firstcolor!15,area style,domain=1:3,stack plots=y,samples=15] {-(x-2)^2+3-x/2} \closedcycle;
 
-            \draw (axis cs:2,2) node {$R$}
-                  (axis cs: 2,3.2) node {\scriptsize $y=f_2(x)$}
-                  (axis cs: 2,.8)  node [rotate=24]{\scriptsize $y=f_1(x)$};
+            \addplot [firstcurvestyle,-,domain=-.1:3.5,samples=60] {-(x-2)^2+3} node [pos=.65,above,black] {\scriptsize $y=f_2(x)$};
+            \addplot [firstcurvestyle,-,domain=-.1:3.5] {x/2} node [pos=.6,sloped,above,black] {\scriptsize $y=f_1(x)$};
+
+            \addplot [secondcurvestyle,-,solid,domain=0:3] (1,x);
+            \addplot [secondcurvestyle,-,solid,domain=0:3] (3,x);
+
+            \draw (axis cs:2,2) node {$R$};
 
             \end{axis}
 
@@ -236,21 +222,13 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick=\empty,
-            %%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-            %ytick=\empty,
-            %%extra y ticks={-5,-3,...,7},%
-            ymin=-.1,ymax=1.1,%
-            xmin=-.1,xmax=1.1%
+            \begin{axis}[
+            axis on top,
+            ymin=-.1,ymax=1.1,
+            xmin=-.1,xmax=1.1
             ]
 
-            \filldraw [fill={\coloronefill},draw={\colorone},thick] (axis cs:0,0) -- (axis cs:1,0) -- (axis cs: 1,1) -- (axis cs:0,1) -- cycle;
+            \filldraw [fill=firstcolor!15,draw=firstcolor,thick] (axis cs:0,0) -- (axis cs:1,0) -- (axis cs: 1,1) -- (axis cs:0,1) -- cycle;
 
             \end{axis}
 
@@ -842,17 +820,11 @@
                       \begin{tikzpicture}
 
                       \begin{axis}[%
-                      axis y line=none,axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      axis on top,
+                      axis y line=none,
                       xtick={-1,0,1,2,3},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
-                      %ytick=\empty,
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-.5,ymax=.5,%
-                      xmin=-1.5,xmax=3.5%
+                      ymin=-.5,ymax=.5,
+                      xmin=-1.5,xmax=3.5
                       ]
 
                       \filldraw (axis cs:-1,0) circle (2pt)
@@ -880,18 +852,12 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis y line=none,axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
+                      axis y line=none,
                       xtick={-1,0,1,2,3},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
-                      %ytick=\empty,
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-.5,ymax=.5,%
-                      xmin=-1.5,xmax=3.5%
+                      ymin=-.5,ymax=.5,
+                      xmin=-1.5,xmax=3.5
                       ]
 
                       \filldraw (axis cs:-1,0) circle (4.5pt)
@@ -1066,24 +1032,18 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
+            \begin{axis}[
+            axis on top,
             xtick={1,2,3},
-            %%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
             ytick={1,2},
-            %%extra y ticks={-5,-3,...,7},%
-            ymin=-.5,ymax=1.5,%
-            xmin=-.5,xmax=3.5%
+            ymin=-.5,ymax=1.5,
+            xmin=-.5,xmax=3.5
             ]
 
             \filldraw (axis cs:2,0) circle (1.4pt)
                       (axis cs: 1,1) circle (2pt)
                       (axis cs: 3,1) circle (3.16pt)
-                      (axis cs: 2.375,0.875) circle (1pt) node [below ] {\scriptsize $(\overline{x},\overline{y})$};
+                      (axis cs: 2.375,0.875) circle (1pt) node [below] {\scriptsize $(\overline{x},\overline{y})$};
  
 
             \draw [very thick] (axis cs: 2,0) -- (axis cs:3,1) -- (axis cs:1,1) -- cycle;
@@ -1215,21 +1175,13 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick=\empty,
-            %%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-            %ytick=\empty,
-            %%extra y ticks={-5,-3,...,7},%
-            ymin=-.1,ymax=1.1,%
-            xmin=-.1,xmax=1.1%
+            \begin{axis}[
+            axis on top,
+            ymin=-.1,ymax=1.1,
+            xmin=-.1,xmax=1.1
             ]
 
-            \filldraw [fill={\coloronefill},draw={\colorone},thick] (axis cs:0,0) -- (axis cs:1,0) -- (axis cs: 1,1) -- (axis cs:0,1) -- cycle;
+            \filldraw [fill=firstcolor!15,draw=firstcolor,thick] (axis cs:0,0) -- (axis cs:1,0) -- (axis cs: 1,1) -- (axis cs:0,1) -- cycle;
 
             \end{axis}
 
@@ -1354,23 +1306,16 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick={-2,-1,1,2},
-            %%
-            %			extra x ticks={.33},
-            %			extra x tick labels={$1/3$},
-            %ytick={1,2,3,4,5,6,7,8},
-            %%extra y ticks={-5,-3,...,7},%
-            ymin=-2,ymax=8.8,%
-            xmin=-6.5,xmax=6.5%
+            \begin{axis}[
+            axis on top,
+            ymin=-2,ymax=8.8,
+            xmin=-6.5,xmax=6.5
             ]
 
-            \filldraw (axis cs:0,3.51) circle (1.5pt) node [below right] {\scriptsize $(\overline{x},\overline{y})$};
+            \addplot [firstcurvestyle,areastyle] coordinates {(6.,0)(5.967,0.6272)(5.869,1.247)(5.706,1.854)(5.481,2.44)(5.196,3.)(4.854,3.527)(4.459,4.015)(4.015,4.459)(3.527,4.854)(3.,5.196)(2.44,5.481)(1.854,5.706)(1.247,5.869)(0.6272,5.967)(0,6.)(-0.6272,5.967)(-1.247,5.869)(-1.854,5.706)(-2.44,5.481)(-3.,5.196)(-3.527,4.854)(-4.015,4.459)(-4.459,4.015)(-4.854,3.527)(-5.196,3.)(-5.481,2.44)(-5.706,1.854)(-5.869,1.247)(-5.967,0.6272)(-6.,0)(-5.,0)(-4.973,0.5226)(-4.891,1.04)(-4.755,1.545)(-4.568,2.034)(-4.33,2.5)(-4.045,2.939)(-3.716,3.346)(-3.346,3.716)(-2.939,4.045)(-2.5,4.33)(-2.034,4.568)(-1.545,4.755)(-1.04,4.891)(-0.5226,4.973)(0,5.)(0.5226,4.973)(1.04,4.891)(1.545,4.755)(2.034,4.568)(2.5,4.33)(2.939,4.045)(3.346,3.716)(3.716,3.346)(4.045,2.939)(4.33,2.5)(4.568,2.034)(4.755,1.545)(4.891,1.04)(4.973,0.5226)(5.,0)(6,0)};
+            \addplot [firstcurvestyle,-] coordinates {(6.,0)(5.967,0.6272)(5.869,1.247)(5.706,1.854)(5.481,2.44)(5.196,3.)(4.854,3.527)(4.459,4.015)(4.015,4.459)(3.527,4.854)(3.,5.196)(2.44,5.481)(1.854,5.706)(1.247,5.869)(0.6272,5.967)(0,6.)(-0.6272,5.967)(-1.247,5.869)(-1.854,5.706)(-2.44,5.481)(-3.,5.196)(-3.527,4.854)(-4.015,4.459)(-4.459,4.015)(-4.854,3.527)(-5.196,3.)(-5.481,2.44)(-5.706,1.854)(-5.869,1.247)(-5.967,0.6272)(-6.,0)(-5.,0)(-4.973,0.5226)(-4.891,1.04)(-4.755,1.545)(-4.568,2.034)(-4.33,2.5)(-4.045,2.939)(-3.716,3.346)(-3.346,3.716)(-2.939,4.045)(-2.5,4.33)(-2.034,4.568)(-1.545,4.755)(-1.04,4.891)(-0.5226,4.973)(0,5.)(0.5226,4.973)(1.04,4.891)(1.545,4.755)(2.034,4.568)(2.5,4.33)(2.939,4.045)(3.346,3.716)(3.716,3.346)(4.045,2.939)(4.33,2.5)(4.568,2.034)(4.755,1.545)(4.891,1.04)(4.973,0.5226)(5.,0)(6,0)};
 
-            \addplot [{\colorone},very thick,fill={\coloronefill},area style, ] coordinates {(6.,0)(5.967,0.6272)(5.869,1.247)(5.706,1.854)(5.481,2.44)(5.196,3.)(4.854,3.527)(4.459,4.015)(4.015,4.459)(3.527,4.854)(3.,5.196)(2.44,5.481)(1.854,5.706)(1.247,5.869)(0.6272,5.967)(0,6.)(-0.6272,5.967)(-1.247,5.869)(-1.854,5.706)(-2.44,5.481)(-3.,5.196)(-3.527,4.854)(-4.015,4.459)(-4.459,4.015)(-4.854,3.527)(-5.196,3.)(-5.481,2.44)(-5.706,1.854)(-5.869,1.247)(-5.967,0.6272)(-6.,0)(-5.,0)(-4.973,0.5226)(-4.891,1.04)(-4.755,1.545)(-4.568,2.034)(-4.33,2.5)(-4.045,2.939)(-3.716,3.346)(-3.346,3.716)(-2.939,4.045)(-2.5,4.33)(-2.034,4.568)(-1.545,4.755)(-1.04,4.891)(-0.5226,4.973)(0,5.)(0.5226,4.973)(1.04,4.891)(1.545,4.755)(2.034,4.568)(2.5,4.33)(2.939,4.045)(3.346,3.716)(3.716,3.346)(4.045,2.939)(4.33,2.5)(4.568,2.034)(4.755,1.545)(4.891,1.04)(4.973,0.5226)(5.,0)(6,0)};
+            \filldraw (axis cs:0,3.51) circle (1.5pt) node [below right] {\scriptsize $(\overline{x},\overline{y})$};
 
             \end{axis}
 
