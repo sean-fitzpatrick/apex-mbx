@@ -103,24 +103,18 @@
       <description></description>
       <latex-image>
       
-      \begin{tikzpicture}
-      \begin{axis}[%
-      axis on top,%
-      %x=.37\marginparwidth,
-      %y=.37\marginparwidth,
-      %xtick={-1,1},
-      %			extra x ticks={.33},
-      %			extra x tick labels={$1/3$},
-      %ytick={-1,1},
-      %%extra y ticks={-5,-3,...,7},%
-      ymin=-5.5,ymax=5.5,%
-      xmin=-5.5,xmax=5.5%
+      \begin{tikzpicture}[&gt;=stealth]
+
+      \begin{axis}[
+      axis on top,
+      ymin=-5.5,ymax=5.5,
+      xmin=-5.5,xmax=5.5
       ]
 
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:3,1);
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:-2,-3) --(axis cs:1,-2);
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:-4,1) --(axis cs:-1,2);
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:2,-4) --(axis cs:5,-3);
+      \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,1);
+      \draw [very thick,-&gt;] (axis cs:-2,-3) -- (axis cs:1,-2);
+      \draw [very thick,-&gt;] (axis cs:-4,1) -- (axis cs:-1,2);
+      \draw [very thick,-&gt;] (axis cs:2,-4) -- (axis cs:5,-3);
 
       \end{axis}
 
@@ -152,22 +146,16 @@
       <description></description>
       <latex-image>
       
-      \begin{tikzpicture}
-      \begin{axis}[%
-      axis on top,%
-      %x=.37\marginparwidth,
-      %y=.37\marginparwidth,
-      %xtick={-1,1},
-      %			extra x ticks={.33},
-      %			extra x tick labels={$1/3$},
-      %ytick={-1,1},
-      %extra y ticks={-5,-3,...,7},%
-      ymin=-4.5,ymax=4.5,%
-      xmin=-4.5,xmax=4.5%
+      \begin{tikzpicture}[&gt;=stealth]
+
+      \begin{axis}[
+      axis on top,
+      ymin=-4.5,ymax=4.5,
+      xmin=-4.5,xmax=4.5
       ]
 
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:1,0) node [above] {\scriptsize $P$}--(axis cs:3,1)node [above] {\scriptsize $Q$};
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:-3,1)node [above] {\scriptsize $R$} --(axis cs:-1,2)node [above] {\scriptsize $S$};
+      \draw [very thick,-&gt;] (axis cs:1,0) node [above] {\scriptsize $P$} -- (axis cs:3,1) node [above] {\scriptsize $Q$};
+      \draw [very thick,-&gt;] (axis cs:-3,1) node [above] {\scriptsize $R$} -- (axis cs:-1,2) node [above] {\scriptsize $S$};
 
       \end{axis}
 
@@ -307,23 +295,18 @@
                     <description></description>
                     <latex-image>
                     
-                    \begin{tikzpicture}
-                    \begin{axis}[%
-                    axis on top,%
-                    %x=.37\marginparwidth,
-                    %y=.37\marginparwidth,
-                    %xtick={-1,1},
-                    minor x tick num=4,%
-                    %			extra x ticks={.33},
-                    %			extra x tick labels={$1/3$},
-                    %ytick={-1,1},
-                    minor y tick num=4,%extra y ticks={-5,-3,...,7},%
-                    ymin=-5.5,ymax=5.5,%
-                    xmin=-5.5,xmax=5.9%
+                    \begin{tikzpicture}[&gt;=stealth]
+
+                    \begin{axis}[
+                    axis on top,
+                    minor x tick num=4,
+                    minor y tick num=4,
+                    ymin=-5.5,ymax=5.5,
+                    xmin=-5.5,xmax=5.9
                     ]
 
-                    \draw[very thick,-&gt;,&gt;=stealth] (axis cs:3,2) node [left] {\scriptsize $P$}--(axis cs:5,1)node [shift={(5pt,0pt)}] {\scriptsize $P\,'$};
-                    \draw[very thick,-&gt;,&gt;=stealth] (axis cs:-3,-2)node [below left] {\scriptsize $R$} --(axis cs:-1,2)node [above] {\scriptsize $S$};
+                    \draw [very thick,-&gt;] (axis cs:3,2) node [left] {\scriptsize $P$} -- (axis cs:5,1) node [shift={(5pt,0pt)}] {\scriptsize $P\,'$};
+                    \draw [very thick,-&gt;] (axis cs:-3,-2) node [below left] {\scriptsize $R$} -- (axis cs:-1,2) node [above] {\scriptsize $S$};
 
                     \end{axis}
 
@@ -578,23 +561,17 @@
           <description></description>
           <latex-image>
           
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-          %x=.37\marginparwidth,
-          %y=.37\marginparwidth,
-          %xtick={-1,1},
-          %			extra x ticks={.33},
-          %			extra x tick labels={$1/3$},
-          %ytick={-1,1},
-          %extra y ticks={-5,-3,...,7},%
-          ymin=-.5,ymax=4.1,%
-          xmin=-.5,xmax=4.1%
+          \begin{tikzpicture}[&gt;=stealth]
+
+          \begin{axis}[
+          axis on top,
+          ymin=-.5,ymax=4.1,
+          xmin=-.5,xmax=4.1
           ]
 
-          \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:1,3) node [pos=.5,above,rotate=70] {\scriptsize $\vec u$};
-          \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:2,1) node [pos=.5,above,rotate=40] {\scriptsize $\vec v$};
-          \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:3,4) node [pos=.5,above,rotate=50] {\scriptsize $\vec u+\vec v$};
+          \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:1,3) node [pos=.5,above,rotate=70] {\scriptsize $\vec u$};
+          \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:2,1) node [pos=.5,above,rotate=40] {\scriptsize $\vec v$};
+          \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,4) node [pos=.5,above,rotate=50] {\scriptsize $\vec u+\vec v$};
 
           \end{axis}
 
@@ -667,27 +644,22 @@
       <description></description>
       <latex-image>
       
-      \begin{tikzpicture}
-      \begin{axis}[%
-      axis on top,%
-      %x=.37\marginparwidth,
-      %y=.37\marginparwidth,
-      %xtick={-1,1},
-      %			extra x ticks={.33},
-      %			extra x tick labels={$1/3$},
-      %ytick={-1,1},
-      %extra y ticks={-5,-3,...,7},%
-      ymin=-.5,ymax=4.1,%
-      xmin=-.5,xmax=4.1%
+      \begin{tikzpicture}[&gt;=stealth]
+
+      \begin{axis}[
+      axis on top,
+      ymin=-.5,ymax=4.1,
+      xmin=-.5,xmax=4.1
       ]
 
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:1,3) node [pos=.5,above,rotate=70] {\scriptsize $\vec u$};
-      \draw[very thick,-&gt;,&gt;=stealth,gray] (axis cs:1,3) --(axis cs:3,4) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
-      \draw[very thick,-&gt;,&gt;=stealth,gray] (axis cs:2,1) --(axis cs:3,4) node [pos=.4,above,rotate=70] {\scriptsize $\vec u$};
+      \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:1,3) node [pos=.5,above,rotate=70] {\scriptsize $\vec u$};
+      \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:2,1) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
 
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:2,1) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
-      \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:3,4) node [pos=.5,above,rotate=50] {\scriptsize $\vec u+\vec v$};
-
+      \draw [very thick,-&gt;,gray] (axis cs:1,3) -- (axis cs:3,4) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
+      \draw [very thick,-&gt;,gray] (axis cs:2,1) -- (axis cs:3,4) node [pos=.4,above,rotate=70] {\scriptsize $\vec u$};
+ 
+      \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,4) node [pos=.5,above,rotate=50] {\scriptsize $\vec u+\vec v$};
+      
       \end{axis}
 
       \end{tikzpicture}
@@ -755,29 +727,20 @@
           <description></description>
           <latex-image>
           
-          \begin{tikzpicture}
-          \begin{axis}[%
-          axis on top,%
-          %x=.37\marginparwidth,
-          %y=.37\marginparwidth,
-          %xtick={-1,1},
-          %			extra x ticks={.33},
-          %			extra x tick labels={$1/3$},
-          %ytick={-1,1},
-          %extra y ticks={-5,-3,...,7},%
-          ymin=-1.5,ymax=3.1,%
-          xmin=-.5,xmax=4.1%
+          \begin{tikzpicture}[&gt;=stealth]
+
+          \begin{axis}[
+          axis on top,
+          ymin=-1.5,ymax=3.1,
+          xmin=-.5,xmax=4.1
           ]
 
-          \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:3,1) node [pos=.5,above,rotate=20] {\scriptsize $\vec u$};
-
-          \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:1,2) node [pos=.5,above,rotate=60] {\scriptsize $\vec v$};
-
-          \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:2,-1) node [pos=.5,below,rotate=-20] {\scriptsize $\vec u-\vec v$};
-
-          \draw[very thick,-&gt;,&gt;=stealth,gray] (axis cs:3,1) --(axis cs:2,-1) node [black,pos=.7,below,rotate=60] {\scriptsize $-\vec v$};
-
-          \draw[very thick,-&gt;,&gt;=stealth,gray] (axis cs:1,2) --(axis cs:3,1) node [black,pos=.5,above,rotate=-20] {\scriptsize $\vec u-\vec v$};
+          \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,1) node [pos=.5,above,rotate=20] {\scriptsize $\vec u$};
+          \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:1,2) node [pos=.5,above,rotate=60] {\scriptsize $\vec v$};
+          \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:2,-1) node [pos=.5,below,rotate=-20] {\scriptsize $\vec u-\vec v$};
+           
+          \draw [very thick,-&gt;,gray] (axis cs:3,1) -- (axis cs:2,-1) node [black,pos=.7,below,rotate=60] {\scriptsize $-\vec v$};
+          \draw [very thick,-&gt;,gray] (axis cs:1,2) -- (axis cs:3,1) node [black,pos=.5,above,rotate=-20] {\scriptsize $\vec u-\vec v$};
 
           \end{axis}
 
@@ -837,23 +800,17 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={-1,1},
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-1,1},
-                %extra y ticks={-5,-3,...,7},%
-                ymin=-.5,ymax=3.1,%
-                xmin=-.5,xmax=4.1%
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
+                ymin=-.5,ymax=3.1,
+                xmin=-.5,xmax=4.1
                 ]
 
-                \draw[gray,very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:4,2) node [pos=.7,above,rotate=30,black] {\scriptsize $2\vec v$};
+                \draw [gray,very thick,-&gt;] (axis cs:0,0) -- (axis cs:4,2) node [pos=.7,above,rotate=30,black] {\scriptsize $2\vec v$};
 
-                \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:2,1) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
+                \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:2,1) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
 
                 \end{axis}
 
@@ -1105,25 +1062,19 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}[%
-                axis on top,%
-                %x=.37\marginparwidth,
-                %y=.37\marginparwidth,
-                %xtick={-1,1},
-                %			extra x ticks={.33},
-                %			extra x tick labels={$1/3$},
-                %ytick={-1,1},
-                %extra y ticks={-5,-3,...,7},%
-                ymin=-.5,ymax=3.1,%
-                xmin=-.5,xmax=5.1%
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
+                ymin=-.5,ymax=3.1,
+                xmin=-.5,xmax=5.1
                 ]
 
-                \draw[gray,very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:4.74,1.58) node [pos=.8,above,rotate=30,black] {\scriptsize $5\vec u$};
+                \draw [gray,very thick,-&gt;] (axis cs:0,0) -- (axis cs:4.74,1.58) node [pos=.8,above,rotate=30,black] {\scriptsize $5\vec u$};
 
-                \draw[very thick,-&gt;,&gt;=stealth] (axis cs:0,0) --(axis cs:3,1) node [pos=.6,above,rotate=30] {\scriptsize $\vec v$};
+                \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,1) node [pos=.6,above,rotate=30] {\scriptsize $\vec v$};
 
-                \draw[very thick,-&gt;,&gt;=stealth,gray] (axis cs:0,0) --(axis cs:.949,.316) node [pos=.5,above,rotate=30,black] {\scriptsize $\vec u$};
+                \draw [very thick,-&gt;,gray] (axis cs:0,0) -- (axis cs:.949,.316) node [pos=.5,above,rotate=30,black] {\scriptsize $\vec u$};
 
                 \end{axis}
 
@@ -1299,19 +1250,20 @@
           <description></description>
           <latex-image>
           
-          \begin{tikzpicture}
+          \begin{tikzpicture}[&gt;=stealth]
 
-          \filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1)--cycle;
+          \filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1) -- cycle;
           \draw (0,-.5) node {50lb};
 
           \draw [thick] (-1.5,1.5) -- (2,1.5);
           \clip (-1.5,1.5) rectangle (2,-1.25);
+          
           \draw [thick,rotate=120] (0,0) -- (3,0);
           \draw [thick,rotate=45] (0,0) -- (3,0);
           \draw [dashed] (0,0) -- (0,2);
-          \draw [rotate=45,-&gt;,&gt;=stealth] (.8,0) arc (0:45:.8);
+          \draw [rotate=45,-&gt;] (.8,0) arc (0:45:.8);
           \draw [rotate=67] (1,0) node {\scriptsize $45^\circ$};
-          \draw [rotate=90,-&gt;,&gt;=stealth] (1,0) arc (0:30:1);
+          \draw [rotate=90,-&gt;] (1,0) arc (0:30:1);
           \draw [rotate=105] (1.2,0) node {\scriptsize $30^\circ$};
 
           \end{tikzpicture}
@@ -1366,16 +1318,20 @@
           <description></description>
           <latex-image>
           
-          \begin{tikzpicture}
+          \begin{tikzpicture}[&gt;=stealth]
+
           \draw [thick,rotate=120,-&gt;] (0,0) -- (1.5,0) node [left] {\scriptsize $\vec F_1$};
-          \draw [thick,rotate=45,-&gt;] (0,0) -- (1.75,0)node [right] {\scriptsize $\vec F_2$};
+          \draw [thick,rotate=45,-&gt;] (0,0) -- (1.75,0) node [right] {\scriptsize $\vec F_2$};
           \draw [thick,rotate=-90,-&gt;] (0,0) -- (1,0) node [right] {\scriptsize $\vec F$};
+
           \draw [dashed] (0,0) -- (0,1.5);
           \draw [dashed] (-1.25,0) -- (1.25,0);
+
           \filldraw [black] (0,0) circle (1.5pt);
-          \draw [dashed,-&gt;,&gt;=stealth] (.6,0) arc (0:120:.6);
+
+          \draw [dashed,-&gt;] (.6,0) arc (0:120:.6);
           \draw [rotate=20] (.9,0) node {\scriptsize $120^\circ$};
-          \draw [dashed,-&gt;,&gt;=stealth] (1.5,0) arc (0:45:1.5);
+          \draw [dashed,-&gt;] (1.5,0) arc (0:45:1.5);
           \draw [rotate=15] (1.8,0) node {\scriptsize $45^\circ$};
 
           \end{tikzpicture}
@@ -1529,21 +1485,25 @@
           <description></description>
           <latex-image>
           
-          \begin{tikzpicture}
+          \begin{tikzpicture}[&gt;=stealth]
+
           \draw [dashed] (-1.5,-.2) -- (2,-.2);
+
           \draw (1.75,.65) node {\scriptsize 2ft $\left\{\rule{0pt}{.8cm}\right.$};
-          \filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1)--cycle;
+
+          \filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1) -- cycle;
           \draw (0,-.5) node {25lb};
 
           \draw [thick] (-1.5,1.5) -- (2,1.5);
           \clip (-1.5,1.5) rectangle (2,-1.25);
+          
           \draw [thick,rotate=110] (0,0) -- (3,0);
           \draw [dashed] (0,0) -- (0,2);
-          \draw [rotate=90,-&gt;,&gt;=stealth] (1,0) arc (0:20:1);
-          \draw [-&gt;,&gt;=stealth] (.6,0) arc (0:109:.6);
+          \draw [rotate=90,-&gt;] (1,0) arc (0:20:1);
+          \draw [-&gt;] (.6,0) arc (0:109:.6);
           \draw [rotate=50] (.75,0) node {\scriptsize $\varphi$};
           \draw [rotate=99] (1.2,0) node {\scriptsize $\theta$};
-          \draw [thick,-&gt;,&gt;=stealth] (-1.45,-.5) -- (-.8,-.5) node [pos=.15,below] {\scriptsize $\vec F_w$};
+          \draw [thick,-&gt;] (-1.45,-.5) -- (-.8,-.5) node [pos=.15,below] {\scriptsize $\vec F_w$};
 
           \end{tikzpicture}
           
@@ -2052,17 +2012,18 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}[axis on top,%
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
                 xtick=\empty,
                 ytick=\empty,
-                %			extra y ticks={-5,-3,...,7},%
-                ymin=-4.5,ymax=4.5,%
-                xmin=-4.5,xmax=4.5%
+                ymin=-4.5,ymax=4.5,
+                xmin=-4.5,xmax=4.5
                 ]
 
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: -1,-4)node [black, left] {\scriptsize $\vec v$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-4) node [black, left] {\scriptsize $\vec v$};
 
                 \end{axis}
 
@@ -2078,21 +2039,21 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}[axis on top,%
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
                 xtick=\empty,
                 ytick=\empty,
-                %			extra y ticks={-5,-3,...,7},%
-                ymin=-4.5,ymax=4.5,%
-                xmin=-4.5,xmax=4.5%
+                ymin=-4.5,ymax=4.5,
+                xmin=-4.5,xmax=4.5
                 ]
 
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: -1,-4)node [black, left] {\scriptsize $\vec v$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-4)node [black, left] {\scriptsize $\vec v$};
 
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: 2,-3)node [black,below right] {\scriptsize $\vec u+\vec v$};
-
-                \draw [-&gt;,thick,{\colorone}] (axis cs:-1,-4) -- (axis cs: 3,1)node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
+                \draw [-&gt;,thick,gray] (axis cs:0,0) -- (axis cs: 2,-3) node [black,below right] {\scriptsize $\vec u+\vec v$};
+                \draw [-&gt;,thick,gray] (axis cs:-1,-4) -- (axis cs: 3,1) node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
 
                 \end{axis}
 
@@ -2118,17 +2079,18 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}[axis on top,%
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
                 xtick=\empty,
                 ytick=\empty,
-                %			extra y ticks={-5,-3,...,7},%
-                ymin=-4.5,ymax=4.5,%
-                xmin=-4.5,xmax=4.5%
+                ymin=-4.5,ymax=4.5,
+                xmin=-4.5,xmax=4.5
                 ]
 
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: -1,-1)node [black, below] {\scriptsize $\vec v$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-1) node [black, below] {\scriptsize $\vec v$};
 
                 \end{axis}
 
@@ -2144,21 +2106,21 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}[axis on top,%
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
                 xtick=\empty,
                 ytick=\empty,
-                %			extra y ticks={-5,-3,...,7},%
-                ymin=-4.5,ymax=4.5,%
-                xmin=-4.5,xmax=4.5%
+                ymin=-4.5,ymax=4.5,
+                xmin=-4.5,xmax=4.5
                 ]
 
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: -1,-1)node [black, left] {\scriptsize $\vec v$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
+                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-1) node [black, left] {\scriptsize $\vec v$};
 
-                \draw [-&gt;,thick,{\colorone}] (axis cs:0,0) -- (axis cs: 2,2)node [black,above left] {\scriptsize $\vec u+\vec v$};
-
-                \draw [-&gt;,thick,{\colorone}] (axis cs:-1,-2) -- (axis cs: 3,2)node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
+                \draw [-&gt;,thick,gray] (axis cs:0,0) -- (axis cs: 2,2) node [black,above left] {\scriptsize $\vec u+\vec v$};
+                \draw [-&gt;,thick,gray] (axis cs:-1,-2) -- (axis cs: 3,2) node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
 
                 \end{axis}
 
@@ -2187,9 +2149,10 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}%
-                [width=175pt,axis on top,
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                axis on top,
                 axis lines=center,
                 view={135}{35},
                 xtick=\empty,
@@ -2206,8 +2169,8 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
 
                 \end{axis}
 
@@ -2223,9 +2186,11 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}%
-                [width=175pt,axis on top,
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                width=175pt,
+                axis on top,
                 axis lines=center,
                 view={135}{35},
                 xtick=\empty,
@@ -2242,12 +2207,11 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
 
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
-
-                \draw [thick,-&gt;,{\colorone}] (axis cs:1,0,1) -- (axis cs:-1,1,0) node [black,above,pos=.9] {\scriptsize $\vec u-\vec v$};
+                \draw [thick,-&gt;,gray] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
+                \draw [thick,-&gt;,gray] (axis cs:1,0,1) -- (axis cs:-1,1,0) node [black,above,pos=.9] {\scriptsize $\vec u-\vec v$};
 
                 \end{axis}
 
@@ -2273,9 +2237,10 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}%
-                [width=175pt,axis on top,
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                width=175pt,
                 axis lines=center,
                 view={135}{35},
                 xtick=\empty,
@@ -2292,8 +2257,8 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
 
                 \end{axis}
 
@@ -2309,9 +2274,10 @@
                 <description></description>
                 <latex-image>
                 
-                \begin{tikzpicture}
-                \begin{axis}%
-                [width=175pt,axis on top,
+                \begin{tikzpicture}[&gt;=stealth]
+
+                \begin{axis}[
+                width=175pt,
                 axis lines=center,
                 view={135}{35},
                 xtick=\empty,
@@ -2328,12 +2294,11 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
+                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
 
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
-
-                \draw [thick,-&gt;,{\colorone}] (axis cs:0,1,0) -- (axis cs:0,0,1) node [black,right,pos=.2] {\scriptsize $\vec u-\vec v$};
+                \draw [thick,-&gt;,gray] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
+                \draw [thick,-&gt;,gray] (axis cs:0,1,0) -- (axis cs:0,0,1) node [black,right,pos=.2] {\scriptsize $\vec u-\vec v$};
 
                 \end{axis}
 
