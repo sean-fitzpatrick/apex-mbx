@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_iterated_integrals">
   <title>Iterated Integrals and Area</title>
   <introduction>
@@ -186,19 +185,21 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\ds \int_c^d\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\ dy = \int_c^d\left(\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\right) dy</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\ds \int_c^d\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\ dy = \int_c^d\left(\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\right) dy</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx = \int_a^b\left(\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\right) dx</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx = \int_a^b\left(\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\right) dx</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -250,28 +251,27 @@
       <image xml:id="img_iterated_intro">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
+
         \begin{axis}[%
         axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,%
-			ytick=\empty,
-			extra x ticks={.1,.9},
-			extra x tick labels={$a$,$b$},
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick=\empty,%
+        ytick=\empty,
+        extra x ticks={.1,.9},
+        extra x tick labels={$a$,$b$},
         %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+			  %%extra y ticks={-5,-3,...,7},%
         %			minor x tick num=4,
-			ymin=-.1,ymax=1,%
-			xmin=-.1,xmax=1%
+			  ymin=-.1,ymax=1,%
+			  xmin=-.1,xmax=1%
         ]
 
-        %\addplot [thick, {\coloronefill},fill={\coloronefill}] coordinates { (2.,-2.)(1.805,-1.9)(1.62,-1.8)(1.445,-1.7)(1.28,-1.6)(1.125,-1.5)(0.98,-1.4)(0.845,-1.3)(0.72,-1.2)(0.605,-1.1)(0.5,-1.)(0.405,-0.9)(0.32,-0.8)(0.245,-0.7)(0.18,-0.6)(0.125,-0.5)(0.08,-0.4)(0.045,-0.3)(0.02,-0.2)(0.005,-0.1)(0,0)(0.005,0.1)(0.02,0.2)(0.045,0.3)(0.08,0.4)(0.125,0.5)(0.18,0.6)(0.245,0.7)(0.32,0.8)(0.405,0.9)(0.5,1.)(2,-2)};
+        \addplot+[samples=40,domain=0:1] ({x},{.3*x^2+.1});
 
-        \addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({x},{.3*x^2+.1});
-
-        \addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({x},{.2*cos(deg(3*x))+.7});
+        \addplot+[samples=40,domain=0:1] ({x},{.2*cos(deg(3*x))+.7});
 
         \draw [thick,{\colortwo}] (axis cs: .1,0) -- (axis cs: .1,1);
         \draw [thick,{\colortwo}] (axis cs: .9,0) -- (axis cs: .9,1);
@@ -279,17 +279,11 @@
         \draw (axis cs:.5,.5) node {\scriptsize $R$};
         \draw (axis cs:.55,.1) node {\scriptsize $y=g_1(x)$};
         \draw (axis cs:.5,.87) node {\scriptsize $y=g_2(x)$};
-        %
-        %\addplot [smooth,thick, {\colorone},samples=40,domain=1:3] {.25*(x-3)^2+1} node [shift={(-25pt,25pt)} ,black] {\scriptsize $y=x^2+1$};
-        %
-        %\draw [smooth,thick, {\colorone}] (axis cs:2,-2) --  node [pos=.85,shift={(30pt,0pt)},black] {\scriptsize $x=-1/2y+1$} (axis cs:.5,1);
-
-        %\draw [smooth,thick, {\colorone}] (axis cs:2,-1) --  node [pos=.3,shift={(-25pt,0pt)},black] {\scriptsize $y=-1/2x$} (axis cs:0,0);
 
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_iterated_intro.tex END -->
@@ -326,28 +320,27 @@
       <image xml:id="img_iterated_intro2">
         <description></description>
         <latex-image>
-        <![CDATA[
+        
         \begin{tikzpicture}
+
         \begin{axis}[%
         axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick=\empty,%
-			ytick=\empty,
-			extra y ticks={.1,.9},
-			extra y tick labels={$c$,$d$},
+        %x=.37\marginparwidth,
+        %y=.37\marginparwidth,
+        xtick=\empty,%
+        ytick=\empty,
+        extra y ticks={.1,.9},
+        extra y tick labels={$c$,$d$},
         %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+			  %%extra y ticks={-5,-3,...,7},%
         %			minor x tick num=4,
-			ymin=-.1,ymax=1,%
-			xmin=-.1,xmax=1%
+			  ymin=-.1,ymax=1,%
+			  xmin=-.1,xmax=1%
         ]
 
-        %\addplot [thick, {\coloronefill},fill={\coloronefill}] coordinates { (2.,-2.)(1.805,-1.9)(1.62,-1.8)(1.445,-1.7)(1.28,-1.6)(1.125,-1.5)(0.98,-1.4)(0.845,-1.3)(0.72,-1.2)(0.605,-1.1)(0.5,-1.)(0.405,-0.9)(0.32,-0.8)(0.245,-0.7)(0.18,-0.6)(0.125,-0.5)(0.08,-0.4)(0.045,-0.3)(0.02,-0.2)(0.005,-0.1)(0,0)(0.005,0.1)(0.02,0.2)(0.045,0.3)(0.08,0.4)(0.125,0.5)(0.18,0.6)(0.245,0.7)(0.32,0.8)(0.405,0.9)(0.5,1.)(2,-2)};
+        \addplot+[samples=40,domain=0:1] ({.3*x^2+.1},x);
 
-        \addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({.3*x^2+.1},x);
-
-        \addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({.2*sin(deg(3*x))+.7},{x});
+        \addplot+[samples=40,domain=0:1] ({.2*sin(deg(3*x))+.7},{x});
 
         \draw [thick,{\colortwo}] (axis cs: 0,.1) -- (axis cs: 1,.1);
         \draw [thick,{\colortwo}] (axis cs: 0,.9) -- (axis cs: 1,.9);
@@ -355,17 +348,11 @@
         \draw (axis cs:.5,.5) node {\scriptsize $R$};
         \draw (axis cs:.3,.25) node {\scriptsize $x=h_1(y)$};
         \draw (axis cs:.68,.8) node {\scriptsize $x=h_2(y)$};
-        %
-        %\addplot [smooth,thick, {\colorone},samples=40,domain=1:3] {.25*(x-3)^2+1} node [shift={(-25pt,25pt)} ,black] {\scriptsize $y=x^2+1$};
-        %
-        %\draw [smooth,thick, {\colorone}] (axis cs:2,-2) --  node [pos=.85,shift={(30pt,0pt)},black] {\scriptsize $x=-1/2y+1$} (axis cs:.5,1);
-
-        %\draw [smooth,thick, {\colorone}] (axis cs:2,-1) --  node [pos=.3,shift={(-25pt,0pt)},black] {\scriptsize $y=-1/2x$} (axis cs:0,0);
 
         \end{axis}
 
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_iterated_intro2.tex END -->
@@ -378,36 +365,38 @@
     <theorem xml:id="thm_area_plane_region">
       <title>Area of a plane region</title>
       <statement>
-        <ol>
-          <li>
-            <p>
-              Let <m>R</m> be a plane region bounded by
-              <m>a\leq x\leq b</m> and <m>g_1(x)\leq y\leq g_2(x)</m>,
-              where <m>g_1</m> and <m>g_2</m> are continuous functions on <m>[a,b]</m>.
-              The area <m>A</m> of <m>R</m> is
-              <me>
-                A = \int_a^b\int_{g_1(x)}^{g_2(x)} \ dy\ dx
-              </me>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Let <m>R</m> be a plane region bounded by
+                <m>a\leq x\leq b</m> and <m>g_1(x)\leq y\leq g_2(x)</m>,
+                where <m>g_1</m> and <m>g_2</m> are continuous functions on <m>[a,b]</m>.
+                The area <m>A</m> of <m>R</m> is
+                <me>
+                  A = \int_a^b\int_{g_1(x)}^{g_2(x)} \ dy\ dx
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Let <m>R</m> be a plane region bounded by
-              <m>c\leq y\leq d</m> and <m>h_1(y)\leq x\leq h_2(y)</m>,
-              where <m>h_1</m> and <m>h_2</m> are continuous functions on <m>[c,d]</m>.
-              The area <m>A</m> of <m>R</m> is
+            <li>
+              <p>
+                Let <m>R</m> be a plane region bounded by
+                <m>c\leq y\leq d</m> and <m>h_1(y)\leq x\leq h_2(y)</m>,
+                where <m>h_1</m> and <m>h_2</m> are continuous functions on <m>[c,d]</m>.
+                The area <m>A</m> of <m>R</m> is
 
-              <idx>
-                <h>integration</h><h>area</h>
-              </idx>
+                <idx>
+                  <h>integration</h><h>area</h>
+                </idx>
 
-              <me>
-                A = \int_c^d\int_{h_1(y)}^{h_2(y)} \ dx\ dy
-              </me>.
-            </p>
-          </li>
-        </ol>
+                <me>
+                  A = \int_c^d\int_{h_1(y)}^{h_2(y)} \ dx\ dy
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -435,46 +424,31 @@
           <image xml:id="img_iterated4">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1,2,3},%
-			%ytick=\empty,
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={-1,1,2,3},%
+            %ytick=\empty,
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+			      %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.1,ymax=3.5,%
-			xmin=-1.5,xmax=3.5%
+			      ymin=-.1,ymax=3.5,%
+			      xmin=-1.5,xmax=3.5%
             ]
 
-            %\addplot [thick, {\coloronefill},fill={\coloronefill}] coordinates { (2.,-2.)(1.805,-1.9)(1.62,-1.8)(1.445,-1.7)(1.28,-1.6)(1.125,-1.5)(0.98,-1.4)(0.845,-1.3)(0.72,-1.2)(0.605,-1.1)(0.5,-1.)(0.405,-0.9)(0.32,-0.8)(0.245,-0.7)(0.18,-0.6)(0.125,-0.5)(0.08,-0.4)(0.045,-0.3)(0.02,-0.2)(0.005,-0.1)(0,0)(0.005,0.1)(0.02,0.2)(0.045,0.3)(0.08,0.4)(0.125,0.5)(0.18,0.6)(0.245,0.7)(0.32,0.8)(0.405,0.9)(0.5,1.)(2,-2)};
-
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({.3*x^2+.1},x);
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({.2*sin(deg(3*x))+.7},{x});
-
             \draw [thick,{\colorone}] (axis cs: -1,1) -- (axis cs:3,1)--(axis cs:3,3) -- (axis cs:-1,3) -- cycle;
-            %\draw [thick,{\colortwo}] (axis cs: 0,.9) -- (axis cs: 1,.9);
-            %
             \draw (axis cs:1,2) node {$R$};
-            %\draw (axis cs:.3,.25) node {\scriptsize $x=h_1(y)$};
-            %\draw (axis cs:.68,.8) node {\scriptsize $x=h_2(y)$};
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=1:3] {.25*(x-3)^2+1} node [shift={(-25pt,25pt)} ,black] {\scriptsize $y=x^2+1$};
-            %
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-2) --  node [pos=.85,shift={(30pt,0pt)},black] {\scriptsize $x=-1/2y+1$} (axis cs:.5,1);
-
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-1) --  node [pos=.3,shift={(-25pt,0pt)},black] {\scriptsize $y=-1/2x$} (axis cs:0,0);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_iterated4.tex END -->
@@ -518,46 +492,31 @@
           <image xml:id="img_iterated5">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={4,5,1,2,3},%
-			ytick={1,2,3,4,5},
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={4,5,1,2,3},%
+            ytick={1,2,3,4,5},
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+			      %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.5,ymax=5.9,%
-			xmin=-.5,xmax=5.9%
+			      ymin=-.5,ymax=5.9,%
+			      xmin=-.5,xmax=5.9%
             ]
 
-            %\addplot [thick, {\coloronefill},fill={\coloronefill}] coordinates { (2.,-2.)(1.805,-1.9)(1.62,-1.8)(1.445,-1.7)(1.28,-1.6)(1.125,-1.5)(0.98,-1.4)(0.845,-1.3)(0.72,-1.2)(0.605,-1.1)(0.5,-1.)(0.405,-0.9)(0.32,-0.8)(0.245,-0.7)(0.18,-0.6)(0.125,-0.5)(0.08,-0.4)(0.045,-0.3)(0.02,-0.2)(0.005,-0.1)(0,0)(0.005,0.1)(0.02,0.2)(0.045,0.3)(0.08,0.4)(0.125,0.5)(0.18,0.6)(0.245,0.7)(0.32,0.8)(0.405,0.9)(0.5,1.)(2,-2)};
-
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({.3*x^2+.1},x);
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=0:1] ({.2*sin(deg(3*x))+.7},{x});
-
             \draw [thick,{\colorone}] (axis cs: 1,1) -- (axis cs:3,1) node [pos=.5,black,below] {\scriptsize $y=1$} -- node [pos=.5,black,below,sloped] {\scriptsize $y=2x-5 $} (axis cs:5,5)  -- node [black,above,pos=.5,sloped] {\scriptsize $y=x$} (axis cs:1,1);
-            %\draw [thick,{\colortwo}] (axis cs: 0,.9) -- (axis cs: 1,.9);
-            %
             \draw (axis cs:2.5,1.75) node {$R$};
-            %\draw (axis cs:.3,.25) node {\scriptsize $x=h_1(y)$};
-            %\draw (axis cs:.68,.8) node {\scriptsize $x=h_2(y)$};
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=1:3] {.25*(x-3)^2+1} node [shift={(-25pt,25pt)} ,black] {\scriptsize $y=x^2+1$};
-            %
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-2) --  node [pos=.85,shift={(30pt,0pt)},black] {\scriptsize $x=-1/2y+1$} (axis cs:.5,1);
-
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-1) --  node [pos=.3,shift={(-25pt,0pt)},black] {\scriptsize $y=-1/2x$} (axis cs:0,0);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_iterated5.tex END -->
@@ -616,46 +575,36 @@
           <image xml:id="img_iterated6">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={4,5,1,2,3},%
-			ytick={1,2,3,4,5},
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            xtick={4,5,1,2,3},%
+            ytick={1,2,3,4,5},
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+			      %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.5,ymax=4.5,%
-			xmin=-.5,xmax=2.5%
+			      ymin=-.5,ymax=4.5,%
+			      xmin=-.5,xmax=2.5%
             ]
 
-            %\addplot [thick, {\coloronefill},fill={\coloronefill}] coordinates { (2.,-2.)(1.805,-1.9)(1.62,-1.8)(1.445,-1.7)(1.28,-1.6)(1.125,-1.5)(0.98,-1.4)(0.845,-1.3)(0.72,-1.2)(0.605,-1.1)(0.5,-1.)(0.405,-0.9)(0.32,-0.8)(0.245,-0.7)(0.18,-0.6)(0.125,-0.5)(0.08,-0.4)(0.045,-0.3)(0.02,-0.2)(0.005,-0.1)(0,0)(0.005,0.1)(0.02,0.2)(0.045,0.3)(0.08,0.4)(0.125,0.5)(0.18,0.6)(0.245,0.7)(0.32,0.8)(0.405,0.9)(0.5,1.)(2,-2)};
 
-            \addplot [smooth,thick, {\colorone},samples=40,domain=0:2.5] ({x},{2*x});
-            %
-            \addplot [smooth,thick, {\colorone},samples=40,domain=0:2.5] ({x},{x^2});
+            \addplot+[samples=40,domain=0:2.5] ({x},{2*x});
+            \addplot+[samples=40,domain=0:2.5] ({x},{x^2});
 
-            %\draw [thick,{\colorone}] (axis cs: 1,1) -- (axis cs:3,1) node [pos=.5,black,below] {\scriptsize $y=1$} -- node [pos=.5,black,below,sloped] {\scriptsize $y=2x-5 $} (axis cs:5,5)  -- node [black,above,pos=.5,sloped] {\scriptsize $y=x$} (axis cs:1,1);
-            %\draw [thick,{\colortwo}] (axis cs: 0,.9) -- (axis cs: 1,.9);
-            %
             \draw (axis cs:1,1.5) node {$R$};
             \draw (axis cs:1,2.5) node [rotate=45] {\scriptsize $y=2x$};
             \draw (axis cs:1.25,.9) node [rotate=45]  {\scriptsize $y=x^2$};
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=1:3] {.25*(x-3)^2+1} node [shift={(-25pt,25pt)} ,black] {\scriptsize $y=x^2+1$};
-            %
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-2) --  node [pos=.85,shift={(30pt,0pt)},black] {\scriptsize $x=-1/2y+1$} (axis cs:.5,1);
-
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-1) --  node [pos=.3,shift={(-25pt,0pt)},black] {\scriptsize $y=-1/2x$} (axis cs:0,0);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_iterated6.tex END -->
@@ -752,24 +701,23 @@
           <image xml:id="img_double5">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={4,5,1,2,3},%
-			%ytick={1,2,3,4,5},
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={4,5,1,2,3},%
+            %ytick={1,2,3,4,5},
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+			      %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.5,ymax=2.5,%
-			xmin=-.5,xmax=6.9%
+			      ymin=-.5,ymax=2.5,%
+			      xmin=-.5,xmax=6.9%
             ]
-
-            %\addplot [smooth,very thick, {\colorone},samples=2,domain=-.5:6.9] ({x},{x/3});
 
             \draw [very thick,{\colortwo}] (axis cs:-.5,0) -- (axis cs:6.9,0)
 													(axis cs:-.5,-.1666) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x/3$} (axis cs: 6.9, 2.3);
@@ -781,7 +729,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_double5.tex END -->
@@ -820,30 +768,29 @@
           <image xml:id="img_double7">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={4,5,1,2,3},%
-			%ytick={1,2,3,4,5},
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={4,5,1,2,3},%
+            %ytick={1,2,3,4,5},
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+		      	%%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.5,ymax=4.5,%
-			xmin=-.5,xmax=4.5%
+			      ymin=-.5,ymax=4.5,%
+			      xmin=-.5,xmax=4.5%
             ]
 
-            \addplot [smooth,very thick, {\colorone},samples=10,domain=-.5:4.5] ({x^2/4},{x});
-            \addplot [smooth,very thick, {\colorone},samples=10,domain=-.5:4.5] ({((x+4))/2},{x});
+            \addplot+[samples=10,domain=-.5:4.5] ({x^2/4},{x});
+            \addplot+[samples=10,domain=-.5:4.5] ({((x+4))/2},{x});
 
             \draw [very thick,{\colortwo}] (axis cs:-.5,0) -- (axis cs:4.5,0)
 															(axis cs:-.5,4) -- (axis cs:4.5,4);
-            %\draw [very thick,{\colorone}] (axis cs:3,-.5) -- (axis cs:3,3.5)
-															%(axis cs:-.5,-.5) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x$} (axis cs: 3.5,3.5);
             \draw (axis cs:2,1.75) node {$R$}; 
             \draw (axis cs:2,3.1) node [rotate=30] {\scriptsize$x=y^2/4$};
             \draw (axis cs:3,1.5) node [rotate=56] {\scriptsize $x= (y+4)/2$}; 
@@ -851,7 +798,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_double7.tex END -->
@@ -932,7 +879,7 @@
             </setup>
             <statement>
               <p>
-                Integrating an integral is called <fillin /> <fillin />.
+                Integrating an integral is called <fillin/> <fillin/>.
               </p>
             </statement>
             <solution>
@@ -953,7 +900,7 @@
             <statement>
               <p>
                 When evaluating an iterated integral,
-                we integrate from <fillin /> to <fillin />, then from <fillin /> to <fillin />.
+                we integrate from <fillin/> to <fillin/>, then from <fillin/> to <fillin/>.
               </p>
             </statement>
             <solution>
@@ -974,7 +921,7 @@
             <statement>
               <p>
                 One understanding of an iterated integral is that
-                <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)} \ dy\ dx</m> gives the <fillin /> of a plane region.
+                <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)} \ dy\ dx</m> gives the <fillin/> of a plane region.
               </p>
             </statement>
             <solution>
@@ -1003,34 +950,38 @@
             </pg-code>
             </setup>
             <statement>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \int_2^{5} \big(6x^2+4xy-3y^2\big)\ dy</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_2^{5} \big(6x^2+4xy-3y^2\big)\ dy</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int_{-3}^{-2} \int_2^{5} \big(6x^2+4xy-3y^2\big)\ dy\ dx</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_{-3}^{-2} \int_2^{5} \big(6x^2+4xy-3y^2\big)\ dy\ dx</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>18x^2+42x-117</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>18x^2+42x-117</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>-108</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>-108</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1052,13 +1003,13 @@
                 <ol label="a">
                   <li>
                     <p>
-                      <m>\ds \int_0^{\pi} (2x\cos(y) + \sin(x) )\,dx=</m><var name="$a" width="20" />
+                      <m>\ds \int_0^{\pi} (2x\cos(y) + \sin(x) )\,dx=</m><var name="$a" width="20"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_{0}^{\pi/2} \int_0^{\pi} (2x\cos(y) + \sin(x) )\,dx\,dy=</m><var name="$b" width="20" />
+                      <m>\ds \int_{0}^{\pi/2} \int_0^{\pi} (2x\cos(y) + \sin(x) )\,dx\,dy=</m><var name="$b" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1075,34 +1026,38 @@
             </pg-code>
             </setup>
             <statement>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \int_1^x \big(x^2y - y+2\big)\ dy</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_1^x \big(x^2y - y+2\big)\ dy</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int_0^2\int_1^x \big(x^2y - y+2\big)\ dy\ dx</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_0^2\int_1^x \big(x^2y - y+2\big)\ dy\ dx</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>x^4/2-x^2+2x-3/2</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>x^4/2-x^2+2x-3/2</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>23/15</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>23/15</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1124,13 +1079,13 @@
                 <ol label="a">
                   <li>
                     <p>
-                      <m>\ds \int_y^{y^2} (x-y)\,dx=</m><var name="$a" width="20" />
+                      <m>\ds \int_y^{y^2} (x-y)\,dx=</m><var name="$a" width="20"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_{-1}^1\int_y^{y^2} (x-y)\,dx\,dy=</m><var name="$b" width="20" />
+                      <m>\ds \int_{-1}^1\int_y^{y^2} (x-y)\,dx\,dy=</m><var name="$b" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1147,34 +1102,38 @@
             </pg-code>
             </setup>
             <statement>
-              <ol>
-                <li>
-                  <p>
-                    <m>\ds \int_0^{y} \big(\cos(x) \sin(y) \big)\ dx</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_0^{y} \big(\cos(x) \sin(y) \big)\ dx</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int_0^\pi \int_0^{y} \big(\cos(x) \sin(y) \big)\ dx\ dy</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\ds \int_0^\pi \int_0^{y} \big(\cos(x) \sin(y) \big)\ dx\ dy</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
-                    <m>\sin^2(y)</m>
-                  </p>
-                </li>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\sin^2(y)</m>
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\pi/2</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\pi/2</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -1196,13 +1155,13 @@
                 <ol label="a">
                   <li>
                     <p>
-                      <m>\ds \int_0^{x} \left(\frac{1}{1+x^2}\right)\,dy=</m><var name="$a" width="20" />
+                      <m>\ds \int_0^{x} \left(\frac{1}{1+x^2}\right)\,dy=</m><var name="$a" width="20"/>
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      <m>\ds \int_1^2 \int_0^{x} \left(\frac{1}{1+x^2}\right)\,dy\,dx=</m><var name="$b" width="20" />
+                      <m>\ds \int_1^2 \int_0^{x} \left(\frac{1}{1+x^2}\right)\,dy\,dx=</m><var name="$b" width="20"/>
                     </p>
                   </li>
                 </ol>
@@ -1232,43 +1191,38 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_13_01_ex_11.tex -->
-                <image xml:id="img_13_01_ex_11">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-2,-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-2.5,ymax=1.5,%
-			xmin=-.5,xmax=4.5%
-                  ]
+              <!-- START figures/fig_13_01_ex_11.tex -->
+              <image xml:id="img_13_01_ex_11">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  \draw [very thick,{\colorone}] (axis cs:1,-2) -- (axis cs: 4,-2)-- (axis cs: 4,1) -- (axis cs: 1,1) -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={1,2,3,4},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-2,-1,1},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-2.5,ymax=1.5,%
+                xmin=-.5,xmax=4.5%
+                ]
 
-                  \draw (axis cs: 2.5,-1) node {$R$};
+                \draw [very thick,{\colorone}] (axis cs:1,-2) -- (axis cs: 4,-2)-- (axis cs: 4,1) -- (axis cs: 1,1) -- cycle;
 
-                  %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw (axis cs: 2.5,-1) node {$R$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_11.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_11.tex END -->
             </statement>
             <solution>
               <p>
@@ -1290,43 +1244,38 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_13_01_ex_12.tex -->
-                <image xml:id="img_13_01_ex_12">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=3.5,%
-			xmin=-.5,xmax=4.5%
-                  ]
+              <!-- START figures/fig_13_01_ex_12.tex -->
+              <image xml:id="img_13_01_ex_12">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  \draw [very thick,{\colorone}] (axis cs:1,1) -- (axis cs: 4,1)-- (axis cs: 4,3)  -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={1,2,3,4},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={1,2,3},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=3.5,%
+                xmin=-.5,xmax=4.5%
+                ]
 
-                  \draw (axis cs: 3,1.75) node {$R$};
+                \draw [very thick,{\colorone}] (axis cs:1,1) -- (axis cs: 4,1)-- (axis cs: 4,3)  -- cycle;
 
-                  %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw (axis cs: 3,1.75) node {$R$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_12.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_12.tex END -->
             </statement>
             <solution>
               <p>
@@ -1348,43 +1297,38 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_13_01_ex_13.tex -->
-                <image xml:id="img_13_01_ex_13">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3,4},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={1,2,3,4,5},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=5.5,%
-			xmin=-.5,xmax=4.5%
-                  ]
+              <!-- START figures/fig_13_01_ex_13.tex -->
+              <image xml:id="img_13_01_ex_13">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  \draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={1,2,3,4},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={1,2,3,4,5},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=5.5,%
+                xmin=-.5,xmax=4.5%
+                ]
 
-                  \draw (axis cs: 2.75,3) node {$R$};
+                \draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
 
-                  %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw (axis cs: 2.75,3) node {$R$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_13.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_13.tex END -->
             </statement>
             <solution>
               <p>
@@ -1408,44 +1352,39 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_13_01_ex_14.tex -->
-                <image xml:id="img_13_01_ex_14">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-2,-4,-6,6,4,2},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-6.9,ymax=6.9,%
-			xmin=-.5,xmax=12.9%
-                  ]
+              <!-- START figures/fig_13_01_ex_14.tex -->
+              <image xml:id="img_13_01_ex_14">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-2,-4,-6,6,4,2},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-6.9,ymax=6.9,%
+                xmin=-.5,xmax=12.9%
+                ]
 
-                  \draw (axis cs: 6,2) node {$R$}
-			(axis cs: 4,4.5) node [rotate=23] {\scriptsize $x=y^2/3$};
+                \draw (axis cs: 6,2) node {$R$}
+                      (axis cs: 4,4.5) node [rotate=23] {\scriptsize $x=y^2/3$};
 
-                  \addplot [{\colorone},very thick, smooth,domain=-6:6,samples=20] ({x^2/3},{x}) -- cycle;
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \addplot+[domain=-6:6,samples=20] ({x^2/3},{x}) -- cycle;
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_14.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_14.tex END -->
             </statement>
             <solution>
               <p>
@@ -1467,46 +1406,43 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_13_01_ex_15.tex -->
-                <image xml:id="img_13_01_ex_15">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-2,-4,-6,6,4,2},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=1.1,%
-			xmin=-.5,xmax=1.1%
-                  ]
+              <!-- START figures/fig_13_01_ex_15.tex -->
+              <image xml:id="img_13_01_ex_15">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-2,-4,-6,6,4,2},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=1.1,%
+                xmin=-.5,xmax=1.1%
+                ]
 
-                  \draw (axis cs: .5,.4) node {$R$}
-			(axis cs: .5,.8) node [rotate=26] {\scriptsize $y=\sqrt{x}$}
-			(axis cs: .75,.16) node [rotate=29] {\scriptsize $y=x^4$};
+                %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
 
-                  \addplot [{\colorone},very thick, smooth,domain=-.1:1.05,samples=20] ({x},{x^4});
-                  \addplot [{\colorone},very thick, smooth,domain=0:1.05,samples=20] ({x^2},{x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw (axis cs: .5,.4) node {$R$}
+                      (axis cs: .5,.8) node [rotate=26] {\scriptsize $y=\sqrt{x}$}
+                      (axis cs: .75,.16) node [rotate=29] {\scriptsize $y=x^4$};
 
-                  \end{axis}
+                \addplot+[domain=-.1:1.05,samples=20] ({x},{x^4});
+                \addplot+[domain=0:1.05,samples=20] ({x^2},{x});
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_15.tex END -->
-              </figure>
+                \end{axis}
+
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_15.tex END -->
             </statement>
             <solution>
               <p>
@@ -1528,46 +1464,40 @@
             </pg-code>
             </setup>
             <statement>
-              <figure>
-            <!-- START figures/fig_13_01_ex_16.tex -->
-                <image xml:id="img_13_01_ex_16">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-2,-4,-6,6,4,2},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=8.9,%
-			xmin=-.5,xmax=2.5%
-                  ]
+              <!-- START figures/fig_13_01_ex_16.tex -->
+              <image xml:id="img_13_01_ex_16">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-2,-4,-6,6,4,2},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=8.9,%
+                xmin=-.5,xmax=2.5%
+                ]
 
-                  \draw (axis cs: 1,2.25) node {$R$}
-			(axis cs: 0,0) [{\colorone},very thick]-- (axis cs:2.1,8.4) node [pos=.5,above,sloped,black] {\scriptsize $y=4x$}
-			(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                \draw (axis cs: 1,2.25) node {$R$}
+                      (axis cs: 0,0) [{\colorone},very thick]-- (axis cs:2.1,8.4) node [pos=.5,above,sloped,black] {\scriptsize $y=4x$}
+                      (axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
 
-                  \addplot [{\colorone},very thick, smooth,domain=-.1:2.1,samples=20] ({x},{x^3});
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \addplot+[domain=-.1:2.1,samples=20] ({x},{x^3});
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_16.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_16.tex END -->
             </statement>
             <solution>
               <p>
@@ -1581,12 +1511,17 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        iterated integrals are given that compute the area of a region <m>R</m> in the <m>x</m>-<m>y</m> plane.
-        Sketch the region <m>R</m>,
-        and give the iterated integral(s) that give the area of <m>R</m> with the opposite order of integration.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          iterated integrals are given that compute the area of a region <m>R</m> in the <m>x</m>-<m>y</m> plane.
+          Sketch the region <m>R</m>,
+          and give the iterated integral(s) that give the area of <m>R</m> with the opposite order of integration.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -1601,46 +1536,41 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_13_01_ex_18.tex -->
-                <image xml:id="img_13_01_ex_18X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-2,-4,-6,6,4,2},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=4.5,%
-			xmin=-2.5,xmax=2.5%
-                  ]
+              <!-- START figures/fig_13_01_ex_18.tex -->
+              <image xml:id="img_13_01_ex_18X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-2,-4,-6,6,4,2},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=4.5,%
+                xmin=-2.5,xmax=2.5%
+                ]
 
-                  \draw (axis cs: 1,1) node {$R$}
-			(axis cs: -.9,.5) node [] {\scriptsize $y=4-x^2$};
-			%(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
 
-                  \addplot [{\colorone},very thick, smooth,domain=-2:2,samples=30] ({x},{4-x^2}) -- cycle;
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw (axis cs: 1,1) node {$R$}
+                      (axis cs: -.9,.5) node [] {\scriptsize $y=4-x^2$};
 
-                  \end{axis}
+                \addplot+[domain=-2:2,samples=30] ({x},{4-x^2}) -- cycle;
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_18.tex END -->
-              </figure>
+                \end{axis}
+
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_18.tex END -->
 
               <p>
                 area of <m>R = \ds\int_{0}^{4}\int_{-\sqrt{4-y}}^{\sqrt{4-y}}\ dx\ dy</m>
@@ -1662,49 +1592,41 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_13_01_ex_20.tex -->
-                <image xml:id="img_13_01_ex_20X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={1,2,3,4,5},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=5.9,%
-			xmin=-.1,xmax=1.1%
-                  ]
+              <!-- START figures/fig_13_01_ex_20.tex -->
+              <image xml:id="img_13_01_ex_20X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={1,2,3,4,5},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.5,ymax=5.9,%
+                xmin=-.1,xmax=1.1%
+                ]
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
 
-                  \draw (axis cs: .5,3.3) node {$R$}
-			(axis cs: .3,5.2) node [] {\scriptsize $y=5-5x^2$};
-			%(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                \draw (axis cs: .5,3.3) node {$R$}
+                      (axis cs: .3,5.2) node [] {\scriptsize $y=5-5x^2$};
 
-                  \addplot [{\colorone},very thick, smooth,domain=0:1,samples=30] ({x},{5-5*x^2});
+                \addplot+[domain=0:1,samples=30] ({x},{5-5*x^2});
 
-                  \draw [{\colorone},very thick] (axis cs: 0,5) -- (axis cs:1,0) node [pos=.5,below,sloped,black] {\scriptsize $y=-5x+5$};
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw [{\colorone},very thick] (axis cs: 0,5) -- (axis cs:1,0) node [pos=.5,below,sloped,black] {\scriptsize $y=-5x+5$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_20.tex END -->
-              </figure>
-
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_20.tex END -->
               <p>
                 area of <m>R = \ds \int_0^5\int_{1-y/5}^{\sqrt{1-y/5}} \ dx \ dy</m>
               </p>
@@ -1725,47 +1647,38 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_13_01_ex_19.tex -->
-                <image xml:id="img_13_01_ex_19X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-2,-4,-6,6,4,2},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-2.5,ymax=2.5,%
-			xmin=-.5,xmax=4.5%
-                  ]
+              <!-- START figures/fig_13_01_ex_19.tex -->
+              <image xml:id="img_13_01_ex_19X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-2,-4,-6,6,4,2},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-2.5,ymax=2.5,%
+                xmin=-.5,xmax=4.5%
+                ]
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \draw (axis cs: 1,1) node {$R$}
+                      (axis cs: 1.5,-1.1) node [] {\scriptsize $x^2/16+y^2/4=1$};
 
-                  \draw (axis cs: 1,1) node {$R$}
-			(axis cs: 1.5,-1.1) node [] {\scriptsize $x^2/16+y^2/4=1$};
-			%(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                \addplot+[domain=-90:90,samples=30] ({4*cos(x)},{2*sin(x)}) -- cycle;
 
-                  \addplot [{\colorone},very thick, smooth,domain=-90:90,samples=30] ({4*cos(x)},{2*sin(x)}) -- cycle;
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \end{axis}
 
-                  \end{axis}
-
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_19.tex END -->
-              </figure>
-
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_19.tex END -->
               <p>
                 area of <m>R = \ds \int_0^4\int_{-\sqrt{4-x^2/4}}^{\sqrt{4-x^2/4}} \ dy \ dx</m>
               </p>
@@ -1786,46 +1699,38 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_13_01_ex_17.tex -->
-                <image xml:id="img_13_01_ex_17X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={2,4,...,12},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			%ytick={-2,-4,-6,6,4,2},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-3.1,ymax=3.1,%
-			xmin=-3.7,xmax=3.7%
-                  ]
+              <!-- START figures/fig_13_01_ex_17.tex -->
+              <image xml:id="img_13_01_ex_17X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                %xtick={2,4,...,12},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                %ytick={-2,-4,-6,6,4,2},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-3.1,ymax=3.1,%
+                xmin=-3.7,xmax=3.7%
+                ]
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \draw (axis cs: 1,1) node {$R$}
+                      (axis cs: -1.25,1) node [] {\scriptsize $x^2+y^2=9$};
 
-                  \draw (axis cs: 1,1) node {$R$}
-			(axis cs: -1.25,1) node [] {\scriptsize $x^2+y^2=9$};
-			%(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                \addplot+[domain=0:360,samples=30] ({3*cos(x)},{3*sin(x)});
 
-                  \addplot [{\colorone},very thick, smooth,domain=0:360,samples=30] ({3*cos(x)},{3*sin(x)});
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \end{axis}
 
-                  \end{axis}
-
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_17.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_17.tex END -->
 
               <p>
                 area of <m>R = \ds \int_{-3}^3\int_{-\sqrt{9-y^2}}^{\sqrt{9-y^2}} \ dx \ dy</m>
@@ -1847,48 +1752,41 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_13_01_ex_22.tex -->
-                <image xml:id="img_13_01_ex_22X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1,2},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={1,2,3,4},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=4.5,%
-			xmin=-1.1,xmax=2.1%
-                  ]
+              <!-- START figures/fig_13_01_ex_22.tex -->
+              <image xml:id="img_13_01_ex_22X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={-1,1,2},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={1,2,3,4},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-.1,ymax=4.5,%
+                xmin=-1.1,xmax=2.1%
+                ]
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
 
-                  \draw (axis cs: .5,1.5) node {$R$}
-			(axis cs: 1.3,.75) node [] {\scriptsize $y=x^2$};
-			%(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                \draw (axis cs: .5,1.5) node {$R$}
+                      (axis cs: 1.3,.75) node [] {\scriptsize $y=x^2$};
 
-                  \addplot [{\colorone},very thick, smooth,domain=-1:2,samples=15] ({x},{x^2});
+                \addplot+[domain=-1:2,samples=15] ({x},{x^2});
 
-                  \draw [{\colorone},very thick] (axis cs: -1,1) -- (axis cs:2,4) node [black,sloped, pos=.5,above] {\scriptsize $y=x+2$};
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                \draw [{\colorone},very thick] (axis cs: -1,1) -- (axis cs:2,4) node [black,sloped, pos=.5,above] {\scriptsize $y=x+2$};
 
-                  \end{axis}
+                \end{axis}
 
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_22.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_22.tex END -->
 
               <p>
                 area of <m>R = \ds \int_{-1}^2\int_{x^2}^{x+2} \ dy \ dx</m>
@@ -1910,48 +1808,37 @@
               </p>
             </statement>
             <solution>
-              <figure>
-            <!-- START figures/fig_13_01_ex_21.tex -->
-                <image xml:id="img_13_01_ex_21X">
-                  <description></description>
-                  <latex-image>
-                  <![CDATA[
-                  \begin{tikzpicture}
-                  \begin{axis}[%
-                  axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},
-			%%
-                  %			extra x ticks={.33},
-                  %			extra x tick labels={$1/3$},
-			ytick={-1,1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.1,xmax=1.1%
-                  ]
+              <!-- START figures/fig_13_01_ex_21.tex -->
+              <image xml:id="img_13_01_ex_21X">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
+                \begin{axis}[%
+                axis on top,%
+                %x=.37\marginparwidth,
+                %y=.37\marginparwidth,
+                xtick={-1,1},
+                %%
+                %			extra x ticks={.33},
+                %			extra x tick labels={$1/3$},
+                ytick={-1,1},
+                %%extra y ticks={-5,-3,...,7},%
+                ymin=-1.1,ymax=1.1,%
+                xmin=-1.1,xmax=1.1%
+                ]
 
-                  %\draw [very thick,{\colorone}] (axis cs:2,1) -- (axis cs: 4,3)-- (axis cs: 2,5)  -- cycle;
+                \draw (axis cs: -.5,.25) node {$R$};
 
-                  \draw (axis cs: -.5,.25) node {$R$};
-			%(axis cs: .3,5.2) node [] {\scriptsize $y=5-5x^2$};
-			%(axis cs: 1.4,1.5) node [black, rotate=40] {\scriptsize $y=x^3$};
+                \draw [{\colorone},very thick] (axis cs: -1,1) -- (axis cs:1,0) -- (axis cs: -1,-1) -- (axis cs: -1,1);
 
-                  %\addplot [{\colorone},very thick, smooth,domain=0:1,samples=30] ({x},{5-5*x^2});
+                \end{axis}
 
-                  \draw [{\colorone},very thick] (axis cs: -1,1) -- (axis cs:1,0) -- (axis cs: -1,-1) -- (axis cs: -1,1);
-                  %\addplot [{\colorone},very thick, smooth,domain=0:2.1,samples=20] ({x},{4*x});
-                  %
-                  %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
-
-                  \end{axis}
-
-                  \end{tikzpicture}
-                  ]]>
-                  </latex-image>
-                </image>
-            <!-- figures/fig_13_01_ex_21.tex END -->
-              </figure>
+                \end{tikzpicture}
+                
+                </latex-image>
+              </image>
+              <!-- figures/fig_13_01_ex_21.tex END -->
 
               <p>
                 area of <m>R = \ds \int_{-1}^0\int_{0}^{2y+1} \ dx \ dy + \int_{0}^1\int_{0}^{1-2y} \ dx \ dy</m>
@@ -1963,4 +1850,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

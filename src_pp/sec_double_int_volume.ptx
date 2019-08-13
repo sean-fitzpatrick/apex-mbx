@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_double_int_volume">
   <title>Double Integration and Volume</title>
   <introduction>
@@ -49,264 +48,247 @@
     <figure xml:id="fig_double_intro">
       <caption>Developing a method for finding signed volume under a surface.</caption>
       <sidebyside>
-        <figure>
-          <caption>[5pt]
-          (a)</caption>
-        <!-- START figures/fig_double_intro1.tex -->
-          <image xml:id="img_double_intro1">
+        <figure xml:id="fig_double_introa">
+          <caption/>
+          <!-- START figures/fig_double_intro1.tex -->
+          <image xml:id="img_double_introa">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={4,5,1,2,3},%
-			%ytick={1,2,3,4,5},
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={4,5,1,2,3},%
+            %ytick={1,2,3,4,5},
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.85,ymax=.85,%
-			xmin=-.3,xmax=2.2%
+            ymin=-.85,ymax=.85,%
+            xmin=-.3,xmax=2.2%
             ]
 
-            \addplot [smooth,very thick, {\colorone},samples=40,domain=-90:90] ({cos(x)*(1+cos(2*x))},{sin(x)*(1+cos(2*x))});
+            \addplot+[samples=40,domain=-90:90] ({cos(x)*(1+cos(2*x))},{sin(x)*(1+cos(2*x))});
 
             \draw (axis cs: 0,-.3) -- (axis cs:0,.3)
-			(axis cs: .2,-.4) -- (axis cs:.2,.4)
-			(axis cs: 0.4,-.6) -- (axis cs:.4,.6)
-			(axis cs: 0.6,-.7) -- (axis cs:.6,.7)
-			(axis cs: .8,-.8) -- (axis cs:.8,.8)
-			(axis cs: 1,-.8) -- (axis cs:1,.8)
-			(axis cs: 1.2,-.8) -- (axis cs:1.2,.8)
-			(axis cs: 1.4,-.8) -- (axis cs:1.4,.8)
-			(axis cs: 1.6,-.7) -- (axis cs:1.6,.7)
-			(axis cs: 1.8,-.6) -- (axis cs:1.8,.6)
-			(axis cs: 2,-.4) -- (axis cs:2,.4);
+                  (axis cs: .2,-.4) -- (axis cs:.2,.4)
+                  (axis cs: 0.4,-.6) -- (axis cs:.4,.6)
+                  (axis cs: 0.6,-.7) -- (axis cs:.6,.7)
+                  (axis cs: .8,-.8) -- (axis cs:.8,.8)
+                  (axis cs: 1,-.8) -- (axis cs:1,.8)
+                  (axis cs: 1.2,-.8) -- (axis cs:1.2,.8)
+                  (axis cs: 1.4,-.8) -- (axis cs:1.4,.8)
+                  (axis cs: 1.6,-.7) -- (axis cs:1.6,.7)
+                  (axis cs: 1.8,-.6) -- (axis cs:1.8,.6)
+                  (axis cs: 2,-.4) -- (axis cs:2,.4);
 
             \draw (axis cs: .8,.8) -- (axis cs:1.4,.8)
-			(axis cs: .6,.7) -- (axis cs:1.6,.7)
-			(axis cs: .4,.6) -- (axis cs:1.8,.6)
-			(axis cs: .4,.5) -- (axis cs:1.8,.5)
-			(axis cs: .2,.4) -- (axis cs:2,.4)
-			(axis cs: 0,.3) -- (axis cs:2,.3)
-			(axis cs: 0,.2) -- (axis cs:2,.2)
-			(axis cs: 0,.1) -- (axis cs:2,.1)
-			(axis cs: .8,-.8) -- (axis cs:1.4,-.8)
-			(axis cs: .6,-.7) -- (axis cs:1.6,-.7)
-			(axis cs: .4,-.6) -- (axis cs:1.8,-.6)
-			(axis cs: .4,-.5) -- (axis cs:1.8,-.5)
-			(axis cs: .2,-.4) -- (axis cs:2,-.4)
-			(axis cs: 0,-.3) -- (axis cs:2,-.3)
-			(axis cs: 0,-.2) -- (axis cs:2,-.2)
-			(axis cs: 0,-.1) -- (axis cs:2,-.1);
-
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=0:2.5] ({x},{x^2});
-
-            %\draw [thick,{\colorone}] (axis cs: 1,1) -- (axis cs:3,1) node [pos=.5,black,below] {\scriptsize $y=1$} -- node [pos=.5,black,below,sloped] {\scriptsize $y=2x-5 $} (axis cs:5,5)  -- node [black,above,pos=.5,sloped] {\scriptsize $y=x$} (axis cs:1,1);
-            %\draw [thick,{\colortwo}] (axis cs: 0,.9) -- (axis cs: 1,.9);
-            %
-            %\draw (axis cs:1,1.5) node {$R$};
-            %\draw (axis cs:1,2.5) node [rotate=45] {\scriptsize $y=2x$};
-            %\draw (axis cs:1.25,.9) node [rotate=45]  {\scriptsize $y=x^2$};
-            %
-            %\addplot [smooth,thick, {\colorone},samples=40,domain=1:3] {.25*(x-3)^2+1} node [shift={(-25pt,25pt)} ,black] {\scriptsize $y=x^2+1$};
-            %
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-2) --  node [pos=.85,shift={(30pt,0pt)},black] {\scriptsize $x=-1/2y+1$} (axis cs:.5,1);
-
-            %\draw [smooth,thick, {\colorone}] (axis cs:2,-1) --  node [pos=.3,shift={(-25pt,0pt)},black] {\scriptsize $y=-1/2x$} (axis cs:0,0);
+                (axis cs: .6,.7) -- (axis cs:1.6,.7)
+                (axis cs: .4,.6) -- (axis cs:1.8,.6)
+                (axis cs: .4,.5) -- (axis cs:1.8,.5)
+                (axis cs: .2,.4) -- (axis cs:2,.4)
+                (axis cs: 0,.3) -- (axis cs:2,.3)
+                (axis cs: 0,.2) -- (axis cs:2,.2)
+                (axis cs: 0,.1) -- (axis cs:2,.1)
+                (axis cs: .8,-.8) -- (axis cs:1.4,-.8)
+                (axis cs: .6,-.7) -- (axis cs:1.6,-.7)
+                (axis cs: .4,-.6) -- (axis cs:1.8,-.6)
+                (axis cs: .4,-.5) -- (axis cs:1.8,-.5)
+                (axis cs: .2,-.4) -- (axis cs:2,-.4)
+                (axis cs: 0,-.3) -- (axis cs:2,-.3)
+                (axis cs: 0,-.2) -- (axis cs:2,-.2)
+                (axis cs: 0,-.1) -- (axis cs:2,-.1);
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
         <!-- figures/fig_double_intro1.tex END -->
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
-        <!--
-         \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
-        3Droll=0,
-        3Dortho=0.005025407765060663,
-        3Dc2c=0.6666666865348816 0.6666666865348816 0.3333333730697632,
-        3Dcoo=5.279583930969238 -29.517940521240234 48.47616195678711,
-        3Droo=150.0000012715658,
-        3Dlights=Headlamp,add3Djscript=asylabels.js]
-         -->
-        <!-- START figures/figdouble_intro2_3D.asy -->
-          <image xml:id="img_double_intro2_3D">
+        <figure xml:id="fig_double_introb_3d">
+          <caption/>
+          <!--
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+          3Droll=0,
+          3Dortho=0.005025407765060663,
+          3Dc2c=0.6666666865348816 0.6666666865348816 0.3333333730697632,
+          3Dcoo=5.279583930969238 -29.517940521240234 48.47616195678711,
+          3Droo=150.0000012715658,
+          3Dlights=Headlamp,add3Djscript=asylabels.js]
+            -->
+          <!-- START figures/figdouble_intro2_3D.asy -->
+          <image xml:id="img_double_introb_3D">
+            <description></description>
+            <asymptote>
+              
+              import graph3;
 
-          <asymptote>
-            <![CDATA[
-            import graph3;
+              //ASY file for figdouble_intro23D.asy in Chapter 13
 
-            //ASY file for figdouble_intro23D.asy in Chapter 13
+              size(200,200,IgnoreAspect);
+              //currentprojection=perspective(7,2,1);
+              currentprojection=orthographic(7.5,3.1,3);
+              defaultrender.merge=true;
 
-            size(200,200,IgnoreAspect);
-            //currentprojection=perspective(7,2,1);
-            currentprojection=orthographic(7.5,3.1,3);
-            defaultrender.merge=true;
+              usepackage("mathspec");
+              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
+              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
+              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
+              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              // setup and draw the axes
+              real[] myxchoice={2};
+              real[] myychoice={-1,1};
+              real[] myzchoice={2};
+              defaultpen(0.5mm);
 
-            // setup and draw the axes
-            real[] myxchoice={2};
-            real[] myychoice={-1,1};
-            real[] myzchoice={2};
-            defaultpen(0.5mm);
+              pair xbounds=(-1,2.5);
+              pair ybounds=(-1.25,1.25);
+              pair zbounds=(0,2.25);
 
-            pair xbounds=(-1,2.5);
-            pair ybounds=(-1.25,1.25);
-            pair zbounds=(0,2.25);
+              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
 
-            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
-            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
-            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
-            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
-            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+              //Draw the surface//{z=-.5*(x-1)^2-.5*(y)^2+2};
+              triple f(pair t) {
+                return (t.x,t.y,-.5*(t.x-1)^2-.5*(t.y)^2+2);
+              }
+              surface s=surface(f,(-0.221,-1),(2.2,1),12,20,vsplinetype=new splinetype[] {notaknot,notaknot,monotonic},usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              pen p=rgb(0,0,.7);
+              draw(s,rgb(.7,.7,1)+opacity(.7),meshpen=p);
 
-            //Draw the surface//{z=-.5*(x-1)^2-.5*(y)^2+2};
-            triple f(pair t) {
-              return (t.x,t.y,-.5*(t.x-1)^2-.5*(t.y)^2+2);
-            }
-            surface s=surface(f,(-0.221,-1),(2.2,1),12,20,vsplinetype=new splinetype[] {notaknot,notaknot,monotonic},usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
-            pen p=rgb(0,0,.7);
-            draw(s,rgb(.7,.7,1)+opacity(.7),meshpen=p);
+              pen pp=linewidth(.25mm);
+              //draw the grid in the xy-plane
+              //along fixed x
+              draw((0,-.3,0) -- (0,.3,0),pp);
+              draw((.2,-.4,0) -- (.2,.4,0),pp);
+              draw((0.4,-.6,0) -- (.4,.6,0),pp);
+              draw((0.6,-.7,0) -- (.6,.7,0),pp);
+              draw((.8,-.8,0) -- (.8,.8,0),pp);
+              draw((1,-.8,0) -- (1,.8,0),pp);
+              draw((1.2,-.8,0) -- (1.2,.8,0),pp);
+              draw((1.4,-.8,0) -- (1.4,.8,0),pp);
+              draw((1.6,-.7,0) -- (1.6,.7,0),pp);
+              draw((1.8,-.6,0) -- (1.8,.6,0),pp);
+              draw((2,-.4,0) -- (2,.4,0),pp);
+              //along fixed y
+              draw((.8,.8,0) -- (1.4,.8,0),pp);
+              draw((.6,.7,0) -- (1.6,.7,0),pp);
+              draw((.4,.6,0) -- (1.8,.6,0),pp);
+              draw((.4,.5,0) -- (1.8,.5,0),pp);
+              draw((.2,.4,0) -- (2,.4,0),pp);
+              draw((0,.3,0) -- (2,.3,0),pp);
+              draw((0,.2,0) -- (2,.2,0),pp);
+              draw((0,.1,0) -- (2,.1,0),pp);
+              draw((.8,-.8,0) -- (1.4,-.8,0),pp);
+              draw((.6,-.7,0) -- (1.6,-.7,0),pp);
+              draw((.4,-.6,0) -- (1.8,-.6,0),pp);
+              draw((.4,-.5,0) -- (1.8,-.5,0),pp);
+              draw((.2,-.4,0) -- (2,-.4,0),pp);
+              draw((0,-.3,0) -- (2,-.3,0),pp);
+              draw((0,-.2,0) -- (2,-.2,0),pp);
+              draw((0,-.1,0) -- (2,-.1,0),pp);
 
-            pen pp=linewidth(.25mm);
-            //draw the grid in the xy-plane
-            //along fixed x
-            draw((0,-.3,0) -- (0,.3,0),pp);
-            draw((.2,-.4,0) -- (.2,.4,0),pp);
-            draw((0.4,-.6,0) -- (.4,.6,0),pp);
-            draw((0.6,-.7,0) -- (.6,.7,0),pp);
-            draw((.8,-.8,0) -- (.8,.8,0),pp);
-            draw((1,-.8,0) -- (1,.8,0),pp);
-            draw((1.2,-.8,0) -- (1.2,.8,0),pp);
-            draw((1.4,-.8,0) -- (1.4,.8,0),pp);
-            draw((1.6,-.7,0) -- (1.6,.7,0),pp);
-            draw((1.8,-.6,0) -- (1.8,.6,0),pp);
-            draw((2,-.4,0) -- (2,.4,0),pp);
-            //along fixed y
-            draw((.8,.8,0) -- (1.4,.8,0),pp);
-            draw((.6,.7,0) -- (1.6,.7,0),pp);
-            draw((.4,.6,0) -- (1.8,.6,0),pp);
-            draw((.4,.5,0) -- (1.8,.5,0),pp);
-            draw((.2,.4,0) -- (2,.4,0),pp);
-            draw((0,.3,0) -- (2,.3,0),pp);
-            draw((0,.2,0) -- (2,.2,0),pp);
-            draw((0,.1,0) -- (2,.1,0),pp);
-            draw((.8,-.8,0) -- (1.4,-.8,0),pp);
-            draw((.6,-.7,0) -- (1.6,-.7,0),pp);
-            draw((.4,-.6,0) -- (1.8,-.6,0),pp);
-            draw((.4,-.5,0) -- (1.8,-.5,0),pp);
-            draw((.2,-.4,0) -- (2,-.4,0),pp);
-            draw((0,-.3,0) -- (2,-.3,0),pp);
-            draw((0,-.2,0) -- (2,-.2,0),pp);
-            draw((0,-.1,0) -- (2,-.1,0),pp);
+              //Draw curve on top of the grid in xy plane ({cos(x)*(1+cos(2*x))},{sin(x)*(1+cos(2*x))},0);
+              triple g(real t) {return (cos(t)*(1+cos(2*t)),sin(t)*(1+cos(2*t)),0);}
+              path3 mypath=graph(g,-pi/2,pi/2,operator ..);
+              draw(mypath,blue);
 
-            //Draw curve on top of the grid in xy plane ({cos(x)*(1+cos(2*x))},{sin(x)*(1+cos(2*x))},0);
-            triple g(real t) {return (cos(t)*(1+cos(2*t)),sin(t)*(1+cos(2*t)),0);}
-            path3 mypath=graph(g,-pi/2,pi/2,operator ..);
-            draw(mypath,blue);
+              // draw curve on surface
+              triple g(real t) {
+                return (cos(t)*(1+cos(2*t)),sin(t)*(1+cos(2*t)),-.5*(cos(t)*(1+cos(2*t))-1)^2-.5*(sin(t)*(1+cos(2*t)))^2+2);
+              }
+              path3 mypath=graph(g,-pi/2,pi/2,operator ..);
+              draw(mypath,blue); 
 
-            // draw curve on surface
-            triple g(real t) {
-              return (cos(t)*(1+cos(2*t)),sin(t)*(1+cos(2*t)),-.5*(cos(t)*(1+cos(2*t))-1)^2-.5*(sin(t)*(1+cos(2*t)))^2+2);
-	}
-            path3 mypath=graph(g,-pi/2,pi/2,operator ..);
-            draw(mypath,blue); 
- 
-            //surface s=surface(f,(-pi/2,0),(pi/2,2*pi),8,8,Spline);
-            //pen p=rgb(0,0,.7);
-            //draw(s,rgb(.6,.6,1)+opacity(.7),blue+linewidth(2));
-            //path3 mypath=graph(g,0,32.5,operator ..); draw(mypath,blue);
+              //surface s=surface(f,(-pi/2,0),(pi/2,2*pi),8,8,Spline);
+              //pen p=rgb(0,0,.7);
+              //draw(s,rgb(.6,.6,1)+opacity(.7),blue+linewidth(2));
+              //path3 mypath=graph(g,0,32.5,operator ..); draw(mypath,blue);
 
-            //Draw the top of the column on the surface
-            //draw((1.6,0.3,1.865)--(1.8,.3,1.725),blue+linewidth(2));
-            //draw((1.8,0.3,1.7)--(1.8,.4,1.7),blue+linewidth(2));
-            //draw((1.8,0.4,1.7)--(1.6,.4,1.7),blue+linewidth(2));
-            //draw((1.6,0.4,1.7)--(1.6,.3,1.7),blue+linewidth(2));
-            draw((1.6,.3,1.775) -- (1.6,.4,1.74) -- (1.8,.4,1.6) -- (1.8,.3,1.635) --cycle,blue+.4mm);
+              //Draw the top of the column on the surface
+              //draw((1.6,0.3,1.865)--(1.8,.3,1.725),blue+linewidth(2));
+              //draw((1.8,0.3,1.7)--(1.8,.4,1.7),blue+linewidth(2));
+              //draw((1.8,0.4,1.7)--(1.6,.4,1.7),blue+linewidth(2));
+              //draw((1.6,0.4,1.7)--(1.6,.3,1.7),blue+linewidth(2));
+              draw((1.6,.3,1.775) -- (1.6,.4,1.74) -- (1.8,.4,1.6) -- (1.8,.3,1.635) --cycle,blue+.4mm);
 
-            //Draw the rectangular column
-            //base
-            draw((1.6,0.3,0)--(1.8,.3,0)--(1.8,.4,0)--(1.6,.4,0)--cycle,red+.4mm);
+              //Draw the rectangular column
+              //base
+              draw((1.6,0.3,0)--(1.8,.3,0)--(1.8,.4,0)--(1.6,.4,0)--cycle,red+.4mm);
 
-            //  //verticals plotted to average of 4 function heights
-            //draw((1.6,0.3,0)--(1.6,.3,1.7),red+.4mm);//base
-            //draw((1.8,0.3,0)--(1.8,.3,1.7),red+.4mm);//base
-            //draw((1.8,0.4,0)--(1.8,.4,1.7),red+.4mm);//base
-            //draw((1.6,0.4,0)--(1.6,.4,1.7),red+.4mm);//base
-            //top
-            draw((1.6,0.3,1.7)--(1.8,.3,1.7)--(1.8,.4,1.7)--(1.6,.4,1.7)--cycle,red);
+              //  //verticals plotted to average of 4 function heights
+              //draw((1.6,0.3,0)--(1.6,.3,1.7),red+.4mm);//base
+              //draw((1.8,0.3,0)--(1.8,.3,1.7),red+.4mm);//base
+              //draw((1.8,0.4,0)--(1.8,.4,1.7),red+.4mm);//base
+              //draw((1.6,0.4,0)--(1.6,.4,1.7),red+.4mm);//base
+              //top
+              draw((1.6,0.3,1.7)--(1.8,.3,1.7)--(1.8,.4,1.7)--(1.6,.4,1.7)--cycle,red);
 
-            pen q=rgb(.9,0,0)+.4mm;
-            //  draw(ss,rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            //   emissive(red+opacity(0.7))
+              pen q=rgb(.9,0,0)+.4mm;
+              //  draw(ss,rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              //   emissive(red+opacity(0.7))
 
-            //Shade the column now
-            //import three;
+              //Shade the column now
+              //import three;
 
-            path3 p =  (1.6,0.3,0)--(1.8,.3,0) -- (1.8,0.3,1.7)--(1.6,.3,1.7); //Left
-            draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            path3 p =  (1.6,0.3,1.7)--(1.8,.3,1.7)--(1.8,.4,1.7)--(1.6,.4,1.7); //top
-            draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
-            path3 p =  (1.6,0.4,0)--(1.8,.4,0) -- (1.8,0.4,1.7)--(1.6,.4,1.7); //right
-            draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
-            path3 p =  (1.6,0.3,0)--(1.6,.4,0) -- (1.6,0.4,1.7)--(1.6,.3,1.7); //back
-            draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
-            path3 p =  (1.8,0.3,0)--(1.8,.4,0) -- (1.8,0.4,1.7)--(1.8,.3,1.7); //front
-            draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
-            path3 p =  (1.6,0.3,0)--(1.8,.3,0)--(1.8,.4,0)--(1.6,.4,0); //bottom
-            draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
-            //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
+              path3 p =  (1.6,0.3,0)--(1.8,.3,0) -- (1.8,0.3,1.7)--(1.6,.3,1.7); //Left
+              draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              path3 p =  (1.6,0.3,1.7)--(1.8,.3,1.7)--(1.8,.4,1.7)--(1.6,.4,1.7); //top
+              draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
+              path3 p =  (1.6,0.4,0)--(1.8,.4,0) -- (1.8,0.4,1.7)--(1.6,.4,1.7); //right
+              draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
+              path3 p =  (1.6,0.3,0)--(1.6,.4,0) -- (1.6,0.4,1.7)--(1.6,.3,1.7); //back
+              draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
+              path3 p =  (1.8,0.3,0)--(1.8,.4,0) -- (1.8,0.4,1.7)--(1.8,.3,1.7); //front
+              draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
+              path3 p =  (1.6,0.3,0)--(1.8,.3,0)--(1.8,.4,0)--(1.6,.4,0); //bottom
+              draw(surface(p -- cycle),rgb(1,.6,.6)+opacity(.8),meshpen=q,nolight,render(merge=true));
+              //draw(surface(p -- cycle), emissive(red+opacity(0.7)));
 
-            // ////////////////////////////////////
-            //    SAMPLE CODE
+              // ////////////////////////////////////
+              //    SAMPLE CODE
 
-            // defaultpen(fontsize(10pt));
+              // defaultpen(fontsize(10pt));
 
-            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
-            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
-            //pen p=rgb(0,0,.7);
-            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+              //pen p=rgb(0,0,.7);
+              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-            //triple f(pair t) {
-            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
-            //}
-            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
-            //pen p=rgb(0,0,.7);
-            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+              //triple f(pair t) {
+              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+              //}
+              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+              //pen p=rgb(0,0,.7);
+              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-            //draw(s,paleblue);
-            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
-            //draw(mypath,2bp+blue);
+              //draw(s,paleblue);
+              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+              //draw(mypath,2bp+blue);
 
-            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
-            //path3 mypath=graph(g,-1,1,operator ..);
+              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+              //path3 mypath=graph(g,-1,1,operator ..);
 
-            //pen p=rgb(0,0,1);
-            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            ]]>
-          </asymptote>
+              //pen p=rgb(0,0,1);
+              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+              
+            </asymptote>
           </image>
         <!-- figures/figdouble_intro2_3D.asy END -->
         </figure>
@@ -378,7 +360,7 @@
       </p>
 
       <p>
-        The summation inside the parenthesis indicates the sum of heights <times /> widths,
+        The summation inside the parenthesis indicates the sum of heights <times/> widths,
         which gives an area;
         multiplying these areas by the thickness <m>\Delta y_j</m> gives a volume.
         The illustration in <xref ref="fig_double_intro3">Figure</xref>
@@ -485,21 +467,21 @@
     </p>
 
     <figure xml:id="fig_double_intro3">
-      <caption>Finding volume under a surface by sweeping out a cross<ndash />sectional area.</caption>
+      <caption>Finding volume under a surface by sweeping out a cross<ndash/>sectional area.</caption>
       <!--
-       \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+        \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
       3Dortho=0.005067072808742523,
       3Dc2c=0.5451613068580627 0.7846456170082092 0.29517868161201477,
       3Dcoo=9.929030418395996 -41.68748092651367 56.98992919921875,
       3Droo=200.99999858350685,
       3Dlights=Headlamp,add3Djscript=asylabels.js]
-       -->
+        -->
       <!-- START figures/figdouble_intro3_3D.asy -->
       <image xml:id="img_double_intro3">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figdouble_intro23D.asy in Chapter 13
@@ -590,7 +572,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figdouble_intro3_3D.asy END -->
@@ -643,27 +625,29 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              If <m>R</m> is bounded by <m>a\leq x\leq b</m> and <m>g_1(x)\leq y\leq g_2(x)</m>,
-              where <m>g_1</m> and <m>g_2</m> are continuous functions on <m>[a,b]</m>, then
-              <me>
-                \iint_R f(x,y)\ dA = \int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx
-              </me>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>R</m> is bounded by <m>a\leq x\leq b</m> and <m>g_1(x)\leq y\leq g_2(x)</m>,
+                where <m>g_1</m> and <m>g_2</m> are continuous functions on <m>[a,b]</m>, then
+                <me>
+                  \iint_R f(x,y)\ dA = \int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>R</m> is bounded by <m>c\leq y\leq d</m> and <m>h_1(y)\leq x\leq h_2(y)</m>,
-              where <m>h_1</m> and <m>h_2</m> are continuous functions on <m>[c,d]</m>, then
-              <me>
-                \iint_R f(x,y)\ dA = \int_c^d\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\ dy
-              </me>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>R</m> is bounded by <m>c\leq y\leq d</m> and <m>h_1(y)\leq x\leq h_2(y)</m>,
+                where <m>h_1</m> and <m>h_2</m> are continuous functions on <m>[c,d]</m>, then
+                <me>
+                  \iint_R f(x,y)\ dA = \int_c^d\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\ dy
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -708,19 +692,19 @@
         <figure xml:id="fig_double1">
           <caption>Finding the signed volume under a surface in <xref ref="ex_double1">Example</xref>.</caption>
           <!--
-           \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0.,
           3Dortho=0.0046491301618516445,
           3Dc2c=0.5071550607681274 -0.7884454131126404 0.3480626046657562,
           3Dcoo=34.443328857421875 108.33967590332031 55.163639068603516,
           3Droo=149.99999646067835,
           3Dlights=Headlamp,add3Djscript=asylabels.js]
-           -->
+            -->
           <!-- START figures/figdouble1_3D.asy -->
           <image xml:id="img_double1">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figdouble13D.asy in Chapter 13
@@ -801,7 +785,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figdouble1_3D.asy END -->
@@ -843,19 +827,19 @@
         <figure xml:id="fig_double2">
           <caption>Finding the signed volume under the surface in <xref ref="ex_double2">Example</xref>.</caption>
           <!--
-           \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.0046491301618516445,
           3Dc2c=0.3019719421863556 -0.9206370115280151 0.24746793508529663,
           3Dcoo=45.67414093017578 112.43929290771484 56.7108039855957,
           3Droo=200.99999432688844,
           3Dlights=Headlamp,add3Djscript=asylabels.js]
-           -->
+            -->
           <!-- START figures/figdouble2_3D.asy -->
           <image xml:id="img_double2">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figdouble23D.asy in Chapter 13
@@ -944,7 +928,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figdouble2_3D.asy END -->
@@ -1025,46 +1009,48 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\ds \iint_Rc\,f(x,y)\ dA = c\iint_Rf(x,y)\ dA</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\ds \iint_Rc\,f(x,y)\ dA = c\iint_Rf(x,y)\ dA</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \iint_R \big(f(x,y)\pm g(x,y)\big)\ dA = \iint_R f(x,y)\ dA \pm \iint_R g(x,y)\ dA</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\ds \iint_R \big(f(x,y)\pm g(x,y)\big)\ dA = \iint_R f(x,y)\ dA \pm \iint_R g(x,y)\ dA</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>f(x,y)\geq 0</m> on <m>R</m>,
-              then <m>\ds \iint_R f(x,y)\ dA\geq 0</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>f(x,y)\geq 0</m> on <m>R</m>,
+                then <m>\ds \iint_R f(x,y)\ dA\geq 0</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>f(x,y)\geq g(x,y)</m> on <m>R</m>,
-              then <m>\ds \iint_R f(x,y)\ dA\geq \iint_R g(x,y)\ dA</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>f(x,y)\geq g(x,y)</m> on <m>R</m>,
+                then <m>\ds \iint_R f(x,y)\ dA\geq \iint_R g(x,y)\ dA</m>.
+              </p>
+            </li>
 
-          <li xml:id="thm_double_prop_regions">
+            <li xml:id="thm_double_prop_regions">
 
-            <p>
-              Let <m>R</m> be the union of two nonoverlapping regions,
-              <m>R = R_1\bigcup R_2</m>
-              (see <xref ref="fig_double_region">Figure</xref>).
-              Then
-              <me>
-                \iint_R f(x,y)\ dA = \iint_{R_1}f(x,y)\ dA+ \iint_{R_2}f(x,y)\ dA
-              </me>.
-            </p>
-          </li>
-        </ol>
+              <p>
+                Let <m>R</m> be the union of two nonoverlapping regions,
+                <m>R = R_1\bigcup R_2</m>
+                (see <xref ref="fig_double_region">Figure</xref>).
+                Then
+                <me>
+                  \iint_R f(x,y)\ dA = \iint_{R_1}f(x,y)\ dA+ \iint_{R_2}f(x,y)\ dA
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -1074,21 +1060,8 @@
       <image xml:id="img_double_region">
         <description></description>
         <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}[xscale=.85,yscale=.6]%[width=\marginparwidth+25pt]
-        %\begin{axis}[%
-        %axis on top,%
-        %			%x=.37\marginparwidth,
-        %			%y=.37\marginparwidth,
-        %			xtick={1,2,3,4,5,6,7,8,9,10,11,12},%
-        %%			extra x ticks={12.57},
-        %%			extra x tick labels={$4\pi$},
-        %%			ytick=\empty,
-        %			%%extra y ticks={-5,-3,...,7},%
-        %%			minor x tick num=4,
-        %			ymin=-.1,ymax=8.5,%
-        %			xmin=-.1,xmax=12.5%
-        %]
+        
+        \begin{tikzpicture}
 
         \draw [{\colorone},thick,fill={\coloronefill},smooth] plot coordinates {(0,2.)(0.06639,2.527)(0.2407,2.839)(0.4857,3.009)(0.7641,3.112)(1.039,
         3.221)(1.294,3.367)(1.532,3.53)(1.759,3.689)(1.98,3.823)(2.2,3.915)(2.
@@ -1106,12 +1079,9 @@
         \draw (2,1) node {$R_1$};
         \draw (5,.5) node {$R_2$};
         \draw (1,-2) node {$R$};
-        %\end{axis}
-        %
-        %
-        %
+
         \end{tikzpicture}
-        ]]>
+        
         </latex-image>
       </image>
       <!-- figures/fig_double_region.tex END -->
@@ -1130,19 +1100,19 @@
         <figure xml:id="fig_double3">
           <caption>Finding the signed volume under a surface in <xref ref="ex_double3">Example</xref>.</caption>
           <!--
-           \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0.,
           3Dortho=0.0046491301618516445,
           3Dc2c=0.08563969284296036 0.8920179605484009 0.44381290674209595,
           3Dcoo=-0.3899505138397217 30.125946044921875 17.537517547607422,
           3Droo=200.9999927619444,
           3Dlights=Headlamp,add3Djscript=asylabels.js]
-           -->
+            -->
           <!-- START figures/figdouble3_3D.asy -->
           <image xml:id="img_double3">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figdouble33D.asy in Chapter 13
@@ -1231,7 +1201,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figdouble3_3D.asy END -->
@@ -1291,19 +1261,19 @@
         <figure xml:id="fig_double4">
           <caption>Finding the volume under the surface in <xref ref="ex_double4">Example</xref>.</caption>
           <!--
-           \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004656145814806223,
           3Dc2c=0.9017289280891418 0.24087461829185486 0.35897672176361084,
           3Dcoo=-13.985211372375488 45.56017303466797 41.332950592041016,
           3Droo=201.0000081559461,
           3Dlights=Headlamp,add3Djscript=asylabels.js]
-           -->
+            -->
           <!-- START figures/figdouble4_3D.asy -->
           <image xml:id="img_double4">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figdouble43D.asy in Chapter 13
@@ -1391,7 +1361,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figdouble4_3D.asy END -->
@@ -1421,7 +1391,7 @@
           We now choose an order of integration:
           <m>dy\ dx</m> or <m>dx\ dy</m>?
           Either order works; since the integrand does not contain <m>x</m>,
-          choosing <m>dx\ dy</m> might be simpler <mdash /> at least,
+          choosing <m>dx\ dy</m> might be simpler <mdash/> at least,
           the first integral is very simple.
         </p>
 
@@ -1477,35 +1447,34 @@
           <image xml:id="img_double6">
             <description></description>
             <latex-image>
-            <![CDATA[
+            
             \begin{tikzpicture}
+
             \begin{axis}[%
             axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			%xtick={4,5,1,2,3},%
-			%ytick={1,2,3,4,5},
-			%extra y ticks={.1,.9},
-			%extra y tick labels={$a$,$b$},
+            %x=.37\marginparwidth,
+            %y=.37\marginparwidth,
+            %xtick={4,5,1,2,3},%
+            %ytick={1,2,3,4,5},
+            %extra y ticks={.1,.9},
+            %extra y tick labels={$a$,$b$},
             %			ytick={-1,1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
+            %%extra y ticks={-5,-3,...,7},%
             %			minor x tick num=4,
-			ymin=-.5,ymax=3.5,%
-			xmin=-.5,xmax=3.5%
+            ymin=-.5,ymax=3.5,%
+            xmin=-.5,xmax=3.5%
             ]
 
-            %\addplot [smooth,very thick, {\colorone},samples=2,domain=-.5:6.9] ({x},{x/3});
-
             \draw [very thick,{\colortwo}] (axis cs:-.5,0) -- (axis cs:3.5,0)
-															(axis cs:-.5,3) -- (axis cs:3.5,3);
+                              (axis cs:-.5,3) -- (axis cs:3.5,3);
             \draw [very thick,{\colorone}] (axis cs:3,-.5) -- (axis cs:3,3.5)
-															(axis cs:-.5,-.5) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x$} (axis cs: 3.5,3.5);
+                              (axis cs:-.5,-.5) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x$} (axis cs: 3.5,3.5);
             \draw (axis cs:2,1) node {$R$}; 
 
             \end{axis}
 
             \end{tikzpicture}
-            ]]>
+            
             </latex-image>
           </image>
           <!-- figures/fig_double6.tex END -->
@@ -1559,19 +1528,19 @@
         <figure xml:id="fig_double6b">
           <caption>Showing the surface <m>f</m> defined in <xref ref="ex_double6">Example</xref> over its region <m>R</m>.</caption>
           <!--
-           \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0.,
           3Dortho=0.005074724089354277,
           3Dc2c=0.3949831426143646 0.8441238403320312 0.3625510632991791,
           3Dcoo=41.500732421875 17.729557037353516 46.038082122802734,
           3Droo=201.00002888349545,
           3Dlights=Headlamp,add3Djscript=asylabels.js]
-           -->
+            -->
           <!-- START figures/figdouble6b_3D.asy -->
           <image xml:id="img_double6b">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figdouble6b3D.asy in Chapter 13
@@ -1655,7 +1624,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figdouble6b_3D.asy END -->
@@ -1670,7 +1639,7 @@
 
     <p>
       <xref ref="def_av_val">Definition</xref>
-      defines the average value of a single<ndash />variable function <m>f(x)</m> on the interval <m>[a,b]</m> as
+      defines the average value of a single<ndash/>variable function <m>f(x)</m> on the interval <m>[a,b]</m> as
       <me>
         \text{ average value of \(f(x)\) on \([a,b]\) }  = \frac1{b-a}\int_a^b f(x)\ dx;
       </me>
@@ -1737,19 +1706,19 @@
         <figure xml:id="fig_double8">
           <caption>Finding the average value of <m>f</m> in <xref ref="ex_double8">Example</xref>.</caption>
           <!--
-           \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004656145814806223,
           3Dc2c=0.9017289280891418 0.24087461829185486 0.35897672176361084,
           3Dcoo=-13.985211372375488 45.56017303466797 41.332950592041016,
           3Droo=201.0000081559461,
           3Dlights=Headlamp,add3Djscript=asylabels.js]
-           -->
+            -->
           <!-- START figures/figdouble4_3D.asy -->
           <image xml:id="img_double8">
-
+            <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figdouble43D.asy in Chapter 13
@@ -1837,7 +1806,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figdouble4_3D.asy END -->
@@ -1872,19 +1841,19 @@
     <figure xml:id="fig_double_summary">
       <caption>Showing how an iterated integral used to find area also finds a certain volume.</caption>
       <!--
-       \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+        \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
       3Dortho=0.004656150005757809,
       3Dc2c=0.6877317428588867 0.6239246726036072 0.3711375296115875,
       3Dcoo=7.870043754577637 -27.81243896484375 55.69517135620117,
       3Droo=201.00001586839815,
       3Dlights=Headlamp,add3Djscript=asylabels.js]
-       -->
+        -->
       <!-- START figures/figdouble_summary_3D.asy -->
       <image xml:id="img_double_summary">
-
+        <description></description>
         <asymptote>
-          <![CDATA[
+          
           import graph3;
 
           //ASY file for figdouble_intro23D.asy in Chapter 13
@@ -1934,7 +1903,7 @@
           // draw curve on surface
           triple g(real t) {
             return (cos(t)*(1+cos(2*t)),sin(t)*(1+cos(2*t)),1);
-	}
+          }
           path3 mypath=graph(g,-pi/2,pi/2,operator ..);
           draw(mypath,blue);
 
@@ -1976,7 +1945,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          ]]>
+          
         </asymptote>
       </image>
       <!-- figures/figdouble_summary_3D.asy END -->
@@ -2010,7 +1979,7 @@
             <statement>
               <p>
                 An integral can be interpreted as giving the signed area over an interval;
-                a double integral can be interpreted as giving the signed <fillin /> over a region.
+                a double integral can be interpreted as giving the signed <fillin/> over a region.
               </p>
             </statement>
             <solution>
@@ -2053,11 +2022,11 @@
             </setup>
             <statement>
               <p>
-                Explain why if <m>f(x,y)>0</m> over a region <m>R</m>, then
+                Explain why if <m>f(x,y) \gt 0</m> over a region <m>R</m>, then
               </p>
 
               <p>
-                <m>\iint_Rf(x,y)\ dA>0</m>.
+                <m>\iint_Rf(x,y)\ dA \gt 0</m>.
               </p>
             </statement>
             <solution>
@@ -2176,7 +2145,7 @@
                     </p>
 
                     <p>
-                      <var name="$value" width="10" />
+                      <var name="$value" width="10"/>
                     </p>
                   </li>
 
@@ -2187,17 +2156,17 @@
 
                     <tabular>
                       <row>
-                        <cell><var name="$multians" width="1" /></cell>
-                        <cell><var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="1"/></cell>
+                        <cell><var name="$multians" width="1"/></cell>
                       </row>
                       <row>
                         <cell><m>\displaystyle\int</m></cell>
                         <cell><m>\displaystyle\int</m></cell>
-                        <cell><var name="$multians" width="15" /> <var name="$multians" width="1" /> <var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="15"/> <var name="$multians" width="1"/> <var name="$multians" width="1"/></cell>
                       </row>
                       <row>
-                        <cell><var name="$multians" width="1" /></cell>
-                        <cell><var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="1"/></cell>
+                        <cell><var name="$multians" width="1"/></cell>
                       </row>
                     </tabular>
 
@@ -2267,7 +2236,7 @@
                     </p>
 
                     <p>
-                      <var name="$value" width="10" />
+                      <var name="$value" width="10"/>
                     </p>
                   </li>
 
@@ -2278,17 +2247,17 @@
 
                     <tabular>
                       <row>
-                        <cell><var name="$multians" width="1" /></cell>
-                        <cell><var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="1"/></cell>
+                        <cell><var name="$multians" width="1"/></cell>
                       </row>
                       <row>
                         <cell><m>\displaystyle\int</m></cell>
                         <cell><m>\displaystyle\int</m></cell>
-                        <cell><var name="$multians" width="15" /> <var name="$multians" width="1" /> <var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="15"/> <var name="$multians" width="1"/> <var name="$multians" width="1"/></cell>
                       </row>
                       <row>
-                        <cell><var name="$multians" width="1" /></cell>
-                        <cell><var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="1"/></cell>
+                        <cell><var name="$multians" width="1"/></cell>
                       </row>
                     </tabular>
 
@@ -2358,7 +2327,7 @@
                     </p>
 
                     <p>
-                      <var name="$value" width="10" />
+                      <var name="$value" width="10"/>
                     </p>
                   </li>
 
@@ -2369,17 +2338,17 @@
 
                     <tabular>
                       <row>
-                        <cell><var name="$multians" width="1" /></cell>
-                        <cell><var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="1"/></cell>
+                        <cell><var name="$multians" width="1"/></cell>
                       </row>
                       <row>
                         <cell><m>\displaystyle\int</m></cell>
                         <cell><m>\displaystyle\int</m></cell>
-                        <cell><var name="$multians" width="15" /> <var name="$multians" width="1" /> <var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="15"/> <var name="$multians" width="1"/> <var name="$multians" width="1"/></cell>
                       </row>
                       <row>
-                        <cell><var name="$multians" width="1" /></cell>
-                        <cell><var name="$multians" width="1" /></cell>
+                        <cell><var name="$multians" width="1"/></cell>
+                        <cell><var name="$multians" width="1"/></cell>
                       </row>
                     </tabular>
 
@@ -2435,66 +2404,59 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_11.tex -->
+                    <image xml:id="img_13_02_ex_11X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_11.tex -->
-                      <image xml:id="img_13_02_ex_11X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.1,ymax=1.5,%
-			xmin=-.1,xmax=1.5%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={1},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={1},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-.1,ymax=1.5,%
+                      xmin=-.1,xmax=1.5%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=-.1:1.1,samples=20] ({x},{x^2});
-                        \addplot [very thick,{\colorone},smooth,domain=-.1:1.1,samples=20] ({x^2},{x});
+                      \addplot+[domain=-.1:1.1,samples=20] ({x},{x^2});
+                      \addplot+[domain=-.1:1.1,samples=20] ({x^2},{x});
 
-                        \draw (axis cs: .5,.5) node {$R$}
-                        (axis cs: .5,.9) node {\scriptsize$y=\sqrt{x}$}
-			(axis cs: .85,.4) node {\scriptsize$y=x^2$};
+                      \draw (axis cs: .5,.5) node {$R$}
+                            (axis cs: .5,.9) node {\scriptsize$y=\sqrt{x}$}
+                            (axis cs: .85,.4) node {\scriptsize$y=x^2$};
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \end{axis}
 
-                        \end{axis}
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_11.tex END -->
+                  </li>
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_11.tex END -->
-                    </figure>
+                  <li>
+                    <p>
+                      <m>\ds \int_0^1\int_{x^2}^{\sqrt{x}}x^2y\ dy\ dx = \int_0^1\int_{y^2}^{\sqrt{y}}x^2y\ dx\ dy</m>.
+                    </p>
+                  </li>
 
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_0^1\int_{x^2}^{\sqrt{x}}x^2y\ dy\ dx = \int_0^1\int_{y^2}^{\sqrt{y}}x^2y\ dx\ dy</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\frac3{56}</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>\frac3{56}</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2513,68 +2475,62 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_12.tex -->
+                    <image xml:id="img_13_02_ex_12X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_12.tex -->
-                      <image xml:id="img_13_02_ex_12X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.5,ymax=1.5,%
-			xmin=-1.5,xmax=1.5%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={1},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={1},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-1.5,ymax=1.5,%
+                      xmin=-1.5,xmax=1.5%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=-1.1:1.1,samples=20] ({x},{x^3});
-                        \addplot [very thick,{\colorone},smooth,domain=-1.1:1.1,samples=20] ({x^3},{x});
+                      \addplot+[domain=-1.1:1.1,samples=20] ({x},{x^3});
+                      \addplot+[domain=-1.1:1.1,samples=20] ({x^3},{x});
 
-                        \draw (axis cs: -.5,.5) node (A) {$R$}
-                        (axis cs: .5,1.1) node {\scriptsize$y=\sqrt[3]{x}$}
-			(axis cs: 1.05,.4) node {\scriptsize$y=x^3$};
+                      \draw (axis cs: -.5,.5) node (A) {$R$}
+                            (axis cs: .5,1.1) node {\scriptsize$y=\sqrt[3]{x}$}
+                            (axis cs: 1.05,.4) node {\scriptsize$y=x^3$};
 
-                        \draw [->,>=stealth] (A) -- (axis cs: .5,.5);
-                        \draw [->,>=stealth] (A) -- (axis cs: -.5,-.5);
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \draw [-&gt;,&gt;=stealth] (A) -- (axis cs: .5,.5);
+                      \draw [-&gt;,&gt;=stealth] (A) -- (axis cs: -.5,-.5);
 
-                        \end{axis}
+                      \end{axis}
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_12.tex END -->
-                    </figure>
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_12.tex END -->
+                  </li>
 
-                  </p>
-                </li>
+                  <li>
+                    <p>
+                      <m>\ds \int_0^1\int_{x^3}^{\sqrt[3]{x}}x^2y\ dy\ dx + \int_{-1}^0\int_{\sqrt[3]{x}}^{x^3}x^2y\ dy\ dx</m> <m>\ds = \int_0^1\int_{y^3}^{\sqrt[3]{y}}x^2y\ dx\ dy +\int_{-1}^0\int_{\sqrt[3]{y}}^{y^3}x^2y\ dx\ dy</m>.
+                    </p>
+                  </li>
 
-                <li>
-                  <p>
-                    <m>\ds \int_0^1\int_{x^3}^{\sqrt[3]{x}}x^2y\ dy\ dx + \int_{-1}^0\int_{\sqrt[3]{x}}^{x^3}x^2y\ dy\ dx</m> <m>\ds = \int_0^1\int_{y^3}^{\sqrt[3]{y}}x^2y\ dx\ dy +\int_{-1}^0\int_{\sqrt[3]{y}}^{y^3}x^2y\ dx\ dy</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    0
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      0
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2595,66 +2551,56 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_13.tex -->
+                    <image xml:id="img_13_02_ex_13X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_13.tex -->
-                      <image xml:id="img_13_02_ex_13X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-1,1},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={1,-1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-1.1,ymax=1.1,%
-			xmin=-1.1,xmax=1.1%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={-1,1},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={1,-1},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-1.1,ymax=1.1,%
+                      xmin=-1.1,xmax=1.1%
+                      ]
 
-                        %\addplot [very thick,{\colorone},smooth,domain=-.1:1.1,samples=20] ({x},{x^3});
-                        %\addplot [very thick,{\colorone},smooth,domain=-.1:1.1,samples=20] ({x^3},{x});
+                      \draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
 
-                        \draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw (axis cs: .5,.5) node {$R$};
 
-                        \draw (axis cs: .5,.5) node {$R$};
+                      \end{axis}
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_13.tex END -->
+                  </li>
 
-                        \end{axis}
+                  <li>
+                    <p>
+                      <m>\ds \int_{-1}^1\int_{-1}^{1}x^2-y^2\ dy\ dx = \int_{-1}^1\int_{-1}^{1}x^2-y^2\ dx\ dy</m>.
+                    </p>
+                  </li>
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_13.tex END -->
-                    </figure>
-
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_{-1}^1\int_{-1}^{1}x^2-y^2\ dy\ dx = \int_{-1}^1\int_{-1}^{1}x^2-y^2\ dx\ dy</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    0
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      0
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2674,68 +2620,59 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_14.tex -->
+                    <image xml:id="img_13_02_ex_14X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_14.tex -->
-                      <image xml:id="img_13_02_ex_14X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=1.2,%
-			xmin=-.5,xmax=1.2%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={1},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={1},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-.5,ymax=1.2,%
+                      xmin=-.5,xmax=1.2%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:1.1,samples=20] ({x},{1});
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:1.1,samples=20] ({x^2},{x});
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:1.1,samples=20] ({0},{x});
+                      \addplot+[domain=-.25:1.1,samples=20] ({x},{1});
+                      \addplot+[domain=-.25:1.1,samples=20] ({x^2},{x});
+                      \addplot+[domain=-.25:1.1,samples=20] ({0},{x});
 
-                        %\draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw (axis cs: .25,.75) node {$R$}
+                            (axis cs: .5,.5) node {\scriptsize $x=y^2$};
 
-                        \draw (axis cs: .25,.75) node {$R$}
-			(axis cs: .5,.5) node {\scriptsize $x=y^2$};
+                      \end{axis}
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_14.tex END -->
+                  </li>
 
-                        \end{axis}
+                  <li>
+                    <p>
+                      <m>\ds \int_{0}^1\int_{0}^{y^2}ye^x\ dx\ dy = \int_{0}^1\int_{\sqrt{x}}^{1}ye^x\ dy\ dx</m>.
+                    </p>
+                  </li>
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_14.tex END -->
-                    </figure>
-
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_{0}^1\int_{0}^{y^2}ye^x\ dx\ dy = \int_{0}^1\int_{\sqrt{x}}^{1}ye^x\ dy\ dx</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>e/2-1</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>e/2-1</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2755,68 +2692,59 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_15.tex -->
+                    <image xml:id="img_13_02_ex_15X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_15.tex -->
-                      <image xml:id="img_13_02_ex_15X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=3.5,%
-			xmin=-.5,xmax=2.5%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={1,2},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={1,2,3},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-.5,ymax=3.5,%
+                      xmin=-.5,xmax=2.5%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:2.25,samples=20] ({x},{0});
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:2.25,samples=20] ({x},{3-3/2*x});
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:3.25,samples=20] ({0},{x});
+                      \addplot+[domain=-.25:2.25,samples=20] ({x},{0});
+                      \addplot+[domain=-.25:2.25,samples=20] ({x},{3-3/2*x});
+                      \addplot+[domain=-.25:3.25,samples=20] ({0},{x});
 
-                        %\draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw (axis cs: .75,1) node {$R$}
+                            (axis cs: 1,2) node [rotate=-40] {\scriptsize $3x+2y=6$};
 
-                        \draw (axis cs: .75,1) node {$R$}
-			(axis cs: 1,2) node [rotate=-40] {\scriptsize $3x+2y=6$};
+                      \end{axis}
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_15.tex END -->
+                  </li>
 
-                        \end{axis}
+                  <li>
+                    <p>
+                      <m>\ds \int_{0}^2\int_{0}^{3-3/2x}\big(6-3x-2y\big)\ dy\ dx = \int_{0}^3\int_{0}^{2-2/3y}\big(6-3x-2y\big)\ dx\ dy</m>.
+                    </p>
+                  </li>
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_15.tex END -->
-                    </figure>
-
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_{0}^2\int_{0}^{3-3/2x}\big(6-3x-2y\big)\ dy\ dx = \int_{0}^3\int_{0}^{2-2/3y}\big(6-3x-2y\big)\ dx\ dy</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    6
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      6
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2838,71 +2766,61 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_16.tex -->
+                    <image xml:id="img_13_02_ex_16X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_16.tex -->
-                      <image xml:id="img_13_02_ex_16X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2,3},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={1,2,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=1.25,%
-			xmin=-.5,xmax=3.25%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={1,2,3},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={1,2,3},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-.5,ymax=1.25,%
+                      xmin=-.5,xmax=3.25%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=.5:3.25,samples=20] ({x},{ln(x)});
-                        \addplot [very thick,{\colorone},smooth,domain=-.25:3.25,samples=20] ({x},{1/1.71828*(x-1)});
-                        %\addplot [very thick,{\colorone},smooth,domain=-.25:3.25,samples=20] ({0},{x});
+                      \addplot+[domain=.5:3.25,samples=20] ({x},{ln(x)});
+                      \addplot+[domain=-.25:3.25,samples=20] ({x},{1/1.71828*(x-1)});
 
-                        %\draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw (axis cs: 1,.5) node (A) {$R$}
+                            (axis cs: 2,.9) node [rotate=40] {\scriptsize $y=\ln(x) $}
+                            (axis cs: 2.5,.3) node [rotate=0] {\scriptsize $y=\frac{1}{1-e}(x-1)$};
 
-                        \draw (axis cs: 1,.5) node (A) {$R$}
-			(axis cs: 2,.9) node [rotate=40] {\scriptsize $y=\ln(x) $}
-			(axis cs: 2.5,.3) node [rotate=0] {\scriptsize $y=\frac{1}{1-e}(x-1)$};
+                      \draw[-&gt;,&gt;=stealth] (A) -- (axis cs:1.8,.5);
 
-                        \draw[->,>=stealth] (A) -- (axis cs:1.8,.5);
+                      \end{axis}
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_16.tex END -->
+                  </li>
 
-                        \end{axis}
+                  <li>
+                    <p>
+                      <m>\ds \int_{1}^e\int_{\frac{x-1}{e-1}}^{\ln(x) }e^y\ dy\ dx = \int_{0}^1\int_{e^y}^{y(e-1)+1}e^y\ dx\ dy</m>.
+                    </p>
+                  </li>
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_16.tex END -->
-                    </figure>
-
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_{1}^e\int_{\frac{x-1}{e-1}}^{\ln(x) }e^y\ dy\ dx = \int_{0}^1\int_{e^y}^{y(e-1)+1}e^y\ dx\ dy</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>-\frac12e^2+2e-\frac32</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>-\frac12e^2+2e-\frac32</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -2922,71 +2840,56 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_17.tex -->
+                    <image xml:id="img_13_02_ex_17X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_17.tex -->
-                      <image xml:id="img_13_02_ex_17X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={-3,3},
-			%%
-                        %			extra x ticks={.33},
-                        %			extra x tick labels={$1/3$},
-			ytick={-3,3},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-3.1,ymax=3.1,%
-			xmin=-3.7,xmax=3.7%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={-3,3},
+                      %%
+                      %			extra x ticks={.33},
+                      %			extra x tick labels={$1/3$},
+                      ytick={-3,3},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-3.1,ymax=3.1,%
+                      xmin=-3.7,xmax=3.7%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=0:180,samples=30] ({3*cos(x)},{3*sin(x)})--cycle;
-                        %\addplot [very thick,{\colorone},smooth,domain=-.25:3.25,samples=20] ({x},{1/1.71828*(x-1)});
-                        %\addplot [very thick,{\colorone},smooth,domain=-.25:3.25,samples=20] ({0},{x});
+                      \addplot+[domain=0:180,samples=30] ({3*cos(x)},{3*sin(x)})--cycle;
 
-                        %\draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw (axis cs: 1,1) node (A) {$R$};
 
-                        \draw (axis cs: 1,1) node (A) {$R$};
-			%(axis cs: 2,.9) node [rotate=40] {\scriptsize $y=\ln(x) $}
-			%(axis cs: 2.5,.3) node [rotate=0] {\scriptsize $y=\frac{1}{1-e}(x-1)$};
+                      \end{axis}
 
-                        %\draw[->,>=stealth] (A) -- (axis cs:1.8,.5);
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_17.tex END -->
+                  </li>
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                  <li>
+                    <p>
+                      <m>\ds \int_{-3}^3\int_{0}^{\sqrt{9-x^2}}\big(x^3y-x\big)\ dy\ dx = \int_{0}^3\int_{-\sqrt{9-y^2}}^{\sqrt{9-y^2}}\big(x^3y-x\big)\ dx\ dy</m>.
+                    </p>
+                  </li>
 
-                        \end{axis}
-
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_17.tex END -->
-                    </figure>
-
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_{-3}^3\int_{0}^{\sqrt{9-x^2}}\big(x^3y-x\big)\ dy\ dx = \int_{0}^3\int_{-\sqrt{9-y^2}}^{\sqrt{9-y^2}}\big(x^3y-x\big)\ dx\ dy</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    0
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      0
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
@@ -3006,82 +2909,75 @@
               </p>
             </statement>
             <solution>
-              <ol>
-                <li>
-                  <p>
+              <p>
+                <ol>
+                  <li>
+                    <!-- START figures/fig_13_02_ex_18.tex -->
+                    <image xml:id="img_13_02_ex_18X">
+                      <description></description>
+                      <latex-image>
+                      
+                      \begin{tikzpicture}
 
-                    <figure>
-            <!-- START figures/fig_13_02_ex_18.tex -->
-                      <image xml:id="img_13_02_ex_18X">
-                        <description></description>
-                        <latex-image>
-                        <![CDATA[
-                        \begin{tikzpicture}
-                        \begin{axis}[%
-                        axis on top,%
-			%x=.37\marginparwidth,
-			%y=.37\marginparwidth,
-			xtick={1,2},
-			%%
-			extra x ticks={2.718},
-			extra x tick labels={$e$},
-			ytick={1},
-			%%extra y ticks={-5,-3,...,7},%
-			ymin=-.5,ymax=1.2,%
-			xmin=-.5,xmax=3.5%
-                        ]
+                      \begin{axis}[%
+                      axis on top,%
+                      %x=.37\marginparwidth,
+                      %y=.37\marginparwidth,
+                      xtick={1,2},
+                      %%
+                      extra x ticks={2.718},
+                      extra x tick labels={$e$},
+                      ytick={1},
+                      %%extra y ticks={-5,-3,...,7},%
+                      ymin=-.5,ymax=1.2,%
+                      xmin=-.5,xmax=3.5%
+                      ]
 
-                        \addplot [very thick,{\colorone},smooth,domain=.5:3.25,samples=30] ({x},{ln(x)});
-                        \addplot [very thick,{\colorone},smooth,domain=-.5:3.25,samples=2] ({x},{0});
-                        \addplot [very thick,{\colorone},smooth,domain=-.5:3.25,samples=20] ({x},{x/2.71828});
+                      \addplot+[domain=.5:3.25,samples=30] ({x},{ln(x)});
+                      \addplot+[domain=-.5:3.25,samples=2] ({x},{0});
+                      \addplot+[domain=-.5:3.25,samples=20] ({x},{x/2.71828});
 
-                        %\draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw (axis cs: .8,.1) node (A) {$R$};
 
-                        \draw (axis cs: .8,.1) node (A) {$R$};
-			%(axis cs: 2,.9) node [rotate=40] {\scriptsize $y=\ln(x) $}
-			%(axis cs: 2.5,.3) node [rotate=0] {\scriptsize $y=\frac{1}{1-e}(x-1)$};
+                      \filldraw (axis cs:2.718,1) circle (1.5pt);
+                      \draw (axis cs:2.718,1) node [below right] {\scriptsize $(e,1)$};
 
-                        \filldraw (axis cs:2.718,1) circle (1.5pt);
-                        \draw (axis cs:2.718,1) node [below right] {\scriptsize $(e,1)$};
-                        %\draw[->,>=stealth] (A) -- (axis cs:1.8,.5);
+                      \end{axis}
 
-                        %\addplot [{\colorone},thick,fill=white,area style, smooth,domain=0:360,samples=30] ({1+cos(x)},{sin(x)});
-                        %
-                        %\addplot [{\colorone},thick,,area style, smooth,domain=0:360,samples=30] ({2+2*cos(x)},{2*sin(x)});
+                      \end{tikzpicture}
+                      
+                      </latex-image>
+                    </image>
+                    <!-- figures/fig_13_02_ex_18.tex END -->
+                  </li>
 
-                        \end{axis}
+                  <li>
+                    <p>
+                      <m>\ds \int_{0}^1\int_{ey}^{e^y}\big(4-3y\big)\ dx\ dy = \int_{0}^1\int_{0}^{x/e}\big(4-3y\big)\ dy\ dx+\int_{1}^e\int_{\ln(x) }^{x/e}\big(4-3y\big)\ dy\ dx</m>.
+                    </p>
+                  </li>
 
-                        \end{tikzpicture}
-                        ]]>
-                        </latex-image>
-                      </image>
-            <!-- figures/fig_13_02_ex_18.tex END -->
-                    </figure>
-
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>\ds \int_{0}^1\int_{ey}^{e^y}\big(4-3y\big)\ dx\ dy = \int_{0}^1\int_{0}^{x/e}\big(4-3y\big)\ dy\ dx+\int_{1}^e\int_{\ln(x) }^{x/e}\big(4-3y\big)\ dy\ dx</m>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    <m>3e-7</m>
-                  </p>
-                </li>
-              </ol>
+                  <li>
+                    <p>
+                      <m>3e-7</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
             </solution>
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        state why it is difficult/impossible to integrate the iterated integral in the given order of integration.
-        Change the order of integration and evaluate the new iterated integral.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          state why it is difficult/impossible to integrate the iterated integral in the given order of integration.
+          Change the order of integration and evaluate the new iterated integral.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -3174,12 +3070,17 @@
         </webwork>
       </exercise>
 
-      <p>
-        In the following exercises,
-        find the average value of <m>f</m> over the region <m>R</m>.
-        Notice how these functions and regions are related to the iterated integrals given in <xref ref="x13_02_ex_05">Exercises</xref>
-        <mdash /> <xref ref="x13_02_ex_08"></xref>.
-      </p>
+    </exercisegroup>
+    <exercisegroup>
+
+      <introduction>
+        <p>
+          In the following exercises,
+          find the average value of <m>f</m> over the region <m>R</m>.
+          Notice how these functions and regions are related to the iterated integrals given in <xref ref="x13_02_ex_05">Exercises</xref>
+          <mdash/> <xref ref="x13_02_ex_08"/>.
+        </p>
+      </introduction>
 
       <exercise>
         <webwork seed="1">
@@ -3269,4 +3170,3 @@
     </exercisegroup>
   </exercises>
 </section>
-

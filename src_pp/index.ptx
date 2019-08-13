@@ -291,7 +291,7 @@
 
     <xi:include href="./chap_multi.ptx" />
 
-    <!-- <xi:include href="./chapter13.ptx" /> -->
+    <xi:include href="./chapter13.ptx" />
 
     <backmatter>
       <index>
