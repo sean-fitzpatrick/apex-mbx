@@ -47,7 +47,7 @@
         <figure xml:id="fig_trip1">
           <caption>Finding the volume between the planes given in <xref ref="ex_trip1">Example</xref>.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip1a_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -59,7 +59,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip1_3D.asy -->
-              <image xml:id="img_trip1_3D">
+              <image xml:id="img_trip1a_3D">
               <description></description>
             <asymptote>
               
@@ -156,7 +156,7 @@
             <!-- figures/figtrip1_3D.asy END -->
             </figure>
 
-            <figure>
+             <figure xml:id="fig_trip1b_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -333,7 +333,7 @@
     <figure xml:id="fig_tripintro">
       <caption>Approximating the volume of a region <m>D</m> in space.</caption>
       <sidebyside>
-        <figure>
+        <figure xml:id="fig_tripintroa_3D">
           <caption/>
         <!--
          \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -345,7 +345,7 @@
         3Dlights=Headlamp,add3Djscript=asylabels.js]
          -->
         <!-- START figures/figtripintro_3D.asy -->
-          <image xml:id="img_tripintro_3D">
+          <image xml:id="img_tripintroa_3D">
           <description></description>
           <asymptote>
             
@@ -423,7 +423,7 @@
         <!-- figures/figtripintro_3D.asy END -->
         </figure>
 
-        <figure>
+        <figure xml:id="fig_tripintrob_3D">
           <caption/>
         <!--
          \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -435,7 +435,7 @@
         3Dlights=Headlamp,add3Djscript=asylabels.js]
          -->
         <!-- START figures/figtripintroa_3D.asy -->
-          <image xml:id="img_tripintroa_3D">
+          <image xml:id="img_tripintrob_3D">
           <description></description>
           <asymptote>
             
@@ -721,7 +721,7 @@
         <p>
           Find the volume of the space region in the
           <m>1^{\,st}</m> octant bounded by the plane <m>z=2-y/3-2x/3</m>,
-          shown in <xref ref="fig_trip2">Figure</xref>(a),
+          shown in <xref ref="fig_trip2a">Figure</xref>(a),
           using the order of integration <m>dz\ dy\ dx</m>.
           Set up the triple integrals that give the volume in the other 5 orders of integration.
         </p>
@@ -739,16 +739,16 @@
         <p>
           To find the bounds on <m>y</m> and <m>x</m>,
           we <q>collapse</q> the region onto the <m>x</m>-<m>y</m> plane,
-          giving the triangle shown in <xref ref="fig_trip2">Figure</xref>(b). (We know the equation of the line <m>y=6-2x</m> in two ways.
+          giving the triangle shown in <xref ref="fig_trip2a">Figure</xref>(b). (We know the equation of the line <m>y=6-2x</m> in two ways.
           First, by setting <m>z=0</m>,
           we have <m>0 = 2-y/3-2x/3 \Rightarrow y=6-2x</m>.
           Secondly, we know this is going to be a straight line between the points <m>(3,0)</m> and <m>(0,6)</m> in the <m>x</m>-<m>y</m> plane.)
         </p>
 
-        <figure xml:id="fig_trip2">
+        <figure xml:id="fig_trip2a">
           <caption>The region <m>D</m> used in <xref ref="ex_trip2">Example</xref> in (a); in (b), the region found by collapsing <m>D</m> onto the <m>x</m>-<m>y</m> plane.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip2a1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -760,7 +760,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2_3D.asy -->
-              <image xml:id="img_trip2_3D">
+              <image xml:id="img_trip2a1_3D">
               <description></description>
             <asymptote>
               
@@ -838,7 +838,7 @@
             <!-- figures/figtrip2_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip2a2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -850,7 +850,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2b_3D.asy -->
-              <image xml:id="img_trip2b_3D">
+              <image xml:id="img_trip2a2_3D">
               <description></description>
             <asymptote>
               
@@ -1011,7 +1011,7 @@
         <figure xml:id="fig_trip2b">
           <caption>The region <m>D</m> in <xref ref="ex_trip2">Example</xref> is collapsed onto the <m>y</m>-<m>z</m> plane in (a); in (b), the region is collapsed onto the <m>x</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip2b1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1023,7 +1023,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2c_3D.asy -->
-              <image xml:id="img_trip2c_3D">
+              <image xml:id="img_trip2b1_3D">
               <description></description>
             <asymptote>
               
@@ -1102,7 +1102,7 @@
             <!-- figures/figtrip2c_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip2b2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1114,7 +1114,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2d_3D.asy -->
-              <image xml:id="img_trip2d_3D">
+              <image xml:id="img_trip2b2_3D">
               <description></description>
             <asymptote>
               
@@ -1316,7 +1316,7 @@
         <figure xml:id="fig_trip2bb">
           <caption>Finding the projections of the curve of intersection in <xref ref="ex_trip2b">Example</xref>.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip2bb1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1328,7 +1328,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/fig3d_proj_3D.asy -->
-              <image xml:id="img_3d_proj_3D">
+              <image xml:id="img_trip2bb1_3D">
               <description></description>
             <asymptote>
               
@@ -1428,7 +1428,7 @@
             <!-- figures/fig3d_proj_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip2bb2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1440,7 +1440,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/fig3d_projb_3D.asy -->
-              <image xml:id="img_3d_projb_3D">
+              <image xml:id="img_trip2bb2_3D">
               <description></description>
             <asymptote>
               
@@ -1592,15 +1592,15 @@
         <p>
           Set up the triple integrals that find the volume of the space region <m>D</m> bounded by the surfaces <m>x^2+y^2=1</m>,
           <m>z=0</m> and <m>z=-y</m>,
-          as shown in <xref ref="fig_trip3">Figure</xref>(a),
+          as shown in <xref ref="fig_trip3a">Figure</xref>(a),
           with the orders of integration <m>dz\ dy\ dx</m>,
           <m>dy\ dx\ dz</m> and <m>dx\ dz\ dy</m>.
         </p>
 
-        <figure xml:id="fig_trip3">
+        <figure xml:id="fig_trip3a">
           <caption>The region <m>D</m> in <xref ref="ex_trip3">Example</xref> is shown in (a); in (b), it is collapsed onto the <m>x</m>-<m>y</m> plane.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip3a1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1612,7 +1612,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3_3D.asy -->
-              <image xml:id="img_trip3_3D">
+              <image xml:id="img_trip3a1_3D">
               <description></description>
             <asymptote>
               
@@ -1707,7 +1707,7 @@
             <!-- figures/figtrip3_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip3a2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1719,7 +1719,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3b_3D.asy -->
-              <image xml:id="img_trip3b_3D">
+              <image xml:id="img_trip3a2_3D">
               <description></description>
             <asymptote>
               
@@ -1824,7 +1824,7 @@
         <p>
           Collapsing the region into the <m>x</m>-<m>y</m> plane,
           we get part of the circle with equation
-          <m>x^2+y^2=1</m> as shown in <xref ref="fig_trip3">Figure</xref>(b).
+          <m>x^2+y^2=1</m> as shown in <xref ref="fig_trip3a">Figure</xref>(b).
           As a function of <m>x</m>,
           this half circle has equation <m>y=-\sqrt{1-x^2}</m>.
           Thus <m>y</m> is bounded below by
@@ -1894,7 +1894,7 @@
         <figure xml:id="fig_trip3b">
           <caption>The region <m>D</m> in <xref ref="ex_trip3">Example</xref> is shown collapsed onto the <m>x</m>-<m>z</m> plane in (a); in (b), it is collapsed onto the <m>y</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip3b1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1906,7 +1906,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3c_3D.asy -->
-              <image xml:id="img_trip3c_3D">
+              <image xml:id="img_trip3b1_3D">
               <description></description>
             <asymptote>
               
@@ -1993,7 +1993,7 @@
             <!-- figures/figtrip3c_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip3b2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2005,7 +2005,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3d_3D.asy -->
-              <image xml:id="img_trip3d_3D">
+              <image xml:id="img_trip3b2_3D">
               <description></description>
             <asymptote>
               
@@ -2170,14 +2170,14 @@
         <p>
           Find the volume of the space region <m>D</m> bounded by the coordinate planes,
           <m>z=1-x/2</m> and <m>z=1-y/4</m>,
-          as shown in <xref ref="fig_trip4">Figure</xref>(a).
+          as shown in <xref ref="fig_trip4a">Figure</xref>(a).
           Set up the triple integrals that find the volume of <m>D</m> in all 6 orders of integration.
         </p>
 
-        <figure xml:id="fig_trip4">
+        <figure xml:id="fig_trip4a">
           <caption>The region <m>D</m> in <xref ref="ex_trip4">Example</xref> is shown in (a); in (b), it is collapsed onto the <m>x</m>-<m>y</m> plane.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip4a1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2189,7 +2189,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4_3D.asy -->
-              <image xml:id="img_trip4_3D">
+              <image xml:id="img_trip4a1_3D">
               <description></description>
             <asymptote>
               
@@ -2285,7 +2285,7 @@
             <!-- figures/figtrip4_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip4a2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2297,7 +2297,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4d_3D.asy -->
-              <image xml:id="img_trip4d_3D">
+              <image xml:id="img_trip4a2_3D">
               <description></description>
             <asymptote>
               
@@ -2396,7 +2396,7 @@
 
         <p>
           We now collapse the region <m>D</m> onto the <m>x</m>-<m>y</m> axis,
-          as shown in <xref ref="fig_trip4">Figure</xref>(b).
+          as shown in <xref ref="fig_trip4a">Figure</xref>(b).
           The boundary of <m>D</m>,
           the line from <m>(0,0,1)</m> to <m>(2,4,0)</m>,
           is shown in part (b) of the figure as a dashed line;
@@ -2481,7 +2481,7 @@
         <figure xml:id="fig_trip4b">
           <caption>The region <m>D</m> in <xref ref="ex_trip4">Example</xref> is shown collapsed onto the <m>x</m>-<m>z</m> plane in (a); in (b), it is collapsed onto the <m>y</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
+           <figure xml:id="fig_trip4b1_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2493,7 +2493,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4b_3D.asy -->
-              <image xml:id="img_trip4b_3D">
+              <image xml:id="img_trip4b1_3D">
               <description></description>
             <asymptote>
               
@@ -2571,7 +2571,7 @@
             <!-- figures/figtrip4b_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip4b2_3D">
               <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2583,7 +2583,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4c_3D.asy -->
-              <image xml:id="img_trip4c_3D">
+              <image xml:id="img_trip4b2_3D">
               <description></description>
             <asymptote>
               
@@ -2736,15 +2736,15 @@
         <p>
           Set up a triple integral that gives the volume of the space region <m>D</m> bounded by
           <m>z= 2x^2+2</m> and <m>z=6-2x^2-y^2</m>.
-          These surfaces are plotted in <xref ref="fig_trip5">Figure</xref>(a) and (b),
+          These surfaces are plotted in <xref ref="fig_trip5a">Figure</xref>(a) and (b),
           respectively;
           the region <m>D</m> is shown in part (c) of the figure.
         </p>
 
-        <figure xml:id="fig_trip5">
+        <figure xml:id="fig_trip5a">
           <caption>The region <m>D</m> is bounded by the surfaces shown in (a) and (b); <m>D</m> is shown in (c).</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip5a1_3D">
               <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2756,7 +2756,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5b_3D.asy -->
-              <image xml:id="img_trip5b_3D">
+              <image xml:id="img_trip5a1_3D">
               <description></description>
             <asymptote>
               
@@ -2842,7 +2842,7 @@
             <!-- figures/figtrip5b_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip5a2_3D">
               <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2854,7 +2854,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5c_3D.asy -->
-              <image xml:id="img_trip5c_3D">
+              <image xml:id="img_trip5a2_3D">
               <description></description>
             <asymptote>
               
@@ -2939,7 +2939,7 @@
             <!-- figures/figtrip5c_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip5a3_3D">
               <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -2951,7 +2951,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5_3D.asy -->
-              <image xml:id="img_trip5_3D">
+              <image xml:id="img_trip5a3_3D">
               <description></description>
             <asymptote>
               
@@ -3062,7 +3062,7 @@
 
         <p>
           The bounds on <m>z</m> are clearly <m>2x^2+2\leq z\leq 6-2x^2-y^2</m>.
-          Collapsing <m>D</m> onto the <m>x</m>-<m>y</m> plane gives the ellipse shown in <xref ref="fig_trip5">Figure</xref>(c).
+          Collapsing <m>D</m> onto the <m>x</m>-<m>y</m> plane gives the ellipse shown in <xref ref="fig_trip5a">Figure</xref>(c).
           The equation of this ellipse is found by setting the two surfaces equal to each other:
           <me>
             2x^2+2 = 6-2x^2-y^2 \Rightarrow 4x^2+y^2=4 \Rightarrow x^2+\frac{y^2}4=1
@@ -3132,7 +3132,7 @@
         <figure xml:id="fig_trip5b">
           <caption>The region <m>D</m> in <xref ref="ex_trip5">Example</xref> is collapsed onto the <m>x</m>-<m>z</m> plane in (a); in (b), it is collapsed onto the <m>y</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_trip5b1_3D">
               <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -3144,7 +3144,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5e_3D.asy -->
-              <image xml:id="img_trip5e_3D">
+              <image xml:id="img_trip5b1_3D">
               <description></description>
             <asymptote>
               
@@ -3231,7 +3231,7 @@
             <!-- figures/figtrip5e_3D.asy END -->
             </figure>
 
-            <figure>
+            <figure xml:id="fig_trip5b2_3D">
               <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -3243,7 +3243,7 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5d_3D.asy -->
-              <image xml:id="img_trip5d_3D">
+              <image xml:id="img_trip5b2_3D">
               <description></description>
             <asymptote>
               
@@ -3363,7 +3363,7 @@
         <p>
           Collapsing <m>D</m> onto the <m>y</m>-<m>z</m> axes gives the regions shown in <xref ref="fig_trip5b">Figure</xref>(b).
           We find the equation of the curve
-          <m>z=4-y^2/2</m> by noting that the equation of the ellipse seen in <xref ref="fig_trip5">Figure</xref>(c) has equation
+          <m>z=4-y^2/2</m> by noting that the equation of the ellipse seen in <xref ref="fig_trip5a">Figure</xref>(c) has equation
           <me>
             x^2+y^2/4=1  \Rightarrow  x = \sqrt{1-y^2/4}
           </me>.
@@ -3714,12 +3714,12 @@
       <statement>
         <p>
           Find the mass and center of mass of the solid represented by the space region bounded by the coordinate planes and <m>z=2-y/3-2x/3</m>,
-          shown in <xref ref="fig_trip7">Figure</xref>,
+          shown in <xref ref="fig_trip7_3D">Figure</xref>,
           with constant density <m>\delta(x,y,z)=3</m>gm/cm<m>^3</m>.
           (Note: this space region was used in <xref ref="ex_trip2">Example</xref>.)
         </p>
 
-        <figure xml:id="fig_trip7">
+        <figure xml:id="fig_trip7_3D">
           <caption>Finding the center of mass of this solid in <xref ref="ex_trip7">Example</xref>.</caption>
           <!--
            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -3731,7 +3731,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
            -->
           <!-- START figures/figtrip2_3D.asy -->
-          <image xml:id="img_trip7">
+          <image xml:id="img_trip7_3D">
               <description></description>
             <asymptote>
               
@@ -3867,12 +3867,12 @@
       <statement>
         <p>
           Find the center of mass of the solid represented by the region bounded by the planes <m>z=0</m> and <m>z=-y</m> and the cylinder <m>x^2+y^2=1</m>,
-          shown in <xref ref="fig_trip8">Figure</xref>,
+          shown in <xref ref="fig_trip8_3D">Figure</xref>,
           with density function <m>\delta(x,y,z) = 10+x^2+5y-5z</m>.
           (Note: this space region was used in <xref ref="ex_trip3">Example</xref>.)
         </p>
 
-        <figure xml:id="fig_trip8">
+        <figure xml:id="fig_trip8_3D">
           <caption>Finding the center of mass of this solid in <xref ref="ex_trip8">Example</xref>.</caption>
           <!--
            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -3884,7 +3884,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
            -->
           <!-- START figures/figtrip3_3D.asy -->
-          <image xml:id="img_trip8">
+          <image xml:id="img_trip8_3D">
               <description></description>
             <asymptote>
               
