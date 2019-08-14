@@ -1344,7 +1344,7 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \addplot+ [-,domain=0:6.28,samples y=0] ({3*cos(deg(x))},{sin(deg(x))},{x/3.14159});
+                \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({3*cos(deg(x))},{sin(deg(x))},{x/3.14159});
 
                 \end{axis}
 
@@ -1392,7 +1392,7 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \addplot+ [-,domain=0:6.28,samples y=0] ({cos(deg(x))},{sin(deg(x))},{sin(deg(x))});
+                \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({cos(deg(x))},{sin(deg(x))},{sin(deg(x))});
 
                 \end{axis}
       
@@ -1426,7 +1426,6 @@
                 \begin{tikzpicture}
                 
                 \begin{axis}[
-                width=175pt,
                 axis on top,
                 axis lines=center,
                 view={155}{25},
@@ -1441,7 +1440,7 @@
                   zlabel={\scriptsize $z$}
                 ]
 
-                \addplot+ [-,domain=0:6.28,samples=40] ({cos(deg(x))},{sin(deg(x))},{sin(deg(2*x))});
+                \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=120] ({cos(deg(x))},{sin(deg(x))},{sin(deg(2*x))});
 
                 \end{axis}
 
