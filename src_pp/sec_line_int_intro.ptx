@@ -43,6 +43,7 @@
           3Droo=149.99999640034895,
           3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <image xml:id="img_line_integral_intro1a_3D">
+            <description></description>
             <asymptote>
 
               import graph3;
@@ -127,6 +128,7 @@
           3Droo=149.99999640034895,
           3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <image xml:id="img_line_integral_intro1b_3D">
+            <description></description>
             <asymptote>
 
               import graph3;
@@ -210,6 +212,7 @@
           3Droo=149.99999640034895,
           3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <image xml:id="img_line_integral_intro1c_3D">
+            <description></description>
             <asymptote>
 
               import graph3;
@@ -587,6 +590,7 @@
               3Droo=149.9999948024772,
               3Dlights=Headlamp,add3Djscript=asylabels.js} -->
               <image xml:id="img_linescalarfield2a_3D">
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -675,6 +679,7 @@
               3Droo=149.9999948024772,
               3Dlights=Headlamp,add3Djscript=asylabels.js} -->
               <image xml:id="img_linescalarfield2b_3D">
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -800,6 +805,7 @@
               3Droo=149.9999948024772,
               3Dlights=Headlamp,add3Djscript=asylabels.js} -->
               <image xml:id="img_linescalarfield3a_3D">
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -888,6 +894,7 @@
               3Droo=149.9999948024772,
               3Dlights=Headlamp,add3Djscript=asylabels.js} -->
               <image xml:id="img_linescalarfield3b_3D">
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -1064,6 +1071,7 @@
           3Droo=141.8977232410902,
           3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <image xml:id="img_linescalarfield4_3D">
+            <description></description>
             <asymptote>
 
               import graph3;
@@ -1178,6 +1186,7 @@
         <figure xml:id="fig_line_int_propa">
           <caption/>
           <image xml:id="img_line_int_propa">
+            <description></description>
             <latex-image>
 
             \begin{tikzpicture}[&gt;=stealth]
@@ -1204,6 +1213,7 @@
         <figure xml:id="fig_line_int_propb">
           <caption/>
           <image xml:id="img_line_int_propb">
+            <description></description>
             <latex-image>
 
             \begin{tikzpicture}[&gt;=stealth]
@@ -1397,6 +1407,7 @@
           3Droo=141.89772711774134,
           3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <image xml:id="img_linescalarfield6">
+            <description></description>
             <asymptote>
 
               import graph3;

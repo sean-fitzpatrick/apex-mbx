@@ -80,6 +80,7 @@
         <figure xml:id="fig_vectorfieldintro1a">
           <caption/>
           <image xml:id="img_vectorfieldintro1a">
+            <description></description>
             <asymptote>
 
               import graph;
@@ -140,6 +141,7 @@
         <figure xml:id="fig_vectorfieldintro1b">
           <caption/>
           <image xml:id="img_vectorfieldintro1b">
+            <description></description>
             <asymptote>
 
               import graph;
@@ -246,6 +248,7 @@
         <figure xml:id="fig_vectorfieldintro2a">
           <caption/>
           <image xml:id="img_vectorfieldintro2a">
+            <description></description>
             <asymptote>
 
               import graph;
@@ -299,6 +302,7 @@
         <figure xml:id="fig_vectorfieldintro2b">
           <caption/>
           <image xml:id="img_vectorfieldintro2b">
+            <description></description>
             <asymptote>
 
               import graph;
@@ -403,6 +407,7 @@
       3Droo=141.89772583942957,
       3Dlights=Headlamp,add3Djscript=asylabels.js} -->
       <image xml:id="img_vectorfieldintro3_3D">
+        <description></description>
         <asymptote>
 
           import graph3;
@@ -763,6 +768,7 @@
                   <figure xml:id="fig_vectorfield1a_a">
                     <caption/>
                     <image xml:id="img_vectorfield1a_a">
+                      <description></description>
                       <asymptote>
 
                         import graph;
@@ -824,6 +830,7 @@
                   <figure xml:id="fig_vectorfield1a_b">
                     <caption/>
                     <image xml:id="img_vectorfield1a_b">
+                      <description></description>
                       <asymptote>
 
                         import graph;
@@ -959,6 +966,7 @@
                   <figure xml:id="fig_vectorfield1b_a">
                     <caption/>
                     <image xml:id="img_vectorfield1b_a">
+                      <description></description>
                       <asymptote>
 
                         import graph;
@@ -1020,6 +1028,7 @@
                   <figure xml:id="fig_vectorfield1b_b">
                     <caption/>
                     <image xml:id="img_vectorfield1b_b">
+                      <description></description>
                       <asymptote>
 
                         import graph;
@@ -1201,6 +1210,7 @@
     <figure xml:id="fig_vectorfield3">
       <caption>A vector field representing a planar gravitational force.</caption>
           <image xml:id="img_vectorfield3">
+            <description></description>
             <asymptote>
 
               import graph;
@@ -1306,6 +1316,7 @@
             <figure xml:id="fig_vectorfield4a">
               <caption/>
               <image xml:id="img_vectorfield4a">
+                <description></description>
                 <asymptote>
 
                   import graph;
@@ -1373,6 +1384,7 @@
               3Droo=117.22547128132403,
               3Dlights=Headlamp,add3Djscript=asylabels.js} -->
               <image xml:id="img_vectorfield4b_3D">
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -1581,6 +1593,7 @@
         </p>
 
         <image xml:id="img_14_02_ex_05">
+          <description></description>
           <asymptote>
 
             import graph;
@@ -1668,6 +1681,7 @@
         </p>
 
         <image xml:id="img_14_02_ex_06">
+          <description></description>
           <asymptote>
 
             import graph;
@@ -1755,6 +1769,7 @@
         </p>
 
         <image xml:id="img_14_02_ex_07">
+          <description></description>
           <asymptote>
 
             import graph;
@@ -1842,6 +1857,7 @@
         </p>
 
         <image xml:id="img_14_02_ex_08">
+          <description></description>
           <asymptote>
 
             import graph;
