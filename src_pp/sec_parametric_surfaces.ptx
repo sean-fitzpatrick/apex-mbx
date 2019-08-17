@@ -32,15 +32,31 @@
       </p>
 
       <image>
+        <latex-image>
 
-<latex-image>
-<![CDATA[\begin{tikzpicture}[x={(.55ex,0)},y={(0,.55ex)}]
-\draw[smooth, line width=.6pt] (0.9667,0.545) -- (0.8273,0.6541) -- (0.6696,0.7624) -- (0.5,0.866) -- (0.3254,0.961) -- (0.1528,1.043) -- (-0.01133,1.11) -- (-0.1607,1.156) -- (-0.2899,1.181) -- (-0.3945,1.181) -- (-0.471,1.155) -- (-0.5173,1.103) -- (-0.5326,1.025) -- (-0.5173,0.9226) -- (-0.4734,0.7971) -- (-0.4038,0.6515) -- (-0.3127,0.4894) -- (-0.2051,0.3147) -- (-0.08684,0.1318) -- (0.03595,-0.05447) -- (0.1569,-0.2394) -- (0.2696,-0.418) -- (0.3682,-0.5859) -- (0.4473,-0.7388) -- (0.5024,-0.873) -- (0.5299,-0.9855) -- (0.5274,-1.074) -- (0.494,-1.137) -- (0.4299,-1.173) -- (0.3366,-1.184) -- (0.2172,-1.169) -- (0.07558,-1.132) -- (-0.08312,-1.073) -- (-0.253,-0.9971) -- (-0.4276,-0.9068) -- (-0.6001,-0.8063) -- (-0.7635,-0.6994) -- (-0.9113,-0.5902);
-\draw[ line width=.6pt] (-1.18431, -0.959643)--(-0.638322, -0.220787)
-(0.693671, 0.175596)--(1.23965, 0.914452);\end{tikzpicture}]]>
-</latex-image>
+        \begin{tikzpicture}[x={(.55ex,0)},y={(0,.55ex)}]
+
+        \draw [smooth, line width=.6pt] (0.9667,0.545) -- (0.8273,0.6541) -- (0.6696,0.7624)
+                                     -- (0.5,0.866) -- (0.3254,0.961) -- (0.1528,1.043) 
+                                     -- (-0.01133,1.11) -- (-0.1607,1.156) -- (-0.2899,1.181) 
+                                     -- (-0.3945,1.181) -- (-0.471,1.155) -- (-0.5173,1.103) 
+                                     -- (-0.5326,1.025) -- (-0.5173,0.9226) -- (-0.4734,0.7971) 
+                                     -- (-0.4038,0.6515) -- (-0.3127,0.4894) -- (-0.2051,0.3147) 
+                                     -- (-0.08684,0.1318) -- (0.03595,-0.05447) -- (0.1569,-0.2394) 
+                                     -- (0.2696,-0.418) -- (0.3682,-0.5859) -- (0.4473,-0.7388) 
+                                     -- (0.5024,-0.873) -- (0.5299,-0.9855) -- (0.5274,-1.074)  
+                                     -- (0.494,-1.137) -- (0.4299,-1.173) -- (0.3366,-1.184)  
+                                     -- (0.2172,-1.169) -- (0.07558,-1.132) -- (-0.08312,-1.073)  
+                                     -- (-0.253,-0.9971) -- (-0.4276,-0.9068) -- (-0.6001,-0.8063)  
+                                     -- (-0.7635,-0.6994) -- (-0.9113,-0.5902);
+                                        
+        \draw [line width=.6pt] (-1.18431, -0.959643) -- (-0.638322, -0.220787)
+                                (0.693671, 0.175596) -- (1.23965, 0.914452);
+                                
+        \end{tikzpicture}
+
+        </latex-image>
       </image>
-
     </aside>
 
     <definition xml:id="def_parametrized_surface">
@@ -107,10 +123,10 @@
     </p>
 
     <p>
+      <idx><h>M&#xf6;bius band</h></idx>
+
       It is enlightening to examine a classic non-orientable surface:
-      the M&#xf6;bius band,
-          <idx><h>M&#xf6;bius band</h></idx>
-      shown in <xref ref="fig_mobius">Figure</xref>.
+      the M&#xf6;bius band, shown in <xref ref="fig_mobius">Figure</xref>.
       Vectors normal to the surface are given,
       starting at the point indicated in the figure.
       These normal vectors <q>vary continuously</q>
@@ -130,13 +146,13 @@
 
     <figure xml:id="fig_mobius">
       <caption>A M&#xf6;bius band, a non-orientable surface.</caption>
-      \apexincludemedia{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+      <!-- \apexincludemedia{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
       3Dortho=0.009369944222271442,
       3Dc2c=0.8152862191200256 -0.5019875168800354 0.28864675760269165,
       3Dcoo=11.086544036865234 -8.5783109664917 -7.167413711547852,
       3Droo=399.99997970940404,
-      3Dlights=Headlamp,add3Djscript=asylabels.js}
+      3Dlights=Headlamp,add3Djscript=asylabels.js} -->
       <img src="figures/mobius_strip_3D"/>
     </figure>
 
@@ -293,13 +309,13 @@
         <figure xml:id="fig_parsurf3">
           <caption>Part (a) shows a graph of the region <m>R</m>, and part (b) shows the surface over <m>R</m>, as defined in <xref ref="ex_parsurf3">Example</xref>.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_parsurf3a">
               <caption>[-5pt]
               (a)</caption>
               <img src="figures/figparsurf3a"/>
             </figure>
 
-            <figure>
+            <figure xml:id="fig_parsurf3b_3D">
               <caption>(b)</caption>
               \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
               3Droll=0,
@@ -383,13 +399,13 @@
         <figure xml:id="fig_parsurf4">
           <caption>Part (a) shows a graph of the region <m>R</m>, and part (b) shows the surface over <m>R</m>, as defined in <xref ref="ex_parsurf4">Example</xref>.</caption>
           <sidebyside>
-            <figure>
+            <figure xml:id="fig_parsurf4a">
               <caption>[-5pt]
               (a)</caption>
               <img src="figures/figparsurf4a"/>
             </figure>
 
-            <figure>
+            <figure xml:id="fig_parsurf4b_3D">
               <caption>(b)</caption>
               \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
               3Droll=0,
@@ -568,14 +584,14 @@
           When <m>v</m> takes on negative values,
           the radii of the cross<ndash />sectional ellipses become <q>negative,</q>
           which can lead to some surprising results.
-          Consider <xref ref="fig_parsurf6b">Figure</xref>,
+          Consider <xref ref="fig_parsurf6b_3D">Figure</xref>,
           where the cone is graphed for <m>0\leq u\leq \pi</m>.
           Because <m>v</m> is negative below the <m>x</m>-<m>y</m> plane,
           the radii of the cross<ndash />sectional ellipses are negative,
           and the opposite side of the cone is sketched below the <m>x</m>-<m>y</m> plane.
         </p>
 
-        <figure xml:id="fig_parsurf6b">
+        <figure xml:id="fig_parsurf6b_3D">
           <caption>The elliptic cone as described in  <xref ref="ex_parsurf6">Example</xref> with restricted domain.</caption>
           \apexincludemedia{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
@@ -633,8 +649,8 @@
         <figure xml:id="fig_parsurf7">
           <caption>An ellipsoid in (a), drawn again in (b) with its domain restricted, as described in  <xref ref="ex_parsurf7">Example</xref>.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_parsurf7a_3D">
+              <caption/>
               \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
               3Droll=0,
               3Dortho=0.00452691363170743,
@@ -645,8 +661,8 @@
               <img src="figures/figparsurf7a_3D"/>
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_parsurf7b_3D">
+              <caption/>
               \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
               3Droll=0,
               3Dortho=0.00452691363170743,
@@ -751,33 +767,32 @@
     <figure xml:id="fig_parsurfarea">
       <caption>Illustrating the process of finding surface area by approximating with planes.</caption>
       <sidebyside>
-        <figure>
-          <caption>[-5pt]
-          (a)</caption>
+        <figure xml:id="fig_parsurfareaa">
+          <caption/>
           <img src="figures/figparsurfareaC"/>
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
-          \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+        <figure xml:id="fig_parsurfareab_3D">
+          <caption/>
+          <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004750744439661503,
           3Dc2c=0.6291605234146118 0.6371588706970215 0.4451805353164673,
           3Dcoo=84.20735168457031 80.18836212158203 107.64490509033203,
           3Droo=133.06991885752157,
-          3Dlights=Headlamp,add3Djscript=asylabels.js}
+          3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <img src="figures/figparsurfareaA_3D"/>
         </figure>
 
-        <figure>
-          <caption>(c)</caption>
-          \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+        <figure xml:id="fig_parsurfareac_3D">
+          <caption/>
+          <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.003687552874907851,
           3Dc2c=0.5666888952255249 0.6642887592315674 0.48742610216140747,
           3Dcoo=145.19125366210938 160.48304748535156 209.22018432617188,
           3Droo=135.59128411404498,
-          3Dlights=Headlamp,add3Djscript=asylabels.js}
+          3Dlights=Headlamp,add3Djscript=asylabels.js} -->
           <img src="figures/figparsurfareaB_3D"/>
         </figure>
       </sidebyside>

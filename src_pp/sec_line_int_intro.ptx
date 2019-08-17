@@ -9,7 +9,7 @@
     </p>
 
     <p>
-      Consider the surface and curve shown in <xref ref="fig_line_integral_intro1">Figure</xref>(a).
+      Consider the surface and curve shown in <xref ref="fig_line_integral_intro1a_3D">Figure</xref>.
       The surface is given by <m>f(x,y)=1-\cos(x)\sin(y)</m>.
       The dashed curve lies in the <m>x</m>-<m>y</m> plane and is the familiar <m>y=x^2</m> parabola from <m>-1\leq x\leq1</m>;
       we'll call this curve <m>C</m>.
@@ -21,7 +21,7 @@
       what is the area that lies below the curve drawn with the solid line?
       In other words,
       what is the area of the region above <m>C</m> and under the the surface <m>f</m>?
-      This region is shown in <xref ref="fig_line_integral_intro1">Figure</xref>(b).
+      This region is shown in <xref ref="fig_line_integral_intro1b_3D">Figure</xref>.
     </p>
 
     <p>
@@ -45,6 +45,7 @@
           <image xml:id="img_line_integral_intro1a_3D">
             <description></description>
             <asymptote>
+settings.prc= false;
 
               import graph3;
 
@@ -130,6 +131,7 @@
           <image xml:id="img_line_integral_intro1b_3D">
             <description></description>
             <asymptote>
+settings.prc= false;
 
               import graph3;
 
@@ -214,6 +216,7 @@
           <image xml:id="img_line_integral_intro1c_3D">
             <description></description>
             <asymptote>
+settings.prc= false;
 
               import graph3;
 
@@ -320,7 +323,7 @@
     </figure>
 
     <p>
-      In <xref ref="fig_line_integral_intro1">Figure</xref>(c),
+      In <xref ref="fig_line_integral_intro1c_3D">Figure</xref>,
       four rectangles have been drawn over the curve <m>C</m>.
       The bottom corners of each rectangle lie on <m>C</m>,
       and each rectangle has a height given by the function <m>f(x,y)</m> for some <m>(x,y)</m> pair along <m>C</m> between the rectangle's bottom corners.
@@ -592,6 +595,7 @@
               <image xml:id="img_linescalarfield2a_3D">
                 <description></description>
                 <asymptote>
+settings.prc= false;
 
                   import graph3;
 
@@ -681,6 +685,7 @@
               <image xml:id="img_linescalarfield2b_3D">
                 <description></description>
                 <asymptote>
+settings.prc= false;
 
                   import graph3;
 
@@ -807,6 +812,7 @@
               <image xml:id="img_linescalarfield3a_3D">
                 <description></description>
                 <asymptote>
+settings.prc= false;
 
                   import graph3;
 
@@ -896,6 +902,7 @@
               <image xml:id="img_linescalarfield3b_3D">
                 <description></description>
                 <asymptote>
+settings.prc= false;
 
                   import graph3;
 
@@ -1073,11 +1080,12 @@
           <image xml:id="img_linescalarfield4_3D">
             <description></description>
             <asymptote>
+              settings.prc= false;
 
               import graph3;
 
               // ASY file for figlinescalarfield2_3D.asy in Chapter 10
-              // The path is an elliptical helix [cos t, 2sin t, t/pi]; no specific surface.
+              // The path is an elliptical helix ⟨ cos t, 2sin t, t/pi ⟩; no specific surface.
               // 
               // This draws the  surface of the area we seek.
 
@@ -1173,7 +1181,7 @@
     <p>
       One property in particular of line integrals is worth noting.
       If <m>C</m> is a curve composed of subcurves <m>C_1</m> and <m>C_2</m>,
-      where they share only one point in common (see <xref ref="fig_line_int_prop">Figure</xref>(a)),
+      where they share only one point in common (see <xref ref="fig_line_int_propa">Figure</xref>,
       then the line integral over <m>C</m> is the sum of the line integrals over <m>C_1</m> and <m>C_2</m>:
       <me>
         \int_Cf(s)\, ds = \int_{C_1}f(s)\, ds+\int_{C_2}f(s)\, ds
@@ -1191,7 +1199,7 @@
 
             \begin{tikzpicture}[&gt;=stealth]
 
-            \draw [thick,firstcolor] (0,1) arc[start angle=90,end angle=270,radius=1];
+            \draw [thick,firstcolor] (0,1) arc [start angle=90,end angle=270,radius=1];
             \draw [thick,firstcolor] (0,-1) parabola (1,1);
 
             \filldraw (0,1) circle [radius=2pt] node [below] {$A$};
@@ -1242,7 +1250,7 @@
 
     <p>
       This property allows us to evaluate line integrals over some curves <m>C</m> that are not smooth.
-      Note how in <xref ref="fig_line_int_prop">Figure</xref>(b) the curve is not smooth at <m>D</m>,
+      Note how in <xref ref="fig_line_int_propb">Figure</xref> the curve is not smooth at <m>D</m>,
       so by our definition of the line integral we cannot evaluate <m>\int_C f(s)ds</m>.
       However, one can evaluate line integrals over <m>C_1</m> and <m>C_2</m> and their sum will be the desired quantity.
     </p>
@@ -1409,12 +1417,13 @@
           <image xml:id="img_linescalarfield6">
             <description></description>
             <asymptote>
+settings.prc= false;
 
               import graph3;
               import palette;
               
               // ASY file for figlinescalarfield2_3D.asy in Chapter 10
-              // The path is an elliptical helix cos t, 2sin t, t/pi; no specific surface.
+              // The path is an elliptical helix ⟨ cos t, 2sin t, t/pi ⟩; no specific surface.
               // 
               // This draws the  surface of the area we seek.
 

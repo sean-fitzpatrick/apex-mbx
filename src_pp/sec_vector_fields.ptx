@@ -213,7 +213,7 @@
     </p>
 
     <p>
-      In <xref ref="fig_vectorfieldintro1">Figure</xref>(a),
+      In <xref ref="fig_vectorfieldintro1a">Figure</xref>,
       one can see that the vector <m>\langle 2,0\rangle</m> is drawn
       <em>starting from</em> the point <m>(1,1)</m>.
       A total of 8 vectors are drawn,
@@ -223,7 +223,7 @@
     </p>
 
     <p>
-      In <xref ref="fig_vectorfieldintro1">Figure</xref>(b),
+      In <xref ref="fig_vectorfieldintro1b">Figure</xref>,
       the same field is redrawn with each vector <m>\vec F(x,y)</m> drawn
       <em>centered on</em> the point <m>(x,y)</m>.
       This makes for a better looking image,
@@ -235,7 +235,7 @@
     <p>
       A common way to address this problem is limit the length of each arrow,
       and represent long vectors with thick arrows,
-      as done in <xref ref="fig_vectorfieldintro2">Figure</xref>(a).
+      as done in <xref ref="fig_vectorfieldintro2a">Figure</xref>.
       Usually we do not use a graph of a vector field to determine exactly the magnitude of a particular vector.
       Rather, we are more concerned with the relative magnitudes of vectors:
       which are bigger than others?
@@ -367,7 +367,7 @@
       search the documentation of your favorite graphing program for terms like <q>vector fields</q>
       or <q>slope fields</q> to learn how.
       Technology obviously allows us to plot many vectors in a vector field nicely;
-      in <xref ref="fig_vectorfieldintro2">Figure</xref>(b),
+      in <xref ref="fig_vectorfieldintro2b">Figure</xref>,
       we see the same vector field drawn with many vectors,
       and finally get a clear picture of how this vector field behaves.
       (If this vector field represented the velocity of air moving across a flat surface,
@@ -724,25 +724,25 @@
           <ol>
             <li>
               <p>
-                <m>\vec F = \langle y,0\rangle</m> (see <xref ref="fig_vectorfield1a">Figure</xref>(a))
+                <m>\vec F = \langle y,0\rangle</m> (see <xref ref="fig_vectorfield1a_a">Figure</xref>)
               </p>
             </li>
 
             <li>
               <p>
-                <m>\vec F = \langle -y,x\rangle</m> (see <xref ref="fig_vectorfield1a">Figure</xref>(b))
+                <m>\vec F = \langle -y,x\rangle</m> (see <xref ref="fig_vectorfield1a_b">Figure</xref>)
               </p>
             </li>
 
             <li>
               <p>
-                <m>\vec F = \langle x,y\rangle</m> (see <xref ref="fig_vectorfield1b">Figure</xref>(a))
+                <m>\vec F = \langle x,y\rangle</m> (see <xref ref="fig_vectorfield1b_a">Figure</xref>)
               </p>
             </li>
 
             <li>
               <p>
-                <m>\vec F = \langle \cos y, \sin x\rangle</m> (see <xref ref="fig_vectorfield1b">Figure</xref>(b))
+                <m>\vec F = \langle \cos y, \sin x\rangle</m> (see <xref ref="fig_vectorfield1b_b">Figure</xref>)
               </p>
             </li>
           </ol>
@@ -763,7 +763,7 @@
               </p>
 
               <figure xml:id="fig_vectorfield1a">
-                <caption>The vector fields in parts (a) and (b) in <xref ref="ex_vectorfield1">Example</xref>.</caption>
+                <caption>The vector fields in parts 1 and 2 in <xref ref="ex_vectorfield1">Example</xref>.</caption>
                 <sidebyside>
                   <figure xml:id="fig_vectorfield1a_a">
                     <caption/>
@@ -774,7 +774,7 @@
                         import graph;
                         size(150,150);
 
-                        // vector field F = [ y, 0 ]
+                        // vector field F = ⟨ y, 0 ⟩
 
                         defaultpen(fontsize(8));
 
@@ -836,7 +836,7 @@
                         import graph;
                         size(150,150);
 
-                        // vector field F = [ -y, x ] 
+                        // vector field F = ⟨ -y, x ⟩
 
                         defaultpen(fontsize(8));
 
@@ -961,7 +961,7 @@
               </p>
             
               <figure xml:id="fig_vectorfield1b">
-                <caption>The vector fields in parts (c) and (d) in <xref ref="ex_vectorfield1">Example</xref>.</caption>
+                <caption>The vector fields in parts 3 and 4 in <xref ref="ex_vectorfield1">Example</xref>.</caption>
                 <sidebyside>
                   <figure xml:id="fig_vectorfield1b_a">
                     <caption/>
@@ -972,7 +972,7 @@
                         import graph;
                         size(150,150);
 
-                        // vector field F = [ x,y ]
+                        // vector field F = ⟨ x,y ⟩
 
                         defaultpen(fontsize(8));
 
@@ -1034,7 +1034,7 @@
                         import graph;
                         size(150,150);
 
-                        // vector field F = [ cos y, sin x ]
+                        // vector field F = ⟨ cos y, sin x ⟩
 
                         defaultpen(fontsize(8));
 
@@ -1216,7 +1216,7 @@
               import graph;
               size(150,150);
 
-              // vector field F = [ cos y, sin x ]
+              // vector field F = ⟨ cos y, sin x ⟩
 
               defaultpen(fontsize(8));
 
@@ -1301,8 +1301,8 @@
         <p>
           Given <m>f</m>,
           we find <m>\vec F = \nabla f = \langle -2x,-4y\rangle</m>.
-          A graph of <m>\vec F</m> is given in <xref ref="fig_vectorfield4">Figure</xref>(a).
-          In part (b) of the figure,
+          A graph of <m>\vec F</m> is given in <xref ref="fig_vectorfield4a">Figure</xref>.
+          In <xref ref="fig_vectorfield4b_3D">Figure</xref>,
           the vector field is given along with a graph of the surface itself;
           one can see how each vector is pointing in the direction of
           <q>steepest uphill</q>,
@@ -1322,7 +1322,7 @@
                   import graph;
                   size(150,150);
 
-                  // vector field F = [ cos y, sin x ]
+                  // vector field F = ⟨ cos y, sin x ⟩
 
                   defaultpen(fontsize(8));
 
@@ -1391,7 +1391,7 @@
                   import palette;
 
                   // ASY file for figlinescalarfield2_3D.asy in Chapter 10
-                  // The path is an elliptical helix [cos t, 2sin t, t/pi]; no specific surface.
+                  // The path is an elliptical helix ⟨ cos t, 2sin t, t/pi ⟩; no specific surface.
                   // 
                   // This draws the  surface of the area we seek.
 
@@ -1599,7 +1599,7 @@
             import graph;
             size(150,150);
 
-            // vector field F = [ x,0 ]
+            // vector field F = ⟨ x,0 ⟩
 
             defaultpen(fontsize(8));
 
@@ -1687,7 +1687,7 @@
             import graph;
             size(150,150);
 
-            // vector field F = [ 0,x ] 
+            // vector field F = ⟨ 0,x ⟩
 
             defaultpen(fontsize(8));
 
@@ -1775,7 +1775,7 @@
             import graph;
             size(150,150);
 
-            // vector field F = [ 1,-1 ]
+            // vector field F = ⟨ 1,-1 ⟩
 
             defaultpen(fontsize(8));
 
@@ -1863,7 +1863,7 @@
             import graph;
             size(150,150);
 
-            // vector field F = [ y^2,1 ]
+            // vector field F = ⟨ y^2,1 ⟩
 
             defaultpen(fontsize(8));
 
