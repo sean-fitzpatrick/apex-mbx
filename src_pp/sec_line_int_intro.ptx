@@ -45,7 +45,6 @@
           <image xml:id="img_line_integral_intro1a_3D">
             <description></description>
             <asymptote>
-settings.prc= false;
 
               import graph3;
 
@@ -131,7 +130,6 @@ settings.prc= false;
           <image xml:id="img_line_integral_intro1b_3D">
             <description></description>
             <asymptote>
-settings.prc= false;
 
               import graph3;
 
@@ -216,7 +214,6 @@ settings.prc= false;
           <image xml:id="img_line_integral_intro1c_3D">
             <description></description>
             <asymptote>
-settings.prc= false;
 
               import graph3;
 
@@ -595,7 +592,6 @@ settings.prc= false;
               <image xml:id="img_linescalarfield2a_3D">
                 <description></description>
                 <asymptote>
-settings.prc= false;
 
                   import graph3;
 
@@ -685,7 +681,6 @@ settings.prc= false;
               <image xml:id="img_linescalarfield2b_3D">
                 <description></description>
                 <asymptote>
-settings.prc= false;
 
                   import graph3;
 
@@ -812,7 +807,6 @@ settings.prc= false;
               <image xml:id="img_linescalarfield3a_3D">
                 <description></description>
                 <asymptote>
-settings.prc= false;
 
                   import graph3;
 
@@ -902,7 +896,6 @@ settings.prc= false;
               <image xml:id="img_linescalarfield3b_3D">
                 <description></description>
                 <asymptote>
-settings.prc= false;
 
                   import graph3;
 
@@ -1080,8 +1073,7 @@ settings.prc= false;
           <image xml:id="img_linescalarfield4_3D">
             <description></description>
             <asymptote>
-              settings.prc= false;
-
+              
               import graph3;
 
               // ASY file for figlinescalarfield2_3D.asy in Chapter 10
@@ -1417,7 +1409,6 @@ settings.prc= false;
           <image xml:id="img_linescalarfield6">
             <description></description>
             <asymptote>
-settings.prc= false;
 
               import graph3;
               import palette;
