@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_triple_int">
   <title>Volume Between Surfaces and Triple Integration</title>
   <introduction>
@@ -48,8 +47,8 @@
         <figure xml:id="fig_trip1">
           <caption>Finding the volume between the planes given in <xref ref="ex_trip1">Example</xref>.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip1a_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -60,10 +59,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip1_3D.asy -->
-              <image xml:id="img_trip1_3D">
-
+              <image xml:id="img_trip1a_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip13D.asy in Chapter 13
@@ -151,14 +150,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip1_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+             <figure xml:id="fig_trip1b_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -170,9 +169,9 @@
              -->
             <!-- START figures/figtrip1b_3D.asy -->
               <image xml:id="img_trip1b_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip1b3D.asy in Chapter 13
@@ -260,7 +259,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip1b_3D.asy END -->
@@ -334,8 +333,8 @@
     <figure xml:id="fig_tripintro">
       <caption>Approximating the volume of a region <m>D</m> in space.</caption>
       <sidebyside>
-        <figure>
-          <caption>(a)</caption>
+        <figure xml:id="fig_tripintroa_3D">
+          <caption/>
         <!--
          \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
         3Droll=0,
@@ -346,10 +345,10 @@
         3Dlights=Headlamp,add3Djscript=asylabels.js]
          -->
         <!-- START figures/figtripintro_3D.asy -->
-          <image xml:id="img_tripintro_3D">
-
+          <image xml:id="img_tripintroa_3D">
+          <description></description>
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figtripintro3D.asy in Chapter 13
@@ -418,14 +417,14 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figtripintro_3D.asy END -->
         </figure>
 
-        <figure>
-          <caption>(b)</caption>
+        <figure xml:id="fig_tripintrob_3D">
+          <caption/>
         <!--
          \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
         3Droll=0,
@@ -436,10 +435,10 @@
         3Dlights=Headlamp,add3Djscript=asylabels.js]
          -->
         <!-- START figures/figtripintroa_3D.asy -->
-          <image xml:id="img_tripintroa_3D">
-
+          <image xml:id="img_tripintrob_3D">
+          <description></description>
           <asymptote>
-            <![CDATA[
+            
             import graph3;
 
             //ASY file for figtripintroa3D.asy in Chapter 13
@@ -524,7 +523,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            ]]>
+            
           </asymptote>
           </image>
         <!-- figures/figtripintroa_3D.asy END -->
@@ -594,28 +593,30 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The volume <m>V</m> of <m>D</m> is denoted by a
-              <em>triple integral</em>,
-              <me>
-                V = \iiint_D dV
-              </me>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The volume <m>V</m> of <m>D</m> is denoted by a
+                <em>triple integral</em>,
+                <me>
+                  V = \iiint_D dV
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The iterated integral <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} \ dz\ dy\ dx</m> is evaluated as
-              <me>
-                \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} \ dz\ dy\ dx=\int_a^b\int_{g_1(x)}^{g_2(x)}\left(\int_{f_1(x,y)}^{f_2(x,y)} \ dz\right)\ dy\ dx
-              </me>.
-              Evaluating the above iterated integral is
-              <em>triple integration.</em>
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The iterated integral <m>\ds \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} \ dz\ dy\ dx</m> is evaluated as
+                <me>
+                  \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} \ dz\ dy\ dx=\int_a^b\int_{g_1(x)}^{g_2(x)}\left(\int_{f_1(x,y)}^{f_2(x,y)} \ dz\right)\ dy\ dx
+                </me>.
+                Evaluating the above iterated integral is
+                <em>triple integration.</em>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -654,38 +655,40 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The volume <m>V</m> of <m>D</m> is
-              <me>
-                V = \iiint_D\ dV = \lim_{\norm{\Delta D}\to0} \sum_{i=1}^n \Delta V_i = \lim_{\norm{\Delta D}\to0} \sum_{i=1}^n \dx_i\dy_i\ddz_i
-              </me>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The volume <m>V</m> of <m>D</m> is
+                <me>
+                  V = \iiint_D\ dV = \lim_{\norm{\Delta D}\to0} \sum_{i=1}^n \Delta V_i = \lim_{\norm{\Delta D}\to0} \sum_{i=1}^n \dx_i\dy_i\ddz_i
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>D</m> is defined as the region bounded by the planes <m>x=a</m> and <m>x=b</m>,
-              the cylinders <m>y=g_(x)</m> and <m>y=g_2(x)</m>,
-              and the surfaces <m>z=f_1(x,y)</m> and
-              <m>z=f_2(x,y)</m>, where <m>a\lt b</m>,
-              <m>g_1(x)\leq g_2(x)</m> and <m>f_1(x,y)\leq f_2(x,y)</m> on <m>D</m>, then
-              <me>
-                \iiint_D \ dV = \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} \ dz\ dy\ dx
-              </me>.
-            </p>
-          </li>
+            <li>
+              <p>
+                If <m>D</m> is defined as the region bounded by the planes <m>x=a</m> and <m>x=b</m>,
+                the cylinders <m>y=g_(x)</m> and <m>y=g_2(x)</m>,
+                and the surfaces <m>z=f_1(x,y)</m> and
+                <m>z=f_2(x,y)</m>, where <m>a\lt b</m>,
+                <m>g_1(x)\leq g_2(x)</m> and <m>f_1(x,y)\leq f_2(x,y)</m> on <m>D</m>, then
+                <me>
+                  \iiint_D \ dV = \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} \ dz\ dy\ dx
+                </me>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>V</m> can be determined using iterated integration with other orders of integration
-              (there are 6 total),
-              as long as <m>D</m> is defined by the region enclosed by a pair of planes,
-              a pair of cylinders, and a pair of surfaces.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>V</m> can be determined using iterated integration with other orders of integration
+                (there are 6 total),
+                as long as <m>D</m> is defined by the region enclosed by a pair of planes,
+                a pair of cylinders, and a pair of surfaces.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -718,7 +721,7 @@
         <p>
           Find the volume of the space region in the
           <m>1^{\,st}</m> octant bounded by the plane <m>z=2-y/3-2x/3</m>,
-          shown in <xref ref="fig_trip2">Figure</xref>(a),
+          shown in <xref ref="fig_trip2a">Figure</xref>(a),
           using the order of integration <m>dz\ dy\ dx</m>.
           Set up the triple integrals that give the volume in the other 5 orders of integration.
         </p>
@@ -736,17 +739,17 @@
         <p>
           To find the bounds on <m>y</m> and <m>x</m>,
           we <q>collapse</q> the region onto the <m>x</m>-<m>y</m> plane,
-          giving the triangle shown in <xref ref="fig_trip2">Figure</xref>(b). (We know the equation of the line <m>y=6-2x</m> in two ways.
+          giving the triangle shown in <xref ref="fig_trip2a">Figure</xref>(b). (We know the equation of the line <m>y=6-2x</m> in two ways.
           First, by setting <m>z=0</m>,
           we have <m>0 = 2-y/3-2x/3 \Rightarrow y=6-2x</m>.
           Secondly, we know this is going to be a straight line between the points <m>(3,0)</m> and <m>(0,6)</m> in the <m>x</m>-<m>y</m> plane.)
         </p>
 
-        <figure xml:id="fig_trip2">
+        <figure xml:id="fig_trip2a">
           <caption>The region <m>D</m> used in <xref ref="ex_trip2">Example</xref> in (a); in (b), the region found by collapsing <m>D</m> onto the <m>x</m>-<m>y</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip2a1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -757,10 +760,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2_3D.asy -->
-              <image xml:id="img_trip2_3D">
-
+              <image xml:id="img_trip2a1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip23D.asy in Chapter 13
@@ -829,14 +832,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip2_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip2a2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -847,10 +850,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2b_3D.asy -->
-              <image xml:id="img_trip2b_3D">
-
+              <image xml:id="img_trip2a2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip2b3D.asy in Chapter 13
@@ -920,7 +923,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip2b_3D.asy END -->
@@ -1008,8 +1011,8 @@
         <figure xml:id="fig_trip2b">
           <caption>The region <m>D</m> in <xref ref="ex_trip2">Example</xref> is collapsed onto the <m>y</m>-<m>z</m> plane in (a); in (b), the region is collapsed onto the <m>x</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip2b1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1020,10 +1023,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2c_3D.asy -->
-              <image xml:id="img_trip2c_3D">
-
+              <image xml:id="img_trip2b1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip2c3D.asy in Chapter 13
@@ -1093,14 +1096,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip2c_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip2b2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1111,10 +1114,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip2d_3D.asy -->
-              <image xml:id="img_trip2d_3D">
-
+              <image xml:id="img_trip2b2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip2d3D.asy in Chapter 13
@@ -1184,7 +1187,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip2d_3D.asy END -->
@@ -1313,8 +1316,8 @@
         <figure xml:id="fig_trip2bb">
           <caption>Finding the projections of the curve of intersection in <xref ref="ex_trip2b">Example</xref>.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip2bb1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1325,10 +1328,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/fig3d_proj_3D.asy -->
-              <image xml:id="img_3d_proj_3D">
-
+              <image xml:id="img_trip2bb1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig3d_proj3D.asy in Chapter 13
@@ -1419,14 +1422,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/fig3d_proj_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip2bb2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1437,10 +1440,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/fig3d_projb_3D.asy -->
-              <image xml:id="img_3d_projb_3D">
-
+              <image xml:id="img_trip2bb2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig3d_projb3D.asy in Chapter 13
@@ -1526,7 +1529,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/fig3d_projb_3D.asy END -->
@@ -1589,16 +1592,16 @@
         <p>
           Set up the triple integrals that find the volume of the space region <m>D</m> bounded by the surfaces <m>x^2+y^2=1</m>,
           <m>z=0</m> and <m>z=-y</m>,
-          as shown in <xref ref="fig_trip3">Figure</xref>(a),
+          as shown in <xref ref="fig_trip3a">Figure</xref>(a),
           with the orders of integration <m>dz\ dy\ dx</m>,
           <m>dy\ dx\ dz</m> and <m>dx\ dz\ dy</m>.
         </p>
 
-        <figure xml:id="fig_trip3">
+        <figure xml:id="fig_trip3a">
           <caption>The region <m>D</m> in <xref ref="ex_trip3">Example</xref> is shown in (a); in (b), it is collapsed onto the <m>x</m>-<m>y</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip3a1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1609,10 +1612,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3_3D.asy -->
-              <image xml:id="img_trip3_3D">
-
+              <image xml:id="img_trip3a1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip33D.asy in Chapter 13
@@ -1698,14 +1701,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip3_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip3a2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1716,10 +1719,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3b_3D.asy -->
-              <image xml:id="img_trip3b_3D">
-
+              <image xml:id="img_trip3a2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip3b3D.asy in Chapter 13
@@ -1764,7 +1767,7 @@
 
               //shade bottom
               import three;
-              for (int i=k; i<2*k; ++i)
+              for (int i=k; i&lt;2*k; ++i)
               {
               path3 p =  (0,0,0)--(cos(i*pi/k),sin(i*pi/k),0)--(cos((i+1)*pi/k),sin((i+1)*pi/k),0); //Left
               draw(surface(p -- cycle), emissive(rgb(.6,.6,1)+opacity(0.7)));
@@ -1797,7 +1800,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip3b_3D.asy END -->
@@ -1821,7 +1824,7 @@
         <p>
           Collapsing the region into the <m>x</m>-<m>y</m> plane,
           we get part of the circle with equation
-          <m>x^2+y^2=1</m> as shown in <xref ref="fig_trip3">Figure</xref>(b).
+          <m>x^2+y^2=1</m> as shown in <xref ref="fig_trip3a">Figure</xref>(b).
           As a function of <m>x</m>,
           this half circle has equation <m>y=-\sqrt{1-x^2}</m>.
           Thus <m>y</m> is bounded below by
@@ -1891,8 +1894,8 @@
         <figure xml:id="fig_trip3b">
           <caption>The region <m>D</m> in <xref ref="ex_trip3">Example</xref> is shown collapsed onto the <m>x</m>-<m>z</m> plane in (a); in (b), it is collapsed onto the <m>y</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip3b1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -1903,10 +1906,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3c_3D.asy -->
-              <image xml:id="img_trip3c_3D">
-
+              <image xml:id="img_trip3b1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip3c3D.asy in Chapter 13
@@ -1951,7 +1954,7 @@
 
               //shade bottom
               import three;
-              for (int i=k; i<2*k; ++i)
+              for (int i=k; i&lt;2*k; ++i)
               {
               path3 p =  (0,0,0)--(cos(i*pi/k),0,-sin(i*pi/k))--(cos((i+1)*pi/k),0,-sin((i+1)*pi/k)); //Left
               draw(surface(p -- cycle), emissive(rgb(.6,.6,1)+opacity(0.7)));
@@ -1984,14 +1987,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip3c_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip3b2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2002,10 +2005,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip3d_3D.asy -->
-              <image xml:id="img_trip3d_3D">
-
+              <image xml:id="img_trip3b2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip3d3D.asy in Chapter 13
@@ -2075,7 +2078,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip3d_3D.asy END -->
@@ -2139,19 +2142,21 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              <m>\ds \iiint_D \ dV \geq 0</m>
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\ds \iiint_D \ dV \geq 0</m>
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\ds \iiint_D\ dV = \iiint_{D_1}\ dV + \iiint_{D_2}\ dV</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\ds \iiint_D\ dV = \iiint_{D_1}\ dV + \iiint_{D_2}\ dV</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -2165,15 +2170,15 @@
         <p>
           Find the volume of the space region <m>D</m> bounded by the coordinate planes,
           <m>z=1-x/2</m> and <m>z=1-y/4</m>,
-          as shown in <xref ref="fig_trip4">Figure</xref>(a).
+          as shown in <xref ref="fig_trip4a">Figure</xref>(a).
           Set up the triple integrals that find the volume of <m>D</m> in all 6 orders of integration.
         </p>
 
-        <figure xml:id="fig_trip4">
+        <figure xml:id="fig_trip4a">
           <caption>The region <m>D</m> in <xref ref="ex_trip4">Example</xref> is shown in (a); in (b), it is collapsed onto the <m>x</m>-<m>y</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip4a1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2184,10 +2189,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4_3D.asy -->
-              <image xml:id="img_trip4_3D">
-
+              <image xml:id="img_trip4a1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip43D.asy in Chapter 13
@@ -2274,14 +2279,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip4_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip4a2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2292,10 +2297,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4d_3D.asy -->
-              <image xml:id="img_trip4d_3D">
-
+              <image xml:id="img_trip4a2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip4d3D.asy in Chapter 13
@@ -2367,7 +2372,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip4d_3D.asy END -->
@@ -2378,7 +2383,7 @@
       </statement>
       <solution>
         <p>
-          Following the bounds<ndash />determining strategy of
+          Following the bounds<ndash/>determining strategy of
           <q>surface to surface, curve to curve,
           and point to point,</q> we can see that the most difficult orders of integration are the two in which we integrate with respect to <m>z</m> first,
           for there are two <q>upper</q>
@@ -2391,7 +2396,7 @@
 
         <p>
           We now collapse the region <m>D</m> onto the <m>x</m>-<m>y</m> axis,
-          as shown in <xref ref="fig_trip4">Figure</xref>(b).
+          as shown in <xref ref="fig_trip4a">Figure</xref>(b).
           The boundary of <m>D</m>,
           the line from <m>(0,0,1)</m> to <m>(2,4,0)</m>,
           is shown in part (b) of the figure as a dashed line;
@@ -2476,8 +2481,8 @@
         <figure xml:id="fig_trip4b">
           <caption>The region <m>D</m> in <xref ref="ex_trip4">Example</xref> is shown collapsed onto the <m>x</m>-<m>z</m> plane in (a); in (b), it is collapsed onto the <m>y</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+           <figure xml:id="fig_trip4b1_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2488,10 +2493,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4b_3D.asy -->
-              <image xml:id="img_trip4b_3D">
-
+              <image xml:id="img_trip4b1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip4b3D.asy in Chapter 13
@@ -2560,14 +2565,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip4b_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip4b2_3D">
+              <caption/>
             <!--
              \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2578,10 +2583,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip4c_3D.asy -->
-              <image xml:id="img_trip4c_3D">
-
+              <image xml:id="img_trip4b2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip4c3D.asy in Chapter 13
@@ -2650,7 +2655,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip4c_3D.asy END -->
@@ -2731,16 +2736,16 @@
         <p>
           Set up a triple integral that gives the volume of the space region <m>D</m> bounded by
           <m>z= 2x^2+2</m> and <m>z=6-2x^2-y^2</m>.
-          These surfaces are plotted in <xref ref="fig_trip5">Figure</xref>(a) and (b),
+          These surfaces are plotted in <xref ref="fig_trip5a">Figure</xref>(a) and (b),
           respectively;
           the region <m>D</m> is shown in part (c) of the figure.
         </p>
 
-        <figure xml:id="fig_trip5">
+        <figure xml:id="fig_trip5a">
           <caption>The region <m>D</m> is bounded by the surfaces shown in (a) and (b); <m>D</m> is shown in (c).</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip5a1_3D">
+              <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2751,10 +2756,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5b_3D.asy -->
-              <image xml:id="img_trip5b_3D">
-
+              <image xml:id="img_trip5a1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip5b3D.asy in Chapter 13
@@ -2831,14 +2836,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip5b_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip5a2_3D">
+              <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2849,10 +2854,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5c_3D.asy -->
-              <image xml:id="img_trip5c_3D">
-
+              <image xml:id="img_trip5a2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip5c3D.asy in Chapter 13
@@ -2928,14 +2933,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip5c_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(c)</caption>
+            <figure xml:id="fig_trip5a3_3D">
+              <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -2946,10 +2951,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5_3D.asy -->
-              <image xml:id="img_trip5_3D">
-
+              <image xml:id="img_trip5a3_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip53D.asy in Chapter 13
@@ -3035,7 +3040,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip5_3D.asy END -->
@@ -3057,7 +3062,7 @@
 
         <p>
           The bounds on <m>z</m> are clearly <m>2x^2+2\leq z\leq 6-2x^2-y^2</m>.
-          Collapsing <m>D</m> onto the <m>x</m>-<m>y</m> plane gives the ellipse shown in <xref ref="fig_trip5">Figure</xref>(c).
+          Collapsing <m>D</m> onto the <m>x</m>-<m>y</m> plane gives the ellipse shown in <xref ref="fig_trip5a">Figure</xref>(c).
           The equation of this ellipse is found by setting the two surfaces equal to each other:
           <me>
             2x^2+2 = 6-2x^2-y^2 \Rightarrow 4x^2+y^2=4 \Rightarrow x^2+\frac{y^2}4=1
@@ -3127,8 +3132,8 @@
         <figure xml:id="fig_trip5b">
           <caption>The region <m>D</m> in <xref ref="ex_trip5">Example</xref> is collapsed onto the <m>x</m>-<m>z</m> plane in (a); in (b), it is collapsed onto the <m>y</m>-<m>z</m> plane.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
+            <figure xml:id="fig_trip5b1_3D">
+              <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -3139,10 +3144,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5e_3D.asy -->
-              <image xml:id="img_trip5e_3D">
-
+              <image xml:id="img_trip5b1_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip5e3D.asy in Chapter 13
@@ -3185,7 +3190,7 @@
               //shade area inbetween
               int k=12;
               import three;
-              for (int i=0; i<k; ++i)
+              for (int i=0; i&lt;k; ++i)
               {
               path3 p =  (i/k,0,2*(i/k)^2+2)-- ((i+1)/k,0,2*((i+1)/k)^2+2)--((i+1)/k,0,6-2*((i+1)/k)^2) -- ((i)/k,0,6-2*(i/k)^2); //Left
               draw(surface(p -- cycle), emissive(rgb(.6,.6,1)+opacity(0.7)));
@@ -3220,14 +3225,14 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip5e_3D.asy END -->
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
+            <figure xml:id="fig_trip5b2_3D">
+              <caption/>
             <!--
              \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
             3Droll=0,
@@ -3238,10 +3243,10 @@
             3Dlights=Headlamp,add3Djscript=asylabels.js]
              -->
             <!-- START figures/figtrip5d_3D.asy -->
-              <image xml:id="img_trip5d_3D">
-
+              <image xml:id="img_trip5b2_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip5d3D.asy in Chapter 13
@@ -3285,7 +3290,7 @@
               //shade area inbetween
               int k=12;
               import three;
-              for (int i=-2*k; i<2*k; ++i)
+              for (int i=-2*k; i&lt;2*k; ++i)
               {
               path3 p =  (0,i/k,6-(i/k)^2)-- (0,(i+1)/k,6-((i+1)/k)^2)--(0,(i+1)/k,4-(0.5)*((i+1)/k)^2) -- (0,(i)/k,4-(0.5)*((i)/k)^2); //top in blue
               draw(surface(p -- cycle), emissive(rgb(.6,.6,1)+opacity(0.7)));
@@ -3328,7 +3333,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
               </image>
             <!-- figures/figtrip5d_3D.asy END -->
@@ -3358,7 +3363,7 @@
         <p>
           Collapsing <m>D</m> onto the <m>y</m>-<m>z</m> axes gives the regions shown in <xref ref="fig_trip5b">Figure</xref>(b).
           We find the equation of the curve
-          <m>z=4-y^2/2</m> by noting that the equation of the ellipse seen in <xref ref="fig_trip5">Figure</xref>(c) has equation
+          <m>z=4-y^2/2</m> by noting that the equation of the ellipse seen in <xref ref="fig_trip5a">Figure</xref>(c) has equation
           <me>
             x^2+y^2/4=1  \Rightarrow  x = \sqrt{1-y^2/4}
           </me>.
@@ -3488,7 +3493,7 @@
     <p>
       Let <m>h(x,y,z)</m> a continuous function of three variables,
       defined over some space region <m>D</m>.
-      We can partition <m>D</m> into <m>n</m> rectangular<ndash />solid subregions,
+      We can partition <m>D</m> into <m>n</m> rectangular<ndash/>solid subregions,
       each with dimensions <m>\dx_i\times\dy_i\times\ddz_i</m>.
       Let <m>(x_i,y_i,z_i)</m> be some point in the <m>i^{\,\text{ th } }</m> subregion,
       and consider the product <m>h(x_i,y_i,z_i)\dx_i\dy_i\ddz_i</m>.
@@ -3605,26 +3610,28 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The limit <m>\lim\limits_{\norm{\Delta D}\to 0}\sum_{i=1}^n h(x_i,y_i,z_i)\Delta V_i</m> exists.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The limit <m>\lim\limits_{\norm{\Delta D}\to 0}\sum_{i=1}^n h(x_i,y_i,z_i)\Delta V_i</m> exists.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              If <m>D</m> is defined as the region bounded by the planes <m>x=a</m> and <m>x=b</m>,
-              the cylinders <m>y=g_1(x)</m> and <m>y=g_2(x)</m>,
-              and the surfaces <m>z=f_1(x,y)</m> and
-              <m>z=f_2(x,y)</m>, where <m>a\lt b</m>,
-              <m>g_1(x)\leq g_2(x)</m> and <m>f_1(x,y)\leq f_2(x,y)</m> on <m>D</m>, then
-              <me>
-                \iiint_D h(x,y,z)\ dV = \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} h(x,y,z)\ dz\ dy\ dx
-              </me>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                If <m>D</m> is defined as the region bounded by the planes <m>x=a</m> and <m>x=b</m>,
+                the cylinders <m>y=g_1(x)</m> and <m>y=g_2(x)</m>,
+                and the surfaces <m>z=f_1(x,y)</m> and
+                <m>z=f_2(x,y)</m>, where <m>a\lt b</m>,
+                <m>g_1(x)\leq g_2(x)</m> and <m>f_1(x,y)\leq f_2(x,y)</m> on <m>D</m>, then
+                <me>
+                  \iiint_D h(x,y,z)\ dV = \int_a^b\int_{g_1(x)}^{g_2(x)}\int_{f_1(x,y)}^{f_2(x,y)} h(x,y,z)\ dz\ dy\ dx
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </theorem>
 
@@ -3660,43 +3667,45 @@
 
         </p>
 
-        <ol>
-          <li>
-            <p>
-              The <em>mass</em> of the object is <m>\ds M= \iiint_D \ dm=\iiint_D \delta(x,y,z)\ dV</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The <em>mass</em> of the object is <m>\ds M= \iiint_D \ dm=\iiint_D \delta(x,y,z)\ dV</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <em>moment about the <m>x</m>-<m>y</m> plane</em>
-              is <m>\ds M_{xy}=\iiint_D z\delta(x,y,z)\ dV</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                The <em>moment about the <m>x</m>-<m>y</m> plane</em>
+                is <m>\ds M_{xy}=\iiint_D z\delta(x,y,z)\ dV</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <em>moment about the <m>x</m>-<m>z</m> plane</em>
-              is <m>\ds M_{xz}=\iiint_D y\delta(x,y,z)\ dV</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                The <em>moment about the <m>x</m>-<m>z</m> plane</em>
+                is <m>\ds M_{xz}=\iiint_D y\delta(x,y,z)\ dV</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <em>moment about the <m>y</m>-<m>z</m> plane</em>
-              is <m>\ds M_{yz}=\iiint_D x\delta(x,y,z)\ dV</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                The <em>moment about the <m>y</m>-<m>z</m> plane</em>
+                is <m>\ds M_{yz}=\iiint_D x\delta(x,y,z)\ dV</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              The <em>center of mass</em> of the object is
-              <me>
-                \big(\overline{x},\overline{y},\overline{z}\big) = \left(\frac{M_{yz}}M,\frac{M_{xz}}M,\frac{M_{xy}}M\right)
-              </me>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                The <em>center of mass</em> of the object is
+                <me>
+                  \big(\overline{x},\overline{y},\overline{z}\big) = \left(\frac{M_{yz}}M,\frac{M_{xz}}M,\frac{M_{xy}}M\right)
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
     </definition>
 
@@ -3705,12 +3714,12 @@
       <statement>
         <p>
           Find the mass and center of mass of the solid represented by the space region bounded by the coordinate planes and <m>z=2-y/3-2x/3</m>,
-          shown in <xref ref="fig_trip7">Figure</xref>,
+          shown in <xref ref="fig_trip7_3D">Figure</xref>,
           with constant density <m>\delta(x,y,z)=3</m>gm/cm<m>^3</m>.
           (Note: this space region was used in <xref ref="ex_trip2">Example</xref>.)
         </p>
 
-        <figure xml:id="fig_trip7">
+        <figure xml:id="fig_trip7_3D">
           <caption>Finding the center of mass of this solid in <xref ref="ex_trip7">Example</xref>.</caption>
           <!--
            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -3722,10 +3731,10 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
            -->
           <!-- START figures/figtrip2_3D.asy -->
-          <image xml:id="img_trip7">
-
+          <image xml:id="img_trip7_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip23D.asy in Chapter 13
@@ -3794,7 +3803,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtrip2_3D.asy END -->
@@ -3820,7 +3829,7 @@
           The evaluation of the triple integral is done in <xref ref="ex_trip2">Example</xref>,
           so we skipped those steps above.
           Note how the mass of an object with constant density is simply
-          <q>density<times />volume.</q>
+          <q>density<times/>volume.</q>
         </p>
 
         <p>
@@ -3858,12 +3867,12 @@
       <statement>
         <p>
           Find the center of mass of the solid represented by the region bounded by the planes <m>z=0</m> and <m>z=-y</m> and the cylinder <m>x^2+y^2=1</m>,
-          shown in <xref ref="fig_trip8">Figure</xref>,
+          shown in <xref ref="fig_trip8_3D">Figure</xref>,
           with density function <m>\delta(x,y,z) = 10+x^2+5y-5z</m>.
           (Note: this space region was used in <xref ref="ex_trip3">Example</xref>.)
         </p>
 
-        <figure xml:id="fig_trip8">
+        <figure xml:id="fig_trip8_3D">
           <caption>Finding the center of mass of this solid in <xref ref="ex_trip8">Example</xref>.</caption>
           <!--
            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -3875,10 +3884,10 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
            -->
           <!-- START figures/figtrip3_3D.asy -->
-          <image xml:id="img_trip8">
-
+          <image xml:id="img_trip8_3D">
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for figtrip33D.asy in Chapter 13
@@ -3964,7 +3973,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
           </image>
           <!-- figures/figtrip3_3D.asy END -->
@@ -4036,7 +4045,7 @@
     </p>
 
     <p>
-      This chapter investigated the natural follow<ndash />on to partial derivatives:
+      This chapter investigated the natural follow<ndash/>on to partial derivatives:
       iterated integration.
       We learned how to use the bounds of a double integral to describe a region in the plane using both rectangular and polar coordinates,
       then later expanded to use the bounds of a triple integral to describe a region in space.
@@ -4050,7 +4059,7 @@
       Integration does not stop here.
       We could continue to iterate our integrals,
       next investigating <q>quadruple integrals</q>
-      whose bounds describe a region in 4<ndash />dimensional space
+      whose bounds describe a region in 4<ndash/>dimensional space
       (which are very hard to visualize).
       We can also look back to <q>regular</q>
       integration where we found the area under a curve in the plane.
@@ -4080,8 +4089,8 @@
             <statement>
               <p>
                 The strategy for establishing bounds for triple integrals is
-                <q><fillin /> to <fillin />,
-                <fillin /> to <fillin /> and <fillin /> to <fillin />.</q>
+                <q><fillin/> to <fillin/>,
+                <fillin/> to <fillin/> and <fillin/> to <fillin/>.</q>
               </p>
             </statement>
             <solution>
@@ -4210,7 +4219,7 @@
               </p>
 
               <p>
-                <var name="$int" width="15" />
+                <var name="$int" width="15"/>
               </p>
             </statement>
         </webwork>
@@ -4258,7 +4267,7 @@
               </p>
 
               <p>
-                <var name="$int" width="15" />
+                <var name="$int" width="15"/>
               </p>
             </statement>
         </webwork>
@@ -4309,9 +4318,9 @@
                -->
             <!-- START figures/fig13_06_ex_07_3D.asy -->
                 <image xml:id="img_13_06_ex_07_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_07.asy in Chapter 13
@@ -4393,7 +4402,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_07_3D.asy END -->
@@ -4470,9 +4479,9 @@
                -->
             <!-- START figures/fig13_06_ex_08_3D.asy -->
                 <image xml:id="img_13_06_ex_08_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_083D.asy in Chapter 13
@@ -4557,7 +4566,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_08_3D.asy END -->
@@ -4634,9 +4643,9 @@
                -->
             <!-- START figures/fig13_06_ex_09_3D.asy -->
                 <image xml:id="img_13_06_ex_09_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_093D.asy in Chapter 13
@@ -4688,7 +4697,7 @@
 
               //Shade the cylinder
               int k=10;
-              for (int i=0; i<2*k; ++i)
+              for (int i=0; i&lt;2*k; ++i)
               {
               path3 p=(2,-i/k,0.5*(i/k)^2)--(2,-(i+1)/k,0.5*((i+1)/k)^2)--(0,-(i+1)/k,0.5*((i+1)/k)^2)--(0,-i/k,0.5*(i/k)^2);
               draw(surface(p -- cycle), emissive(rgb(1,.6,.6)+opacity(0.7)));
@@ -4726,7 +4735,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_09_3D.asy END -->
@@ -4799,9 +4808,9 @@
                -->
             <!-- START figures/fig13_06_ex_10_3D.asy -->
                 <image xml:id="img_13_06_ex_10_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_103D.asy in Chapter 13
@@ -4879,7 +4888,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_10_3D.asy END -->
@@ -4952,9 +4961,9 @@
                -->
             <!-- START figures/fig13_06_ex_11_3D.asy -->
                 <image xml:id="img_13_06_ex_11_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_113D.asy in Chapter 13
@@ -5029,7 +5038,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_11_3D.asy END -->
@@ -5099,9 +5108,9 @@
                -->
             <!-- START figures/fig13_06_ex_12_3D.asy -->
                 <image xml:id="img_13_06_ex_12_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_123D.asy in Chapter 13
@@ -5144,7 +5153,7 @@
               //shade object
               import three;
               int k=12;
-              for (int i=-2*k; i<2*k; ++i)
+              for (int i=-2*k; i&lt;2*k; ++i)
               {
               path3 p=(i/k,4-(i/k)^2,0)--((i+1)/k,4-((i+1)/k)^2,0)--((i+1)/k,4-((i+1)/k)^2,2*(4-((i+1)/k)^2))--((i)/k,4-((i)/k)^2,2*(4-((i)/k)^2));
               draw(surface(p -- cycle), emissive(rgb(1,.6,.6)+opacity(0.7)));
@@ -5185,7 +5194,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_12_3D.asy END -->
@@ -5262,9 +5271,9 @@
                -->
             <!-- START figures/fig13_06_ex_13_3D.asy -->
                 <image xml:id="img_13_06_ex_13_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_133D.asy in Chapter 13
@@ -5313,7 +5322,7 @@
               //shade object
               import three;
               int k=12;
-              for (int i=0; i<k; ++i)
+              for (int i=0; i&lt;k; ++i)
               {
               path3 p=(0,1-(i/k)^2,i/k)--(0,1-((i+1)/k)^2,(i+1)/k)--((i+1)/k,1-((i+1)/k)^2,(i+1)/k)--((i)/k,1-((i)/k)^2,(i)/k);
               draw(surface(p -- cycle), emissive(rgb(1,.6,.6)+opacity(0.7)));//pink
@@ -5355,7 +5364,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_13_3D.asy END -->
@@ -5429,9 +5438,9 @@
                -->
             <!-- START figures/fig13_06_ex_14_3D.asy -->
                 <image xml:id="img_13_06_ex_14_3D">
-
+              <description></description>
             <asymptote>
-              <![CDATA[
+              
               import graph3;
 
               //ASY file for fig13_06_ex_143D.asy in Chapter 13
@@ -5512,7 +5521,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              ]]>
+              
             </asymptote>
                 </image>
             <!-- figures/fig13_06_ex_14_3D.asy END -->
@@ -5594,7 +5603,7 @@
               </p>
 
               <p>
-                <var name="$int" width="15" />
+                <var name="$int" width="15"/>
               </p>
             </statement>
         </webwork>
@@ -5634,7 +5643,7 @@
               </p>
 
               <p>
-                <var name="$int" width="15" />
+                <var name="$int" width="15"/>
               </p>
             </statement>
         </webwork>
@@ -5789,4 +5798,3 @@
     </exercisegroup>
   </exercises>
 </section>
-
