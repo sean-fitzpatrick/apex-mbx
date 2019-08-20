@@ -75,6 +75,8 @@
       <image xml:id="img_mchain_intro">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -320,6 +322,8 @@
           <image xml:id="img_mchain2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 

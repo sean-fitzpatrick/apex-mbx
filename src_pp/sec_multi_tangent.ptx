@@ -33,6 +33,8 @@
       <image xml:id="img_space_tangent_intro">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -261,6 +263,8 @@
               <image xml:id="img_partial4a_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -361,6 +365,8 @@
               <image xml:id="img_partial4b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -530,6 +536,8 @@
           <image xml:id="img_tpl2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -759,6 +767,8 @@
           <image xml:id="img_tpl3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1006,6 +1016,8 @@
           <image xml:id="img_tpl5">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1177,6 +1189,8 @@
           <image xml:id="img_tpl6">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1449,6 +1463,8 @@
           <image xml:id="img_tpl8">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 

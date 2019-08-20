@@ -164,6 +164,8 @@
           <image xml:id="img_multigraph_introa_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -257,6 +259,8 @@
           <image xml:id="img_multigraph_introb_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -508,6 +512,8 @@
               <image xml:id="img_levelcurve1b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -699,6 +705,8 @@
               <image xml:id="img_levelcurve2b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 

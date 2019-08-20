@@ -378,6 +378,8 @@
       <image xml:id="img_multilimitdef">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -917,6 +919,8 @@
           <image xml:id="img_multicont1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 

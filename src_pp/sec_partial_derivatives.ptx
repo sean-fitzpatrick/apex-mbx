@@ -40,6 +40,8 @@
           <image xml:id="img_partialintroa_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -136,6 +138,8 @@
           <image xml:id="img_partialintrob_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -508,6 +512,8 @@
               <image xml:id="img_partial3a_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -607,6 +613,8 @@
               <image xml:id="img_partial3b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1037,6 +1045,8 @@
               <image xml:id="img_partial7a_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1147,6 +1157,8 @@
               <image xml:id="img_partial7b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 

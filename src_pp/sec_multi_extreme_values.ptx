@@ -191,6 +191,8 @@
           <image xml:id="img_multi_extreme1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -320,6 +322,8 @@
           <image xml:id="img_multi_extreme2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -464,6 +468,8 @@
           <image xml:id="img_multi_extreme3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -859,6 +865,8 @@
           <image xml:id="img_multi_extreme5">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1033,6 +1041,8 @@
               <image xml:id="img_conopt1a_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1275,6 +1285,8 @@
           <image xml:id="img_conopt1bX">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1482,6 +1494,8 @@
           <image xml:id="img_conopt2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
