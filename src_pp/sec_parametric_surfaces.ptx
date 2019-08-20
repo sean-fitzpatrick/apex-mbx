@@ -1,5 +1,4 @@
-
-
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec_parametric_surfaces">
   <title>Parametrized Surfaces and Surface Area</title>
   <introduction>
@@ -17,10 +16,10 @@
       For our coming needs,
       this method of describing surfaces will prove to be insufficient.
       Instead, we will <em>parametrize</em> our surfaces,
-      describing them as the set of terminal points of some vector<ndash />valued function <m>\vec r(u,v) =\langle f(u,v),g(u,v),h(u,v)\rangle</m>.
-      The bulk of this section is spent practicing the skill of describing a surface <m>\surfaceS</m>using a vector<ndash />valued function.
+      describing them as the set of terminal points of some vector<ndash/>valued function <m>\vec r(u,v) =\langle f(u,v),g(u,v),h(u,v)\rangle</m>.
+      The bulk of this section is spent practicing the skill of describing a surface <m>\surfaceS</m>using a vector<ndash/>valued function.
       Once this skill is developed,
-      we'll show how to find the surface area <m>S</m> of a parametrically<ndash />defined surface <m>\surfaceS</m>, a skill needed in the remaining sections of this chapter.
+      we'll show how to find the surface area <m>S</m> of a parametrically<ndash/>defined surface <m>\surfaceS</m>, a skill needed in the remaining sections of this chapter.
     </p>
     <aside>
       <p>
@@ -63,7 +62,7 @@
       <title>Parametrized Surface</title>
       <statement>
         <p>
-          Let <m>\vec r(u,v) = \langle\, f(u,v),g(u,v),h(u,v)\rangle</m> be a vector<ndash />valued function that is continuous and one to one on the interior of its domain <m>R</m> in the <m>u</m>-<m>v</m> plane.
+          Let <m>\vec r(u,v) = \langle\, f(u,v),g(u,v),h(u,v)\rangle</m> be a vector<ndash/>valued function that is continuous and one to one on the interior of its domain <m>R</m> in the <m>u</m>-<m>v</m> plane.
           The set of all terminal points of <m>\vec r</m> (i.e., the <term>range</term>
           of <m>\vec r</m> ) is the <term>surface</term>
           <m>\surfaceS</m>, and <m>\vec r</m> along with its domain <m>R</m> form a
@@ -94,7 +93,7 @@
       </p>
     </aside>
     <p>
-      Given a point <m>(u_0,v_0)</m> in the domain of a vector<ndash />valued function <m>\vec r</m>,
+      Given a point <m>(u_0,v_0)</m> in the domain of a vector<ndash/>valued function <m>\vec r</m>,
       the vectors <m>\vec r_u(u_0,v_0)</m> and
       <m>\vec r_v(u_0,v_0)</m> are tangent to the surface <m>\surfaceS</m>at
       <m>\vec r(u_0,v_0)</m> (a proof of this is developed later in this section).
@@ -123,10 +122,10 @@
     </p>
 
     <p>
-      <idx><h>M&#xf6;bius band</h></idx>
+      <idx><h>Möbius band</h></idx>
 
       It is enlightening to examine a classic non-orientable surface:
-      the M&#xf6;bius band, shown in <xref ref="fig_mobius">Figure</xref>.
+      the Möbius band, shown in <xref ref="fig_mobius">Figure</xref>.
       Vectors normal to the surface are given,
       starting at the point indicated in the figure.
       These normal vectors <q>vary continuously</q>
@@ -141,11 +140,11 @@
       we recognize that we are labeling
       <q>both sides</q> of the band as the top;
       in fact, there are not two <q>sides</q> to this band, but one.
-      The M&#xf6;bius band is a non-orientable surface.
+      The Möbius band is a non-orientable surface.
     </p>
 
     <figure xml:id="fig_mobius">
-      <caption>A M&#xf6;bius band, a non-orientable surface.</caption>
+      <caption>A Möbius band, a non-orientable surface.</caption>
       <!-- \apexincludemedia{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
       3Droll=0,
       3Dortho=0.009369944222271442,
@@ -210,7 +209,7 @@
             }
           //(.5*cos(t)*sin(t/2),(1/4)*(cos(t/2)-cos(3*t/2)),-.5*cos(t/2))
 
-          //for(real i=0; i<=2*pi;i=i+2pi/10) {
+          //for(real i=0; i&lt;=2*pi;i=i+2pi/10) {
           //draw(f((i,0.)) -- (f((i,0.))+n(i)),rgb(1-i/(2pi),0,i/(2pi))+.2mm,Arrow3);
           //}
 
@@ -223,7 +222,7 @@
           //  Final method of drawing normal vectors. 
           //
 
-          for(real i=0; i<=2pi; i=i+2pi/20) {
+          for(real i=0; i&lt;=2pi; i=i+2pi/20) {
           triple a = f((i+.1,0))-f((i-.1,0));
           triple b = f((i,.1))-f((i,-.1));
           triple c = .3*(a.y*b.z-a.z*b.y,a.z*b.x-a.x*b.z,a.x*b.y-a.y*b.x)/sqrt(((a.y*b.z-a.z*b.y)^2+(a.z*b.x-a.x*b.z)^2+(a.x*b.y-a.y*b.x)^2));
@@ -393,7 +392,7 @@
       </statement>
       <solution>
         <p>
-          We can parametrize the circular boundary of <m>R</m> with the vector<ndash />valued function <m>\la 2\cos u,2\sin u\ra</m>,
+          We can parametrize the circular boundary of <m>R</m> with the vector<ndash/>valued function <m>\la 2\cos u,2\sin u\ra</m>,
           where <m>0\leq u\leq 2\pi</m>.
           We can obtain the interior of <m>R</m> by scaling this function by a variable amount,
           i.e., by multiplying by <m>v</m>:
@@ -531,7 +530,7 @@
 
     <p>
       <xref ref="ex_parsurf1">Examples</xref>
-      and <xref ref="ex_parsurf2"></xref>
+      and <xref ref="ex_parsurf2"/>
       demonstrate an important principle when parametrizing surfaces given in the form
       <m>z=f(x,y)</m> over a region <m>R</m>:
       if one can determine <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m>,
@@ -550,7 +549,7 @@
       <statement>
         <p>
           Parametrize the surface <m>z=x^2+2y^2</m> over the triangular region <m>R</m> enclosed by the coordinate axes and the line <m>y=2-2x/3</m>,
-          as shown in <xref ref="fig_parsurf3">Figure</xref>(a).
+          as shown in <xref ref="fig_parsurf3a">Figure</xref>.
         </p>
       </statement>
       <solution>
@@ -704,7 +703,7 @@
           we have <m>\vec r(u,v) = \langle u, v(2-2u/3),
           u^2+2\big(v(2-2u/3)\big)^2\rangle</m>,
           <m>0\leq u\leq 3</m>, <m>0\leq v\leq 1</m>.
-          This surface is graphed in <xref ref="fig_parsurf3">Figure</xref>(b).
+          This surface is graphed in <xref ref="fig_parsurf3b_3D">Figure</xref>.
           Again, when one looks from above,
           we can see the scaling effects of <m>v</m>:
           the series of lines that run to the point <m>(3,0)</m> each represent a different value of <m>v</m>.
@@ -728,7 +727,7 @@
       <statement>
         <p>
           Parametrize the surface <m>z=x^2+2y^2</m> over the triangular region <m>R</m> enclosed by the lines <m>y=3-2x/3</m>,
-          <m>y=1</m> and <m>x=0</m> as shown in <xref ref="fig_parsurf4">Figure</xref>(a).
+          <m>y=1</m> and <m>x=0</m> as shown in <xref ref="fig_parsurf4a">Figure</xref>.
         </p>
       </statement>
       <solution>
@@ -762,7 +761,7 @@
         </p>
 
         <p>
-          The surface is graphed in <xref ref="fig_parsurf4">Figure</xref>(b).
+          The surface is graphed in <xref ref="fig_parsurf4b_3D">Figure</xref>.
         </p>
 
         <figure xml:id="fig_parsurf4">
@@ -915,7 +914,7 @@
     <p>
       As a specific example,
       consider the triangular region <m>R</m> from <xref ref="ex_parsurf4">Example</xref>,
-      shown in <xref ref="fig_parsurf4">Figure</xref>(a).
+      shown in <xref ref="fig_parsurf4a">Figure</xref>.
       Using the techniques of <xref ref="sec_iterated_integrals">Section</xref>,
       we can find the area of <m>R</m> as
       <me>
@@ -1207,12 +1206,12 @@
 
         <p>
           When <m>v</m> takes on negative values,
-          the radii of the cross<ndash />sectional ellipses become <q>negative,</q>
+          the radii of the cross<ndash/>sectional ellipses become <q>negative,</q>
           which can lead to some surprising results.
           Consider <xref ref="fig_parsurf6b_3D">Figure</xref>,
           where the cone is graphed for <m>0\leq u\leq \pi</m>.
           Because <m>v</m> is negative below the <m>x</m>-<m>y</m> plane,
-          the radii of the cross<ndash />sectional ellipses are negative,
+          the radii of the cross<ndash/>sectional ellipses are negative,
           and the opposite side of the cone is sketched below the <m>x</m>-<m>y</m> plane.
         </p>
 
@@ -1314,7 +1313,7 @@
       <statement>
         <p>
           Find a parametrization of the ellipsoid
-          <m>\frac{x^2}{25}+y^2+\frac{z^2}{4}=1</m> as shown in <xref ref="fig_parsurf7">Figure</xref>(a).
+          <m>\frac{x^2}{25}+y^2+\frac{z^2}{4}=1</m> as shown in <xref ref="fig_parsurf7a_3D">Figure</xref>.
         </p>
       </statement>
       <solution>
@@ -1528,7 +1527,7 @@
         </p>
 
         <p>
-          In <xref ref="fig_parsurf7">Figure</xref>(b),
+          In <xref ref="fig_parsurf7b_3D">Figure</xref>,
           the ellipsoid is graphed on <m>\frac{\pi}{4}\leq u\leq \frac{2\pi}{3}</m>,
           <m>\frac{\pi}4\leq v\leq \frac{3\pi}2</m> to demonstrate how each variable affects the surface.
         </p>
@@ -1577,7 +1576,7 @@
 
     <p>
       Let <m>R</m> be the region of the <m>u</m>-<m>v</m> plane bounded by <m>a\leq u\leq b</m>,
-      <m>c\leq v\leq d</m> as shown in <xref ref="fig_parsurfarea">Figure</xref>(a).
+      <m>c\leq v\leq d</m> as shown in <xref ref="fig_parsurfareaa">Figure</xref>.
       Partition <m>R</m> into rectangles of width
       <m>\Delta u = \frac{b-a}n</m> and height <m>\Delta v = \frac{d-c}n</m>,
       for some <m>n</m>.
@@ -1590,7 +1589,7 @@
       <m>P = \vec r(u_0,v_0)</m> on the surface <m>\surfaceS</m>, and the rectangle with corners <m>p</m>,
       <m>m</m> and <m>q</m> maps to some region
       (probably not rectangular)
-      on the surface as shown in <xref ref="fig_parsurfarea">Figure</xref>(b),
+      on the surface as shown in <xref ref="fig_parsurfareab_3D">Figure</xref>,
       where <m>M = \vec r(m)</m> and <m>Q = \vec r(q)</m>.
       We wish to approximate the surface area of this mapped region.
     </p>
@@ -1598,7 +1597,7 @@
     <p>
       Let <m>\vec u = M-P</m> and <m>\vec v = Q-P</m>.
       These two vectors form a parallelogram,
-      illustrated in <xref ref="fig_parsurfarea">Figure</xref>(c),
+      illustrated in <xref ref="fig_parsurfareac_3D">Figure</xref>,
       whose area <em>approximates</em>
       the surface area we seek.
       In this particular illustration,
@@ -2124,7 +2123,7 @@
       <answer>
         <p>
           Many possible answers exist;
-          the one given by the book is the M&#xf6;bius band.
+          the one given by the book is the Möbius band.
         </p>
       </answer>
     </exercise>
@@ -2173,34 +2172,36 @@
         </p>
       </statement>
       <answer>
-        <ol>
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle u, v, 3u^2v\rangle</m> on
-              <m>-1\leq u\leq 1</m>, <m>0\leq v\leq 2</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle u, v, 3u^2v\rangle</m> on
+                <m>-1\leq u\leq 1</m>, <m>0\leq v\leq 2</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle 3v\cos u+1, 3v\sin u+2, 3(3v\cos u+1)^2(3v\sin u+2)\rangle</m>,
-              on <m>0\leq u\leq 2\pi</m>, <m>0\leq v\leq 1</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle 3v\cos u+1, 3v\sin u+2, 3(3v\cos u+1)^2(3v\sin u+2)\rangle</m>,
+                on <m>0\leq u\leq 2\pi</m>, <m>0\leq v\leq 1</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle u, v(2-2u), 3u^2v(2-2u)\rangle</m> on <m>0\leq u, v\leq 1</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle u, v(2-2u), 3u^2v(2-2u)\rangle</m> on <m>0\leq u, v\leq 1</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle u, v(1-u^2), 3u^2v(1-u^2)\rangle</m> on
-              <m>-1\leq u\leq 1</m>, <m>0\leq v\leq 1</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle u, v(1-u^2), 3u^2v(1-u^2)\rangle</m> on
+                <m>-1\leq u\leq 1</m>, <m>0\leq v\leq 1</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </answer>
     </exercise>
 
@@ -2242,35 +2243,37 @@
         </p>
       </statement>
       <answer>
-        <ol>
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle u, v, 4u+2u^2\rangle</m> on
-              <m>1\leq u\leq 4</m>, <m>5\leq v\leq 7</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle u, v, 4u+2u^2\rangle</m> on
+                <m>1\leq u\leq 4</m>, <m>5\leq v\leq 7</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle 4v\cos u, 3v\sin u, 16v\cos u+2(3v\sin u)^2\rangle</m>,
-              on <m>0\leq u\leq 2\pi</m>, <m>0\leq v\leq 1</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle 4v\cos u, 3v\sin u, 16v\cos u+2(3v\sin u)^2\rangle</m>,
+                on <m>0\leq u\leq 2\pi</m>, <m>0\leq v\leq 1</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle u, u+v(4-2u), 4u+2\big(u+v(4-2u)\big)^2\rangle</m> on
-              <m>0\leq u\leq 2</m>, <m>0\leq v\leq 1</m>.
-            </p>
-          </li>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle u, u+v(4-2u), 4u+2\big(u+v(4-2u)\big)^2\rangle</m> on
+                <m>0\leq u\leq 2</m>, <m>0\leq v\leq 1</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\vec r(u,v) = \langle v\cos u, v\sin u, 4v\cos u + 2(v\sin u)^2\rangle</m> on
-              <m>0\leq u\leq 2\pi</m>, <m>2\leq v\leq 5</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\vec r(u,v) = \langle v\cos u, v\sin u, 4v\cos u + 2(v\sin u)^2\rangle</m> on
+                <m>0\leq u\leq 2\pi</m>, <m>2\leq v\leq 5</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </answer>
     </exercise>
 
@@ -3599,4 +3602,3 @@
   </subsection>
 
 </section>
-

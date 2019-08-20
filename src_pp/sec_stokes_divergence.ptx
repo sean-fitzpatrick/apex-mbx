@@ -60,14 +60,79 @@
 
         <figure xml:id="fig_divthm_space2">
           <caption>The surfaces used in  <xref ref="ex_divthm_space2">Example</xref>.</caption>
-          \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+          <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004853160120546818,
           3Dc2c=0.7607786655426025 0.5903141498565674 0.2697128355503082,
           3Dcoo=-4.848384857177734 2.0102698802948 61.921504974365234,
           3Droo=399.9999594035934,
-          3Dlights=Headlamp,add3Djscript=asylabels.js}
-          <img src="figures/figdivthm_space2_3D"/>
+          3Dlights=Headlamp,add3Djscript=asylabels.js} -->
+          <image xml:id="img_divthm_space2_3D">
+            <description></description>
+            <asymptote>
+
+              import graph3;
+
+              //ASY file for divthm_space2_3D.asy in Chapter 14
+
+              size(200,200,IgnoreAspect);
+              //currentprojection=perspective(7,2,1);
+              currentprojection=orthographic(-17,32,12.6);
+              defaultrender.merge=true;
+
+              // setup and draw the axes
+              real[] myxchoice={1};
+              real[] myychoice={-1,1};
+              real[] myzchoice={2};
+              defaultpen(0.5mm);
+
+              pair xbounds=(-.1,1.2);
+              pair ybounds=(-1.3,1.3);
+              pair zbounds=(-.1,2.2);
+
+              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+              //Draw the planar parabola
+              triple f(pair t) {
+                return (t.y*(1-t.x^2),t.x,0);//
+              }
+              surface s=surface(f,(-1,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              pen p=rgb(.7,0,0);
+              draw(s,rgb(1,.6,.6)+opacity(.7),meshpen=p);
+
+              //Draw plane over parabola
+              triple f(pair t) {
+                return (t.y*(1-t.x^2),t.x,2*t.y*(1-t.x^2));//
+              }
+              surface s=surface(f,(-1,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              pen p=rgb(0,0,.7);
+              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+              //Draw parabolic cylinder side
+              triple f(pair t) {
+                return ((1-t.x^2),t.x,2*t.y*(1-t.x^2));//
+              }
+              surface s=surface(f,(-1,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              pen p=rgb(0,0,.7);
+              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+              pen curvepen=.4mm+blue;
+              triple f(real t) {return (1-t^2,t,0);}
+              path3 mypath=graph(f,-1,1,operator ..);
+              draw(mypath,curvepen);
+
+              triple f(real t) {return (1-t^2,t,2*(1-t^2));}
+              path3 mypath=graph(f,-1,1,operator ..);
+              draw(mypath,curvepen);
+
+            </asymptote>
+          </image>
         </figure>
 
         <p>
@@ -219,14 +284,67 @@
 
         <figure xml:id="fig_divthm_space1">
           <caption>The surfaces used in  <xref ref="ex_divthm_space1">Example</xref>.</caption>
-          \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+          <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004853160120546818,
           3Dc2c=0.7607786655426025 0.5903141498565674 0.2697128355503082,
           3Dcoo=-4.848384857177734 2.0102698802948 61.921504974365234,
           3Droo=399.9999594035934,
-          3Dlights=Headlamp,add3Djscript=asylabels.js}
-          <img src="figures/figsurfflux2_3D"/>
+          3Dlights=Headlamp,add3Djscript=asylabels.js} -->
+          <image xml:id="img_divthm_space1_3D">
+            <description></description>
+            <asymptote>
+
+              import graph3;
+
+              //ASY file for figsurfint1_3D.asy in Chapter 14
+
+              size(200,200,IgnoreAspect);
+              //currentprojection=perspective(7,2,1);
+              currentprojection=orthographic(22.8,20,5.5);
+              defaultrender.merge=true;
+
+              // setup and draw the axes
+              real[] myxchoice={1};
+              real[] myychoice={2};
+              real[] myzchoice={3};
+              defaultpen(0.5mm);
+
+              pair xbounds=(-1.1,1.1);
+              pair ybounds=(-1.1,1.1);
+              pair zbounds=(-.1,1.1);
+
+              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+              //Draw the plane unit disk
+              triple f(pair t) {
+                return (t.y*cos(t.x),t.y*sin(t.x),0);//
+              }
+              surface s=surface(f,(-pi/2,0),(3pi/2,1),8,8,usplinetype=Spline,vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              pen p=rgb(.7,0,0);
+              draw(s,rgb(1,.6,.6)+opacity(.7),meshpen=p);
+
+              //Draw paraboloid over unit disk
+              triple f(pair t) {
+                return (t.y*cos(t.x),t.y*sin(t.x),1-t.y^2);//
+              }
+              surface s=surface(f,(0,0),(2pi,1),8,8,Spline);
+              pen p=rgb(0,0,.7);
+              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+              pen curvepen=.6mm+blue;
+              triple f(real t) {return (cos(t),sin(t),0);}
+              path3 mypath=graph(f,0,2pi,operator ..);
+              draw(mypath,curvepen);
+
+            </asymptote>
+          </image>
         </figure>
 
         <p>
@@ -337,14 +455,91 @@
 
         <figure xml:id="fig_divthm_space3">
           <caption>The cube used in  <xref ref="ex_divthm_space3">Example</xref>.</caption>
-          \apexincludemedia{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
+          <!-- \apexincludemedia{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004477982874959707,
           3Dc2c=0.7997961044311523 0.5269954204559326 0.28740552067756653,
           3Dcoo=9.648120880126953 3.759108543395996 12.013349533081055,
           3Droo=399.9999533297849,
-          3Dlights=Headlamp,add3Djscript=asylabels.js}
-          <img src="figures/figdivthm_space3_3D"/>
+          3Dlights=Headlamp,add3Djscript=asylabels.js} -->
+          <image xml:id="img_divthm_space3_3D">
+            <description></description>
+            <asymptote>
+
+              import graph3;
+
+              //ASY file for divthm_space3_3D.asy in Chapter 14
+
+              size(200,200,IgnoreAspect);
+              //currentprojection=perspective(7,2,1);
+              currentprojection=orthographic(30,20,12);
+              defaultrender.merge=true;
+
+              // setup and draw the axes
+              real[] myxchoice={};
+              real[] myychoice={};
+              real[] myzchoice={};
+              defaultpen(0.5mm);
+
+              pair xbounds=(-1.2,1.2);
+              pair ybounds=(-1.2,1.2);
+              pair zbounds=(-1.2,1.2);
+
+              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+              //Draw the faces of the cube 
+              pen p=rgb(0,0,.7);
+
+              triple f(pair t) {
+                return (t.x,t.y,1);//
+              }
+              surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+              triple f(pair t) {
+                return (t.x,t.y,-1);//
+              }
+              surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+              triple f(pair t) {
+                return (t.x,1,t.y);//
+              }
+              surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+              triple f(pair t) {
+                return (t.x,-1,t.y);//
+              }
+              surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+              triple f(pair t) {
+                return (1,t.x,t.y);//
+              }
+              surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+              triple f(pair t) {
+                return (-1,t.x,t.y);//
+              }
+              surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+              label("$(a,a,a)$",(1.05,1.05,1.1));
+              label("$(-a,-a,-a)$",(-1.05,-1.05,-1.1));
+              dot((1,1,1),black+1mm);
+
+              dot((-1,-1,-1),black+1mm);
+
+            </asymptote>
+          </image>
         </figure>
 
         <p>
@@ -530,14 +725,93 @@
 
         <figure xml:id="fig_stokes1">
           <caption>As given in <xref ref="ex_stokes1">Example</xref>, the surface \surfaceS<nbsp />is the portion of the plane bounded by the curve.</caption>
-          \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+          <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004444748163223267,
           3Dc2c=0.5374560356140137 0.806864321231842 0.24517536163330078,
           3Dcoo=45.07202911376953 32.75735855102539 55.02788543701172,
           3Droo=399.9999566444115,
-          3Dlights=Headlamp,add3Djscript=asylabels.js}
-          <img src="figures/figstokes1_3D"/>
+          3Dlights=Headlamp,add3Djscript=asylabels.js} -->
+          <image xml:id="fig_stokes1_3D">
+            <description></description>
+            <asymptote>
+
+              import graph3;
+
+              //ASY file for figstokes1_3D.asy in Chapter 13
+
+              size(200,200,IgnoreAspect);
+              //currentprojection=perspective(7,2,1);
+              currentprojection=orthographic(11,19,27);
+              defaultrender.merge=true;
+
+              // setup and draw the axes
+              real[] myxchoice={1,2};
+              real[] myychoice={1,2};
+              real[] myzchoice={2,4,6,8};
+              defaultpen(0.5mm);
+
+              pair xbounds=(-.1,2.5);
+              pair ybounds=(-.1,2.5);
+              pair zbounds=(-.1,9);
+
+              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+              //Draw the plane  z=7-2x-2y
+              triple f(pair t) {
+                return (t.x,t.y,-2t.x-2t.y+7);//
+              }
+              surface s=surface(f,(-.1,-.1),(2.2,2.2),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+              pen p=rgb(0,0,.7);
+              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+              triple g(real t) {return (cos(t)+1,sin(t)+1,7-2(cos(t)+1)-2(sin(t)+1));}
+              path3 mypath=graph(g,0,2pi,operator ..);
+              draw(mypath,blue+linewidth(2));
+
+              triple g(real t) {return (cos(t)+1,sin(t)+1,0);}
+              path3 mypath=graph(g,0,2pi,operator ..);
+              draw(mypath,blue+dashed+linewidth(1));
+
+              label("$\mathcal{S}$",(1,1,4));
+              //draw((0,1,0)--(0,3,0)--(3,1,0)--cycle,curvepen);
+
+              // ////////////////////////////////////
+              //    SAMPLE CODE
+
+              // defaultpen(fontsize(10pt));
+
+              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+              //pen p=rgb(0,0,.7);
+              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+              //triple f(pair t) {
+              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+              //}
+              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+              //pen p=rgb(0,0,.7);
+              //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+              //draw(s,paleblue);
+              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+              //draw(mypath,2bp+blue);
+
+              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+              //path3 mypath=graph(g,-1,1,operator ..);
+              //draw(mypath,blue+dashed+linewidth(2));
+
+              //pen p=rgb(0,0,1);
+              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+            </asymptote>
+          </image>
         </figure>
       </statement>
       <solution>
@@ -610,28 +884,194 @@
         <figure xml:id="fig_stokes2">
           <caption>As given in <xref ref="ex_stokes2">Example</xref>, the surface \surfaceS<nbsp />is the portion of the plane bounded by the curve.</caption>
           <sidebyside>
-            <figure>
-              <caption>(a)</caption>
-              \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+            <figure xml:id="fig_stokes2a_3D">
+              <caption/>
+              <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
               3Droll=0,
               3Dortho=0.004444750025868416,
               3Dc2c=0.5374560356140137 0.806864321231842 0.24517536163330078,
               3Dcoo=48.335105895996094 37.655845642089844 31.75312042236328,
               3Droo=399.9999566444115,
-              3Dlights=Headlamp,add3Djscript=asylabels.js}
-              <img src="figures/figstokes2_3D"/>
+              3Dlights=Headlamp,add3Djscript=asylabels.js} -->
+              <image xml:id="img_stokes2a_3D">
+                <description></description>
+                <asymptote>
+
+                  import graph3;
+
+                  //ASY file for figstokes2_3D.asy in Chapter 13
+
+                  size(200,200,IgnoreAspect);
+                  //currentprojection=perspective(7,2,1);
+                  currentprojection=orthographic(11,19,27);
+                  defaultrender.merge=true;
+
+                  // setup and draw the axes
+                  real[] myxchoice={1,2};
+                  real[] myychoice={1,2};
+                  real[] myzchoice={2,4,6,8};
+                  defaultpen(0.5mm);
+
+                  pair xbounds=(-.1,2.5);
+                  pair ybounds=(-.1,2.5);
+                  pair zbounds=(-.1,9);
+
+                  xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                  yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                  zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+                  label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                  label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                  label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+                  //Draw the plane  z=6-x^2-y^2
+                  triple f(pair t) {
+                    return (t.x,t.y,6-t.x^2-t.y^2);//
+                  }
+                  surface s=surface(f,(-.1,-.1),(2.2,2.2),16,16,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+                  pen p=rgb(0,0,.7);
+                  draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+                  triple g(real t) {return (cos(t)+1,sin(t)+1,6-(cos(t)+1)^2-(sin(t)+1)^2);}
+                  path3 mypath=graph(g,0,2pi,operator ..);
+                  draw(mypath,blue+linewidth(2));
+
+                  triple g(real t) {return (cos(t)+1,sin(t)+1,0);}
+                  path3 mypath=graph(g,0,2pi,operator ..);
+                  draw(mypath,blue+dashed+linewidth(1));
+
+                  label("$\mathcal{S}$",(1,1,5));
+                  //draw((0,1,0)--(0,3,0)--(3,1,0)--cycle,curvepen);
+
+                  // ////////////////////////////////////
+                  //    SAMPLE CODE
+
+                  // defaultpen(fontsize(10pt));
+
+                  //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                  //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+                  //triple f(pair t) {
+                  //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                  //}
+                  //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+                  //draw(s,paleblue);
+                  //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                  //draw(mypath,2bp+blue);
+
+                  //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                  //path3 mypath=graph(g,-1,1,operator ..);
+                  //draw(mypath,blue+dashed+linewidth(2));
+
+                  //pen p=rgb(0,0,1);
+                  //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+                </asymptote>
+              </image>
             </figure>
 
-            <figure>
-              <caption>(b)</caption>
-              \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
+            <figure xml:id="fig_stokes2b_3D">
+              <caption/>
+              <!-- \apexincludemedia{width=145pt,3Dmenu,activate=onclick,deactivate=onclick,
               3Droll=0,
               3Dortho=0.004444750025868416,
               3Dc2c=0.5374560356140137 0.806864321231842 0.24517536163330078,
               3Dcoo=48.335105895996094 37.655845642089844 31.75312042236328,
               3Droo=399.9999566444115,
-              3Dlights=Headlamp,add3Djscript=asylabels.js}
-              <img src="figures/figstokes3_3D"/>
+              3Dlights=Headlamp,add3Djscript=asylabels.js} -->
+              <image xml:id="img_stokes2b_3D">
+                <description></description>
+                <asymptote>
+
+                  import graph3;
+
+                  //ASY file for figstokes2_3D.asy in Chapter 13
+
+                  size(200,200,IgnoreAspect);
+                  //currentprojection=perspective(7,2,1);
+                  currentprojection=orthographic(11,19,27);
+                  defaultrender.merge=true;
+
+                  // setup and draw the axes
+                  real[] myxchoice={1,2};
+                  real[] myychoice={1,2};
+                  real[] myzchoice={2,4,6,8};
+                  defaultpen(0.5mm);
+
+                  pair xbounds=(-.1,2.5);
+                  pair ybounds=(-.1,2.5);
+                  pair zbounds=(-.1,9);
+
+                  xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                  yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                  zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+                  label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                  label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                  label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+                  //Draw the plane  z=7-2x-2y
+                  triple f(pair t) {
+                    return (t.x,t.y,-2t.x-2t.y+7);//
+                  }
+                  surface s=surface(f,(-.1,-.1),(2.2,2.2),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+                  pen p=rgb(0.7,0,0);
+                  draw(s,rgb(1,.6,.6)+opacity(.7),meshpen=p);
+
+                  //Draw the plane  z=6-x^2-y^2
+                  triple f(pair t) {
+                    return (t.x,t.y,6-t.x^2-t.y^2);//
+                  }
+                  surface s=surface(f,(-.1,-.1),(2.2,2.2),16,16,usplinetype=new splinetype[] {notaknot,notaknot,monotonic},vsplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+                  pen p=rgb(0,0,.7);
+                  draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+                  triple g(real t) {return (cos(t)+1,sin(t)+1,6-(cos(t)+1)^2-(sin(t)+1)^2);}
+                  path3 mypath=graph(g,0,2pi,operator ..);
+                  draw(mypath,blue+linewidth(2));
+
+                  triple g(real t) {return (cos(t)+1,sin(t)+1,0);}
+                  path3 mypath=graph(g,0,2pi,operator ..);
+                  draw(mypath,blue+dashed+linewidth(1));
+
+                  //label("$\mathcal{S}$",(1,1,5));
+                  //draw((0,1,0)--(0,3,0)--(3,1,0)--cycle,curvepen);
+
+                  // ////////////////////////////////////
+                  //    SAMPLE CODE
+
+                  // defaultpen(fontsize(10pt));
+
+                  //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                  //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+                  //triple f(pair t) {
+                  //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                  //}
+                  //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                  //pen p=rgb(0,0,.7);
+                  //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+                  //draw(s,paleblue);
+                  //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                  //draw(mypath,2bp+blue);
+
+                  //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                  //path3 mypath=graph(g,-1,1,operator ..);
+                  //draw(mypath,blue+dashed+linewidth(2));
+
+                  //pen p=rgb(0,0,1);
+                  //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+                </asymptote>
+              </image>
             </figure>
           </sidebyside>
 
@@ -827,9 +1267,123 @@
           <m>\vec F = \langle x^2,y^2,x\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_05_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_05_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_05_3D.asy in Chapter 13
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={4};
+            real[] myychoice={3};
+            real[] myzchoice={2};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-.5,4.5);
+            pair ybounds=(-.5,4.5);
+            pair zbounds=(-0.25,3);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            //triple g(real t) {return (2cos(t),2sin(t),0);}
+            //path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            //path3 mypath=graph(g,-2,2,operator ..);
+            draw((4,0,0)--(0,3,0)--(0,0,2)--cycle,blue+linewidth(2));
+            draw((4,0,0)--(0,0,0),blue+linewidth(2));
+            draw((0,3,0)--(0,0,0),blue+linewidth(2));
+            draw((0,0,2)--(0,0,0),blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y*(3-3t.x/4),2-t.x/2-2t.y*(3-3t.x/4)/3);//
+            }
+            surface s=surface(f,(0,0),(4,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y*(3-3t.x/4),0);//
+            }
+            surface s=surface(f,(0,0),(4,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,0,t.y*(2-t.x/2));//
+            }
+            surface s=surface(f,(0,0),(4,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (0,t.x,t.y*(2-2t.x/3));//
+            }
+            surface s=surface(f,(0,0),(3,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -856,9 +1410,111 @@
           <m>\vec F = \langle -x,y,z\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_06_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_06_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_06_3D.asy in Chapter 13
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={-1,1};
+            real[] myzchoice={-3,3};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-3.5,3.5);
+            pair ybounds=(-3.5,3.5);
+            pair zbounds=(-3.5,3.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            triple g(real t) {return (cos(t),sin(t),3);}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            triple g(real t) {return (cos(t),sin(t),-3);}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (cos(t.x),sin(t.x),t.y);//
+            }
+            surface s=surface(f,(0,-3),(2pi,3),16,2,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.y*cos(t.x),t.y*sin(t.x),3);//
+            }
+            surface s=surface(f,(0,0),(2pi,1),8,2,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.y*cos(t.x),t.y*sin(t.x),-3);//
+            }
+            surface s=surface(f,(0,0),(2pi,1),8,2,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -885,9 +1541,104 @@
           <m>\vec F = \langle 3x,4y,5z+1\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_07_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_07_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_07_3D.asy in Chapter 13
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={3};
+            real[] myychoice={3};
+            real[] myzchoice={4};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-.5,3.5);
+            pair ybounds=(-.5,3.5);
+            pair zbounds=(-.5,4.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            //triple g(real t) {return (cos(t),sin(t),3);}
+            //path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (cos(t),sin(t),-3);}
+            //path3 mypath=graph(g,0,2pi,operator ..);
+            draw((0,0,0) -- (3,0,0) -- (3,3,0) -- (0,3,0)--cycle,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y,t.x*t.y*(3-t.x)*(3-t.y));//
+            }
+            surface s=surface(f,(0,0),(3,3),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y,0);//
+            }
+            surface s=surface(f,(0,0),(3,3),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -914,9 +1665,103 @@
           <m>\vec F = \langle x,y,z^2\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_08_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_08_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_08_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-2,2};
+            real[] myychoice={-2,2};
+            real[] myzchoice={4};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-2.5,2.5);
+            pair ybounds=(-2.5,2.5);
+            pair zbounds=(-0.25,5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            triple g(real t) {return (2cos(t),2sin(t),0);}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (2*t.y*cos(t.x),t.y*2*sin(t.x),4-4*t.y^2);//
+            }
+            surface s=surface(f,(0,0),(2pi,1),16,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (2*t.y*cos(t.x),2*t.y*sin(t.x),0);//
+            }
+            surface s=surface(f,(0,0),(2pi,1),8,4,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -950,9 +1795,95 @@
           <m>\vec F = \langle z,-x,y\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_09_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_09_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_09_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={-1,1};
+            real[] myzchoice={1};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-1.5,1.5);
+            pair ybounds=(-1.5,1.5);
+            pair zbounds=(-0.25,2);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            triple g(real t) {return (cos(t),sin(t),1);}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.y*cos(t.x),t.y*sin(t.x),t.y^2);//
+            }
+            surface s=surface(f,(0,0),(2pi,1),16,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -974,9 +1905,95 @@
           <m>\vec F = \langle -y,x,1\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=120pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_10_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=120pt,3Dmenu,activate=onclick,deactivate=onclick,
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_10_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_10_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={-1,1};
+            real[] myzchoice={1};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-1.5,1.5);
+            pair ybounds=(-1.5,1.5);
+            pair zbounds=(-0.25,1.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            triple g(real t) {return (cos(t),sin(t),exp(-1));}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.y*cos(t.x),t.y*sin(t.x),exp(-t.y^2));//
+            }
+            surface s=surface(f,(0,0),(2pi,1),16,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1000,9 +2017,96 @@
           <m>\vec F = \langle y,-z,y\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_11_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_11_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_10_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={4};
+            real[] myychoice={3};
+            real[] myzchoice={2};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-.5,4.5);
+            pair ybounds=(-.5,4.5);
+            pair zbounds=(-0.25,2.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            //triple g(real t) {return (cos(t),sin(t),exp(-1));}
+            //path3 mypath=graph(g,0,2pi,operator ..);
+            draw((0,0,2)--(4,0,0)--(0,3,0)--cycle,blue+linewidth(2));
+            //triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y*(3-3t.x/4),2-t.x/2-2*(t.y*(3-3t.x/4))/3);//
+            }
+            surface s=surface(f,(0,0),(4,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1029,9 +2133,98 @@
           <m>\vec F = \langle y^2+z,x,x^2-y\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_12_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_12_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_10_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={1};
+            real[] myzchoice={2};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-1.5,1.5);
+            pair ybounds=(-1.5,1.5);
+            pair zbounds=(-0.25,2.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            triple g(real t) {return (t,1-t^2,2t^2+(1-t^2)^2);}
+            path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (t,0,2t^2);}
+            path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y*(1-t.x^2),2t.x^2+(t.y*(1-t.x^2))^2);//
+            }
+            surface s=surface(f,(-1,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1059,9 +2252,110 @@
           <m>\vec F = \langle x^2+1,yz,xz^2\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_13_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_13_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_13_3D.asy in Chapter 13
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12,12,5);
+            defaultrender.merge=true;
+
+            usepackage("mathspec");
+            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
+            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
+            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
+            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={-1,1};
+            real[] myzchoice={-1,1};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-1.25,1.25);
+            pair ybounds=(-1.25,1.25);
+            pair zbounds=(-0.25,1.25);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            //triple g(real t) {return (cos(t),sin(t),3);}
+            //path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+            //triple g(real t) {return (cos(t),sin(t),-3);}
+            //path3 mypath=graph(g,0,2pi,operator ..);
+            draw((-1,-1,0) -- (-1,1,0) -- (1,1,0) -- (1,-1,0)--cycle,blue+linewidth(2));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y,(t.x^2-1)*(t.y^2-1));//
+            }
+            surface s=surface(f,(-1,-1),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y,0);//
+            }
+            surface s=surface(f,(-1,-1),(1,1),1,1,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //label and arrow
+            //label("$z=2y$",(-2,2,7));
+            //draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            //label("$y=4-x^2$",(2.5,2,0));
+            //draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1079,9 +2373,99 @@
           <m>\vec F = \langle x,y^2,z\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_05_ex_09_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_05_ex_09_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig13_06_ex_083D.asy in Chapter 13
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(8.8,7.8,3);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={1,2,3};
+            real[] myychoice={1,2,3};
+            real[] myzchoice={1};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-0.5,3.5);
+            pair ybounds=(-0.5,3.5);
+            pair zbounds=(-0.5,1.75);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //edges of object
+            draw((1,0,0)--(1,2,0)--(3,2,0)--(3,0,0)--cycle,blue+linewidth(2));
+            draw((3,0,0)--(1,0,1)--(1,2,1)--(3,2,0),blue+linewidth(2));
+            draw((3,0,0)--(1,0,1),blue+linewidth(2));
+            draw((1,0,0)--(1,0,1),blue+linewidth(2));
+            draw((1,2,0)--(1,2,1),blue+linewidth(2));
+
+            //shade faces
+            import three;
+            path3 p=(1,0,0)--(1,2,0)--(3,2,0)--(3,0,0);
+            draw(surface(p -- cycle), rgb(.6,.6,1)+opacity(0.7));
+            path3 p=(1,0,1)--(1,2,1)--(3,2,0)--(3,0,0);
+            draw(surface(p -- cycle), rgb(.6,.6,1)+opacity(0.7));
+            path3 p=(1,0,0)--(1,2,0)--(1,2,1)--(1,0,1);
+            draw(surface(p -- cycle), rgb(.6,.6,1)+opacity(0.7));
+            path3 p=(1,0,0)--(3,0,0)--(1,0,1);
+            draw(surface(p -- cycle), rgb(.6,.6,1)+opacity(0.7));
+            path3 p=(1,2,0)--(3,2,0)--(1,2,1);
+            draw(surface(p -- cycle), rgb(.6,.6,1)+opacity(0.7));
+
+            //labels and arrow
+            label("$z=\frac{1}{2}(3-x)$",(3,0,1.1));
+            draw((3,0.25,1)--(2,1,0.45),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1098,9 +2482,122 @@
           <m>\vec F = \langle xz,0,xz\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_05_ex_11_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_05_ex_11_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig13_06_ex_123D.asy in Chapter 13
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(12.1,-7.1,16);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-2,-1,1,2};
+            real[] myychoice={1,2,3,4};
+            real[] myzchoice={2,4,6,8};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-2.5,2.5);
+            pair ybounds=(-0.25,5);
+            pair zbounds=(-0.25,10);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //parabola in plane
+            triple g(real t) {return (t,4-t^2,0);}
+            path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+            triple g(real t) {return (t,4-t^2,2*(4-t^2));}
+            path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            //shade object
+            //import three;
+            //int k=12;
+            //for (int i=-2*k; i&lt;2*k; ++i)
+            //{
+            //path3 p=(i/k,4-(i/k)^2,0)--((i+1)/k,4-((i+1)/k)^2,0)--((i+1)/k,4-((i+1)/k)^2,2*(4-((i+1)/k)^2))--((i)/k,4-((i)/k)^2,2*(4-((i)/k)^2));
+            //draw(surface(p -- cycle), emissive(rgb(1,.6,.6)+opacity(0.7)));
+            //path3 p=(i/k,0,0)--(i/k,4-(i/k)^2,2*(4-(i/k)^2))--((i+1)/k,4-((i+1)/k)^2,2*(4-((i+1)/k)^2))--((i+1//)/k,0,0);
+            //draw(surface(p -- cycle), emissive(rgb(.6,.6,1)+opacity(0.7)));
+            //}
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y*(4-t.x^2),2*t.y*(4-t.x^2));//
+            }
+            surface s=surface(f,(-2,0),(2,1),16,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,(4-t.x^2),2*t.y*(4-t.x^2));//
+            }
+            surface s=surface(f,(-2,0),(2,1),16,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y*(4-t.x^2),0);//
+            }
+            surface s=surface(f,(-2,0),(2,1),16,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.5),meshpen=p);
+
+            //label and arrow
+            label("$z=2y$",(-2,2,7));
+            draw((-1.8,2,6.8)--(-1,2,4.1),Arrow3(size=2mm));
+            label("$y=4-x^2$",(2.5,2,0));
+            draw((2.3,2.5,0.2)--(1.55,2.25,2.5),Arrow3(size=2mm));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1117,9 +2614,121 @@
           <m>\vec F = \langle 0,y^3,0\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_16_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_16_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_05_ex_23_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(14,14,4);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={-2,2};
+            real[] myzchoice={1};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-2.5,2.5);
+            pair ybounds=(-2.5,2.5);
+            pair zbounds=(-0.25,1.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y,1-t.x^2);//
+            }
+            surface s=surface(f,(-1,-2),(1,2),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,-2,t.y*(1-t.x^2));//
+            }
+            surface s=surface(f,(-1,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,2,t.y*(1-t.x^2));//
+            }
+            surface s=surface(f,(-1,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            triple f(pair t) {
+              return (t.x,t.y,0);//
+            }
+            surface s=surface(f,(-1,-2),(1,2),2,2,Spline);
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            triple g(real t) {return (t,-2,1-t^2);}
+            path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (t,2,1-t^2);}
+            path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            draw((1,-2,0)--(1,2,0)--(-1,2,0)--(-1,-2,0)--cycle,blue+linewidth(2));
+
+            //label and arrow
+            label("$z=1-x^2$",(0,1,1.55));
+            draw((0,.9,1.45)--(0,.5,1.05),Arrow3(size=2mm));
+
+            //triple g(real t) {return (0,t,6-t^2);}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1143,9 +2752,104 @@
           <m>\vec F = \langle z-y^2,x,z\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_17_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_17_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_23_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(-10,22,1);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={1};
+            real[] myzchoice={.25};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-1.25,1.25);
+            pair ybounds=(-.25,1.25);
+            pair zbounds=(-.25,.3);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x-1+t.y*(2-2*t.x),t.x,(t.x-1+t.y*(2-2*t.x))*t.x);//
+            }
+            surface s=surface(f,(0,0),(1,1),8,8,usplinetype=new splinetype[] {notaknot,notaknot,monotonic});
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple g(real t) {return (t,-2,1-t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (t,0,0);}
+            path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (t,1-t,t*(1-t));}
+            path3 mypath=graph(g,0,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (t,t+1,t*(t+1));}
+            path3 mypath=graph(g,-1,0,operator ..);draw(mypath,blue+linewidth(2));
+
+            //draw((-1,0,0)--(1,0,0)--(0,1,0)--cycle,blue+linewidth(2));
+
+            //label and arrow
+            //label("$z=1-x^2$",(0,1,1.55));
+            //draw((0,.9,1.45)--(0,.5,1.05),Arrow3(size=2mm));
+
+            //triple g(real t) {return (0,t,6-t^2);}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1162,9 +2866,104 @@
           <m>\vec F = \langle -y,x,z\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_18_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_18_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_18_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(14,14,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-2,2};
+            real[] myychoice={-2,2};
+            real[] myzchoice={6};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-2.5,2.5);
+            pair ybounds=(-2.5,2.5);
+            pair zbounds=(-.25,6.5);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.y*cos(t.x),t.y*sin(t.x),(t.y*cos(t.x))^2+(t.y*sin(t.x))^3-3t.y*sin(t.x)+1);//
+            }
+            surface s=surface(f,(0,0),(2pi,2),16,8,Spline);
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple g(real t) {return (t,-2,1-t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (2cos(t),2sin(t),4cos(t)^2+8sin(t)^3-6sin(t)+1);}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (t,1-t,t*(1-t));}
+            //path3 mypath=graph(g,0,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (t,t+1,t*(t+1));}
+            //path3 mypath=graph(g,-1,0,operator ..);draw(mypath,blue+linewidth(2));
+
+            //draw((-1,0,0)--(1,0,0)--(0,1,0)--cycle,blue+linewidth(2));
+
+            //label and arrow
+            //label("$z=1-x^2$",(0,1,1.55));
+            //draw((0,.9,1.45)--(0,.5,1.05),Arrow3(size=2mm));
+
+            //triple g(real t) {return (0,t,6-t^2);}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1181,9 +2980,104 @@
           <m>\vec F = \langle -\frac13y,3x,\frac23y-3x\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_19_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_19_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_18_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(14,14,10);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-2,2};
+            real[] myychoice={-2,2};
+            real[] myzchoice={10};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-2.5,2.5);
+            pair ybounds=(-2.5,2.5);
+            pair zbounds=(-.25,11);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.y*cos(t.x),3*t.y*sin(t.x),-(t.y*cos(t.x))*2-3*(t.y*sin(t.x))+5);//
+            }
+            surface s=surface(f,(0,0),(2pi,1),16,8,Spline);
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple g(real t) {return (t,-2,1-t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            triple g(real t) {return (cos(t),3sin(t),-2cos(t)-3sin(t)+5);}
+            path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (t,1-t,t*(1-t));}
+            //path3 mypath=graph(g,0,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (t,t+1,t*(t+1));}
+            //path3 mypath=graph(g,-1,0,operator ..);draw(mypath,blue+linewidth(2));
+
+            //draw((-1,0,0)--(1,0,0)--(0,1,0)--cycle,blue+linewidth(2));
+
+            //label and arrow
+            //label("$z=1-x^2$",(0,1,1.55));
+            //draw((0,.9,1.45)--(0,.5,1.05),Arrow3(size=2mm));
+
+            //triple g(real t) {return (0,t,6-t^2);}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1202,9 +3096,104 @@
           <m>\vec F = \langle 5y^2,2y^2,y^2\rangle</m>.
         </p>
 
-        <p>
-          { \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 3Droll=0, 3Dortho=0.004999519791454077, 3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971, 3Dcoo=32.48771286010742 72.419189453125 49.87675094604492, 3Droo=200.00000360071368, 3Dlights=Headlamp,add3Djscript=asylabels.js} <img src="figures/fig14_07_ex_20_3D"/> }
-        </p>
+        <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+        3Droll=0,
+        3Dortho=0.004999519791454077,
+        3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
+        3Dcoo=32.48771286010742 72.419189453125 49.87675094604492,
+        3Droo=200.00000360071368,
+        3Dlights=Headlamp,
+        add3Djscript=asylabels.js} -->
+        <image xml:id="img_14_07_ex_20_3D">
+          <description></description>
+          <asymptote>
+
+            import graph3;
+
+            //ASY file for fig14_07_ex_20_3D.asy in Chapter 14
+
+            size(200,200,IgnoreAspect);
+            //currentprojection=perspective(7,2,1);
+            currentprojection=orthographic(11,11,80);
+            defaultrender.merge=true;
+
+            // setup and draw the axes
+            real[] myxchoice={-1,1};
+            real[] myychoice={-1,1};
+            real[] myzchoice={5,10,15};
+            defaultpen(0.5mm);
+
+            pair xbounds=(-1.25,1.25);
+            pair ybounds=(-1.25,1.25);
+            pair zbounds=(-.25,18);
+
+            xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+            yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+            zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+
+            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+            label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+
+            //Draw paraboloid over unit disk
+            triple f(pair t) {
+              return (t.x,t.y,10-5t.x-2t.y);//
+            }
+            surface s=surface(f,(-1,-1),(1,1),3,3,Spline);
+            pen p=rgb(0,0,.7);
+            draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple g(real t) {return (t,-2,1-t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (cos(t),3sin(t),-2cos(t)-3sin(t)+5);}
+            //path3 mypath=graph(g,0,2pi,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (t,1-t,t*(1-t));}
+            //path3 mypath=graph(g,0,1,operator ..);draw(mypath,blue+linewidth(2));
+
+            //triple g(real t) {return (t,t+1,t*(t+1));}
+            //path3 mypath=graph(g,-1,0,operator ..);draw(mypath,blue+linewidth(2));
+
+            draw((1,1,3)--(-1,1,13)--(-1,-1,17)--(1,-1,7)--cycle,blue+linewidth(2));
+
+            //label and arrow
+            //label("$z=1-x^2$",(0,1,1.55));
+            //draw((0,.9,1.45)--(0,.5,1.05),Arrow3(size=2mm));
+
+            //triple g(real t) {return (0,t,6-t^2);}
+            //path3 mypath=graph(g,-2,2,operator ..);draw(mypath,blue+linewidth(2));
+
+            // ////////////////////////////////////
+            //    SAMPLE CODE
+
+            // defaultpen(fontsize(10pt));
+
+            //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+            //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //triple f(pair t) {
+            //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+            //}
+            //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+            //pen p=rgb(0,0,.7);
+            //draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+
+            //draw(s,paleblue);
+            //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+            //draw(mypath,2bp+blue);
+
+            //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+            //path3 mypath=graph(g,-1,1,operator ..);
+            //draw(mypath,blue+dashed+linewidth(2));
+
+            //pen p=rgb(0,0,1);
+            //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+
+          </asymptote>
+        </image>
       </statement>
       <answer>
         <p>
@@ -1313,7 +3302,9 @@
       </answer>
     </exercise>
 
-    <p>
+    <!-- ToDo: Figure out this disaster below -->
+
+    <!-- <p>
       \appendix {
     </p>
 
@@ -1326,11 +3317,13 @@
     <p>
       \qendheader \newgeometry{inner=72pt,
       outer=36pt,textheight=10in, marginparwidth=150pt, marginparsep=32pt, }
-    </p>
+    </p> -->
   </subsection>
 
+  <!-- ToDo: Nice title -->
+
   <subsection>
-    <title>PLACEHOLDER</title>
+    <title>PLACEHOLDER</title> 
     <p>
       \cleardoublepage
     </p>
