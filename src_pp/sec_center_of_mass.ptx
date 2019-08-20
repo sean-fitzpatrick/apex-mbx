@@ -303,6 +303,8 @@
           <image xml:id="img_mass2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
               import labelpath3;
@@ -467,6 +469,8 @@
               <image xml:id="img_mass3a_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -556,6 +560,8 @@
               <image xml:id="img_mass3b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 

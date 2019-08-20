@@ -62,6 +62,8 @@
               <image xml:id="img_trip1a_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -165,6 +167,8 @@
               <image xml:id="img_trip1b_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -336,6 +340,8 @@
           <image xml:id="img_tripintroa_3D">
           <description></description>
           <asymptote>
+
+            usepackage("amsmath")
             
             import graph3;
 
@@ -420,6 +426,8 @@
           <image xml:id="img_tripintrob_3D">
           <description></description>
           <asymptote>
+
+            usepackage("amsmath")
             
             import graph3;
 
@@ -739,6 +747,8 @@
               <image xml:id="img_trip2a1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -823,6 +833,8 @@
               <image xml:id="img_trip2a2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -990,6 +1002,8 @@
               <image xml:id="img_trip2b1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1075,6 +1089,8 @@
               <image xml:id="img_trip2b2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1283,6 +1299,8 @@
               <image xml:id="img_trip2bb1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1389,6 +1407,8 @@
               <image xml:id="img_trip2bb2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1555,6 +1575,8 @@
               <image xml:id="img_trip3a1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1656,6 +1678,8 @@
               <image xml:id="img_trip3a2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1837,6 +1861,8 @@
               <image xml:id="img_trip3b1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1930,6 +1956,8 @@
               <image xml:id="img_trip3b2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2108,6 +2136,8 @@
               <image xml:id="img_trip4a1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2210,6 +2240,8 @@
               <image xml:id="img_trip4a2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2400,6 +2432,8 @@
               <image xml:id="img_trip4b1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2484,6 +2518,8 @@
               <image xml:id="img_trip4b2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2651,6 +2687,8 @@
               <image xml:id="img_trip5a1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2743,6 +2781,8 @@
               <image xml:id="img_trip5a2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -2834,6 +2874,8 @@
               <image xml:id="img_trip5a3_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -3021,6 +3063,8 @@
               <image xml:id="img_trip5b1_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -3114,6 +3158,8 @@
               <image xml:id="img_trip5b2_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -3596,6 +3642,8 @@
           <image xml:id="img_trip7_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -3743,6 +3791,8 @@
           <image xml:id="img_trip8_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -4170,6 +4220,8 @@
                 <image xml:id="img_13_06_ex_07_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -4325,6 +4377,8 @@
                 <image xml:id="img_13_06_ex_08_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -4483,6 +4537,8 @@
                 <image xml:id="img_13_06_ex_09_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -4642,6 +4698,8 @@
                 <image xml:id="img_13_06_ex_10_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -4789,6 +4847,8 @@
                 <image xml:id="img_13_06_ex_11_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -4930,6 +4990,8 @@
                 <image xml:id="img_13_06_ex_12_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -5087,6 +5149,8 @@
                 <image xml:id="img_13_06_ex_13_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -5248,6 +5312,8 @@
                 <image xml:id="img_13_06_ex_14_3D">
               <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 

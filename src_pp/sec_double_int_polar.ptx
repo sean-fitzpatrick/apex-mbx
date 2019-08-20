@@ -256,6 +256,8 @@
           <image xml:id="img_doublepol1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -408,6 +410,8 @@
               <image xml:id="img_doublepol2b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -592,6 +596,8 @@
           <image xml:id="img_doublepol5">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -793,6 +799,8 @@
           <image xml:id="img_doublepol4">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 

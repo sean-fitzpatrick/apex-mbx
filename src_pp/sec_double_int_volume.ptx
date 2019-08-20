@@ -118,6 +118,8 @@
           <image xml:id="img_double_introb_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -467,6 +469,8 @@
       <image xml:id="img_double_intro3">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -684,6 +688,8 @@
           <image xml:id="img_double1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -813,6 +819,8 @@
           <image xml:id="img_double2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1080,6 +1088,8 @@
           <image xml:id="img_double3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1235,6 +1245,8 @@
           <image xml:id="img_double4">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1490,6 +1502,8 @@
           <image xml:id="img_double6b">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1662,6 +1676,8 @@
           <image xml:id="img_double8">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1791,6 +1807,8 @@
       <image xml:id="img_double_summary">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 

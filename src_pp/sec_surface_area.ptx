@@ -42,6 +42,8 @@
           <image xml:id="img_sa_intro1_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -173,6 +175,8 @@
           <image xml:id="img_sa_intro2_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -379,6 +383,8 @@
           <image xml:id="img_surfacearea1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -597,6 +603,8 @@
           <image xml:id="img_surfacearea3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -745,6 +753,8 @@
           <image xml:id="img_surfacearea4">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1071,6 +1081,8 @@
               <image xml:id="img_13_05_ex_05_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1182,6 +1194,8 @@
               <image xml:id="img_13_05_ex_06_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1296,6 +1310,8 @@
               <image xml:id="img_13_05_ex_07_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1411,6 +1427,8 @@
               <image xml:id="img_13_05_ex_08_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
