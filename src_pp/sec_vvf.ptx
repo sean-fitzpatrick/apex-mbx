@@ -273,6 +273,8 @@
           <image xml:id="img_vvf2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 

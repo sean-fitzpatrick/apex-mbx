@@ -1066,6 +1066,8 @@
                 <image xml:id="img_motion6">
                   <description></description>
                   <asymptote>
+
+                    usepackage("amsmath")
                     
                     import graph3;
 

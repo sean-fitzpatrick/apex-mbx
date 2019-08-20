@@ -817,6 +817,8 @@
               <image xml:id="img_curvature4b_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 

@@ -85,6 +85,8 @@
           <image xml:id="img_tannorm1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -392,6 +394,8 @@
           <image xml:id="img_tannorm3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
