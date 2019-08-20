@@ -94,12 +94,12 @@
     </p>
   </introduction>
 
-  <xi:include  href="sec_line_int_intro.ptx" />
+  <!-- <xi:include  href="sec_line_int_intro.ptx" /> -->
   <!-- <xi:include  href="sec_vector_fields.ptx" /> -->
   <!-- <xi:include  href="sec_line_int_vf.ptx" /> -->
   <!-- <xi:include  href="sec_greensthm.ptx" /> -->
   <!-- <xi:include  href="sec_parametric_surfaces.ptx" /> -->
-  <!-- <xi:include  href="sec_surface_integral.ptx" /> -->
+  <xi:include  href="sec_surface_integral.ptx" />
   <!-- <xi:include  href="sec_stokes_divergence.ptx" /> -->
 </chapter>
 
