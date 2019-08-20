@@ -291,10 +291,12 @@
 
     <!-- <xi:include href="./chap_multi.ptx" /> -->
 
-    <!-- <xi:include href="./chapter13.ptx" /> -->
+    <xi:include href="./chapter13.ptx" />
 
-    <xi:include href="./chapter_vector_calc.ptx" />
+    <!-- <xi:include href="./chapter_vector_calc.ptx" /> -->
 
+    <xi:include href="./appendix.ptx" />
+    
     <backmatter>
       <index>
       <title>Index</title>
