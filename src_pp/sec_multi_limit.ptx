@@ -388,12 +388,6 @@
           currentprojection=orthographic((10.3,-3.3,2.4),(-0.004,0.001,0.016),(0,0,0),1,(0,0));
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
           // setup and draw the axes
           real[] myxchoice={};
           real[] myychoice={};
@@ -933,12 +927,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(31,31,2.3);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-10,10};
