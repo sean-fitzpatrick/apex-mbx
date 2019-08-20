@@ -72,12 +72,6 @@
               currentprojection=orthographic(5.4,-12.7,20.2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2};
               real[] myychoice={2,4};
@@ -180,12 +174,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(5.4,-12.7,20.2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -358,12 +346,6 @@
             currentprojection=orthographic(4,4,2);
             defaultrender.merge=true;
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
             // setup and draw the axes
             real[] myxchoice={-2,2};
             real[] myychoice={-2,2};
@@ -447,12 +429,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic(4,4,2);
             defaultrender.merge=true;
-
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
             // setup and draw the axes
             real[] myxchoice={};
@@ -773,12 +749,6 @@
               currentprojection=orthographic(7.2,10.1,6.5);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2,4};
               real[] myychoice={5};
@@ -862,12 +832,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.2,10.1,6.5);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -1036,12 +1000,6 @@
               currentprojection=orthographic(7.2,10.1,6.5);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2,4};
               real[] myychoice={5};
@@ -1126,12 +1084,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.2,10.1,6.5);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -1341,12 +1293,6 @@
               currentprojection=orthographic(6.7,1.9,11.5);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2};
               real[] myychoice={1,2};
@@ -1452,12 +1398,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(6.7,1.9,11.5);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -1625,12 +1565,6 @@
               currentprojection=orthographic(7.1,1.9,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={-1,-0.5};
@@ -1731,12 +1665,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.1,1.9,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -1919,12 +1847,6 @@
               currentprojection=orthographic(7.1,1.9,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={-1,-0.5};
@@ -2017,12 +1939,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.1,1.9,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -2202,12 +2118,6 @@
               currentprojection=orthographic(11.2,8.3,2.7);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2,4};
               real[] myychoice={2,4};
@@ -2309,12 +2219,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(11.2,8.3,2.7);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -2506,12 +2410,6 @@
               currentprojection=orthographic(11.2,8.3,2.7);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2,4};
               real[] myychoice={2,4};
@@ -2595,12 +2493,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -2769,12 +2661,6 @@
               currentprojection=orthographic(8.4,6.8,12.6);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -2867,12 +2753,6 @@
               currentprojection=orthographic(8.4,6.8,12.6);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -2963,12 +2843,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8.4,6.8,12.6);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -3157,12 +3031,6 @@
               currentprojection=orthographic(8.4,6.8,12.6);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -3255,12 +3123,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8.4,6.8,12.6);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -3744,12 +3606,6 @@
               currentprojection=orthographic(7.2,10.1,6.5);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={2,4};
               real[] myychoice={5};
@@ -3896,12 +3752,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.1,1.9,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -4330,12 +4180,6 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={1,2,3};
               real[] myychoice={1,2,3};
@@ -4490,12 +4334,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8.8,7.8,3);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={1,2,3};
@@ -4654,12 +4492,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={1,2};
@@ -4820,12 +4652,6 @@
               currentprojection=orthographic(14,10,21);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={3};
               real[] myychoice={3,6,9};
@@ -4973,12 +4799,6 @@
               currentprojection=orthographic(7.2,-5.1,8);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={1,2};
               real[] myychoice={1,2};
@@ -5119,12 +4939,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(12.1,-7.1,16);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-2,-1,1,2};
@@ -5282,12 +5096,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={1};
@@ -5449,12 +5257,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={1,2};
