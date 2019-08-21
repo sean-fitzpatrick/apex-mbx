@@ -191,6 +191,8 @@
           <image xml:id="img_multi_extreme1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -201,12 +203,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -326,6 +322,8 @@
           <image xml:id="img_multi_extreme2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -336,12 +334,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -476,6 +468,8 @@
           <image xml:id="img_multi_extreme3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -486,12 +480,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(3,10,9);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -877,6 +865,8 @@
           <image xml:id="img_multi_extreme5">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -887,12 +877,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(24,.7,11.5);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-2};
@@ -1057,6 +1041,8 @@
               <image xml:id="img_conopt1a_3D">
                 <description></description>
                 <asymptote>
+
+                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -1067,12 +1053,6 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(5.6,-7.8,20.3);
                   defaultrender.merge=true;
-
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,2};
@@ -1159,19 +1139,21 @@
                 
                 \begin{tikzpicture}
 
-                \begin{axis}[%
-			          xtick={-2,2},%
-                %			ytick={-6,-4,-2,0,2,4,6},
-                extra x ticks={-1,1},%
-                ymin=-2.5,ymax=1.5,%
-                xmin=-2.1,xmax=2.1%
+                \begin{axis}[
+			          xtick={-2,2},
+                extra x ticks={-1,1},
+                ymin=-2.5,ymax=1.5,
+                xmin=-2.1,xmax=2.1
                 ]
 
-                \draw [thick,{\colorone}] (axis cs:-1,-2)-- node [black,pos=.2,above,sloped] {\scriptsize $y=3x+1$} (axis cs:0,1)--node [black,pos=.6,below,sloped] {\scriptsize $y=-3/2x+1$} (axis cs:2,-2)--node [black,pos=.5,below,sloped] {\scriptsize $y=-2$}(axis cs:-1,-2);
+                \addplot [firstcurvestyle,-,domain=-1:0] {3*x+1} node [black,pos=.2,above,sloped] {\scriptsize $y=3x+1$};
+                \addplot [firstcurvestyle,-,domain=0:2] {-(3/2)*x+1} node [black,pos=.6,below,sloped] {\scriptsize $y=-3/2x+1$};
+                \addplot [firstcurvestyle,-,domain=-1:2] {-2} node [black,pos=.5,below] {\scriptsize $y=-2$};
 
-                \fill[black,draw=black] (axis cs:-1,-2) circle (1.5pt);
-                \fill[black,draw=black] (axis cs:2,-2) circle (1.5pt);
-                \fill[black,draw=black] (axis cs:0,1) circle (1.5pt);
+                \fill [black] (axis cs:-1,-2) circle (1.5pt);
+                \fill [black] (axis cs:2,-2) circle (1.5pt);
+                \fill [black] (axis cs:0,1) circle (1.5pt);
+
                 \end{axis}
 
                 \end{tikzpicture}
@@ -1303,6 +1285,8 @@
           <image xml:id="img_conopt1bX">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1313,12 +1297,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(2.6,-7.,24);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,2};
@@ -1516,6 +1494,8 @@
           <image xml:id="img_conopt2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1526,12 +1506,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(176,-2075,580);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={20};

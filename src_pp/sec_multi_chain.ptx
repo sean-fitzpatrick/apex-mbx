@@ -75,6 +75,8 @@
       <image xml:id="img_mchain_intro">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -85,12 +87,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
           // setup and draw the axes
           real[] myxchoice={2,4};
@@ -326,6 +322,8 @@
           <image xml:id="img_mchain2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -336,12 +334,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(6.5,3.4,1.9);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
