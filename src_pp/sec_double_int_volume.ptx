@@ -56,22 +56,14 @@
             <latex-image>
             
             \begin{tikzpicture}
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick={4,5,1,2,3},%
-            %ytick={1,2,3,4,5},
-            %extra y ticks={.1,.9},
-            %extra y tick labels={$a$,$b$},
-            %			ytick={-1,1,2,3},
-            %%extra y ticks={-5,-3,...,7},%
-            %			minor x tick num=4,
-            ymin=-.85,ymax=.85,%
-            xmin=-.3,xmax=2.2%
+
+            \begin{axis}[
+            axis on top,
+            ymin=-.85,ymax=.85,
+            xmin=-.3,xmax=2.2
             ]
 
-            \addplot+[samples=40,domain=-90:90] ({cos(x)*(1+cos(2*x))},{sin(x)*(1+cos(2*x))});
+            \addplot+ [-,domain=-90:90,samples=80] ({cos(x)*(1+cos(2*x))},{sin(x)*(1+cos(2*x))});
 
             \draw (axis cs: 0,-.3) -- (axis cs:0,.3)
                   (axis cs: .2,-.4) -- (axis cs:.2,.4)
@@ -126,6 +118,8 @@
           <image xml:id="img_double_introb_3D">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -135,12 +129,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.5,3.1,3);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -481,6 +469,8 @@
       <image xml:id="img_double_intro3">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -490,12 +480,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(5,5.5,1.8);
           defaultrender.merge=true;
-
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
           // setup and draw the axes
           real[] myxchoice={2};
@@ -704,6 +688,8 @@
           <image xml:id="img_double1">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -713,12 +699,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(10,-8,25);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={1,2,3,4};
@@ -839,6 +819,8 @@
           <image xml:id="img_double2">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -848,12 +830,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(1.6,-5.5,12.4);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={1,2,3,4};
@@ -1063,7 +1039,7 @@
         
         \begin{tikzpicture}
 
-        \draw [{\colorone},thick,fill={\coloronefill},smooth] plot coordinates {(0,2.)(0.06639,2.527)(0.2407,2.839)(0.4857,3.009)(0.7641,3.112)(1.039,
+        \draw [firstcolor,thick,fill=firstcolor!15,smooth] plot coordinates {(0,2.)(0.06639,2.527)(0.2407,2.839)(0.4857,3.009)(0.7641,3.112)(1.039,
         3.221)(1.294,3.367)(1.532,3.53)(1.759,3.689)(1.98,3.823)(2.2,3.915)(2.
         42,3.967)(2.64,3.992)(2.86,4.)(3.08,4.)(3.305,3.987)(3.543,3.93)(3.
         808,3.797)(4.107,3.558)(4.45,3.185)(4.815,2.703)(5.17,2.152)(5.483,1.
@@ -1074,7 +1050,7 @@
         1.558,-2.06)(1.299,-1.734)(1.039,-1.443)(0.7641,-1.222)(0.4857,-0.
         9779)(0.2407,-0.5015)(0.06639,0.4201)(0,2.)};
 
-        \draw [thick,{\colorone}] (3,4) -- (4,-3);
+        \draw [thick,firstcolor] (3,4) -- (4,-3);
 
         \draw (2,1) node {$R_1$};
         \draw (5,.5) node {$R_2$};
@@ -1112,6 +1088,8 @@
           <image xml:id="img_double3">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1121,12 +1099,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(.92,4,3.7);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -1273,6 +1245,8 @@
           <image xml:id="img_double4">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1282,12 +1256,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(16,6.2,5.6);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -1450,25 +1418,19 @@
             
             \begin{tikzpicture}
 
-            \begin{axis}[%
-            axis on top,%
-            %x=.37\marginparwidth,
-            %y=.37\marginparwidth,
-            %xtick={4,5,1,2,3},%
-            %ytick={1,2,3,4,5},
-            %extra y ticks={.1,.9},
-            %extra y tick labels={$a$,$b$},
-            %			ytick={-1,1,2,3},
-            %%extra y ticks={-5,-3,...,7},%
-            %			minor x tick num=4,
-            ymin=-.5,ymax=3.5,%
-            xmin=-.5,xmax=3.5%
+            \begin{axis}[
+            axis on top,
+            ymin=-.5,ymax=3.5,
+            xmin=-.5,xmax=3.5
             ]
 
-            \draw [very thick,{\colortwo}] (axis cs:-.5,0) -- (axis cs:3.5,0)
-                              (axis cs:-.5,3) -- (axis cs:3.5,3);
-            \draw [very thick,{\colorone}] (axis cs:3,-.5) -- (axis cs:3,3.5)
-                              (axis cs:-.5,-.5) -- node [above,black,pos=.5,sloped] {\scriptsize $y=x$} (axis cs: 3.5,3.5);
+            \addplot+ [-,very thick,domain=-.5:3.5] {x} node [pos=.5,sloped,above,black] {\scriptsize $y=x$};
+
+            \draw [very thick,firstcolor] (axis cs:3,-.5) -- (axis cs:3,3.5);
+
+            \draw [very thick,secondcolor] (axis cs:-.5,0) -- (axis cs:3.5,0)
+                                           (axis cs:-.5,3) -- (axis cs:3.5,3);
+                                          
             \draw (axis cs:2,1) node {$R$}; 
 
             \end{axis}
@@ -1540,6 +1502,8 @@
           <image xml:id="img_double6b">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1549,12 +1513,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(6.3,9.6,2.4);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -1718,6 +1676,8 @@
           <image xml:id="img_double8">
             <description></description>
             <asymptote>
+
+              usepackage("amsmath")
               
               import graph3;
 
@@ -1727,12 +1687,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(16,6.2,5.6);
               defaultrender.merge=true;
-
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -1853,6 +1807,8 @@
       <image xml:id="img_double_summary">
         <description></description>
         <asymptote>
+
+          usepackage("amsmath")
           
           import graph3;
 
@@ -1862,12 +1818,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(8.2,4.6,1.5);
           defaultrender.merge=true;
-
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
           // setup and draw the axes
           real[] myxchoice={2};
@@ -2414,26 +2364,18 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={1},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={1},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-.1,ymax=1.5,%
-                      xmin=-.1,xmax=1.5%
+                      ymin=-.1,ymax=1.5,
+                      xmin=-.1,xmax=1.5
                       ]
 
-                      \addplot+[domain=-.1:1.1,samples=20] ({x},{x^2});
-                      \addplot+[domain=-.1:1.1,samples=20] ({x^2},{x});
+                      \addplot [firstcurvestyle,-,domain=-.1:1.1] ({x^2},{x}) node [pos=.5,sloped,above,black] {\scriptsize$y=\sqrt{x}$};
+                      \addplot [firstcurvestyle,-,domain=-.1:1.1] ({x},{x^2}) node [pos=.5,sloped,below,black] {\scriptsize$y=x^2$};
 
-                      \draw (axis cs: .5,.5) node {$R$}
-                            (axis cs: .5,.9) node {\scriptsize$y=\sqrt{x}$}
-                            (axis cs: .85,.4) node {\scriptsize$y=x^2$};
+                      \draw (axis cs: .5,.5) node {$R$};
 
                       \end{axis}
 
@@ -2483,31 +2425,23 @@
                       <description></description>
                       <latex-image>
                       
-                      \begin{tikzpicture}
+                      \begin{tikzpicture}[&gt;=stealth]
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={1},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={1},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-1.5,ymax=1.5,%
-                      xmin=-1.5,xmax=1.5%
+                      ymin=-1.5,ymax=1.5,
+                      xmin=-1.5,xmax=1.5
                       ]
 
-                      \addplot+[domain=-1.1:1.1,samples=20] ({x},{x^3});
-                      \addplot+[domain=-1.1:1.1,samples=20] ({x^3},{x});
+                      \addplot [firstcurvestyle,-,domain=-1.1:1.1,samples=60] ({x^3},{x}) node [pos=.85,above left,black] {\scriptsize$y=\sqrt[3]{x}$};
+                      \addplot [firstcurvestyle,-,domain=-1.1:1.1,samples=60] ({x},{x^3}) node [pos=.75,below right,black] {\scriptsize$y=x^3$};;
 
-                      \draw (axis cs: -.5,.5) node (A) {$R$}
-                            (axis cs: .5,1.1) node {\scriptsize$y=\sqrt[3]{x}$}
-                            (axis cs: 1.05,.4) node {\scriptsize$y=x^3$};
+                      \draw (axis cs: -.5,.5) node (A) {$R$};
 
-                      \draw [-&gt;,&gt;=stealth] (A) -- (axis cs: .5,.5);
-                      \draw [-&gt;,&gt;=stealth] (A) -- (axis cs: -.5,-.5);
+                      \draw [-&gt;] (A) -- (axis cs: .5,.5);
+                      \draw [-&gt;] (A) -- (axis cs: -.5,-.5);
 
                       \end{axis}
 
@@ -2561,21 +2495,15 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={-1,1},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={1,-1},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-1.1,ymax=1.1,%
-                      xmin=-1.1,xmax=1.1%
+                      ymin=-1.1,ymax=1.1,
+                      xmin=-1.1,xmax=1.1
                       ]
 
-                      \draw [very thick,{\colorone}] (axis cs:-1,-1) -- (axis cs:1,-1) --(axis cs:1,1) --(axis cs:-1,1) --cycle;
+                      \draw [very thick,firstcolor] (axis cs:-1,-1) -- (axis cs:1,-1) -- (axis cs:1,1) -- (axis cs:-1,1) -- cycle;
 
                       \draw (axis cs: .5,.5) node {$R$};
 
@@ -2630,26 +2558,19 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={1},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={1},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-.5,ymax=1.2,%
-                      xmin=-.5,xmax=1.2%
+                      ymin=-.5,ymax=1.2,
+                      xmin=-.5,xmax=1.2
                       ]
 
-                      \addplot+[domain=-.25:1.1,samples=20] ({x},{1});
-                      \addplot+[domain=-.25:1.1,samples=20] ({x^2},{x});
-                      \addplot+[domain=-.25:1.1,samples=20] ({0},{x});
+                      \addplot [firstcurvestyle,-,domain=-.25:1.1] ({x},{1});
+                      \addplot [firstcurvestyle,-,domain=-.25:1.1] ({x^2},{x}) node [pos=.5,below right,black] {\scriptsize $x=y^2$};
+                      \addplot [firstcurvestyle,-,domain=-.25:1.1] ({0},{x});
 
-                      \draw (axis cs: .25,.75) node {$R$}
-                            (axis cs: .5,.5) node {\scriptsize $x=y^2$};
+                      \draw (axis cs: .25,.75) node {$R$};
 
                       \end{axis}
 
@@ -2702,26 +2623,19 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={1,2},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={1,2,3},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-.5,ymax=3.5,%
-                      xmin=-.5,xmax=2.5%
+                      ymin=-.5,ymax=3.5,
+                      xmin=-.5,xmax=2.5
                       ]
 
-                      \addplot+[domain=-.25:2.25,samples=20] ({x},{0});
-                      \addplot+[domain=-.25:2.25,samples=20] ({x},{3-3/2*x});
-                      \addplot+[domain=-.25:3.25,samples=20] ({0},{x});
+                      \addplot [firstcurvestyle,-,domain=-.25:2.25] ({x},{0});
+                      \addplot [firstcurvestyle,-,domain=-.25:2.25] ({x},{3-3/2*x}) node [pos=.4,sloped,above,black] {\scriptsize $3x+2y=6$};
+                      \addplot [firstcurvestyle,-,domain=-.25:3.25] ({0},{x});
 
-                      \draw (axis cs: .75,1) node {$R$}
-                            (axis cs: 1,2) node [rotate=-40] {\scriptsize $3x+2y=6$};
+                      \draw (axis cs: .75,1) node {$R$};
 
                       \end{axis}
 
@@ -2776,26 +2690,18 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={1,2,3},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={1,2,3},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-.5,ymax=1.25,%
-                      xmin=-.5,xmax=3.25%
+                      ymin=-.5,ymax=1.25,
+                      xmin=-.5,xmax=3.25
                       ]
 
-                      \addplot+[domain=.5:3.25,samples=20] ({x},{ln(x)});
-                      \addplot+[domain=-.25:3.25,samples=20] ({x},{1/1.71828*(x-1)});
+                      \addplot [firstcurvestyle,-,domain=.5:3.25] ({x},{ln(x)}) node [pos=.7,sloped,above,black] {\scriptsize $y=\ln(x)$};
+                      \addplot [firstcurvestyle,-,domain=-.25:3.25] ({x},{1/e*(x-1)}) node [pos=.6,below right,black] {\scriptsize $y=\frac{1}{1-e}(x-1)$};
 
-                      \draw (axis cs: 1,.5) node (A) {$R$}
-                            (axis cs: 2,.9) node [rotate=40] {\scriptsize $y=\ln(x) $}
-                            (axis cs: 2.5,.3) node [rotate=0] {\scriptsize $y=\frac{1}{1-e}(x-1)$};
+                      \draw (axis cs: 1,.5) node (A) {$R$};
 
                       \draw[-&gt;,&gt;=stealth] (A) -- (axis cs:1.8,.5);
 
@@ -2850,21 +2756,15 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={-3,3},
-                      %%
-                      %			extra x ticks={.33},
-                      %			extra x tick labels={$1/3$},
                       ytick={-3,3},
-                      %%extra y ticks={-5,-3,...,7},%
-                      ymin=-3.1,ymax=3.1,%
-                      xmin=-3.7,xmax=3.7%
+                      ymin=-3.1,ymax=3.1,
+                      xmin=-3.7,xmax=3.7
                       ]
 
-                      \addplot+[domain=0:180,samples=30] ({3*cos(x)},{3*sin(x)})--cycle;
+                      \addplot+ [-,domain=0:180,samples=40] ({3*cos(x)},{3*sin(x)}) --cycle;
 
                       \draw (axis cs: 1,1) node (A) {$R$};
 
@@ -2919,12 +2819,9 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
-                      axis on top,%
-                      %x=.37\marginparwidth,
-                      %y=.37\marginparwidth,
+                      \begin{axis}[
+                      axis on top,
                       xtick={1,2},
-                      %%
                       extra x ticks={2.718},
                       extra x tick labels={$e$},
                       ytick={1},
@@ -2933,13 +2830,14 @@
                       xmin=-.5,xmax=3.5%
                       ]
 
-                      \addplot+[domain=.5:3.25,samples=30] ({x},{ln(x)});
-                      \addplot+[domain=-.5:3.25,samples=2] ({x},{0});
-                      \addplot+[domain=-.5:3.25,samples=20] ({x},{x/2.71828});
+                      \addplot [firstcurvestyle,-,domain=.5:3.25] ({x},{ln(x)});
+                      \addplot [firstcurvestyle,-,domain=-.5:3.25] ({x},{0});
+                      \addplot [firstcurvestyle,-,domain=-.5:3.25] ({x},{x/e});
 
                       \draw (axis cs: .8,.1) node (A) {$R$};
 
                       \filldraw (axis cs:2.718,1) circle (1.5pt);
+                      
                       \draw (axis cs:2.718,1) node [below right] {\scriptsize $(e,1)$};
 
                       \end{axis}
