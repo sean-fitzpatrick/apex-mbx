@@ -180,7 +180,7 @@
     <p>
       The next theorem extends this understanding by connecting the dot product to magnitudes and angles.
       Given vectors <m>\vec u</m> and <m>\vec v</m> in the plane,
-      an angle <m>\theta</m> is clearly formed when <m>\vec u</m> and <m>\vec v</m> are drawn with the same initial point as illustrated in <xref ref="fig_dotpangle">Figure</xref>(a). (We always take <m>\theta</m> to be the angle in <m>[0,\pi]</m> as two angles are actually created.)
+      an angle <m>\theta</m> is clearly formed when <m>\vec u</m> and <m>\vec v</m> are drawn with the same initial point as illustrated in <xref ref="fig_dotpanglea">Figure</xref>. (We always take <m>\theta</m> to be the angle in <m>[0,\pi]</m> as two angles are actually created.)
     </p>
 
     <figure xml:id="fig_dotpangle">
@@ -207,7 +207,7 @@
         <!-- figures/fig_dotpangle.tex END -->
         </figure>
 
-        <figure xml:id="fig_dotpanglea_3D">
+        <figure xml:id="fig_dotpangleb_3D">
           <caption/>
         <!--
          \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -219,7 +219,7 @@
         3Dlights=Headlamp,add3Djscript=asylabels.js]
          -->
         <!-- START figures/figdotpangle3D_3D.asy -->
-          <image xml:id="img_dotpanglea_3D">
+          <image xml:id="img_dotpangleb_3D">
             <description></description>
             <asymptote>
               
@@ -232,11 +232,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -314,7 +310,7 @@
       In that plane,
       we can again find an angle <m>\theta</m> between them
       (and again, <m>0\leq \theta\leq \pi</m>).
-      This is illustrated in <xref ref="fig_dotpangle">Figure</xref>(b).
+      This is illustrated in <xref ref="fig_dotpangleb_3D">Figure</xref>.
     </p>
 
     <p>
@@ -515,12 +511,8 @@
           currentprojection=orthographic(23,7.4,3.8);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
+          usepackage("amsmath");
+                                                  
           // setup and draw the axes
           real[] myxchoice={-5,5};
           real[] myychoice={2,4};
@@ -771,10 +763,10 @@
     <p>
       An important construction is illustrated in <xref ref="fig_dotpproj">Figure</xref>,
       where vectors <m>\vec u</m> and <m>\vec v</m> are sketched.
-      In part (a),
+      In <xref ref="fig_dotpproja">Figure</xref>,
       a dotted line is drawn from the tip of <m>\vec u</m> to the line containing <m>\vec v</m>,
       where the dotted line is orthogonal to <m>\vec v</m>.
-      In part (b),
+      In <xref ref="fig_dotpprojb">Figure</xref>,
       the dotted line is replaced with the vector <m>\vec z</m> and <m>\vec w</m> is formed,
       parallel to <m>\vec v</m>.
       It is clear by the diagram that <m>\vec u = \vec w+\vec z</m>.
@@ -788,7 +780,7 @@
 
     <p>
       The vectors <m>\vec w</m>,
-      <m>\vec z</m> and <m>\vec u</m> as shown in <xref ref="fig_dotpproj">Figure</xref> (b) form a right triangle,
+      <m>\vec z</m> and <m>\vec u</m> as shown in <xref ref="fig_dotpprojb">Figure</xref> form a right triangle,
       where the angle between <m>\vec v</m> and <m>\vec u</m> is labeled <m>\theta</m>.
       We can find <m>\vec w</m> in terms of <m>\vec v</m> and <m>\vec u</m>.
     </p>
@@ -932,7 +924,7 @@
                   <mrow>\amp = \la -\frac32,-\frac12\ra</mrow>
                 </md>.
                 Vectors <m>\vec u</m>, <m>\vec v</m> and
-                <m>\proj uv</m> are sketched in <xref ref="fig_dotp4">Figure</xref>(a).
+                <m>\proj uv</m> are sketched in <xref ref="fig_dotp4a">Figure</xref>.
                 Note how the projection is parallel to <m>\vec v</m>;
                 that is, it lies on the same line through the origin as <m>\vec v</m>,
                 although it points in the opposite direction.
@@ -972,7 +964,7 @@
                       </image>
                   </figure>
                   
-                  <figure xml:id="figdotp4b">
+                  <figure xml:id="figdotp4b_3D">
                     <caption/>
                     <!--
                       \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1003,11 +995,7 @@
                           //currentprojection=orthographic(2,8,6);
                           defaultrender.merge=true;
 
-                          usepackage("mathspec");
-                          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                          usepackage("amsmath");
 
                           // setup and draw the axes
                           real[] myxchoice={2};
@@ -1082,7 +1070,7 @@
                   <!-- figures/figdotp4b_3D.asy END -->
                     </figure>
                   
-                    <figure xml:id="figdotp4c">
+                    <figure xml:id="figdotp4c_3D">
                       <caption/>
                   <!--
                       \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1114,11 +1102,7 @@
                           currentprojection=orthographic(2,8,6);
                           defaultrender.merge=true;
 
-                          usepackage("mathspec");
-                          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                          usepackage("amsmath");
 
                           // setup and draw the axes
                           real[] myxchoice={2};
@@ -1205,11 +1189,11 @@
                   <mrow>\amp = \frac{6}{3}\la 1,1,1\ra</mrow>
                   <mrow>\amp = \la 2,2,2\ra</mrow>
                 </md>.
-                These vectors are sketched in <xref ref="fig_dotp4">Figure</xref>(b),
-                and again in part (c) from a different perspective.
+                These vectors are sketched in <xref ref="figdotp4b_3D">Figure</xref>,
+                and again in <xref ref="figdotp4c_3D">Figure</xref> from a different perspective.
                 Because of the nature of graphing these vectors,
-                the sketch in part (b) makes it difficult  to recognize that the drawn projection has the geometric properties it should.
-                The graph shown in part (c) illustrates these properties better.
+                the sketch in <xref ref="figdotp4b_3D">Figure</xref> makes it difficult to recognize that the drawn projection has the geometric properties it should.
+                The graph shown in <xref ref="figdotp4c_3D">Figure</xref> illustrates these properties better.
               </p>
             </li>
           </ol>
@@ -1385,11 +1369,11 @@
       <title>Orthogonally decomposing a force vector</title>
       <statement>
         <p>
-          Consider <xref ref="fig_dotp6">Figure</xref>(a),
+          Consider <xref ref="fig_dotp6a">Figure</xref>,
           showing a box weighing 50lb on a ramp that rises 5ft over a span of 20ft.
           Find the components of force,
           and their magnitudes,
-          acting on the box (as sketched in part (b) of the figure):
+          acting on the box (as sketched in <xref ref="fig_dotp6b">Figure</xref>):
         </p>
 
         <figure xml:id="fig_dotp6">

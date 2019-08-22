@@ -278,7 +278,7 @@
             <p>
               Using <m>P</m> as the initial point,
               we move 2 units in the positive <m>x</m>-direction and <m>-1</m> units in the positive <m>y</m>-direction to arrive at the terminal point <m>P\,'=(5,1)</m>,
-              as drawn in <xref ref="fig_vect1">Figure</xref>(a).
+              as drawn in <xref ref="fig_vect1a">Figure</xref>.
 
               The magnitude of <m>\vec v</m> is determined directly from the component form:
               <me>
@@ -342,11 +342,7 @@
                       currentprojection=orthographic(5,9,2);
                       defaultrender.merge=true;
 
-                      usepackage("mathspec");
-                      texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                      texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                      texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                      texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                      usepackage("amsmath");
 
                       // setup and draw the axes
                       real[] myxchoice={2};
@@ -424,7 +420,7 @@
               <me>
                 \vv{RS} = \la -1-(-3), 2-(-2)\ra = \la 2,4\ra
               </me>.
-              One can readily see from <xref ref="fig_vect1">Figure</xref>(a) that the <m>x</m>- and <m>y</m>-displacement of <m>\vv{RS}</m> is 2 and 4, respectively,
+              One can readily see from <xref ref="fig_vect1a">Figure</xref> that the <m>x</m>- and <m>y</m>-displacement of <m>\vv{RS}</m> is 2 and 4, respectively,
               as the component form suggests.
             </p>
           </li>
@@ -435,7 +431,7 @@
               we move 2 units in the positive <m>x</m>-direction,
               <m>-1</m> unit in the positive <m>y</m>-direction,
               and 3 units in the positive <m>z</m>-direction to arrive at the terminal point <m>Q' = (3,0,4)</m>,
-              illustrated in <xref ref="fig_vect1">Figure</xref>(b).
+              illustrated in <xref ref="fig_vect1b_3D">Figure</xref>.
 
               The magnitude of <m>\vec u</m> is:
               <me>
@@ -2007,61 +2003,65 @@
             </pg-code>
             </setup>
             <statement>
-          <!-- START figures/fig_10_02_ex_11.tex -->
-              <image xml:id="img_10_02_ex_11">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_11.tex -->
+                <image xml:id="img_10_02_ex_11">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                axis on top,
-                xtick=\empty,
-                ytick=\empty,
-                ymin=-4.5,ymax=4.5,
-                xmin=-4.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  xtick=\empty,
+                  ytick=\empty,
+                  ymin=-4.5,ymax=4.5,
+                  xmin=-4.5,xmax=4.5
+                  ]
 
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-4) node [black, left] {\scriptsize $\vec v$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-4) node [black, left] {\scriptsize $\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_10_02_ex_11.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_10_02_ex_11.tex END -->
+              </sidebyside>
             </statement>
             <solution>
-          <!-- START figures/fig_10_02_ex_11ans.tex -->
-              <image xml:id="img_10_02_ex_11ansX">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_11ans.tex -->
+                <image xml:id="img_10_02_ex_11ansX">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                axis on top,
-                xtick=\empty,
-                ytick=\empty,
-                ymin=-4.5,ymax=4.5,
-                xmin=-4.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  xtick=\empty,
+                  ytick=\empty,
+                  ymin=-4.5,ymax=4.5,
+                  xmin=-4.5,xmax=4.5
+                  ]
 
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-4)node [black, left] {\scriptsize $\vec v$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,1) node [above,black] {\scriptsize $\vec u$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-4)node [black, left] {\scriptsize $\vec v$};
 
-                \draw [-&gt;,thick,gray] (axis cs:0,0) -- (axis cs: 2,-3) node [black,below right] {\scriptsize $\vec u+\vec v$};
-                \draw [-&gt;,thick,gray] (axis cs:-1,-4) -- (axis cs: 3,1) node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
+                  \draw [-&gt;,thick,gray] (axis cs:0,0) -- (axis cs: 2,-3) node [black,below right] {\scriptsize $\vec u+\vec v$};
+                  \draw [-&gt;,thick,gray] (axis cs:-1,-4) -- (axis cs: 3,1) node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_10_02_ex_11ans.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_10_02_ex_11ans.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2074,61 +2074,65 @@
             </pg-code>
             </setup>
             <statement>
-          <!-- START figures/fig_10_02_ex_13.tex -->
-              <image xml:id="img_10_02_ex_13">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_13.tex -->
+                <image xml:id="img_10_02_ex_13">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                axis on top,
-                xtick=\empty,
-                ytick=\empty,
-                ymin=-4.5,ymax=4.5,
-                xmin=-4.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  xtick=\empty,
+                  ytick=\empty,
+                  ymin=-4.5,ymax=4.5,
+                  xmin=-4.5,xmax=4.5
+                  ]
 
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-1) node [black, below] {\scriptsize $\vec v$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-1) node [black, below] {\scriptsize $\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_10_02_ex_13.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_10_02_ex_13.tex END -->
+              </sidebyside>
             </statement>
             <solution>
-          <!-- START figures/fig_10_02_ex_13ans.tex -->
-              <image xml:id="img_10_02_ex_13ansX">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_13ans.tex -->
+                <image xml:id="img_10_02_ex_13ansX">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                axis on top,
-                xtick=\empty,
-                ytick=\empty,
-                ymin=-4.5,ymax=4.5,
-                xmin=-4.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  xtick=\empty,
+                  ytick=\empty,
+                  ymin=-4.5,ymax=4.5,
+                  xmin=-4.5,xmax=4.5
+                  ]
 
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
-                \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-1) node [black, left] {\scriptsize $\vec v$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: 3,3) node [above,black] {\scriptsize $\vec u$};
+                  \draw [-&gt;,thick,firstcolor] (axis cs:0,0) -- (axis cs: -1,-1) node [black, left] {\scriptsize $\vec v$};
 
-                \draw [-&gt;,thick,gray] (axis cs:0,0) -- (axis cs: 2,2) node [black,above left] {\scriptsize $\vec u+\vec v$};
-                \draw [-&gt;,thick,gray] (axis cs:-1,-2) -- (axis cs: 3,2) node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
+                  \draw [-&gt;,thick,gray] (axis cs:0,0) -- (axis cs: 2,2) node [black,above left] {\scriptsize $\vec u+\vec v$};
+                  \draw [-&gt;,thick,gray] (axis cs:-1,-2) -- (axis cs: 3,2) node [black,below,pos=.3,sloped] {\scriptsize $\vec u-\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_10_02_ex_13ans.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_10_02_ex_13ans.tex END -->
+              </sidebyside>
               <p>
                 Sketch of <m>\vec u-\vec v</m> shifted for clarity.
               </p>
@@ -2144,82 +2148,86 @@
             </pg-code>
             </setup>
             <statement>
-          <!-- START figures/fig_10_02_ex_14.tex -->
-              <image xml:id="img_10_02_ex_14">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_14.tex -->
+                <image xml:id="img_10_02_ex_14">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                axis on top,
-                axis lines=center,
-                view={135}{35},
-                xtick=\empty,
-                ytick=\empty,
-                ztick=\empty,
-                ymin=-1.5,ymax=1.5,
-                xmin=-1.5,xmax=1.5,
-                zmin=-0.5, zmax=1.5,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  axis lines=center,
+                  view={135}{35},
+                  xtick=\empty,
+                  ytick=\empty,
+                  ztick=\empty,
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-1.5,xmax=1.5,
+                  zmin=-0.5, zmax=1.5,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                    every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-            <!-- figures/fig_10_02_ex_14.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+              <!-- figures/fig_10_02_ex_14.tex END -->
+              </sidebyside>
             </statement>
             <solution>
-          <!-- START figures/fig_10_02_ex_14ans.tex -->
-              <image xml:id="img_10_02_ex_14ansX">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_14ans.tex -->
+                <image xml:id="img_10_02_ex_14ansX">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                width=175pt,
-                axis on top,
-                axis lines=center,
-                view={135}{35},
-                xtick=\empty,
-                ytick=\empty,
-                ztick=\empty,
-                ymin=-1.5,ymax=1.5,
-                xmin=-1.5,xmax=1.5,
-                zmin=-0.5, zmax=1.5,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \begin{axis}[
+                  width=175pt,
+                  axis on top,
+                  axis lines=center,
+                  view={135}{35},
+                  xtick=\empty,
+                  ytick=\empty,
+                  ztick=\empty,
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-1.5,xmax=1.5,
+                  zmin=-0.5, zmax=1.5,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                    every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:-1,1,0) node [black,right] {\scriptsize $\vec u$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:1,0,1) node [black,left] {\scriptsize $\vec v$};
 
-                \draw [thick,-&gt;,gray] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
-                \draw [thick,-&gt;,gray] (axis cs:1,0,1) -- (axis cs:-1,1,0) node [black,above,pos=.9] {\scriptsize $\vec u-\vec v$};
+                  \draw [thick,-&gt;,gray] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
+                  \draw [thick,-&gt;,gray] (axis cs:1,0,1) -- (axis cs:-1,1,0) node [black,above,pos=.9] {\scriptsize $\vec u-\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_10_02_ex_14ans.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_10_02_ex_14ans.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2232,81 +2240,85 @@
             </pg-code>
             </setup>
             <statement>
-          <!-- START figures/fig_10_02_ex_15.tex -->
-              <image xml:id="img_10_02_ex_15">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_15.tex -->
+                <image xml:id="img_10_02_ex_15">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                width=175pt,
-                axis lines=center,
-                view={135}{35},
-                xtick=\empty,
-                ytick=\empty,
-                ztick=\empty,
-                ymin=-1.5,ymax=1.5,
-                xmin=-1.5,xmax=1.5,
-                zmin=-0.5, zmax=1.5,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \begin{axis}[
+                  width=175pt,
+                  axis lines=center,
+                  view={135}{35},
+                  xtick=\empty,
+                  ytick=\empty,
+                  ztick=\empty,
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-1.5,xmax=1.5,
+                  zmin=-0.5, zmax=1.5,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                    every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-            <!-- figures/fig_10_02_ex_15.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+              <!-- figures/fig_10_02_ex_15.tex END -->
+              </sidebyside>
             </statement>
             <solution>
-          <!-- START figures/fig_10_02_ex_15ans.tex -->
-              <image xml:id="img_10_02_ex_15ansX">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+            <!-- START figures/fig_10_02_ex_15ans.tex -->
+                <image xml:id="img_10_02_ex_15ansX">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                width=175pt,
-                axis lines=center,
-                view={135}{35},
-                xtick=\empty,
-                ytick=\empty,
-                ztick=\empty,
-                ymin=-1.5,ymax=1.5,
-                xmin=-1.5,xmax=1.5,
-                zmin=-0.5, zmax=1.5,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \begin{axis}[
+                  width=175pt,
+                  axis lines=center,
+                  view={135}{35},
+                  xtick=\empty,
+                  ytick=\empty,
+                  ztick=\empty,
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-1.5,xmax=1.5,
+                  zmin=-0.5, zmax=1.5,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                    every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
-                \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,0,1) node [black,left] {\scriptsize $\vec u$};
+                  \draw [thick,-&gt;,firstcolor] (axis cs:0,0,0) -- (axis cs:0,1,0) node [black,below] {\scriptsize $\vec v$};
 
-                \draw [thick,-&gt;,gray] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
-                \draw [thick,-&gt;,gray] (axis cs:0,1,0) -- (axis cs:0,0,1) node [black,right,pos=.2] {\scriptsize $\vec u-\vec v$};
+                  \draw [thick,-&gt;,gray] (axis cs:0,0,0) -- (axis cs:0,1,1) node [black,above] {\scriptsize $\vec u+\vec v$};
+                  \draw [thick,-&gt;,gray] (axis cs:0,1,0) -- (axis cs:0,0,1) node [black,right,pos=.2] {\scriptsize $\vec u-\vec v$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_10_02_ex_15ans.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_10_02_ex_15ans.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>

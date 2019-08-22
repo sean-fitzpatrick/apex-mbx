@@ -86,8 +86,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figtannorm13D.asy in Chapter 11
@@ -97,6 +95,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(10,10,43);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -395,8 +395,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figtannorm13D.asy in Chapter 11
@@ -406,6 +404,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(10,10,34);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-3,3};

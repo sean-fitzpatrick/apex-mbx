@@ -609,7 +609,7 @@
         </p>
 
         <p>
-          In <xref ref="fig_parcalc5">Figure</xref>(a) we see a plot of the second derivative.
+          In <xref ref="fig_parcalc5a">Figure</xref> we see a plot of the second derivative.
           It shows that it has zeros at approximately <m>t=0.5,\ 3.5,\ 6.5,\ 9.5,\ 12.5</m> and <m>16</m>.
           These approximations are not very good,
           made only by looking at the graph.
@@ -621,7 +621,7 @@
         </p>
 
         <p>
-          The corresponding points have been plotted on the graph of the parametric equations in <xref ref="fig_parcalc5">Figure</xref>(b).
+          The corresponding points have been plotted on the graph of the parametric equations in <xref ref="fig_parcalc5b">Figure</xref>.
           Note how most occur near the <m>x</m>-axis,
           but not exactly on the axis.
         </p>
@@ -632,7 +632,7 @@
             <figure xml:id="fig_parcalc5a">
               <caption/>
             <!-- START figures/fig_parcalc5b.tex -->
-              <image xml:id="img_parcalc5b">
+              <image xml:id="img_parcalc5a">
                 <description></description>
                 <latex-image>
                 
@@ -976,11 +976,7 @@
               currentprojection=orthographic(4,3,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};

@@ -29,7 +29,7 @@
     </p>
 
     <p>
-      Consider the graph of <m>y=\sin(x)</m> on <m>[0,\pi]</m> given in <xref ref="fig_arcintro">Figure</xref> (a).
+      Consider the graph of <m>y=\sin(x)</m> on <m>[0,\pi]</m> given in <xref ref="fig_arcintroa">Figure</xref>.
       How long is this curve?
       That is, if we were to use a piece of string to exactly match the shape of this curve,
       how long would the string be?
@@ -116,7 +116,7 @@
     </figure>
 
     <p>
-      In <xref ref="fig_arcintro">Figure</xref> (b),
+      In <xref ref="fig_arcintrob">Figure</xref>,
       the curve <m>y=\sin(x)</m> has been approximated with 4 line segments
       (the interval <m>[0,\pi]</m> has been divided into 4 equally<ndash/>lengthed subintervals).
       It is clear that these four line segments approximate
@@ -429,7 +429,7 @@
       we now consider its surface area.
     </p>
 
-    <figure xml:id="fig_surface_intro">
+    <figure xml:id="fig_arc4">
       <caption>Establishing the formula for surface area.</caption>
       <sidebyside>
         <figure xml:id="fig_arc4a">
@@ -500,11 +500,6 @@
               defaultrender.merge=true;
 
               usepackage("amsmath");
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -611,10 +606,10 @@
       where the <m>i^{\text{ th } }</m> subinterval is <m>[x_i,x_{i+1}]</m>.
       On each subinterval,
       we can approximate the curve <m>y=f(x)</m> with a straight line that connects <m>f(x_i)</m> and
-      <m>f(x_{i+1})</m> as shown in <xref ref="fig_surface_intro">Figure</xref>(a).
+      <m>f(x_{i+1})</m> as shown in <xref ref="fig_arc4a">Figure</xref>.
       Revolving this line segment about the <m>x</m>-axis creates part of a cone
       (called a <em>frustum</em> of a cone)
-      as shown in <xref ref="fig_surface_intro">Figure</xref>(b).
+      as shown in <xref ref="fig_arc4b_3D">Figure</xref>.
       The surface area of a frustum of a cone is
       <me>
         2\pi\cdot\text{ length } \cdot\text{ average of the two radii \(R\) and \(r\) } 
@@ -716,10 +711,10 @@
         <p>
           Find the surface area of the solid formed by revolving
           <m>y=\sin(x)</m> on <m>[0,\pi]</m> around the <m>x</m>-axis,
-          as shown in <xref ref="fig_sa1">Figure</xref>.
+          as shown in <xref ref="fig_sa1_3D">Figure</xref>.
         </p>
 
-        <figure xml:id="fig_sa1">
+        <figure xml:id="fig_sa1_3D">
           <caption>Revolving <m>y=\sin(x)</m> on <m>[0,\pi]</m> about the <m>x</m>-axis.</caption>
           <!--
            \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -731,7 +726,7 @@
           3Dlights=Headlamp,add3Djscript=asylabels.js]
            -->
           <!-- START figures/figsa1_3D.asy -->
-          <image xml:id="img_sa1">
+          <image xml:id="img_sa1_3D">
             <description></description>
             <asymptote>
               
@@ -745,11 +740,7 @@
               //currentprojection=orthographic((16.7,13.2,46),(0,1,0),(0,0,0),1,(0.0148,0.00673));
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -903,11 +894,7 @@
                   currentprojection=orthographic((7.4,20,47),(0,1,0),(0,0,0),1,(-.004432,-0.00537));
                   defaultrender.merge=true;
 
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={1};
@@ -997,11 +984,7 @@
                   currentprojection=orthographic((10.4,3.7,64),(0,1,0),(0,0,0),.95,(0.00404,0.00136));
                   defaultrender.merge=true;
 
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={1,-1};
@@ -1081,7 +1064,7 @@
                   <mrow>\amp =\frac{\pi}{32}\left(18\sqrt{5}-\sinh^{-1}(2) \right)</mrow>
                   <mrow>\amp \approx 3.81\ \text{ units } ^2</mrow>
                 </md>.
-                The solid formed by revolving <m>y=x^2</m> around the <m>x</m>-axis is graphed in <xref ref="fig_sa2">Figure</xref> (a).
+                The solid formed by revolving <m>y=x^2</m> around the <m>x</m>-axis is graphed in <xref ref="fig_sa2a_3D">Figure</xref>.
               </p>
             </li>
 
@@ -1098,7 +1081,7 @@
                   <mrow>\amp = \frac{\pi}6\left(5\sqrt{5}-1\right)</mrow>
                   <mrow>\amp \approx 5.33\ \text{ units } ^2</mrow>
                 </md>.
-                The solid formed by revolving <m>y=x^2</m> about the <m>y</m>-axis is graphed in <xref ref="fig_sa2">Figure</xref> (b).
+                The solid formed by revolving <m>y=x^2</m> about the <m>y</m>-axis is graphed in <xref ref="fig_sa2b_3D">Figure</xref>.
               </p>
             </li>
           </ol>
@@ -1153,11 +1136,7 @@
               currentprojection=orthographic((372,29,113),(0,1,0),(0,0,0),.95,(-0.024,-0.0032));
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={5,10,15};

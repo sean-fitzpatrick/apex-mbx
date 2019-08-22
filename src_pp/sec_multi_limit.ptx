@@ -215,10 +215,10 @@
     </figure>
 
     <p>
-      The set depicted in <xref ref="fig_multilimit_intro">Figure</xref>(a) is a closed set as it contains all of its boundary points.
-      The set in (b) is open, for all of its points are interior points
+      The set depicted in <xref ref="fig_multilimit_introa">Figure</xref> is a closed set as it contains all of its boundary points.
+      The set in <xref ref="fig_multilimit_introb">Figure</xref> is open, for all of its points are interior points
       (or, equivalently, it does not contain any of its boundary points).
-      The set in (c) is neither open nor closed as it contains some of its boundary points.
+      The set in <xref ref="fig_multilimit_introc">Figure</xref> is neither open nor closed as it contains some of its boundary points.
     </p>
 
     <example xml:id="ex_multilimit1">
@@ -379,8 +379,6 @@
         <description></description>
         <asymptote>
 
-          usepackage("amsmath")
-          
           import graph3;
 
           //ASY file for figmultilimit_def3D.asy in Chapter 12
@@ -389,6 +387,8 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic((10.3,-3.3,2.4),(-0.004,0.001,0.016),(0,0,0),1,(0,0));
           defaultrender.merge=true;
+
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -920,8 +920,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmulticont13D.asy in Chapter 12
@@ -931,6 +929,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(31,31,2.3);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-10,10};

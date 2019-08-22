@@ -82,11 +82,7 @@
           currentprojection=orthographic(11,5,2.8);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-1,1,2,3};
@@ -189,11 +185,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-2,2};
@@ -333,11 +325,7 @@
               currentprojection=orthographic(4,4,1);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -508,7 +496,7 @@
     <caption>The coordinate planes.</caption>
     -->
     <figure xml:id="fig_coordplanes">
-      <caption>the <m>x</m>-<m>y</m> plane &amp; the <m>y</m>-<m>z</m> plane &amp; the <m>x</m>-<m>z</m> plane</caption>
+      <caption>The <m>x</m>-<m>y</m> plane in (a), he <m>y</m>-<m>z</m> plane in (b) and the <m>x</m>-<m>z</m> plane in (c).</caption>
       <sidebyside>
         <figure xml:id="fig_spacexy_3D">
           <caption/>
@@ -535,11 +523,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -619,11 +603,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -703,11 +683,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -796,11 +772,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-2,2};
@@ -896,11 +868,7 @@
               currentprojection=orthographic(4,2.5,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -975,13 +943,13 @@
       this equation describes a circle of radius 1, centered at the origin.
       In space, the <m>z</m> coordinate is not specified,
       meaning it can take on any value.
-      In <xref ref="fig_spacecylinder1">Figure</xref> (a),
+      In <xref ref="fig_spacecylinder1a_3D">Figure</xref>,
       we show part of the graph of the equation
       <m>x^2+y^2=1</m> by sketching 3 circles:
       the bottom one has a constant <m>z</m>-value of <m>-1.5</m>,
       the middle one has a <m>z</m>-value of 0 and the top circle has a <m>z</m>-value of 1.
       By plotting <em>all</em> possible <m>z</m>-values,
-      we get the surface shown in <xref ref="fig_spacecylinder1">Figure</xref> (b).
+      we get the surface shown in <xref ref="fig_spacecylinder1b_3D">Figure</xref>.
       This surface looks like a <q>tube,</q> or a <q>cylinder</q>;
       mathematicians call this surface a <em>cylinder</em>
       for an entirely different reason.
@@ -1015,11 +983,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1103,11 +1067,7 @@
             currentprojection=orthographic(4,4,2);
             defaultrender.merge=true;
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={-2,2};
@@ -1213,7 +1173,7 @@
       (Any circle shown in <xref ref="fig_spacecylinder1">Figure</xref>
       can be considered a directrix;
       we simply choose the one where <m>z=0</m>.)
-      Sample rulings can also be viewed in part (b) of the figure.
+      Sample rulings can also be viewed in <xref ref="fig_spacecylinder1b_3D">Figure</xref>.
       More examples will help us understand this definition.
     </p>
 
@@ -1234,18 +1194,18 @@
             <li>
               <p>
                 We can view the equation <m>z=y^2</m> as a parabola in the <m>y</m>-<m>z</m> plane,
-                as illustrated in <xref ref="fig_space4a">Figure</xref> (a).
+                as illustrated in <xref ref="fig_space4a1_3D">Figure</xref>.
                 As <m>x</m> does not appear in the equation,
                 the rulings are lines through this parabola parallel to the <m>x</m>-axis,
-                shown in (b).
+                shown in <xref ref="fig_space4a2_3D">Figure</xref>.
                 These rulings give a general idea as to what the surface looks like,
-                drawn in (c).
+                drawn in <xref ref="fig_space4a3_3D">Figure</xref>.
               </p>
 
               <figure xml:id="fig_space4a">
                 <caption>Sketching the cylinder defined by <m>z=y^2</m>.</caption>
                 <sidebyside>
-                  <figure xml:id="fig_space4a_3D">
+                  <figure xml:id="fig_space4a1_3D">
                     <caption/>
                     <!--
                       \includemedia[height=90pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1257,7 +1217,7 @@
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                       -->
                     <!-- START figures/figspace4a_3D.asy -->
-                    <image xml:id="img_space4a_3D">
+                    <image xml:id="img_space4a1_3D">
                       <description></description>
                       <asymptote>
                         
@@ -1270,11 +1230,7 @@
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1333,7 +1289,7 @@
                     <!-- figures/figspace4a_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space4b_3D">
+                  <figure xml:id="fig_space4a2_3D">
                     <caption/>
                     <!--
                       \includemedia[height=90pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1345,7 +1301,7 @@
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                       -->
                     <!-- START figures/figspace4b_3D.asy -->
-                    <image xml:id="img_space4b_3D">
+                    <image xml:id="img_space4a2_3D">
                       <description></description>
                       <asymptote>
                         
@@ -1358,11 +1314,7 @@
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1465,7 +1417,7 @@
                   <!-- figures/figspace4b_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space4c_3D">
+                  <figure xml:id="fig_space4a3_3D">
                     <caption/>
                       <!--
                         \includemedia[height=90pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1477,7 +1429,7 @@
                       3Dlights=Headlamp,add3Djscript=asylabels.js]
                         -->
                       <!-- START figures/figspace4c_3D.asy -->
-                    <image xml:id="img_space4c_3D">
+                    <image xml:id="img_space4a3_3D">
                       <description></description>
                       <asymptote>
                         
@@ -1490,11 +1442,7 @@
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1560,16 +1508,16 @@
 
               <p>
                 We can view the equation <m>x=\sin(z)</m> as a sine curve that exists in the <m>x</m>-<m>z</m> plane,
-                as shown in <xref ref="fig_space4b">Figure</xref> (a).
+                as shown in <xref ref="fig_space4b1_3D">Figure</xref>.
                 The rules are parallel to the <m>y</m> axis as the variable <m>y</m> does not appear in the equation <m>x=\sin(z)</m>;
-                some of these are shown in part (b).
-                The surface is shown in part (c) of the figure.
+                some of these are shown in <xref ref="fig_space4b2_3D">Figure</xref>.
+                The surface is shown in <xref ref="fig_space4b3_3D">Figure</xref>.
               </p>
 
               <figure xml:id="fig_space4b">
                 <caption>Sketching the cylinder defined by <m>x=\sin(z)</m>.</caption>
                 <sidebyside>
-                  <figure xml:id="fig_space4d_3D">
+                  <figure xml:id="fig_space4b1_3D">
                     <caption/>
                     <!--
                     \includemedia[height=90pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1581,7 +1529,7 @@
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                     -->
                     <!-- START figures/figspace4d_3D.asy -->
-                    <image xml:id="img_space4d_3D">
+                    <image xml:id="img_space4b1_3D">
                       <description></description>
                       <asymptote>
                         
@@ -1594,11 +1542,7 @@
                         currentprojection=orthographic(5,5,13);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1663,7 +1607,7 @@
                       <!-- figures/figspace4d_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space4e_3D">
+                  <figure xml:id="fig_space4b2_3D">
                     <caption/>
                       <!--
                       \includemedia[height=90pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1675,7 +1619,7 @@
                       3Dlights=Headlamp,add3Djscript=asylabels.js]
                       -->
                       <!-- START figures/figspace4e_3D.asy -->
-                    <image xml:id="img_space4e_3D">
+                    <image xml:id="img_space4b2_3D">
                       <description></description>
                       <asymptote>
                         
@@ -1688,11 +1632,7 @@
                         currentprojection=orthographic(5,5,13);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1757,7 +1697,7 @@
                       <!-- figures/figspace4e_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space4f_3D">
+                  <figure xml:id="fig_space4b3_3D">
                     <caption/>
                       <!--
                       \includemedia[height=90pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1769,7 +1709,7 @@
                       3Dlights=Headlamp,add3Djscript=asylabels.js]
                       -->
                       <!-- START figures/figspace4f_3D.asy -->
-                    <image xml:id="img_space4f_3D">
+                    <image xml:id="img_space4b3_3D">
                       <description></description>
                       <asymptote>
                         
@@ -1781,6 +1721,8 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(5,5,13);
                         defaultrender.merge=true;
+
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1858,12 +1800,12 @@
       Consider the surface formed by revolving
       <m>y=\sqrt{x}</m> about the <m>x</m>-axis.
       Cross<ndash/>sections of this surface parallel to the <m>y</m>-<m>z</m> plane are circles,
-      as shown in <xref ref="fig_surf_rev_intro">Figure</xref>(a).
+      as shown in <xref ref="fig_surf_rev_introa_3D">Figure</xref>.
       Each circle has equation of the form
       <m>y^2+z^2=r^2</m> for some radius <m>r</m>.
       The radius is a function of <m>x</m>;
       in fact, it is <m>r(x) = \sqrt{x}</m>.
-      Thus the equation of the surface shown in <xref ref="fig_surf_rev_intro">Figure</xref>b is <m>y^2+z^2=(\sqrt{x})^2</m>.
+      Thus the equation of the surface shown in <xref ref="fig_surf_rev_introb_3D">Figure</xref> is <m>y^2+z^2=(\sqrt{x})^2</m>.
     </p>
 
     <figure xml:id="fig_surf_rev_intro">
@@ -1894,11 +1836,7 @@
             currentprojection=orthographic(4,5,2);
             defaultrender.merge=true;
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={2,4};
@@ -1996,11 +1934,7 @@
               currentprojection=orthographic(4,5,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -2113,14 +2047,14 @@
         <p>
           Using <xref ref="idea_surf_of_revol">Key Idea</xref>,
           we find the surface has equation <m>x^2+y^2=\sin^2(z)</m>.
-          The curve is sketched in <xref ref="fig_surfrev1">Figure</xref>(a) and the surface is drawn in <xref ref="fig_surfrev1">Figure</xref>(b).
+          The curve is sketched in <xref ref="fig_surfrev1a_3D">Figure</xref> and the surface is drawn in <xref ref="fig_surfrev1b_3D">Figure</xref>.
         </p>
 
         <p>
           Note how the surface
           (and hence the resulting equation)
           is the same if we began with the curve <m>x=\sin(z)</m>,
-          which is also drawn in <xref ref="fig_surfrev1">Figure</xref>(a).
+          which is also drawn in <xref ref="fig_surfrev1a_3D">Figure</xref>.
         </p>
       </solution>
     </example>
@@ -2153,11 +2087,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -2239,11 +2169,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -2390,11 +2316,7 @@
                   currentprojection=orthographic(4,4,.5);
                   defaultrender.merge=true;
 
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-5,5};
@@ -2470,11 +2392,7 @@
                   currentprojection=orthographic(4,4,.5);
                   defaultrender.merge=true;
 
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-5,5};
@@ -2602,11 +2520,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2757,11 +2671,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2868,11 +2778,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2988,11 +2894,7 @@
           currentprojection=orthographic(4,4,1);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3112,11 +3014,7 @@
           currentprojection=orthographic(4,4,1);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3210,11 +3108,7 @@
           currentprojection=orthographic(4,4,1);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3322,11 +3216,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3446,11 +3336,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3571,11 +3457,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3698,11 +3580,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3824,11 +3702,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3963,11 +3837,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4091,11 +3961,7 @@
           currentprojection=orthographic(2,5,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4223,11 +4089,7 @@
           currentprojection=orthographic(2,5,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4322,11 +4184,7 @@
           currentprojection=orthographic(2,5,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4446,13 +4304,13 @@
               
                 <m>z=0</m>: 	The trace is the parabola <m>y=x^2/4</m>.
               
-                Graphing each trace in the respective plane creates a sketch as shown in <xref ref="fig_space5a">Figure</xref>(a). This is enough to give an idea of what the paraboloid looks like. The surface is filled in in (b).
+                Graphing each trace in the respective plane creates a sketch as shown in <xref ref="fig_space5a1_3D">Figure</xref>. This is enough to give an idea of what the paraboloid looks like. The surface is filled in <xref ref="fig_space5a2_3D">Figure</xref>.
               </p>
               
               <figure xml:id="fig_space5a">
                 <caption>Sketching an elliptic paraboloid.</caption>
                 <sidebyside>
-                  <figure xml:id="fig_space5aa_3D">
+                  <figure xml:id="fig_space5a1_3D">
                     <caption/>
                     <!--
                     \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -4464,7 +4322,7 @@
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                     -->
                     <!-- START figures/figspace5ab_3D.asy -->
-                    <image xml:id="img_space5aa_3D">
+                    <image xml:id="img_space5a1_3D">
                       <description></description>
                       <asymptote>
                         
@@ -4477,11 +4335,7 @@
                         currentprojection=orthographic(15,5,4.5);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={-4,4};
@@ -4551,7 +4405,7 @@
                   <!-- figures/figspace5ab_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space5ab_3D">
+                  <figure xml:id="fig_space5a2_3D">
                     <caption/>
                     <!--
                     \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -4563,7 +4417,7 @@
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                     -->
                     <!-- START figures/figspace5a_3D.asy -->
-                    <image xml:id="img_space5ab_3D">
+                    <image xml:id="img_space5a2_3D">
                       <description></description>
                       <asymptote>
                         
@@ -4576,11 +4430,7 @@
                         currentprojection=orthographic(15,5,4.5);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -4666,13 +4516,13 @@
               
                 <m>z=0</m>:	The trace is the ellipse <m>\ds x^2+\frac{y^2}{9}=1</m>, with major axis along the <m>y</m>-axis.
               
-                Graphing each trace in the respective plane creates a sketch as shown in <xref ref="fig_space5b">Figure</xref>(a). Filling in the surface gives <xref ref="fig_space5b">Figure</xref>(b).
+                Graphing each trace in the respective plane creates a sketch as shown in <xref ref="fig_space5b1_3D">Figure</xref>. Filling in the surface gives <xref ref="fig_space5b2_3D">Figure</xref>.
               </p>
 
               <figure xml:id="fig_space5b">
                 <caption>Sketching an ellipsoid.</caption>
                 <sidebyside>
-                  <figure xml:id="fig_space5ba_3D">
+                  <figure xml:id="fig_space5b1_3D">
                     <caption/>
                       <!--
                       \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -4684,7 +4534,7 @@
                       3Dlights=Headlamp,add3Djscript=asylabels.js]
                       -->
                       <!-- START figures/figspace5b_3D.asy -->
-                    <image xml:id="img_space5ba_3D">
+                    <image xml:id="img_space5b1_3D">
                       <description></description>
                       <asymptote>
                         
@@ -4697,11 +4547,7 @@
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={-3,3};
@@ -4775,7 +4621,7 @@
                   <!-- figures/figspace5b_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space5bb_3D">
+                  <figure xml:id="fig_space5b2_3D">
                     <caption/>
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -4787,7 +4633,7 @@
                   3Dlights=Headlamp,add3Djscript=asylabels.js]
                   -->
                   <!-- START figures/figspace5bb_3D.asy -->
-                    <image xml:id="img_space5bb_3D">
+                    <image xml:id="img_space5b2_3D">
                       <description></description>
                       <asymptote>
                         
@@ -4800,11 +4646,7 @@
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -4891,13 +4733,13 @@
               
                 <m>y=0</m>: 	The trace is <m>z=-x^2</m>, a parabola opening down in the <m>x-z</m> plane.
               
-                Sketching these two parabolas gives a sketch like that in <xref ref="fig_space5c">Figure</xref> (a), and filling in the surface gives a sketch like (b).
+                Sketching these two parabolas gives a sketch like that in <xref ref="fig_space5c1_3D">Figure</xref>, and filling in the surface gives a sketch like <xref ref="fig_space5c2_3D">Figure</xref>.
               </p>
 
               <figure xml:id="fig_space5c">
                 <caption>Sketching a hyperbolic paraboloid.</caption>
                 <sidebyside>
-                  <figure xml:id="fig_space5ca_3D">
+                  <figure xml:id="fig_space5c1_3D">
                     <caption/>
                         <!--
                         \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -4909,7 +4751,7 @@
                         3Dlights=Headlamp,add3Djscript=asylabels.js]
                         -->
                         <!-- START figures/figspace5c_3D.asy -->
-                    <image xml:id="img_space5ca_3D">
+                    <image xml:id="img_space5c1_3D">
                       <description></description>
                       <asymptote>
                         
@@ -4922,11 +4764,7 @@
                         currentprojection=orthographic(4.5,3,2.7);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={-1,1};
@@ -4996,7 +4834,7 @@
                   <!-- figures/figspace5c_3D.asy END -->
                   </figure>
 
-                  <figure xml:id="fig_space5cb_3D">
+                  <figure xml:id="fig_space5c2_3D">
                     <caption/>
                     <!--
                     \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -5008,7 +4846,7 @@
                     3Dlights=Headlamp,add3Djscript=asylabels.js]
                     -->
                     <!-- START figures/figspace5cb_3D.asy -->
-                    <image xml:id="img_space5cb_3D">
+                    <image xml:id="img_space5c2_3D">
                       <description></description>
                       <asymptote>
                         
@@ -5021,11 +4859,7 @@
                         currentprojection=orthographic(4.5,3,2.7);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -5136,11 +4970,7 @@
                 currentprojection=orthographic(4,9.5,5.7);
                 defaultrender.merge=true;
 
-                usepackage("mathspec");
-                texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-1,1};
@@ -5693,117 +5523,113 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
-            <!--
-             \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
-            3Droll=0,
-            3Dortho=0.0045,
-            3Dc2c=.7 .55 .43,
-            3Dcoo=0 0 0,
-            3Droo=150,
-            3Dlights=Headlamp,add3Djscript=asylabels.js]
-             -->
-            <!-- START figures/fig10_01_ex_15_3D.asy -->
-          <image xml:id="img_10_01_ex_15_3DX">
-            <description></description>
-            <asymptote>
-              
-              import graph3;
+              <sidebyside width="47%">
+                  <!--
+                  \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
+                  3Droll=0,
+                  3Dortho=0.0045,
+                  3Dc2c=.7 .55 .43,
+                  3Dcoo=0 0 0,
+                  3Droo=150,
+                  3Dlights=Headlamp,add3Djscript=asylabels.js]
+                  -->
+                  <!-- START figures/fig10_01_ex_15_3D.asy -->
+                <image xml:id="img_10_01_ex_15_3DX">
+                  <description></description>
+                  <asymptote>
+                    
+                    import graph3;
 
-              //ASY file for fig10_01_ex_153D.asy in Chapter 10
+                    //ASY file for fig10_01_ex_153D.asy in Chapter 10
 
-              size(200,200,IgnoreAspect);
-              //currentprojection=perspective(7,2,1);
-              currentprojection=orthographic(4,4,2);
-              defaultrender.merge=true;
+                    size(200,200,IgnoreAspect);
+                    //currentprojection=perspective(7,2,1);
+                    currentprojection=orthographic(4,4,2);
+                    defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
-              // setup and draw the axes
-              real[] myxchoice={-1,1};
-              real[] myychoice={};
-              real[] myzchoice={};
-              defaultpen(0.5mm);
-              pair xbounds=(-1.25,1.25);
-              pair ybounds=(-1.25,1.25);
-              pair zbounds=(-1.25,1.25);
+                    // setup and draw the axes
+                    real[] myxchoice={-1,1};
+                    real[] myychoice={};
+                    real[] myzchoice={};
+                    defaultpen(0.5mm);
+                    pair xbounds=(-1.25,1.25);
+                    pair ybounds=(-1.25,1.25);
+                    pair zbounds=(-1.25,1.25);
 
-              xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
-              yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
-              zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
+                    xaxis3("",xbounds.x,xbounds.y,black,OutTicks(myxchoice),Arrow3(size=3mm));
+                    yaxis3("",ybounds.x,ybounds.y,black,OutTicks(myychoice),Arrow3(size=3mm));
+                    zaxis3("",zbounds.x,zbounds.y,black,OutTicks(myzchoice),Arrow3(size=3mm));
 
-              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
-              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
-              label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
+                    label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0,0));
+                    label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
+                    label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              //Draw the parabola z=x^3 for t from -2 to 2
-              triple g(real t) {return (t,0,t^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,blue);
+                    //Draw the parabola z=x^3 for t from -2 to 2
+                    triple g(real t) {return (t,0,t^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,blue);
 
-              //Draw the cylinder z=x^3
-              triple f(pair t) {
-                return (t.x,t.y,(t.x)^3);
-              }
-              surface s=surface(f,(-1,-1),(1,1),16,16,Spline);
-              pen p=rgb(0,0,.7);
-              draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
+                    //Draw the cylinder z=x^3
+                    triple f(pair t) {
+                      return (t.x,t.y,(t.x)^3);
+                    }
+                    surface s=surface(f,(-1,-1),(1,1),16,16,Spline);
+                    pen p=rgb(0,0,.7);
+                    draw(s,rgb(.6,.6,1)+opacity(.7),meshpen=p);
 
-              //Draw the traces (in this case lines)
-              triple g(real t) {return (-0.2,t,(-0.2)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (-0.4,t,(-0.4)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (-0.6,t,(-0.6)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (-0.8,t,(-0.8)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (-1,t,(-1)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (0.2,t,(0.2)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (0.4,t,(0.4)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (0.6,t,(0.6)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (0.8,t,(0.8)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (1,t,(1)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
-              triple g(real t) {return (t,0,(t)^3);}
-              path3 mypath=graph(g,-1,1,operator ..); draw(mypath,blue);
+                    //Draw the traces (in this case lines)
+                    triple g(real t) {return (-0.2,t,(-0.2)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (-0.4,t,(-0.4)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (-0.6,t,(-0.6)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (-0.8,t,(-0.8)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (-1,t,(-1)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (0.2,t,(0.2)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (0.4,t,(0.4)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (0.6,t,(0.6)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (0.8,t,(0.8)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (1,t,(1)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,red);
+                    triple g(real t) {return (t,0,(t)^3);}
+                    path3 mypath=graph(g,-1,1,operator ..); draw(mypath,blue);
 
-              // ////////////////////////////////////
-              //    SAMPLE CODE
+                    // ////////////////////////////////////
+                    //    SAMPLE CODE
 
-              // defaultpen(fontsize(10pt));
+                    // defaultpen(fontsize(10pt));
 
-              //Draw the parabola z=y^2 for t from -2 to 2
-              //triple g(real t) {return (0,t,t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
+                    //Draw the parabola z=y^2 for t from -2 to 2
+                    //triple g(real t) {return (0,t,t^2);}
+                    //path3 mypath=graph(g,-2,2,operator ..); draw(mypath,blue);
 
-              //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
-              //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
+                    //real f(pair z) {return -z.x^4+2*z.x^2-z.y^4+2*z.y^2;}
+                    //surface s=surface(f,(-1.5,-1.5),(1.5,1.5),Spline);
 
-              //triple f(pair t) {
-              //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
-              //}
-              //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
+                    //triple f(pair t) {
+                    //  return (cos(t.x)*1.5*cos(t.y),sin(t.x)*cos(t.y),sin(t.y));
+                    //}
+                    //surface s=surface(f,(0,0),(pi,2*pi),8,8,Spline);
 
-              //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
-              //path3 mypath=graph(g,-2,2,operator ..);
+                    //triple g(real t) {return (t,t,-2*t^4+4*t^2);}
+                    //path3 mypath=graph(g,-2,2,operator ..);
 
-              //pen p=rgb(0,0,1);
-              //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
+                    //pen p=rgb(0,0,1);
+                    //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
 
-              //draw(s,paleblue);
-              //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
-              //draw(mypath,2bp+blue);
-              
-            </asymptote>
+                    //draw(s,paleblue);
+                    //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
+                    //draw(mypath,2bp+blue);
+                    
+                  </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_15_3D.asy END -->
               </sidebyside>
@@ -5824,7 +5650,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
                   3Droll=0,
@@ -5848,11 +5674,7 @@
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={};
@@ -5937,7 +5759,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
                   3Droll=0,
@@ -5961,11 +5783,7 @@
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-2,2};
@@ -6061,7 +5879,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6085,11 +5903,7 @@
                     currentprojection=orthographic(-8,41,2.5);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-10,10};
@@ -6297,7 +6111,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6321,11 +6135,7 @@
                     currentprojection=orthographic(3,12,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={1};
@@ -6407,7 +6217,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6431,11 +6241,7 @@
                     currentprojection=orthographic(5,3,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6524,7 +6330,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6548,11 +6354,7 @@
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6634,7 +6436,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=100pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6658,11 +6460,7 @@
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-2,2};
@@ -6765,7 +6563,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6789,11 +6587,7 @@
                     currentprojection=orthographic(5,3,1);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6865,7 +6659,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6889,11 +6683,7 @@
                     currentprojection=orthographic(5,5,1);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6964,7 +6754,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -6988,11 +6778,7 @@
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -7063,7 +6849,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -7087,11 +6873,7 @@
                     currentprojection=orthographic(5,5,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-.25,.25};
@@ -7169,7 +6951,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -7193,11 +6975,7 @@
                     currentprojection=orthographic(13,5,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-3,3};
@@ -7268,7 +7046,7 @@
               </p>
             </statement>
             <solution>
-              <sidebyside>
+              <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -7292,11 +7070,7 @@
                     currentprojection=orthographic(5,5,2);
                     defaultrender.merge=true;
 
-                    usepackage("mathspec");
-                    texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                    texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};

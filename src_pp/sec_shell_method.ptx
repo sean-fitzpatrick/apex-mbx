@@ -18,12 +18,12 @@
 
   <p>
     Consider <xref ref="fig_shell_intro">Figure</xref>,
-    where the region shown in (a) is rotated around the <m>y</m>-axis forming the solid shown in (b).
-    A small slice of the region is drawn in (a),
+    where the region shown in <xref ref="fig_soupcana_3D">Figure</xref> is rotated around the <m>y</m>-axis forming the solid shown in <xref ref="fig_soupcanb_3D">Figure</xref>.
+    A small slice of the region is drawn in <xref ref="fig_soupcana_3D">Figure</xref>,
     parallel to the axis of rotation.
     When the region is rotated,
     this thin slice forms a <em>cylindrical shell</em>,
-    as pictured in part (c) of the figure.
+    as pictured in part <xref ref="fig_soupcanc_3D">Figure</xref> of the figure.
     The previous section approximated a solid with lots of thin disks (or washers);
     we now approximate a solid with many thin cylindrical shells.
   </p>
@@ -31,7 +31,7 @@
   <figure xml:id="fig_shell_intro">
     <caption>Introducing the Shell Method.</caption>
     <sidebyside>
-      <figure xml:id="fig_soupcana">
+      <figure xml:id="fig_soupcana_3D">
         <caption/>
       <!--
         \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -43,7 +43,7 @@
       3Dlights=Headlamp,add3Djscript=asylabels.js]
         -->
       <!-- START figures/figshell_intro_b_3D.asy -->
-        <image xml:id="img_soupcana">
+        <image xml:id="img_soupcana_3D">
           <description></description>
           <asymptote>
             
@@ -56,11 +56,7 @@
             currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0,0));
             defaultrender.merge=true;
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={1};
@@ -127,7 +123,7 @@
       <!-- figures/figshell_intro_b_3D.asy END -->
       </figure>
 
-      <figure xml:id="fig_soupcanb">
+      <figure xml:id="fig_soupcanb_3D">
         <caption/>
       <!--
         \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -139,7 +135,7 @@
       3Dlights=Headlamp,add3Djscript=asylabels.js]
         -->
       <!-- START figures/figshell_intro_a_3D.asy -->
-        <image xml:id="img_soupcanb">
+        <image xml:id="img_soupcanb_3D">
           <description></description>
           <asymptote>
             
@@ -152,11 +148,7 @@
             currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0,0));
             defaultrender.merge=true;
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={1};
@@ -229,7 +221,7 @@
       <!-- figures/figshell_intro_a_3D.asy END -->
       </figure>
 
-      <figure xml:id="fig_soupcanc">
+      <figure xml:id="fig_soupcanc_3D">
         <caption/>
       <!--
         \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -241,7 +233,7 @@
       3Dlights=Headlamp,add3Djscript=asylabels.js]
         -->
       <!-- START figures/figshell_intro_d_3D.asy -->
-        <image xml:id="img_soupcanc">
+        <image xml:id="img_soupcanc_3D">
           <description></description>
           <asymptote>
             
@@ -254,11 +246,7 @@
             currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0,0));
             defaultrender.merge=true;
 
-            usepackage("mathspec");
-            texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-            texpreamble("\setmathsfont(Greek){[cmmi10]}");
+            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={1};
@@ -630,14 +618,11 @@
     </statement>
     <solution>
       <p>
-        The region is sketched in <xref ref="fig_shell2">Figure</xref>(a) along with the differential element,
+        The region is sketched in <xref ref="fig_shell2a">Figure</xref> along with the differential element,
         a line within the region parallel to the axis of rotation.
-        In part (b) of the figure,
-        we see the shell traced out by the differential element,
-        and in part (c) the whole solid is shown.
+        In part <xref ref="fig_shell2b_3D">Figure</xref> of the figure,
+        we see the shell traced out by the differential element.
       </p>
-
-      <!-- TODO: The above paragraph references 3 parts to the figure below but there are only 2. -->
 
       <figure xml:id="fig_shell2">
         <caption>Graphing a region in <xref ref="ex_shell2">Example</xref>.</caption>
@@ -707,11 +692,7 @@
                 currentprojection=orthographic((2.6,4.6,47),(0,1,0),(0,0,0),.95,(0.004,0.004));
                 defaultrender.merge=true;
 
-                usepackage("mathspec");
-                texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1,2,3,4,5,6};
@@ -844,9 +825,9 @@
     </statement>
     <solution>
       <p>
-        The region is sketched in <xref ref="fig_shell3">Figure</xref>(a) with a sample differential element.
-        In part (b) of the figure the shell formed by the differential element is drawn,
-        and the solid is sketched in (c). (Note that the triangular region looks
+        The region is sketched in <xref ref="fig_shell3a">Figure</xref> with a sample differential element.
+        In <xref ref="fig_shell3b_3D">Figure</xref> the shell formed by the differential element is drawn,
+        and the solid is sketched in <xref ref="fig_shell3c_3D">Figure</xref>. (Note that the triangular region looks
         <q>short and wide</q> here,
         whereas in the previous example the same region looked
         <q>tall and narrow.</q>
@@ -926,11 +907,7 @@
                 currentprojection=orthographic((3.13,8.3,49),(0,1,0),(0,0,0),.95,(0.0148,0.00673));
                 defaultrender.merge=true;
 
-                usepackage("mathspec");
-                texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1};
@@ -1055,11 +1032,7 @@
                 currentprojection=orthographic((3.13,8.3,49),(0,1,0),(0,0,0),.95,(0.0148,0.00673));
                 defaultrender.merge=true;
 
-                usepackage("mathspec");
-                texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1};
@@ -1259,11 +1232,7 @@
                 currentprojection=orthographic((23.8,4.1,64),(0,1,0),(0,0,0),1,(-.00343,0.004889));
                 defaultrender.merge=true;
 
-                usepackage("mathspec");
-                texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={};
@@ -1381,11 +1350,7 @@
                 currentprojection=orthographic((23.8,4.1,64),(0,1,0),(0,0,0),1,(-.00343,0.004889));
                 defaultrender.merge=true;
 
-                usepackage("mathspec");
-                texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={};
@@ -1697,7 +1662,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_09.tex -->
                 <image xml:id="img_07_02_ex_09X">
                   <description></description>
@@ -1739,7 +1704,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_06.tex -->
                 <image xml:id="img_07_02_ex_06X">
                   <description></description>
@@ -1781,7 +1746,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_11.tex -->
                 <image xml:id="img_07_02_ex_11X">
                   <description></description>
@@ -1823,7 +1788,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_08.tex -->
                 <image xml:id="img_07_02_ex_08XX">
                   <description></description>
@@ -1879,7 +1844,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_05.tex -->
                 <image xml:id="img_07_02_ex_05X">
                   <description></description>
@@ -1921,7 +1886,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_10.tex -->
                 <image xml:id="img_07_02_ex_10X">
                   <description></description>
@@ -1963,7 +1928,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_07.tex -->
                 <image xml:id="img_07_02_ex_07X">
                   <description></description>
@@ -2005,7 +1970,7 @@
             </pg-code>
             </setup>
             <statement>
-              <sidebyside>
+              <sidebyside width="47%">
             <!-- START figures/fig_07_02_ex_04.tex -->
                 <image xml:id="img_07_02_ex_04X">
                   <description></description>

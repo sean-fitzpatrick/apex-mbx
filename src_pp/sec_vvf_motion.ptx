@@ -114,7 +114,7 @@
                 <m>\vec a(-1) = \la 2,2\ra</m>;
                 <m>\vec v(1) = \la 1,3\ra</m>,
                 <m>\vec a(1) = \la 2,2\ra</m>.
-                These are plotted with <m>\vrt</m> in <xref ref="fig_motion1">Figure</xref>(a).
+                These are plotted with <m>\vrt</m> in <xref ref="fig_motion1a">Figure</xref>.
   
                 We can think of acceleration as <q>pulling</q> the velocity vector in a certain direction. At <m>t=-1</m>, the velocity vector points down and to the left; at <m>t=1</m>, the velocity vector has been pulled in the <m>\la 2,2\ra</m> direction and is now pointing up and to the right. In <xref ref="fig_motion1">Figure</xref>(b) we plot more velocity/acceleration vectors, making more clear the effect acceleration has on velocity.
               </p>
@@ -328,7 +328,7 @@
 
         <p>
           Instead, we simply plot the locations of Object 1 and 2 on intervals of <m>1/10^{\text{ th } }</m> of a second,
-          shown in <xref ref="fig_motion2b">Figure</xref>(a) and (b).
+          shown in <xref ref="fig_motion2b1">Figure</xref> and <xref ref="fig_motion2b2">Figure</xref> .
           Note how the <m>x</m>-values of Object 1 increase at a steady rate.
           This is because the <m>x</m>-component of <m>\vec a(t)</m> is 0;
           there is no acceleration in the <m>x</m>-component.
@@ -339,10 +339,10 @@
         <figure xml:id="fig_motion2b">
           <caption>Comparing the positions of Objects 1 and 2 in <xref ref="ex_motion2">Example</xref>.</caption>
           <sidebyside>
-            <figure xml:id="fig_motion2ba">
+            <figure xml:id="fig_motion2b1">
               <caption/>
             <!-- START figures/fig_motion2c.tex -->
-              <image xml:id="img_motion2ba">
+              <image xml:id="img_motion2b1">
                 <description></description>
                 <latex-image>
                 
@@ -379,10 +379,10 @@
             <!-- figures/fig_motion2c.tex END -->
             </figure>
 
-            <figure xml:id="fig_motion2bb">
+            <figure xml:id="fig_motion2b2">
               <caption/>
             <!-- START figures/fig_motion2b.tex -->
-              <image xml:id="img_motion2bb">
+              <image xml:id="img_motion2b2">
                 <description></description>
                 <latex-image>
                 
@@ -1067,8 +1067,6 @@
                   <description></description>
                   <asymptote>
 
-                    usepackage("amsmath")
-                    
                     import graph3;
 
                     //ASY file for figmotion63D.asy in Chapter 11
@@ -1077,6 +1075,8 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(5.6,10.7,4);
                     defaultrender.merge=true;
+
+                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-2,2};

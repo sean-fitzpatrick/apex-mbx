@@ -498,7 +498,7 @@
               <figure xml:id="fig_series2">
                 <caption>Scatter plots relating to the series in <xref ref="ex_series2">Example</xref>.</caption>
             <!-- START figures/fig_series2a.tex -->
-                <image xml:id="img_series2" width="47%">
+                <image xml:id="img_series2">
                   <description></description>
                   <latex-image>
                   
@@ -885,7 +885,7 @@
         <figure xml:id="fig_series3">
           <caption>Scatter plots relating to the series of <xref ref="ex_series3">Example</xref>.</caption>
           <!-- START figures/fig_series3.tex -->
-          <image xml:id="img_series3" width="47%">
+          <image xml:id="img_series3">
             <description></description>
             <latex-image>
             
@@ -1105,7 +1105,7 @@
                 as <m>\lim\limits_{n\to\infty}S_n=\infty</m>.
                 Therefore  <m>\ds\infser  \ln\left(\frac{n+1}{n}\right)=\infty</m>;
                 the series diverges.
-                Note in <xref ref="fig_series4">Figure</xref>(b) how the sequence of partial sums grows slowly;
+                Note in <xref ref="fig_series4b">Figure</xref> how the sequence of partial sums grows slowly;
                 after 100 terms, it is not yet over 5.
                 Graphically we may be fooled into thinking the series converges,
                 but our analysis above shows that it does not.

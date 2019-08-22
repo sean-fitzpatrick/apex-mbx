@@ -122,12 +122,12 @@
 
     <p>
       Now consider representing a region <m>R</m> with polar coordinates.
-      Consider <xref ref="fig_double_pol_intro">Figure</xref>(a).
+      Consider <xref ref="fig_double_pol_introa">Figure</xref>.
       Let <m>R</m> be the region in the first quadrant bounded by the curve.
       We can approximate this region using the natural shape of polar coordinates:
       portions of sectors of circles.
       In the figure, one such region is shaded,
-      shown again in part (b) of the figure.
+      shown again in part <xref ref="fig_double_pol_introb">Figure</xref> of the figure.
     </p>
 
     <p>
@@ -257,8 +257,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figdoublepol13D.asy in Chapter 13
@@ -267,6 +265,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(7.2,-1.9,13);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -355,9 +355,9 @@
       <solution>
         <p>
           At first glance,
-          this seems like a very hard volume to compute as the region <m>R</m> (shown in <xref ref="fig_doublepol2">Figure</xref>(a)) has a hole in it,
+          this seems like a very hard volume to compute as the region <m>R</m> (shown in <xref ref="fig_doublepol2a">Figure</xref>) has a hole in it,
           cutting out a strange portion of the surface,
-          as shown in part (b) of the figure.
+          as shown in <xref ref="fig_doublepol2b_3D">Figure</xref>.
           However, by describing <m>R</m> in terms of polar equations,
           the volume is not very difficult to compute.
         </p>
@@ -411,8 +411,6 @@
                 <description></description>
                 <asymptote>
 
-                  usepackage("amsmath")
-                  
                   import graph3;
 
                   //ASY file for figdoublepol2b3D.asy in Chapter 13
@@ -421,6 +419,8 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(-2.7,-11,16);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={2,4};
@@ -597,8 +597,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figdoublepol53D.asy in Chapter 13
@@ -607,6 +605,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8,-13,2.8);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -800,8 +800,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figdoublepol43D.asy in Chapter 13
@@ -810,6 +808,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};

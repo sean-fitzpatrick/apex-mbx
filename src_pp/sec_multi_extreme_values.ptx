@@ -192,8 +192,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmulti_extreme13D.asy in Chapter 12
@@ -203,6 +201,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -323,8 +323,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmulti_extreme23D.asy in Chapter 12
@@ -334,6 +332,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -469,8 +469,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmulti_extreme33D.asy in Chapter 12
@@ -480,6 +478,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(3,10,9);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -866,8 +866,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmulti_extreme53D.asy in Chapter 12
@@ -877,6 +875,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(24,.7,11.5);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2};
@@ -1017,7 +1017,7 @@
       <solution>
         <p>
           It can help to see a graph of <m>f</m> along with the set <m>S</m>.
-          In <xref ref="fig_conopt1">Figure</xref>(a) the triangle defining <m>S</m> is shown in the <m>x</m>-<m>y</m> plane in a dashed line.
+          In <xref ref="fig_conopt1a_3D">Figure</xref> the triangle defining <m>S</m> is shown in the <m>x</m>-<m>y</m> plane in a dashed line.
           Above it is the surface of <m>f</m>;
           we are only concerned with the portion of <m>f</m> enclosed by the
           <q>triangle</q> on its surface.
@@ -1042,8 +1042,6 @@
                 <description></description>
                 <asymptote>
 
-                  usepackage("amsmath")
-                  
                   import graph3;
 
                   //ASY file for figconopt1.asy in Chapter 12
@@ -1053,6 +1051,8 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(5.6,-7.8,20.3);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,2};
@@ -1175,7 +1175,7 @@
         <p>
           We now find the maximum and minimum values that <m>f</m> attains along the boundary of <m>S</m>, that is,
           along the edges of the triangle.
-          In <xref ref="fig_conopt1">Figure</xref>(b) we see the triangle sketched in the plane with the equations of the lines forming its edges labeled.
+          In <xref ref="fig_conopt1b">Figure</xref> we see the triangle sketched in the plane with the equations of the lines forming its edges labeled.
         </p>
 
         <p>
@@ -1286,8 +1286,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figconopt1c3D.asy in Chapter 12
@@ -1297,6 +1295,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(2.6,-7.,24);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,2};
@@ -1495,8 +1495,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figconopt23D.asy in Chapter 12
@@ -1506,6 +1504,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(176,-2075,580);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={20};

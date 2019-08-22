@@ -214,9 +214,9 @@
     <p>
       Consider a vector<ndash/>valued function <m>\vec r</m> defined on an open interval <m>I</m> containing <m>t_0</m> and <m>t_1</m>.
       We can compute the displacement of <m>\vec r</m> on <m>[t_0,t_1]</m>,
-      as shown in <xref ref="fig_vvfderiv_intro">Figure</xref>(a).
+      as shown in <xref ref="fig_vvfderiv_introa">Figure</xref>.
       Recall that dividing the displacement vector by <m>t_1-t_0</m> gives the average rate of change on <m>[t_0,t_1]</m>,
-      as shown in (b).
+      as shown in <xref ref="fig_vvfderiv_introb">Figure</xref>.
     </p>
 
     <figure xml:id="fig_vvfderiv_intro">
@@ -422,7 +422,7 @@
                 <me>
                   \vrp(t) = \la 2t, 1\ra
                 </me>.
-                <m>\vec r(t)</m> and <m>\vrp(t)</m> are graphed together in <xref ref="fig_vvflimit3">Figure</xref>(a).
+                <m>\vec r(t)</m> and <m>\vrp(t)</m> are graphed together in <xref ref="fig_vvflimit3a">Figure</xref>.
                 Note how plotting the two of these together,
                 in this way, is not very illuminating.
                 When dealing with real<ndash/>valued functions,
@@ -438,7 +438,7 @@
                 which is drawn in <xref ref="fig_vvflimit3">Figure</xref>
                 with its initial point at the origin,
                 as well as at <m>\vec r(1) = \la 1,1\ra</m>.
-                These are sketched in <xref ref="fig_vvflimit3">Figure</xref>(b).
+                These are sketched in <xref ref="fig_vvflimit3b">Figure</xref>.
               </p>
 
               <figure xml:id="fig_vvflimit3">
@@ -546,8 +546,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figvvf23D.asy in Chapter 11
@@ -557,6 +555,8 @@
               currentprojection=orthographic(5,5,10);
               //currentprojection=orthographic(-5.6,3.8,9.5);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -688,8 +688,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figvvfderiv1.asy in Chapter 11
@@ -698,6 +696,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1695,29 +1695,31 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_02_ex_15.tex -->
-              <image xml:id="img_11_02_ex_15X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_02_ex_15.tex -->
+                <image xml:id="img_11_02_ex_15X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.5,ymax=6.5,
-                xmin=-1.5,xmax=6.5
-                ]
+                  \begin{axis}[
+                  ymin=-1.5,ymax=6.5,
+                  xmin=-1.5,xmax=6.5
+                  ]
 
-                \addplot+ [-,domain=-2:2,samples=40] ({x^2+x},{x^2-x});
+                  \addplot+ [-,domain=-2:2,samples=40] ({x^2+x},{x^2-x});
 
-                \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 2,0) -- (axis cs:5,1) node [black,right] {\scriptsize $\vec r\,'(1)$};
+                  \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 2,0) -- (axis cs:5,1) node [black,right] {\scriptsize $\vec r\,'(1)$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_02_ex_15.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_02_ex_15.tex END -->
+              </sidebyside>
 
               <p>
                 <m>\vrp(t) = \la 2t+1,2t-1\ra</m>
@@ -1739,29 +1741,31 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_02_ex_16.tex -->
-              <image xml:id="img_11_02_ex_16X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_02_ex_16.tex -->
+                <image xml:id="img_11_02_ex_16X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.5,ymax=1.5,
-                xmin=-.5,xmax=3.5
-                ]
+                  \begin{axis}[
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-.5,xmax=3.5
+                  ]
 
-                \addplot+ [-,domain=-.5:2.5,samples=60] ({x^2-2*x+2},{x^3-3*x^2+2*x});
+                  \addplot+ [-,domain=-.5:2.5,samples=60] ({x^2-2*x+2},{x^3-3*x^2+2*x});
 
-                \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 1,0) -- (axis cs:1,-1) node [black,right] {\scriptsize $\vec r\,'(1)$};
+                  \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 1,0) -- (axis cs:1,-1) node [black,right] {\scriptsize $\vec r\,'(1)$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_02_ex_16.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_02_ex_16.tex END -->
+              </sidebyside>
 
               <p>
                 <m>\vrp(t) = \la 2t-2,3t^2-6t+2\ra</m>
@@ -1783,29 +1787,31 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_02_ex_17.tex -->
-              <image xml:id="img_11_02_ex_17X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_02_ex_17.tex -->
+                <image xml:id="img_11_02_ex_17X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-2.5,ymax=2.5,
-                xmin=-.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  ymin=-2.5,ymax=2.5,
+                  xmin=-.5,xmax=4.5
+                  ]
 
-                \addplot+[domain=-.5:2.5,samples=50] ({x^2-2*x+2},{x^3-3*x^2+2*x});
+                  \addplot+[domain=-.5:2.5,samples=50] ({x^2-2*x+2},{x^3-3*x^2+2*x});
 
-                \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 2,0) -- (axis cs:4,2) node [black,above] {\scriptsize $\vec r\,'(1)$};
+                  \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 2,0) -- (axis cs:4,2) node [black,above] {\scriptsize $\vec r\,'(1)$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_02_ex_17.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_02_ex_17.tex END -->
+              </sidebyside>
 
               <p>
                 <m>\vrp(t) = \la 2t,3t^2-1\ra</m>
@@ -1827,29 +1833,31 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_02_ex_18.tex -->
-              <image xml:id="img_11_02_ex_18X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_02_ex_18.tex -->
+                <image xml:id="img_11_02_ex_18X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-2.5,ymax=2.5,
-                xmin=-.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  ymin=-2.5,ymax=2.5,
+                  xmin=-.5,xmax=4.5
+                  ]
 
-                \addplot+ [-,domain=-.5:2.5,samples=40] ({x^2-2*x+2},{x^3-3*x^2+2*x});
+                  \addplot+ [-,domain=-.5:2.5,samples=40] ({x^2-2*x+2},{x^3-3*x^2+2*x});
 
-                \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 2,0) -- (axis cs:0,2) node [black,right] {\scriptsize $\vec r\,'(1)$};
+                  \draw [thick,secondcolor,-&gt;,&gt;=stealth] (axis cs: 2,0) -- (axis cs:0,2) node [black,right] {\scriptsize $\vec r\,'(1)$};
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_02_ex_18.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_02_ex_18.tex END -->
+              </sidebyside>
 
               <p>
                 <m>\vrp(t) = \la 2t-4,3t^2-12t+11\ra</m>

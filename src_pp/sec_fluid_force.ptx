@@ -837,26 +837,28 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.7,yscale=.7] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.7,yscale=.7] 
 
-                \draw [shift={(-1,0)},thick] (0,0) -- node [below,pos=.5] {2 ft} (2,0) -- node [right,pos=.5] {2 ft} (2,2) -- (0,2) -- cycle;
+                  \draw [shift={(-1,0)},thick] (0,0) -- node [below,pos=.5] {2 ft} (2,0) -- node [right,pos=.5] {2 ft} (2,2) -- (0,2) -- cycle;
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,3)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,3)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
+                  \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
 
-                \end{tikzpicture}
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -874,27 +876,29 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X1">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.7,yscale=.7] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X1">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.7,yscale=.7] 
 
-                \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] {1 ft} (1,0)-- node [right,pos=.5] {2 ft} (1,2) -- (0,2) -- cycle;
+                  \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] {1 ft} (1,0)-- node [right,pos=.5] {2 ft} (1,2) -- (0,2) -- cycle;
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,3)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,3)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+                  \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
 
-                \end{tikzpicture}
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -912,31 +916,33 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X2">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.5,yscale=.4] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X2">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.5,yscale=.4] 
 
-                \draw [thick] (0,0) -- (-2,-6) -- node [below,pos=.5] {4 ft} (2,-6) -- cycle;
+                  \draw [thick] (0,0) -- (-2,-6) -- node [below,pos=.5] {4 ft} (2,-6) -- cycle;
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,3)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,3)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw [dashed] (0,0.1) -- node [right,pos=.5] {5 ft} (0,2.9);
+                  \draw [dashed] (0,0.1) -- node [right,pos=.5] {5 ft} (0,2.9);
 
-                \draw (2.2,-6) -- (2.6,-6)
-                      (2.2,0) -- (2.6,0)
-                      (2.4,-6) -- node [pos=.5,right] {6 ft} (2.4,0);
-                      
-                \end{tikzpicture}
+                  \draw (2.2,-6) -- (2.6,-6)
+                        (2.2,0) -- (2.6,0)
+                        (2.4,-6) -- node [pos=.5,right] {6 ft} (2.4,0);
+                        
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -954,31 +960,33 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X3">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.5,yscale=.4] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X3">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.5,yscale=.4] 
 
-                \draw [thick] (0,0) -- (-2,6) -- node [below,pos=.5] {4 ft} (2,6) -- cycle;
+                  \draw [thick] (0,0) -- (-2,6) -- node [below,pos=.5] {4 ft} (2,6) -- cycle;
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,9)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,9)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw [dashed] (0,6.1) -- node [right,pos=.5] {5 ft} (0,8.9);
+                  \draw [dashed] (0,6.1) -- node [right,pos=.5] {5 ft} (0,8.9);
 
-                \draw (2.2,6) -- (2.6,6)
-                      (2.2,0) -- (2.6,0)
-                      (2.4,6) -- node [pos=.5,right] {6 ft} (2.4,0);
-                      
-                \end{tikzpicture}
+                  \draw (2.2,6) -- (2.6,6)
+                        (2.2,0) -- (2.6,0)
+                        (2.4,6) -- node [pos=.5,right] {6 ft} (2.4,0);
+                        
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -996,31 +1004,33 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X4">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.5,yscale=.5]
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X4">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.5,yscale=.5]
 
-                \draw [thick] (0,0) circle (2);
+                  \draw [thick] (0,0) circle (2);
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,5)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,5)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw [dashed] (0,0) -- node [above,pos=.5] {2 ft} (2,0);
+                  \draw [dashed] (0,0) -- node [above,pos=.5] {2 ft} (2,0);
 
-                \draw (2.2,5) -- (2.6,5)
-                      (2.2,0) -- (2.6,0)
-                      (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
-                      
-                \end{tikzpicture}
+                  \draw (2.2,5) -- (2.6,5)
+                        (2.2,0) -- (2.6,0)
+                        (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
+                        
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1038,31 +1048,33 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X5">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.5,yscale=.5] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X5">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.5,yscale=.5] 
 
-                \draw [thick] (0,0) circle (4);
+                  \draw [thick] (0,0) circle (4);
 
-                \foreach \x in {-3,-2,-1,0,1,2,3}
-                {
-                  \begin{scope}[shift={(\x*1,5)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-3,-2,-1,0,1,2,3}
+                  {
+                    \begin{scope}[shift={(\x*1,5)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw [dashed] (0,0) -- node [above,pos=.5] {4 ft} (4,0);
+                  \draw [dashed] (0,0) -- node [above,pos=.5] {4 ft} (4,0);
 
-                \draw (4.2,5) -- (4.6,5)
-                      (4.2,0) -- (4.6,0)
-                      (4.4,5) -- node [pos=.5,right] {5 ft} (4.4,0);
+                  \draw (4.2,5) -- (4.6,5)
+                        (4.2,0) -- (4.6,0)
+                        (4.4,5) -- node [pos=.5,right] {5 ft} (4.4,0);
 
-                \end{tikzpicture}
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1080,29 +1092,31 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X6">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.5,yscale=.5] 
-                
-                \draw [thick] (-2,-1) -- node [below,pos=.5] {4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [left,pos=.5] {2 ft} (-2,-1);
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X6">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.5,yscale=.5] 
+                  
+                  \draw [thick] (-2,-1) -- node [below,pos=.5] {4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [left,pos=.5] {2 ft} (-2,-1);
 
-                \foreach \x in {-3,-2,-1,0,1,2,3}
-                {
-                  \begin{scope}[shift={(\x*1,5)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-3,-2,-1,0,1,2,3}
+                  {
+                    \begin{scope}[shift={(\x*1,5)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw (2.2,5) -- (2.6,5)
-                      (2.2,0) -- (2.6,0)
-                      (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
+                  \draw (2.2,5) -- (2.6,5)
+                        (2.2,0) -- (2.6,0)
+                        (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
 
-                \end{tikzpicture}
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1120,29 +1134,31 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X7">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.5,yscale=.5] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X7">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.5,yscale=.5] 
 
-                \draw [thick,rotate=90] (-2,-1) -- node [right,pos=.5] {4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [below,pos=.5] {2 ft} (-2,-1);
+                  \draw [thick,rotate=90] (-2,-1) -- node [right,pos=.5] {4 ft} (2,-1) -- (2,1) -- (-2,1) -- node [below,pos=.5] {2 ft} (-2,-1);
 
-                \foreach \x in {-3,-2,-1,0,1,2,3}
-                {
-                  \begin{scope}[shift={(\x*1,5)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-3,-2,-1,0,1,2,3}
+                  {
+                    \begin{scope}[shift={(\x*1,5)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw (2.2,5) -- (2.6,5)
-                      (2.2,0) -- (2.6,0)
-                      (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
+                  \draw (2.2,5) -- (2.6,5)
+                        (2.2,0) -- (2.6,0)
+                        (2.4,5) -- node [pos=.5,right] {5 ft} (2.4,0);
 
-                \end{tikzpicture}
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1160,27 +1176,29 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X8">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.7,yscale=.7] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X8">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.7,yscale=.7] 
 
-                \draw [shift={(0,-.85)},thick,rotate=45] (0,0) -- node [shift={(8pt,-5pt)},pos=.5] {2 ft} (2,0)-- node [shift={(8pt,5pt)},pos=.5] {2 ft} (2,2) -- (0,2) -- cycle;
+                  \draw [shift={(0,-.85)},thick,rotate=45] (0,0) -- node [shift={(8pt,-5pt)},pos=.5] {2 ft} (2,0)-- node [shift={(8pt,5pt)},pos=.5] {2 ft} (2,2) -- (0,2) -- cycle;
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,3)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,3)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
 
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+                  \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
 
-                \end{tikzpicture}
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1198,26 +1216,28 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X9">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[xscale=.7,yscale=.7] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X9">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[xscale=.7,yscale=.7] 
 
-                \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] {2 ft} (2,0) -- (0,2) -- node [left,pos=.5] {2 ft} (0,0);
+                  \draw [shift={(-.5,0)},thick] (0,0) -- node [below,pos=.5] {2 ft} (2,0) -- (0,2) -- node [left,pos=.5] {2 ft} (0,0);
 
-                \foreach \x in {-2,-1,0,1,2}
-                {
-                  \begin{scope}[shift={(\x*1,3)}] 
-                    \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
-                  \end{scope}
-                }
-                \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
-                
-                \end{tikzpicture}
+                  \foreach \x in {-2,-1,0,1,2}
+                  {
+                    \begin{scope}[shift={(\x*1,3)}] 
+                      \draw [thick] (-.5,.25) parabola bend (0,0) (.5,.25);
+                    \end{scope}
+                  }
+                  \draw [dashed] (0,2.1) -- node [right,pos=.5] {1 ft} (0,2.9);
+                  
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1262,18 +1282,20 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X10">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[scale=.5] 
-                
-                \draw [thick] (0,0) -- node [below,pos=.5] {3 ft} (3,0) -- node [right,pos=.5] {5 ft} (3,5) -- (0,5) -- cycle;
-                
-                \end{tikzpicture}
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X10">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[scale=.5] 
+                  
+                  \draw [thick] (0,0) -- node [below,pos=.5] {3 ft} (3,0) -- node [right,pos=.5] {5 ft} (3,5) -- (0,5) -- cycle;
+                  
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1303,24 +1325,26 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X11">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[scale=.5] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X11">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[scale=.5] 
 
-                \draw [thick] (-2,4) parabola bend (0,0) (2,4) -- node [above,pos=.5] {4 ft} (-2,4);
+                  \draw [thick] (-2,4) parabola bend (0,0) (2,4) -- node [above,pos=.5] {4 ft} (-2,4);
 
-                \draw (0,0) node [below] {\(y=x^2\)};
+                  \draw (0,0) node [below] {\(y=x^2\)};
 
-                \draw (2.2,0) -- (2.6,0)
-                      (2.2,4) -- (2.6,4)
-                      (2.4,0) -- node [pos=.5,right] {4 ft} (2.4,4);
-                      
-                \end{tikzpicture}
+                  \draw (2.2,0) -- (2.6,0)
+                        (2.2,4) -- (2.6,4)
+                        (2.4,0) -- node [pos=.5,right] {4 ft} (2.4,4);
+                        
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1350,24 +1374,26 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X12">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[scale=.5] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X12">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[scale=.5] 
 
-                \draw [thick] (-2,0) parabola bend (0,4) (2,0) --  node [below,pos=.5] {4 ft} (-2,0);
+                  \draw [thick] (-2,0) parabola bend (0,4) (2,0) --  node [below,pos=.5] {4 ft} (-2,0);
 
-                \draw (0,4) node [above] {\(y=4-x^2\)};
-                
-                \draw (2.2,0) -- (2.6,0)
-                      (2.2,4) -- (2.6,4)
-                      (2.4,0) -- node [pos=.5,right] {4 ft} (2.4,4);
-                      
-                \end{tikzpicture}
+                  \draw (0,4) node [above] {\(y=4-x^2\)};
+                  
+                  \draw (2.2,0) -- (2.6,0)
+                        (2.2,4) -- (2.6,4)
+                        (2.4,0) -- node [pos=.5,right] {4 ft} (2.4,4);
+                        
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1397,19 +1423,21 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X13">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[scale=1] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X13">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[scale=1] 
 
-                \draw [thick] (-1,0) arc (180:360:1) -- node [above,pos=.5] {2 ft} (-1,0);
-                \draw (0,-1) node [below] {\(y=-\sqrt{1-x^2}\)};
-                
-                \end{tikzpicture}
+                  \draw [thick] (-1,0) arc (180:360:1) -- node [above,pos=.5] {2 ft} (-1,0);
+                  \draw (0,-1) node [below] {\(y=-\sqrt{1-x^2}\)};
+                  
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1439,19 +1467,21 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X14">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[scale=1] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X14">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[scale=1] 
 
-                \draw [thick] (-1,0) arc (180:0:1) -- node [below,pos=.5] {2 ft} (-1,0);
-                \draw (0,1) node [above] {\(y=\sqrt{1-x^2}\)};
-                
-                \end{tikzpicture}
+                  \draw [thick] (-1,0) arc (180:0:1) -- node [below,pos=.5] {2 ft} (-1,0);
+                  \draw (0,1) node [above] {\(y=\sqrt{1-x^2}\)};
+                  
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
             </statement>
             <solution>
               <p>
@@ -1481,20 +1511,22 @@
             </pg-code>
             </setup>
             <statement>
-              <image xml:id="img_fluid4X15">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[scale=.5] 
+              <sidebyside width="47%">
+                <image xml:id="img_fluid4X15">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[scale=.5] 
 
-                \draw [thick] (-3,0) arc (180:360:3) -- node [above,pos=.5] {6 ft} (-3,0);
-                \draw (0,-3) node [below] {\(y=-\sqrt{9-x^2}\)};
-                
-                \end{tikzpicture}
+                  \draw [thick] (-3,0) arc (180:360:3) -- node [above,pos=.5] {6 ft} (-3,0);
+                  \draw (0,-3) node [below] {\(y=-\sqrt{9-x^2}\)};
+                  
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
-              </statement>
+                  </latex-image>
+                </image>
+              </sidebyside>
+            </statement>
             <solution>
               <p>
                 <ol>

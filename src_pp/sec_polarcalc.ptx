@@ -321,14 +321,15 @@
     </p>
 
     <p>
-      Consider <xref ref="fig_polararea">Figure</xref>
-      (a) where a region defined by
+      Consider <xref ref="fig_polarea1">Figure</xref>
+      where a region defined by
       <m>r=f(\theta)</m> on <m>[\alpha,\beta]</m> is given.
       (Note how the <q>sides</q> of the region are the lines
       <m>\theta=\alpha</m> and <m>\theta=\beta</m>,
       whereas in rectangular coordinates the <q>sides</q>
       of regions were often the vertical lines <m>x=a</m> and <m>x=b</m>.)
     </p>
+
     <aside>
       <p>
         Recall that the area of a sector of a circle with radius <m>r</m> subtended by an angle <m>\theta</m> is <m>A = \frac12\theta r^2</m>.
@@ -352,6 +353,7 @@
       </image>
 
     </aside>
+    
     <p>
       Partition the interval <m>[\alpha,\beta]</m> into <m>n</m> equally spaced subintervals as <m>\alpha = \theta_1 \lt  \theta_2 \lt \cdots \lt \theta_{n+1}=\beta</m>.
       The length of each subinterval is <m>\Delta\theta = (\beta-\alpha)/n</m>,
@@ -360,7 +362,7 @@
       <m>[\theta_i,\theta_{i+1}]</m> can be approximated with a sector of a circle with radius <m>f(c_i)</m>,
       for some <m>c_i</m> in <m>[\theta_i,\theta_{i+1}]</m>.
       The area of this sector is <m>\frac12f(c_i)^2\Delta\theta</m>.
-      This is shown in part (b) of the figure,
+      This is shown in <xref ref="fig_polarea2">Figure</xref>,
       where <m>[\alpha,\beta]</m> has been divided into 4 subintervals.
       We approximate the area of the whole region by summing the areas of all sectors:
       <me>
@@ -768,7 +770,7 @@
       <statement>
         <p>
           Find the area bounded between the polar curves <m>r=1</m> and <m>r=2\cos(2\theta)</m>,
-          as shown in <xref ref="fig_polcalc6">Figure</xref> (a).
+          as shown in <xref ref="fig_polcalc6a">Figure</xref>.
         </p>
       </statement>
       <solution>
@@ -853,7 +855,7 @@
         </figure>
 
         <p>
-          In part (b) of the figure,
+          In <xref ref="fig_polcalc6b">Figure</xref>,
           we zoom in on the region and note that it is not really bounded
           <em>between</em> two polar curves,
           but rather <em>by</em> two polar curves,
@@ -1128,11 +1130,7 @@
                   currentprojection=orthographic(4,-8,2);
                   defaultrender.merge=true;
 
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={1};

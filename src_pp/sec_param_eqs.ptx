@@ -9,7 +9,7 @@
 
     <!-- TODO: Fix this iamge below -->
 
-    <image>
+    <image xml:id="img_intro1">
       <description></description>
       <latex-image>
       
@@ -45,7 +45,7 @@
       In this section we introduce a new sketching procedure:
     </p>
 
-    <image>
+    <image xml:id="img_intro2">
       <description></description>
       <latex-image>
       
@@ -118,12 +118,12 @@
           we make a table of values, plot points,
           then connect these points with a
           <q>reasonable</q> looking curve.
-          <xref ref="fig_pareq1">Figure</xref>(a) shows such a table of values;
+          <xref ref="fig_pareq1a">Figure</xref> shows such a table of values;
           note how we have 3 columns.
         </p>
 
         <p>
-          The points <m>(x,y)</m> from the table are plotted in <xref ref="fig_pareq1">Figure</xref>(b).
+          The points <m>(x,y)</m> from the table are plotted in <xref ref="fig_pareq1b">Figure</xref>.
           The points have been connected with a smooth curve.
           Each point has been labeled with its corresponding <m>t</m>-value.
           These values, along with the two arrows along the curve,
@@ -230,8 +230,8 @@
       </statement>
       <solution>
         <p>
-          We again start by making a table of values in <xref ref="fig_pareq2">Figure</xref>(a),
-          then plot the points <m>(x,y)</m> on the Cartesian plane in <xref ref="fig_pareq2">Figure</xref>(b).
+          We again start by making a table of values in <xref ref="fig_pareq2a">Figure</xref>,
+          then plot the points <m>(x,y)</m> on the Cartesian plane in <xref ref="fig_pareq2b">Figure</xref>.
         </p>
 
         <figure xml:id="fig_pareq2">
@@ -381,7 +381,7 @@
       </statement>
       <solution>
         <p>
-          The graph of the parametric equations is given in <xref ref="fig_pareq3">Figure</xref> (a).
+          The graph of the parametric equations is given in <xref ref="fig_pareq3a">Figure</xref>.
           It is a parabola with a axis of symmetry along the line <m>y=x</m>;
           the vertex is at <m>(0,0)</m>.
         </p>
@@ -396,7 +396,7 @@
           <m>y = t^2-t-2</m>.
           Thus our parametric equations for the shifted graph are <m>x=t^2+t+3</m>,
           <m>y=t^2-t-2</m>.
-          This is graphed in <xref ref="fig_pareq3">Figure</xref> (b).
+          This is graphed in <xref ref="fig_pareq3a">Figure</xref>.
           Notice how the vertex is now at <m>(3,-2)</m>.
         </p>
 
@@ -1274,31 +1274,33 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_05.tex -->
-              <image xml:id="img_09_02_ex_05X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_05.tex -->
+                <image xml:id="img_09_02_ex_05X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                minor x tick num=4,
-                minor y tick num=4,
-                ymin=-9,ymax=2,
-                xmin=-1,xmax=13
-                ]
+                  \begin{axis}[
+                  minor x tick num=4,
+                  minor y tick num=4,
+                  ymin=-9,ymax=2,
+                  xmin=-1,xmax=13
+                  ]
 
-                \addplot+ [-,domain=-3:3,samples=40] ({x^2+x},{1-x^2});
+                  \addplot+ [-,domain=-3:3,samples=40] ({x^2+x},{1-x^2});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs: 6,-3) -- (axis cs:6.05,-3.04);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs: 6,-3) -- (axis cs:6.05,-3.04);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_05.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_05.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1316,31 +1318,33 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_06.tex -->
-              <image xml:id="img_09_02_ex_06X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_06.tex -->
+                <image xml:id="img_09_02_ex_06X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                axis on top,
-                minor y tick num=4,
-                ymin=-5.5,ymax=5.5,
-                xmin=-.5,xmax=1.6
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  minor y tick num=4,
+                  ymin=-5.5,ymax=5.5,
+                  xmin=-.5,xmax=1.6
+                  ]
 
-                \addplot+ [-,domain=-5:5] ({1},{x});
+                  \addplot+ [-,domain=-5:5] ({1},{x});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs: 1,1) -- (axis cs:1,1.1);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs: 1,1) -- (axis cs:1,1.1);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_06.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_06.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1358,31 +1362,33 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_07.tex -->
-              <image xml:id="img_09_02_ex_07X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_07.tex -->
+                <image xml:id="img_09_02_ex_07X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                minor x tick num=4,
-                minor y tick num=4,
-                ymin=-.5,ymax=2.5,
-                xmin=-.5,xmax=2.5
-                ]
+                  \begin{axis}[
+                  minor x tick num=4,
+                  minor y tick num=4,
+                  ymin=-.5,ymax=2.5,
+                  xmin=-.5,xmax=2.5
+                  ]
 
-                \addplot+ [-,domain=-2:2] ({x^2},{2});
+                  \addplot+ [-,domain=-2:2] ({x^2},{2});
 
-                \draw [&gt;=latex,&lt;-&gt;,thick] (axis cs: .9,2) -- (axis cs:1.5,2);
+                  \draw [&gt;=latex,&lt;-&gt;,thick] (axis cs: .9,2) -- (axis cs:1.5,2);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_07.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_07.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1400,30 +1406,32 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_08.tex -->
-              <image xml:id="img_09_02_ex_08X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_08.tex -->
+                <image xml:id="img_09_02_ex_08X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                axis on top,
-                ymin=-.5,ymax=4.5,
-                xmin=-.5,xmax=5.5
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  ymin=-.5,ymax=4.5,
+                  xmin=-.5,xmax=5.5
+                  ]
 
-                \addplot+ [-,domain=-2:2,samples=50] ({x^3-x+3},{x^2+1});
+                  \addplot+ [-,domain=-2:2,samples=50] ({x^3-x+3},{x^2+1});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs: 3.897,2.69) -- (axis cs:3.938,2.7161);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs: 3.897,2.69) -- (axis cs:3.938,2.7161);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_08.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_08.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1453,29 +1461,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_09.tex -->
-              <image xml:id="img_09_02_ex_09X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_09.tex -->
+                <image xml:id="img_09_02_ex_09X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=0.1,ymax=9,
-                xmin=-11,xmax=11
-                ]
+                  \begin{axis}[
+                  ymin=0.1,ymax=9,
+                  xmin=-11,xmax=11
+                  ]
 
-                \addplot+ [-,domain=-2:3,samples=40] ({x^3-2*x^2},{x^2});
+                  \addplot+ [-,domain=-2:3,samples=40] ({x^3-2*x^2},{x^2});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:-1.183,1.69)-- (axis cs:-1.18411,1.7161);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:-1.183,1.69)-- (axis cs:-1.18411,1.7161);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_09.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_09.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1493,29 +1503,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_10.tex -->
-              <image xml:id="img_09_02_ex_10X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_10.tex -->
+                <image xml:id="img_09_02_ex_10X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.1,ymax=1.1,
-                xmin=-0.5,xmax=1.5
-                ]
+                  \begin{axis}[
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-0.5,xmax=1.5
+                  ]
 
-                \addplot+ [-,domain=0.1:10,samples=100] ({1/x},{sin(deg(x))});
+                  \addplot+ [-,domain=0.1:10,samples=100] ({1/x},{sin(deg(x))});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:0.25,-.756802)-- (axis cs:0.249377,-.763301);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:0.25,-.756802)-- (axis cs:0.249377,-.763301);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_10.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_10.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1533,29 +1545,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_11.tex -->
-              <image xml:id="img_09_02_ex_11X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_11.tex -->
+                <image xml:id="img_09_02_ex_11X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-5.5,ymax=5.5,
-                xmin=-5.5,xmax=5.5
-                ]
+                  \begin{axis}[
+                  ymin=-5.5,ymax=5.5,
+                  xmin=-5.5,xmax=5.5
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=60] ({3*cos(x)},{5*sin(x)});
+                  \addplot+ [-,domain=0:360,samples=60] ({3*cos(x)},{5*sin(x)});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:2.12,3.5355)-- (axis cs:2.1,3.5707);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:2.12,3.5355)-- (axis cs:2.1,3.5707);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_11.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_11.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1573,31 +1587,33 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_12.tex -->
-              <image xml:id="img_09_02_ex_12X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_12.tex -->
+                <image xml:id="img_09_02_ex_12X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                minor x tick num=4,
-                minor y tick num=4,
-                ymin=-5.5,ymax=8.5,
-                xmin=-5.5,xmax=7.5
-                ]
+                  \begin{axis}[
+                  minor x tick num=4,
+                  minor y tick num=4,
+                  ymin=-5.5,ymax=8.5,
+                  xmin=-5.5,xmax=7.5
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=60] ({3*cos(x)+2},{5*sin(x)+3});
+                  \addplot+ [-,domain=0:360,samples=60] ({3*cos(x)+2},{5*sin(x)+3});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:4.12,6.5355) -- (axis cs:4.1,6.5707);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:4.12,6.5355) -- (axis cs:4.1,6.5707);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_12.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_12.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1615,29 +1631,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_13.tex -->
-              <image xml:id="img_09_02_ex_13X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_13.tex -->
+                <image xml:id="img_09_02_ex_13X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.1,xmax=1.1
-                ]
+                  \begin{axis}[
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.1,xmax=1.1
+                  ]
 
-                \addplot+ [-,domain=0:180,samples=60] ({cos(x)},{cos(x*2)});
+                  \addplot+ [-,domain=0:180,samples=60] ({cos(x)},{cos(x*2)});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:0.8845,0.5646) -- (axis cs:0.8798,0.548024);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:0.8845,0.5646) -- (axis cs:0.8798,0.548024);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_13.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_13.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1655,28 +1673,30 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_14.tex -->
-              <image xml:id="img_09_02_ex_14X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_14.tex -->
+                <image xml:id="img_09_02_ex_14X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.1,xmax=1.1]
+                  \begin{axis}[
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.1,xmax=1.1]
 
-                \addplot+ [-,domain=0:360,samples=120] ({cos(x)},{sin(x*2)});
+                  \addplot+ [-,domain=0:360,samples=120] ({cos(x)},{sin(x*2)});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:0.8845,0.82534) -- (axis cs:0.8798,0.8365);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:0.8845,0.82534) -- (axis cs:0.8798,0.8365);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_14.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_14.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1694,31 +1714,33 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_15.tex -->
-              <image xml:id="img_09_02_ex_15X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_15.tex -->
+                <image xml:id="img_09_02_ex_15X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                minor x tick num=4,
-                minor y tick num=4,
-                ymin=-16.,ymax=16,
-                xmin=-1,xmax=11
-                ]
+                  \begin{axis}[
+                  minor x tick num=4,
+                  minor y tick num=4,
+                  ymin=-16.,ymax=16,
+                  xmin=-1,xmax=11
+                  ]
 
-                \addplot+ [-,domain=-80:80] ({2*sec(x)},{3*tan(x)});
+                  \addplot+ [-,domain=-80:80] ({2*sec(x)},{3*tan(x)});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:5.32,7.395) -- (axis cs:5.4549,7.61254);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:5.32,7.395) -- (axis cs:5.4549,7.61254);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_15.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_15.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1736,29 +1758,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_16.tex -->
-              <image xml:id="img_09_02_ex_16X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_16.tex -->
+                <image xml:id="img_09_02_ex_16X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.5,ymax=1.5,
-                xmin=-1.5,xmax=1.5
-                ]
+                  \begin{axis}[
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-1.5,xmax=1.5
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=280] ({cos(x)+cos(8*x)/4},{sin(x)+sin(8*x)/4});
+                  \addplot+ [-,domain=0:360,samples=280] ({cos(x)+cos(8*x)/4},{sin(x)+sin(8*x)/4});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:.9571,.7071) -- (axis cs:.9534,.7341);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:.9571,.7071) -- (axis cs:.9534,.7341);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_16.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_16.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1776,29 +1800,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_02_ex_17.tex -->
-              <image xml:id="img_09_02_ex_17X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
-                
-                \begin{axis}[
-                ymin=-1.5,ymax=1.5,
-                xmin=-1.5,xmax=1.5
-                ]
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_02_ex_17.tex -->
+                <image xml:id="img_09_02_ex_17X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
+                  
+                  \begin{axis}[
+                  ymin=-1.5,ymax=1.5,
+                  xmin=-1.5,xmax=1.5
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=260] ({cos(x)+sin(8*x)/4},{sin(x)+cos(8*x)/4});
+                  \addplot+ [-,domain=0:360,samples=260] ({cos(x)+sin(8*x)/4},{sin(x)+cos(8*x)/4});
 
-                \draw [&gt;=latex,-&gt;,thick] (axis cs:0.3613,.6771) -- (axis cs:.33215,.68275);
+                  \draw [&gt;=latex,-&gt;,thick] (axis cs:0.3613,.6771) -- (axis cs:.33215,.68275);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_02_ex_17.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_02_ex_17.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>

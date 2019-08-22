@@ -15,7 +15,7 @@
     <p>
       Currently, our vector<ndash/>valued functions have defined points with a parameter <m>t</m>,
       which we often take to represent time.
-      Consider <xref ref="fig_vvfarc_intro1">Figure</xref>(a),
+      Consider <xref ref="fig_vvfarc_intro1a">Figure</xref>,
       where <m>\vrt = \la t^2-t,t^2+t\ra</m> is graphed and the points corresponding to <m>t=0,\ 1</m> and <m>2</m> are shown.
       Note how the arc length between <m>t=0</m> and <m>t=1</m> is smaller than the arc length between <m>t=1</m> and <m>t=2</m>;
       if the parameter <m>t</m> is time and <m>\vec r</m> is position,
@@ -95,7 +95,7 @@
     </figure>
 
     <p>
-      Now consider <xref ref="fig_vvfarc_intro1">Figure</xref>(b),
+      Now consider <xref ref="fig_vvfarc_intro1b">Figure</xref>,
       where the same graph is parametrized by a different variable <m>s</m>.
       Points corresponding to <m>s=0</m> through <m>s=6</m> are plotted.
       The arc length of the graph between each adjacent pair of points is 1.
@@ -308,7 +308,7 @@
   <subsection>
     <title>Curvature</title>
     <p>
-      Consider points <m>A</m> and <m>B</m> on the curve graphed in <xref ref="fig_curvature_intro">Figure</xref>(a).
+      Consider points <m>A</m> and <m>B</m> on the curve graphed in <xref ref="fig_curvature_introa">Figure</xref>.
       One can readily argue that the curve curves more sharply at <m>A</m> than at <m>B</m>.
       It is useful to use a number to describe how sharply the curve bends;
       that number is the <em>curvature</em> of the curve.
@@ -388,7 +388,7 @@
 
     <p>
       We derive this number in the following way.
-      Consider <xref ref="fig_curvature_intro">Figure</xref>(b),
+      Consider <xref ref="fig_curvature_introb">Figure</xref>,
       where unit tangent vectors are graphed around points <m>A</m> and <m>B</m>.
       Notice how the direction of the unit tangent vector changes quite a bit near <m>A</m>,
       whereas it does not change as much around <m>B</m>.
@@ -817,8 +817,6 @@
               <image xml:id="img_curvature4b_3D">
                 <description></description>
                 <asymptote>
-
-                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -829,6 +827,8 @@
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
 
+                  usepackage("amsmath");
+                  
                   // setup and draw the axes
                   real[] myxchoice={};
                   real[] myychoice={};
@@ -911,10 +911,10 @@
           we should solve <m>\kappa'(t)=0</m> for <m>t</m>.
           This is doable, but <em>very</em> time consuming.
           Instead, consider the graph of
-          <m>\kappa(t)</m> as given in <xref ref="fig_curvature4">Figure</xref>(a).
+          <m>\kappa(t)</m> as given in <xref ref="fig_curvature4a">Figure</xref>.
           We see that <m>\kappa</m> is maximized at two <m>t</m> values;
           using a numerical solver, we find these values are <m>t\approx\pm 0.189</m>.
-          In part (b) of the figure we graph <m>\vrt</m> and indicate the points where curvature is maximized.
+          In <xref ref="fig_curvature4b_3D">Figure</xref> we graph <m>\vrt</m> and indicate the points where curvature is maximized.
         </p>
       </solution>
     </example>

@@ -815,7 +815,7 @@
             <figure xml:id="fig_seq5">
               <caption>A plot of a sequence in <xref ref="ex_seq5">Example</xref>, part 2.</caption>
           <!-- START figures/fig_seq5.tex -->
-              <image xml:id="img_seq5" width="47%">
+              <image xml:id="img_seq5">
                 <description></description>
                 <latex-image>
                 
@@ -1358,7 +1358,7 @@
 
           <li>
             <p>
-              We can clearly see in <xref ref="fig_seq7">Figure</xref> (c),
+              We can clearly see in <xref ref="fig_seq7c">Figure</xref>,
               where the sequence is plotted, that it is not monotonic.
               However, it does seem that after the first 4 terms it is decreasing.
               To understand why, perform the same analysis as done before:
