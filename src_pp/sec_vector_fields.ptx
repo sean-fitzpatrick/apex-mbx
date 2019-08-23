@@ -86,6 +86,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               defaultpen(fontsize(8));
 
               bool incolor;
@@ -146,6 +148,8 @@
 
               import graph;
               size(150,150);
+
+              usepackage("amsmath");
 
               defaultpen(fontsize(8));
 
@@ -254,6 +258,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               defaultpen(fontsize(8));
 
               bool incolor;
@@ -307,6 +313,8 @@
 
               import graph;
               size(150,150);
+
+              usepackage("amsmath");
 
               defaultpen(fontsize(8));
 
@@ -415,6 +423,8 @@
           size(200,200,IgnoreAspect);
           currentprojection=orthographic(13.5,-13,10);
           defaultrender.merge=true;
+
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={1};
@@ -774,6 +784,8 @@
                         import graph;
                         size(150,150);
 
+                        usepackage("amsmath");
+
                         // vector field F = ⟨ y, 0 ⟩
 
                         defaultpen(fontsize(8));
@@ -835,6 +847,8 @@
 
                         import graph;
                         size(150,150);
+
+                        usepackage("amsmath");
 
                         // vector field F = ⟨ -y, x ⟩
 
@@ -972,6 +986,8 @@
                         import graph;
                         size(150,150);
 
+                        usepackage("amsmath");
+
                         // vector field F = ⟨ x,y ⟩
 
                         defaultpen(fontsize(8));
@@ -1033,6 +1049,8 @@
 
                         import graph;
                         size(150,150);
+
+                        usepackage("amsmath");
 
                         // vector field F = ⟨ cos y, sin x ⟩
 
@@ -1216,6 +1234,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               // vector field F = ⟨ cos y, sin x ⟩
 
               defaultpen(fontsize(8));
@@ -1322,6 +1342,8 @@
                   import graph;
                   size(150,150);
 
+                  usepackage("amsmath");
+
                   // vector field F = ⟨ cos y, sin x ⟩
 
                   defaultpen(fontsize(8));
@@ -1401,6 +1423,8 @@
                   //(7.63,8.65,5);
                   //currentprojection=orthographic(10.5,-9,18.3);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={1};
@@ -1592,80 +1616,84 @@
           Correct answers should look similar to
         </p>
 
-        <image xml:id="img_14_02_ex_05">
-          <description></description>
-          <asymptote>
+        <sidebyside width="47%">
+          <image xml:id="img_14_02_ex_05">
+            <description></description>
+            <asymptote>
 
-            import graph;
-            size(150,150);
+              import graph;
+              size(150,150);
 
-            // vector field F = ⟨ x,0 ⟩
+              usepackage("amsmath");
 
-            defaultpen(fontsize(8));
+              // vector field F = ⟨ x,0 ⟩
 
-            bool incolor;
-            incolor = true;
+              defaultpen(fontsize(8));
 
-            pen colorone;
-            pen colortwo;
-            pen mainvect;
-            pen bgvect;
-            pen fgvect;
+              bool incolor;
+              incolor = true;
 
-            if(incolor) { 
-              colorone = blue+1.5pt+linejoin(0);
-              colortwo = red+1.5pt+linejoin(0);
-              mainvect = blue + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = blue+linejoin(0);
-              } else
-              {
-              colorone = black+1.5pt+linejoin(0);
-              colortwo = gray+1.5pt+linejoin(0);
-              mainvect = black + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = rgb(.6,.6,.6)+linejoin(0);
-              };	
-            pair xbounds=(-2.8,2.8);
-            pair ybounds=(-2.8,2.8);
-            real[] myxchoice={-2,2};
-            real[] myychoice={-2,2};
+              pen colorone;
+              pen colortwo;
+              pen mainvect;
+              pen bgvect;
+              pen fgvect;
 
-            xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
-            yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
+              if(incolor) { 
+                colorone = blue+1.5pt+linejoin(0);
+                colortwo = red+1.5pt+linejoin(0);
+                mainvect = blue + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = blue+linejoin(0);
+                } else
+                {
+                colorone = black+1.5pt+linejoin(0);
+                colortwo = gray+1.5pt+linejoin(0);
+                mainvect = black + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = rgb(.6,.6,.6)+linejoin(0);
+                };	
+              pair xbounds=(-2.8,2.8);
+              pair ybounds=(-2.8,2.8);
+              real[] myxchoice={-2,2};
+              real[] myychoice={-2,2};
 
-            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
-            //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
-            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
-            //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
+              xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
+              yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
 
-            pair a=(-2,-2);
-            pair b=(2,2);
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
+              //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
+              //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
 
-            pair vectfunction(pair z) {return (z.x,0);}
-            path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
+              pair a=(-2,-2);
+              pair b=(2,2);
 
-            add(vectorfield(vector,a,b,4,4,fgvect));
+              pair vectfunction(pair z) {return (z.x,0);}
+              path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
 
-            //pair f(real x) {return (cos(x),sin(x));}
-            //real g(real x) {return x^4;}
-            //pair G(real x) {return (x,g(x));}
+              add(vectorfield(vector,a,b,4,4,fgvect));
 
-            //pair G(real t) {return (.2,t);}
+              //pair f(real x) {return (cos(x),sin(x));}
+              //real g(real x) {return x^4;}
+              //pair G(real x) {return (x,g(x));}
 
-            //pair F(real x) {return (2*cos(x),2*sin(x));}
-            //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
+              //pair G(real t) {return (.2,t);}
 
-            //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
-            //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
+              //pair F(real x) {return (2*cos(x),2*sin(x));}
+              //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
 
-            //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
-            //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
-            //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
-            //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+              //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
+              //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
 
-          </asymptote>
-        </image>
+              //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
+              //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
+              //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
+              //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+
+            </asymptote>
+          </image>
+        </sidebyside>
       </answer>
     </exercise>
 
@@ -1680,80 +1708,84 @@
           Correct answers should look similar to
         </p>
 
-        <image xml:id="img_14_02_ex_06">
-          <description></description>
-          <asymptote>
+        <sidebyside width="47%">
+          <image xml:id="img_14_02_ex_06">
+            <description></description>
+            <asymptote>
 
-            import graph;
-            size(150,150);
+              import graph;
+              size(150,150);
 
-            // vector field F = ⟨ 0,x ⟩
+              usepackage("amsmath");
 
-            defaultpen(fontsize(8));
+              // vector field F = ⟨ 0,x ⟩
 
-            bool incolor;
-            incolor = true;
+              defaultpen(fontsize(8));
 
-            pen colorone;
-            pen colortwo;
-            pen mainvect;
-            pen bgvect;
-            pen fgvect;
+              bool incolor;
+              incolor = true;
 
-            if(incolor) { 
-              colorone = blue+1.5pt+linejoin(0);
-              colortwo = red+1.5pt+linejoin(0);
-              mainvect = blue + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = blue+linejoin(0);
-              } else
-              {
-              colorone = black+1.5pt+linejoin(0);
-              colortwo = gray+1.5pt+linejoin(0);
-              mainvect = black + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = rgb(.6,.6,.6)+linejoin(0);
-              };	
-            pair xbounds=(-2.8,2.8);
-            pair ybounds=(-2.8,2.8);
-            real[] myxchoice={-2,2};
-            real[] myychoice={-2,2};
+              pen colorone;
+              pen colortwo;
+              pen mainvect;
+              pen bgvect;
+              pen fgvect;
 
-            xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
-            yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
+              if(incolor) { 
+                colorone = blue+1.5pt+linejoin(0);
+                colortwo = red+1.5pt+linejoin(0);
+                mainvect = blue + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = blue+linejoin(0);
+                } else
+                {
+                colorone = black+1.5pt+linejoin(0);
+                colortwo = gray+1.5pt+linejoin(0);
+                mainvect = black + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = rgb(.6,.6,.6)+linejoin(0);
+                };	
+              pair xbounds=(-2.8,2.8);
+              pair ybounds=(-2.8,2.8);
+              real[] myxchoice={-2,2};
+              real[] myychoice={-2,2};
 
-            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
-            //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
-            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
-            //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
+              xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
+              yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
 
-            pair a=(-2,-2);
-            pair b=(2,2);
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
+              //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
+              //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
 
-            pair vectfunction(pair z) {return (0,z.x);}
-            path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
+              pair a=(-2,-2);
+              pair b=(2,2);
 
-            add(vectorfield(vector,a,b,4,4,fgvect));
+              pair vectfunction(pair z) {return (0,z.x);}
+              path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
 
-            //pair f(real x) {return (cos(x),sin(x));}
-            //real g(real x) {return x^4;}
-            //pair G(real x) {return (x,g(x));}
+              add(vectorfield(vector,a,b,4,4,fgvect));
 
-            //pair G(real t) {return (.2,t);}
+              //pair f(real x) {return (cos(x),sin(x));}
+              //real g(real x) {return x^4;}
+              //pair G(real x) {return (x,g(x));}
 
-            //pair F(real x) {return (2*cos(x),2*sin(x));}
-            //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
+              //pair G(real t) {return (.2,t);}
 
-            //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
-            //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
+              //pair F(real x) {return (2*cos(x),2*sin(x));}
+              //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
 
-            //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
-            //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
-            //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
-            //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+              //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
+              //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
 
-          </asymptote>
-        </image>
+              //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
+              //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
+              //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
+              //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+
+            </asymptote>
+          </image>
+        </sidebyside>
       </answer>
     </exercise>
 
@@ -1768,80 +1800,84 @@
           Correct answers should look similar to
         </p>
 
-        <image xml:id="img_14_02_ex_07">
-          <description></description>
-          <asymptote>
+        <sidebyside width="47%">
+          <image xml:id="img_14_02_ex_07">
+            <description></description>
+            <asymptote>
 
-            import graph;
-            size(150,150);
+              import graph;
+              size(150,150);
 
-            // vector field F = ⟨ 1,-1 ⟩
+              usepackage("amsmath");
 
-            defaultpen(fontsize(8));
+              // vector field F = ⟨ 1,-1 ⟩
 
-            bool incolor;
-            incolor = true;
+              defaultpen(fontsize(8));
 
-            pen colorone;
-            pen colortwo;
-            pen mainvect;
-            pen bgvect;
-            pen fgvect;
+              bool incolor;
+              incolor = true;
 
-            if(incolor) { 
-              colorone = blue+1.5pt+linejoin(0);
-              colortwo = red+1.5pt+linejoin(0);
-              mainvect = blue + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = blue+linejoin(0);
-              } else
-              {
-              colorone = black+1.5pt+linejoin(0);
-              colortwo = gray+1.5pt+linejoin(0);
-              mainvect = black + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = rgb(.6,.6,.6)+linejoin(0);
-              };	
-            pair xbounds=(-2.8,2.8);
-            pair ybounds=(-2.8,2.8);
-            real[] myxchoice={-2,2};
-            real[] myychoice={-2,2};
+              pen colorone;
+              pen colortwo;
+              pen mainvect;
+              pen bgvect;
+              pen fgvect;
 
-            xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
-            yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
+              if(incolor) { 
+                colorone = blue+1.5pt+linejoin(0);
+                colortwo = red+1.5pt+linejoin(0);
+                mainvect = blue + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = blue+linejoin(0);
+                } else
+                {
+                colorone = black+1.5pt+linejoin(0);
+                colortwo = gray+1.5pt+linejoin(0);
+                mainvect = black + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = rgb(.6,.6,.6)+linejoin(0);
+                };	
+              pair xbounds=(-2.8,2.8);
+              pair ybounds=(-2.8,2.8);
+              real[] myxchoice={-2,2};
+              real[] myychoice={-2,2};
 
-            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
-            //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
-            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
-            //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
+              xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
+              yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
 
-            pair a=(-2,-2);
-            pair b=(2,2);
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
+              //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
+              //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
 
-            pair vectfunction(pair z) {return (1,-1);}
-            path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
+              pair a=(-2,-2);
+              pair b=(2,2);
 
-            add(vectorfield(vector,a,b,4,4,fgvect));
+              pair vectfunction(pair z) {return (1,-1);}
+              path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
 
-            //pair f(real x) {return (cos(x),sin(x));}
-            //real g(real x) {return x^4;}
-            //pair G(real x) {return (x,g(x));}
+              add(vectorfield(vector,a,b,4,4,fgvect));
 
-            //pair G(real t) {return (.2,t);}
+              //pair f(real x) {return (cos(x),sin(x));}
+              //real g(real x) {return x^4;}
+              //pair G(real x) {return (x,g(x));}
 
-            //pair F(real x) {return (2*cos(x),2*sin(x));}
-            //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
+              //pair G(real t) {return (.2,t);}
 
-            //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
-            //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
+              //pair F(real x) {return (2*cos(x),2*sin(x));}
+              //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
 
-            //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
-            //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
-            //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
-            //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+              //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
+              //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
 
-          </asymptote>
-        </image>
+              //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
+              //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
+              //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
+              //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+
+            </asymptote>
+          </image>
+        </sidebyside>
       </answer>
     </exercise>
 
@@ -1856,80 +1892,84 @@
           Correct answers should look similar to
         </p>
 
-        <image xml:id="img_14_02_ex_08">
-          <description></description>
-          <asymptote>
+        <sidebyside width="47%">
+          <image xml:id="img_14_02_ex_08">
+            <description></description>
+            <asymptote>
 
-            import graph;
-            size(150,150);
+              import graph;
+              size(150,150);
 
-            // vector field F = ⟨ y^2,1 ⟩
+              usepackage("amsmath");
 
-            defaultpen(fontsize(8));
+              // vector field F = ⟨ y^2,1 ⟩
 
-            bool incolor;
-            incolor = true;
+              defaultpen(fontsize(8));
 
-            pen colorone;
-            pen colortwo;
-            pen mainvect;
-            pen bgvect;
-            pen fgvect;
+              bool incolor;
+              incolor = true;
 
-            if(incolor) { 
-              colorone = blue+1.5pt+linejoin(0);
-              colortwo = red+1.5pt+linejoin(0);
-              mainvect = blue + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = blue+linejoin(0);
-              } else
-              {
-              colorone = black+1.5pt+linejoin(0);
-              colortwo = gray+1.5pt+linejoin(0);
-              mainvect = black + linejoin(0);
-              bgvect = rgb(.6,.6,.6)+linejoin(0);
-              fgvect = rgb(.6,.6,.6)+linejoin(0);
-              };	
-            pair xbounds=(-2.8,2.8);
-            pair ybounds=(-2.8,2.8);
-            real[] myxchoice={-2,2};
-            real[] myychoice={-2,2};
+              pen colorone;
+              pen colortwo;
+              pen mainvect;
+              pen bgvect;
+              pen fgvect;
 
-            xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
-            yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
+              if(incolor) { 
+                colorone = blue+1.5pt+linejoin(0);
+                colortwo = red+1.5pt+linejoin(0);
+                mainvect = blue + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = blue+linejoin(0);
+                } else
+                {
+                colorone = black+1.5pt+linejoin(0);
+                colortwo = gray+1.5pt+linejoin(0);
+                mainvect = black + linejoin(0);
+                bgvect = rgb(.6,.6,.6)+linejoin(0);
+                fgvect = rgb(.6,.6,.6)+linejoin(0);
+                };	
+              pair xbounds=(-2.8,2.8);
+              pair ybounds=(-2.8,2.8);
+              real[] myxchoice={-2,2};
+              real[] myychoice={-2,2};
 
-            label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
-            //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
-            label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
-            //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
+              xaxis("",xbounds.x,xbounds.y,Ticks(myxchoice),arrow=Arrow(DefaultHead,size=4));
+              yaxis("",ybounds.x,ybounds.y,Ticks(myychoice),arrow=Arrow(DefaultHead,size=4));
 
-            pair a=(-2,-2);
-            pair b=(2,2);
+              label("$x$",(xbounds.y+0.05*(xbounds.y-xbounds.x),0));
+              //label("\phantom{$x$}",(xbounds.x-0.05*(xbounds.y-xbounds.x),0));
+              label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x)));
+              //label("\phantom{$y$}",(0,ybounds.x-0.05*(ybounds.y-ybounds.x)));
 
-            pair vectfunction(pair z) {return (z.y^2,1);}
-            path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
+              pair a=(-2,-2);
+              pair b=(2,2);
 
-            add(vectorfield(vector,a,b,4,4,fgvect));
+              pair vectfunction(pair z) {return (z.y^2,1);}
+              path vector(pair t) {return -vectfunction(t)/2 -- vectfunction(t)/2;}
 
-            //pair f(real x) {return (cos(x),sin(x));}
-            //real g(real x) {return x^4;}
-            //pair G(real x) {return (x,g(x));}
+              add(vectorfield(vector,a,b,4,4,fgvect));
 
-            //pair G(real t) {return (.2,t);}
+              //pair f(real x) {return (cos(x),sin(x));}
+              //real g(real x) {return x^4;}
+              //pair G(real x) {return (x,g(x));}
 
-            //pair F(real x) {return (2*cos(x),2*sin(x));}
-            //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
+              //pair G(real t) {return (.2,t);}
 
-            //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
-            //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
+              //pair F(real x) {return (2*cos(x),2*sin(x));}
+              //draw(graph(F,0+.1,2pi+.1,operator ..),colorone,arrow=MidArrow(5));
 
-            //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
-            //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
-            //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
-            //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+              //draw(graph(f,0,pi/2,operator ..),colortwo,arrow=MidArrow(5));
+              //draw(graph(f,0,.8,operator ..),colorone+linetype(new real[] {4,2}),arrow=MidArrow(5));
 
-          </asymptote>
-        </image>
+              //filldraw(shift(0,.33)*scale(.03)*unitcircle,black);
+              //label("$A$",(.1,.4));//filltype=Fill(white+opacity(.7)));
+              //label("$C_2$",(.75,.77),filltype=Fill(white+opacity(.7)));
+              //label("$R$",(0,.5),filltype=Fill(white+opacity(.7)));
+
+            </asymptote>
+          </image>
+        </sidebyside>
       </answer>
     </exercise>
 

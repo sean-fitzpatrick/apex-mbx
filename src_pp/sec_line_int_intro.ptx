@@ -56,6 +56,8 @@
               //currentprojection=orthographic(2.5,4.6,1.9);
               defaultrender.merge=true;
 
+              usepackage("amsmath");
+
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={1};
@@ -140,6 +142,8 @@
               currentprojection=orthographic(1.17,4.69,2.35);
               defaultrender.merge=true;
 
+              usepackage("amsmath");
+
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={1};
@@ -223,6 +227,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(1.17,4.69,2.35);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -607,6 +613,8 @@
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
 
+                  usepackage("amsmath");
+
                   // setup and draw the axes
                   real[] myxchoice={-1,3};
                   real[] myychoice={-1,3};
@@ -694,6 +702,8 @@
                   currentprojection=orthographic(10,7.25,3.75);
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,3};
@@ -822,6 +832,8 @@
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
 
+                  usepackage("amsmath");
+
                   // setup and draw the axes
                   real[] myxchoice={-1,1};
                   real[] myychoice={-1,1};
@@ -910,6 +922,8 @@
                   //(7.63,8.65,5);
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,1};
@@ -1087,6 +1101,8 @@
               //(7.63,8.65,5);
               //currentprojection=orthographic(2.5,4.6,1.9);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1424,6 +1440,8 @@
               //(7.63,8.65,5);
               //currentprojection=orthographic(2.5,4.6,1.9);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2};

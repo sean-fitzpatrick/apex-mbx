@@ -22,6 +22,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               // vector field F = ⟨ 1,0 ⟩
 
               defaultpen(fontsize(8));
@@ -167,6 +169,8 @@
 
               import graph;
               size(150,150);
+
+              usepackage("amsmath");
 
               // vector field F = ⟨ 1,0 ⟩
 
@@ -327,6 +331,8 @@
                   import graph;
                   size(150,150);
 
+                  usepackage("amsmath");
+
                   // vector field F = ⟨ y,-x+1 ⟩
 
                   defaultpen(fontsize(8));
@@ -400,6 +406,8 @@
 
                   import graph;
                   size(150,150);
+
+                  usepackage("amsmath");
 
                   // vector field F = ⟨ -x, 2y-x ⟩
 
@@ -625,6 +633,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               // vector field F = ⟨ -y,x^2+1 ⟩ 
 
               defaultpen(fontsize(8));
@@ -777,6 +787,8 @@
 
               import graph;
               size(150,150);
+
+              usepackage("amsmath");
 
               // vector field F = ⟨ sin x, cos y ⟩ 
 
@@ -996,6 +1008,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               // vector field F = ⟨ x-y,x+y ⟩
 
               defaultpen(fontsize(8));
@@ -1127,6 +1141,8 @@
 
               import graph;
               size(150,150);
+
+              usepackage("amsmath");
 
               // vector field F = ⟨ y+2,-2x+1 ⟩
 

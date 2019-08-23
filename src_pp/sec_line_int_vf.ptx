@@ -201,6 +201,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               // vector field F = ⟨ x, x+y ⟩
 
               defaultpen(fontsize(8));
@@ -318,6 +320,8 @@
 
               import graph;
               size(150,150);
+
+              usepackage("amsmath");
 
               // vector field F = ⟨ y, x ⟩
 
@@ -507,6 +511,8 @@
               import graph;
               size(150,150);
 
+              usepackage("amsmath");
+
               // vector field F = ⟨ 3(y-.5), 1 ⟩
 
               defaultpen(fontsize(8));
@@ -656,6 +662,8 @@
               size(200,200,IgnoreAspect);
               currentprojection=orthographic(16.8,9.4,8.6);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1};
@@ -895,6 +903,8 @@
               currentprojection=orthographic(0,-5,3);
               defaultrender.merge=true;
 
+              usepackage("amsmath");
+
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={1};
@@ -998,6 +1008,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(0,-5,3);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
