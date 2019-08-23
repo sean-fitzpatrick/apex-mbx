@@ -946,7 +946,6 @@
 
     <assemblage>
       <title> Arithmetic Operations</title>
-    </assemblage>
 
       <p>
         <md>
@@ -955,6 +954,7 @@
           <mrow>a\left(\frac{b}{c}\right)\amp=  \frac{ab}{c}\amp \frac{a-b}{c-d}\amp=\frac{b-a}{d-c}\amp \frac{ab+ac}{a}\amp=b+c </mrow>
         </md>
       </p>
+    </assemblage>
 
     <assemblage>
       <title> Exponents and Radicals</title>
@@ -976,16 +976,18 @@
     <assemblage>
       <title>Summation Formulas:</title>
 
-      <tabular>
-        <row>
-          <cell><m>\ds \sum^n_{i=1}{c} = cn</m> <nbsp/></cell>
-          <cell><m>\ds\sum^n_{i=1}{i} = \frac{n(n+1)}{2}</m></cell>
-        </row>
-        <row>
-          <cell><m>\ds\sum^n_{i=1}{i^2} = \frac{n(n+1)(2n+1)}{6}</m></cell>
-          <cell><m>\ds\sum^n_{i=1}{i^3}= \left(\frac{n(n+1)}{2}\right)^2</m></cell>
-        </row>
-      </tabular>
+      <p>
+        <tabular>
+          <row>
+            <cell><m>\ds \sum^n_{i=1}{c} = cn</m> <nbsp/></cell>
+            <cell><m>\ds\sum^n_{i=1}{i} = \frac{n(n+1)}{2}</m></cell>
+          </row>
+          <row>
+            <cell><m>\ds\sum^n_{i=1}{i^2} = \frac{n(n+1)(2n+1)}{6}</m></cell>
+            <cell><m>\ds\sum^n_{i=1}{i^3}= \left(\frac{n(n+1)}{2}\right)^2</m></cell>
+          </row>
+        </tabular>
+      </p>
     </assemblage>
 
     <assemblage>
@@ -1009,8 +1011,6 @@
         with Error <m>\ds \leq \frac{(b-a)^5}{180n^4}\big[ \max \big\abs{ f\,^{(4)}(x) \big}\big]</m>
       </p>
     </assemblage>
-
-    <!-- ToDo: Some broken code below -->
 
     <sidebyside>
       <assemblage>
@@ -1072,199 +1072,201 @@
 
   <assemblage>
     <title>Summary of Tests for Series</title>
-    <tabular>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Test</cell>
-        <cell>Series</cell>
-        <cell>Condition(s) of Convergence</cell>
-        <cell>Condition(s) of Divergence</cell>
-        <cell>Comment</cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell><m>n</m>th-Term</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=1}{a_n}}</m></cell>
-        <cell></cell>
-        <cell><m>\displaystyle{\lim_{n \to \infty} a_n \neq 0}</m></cell>
-        <cell>This test cannot be used to show convergence.</cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Geometric Series</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=0}{r^n}}</m></cell>
-        <cell><m>\left\abs{ r \right} \lt  1</m></cell>
-        <cell><m>\left\abs{ r \right} \geq 1</m></cell>
-        <cell><m>\displaystyle{\text{ Sum }  = \frac{1}{1-r}}</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Telescoping Series</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=1}{(b_n-b_{n+a})}}</m></cell>
-        <cell><m>\displaystyle{\lim_{n \to \infty} b_n = L}</m></cell>
-        <cell></cell>
-        <cell><m>\displaystyle\text{ Sum } = \left(\sum^a_{n=1}b_n\right) -L</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell><m>p</m>-Series</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=1}{\frac{1}{(an+b)^p}}}</m></cell>
-        <cell><m>p \gt 1</m></cell>
-        <cell><m>p\leq 1</m></cell>
-        <cell></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Integral Test</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
-        <cell><m>\displaystyle \int_1^\infty a(n)\, dn</m></cell>
-      </row>
-      <row>
-        <cell>is convergent</cell>
-        <cell><m>\displaystyle \int_1^\infty a(n)\, dn</m></cell>
-      </row>
-      <row>
-        <cell>is divergent</cell>
-        <cell><m>a_n = a(n)</m> must be continuous</cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Direct Comparison</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
-        <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
-      </row>
-      <row>
-        <cell>converges and</cell>
-      </row>
-      <row>
-        <cell><m>0\leq a_n\leq b_n</m></cell>
-        <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
-      </row>
-      <row>
-        <cell>diverges and</cell>
-      </row>
-      <row>
-        <cell><m>0\leq b_n\leq a_n</m></cell>
-        <cell></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Limit Comparison</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
-        <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
-      </row>
-      <row>
-        <cell>converges and</cell>
-      </row>
-      <row>
-        <cell><m>\displaystyle \lim_{n\to\infty} a_n/b_n  \geq 0</m></cell>
-        <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
-      </row>
-      <row>
-        <cell>diverges and</cell>
-      </row>
-      <row>
-        <cell><m>\displaystyle \lim_{n\to\infty} a_n/b_n \gt 0</m></cell>
-        <cell>Also diverges if</cell>
-      </row>
-      <row>
-        <cell><m>\displaystyle \lim_{n\to\infty} a_n/b_n=\infty</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Ratio Test</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
-        <cell><m>\displaystyle \lim_{n\to\infty} \frac{a_{n+1}}{a_n}  \lt  1</m></cell>
-        <cell><m>\displaystyle \lim_{n\to\infty} \frac{a_{n+1}}{a_n} \gt 1</m></cell>
-        <cell><m>\{a_n\}</m> must be positive</cell>
-      </row>
-      <row>
-        <cell>Also diverges if</cell>
-      </row>
-      <row>
-        <cell><m>\displaystyle \lim_{n\to\infty} a_{n+1}/a_n=\infty</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row>
-        <cell>Root Test</cell>
-        <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
-        <cell><m>\displaystyle \lim_{n\to\infty} \big(a_n\big)^{1/n}  \lt  1</m></cell>
-        <cell><m>\displaystyle \lim_{n\to\infty} \big(a_n\big)^{1/n} \gt 1</m></cell>
-        <cell><m>\{a_n\}</m> must be positive</cell>
-      </row>
-      <row>
-        <cell>Also diverges if</cell>
-      </row>
-      <row>
-        <cell><m>\displaystyle \lim_{n\to\infty} \big(a_n\big)^{1/n}=\infty</m></cell>
-      </row>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-        <cell></cell>
-      </row>
-    </tabular>
+    <p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Test</cell>
+          <cell>Series</cell>
+          <cell>Condition(s) of Convergence</cell>
+          <cell>Condition(s) of Divergence</cell>
+          <cell>Comment</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>n</m>th-Term</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=1}{a_n}}</m></cell>
+          <cell></cell>
+          <cell><m>\displaystyle{\lim_{n \to \infty} a_n \neq 0}</m></cell>
+          <cell>This test cannot be used to show convergence.</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Geometric Series</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=0}{r^n}}</m></cell>
+          <cell><m>\left\abs{ r \right} \lt  1</m></cell>
+          <cell><m>\left\abs{ r \right} \geq 1</m></cell>
+          <cell><m>\displaystyle{\text{ Sum }  = \frac{1}{1-r}}</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Telescoping Series</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=1}{(b_n-b_{n+a})}}</m></cell>
+          <cell><m>\displaystyle{\lim_{n \to \infty} b_n = L}</m></cell>
+          <cell></cell>
+          <cell><m>\displaystyle\text{ Sum } = \left(\sum^a_{n=1}b_n\right) -L</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>p</m>-Series</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=1}{\frac{1}{(an+b)^p}}}</m></cell>
+          <cell><m>p \gt 1</m></cell>
+          <cell><m>p\leq 1</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Integral Test</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
+          <cell><m>\displaystyle \int_1^\infty a(n)\, dn</m></cell>
+        </row>
+        <row>
+          <cell>is convergent</cell>
+          <cell><m>\displaystyle \int_1^\infty a(n)\, dn</m></cell>
+        </row>
+        <row>
+          <cell>is divergent</cell>
+          <cell><m>a_n = a(n)</m> must be continuous</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Direct Comparison</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
+          <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
+        </row>
+        <row>
+          <cell>converges and</cell>
+        </row>
+        <row>
+          <cell><m>0\leq a_n\leq b_n</m></cell>
+          <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
+        </row>
+        <row>
+          <cell>diverges and</cell>
+        </row>
+        <row>
+          <cell><m>0\leq b_n\leq a_n</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Limit Comparison</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
+          <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
+        </row>
+        <row>
+          <cell>converges and</cell>
+        </row>
+        <row>
+          <cell><m>\displaystyle \lim_{n\to\infty} a_n/b_n  \geq 0</m></cell>
+          <cell><m>\displaystyle \sum_{n=0}^\infty b_n</m></cell>
+        </row>
+        <row>
+          <cell>diverges and</cell>
+        </row>
+        <row>
+          <cell><m>\displaystyle \lim_{n\to\infty} a_n/b_n \gt 0</m></cell>
+          <cell>Also diverges if</cell>
+        </row>
+        <row>
+          <cell><m>\displaystyle \lim_{n\to\infty} a_n/b_n=\infty</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Ratio Test</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
+          <cell><m>\displaystyle \lim_{n\to\infty} \frac{a_{n+1}}{a_n}  \lt  1</m></cell>
+          <cell><m>\displaystyle \lim_{n\to\infty} \frac{a_{n+1}}{a_n} \gt 1</m></cell>
+          <cell><m>\{a_n\}</m> must be positive</cell>
+        </row>
+        <row>
+          <cell>Also diverges if</cell>
+        </row>
+        <row>
+          <cell><m>\displaystyle \lim_{n\to\infty} a_{n+1}/a_n=\infty</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Root Test</cell>
+          <cell><m>\displaystyle{\sum^\infty_{n=0}{a_n}}</m></cell>
+          <cell><m>\displaystyle \lim_{n\to\infty} \big(a_n\big)^{1/n}  \lt  1</m></cell>
+          <cell><m>\displaystyle \lim_{n\to\infty} \big(a_n\big)^{1/n} \gt 1</m></cell>
+          <cell><m>\{a_n\}</m> must be positive</cell>
+        </row>
+        <row>
+          <cell>Also diverges if</cell>
+        </row>
+        <row>
+          <cell><m>\displaystyle \lim_{n\to\infty} \big(a_n\big)^{1/n}=\infty</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </p>
   </assemblage>
 </appendix>
