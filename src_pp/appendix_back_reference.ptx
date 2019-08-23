@@ -306,13 +306,13 @@
 
         \foreach \x / \y / \z / \w / \v in {
           0/0/{1,0}/right/white,
-          30/{\pi/6}/{\frac{\sqrt{3}}2,\frac 12}/above right/none,
+          30/{\pi/6}/{\frac{\sqrt{3}}2,\frac 12}/above right/none,%
           45/{\pi/4}/{\frac{\sqrt{2}}2,\frac{\sqrt{2}}2}/above right/none,
           60/{\pi/3}/{\frac{1}2,\frac{\sqrt{3}}2}/{above right}/none,
-          90/ {\pi/2}/{0,1}/above/white,
+          90/{\pi/2}/{0,1}/above/white,%
           120/{2\pi/3}/{-\frac{1}2,\frac{\sqrt{3}}2}/above left/none, 
           135/{3\pi/4}/{-\frac{\sqrt{2}}2,\frac{\sqrt{2}}2}/above left/none, 
-          150/{5\pi/6}/{-\frac{\sqrt{3}}2,\frac{1}2}/above left/none,
+          150/{5\pi/6}/{-\frac{\sqrt{3}}2,\frac{1}2}/above left/none,%
           180/{\pi}/{-1,0}/left/white, 
           210/{7\pi/6}/{-\frac{\sqrt{3}}2,-\frac{1}2}/below left/none, 
           225/{5\pi/4}/{-\frac{\sqrt{2}}2,-\frac{\sqrt{2}}2}/below left/none, 
@@ -320,7 +320,7 @@
           270/{3\pi/2}/{0,-1}/below/white, 
           300/{5\pi/3}/{\frac{1}2,-\frac{\sqrt{3}}2}/below right/none, 
           315/{7\pi/4}/{\frac{\sqrt{2}}2,-\frac{\sqrt{2}}2}/below right/none, 
-          330/{11\pi/6}/{\frac{\sqrt{3}}2,-\frac{1}2}/below right/none
+          330/{11\pi/6}/{\frac{\sqrt{3}}2,-\frac{1}2}/below right/none%
         }
         {
           \draw (\x:.65cm) node [fill=\v] {\scriptsize \x$^\circ$};
