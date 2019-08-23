@@ -295,8 +295,6 @@
 
     <!-- <xi:include href="./chapter_vector_calc.ptx" /> -->
 
-
-
     <backmatter>
       <xi:include href="./appendix_back_reference.ptx"/>
       <index>
