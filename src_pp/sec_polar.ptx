@@ -1577,7 +1577,7 @@
           <figure xml:id="fig_polar_special4">
             <caption>Eight Curve: <m>r^2=a^2\sec^4(\theta) \cos(2\theta)</m></caption>
             <!-- START figures/fig_polarspecial4.tex -->
-            <image xml:id="img_polar_special3">
+            <image xml:id="img_polar_special4">
               <description></description>
               <latex-image>
               

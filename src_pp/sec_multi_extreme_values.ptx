@@ -1270,7 +1270,7 @@
           We find <m>f(0,0) = 5</m>.
         </p>
 
-        <figure xml:id="fig_conopt1b">
+        <figure xml:id="fig_conopt1bX">
           <caption>The surface of <m>f</m> along with important points along the boundary of <m>S</m> and the interior.</caption>
           <!--
            \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,

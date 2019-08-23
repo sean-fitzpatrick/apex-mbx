@@ -525,7 +525,7 @@
       <statement>
         <p>
           A <em>cycloid</em> is a graph traced by a point <m>p</m> on a rolling circle,
-          as shown in <xref ref="fig_vvf4">Figure</xref>.
+          as shown in <xref ref="fig_vvf4a">Figure</xref>.
           Find an equation describing the cycloid,
           where the circle has radius 1.
 
@@ -536,9 +536,9 @@
         </p>
 
         <!-- START figures/fig_vvf4.tex -->
-        <figure xml:id="fig_vvf4">
+        <figure xml:id="fig_vvf4a">
           <caption/>
-          <image xml:id="img_vvf4">
+          <image xml:id="img_vvf4a">
             <description></description>
             <latex-image>
             
@@ -595,7 +595,7 @@
         <p>
           We now combine <m>\vec p</m> and <m>\vec c</m> together to form the equation of the cycloid:
           <m>\vec r(t) = \vec p(t) + \vec c(t) = \la \cos(t) + t,-\sin(t) +1\ra</m>,
-          which is graphed in <xref ref="fig_vvf4">Figure</xref>.
+          which is graphed in <xref ref="fig_vvf4b">Figure</xref>.
         </p>
       </solution>
     </example>
@@ -603,10 +603,10 @@
 
   <subsection>
     <title>Displacement</title>
-    <figure xml:id="fig_vvf4">
+    <figure xml:id="fig_vvf4b">
       <caption>The cycloid in <xref ref="ex_vvf4">Example</xref>.</caption>
       <!-- START figures/fig_vvf4a.tex -->
-      <image xml:id="img_vvf4">
+      <image xml:id="img_vvf4b">
         <description></description>
         <latex-image>
         
