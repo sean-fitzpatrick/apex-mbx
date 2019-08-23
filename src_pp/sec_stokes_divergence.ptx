@@ -2319,12 +2319,6 @@
 
               usepackage("amsmath");
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={-1,1};
