@@ -1293,14 +1293,14 @@
 
     <tabular>
       <row>
-        <cell>\text{ Horizontal</cell>
+        <cell>Horizontal</cell>
       </row>
       <row>
-        <cell>Transverse Axis }</cell>
-        <cell>\text{ Vertical</cell>
+        <cell>Transverse Axis</cell>
+        <cell>Vertical</cell>
       </row>
       <row>
-        <cell>Transverse Axis }</cell>
+        <cell>Transverse Axis</cell>
       </row>
       <row>
         <cell><nbsp/></cell>

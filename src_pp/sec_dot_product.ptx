@@ -18,7 +18,7 @@
                 Let <m>\vec u = \la u_1,u_2\ra</m> and
                 <m>\vec v = \la v_1,v_2\ra</m>  in <m>\mathbb{R}^2</m>.
                 The <em>dot product</em> of <m>\vec u</m> and <m>\vec v</m>,
-                denoted \dotp uv, is
+                denoted <m>\dotp uv</m>, is
 
                 <idx>
                   <h>dot product</h><h>definition</h>
@@ -39,7 +39,7 @@
                 Let <m>\vec u = \la u_1,u_2,u_3\ra</m> and
                 <m>\vec v = \la v_1,v_2,v_3\ra</m>  in <m>\mathbb{R}^3</m>.
                 The <em>dot product</em> of <m>\vec u</m> and <m>\vec v</m>,
-                denoted \dotp uv, is
+                denoted <m>\dotp uv</m>, is
                 <me>
                   \dotp uv = u_1v_1+u_2v_2+u_3v_3
                 </me>.
@@ -66,7 +66,7 @@
               <p>
                 Let <m>\vec u=\la 1,2\ra</m>,
                 <m>\vec v=\la 3,-1\ra</m> in <m>\mathbb{R}^2</m>.
-                Find \dotp uv.
+                Find <m>\dotp uv</m>.
               </p>
             </li>
 
@@ -74,7 +74,7 @@
               <p>
                 Let <m>\vec x = \la 2,-2,5\ra</m> and
                 <m>\vec y = \la -1, 0, 3\ra</m> in <m>\mathbb{R}^3</m>.
-                Find \dotp xy.
+                Find <m>\dotp xy</m>.
               </p>
             </li>
           </ol>

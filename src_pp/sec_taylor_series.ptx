@@ -955,11 +955,10 @@
 
       <introduction>
         <p>
-          { <xref ref="idea_common_taylor">Key Idea</xref>
+          <xref ref="idea_common_taylor">Key Idea</xref>
           gives the <m>n^\text{ th }</m> term of the Taylor series of common functions.
-          In Exercises}
-          {, verify the formula given in the Key Idea by finding the first few terms of the Taylor series of the given function and identifying a pattern.
-          }
+          In the following exercises, verify the formula given in the Key Idea by finding
+          the first few terms of the Taylor series of the given function and identifying a pattern.
         </p>
       </introduction>
 

@@ -116,7 +116,10 @@
                 <m>\vec a(1) = \la 2,2\ra</m>.
                 These are plotted with <m>\vrt</m> in <xref ref="fig_motion1a">Figure</xref>.
   
-                We can think of acceleration as <q>pulling</q> the velocity vector in a certain direction. At <m>t=-1</m>, the velocity vector points down and to the left; at <m>t=1</m>, the velocity vector has been pulled in the <m>\la 2,2\ra</m> direction and is now pointing up and to the right. In <xref ref="fig_motion1">Figure</xref>(b) we plot more velocity/acceleration vectors, making more clear the effect acceleration has on velocity.
+                We can think of acceleration as <q>pulling</q> the velocity vector in a certain direction. 
+                At <m>t=-1</m>, the velocity vector points down and to the left; at <m>t=1</m>,
+                the velocity vector has been pulled in the <m>\la 2,2\ra</m> direction and is now pointing up and to the right. 
+                In <xref ref="fig_motion1b">Figure</xref> we plot more velocity/acceleration vectors, making more clear the effect acceleration has on velocity.
               </p>
             
               <figure xml:id="fig_motion1">
@@ -227,7 +230,7 @@
                 Thus the speed is minimized at <m>t=0</m>,
                 with a speed of <m>\sqrt{2}</m> ft/s.
   
-                The graph in <xref ref="fig_motion1">Figure</xref>(b) also implies speed is minimized here. The filled dots on the graph are located at integer values of <m>t</m> between <m>-3</m> and 3. Dots that are far apart imply the object traveled a far distance in 1 second, indicating high speed; dots that are close together imply the object did not travel far in 1 second, indicating a low speed. The dots are closest together near <m>t=0</m>, implying the speed is minimized near that value.
+                The graph in <xref ref="fig_motion1b">Figure</xref> also implies speed is minimized here. The filled dots on the graph are located at integer values of <m>t</m> between <m>-3</m> and 3. Dots that are far apart imply the object traveled a far distance in 1 second, indicating high speed; dots that are close together imply the object did not travel far in 1 second, indicating a low speed. The dots are closest together near <m>t=0</m>, implying the speed is minimized near that value.
               </p>
             </li>
           </ol>
@@ -423,7 +426,7 @@
         </figure>
 
         <p>
-          In part (b) of the Figure, we see the points plotted for Object 2.
+          In <xref ref="fig_motion2b2">Figure</xref>, we see the points plotted for Object 2.
           Note the large change in position from <m>t=-1</m> to <m>t=-0.9</m>;
           the object starts moving very quickly.
           However, it slows considerably at it approaches the origin,
