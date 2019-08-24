@@ -834,8 +834,6 @@
       We will use the terms connected and simply connected in subsequent definitions and theorems.
     </p>
 
-    <!-- ToDo: Below image has no image code in any repo but there is a precompiled image. -->
-
     <figure xml:id="fig_simply_connected_plane">
       <caption><m>R_1</m> is simply connected; <m>R_2</m> is connected, but not simply connected; <m>R_3</m> is not connected.</caption>
       <image xml:id="img_simply_connected_plane">
