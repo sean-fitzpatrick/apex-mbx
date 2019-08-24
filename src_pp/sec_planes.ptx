@@ -165,6 +165,8 @@
       </md>.
     </p>
 
+    <!-- ToDo: Is eq1 below eq_plane_dist? Apparently there we 3 of them. -->
+
     <p>
       Equation (eq_planes3) is especially useful as many computer programs can graph functions in this form.
       Equations <xref ref="eq_planes1"/> and (eq_planes2) have specific names,

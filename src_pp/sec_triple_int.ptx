@@ -1282,7 +1282,7 @@
         </p>
 
         <figure xml:id="fig_trip2bb">
-          <caption>Finding the projections of the curve of intersection in <xref ref="ex_trip2b_3D">Example</xref>.</caption>
+          <caption>Finding the projections of the curve of intersection in <xref ref="ex_trip2b">Example</xref>.</caption>
           <sidebyside>
             <figure xml:id="fig_trip2bb1_3D">
               <caption/>
@@ -2410,7 +2410,7 @@
 
         <p>
           The remaining four orders of integration do not require a sum of triple integrals.
-          In <xref ref="fig_trip4b_3D">Figure</xref>
+          In <xref ref="fig_trip4b">Figure</xref>
           we show <m>D</m> collapsed onto the other two coordinate planes.
           Using these graphs, we give the final orders of integration here,
           again leaving it to the reader to confirm these results.
@@ -2668,7 +2668,7 @@
           <m>z= 2x^2+2</m> and <m>z=6-2x^2-y^2</m>.
           These surfaces are plotted in <xref ref="fig_trip5a1_3D">Figure</xref> and <xref ref="fig_trip5a2_3D">Figure</xref>,
           respectively;
-          the region <m>D</m> is shown in <xref ref="fig_trip5ac_3D">Figure</xref>.
+          the region <m>D</m> is shown in <xref ref="fig_trip5a3_3D">Figure</xref>.
         </p>
 
         <figure xml:id="fig_trip5a">
@@ -3464,6 +3464,8 @@
         </p>
       </statement>
     </definition>
+
+    <!-- ToDo: That note_doubleint doesn't exist. -->
 
     <aside>
       <p>

@@ -1079,7 +1079,7 @@
         </table>
 
         <p>
-          Using Equation <xref ref="eq_curvature_an"/>,
+          Using Equation <xref ref="eq_curvature"/>,
           we can compute the acceleration normal to the curve in each case.
           We start by converting each speed from
           <q>miles per hour</q> to <q>feet per second</q>

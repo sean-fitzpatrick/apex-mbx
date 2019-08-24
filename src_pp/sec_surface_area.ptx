@@ -552,6 +552,8 @@
       </solution>
     </example>
 
+    <!-- ToDo: There are no xml:id defined equations but perhaps it is the definition at "def_surfacearea"? -->
+    
     <aside>
       <p>
         The inner integral in Equation <xref ref="eq_exsurfacearea2"/> is an improper integral,

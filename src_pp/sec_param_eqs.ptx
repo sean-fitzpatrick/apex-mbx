@@ -7,9 +7,7 @@
       such as parabolas, by following this basic procedure:
     </p>
 
-    <!-- TODO: Fix this iamge below -->
-
-    <image xml:id="img_intro1">
+    <image xml:id="img_param_eqs_intro1">
       <description></description>
       <latex-image>
       
@@ -45,7 +43,7 @@
       In this section we introduce a new sketching procedure:
     </p>
 
-    <image xml:id="img_intro2">
+    <image xml:id="img_param_eqs_intro2">
       <description></description>
       <latex-image>
       

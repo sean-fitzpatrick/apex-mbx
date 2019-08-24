@@ -373,7 +373,7 @@
     A simple way of determining this is to cut the label and lay it out flat,
     forming a rectangle with height <m>h</m> and length <m>2\pi r</m>.
     Thus the area is <m>A = 2\pi rh</m>;
-    see <xref ref="fig_soupcana">Figure</xref>.
+    see <xref ref="fig_soupcana_3D">Figure</xref>.
   </p>
 
   <p>
@@ -382,7 +382,7 @@
     Cutting the shell and laying it flat forms a rectangular solid with length <m>2\pi r</m>,
     height <m>h</m> and depth <m>\dx</m>.
     Thus the volume is <m>V \approx 2\pi rh\dx</m>;
-    see <xref ref="fig_soupcanb">Figure</xref>.
+    see <xref ref="fig_soupcanb_3D">Figure</xref>.
     (We say <q>approximately</q> since our radius was an approximation.)
   </p>
 

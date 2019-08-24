@@ -563,7 +563,7 @@
       <title>Evaluating summations using <xref ref="thm_summation">Theorem</xref></title>
       <statement>
         <p>
-          Revisit <xref ref="ex_rie3">Example</xref> and,
+          Revisit <xref ref="ex_rie6">Example</xref> and,
           using <xref ref="thm_summation">Theorem</xref>, evaluate
           <me>
             \sum_{i=1}^6 a_i = \sum_{i=1}^6 (2i-1)

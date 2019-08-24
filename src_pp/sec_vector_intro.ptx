@@ -317,7 +317,7 @@
               <!-- figures/fig_vectintro3.tex END -->
                 </figure>
 
-                <figure xml:id="fig_vect1b">
+                <figure xml:id="fig_vect1b_3D">
                   <caption/>
                 <!--
                 \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -1163,7 +1163,7 @@
 
     <p>
       We prefer the given definition of parallel as it is grounded in the fact that unit vectors provide direction information.
-      One may adopt the convention that <m>\vec 0</m> is parallel to all vectors if they desire.<!-- (See also the marginal note on <xref ref="note_crossp">page</xref>.)-->
+      One may adopt the convention that <m>\vec 0</m> is parallel to all vectors if they desire.
     </p>
   </aside>
   <p>

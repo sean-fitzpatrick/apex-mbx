@@ -618,7 +618,7 @@
       <m>\frac{dz}{dx} = 0</m>.
       We also know <m>\frac{dx}{dx} = 1</m>.
       Equation <xref ref="eq_mchain1"/> becomes
-      <md>
+      <md xml:id="eq_mchain2">
         <mrow>0 \amp = \frac{\partial z}{\partial x}(1) + \frac{\partial z}{\partial y}\frac{dy}{dx}  \Rightarrow</mrow>
         <mrow>\frac{dy}{dx} \amp = -\frac{\partial z}{\partial x}\Big/\frac{\partial z}{\partial y}</mrow>
         <mrow>\amp = -\frac{\,f_x\,}{f_y}</mrow>
