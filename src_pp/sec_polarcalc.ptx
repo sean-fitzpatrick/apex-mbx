@@ -1909,7 +1909,6 @@
             <pg-code>
             </pg-code>
             </setup>
-          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
             <statement>
               <p>
                 Enclosed by the inner loop of the limacon <m>\ds r=1+2\cos(\theta)</m>
@@ -1932,7 +1931,6 @@
               $area=Formula("2pi+3sqrt(3)/2");
             </pg-code>
             </setup>
-          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
             <statement>
               <p>
                 Find the area enclosed by the outer loop of the limacon <m>r=1+2\cos(\theta)</m>
@@ -1955,7 +1953,6 @@
               $area=Formula("pi+3sqrt(3)");
             </pg-code>
             </setup>
-          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
             <statement>
               <p>
                 Find the area enclosed between the inner and outer loop of the limacon <m>r=1+2\cos(\theta)</m>.

@@ -784,7 +784,7 @@
               <p>
                 In order to apply the Integral Test to a sequence <m>\{a_n\}</m>,
                 the function <m>a(n) = a_n</m> must be
-                \underlinespace, \underlinespace<nbsp/>and \underlinespace.
+                <fillin/>, <fillin/><nbsp/>and <fillin/>.
               </p>
             </statement>
             <solution>

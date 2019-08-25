@@ -410,7 +410,7 @@
             </setup>
             <statement>
               <p>
-                The Ratio Test is not effective when the terms of a sequence only contain \underlinespace<nbsp/>functions.
+                The Ratio Test is not effective when the terms of a sequence only contain <fillin/><nbsp/>functions.
               </p>
             </statement>
             <solution>
@@ -430,7 +430,7 @@
             </setup>
             <statement>
               <p>
-                The Ratio Test is most effective when the terms of a sequence contains \underlinespace<nbsp/>and/or \underlinespace<nbsp/>functions.
+                The Ratio Test is most effective when the terms of a sequence contains <fillin/><nbsp/>and/or <fillin/><nbsp/>functions.
               </p>
             </statement>
             <solution>
@@ -470,7 +470,7 @@
             </setup>
             <statement>
               <p>
-                The Root Test works particularly well on series where each term is \underlinespace<nbsp/>to a \underlinespace.
+                The Root Test works particularly well on series where each term is <fillin/><nbsp/>to a <fillin/>.
               </p>
             </statement>
             <solution>

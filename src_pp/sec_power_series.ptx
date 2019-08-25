@@ -805,7 +805,7 @@
             </setup>
             <statement>
               <p>
-                We adopt the convenction that <m>x^0=</m>\underlinespace,
+                We adopt the convenction that <m>x^0=</m><fillin/>,
                 regardless of the value of <m>x</m>.
               </p>
             </statement>

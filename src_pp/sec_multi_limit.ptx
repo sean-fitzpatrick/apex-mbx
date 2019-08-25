@@ -1988,7 +1988,6 @@
                       </md>.
                     </p>
                   </li>
-              <!-- can't use &#xf4; in a WW. It leads to ô, which is not in the base64 charset -->
                   <li>
                     <p>
                       Along <m>x=0</m>, the limit is:

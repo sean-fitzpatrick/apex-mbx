@@ -835,7 +835,7 @@
             </setup>
             <statement>
               <p>
-                A series <m>\ds\infser (-1)^na_n</m> converges when <m>\{a_n\}</m> is \underlinespace, \underlinespace<nbsp/>and <m>\lim\limits_{n\to\infty}a_n =</m>\underlinespace.
+                A series <m>\ds\infser (-1)^na_n</m> converges when <m>\{a_n\}</m> is <fillin/>, <fillin/><nbsp/>and <m>\lim\limits_{n\to\infty}a_n</m> =<fillin/>.
               </p>
             </statement>
             <solution>
@@ -876,7 +876,7 @@
             </setup>
             <statement>
               <p>
-                The sum of a \underlinespace<nbsp/>convergent series can be changed by rearranging the order of its terms.
+                The sum of a <fillin/><nbsp/>convergent series can be changed by rearranging the order of its terms.
               </p>
             </statement>
             <solution>

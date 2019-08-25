@@ -581,7 +581,6 @@
               $false = PopUp(['?','True','False'],2);
             </pg-code>
             </setup>
-          <!-- can't use &#xf4; in a WW. It leads to ô, which is not in the base64 charset -->
             <statement>
               <p>
                 T/F: l'Hospital's Rule provides a faster method of computing derivatives.<var name="$false" form="popup"/>
@@ -599,7 +598,6 @@
               $false = PopUp(['?','True','False'],2);
             </pg-code>
             </setup>
-          <!-- can't use &#xf4; in a WW. It leads to ô, which is not in the base64 charset -->
             <statement>
               <p>
                 l'Hospital's Rule states that
@@ -643,7 +641,6 @@
             <pg-code>
             </pg-code>
             </setup>
-          <!-- can't use &#xf4; in a WW. It leads to ô, which is not in the base64 charset -->
             <statement>
               <p>
                 Fill in the blanks: The Quotient Rule is applied to

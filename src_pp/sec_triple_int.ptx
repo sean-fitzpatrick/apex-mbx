@@ -3993,8 +3993,8 @@
             <statement>
               <p>
                 The strategy for establishing bounds for triple integrals is
-                <q><fillin/> to <fillin/>,
-                <fillin/> to <fillin/> and <fillin/> to <fillin/>.</q>
+                <fillin/> to <fillin/>,
+                <fillin/> to <fillin/> and <fillin/> to <fillin/>.
               </p>
             </statement>
             <solution>
@@ -4178,6 +4178,9 @@
       </exercise>
 
     </exercisegroup>
+
+    <!-- ToDo: The following 8 problems use 3D graphs which are not supported in webwork at this time. -->
+
     <exercisegroup>
 
       <introduction>
