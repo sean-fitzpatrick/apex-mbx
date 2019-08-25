@@ -1314,6 +1314,8 @@
         </webwork>
       </exercise>
 
+      <!-- ToDo: The 3 problems below use 3D graphs which are not supported at this time. -->
+
       <exercise>
         <webwork seed="1">
             <setup>

@@ -429,6 +429,8 @@
       we now consider its surface area.
     </p>
 
+    <!-- ToDo: The problem below uses a 3D graph which is not supported at this time. -->
+
     <figure xml:id="fig_arc4">
       <caption>Establishing the formula for surface area.</caption>
       <sidebyside>
