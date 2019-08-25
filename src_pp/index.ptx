@@ -298,8 +298,10 @@
 
     <xi:include href="./chapter_vector_calc.ptx" />
 
+    <!-- ToDo: Fix back reference -->
+
     <backmatter>
-      <xi:include href="./appendix_back_reference.ptx"/>
+      <!-- <xi:include href="./appendix_back_reference.ptx"/> -->
       <index>
       <title>Index</title>
       <index-list />
