@@ -146,7 +146,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip1_3D.asy END -->
@@ -251,7 +251,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip1b_3D.asy END -->
@@ -405,7 +405,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
         <!-- figures/figtripintro_3D.asy END -->
@@ -507,7 +507,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
         <!-- figures/figtripintroa_3D.asy END -->
@@ -812,7 +812,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip2_3D.asy END -->
@@ -899,7 +899,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip2b_3D.asy END -->
@@ -1002,7 +1002,7 @@
               <image xml:id="img_trip2b1_3D">
                 <description></description>
                 <asymptote>
-                                              
+
                   import graph3;
 
                   //ASY file for figtrip2c3D.asy in Chapter 13
@@ -1068,7 +1068,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip2c_3D.asy END -->
@@ -1155,7 +1155,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip2d_3D.asy END -->
@@ -1386,7 +1386,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/fig3d_proj_3D.asy END -->
@@ -1489,7 +1489,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/fig3d_projb_3D.asy END -->
@@ -1657,7 +1657,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip3_3D.asy END -->
@@ -1752,7 +1752,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip3b_3D.asy END -->
@@ -1935,7 +1935,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip3c_3D.asy END -->
@@ -1954,7 +1954,7 @@
               -->
               <!-- START figures/figtrip3d_3D.asy -->
               <image xml:id="img_trip3b2_3D">
-                <description></description>                 
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -2022,7 +2022,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip3d_3D.asy END -->
@@ -2219,7 +2219,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip4_3D.asy END -->
@@ -2308,7 +2308,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip4d_3D.asy END -->
@@ -2390,7 +2390,7 @@
           <m>dz\ dx\ dy</m>:
           <me>
             \begin{array}{ccccc}
-              \amp  \amp 
+              \amp  \amp
               \begin{array}{c}
                 0\leq z\leq 1-x/2\\
                 y/2\leq x\leq 2\\
@@ -2499,7 +2499,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip4b_3D.asy END -->
@@ -2585,7 +2585,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip4c_3D.asy END -->
@@ -2762,7 +2762,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip5b_3D.asy END -->
@@ -2855,7 +2855,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip5c_3D.asy END -->
@@ -2874,7 +2874,7 @@
               -->
               <!-- START figures/figtrip5_3D.asy -->
               <image xml:id="img_trip5a3_3D">
-                <description></description>            
+                <description></description>
                 <asymptote>
 
                   import graph3;
@@ -2958,7 +2958,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip5_3D.asy END -->
@@ -3006,7 +3006,7 @@
               \end{array}
               \amp
               \ds \Rightarrow \int_{-1}^1\int_{-\sqrt{4-4x^2}}^{\sqrt{4-4x^2}}\int_{2x^2+2}^{6-2x^2-y^2}\ dz\ dy\ dx
-            \end{array} 
+            \end{array}
           </me>.
         </p>
 
@@ -3139,7 +3139,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip5e_3D.asy END -->
@@ -3243,7 +3243,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figtrip5d_3D.asy END -->
@@ -3711,7 +3711,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
           <!-- figures/figtrip2_3D.asy END -->
@@ -3877,7 +3877,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
           <!-- figures/figtrip3_3D.asy END -->
@@ -3986,7 +3986,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -4008,7 +4008,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -4029,7 +4029,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -4051,7 +4051,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -4085,7 +4085,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -4109,7 +4109,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
                 $int=Compute("52");
             </pg-code>
@@ -4132,7 +4132,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -4158,7 +4158,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
                 $int=Compute("3pi/2");
             </pg-code>
@@ -4193,7 +4193,7 @@
       <exercise xml:id="x13_06_ex_07">
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -4302,7 +4302,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
               <!-- figures/fig13_06_ex_07_3D.asy END -->
@@ -4349,7 +4349,7 @@
       <exercise xml:id="x13_06_ex_08">
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -4368,7 +4368,7 @@
               </p>
 
               <sidebyside width="47%">
-                <!--  
+                <!--
                 \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
                 3Droll=0,
                 3Dortho=0.0049995239824056625,
@@ -4462,7 +4462,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_08_3D.asy END -->
@@ -4509,7 +4509,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -4627,7 +4627,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_09_3D.asy END -->
@@ -4670,7 +4670,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -4776,7 +4776,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_10_3D.asy END -->
@@ -4819,7 +4819,7 @@
       <exercise xml:id="x13_06_ex_11">
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -4922,7 +4922,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_11_3D.asy END -->
@@ -4966,7 +4966,7 @@
       <exercise xml:id="x13_06_ex_12">
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5073,7 +5073,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_12_3D.asy END -->
@@ -5117,7 +5117,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5238,7 +5238,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_13_3D.asy END -->
@@ -5282,7 +5282,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5390,7 +5390,7 @@
 
                     //pen p=rgb(0,0,1);
                     //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                    
+
                   </asymptote>
                 </image>
                 <!-- figures/fig13_06_ex_14_3D.asy END -->
@@ -5443,7 +5443,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5452,15 +5452,13 @@
                 <m>\ds \int_{-\pi/2}^{\pi/2}\int_0^\pi\int_0^\pi\big(\cos(x) \sin(y) \sin(z) \big)\ dz\ dy\ dx</m>
               </p>
             </statement>
-            <solution>
-            </solution>
         </webwork>
       </exercise>
 
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
                 $int=Compute("7/8");
             </pg-code>
@@ -5480,7 +5478,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5500,7 +5498,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
                 $int=Compute("0");
             </pg-code>
@@ -5530,7 +5528,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5563,7 +5561,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5597,7 +5595,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5631,7 +5629,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

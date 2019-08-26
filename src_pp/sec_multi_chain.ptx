@@ -157,7 +157,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figmchain_intro_3D.asy END -->
@@ -197,7 +197,7 @@
           <m>\frac{dz}{dt}</m> is really just a function of <m>t</m>,
           and we can replace <m>x</m> with <m>\sin(t)</m> and <m>y</m> with <m>e^{5t}</m>:
           <me>
-            \frac{dz}{dt} = (2xy+1)\cos(t) + 5x^2e^{5t} = (2\sin(t)e^{5t}+1)\cos(t) +5e^{5t}\sin^2(t) 
+            \frac{dz}{dt} = (2xy+1)\cos(t) + 5x^2e^{5t} = (2\sin(t)e^{5t}+1)\cos(t) +5e^{5t}\sin^2(t)
           </me>.
         </p>
       </solution>
@@ -215,7 +215,7 @@
       That is, <m>z = x^2y+x = (\sin(t) )^2e^{5t}+\sin(t) </m>.
       Applying the Chain and Product Rules, we have
       <me>
-        \frac{dz}{dt} = 2\sin(t) \cos(t) \, e^{5t}+ 5\sin^2(t) \,e^{5t}+\cos(t) 
+        \frac{dz}{dt} = 2\sin(t) \cos(t) \, e^{5t}+ 5\sin^2(t) \,e^{5t}+\cos(t)
       </me>,
       which matches the result from the example.
     </p>
@@ -296,14 +296,14 @@
         <p>
           It is straightforward to compute
           <me>
-            f_x(x,y) = 2x-y,\qquad f_y(x,y) = 2y-x,\qquad \frac{dx}{dt} = -\sin(t) ,\qquad \frac{dy}{dt} = \cos(t) 
+            f_x(x,y) = 2x-y,\qquad f_y(x,y) = 2y-x,\qquad \frac{dx}{dt} = -\sin(t) ,\qquad \frac{dy}{dt} = \cos(t)
           </me>.
         </p>
 
         <p>
           Combining these according to the Chain Rule gives:
           <me>
-            \frac{dz}{dt} = -(2x-y)\sin(t) + (2y-x)\cos(t) 
+            \frac{dz}{dt} = -(2x-y)\sin(t) + (2y-x)\cos(t)
           </me>.
         </p>
 
@@ -407,7 +407,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figmchain2_3D.asy END -->
@@ -561,7 +561,7 @@
             \frac{\partial f}{\partial x} = y\qquad\qquad \frac{\partial f}{\partial y} = x\qquad\qquad \frac{\partial f}{\partial z} = 2z
           </me>,
           <me>
-            \frac{\partial x}{\partial t} = 2te^s\qquad\qquad \frac{\partial y}{\partial t} = \cos(s) \qquad\qquad \frac{\partial z}{\partial t} = s\cos(t) 
+            \frac{\partial x}{\partial t} = 2te^s\qquad\qquad \frac{\partial y}{\partial t} = \cos(s) \qquad\qquad \frac{\partial z}{\partial t} = s\cos(t)
           </me>.
         </p>
 
@@ -618,11 +618,11 @@
       <m>\frac{dz}{dx} = 0</m>.
       We also know <m>\frac{dx}{dx} = 1</m>.
       Equation <xref ref="eq_mchain1"/> becomes
-      <md xml:id="eq_mchain2">
-        <mrow>0 \amp = \frac{\partial z}{\partial x}(1) + \frac{\partial z}{\partial y}\frac{dy}{dx}  \Rightarrow</mrow>
-        <mrow>\frac{dy}{dx} \amp = -\frac{\partial z}{\partial x}\Big/\frac{\partial z}{\partial y}</mrow>
-        <mrow>\amp = -\frac{\,f_x\,}{f_y}</mrow>
-      </md>.
+      <mdn>
+        <mrow number="no">0 \amp = \frac{\partial z}{\partial x}(1) + \frac{\partial z}{\partial y}\frac{dy}{dx}  \Rightarrow</mrow>
+        <mrow number="no">\frac{dy}{dx} \amp = -\frac{\partial z}{\partial x}\Big/\frac{\partial z}{\partial y}</mrow>
+        <mrow xml:id="eq_mchain2">\amp = -\frac{\,f_x\,}{f_y}</mrow>
+      </mdn>.
     </p>
 
     <p>
@@ -705,7 +705,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -729,7 +729,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -749,7 +749,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -773,7 +773,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -799,7 +799,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -819,7 +819,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $partial="partial";
               Context()->strings->add($partial=>{},);
@@ -862,7 +862,7 @@
       <exercise xml:id="x12_08_ex_07">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -894,8 +894,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context()->variables->add(y=>'Real',t=>'Real');
               $x=Compute("t");
@@ -932,7 +932,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -965,8 +965,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context()->variables->add(y=>'Real',t=>'Real');
               $x=Compute("cos(t)");
@@ -1004,7 +1004,7 @@
       <exercise xml:id="x12_08_ex_10">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1038,8 +1038,8 @@
       <exercise xml:id="x12_08_ex_08">
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context()->variables->add(y=>'Real',t=>'Real');
               $x=Compute("pi t");
@@ -1089,7 +1089,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1109,7 +1109,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $zeros=Compute("-sqrt(3/2), 0, sqrt(3/2)");
@@ -1131,7 +1131,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1152,7 +1152,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $zeros=Compute("0, pi");
@@ -1201,7 +1201,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1214,7 +1214,7 @@
               <p>
                 We find that
                 <me>
-                  \frac{dz}{dt} = 38\cos(t) \sin(t) 
+                  \frac{dz}{dt} = 38\cos(t) \sin(t)
                 </me>.
               </p>
 
@@ -1229,7 +1229,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $zeros=Compute("0, 1/pi*arctan(sqrt(5)), 1- 1/pi*arctan(sqrt(5)), 1, 1+1/pi*arctan(sqrt(5)), 2-1/pi*arctan(sqrt(5))");
@@ -1358,7 +1358,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1394,10 +1394,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->variables->add(y=>'Real',s=>'Real', t=>'Real');
               $x=Compute("st^2");
@@ -1453,10 +1453,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->variables->add(y=>'Real',s=>'Real', t=>'Real');
               $x=Compute("st^2");
@@ -1511,10 +1511,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->variables->add(y=>'Real',s=>'Real', t=>'Real');
               $x=Compute("st^2");
@@ -1580,7 +1580,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1604,7 +1604,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->variables->add(y=>'Real');
               $dydx=Compute("-x/y^2");
@@ -1626,7 +1626,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1651,7 +1651,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->variables->add(y=>'Real');
               $dydx=Compute("-(2x+y)/(2y+x)");
@@ -1684,7 +1684,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1704,7 +1704,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $dzdt=Compute("0");
             </pg-code>
@@ -1725,7 +1725,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1753,8 +1753,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               $dzds=Compute("-2");
               $dzdt=Compute("5");

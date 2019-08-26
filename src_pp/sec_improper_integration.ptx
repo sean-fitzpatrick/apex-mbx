@@ -37,7 +37,7 @@
       they are not increasing by much.
       In fact, consider:
       <me>
-        \int_0^b \frac{1}{1+x^2}\ dx = \tan^{-1}(x) \Big|_0^b = \tan^{-1}(b) -\tan^{-1}(0) = \tan^{-1}(b) 
+        \int_0^b \frac{1}{1+x^2}\ dx = \tan^{-1}(x) \Big|_0^b = \tan^{-1}(b) -\tan^{-1}(0) = \tan^{-1}(b)
       </me>.
     </p>
 
@@ -58,7 +58,7 @@
       <image xml:id="img_improper1">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
 
         \begin{axis}[
@@ -76,7 +76,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_improper1.tex END -->
@@ -232,7 +232,7 @@
                 <image xml:id="img_impint1a">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -250,7 +250,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_eximpint1a.tex END -->
@@ -266,7 +266,7 @@
                 \amp = \infty.
                 \end{aligned}
                 </me>
-  
+
                 The limit does not exist,
                 hence the improper integral <m>\ds\int_1^\infty\frac1x\ dx</m> diverges.
                 Compare the graphs in <xref ref="fig_impint1a">Figures</xref>
@@ -281,7 +281,7 @@
                 <image xml:id="img_impint1b">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -299,7 +299,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_eximpint1b.tex END -->
@@ -325,7 +325,7 @@
                 <image xml:id="img_impint1c">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -344,7 +344,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_eximpint1c.tex END -->
@@ -373,7 +373,7 @@
                 <image xml:id="img_impint1d">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -396,7 +396,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_eximpint1d.tex END -->
@@ -433,7 +433,7 @@
           <image xml:id="img_impint2">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -454,7 +454,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_eximpint2.tex END -->
@@ -550,7 +550,7 @@
                 <image xml:id="img_impint3">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -570,7 +570,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_impint3.tex END -->
@@ -597,7 +597,7 @@
                 <image xml:id="img_impint3b">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -614,7 +614,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_impint3b.tex END -->
@@ -685,7 +685,7 @@
           <!-- START figures/fig_impint4.tex -->
           <image xml:id="img_impint4">
             <description></description>
-            <latex-image>           
+            <latex-image>
 
             \begin{tikzpicture}
 
@@ -708,7 +708,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_impint4.tex END -->
@@ -740,7 +740,7 @@
     </p>
 <!--TODO: the nonbreaking spaces in the title don't pass validation. Also, displaymath in a title doesn't seem like a good idea. Rewrite?-->
     <insight xml:id="idea_impint1">
-      <title>Convergence of Improper Integrals <m>\ds \int_1^\infty\frac1{x^p}<nbsp/>dx</m> and <m>\ds \int_0^1\frac1{x^p}<nbsp/>dx</m>.</title>
+      <title>Convergence of Improper Integrals Involving <m>x^{-p}</m></title>
       <p>
         <ol>
           <li>
@@ -866,7 +866,7 @@
                 <image xml:id="img_impint5">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -884,7 +884,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_impint5.tex END -->
@@ -917,7 +917,7 @@
                 <image xml:id="img_impint5b">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -935,7 +935,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_impint5b.tex END -->
@@ -1065,7 +1065,7 @@
           <image xml:id="img_impint6">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -1083,7 +1083,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_impint6.tex END -->

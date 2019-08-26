@@ -366,7 +366,7 @@
       </assemblage>
     </introduction>
 
-    <subsection xml:id=:"reference-trig-definitions">
+    <subsection xml:id="reference-trig-definitions">
       <title>Definitions of the Trigonometric Functions</title>
       <assemblage>
         <title>Unit Circle Definition</title>
@@ -988,23 +988,21 @@
       <title>Summation Formulas:</title>
 
       <p>
-        <tabular>
-          <row>
-            <cell><m>\ds \sum^n_{i=1}{c} = cn</m> <nbsp/></cell>
-            <cell><m>\ds\sum^n_{i=1}{i} = \frac{n(n+1)}{2}</m></cell>
-          </row>
-          <row>
-            <cell><m>\ds\sum^n_{i=1}{i^2} = \frac{n(n+1)(2n+1)}{6}</m></cell>
-            <cell><m>\ds\sum^n_{i=1}{i^3}= \left(\frac{n(n+1)}{2}\right)^2</m></cell>
-          </row>
-        </tabular>
+        <md>
+          <mrow>
+            \sum^n_{i=1}{c} \amp = cn \amp \sum^n_{i=1}{i} \amp= \frac{n(n+1)}{2}
+          </mrow>
+          <mrow>
+            \sum^n_{i=1}{i^2} \amp = \frac{n(n+1)(2n+1)}{6} \amp \sum^n_{i=1}{i^3} \amp = \left(\frac{n(n+1)}{2}\right)^2
+          </mrow>
+        </md>
       </p>
     </assemblage>
 
     <assemblage xml:id="reference-formulas-trapezoid">
       <title>Trapezoidal Rule:</title>
       <p>
-        <m>\ds \int_a^b{f(x)}\, dx \approx \frac{\Delta x}{2}\big[f(x_1)+2f(x_2) + 2f(x_3) + \cdots + 2f(x_{n}) + f(x_{n+1})\big]</m>
+        <me>\int_a^b{f(x)}\, dx \approx \frac{\Delta x}{2}\big[f(x_1)+2f(x_2) + 2f(x_3) + \cdots + 2f(x_{n}) + f(x_{n+1})\big]</me>
       </p>
 
       <p>
@@ -1015,7 +1013,7 @@
     <assemblage xml:id="reference-formulas-simpsons">
       <title>Simpson's Rule:</title>
       <p>
-        <m>\ds\int_a^b{f(x)}\, dx \approx \frac{\Delta x}{3}\big[f(x_1)+4f(x_2) + 2f(x_3) + 4f(x_4) + \cdots + 2f(x_{n-1}) + 4f(x_{n}) + f(x_{n+1})\big]</m>
+        <me>\int_a^b{f(x)}\, dx \approx \frac{\Delta x}{3}\big[f(x_1)+4f(x_2) + 2f(x_3) + 4f(x_4) + \cdots + 2f(x_{n-1}) + 4f(x_{n}) + f(x_{n+1})\big]</me>
       </p>
 
       <p>
@@ -1025,13 +1023,15 @@
 
     <assemblage xml:id="reference-formulas-arclength">
       <title>Arc Length:</title>
-      <m>\displaystyle  L = \int_a^b\sqrt{1+ f\,'(x)^2}\,dx</m>
+      <p>
+        <me>L = \int_a^b\sqrt{1+ f\,'(x)^2}\,dx</me>
+      </p>
     </assemblage>
 
     <assemblage xml:id="reference-formulas-surface-revolution">
       <title> Surface of Revolution:</title>
       <p>
-        <m>\displaystyle S = 2\pi \int_a^b{f(x) \sqrt{1+ f\,'(x)^2}}dx</m>
+        <me>2\pi \int_a^b{f(x) \sqrt{1+ f\,'(x)^2}}dx</me>
       </p>
 
       <p>
@@ -1039,7 +1039,7 @@
       </p>
 
       <p>
-        <m>\displaystyle S = 2\pi \int_a^b{x \sqrt{1+ f\,'(x)^2}}dx</m>
+        <me>S = 2\pi \int_a^b{x \sqrt{1+ f\,'(x)^2}}dx</me>
       </p>
 
       <p>
@@ -1050,36 +1050,36 @@
     <assemblage xml:id="reference-formulas-work">
       <title> Work Done by a Variable Force:</title>
       <p>
-        <m>\displaystyle
-        W = \int_a^b{F(x)}dx</m>
+        <me>W = \int_a^b{F(x)}dx</me>
       </p>
     </assemblage>
 
     <assemblage xml:id="reference-formulas-fluid-force">
       <title> Force Exerted by a Fluid:</title>
       <p>
-        <m>\displaystyle F = \int_a^b{w\,d(y)\,\ell(y)}dy</m>
+        <me>F = \int_a^b{w\,d(y)\,\ell(y)}dy</me>
       </p>
     </assemblage>
 
     <assemblage xml:id="reference-formulas-taylor">
       <title>Taylor Series Expansion for <m>f(x)</m>:</title>
       <p>
-        <m>\displaystyle p_n(x) = f(c) + f\,'(c)(x-c) + \frac{f\,''(c)}{2!}(x-c)^2 + \frac{f\,'''(c)}{3!}(x-c)^3 + \cdots + \frac{f\,^{(n)}(c)}{n!}(x-c)^n + \cdots</m>
+        <me>p_n(x) = f(c) + f\,'(c)(x-c) + \frac{f\,''(c)}{2!}(x-c)^2 + \frac{f\,'''(c)}{3!}(x-c)^3 + \cdots + \frac{f\,^{(n)}(c)}{n!}(x-c)^n + \cdots</me>
       </p>
     </assemblage>
 
     <assemblage xml:id="reference-formulas-maclaurin">
       <title>Maclaurin Series Expansion for <m>f(x)</m>, where <m>c=0</m>:</title>
       <p>
-        <m>\displaystyle p_n(x) = f(0) + f\,'(0)x + \frac{f\,''(0)}{2!}x^2 + \frac{f\,'''(0)}{3!}x^3 + \cdots + \frac{f\,^{(n)}(0)}{n!}x^n+\cdots</m>
+        <me>p_n(x) = f(0) + f\,'(0)x + \frac{f\,''(0)}{2!}x^2 + \frac{f\,'''(0)}{3!}x^3 + \cdots + \frac{f\,^{(n)}(0)}{n!}x^n+\cdots</me>
       </p>
     </assemblage>
   </section>
 
   <section>
     <title>Summary of Tests for Series</title>
-    <p>
+    <table>
+      <title/>
       <tabular>
         <row bottom="minor">
           <cell></cell>
@@ -1274,6 +1274,6 @@
           <cell></cell>
         </row>
       </tabular>
-    </p>
+    </table>
   </section>
 </appendix>

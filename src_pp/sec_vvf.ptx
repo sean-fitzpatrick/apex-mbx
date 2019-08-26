@@ -70,7 +70,7 @@
           <image xml:id="img_vvfintro1a">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -85,7 +85,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_vvfintro1a.tex END -->
@@ -97,9 +97,9 @@
           <image xml:id="img_vvfintro1b">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
-            
+
             \begin{axis}[
             xtick={1,2,3,4,5},
             ytick={-3,-2,-1,1,2,3},
@@ -115,7 +115,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_vvfintro1.tex END -->
@@ -155,44 +155,47 @@
         <figure xml:id="fig_vvf1">
           <caption>Sketching the vector-valued function of <xref ref="ex_vvf1">Example</xref>.</caption>
           <sidebyside widths="47% 47%">
-            <tabular xml:id="fig_vvf1a">
-              <row>
-                <cell><m>t</m></cell>
-                <cell><m>t^3-t</m></cell>
-                <cell><m>\ds \frac{1}{t^2+1}</m></cell>
-              </row>
-              <row bottom="minor">
-                <cell></cell>
-                <cell></cell>
-                <cell></cell>
-              </row>
-              <row>
-                <cell><m>-2</m></cell>
-                <cell><m>-6</m></cell>
-                <cell>1/5</cell>
-              </row>
-              <row>
-                <cell><m>-1</m></cell>
-                <cell><m>0</m></cell>
-                <cell>1/2</cell>
-              </row>
-              <row>
-                <cell><m>0</m></cell>
-                <cell><m>0</m></cell>
-                <cell><m>1</m></cell>
-              </row>
-              <row>
-                <cell><m>1</m></cell>
-                <cell><m>0</m></cell>
-                <cell>1/2</cell>
-              </row>
-              <row>
-                <cell><m>2</m></cell>
-                <cell><m>6</m></cell>
-                <cell>1/5</cell>
-              </row>
-            </tabular>
-          
+            <figure xml:id="fig_vvf1a">
+              <caption/>
+              <tabular>
+                <row>
+                  <cell><m>t</m></cell>
+                  <cell><m>t^3-t</m></cell>
+                  <cell><m>\ds \frac{1}{t^2+1}</m></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>-6</m></cell>
+                  <cell>1/5</cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>0</m></cell>
+                  <cell>1/2</cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>0</m></cell>
+                  <cell><m>1</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>0</m></cell>
+                  <cell>1/2</cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>6</m></cell>
+                  <cell>1/5</cell>
+                </row>
+              </tabular>
+            </figure>
+
             <figure xml:id="fig_vvf1b">
               <caption/>
               <!-- START figures/fig_vvf1.tex -->
@@ -221,7 +224,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                    
+
                 </latex-image>
               </image>
               <!-- figures/fig_vvf1.tex END -->
@@ -330,7 +333,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figvvf2_3D.asy END -->
@@ -435,7 +438,7 @@
               <image xml:id="img_vvf3a">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -449,7 +452,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_vvf3.tex END -->
@@ -461,7 +464,7 @@
               <image xml:id="img_vvf3b">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -474,7 +477,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_vvf3a.tex END -->
@@ -486,7 +489,7 @@
               <image xml:id="img_vvf3c">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -501,7 +504,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_vvf3b.tex END -->
@@ -541,7 +544,7 @@
           <image xml:id="img_vvf4a">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \draw [thick] (0,1) circle (1);
@@ -555,7 +558,7 @@
             \draw [thick,white] (0,2.5) -- (1,2.5);
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         </figure>
@@ -609,7 +612,7 @@
       <image xml:id="img_vvf4b">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
 
         \begin{axis}[
@@ -622,7 +625,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_vvf4a.tex END -->
@@ -694,7 +697,7 @@
           <image xml:id="img_vvf5">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -710,7 +713,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_vvf5.tex END -->
@@ -831,7 +834,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -851,7 +854,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -872,7 +875,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -902,7 +905,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -918,7 +921,7 @@
                 <image xml:id="img_11_01_ex_03X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -933,7 +936,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_03.tex END -->
@@ -945,7 +948,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -961,7 +964,7 @@
                 <image xml:id="img_11_01_ex_04X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -978,7 +981,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_04.tex END -->
@@ -990,7 +993,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1006,7 +1009,7 @@
                 <image xml:id="img_11_01_ex_05X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -1023,7 +1026,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_05.tex END -->
@@ -1035,7 +1038,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1051,7 +1054,7 @@
                 <image xml:id="img_11_01_ex_06X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1066,7 +1069,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_06.tex END -->
@@ -1078,7 +1081,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1094,7 +1097,7 @@
                 <image xml:id="img_11_01_ex_07X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1111,7 +1114,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_07.tex END -->
@@ -1123,7 +1126,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1138,7 +1141,7 @@
                 <image xml:id="img_11_01_ex_08X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1155,7 +1158,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_08.tex END -->
@@ -1167,7 +1170,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1182,7 +1185,7 @@
                 <image xml:id="img_11_01_ex_09X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1199,7 +1202,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_09.tex END -->
@@ -1211,7 +1214,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1226,7 +1229,7 @@
                 <image xml:id="img_11_01_ex_10X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -1243,7 +1246,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_10.tex END -->
@@ -1266,7 +1269,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1281,7 +1284,7 @@
                 <image xml:id="img_11_01_ex_11X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1305,7 +1308,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_11.tex END -->
@@ -1317,7 +1320,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -1332,7 +1335,7 @@
                 <image xml:id="img_11_01_ex_12X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1355,7 +1358,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_12.tex END -->
@@ -1367,7 +1370,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -1382,7 +1385,7 @@
                 <image xml:id="img_11_01_ex_13X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1403,9 +1406,9 @@
                   \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({cos(deg(x))},{sin(deg(x))},{sin(deg(x))});
 
                   \end{axis}
-        
+
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_13.tex END -->
@@ -1417,7 +1420,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -1432,9 +1435,9 @@
                 <image xml:id="img_11_01_ex_14X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
-                  
+
                   \begin{axis}[
                   axis on top,
                   axis lines=center,
@@ -1455,7 +1458,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_01_ex_14.tex END -->
@@ -1476,7 +1479,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               $norm=Formula("|t| sqrt(1+t^2)");
@@ -1494,7 +1497,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1514,7 +1517,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               $norm=Formula("sqrt(4+t^2)");
@@ -1532,7 +1535,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1562,7 +1565,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1607,7 +1610,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1640,7 +1643,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1664,7 +1667,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1697,7 +1700,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1719,7 +1722,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1755,7 +1758,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -1790,7 +1793,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1825,7 +1828,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               $arc=Vector("&lt;1,0>");
@@ -1846,7 +1849,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1866,7 +1869,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               $arc=Vector("&lt;0,0,1>");
@@ -1887,7 +1890,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

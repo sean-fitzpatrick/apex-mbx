@@ -3319,20 +3319,22 @@
         </p>
       </statement>
       <answer>
-        <ol>
-          <li>
-            <p>
-              <m>\curl\vec F = 1</m>.
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\curl\vec F = 1</m>.
+              </p>
+            </li>
 
-          <li>
-            <p>
-              <m>\curl\vec F\cdot \vec n = 1</m>,
-              where <m>\vec n</m> is a unit vector normal to <m>\surfaceS</m>.
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                <m>\curl\vec F\cdot \vec n = 1</m>,
+                where <m>\vec n</m> is a unit vector normal to <m>\surfaceS</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
       </answer>
     </exercise>
 
