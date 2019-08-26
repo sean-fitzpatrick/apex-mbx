@@ -30,10 +30,10 @@
       <figure xml:id="fig_taypolyintroa_1">
 <!-- START figures/fig_taypolyintroa.tex -->
         <caption>A graph of <m>f(x)</m> and its tangent line at <m>0</m>.</caption>
-        <image xml:id="img_taypolyintroa_1">
+        <image xml:id="img_taypolyintroa_1" width="47%">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}
 
           \begin{axis}[
@@ -51,7 +51,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
 
@@ -133,10 +133,10 @@
   <figure xml:id="fig_taypolyintrob">
     <caption>Plotting <m>f</m>, <m>p_2</m> and <m>p_4</m>.</caption>
     <!-- START figures/fig_taypolyintrob.tex -->
-    <image xml:id="img_taypolyintrob">
+    <image xml:id="img_taypolyintrob" width="47%">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}
 
       \begin{axis}[
@@ -152,7 +152,7 @@
       \end{axis}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
     <!-- figures/fig_taypolyintrob.tex END -->
@@ -176,10 +176,10 @@
   <figure xml:id="fig_taypolyintroc">
     <caption>Plotting <m>f</m> and <m>p_{13}</m>.</caption>
     <!-- START figures/fig_taypolyintroc.tex -->
-    <image xml:id="img_taypolyintroc">
+    <image xml:id="img_taypolyintroc" width="47%">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}
 
       \begin{axis}[
@@ -194,7 +194,7 @@
       \end{axis}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
     <!-- figures/fig_taypolyintroc.tex END -->
@@ -348,10 +348,10 @@
             <figure xml:id="fig_taypoly1b">
               <caption>A plot of <m>f(x)=e^x</m> and its 5<m>^{th}</m> degree Maclaurin polynomial <m>p_5(x)</m>.</caption>
           <!-- START figures/fig_taypoly1b.tex -->
-              <image xml:id="img_taypoly1b">
+              <image xml:id="img_taypoly1b" width="47%">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -366,7 +366,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_taypoly1b.tex END -->
@@ -418,7 +418,7 @@
               the exponent to multiply by the previous coefficent.
               So the <m>6</m> in the <m>4^{th}</m> derivative is actually <m>1\cdot 2\cdot 3=3!</m>.
             </p>
-          
+
             <table xml:id="fig_taypoly2a">
               <title>Derivatives of <m>\ln(x)</m> evaluated at <m>x=1</m>.</title>
               <tabular>
@@ -497,14 +497,14 @@
               plots <m>y=\ln(x)</m> with <m>y=p_6(x)</m>.
               We can see that <m>\ln(1.5) \approx p_6(1.5)</m>.
             </p>
-          
+
             <figure xml:id="fig_taypoly2b">
               <caption>A plot of <m>y=\ln(x)</m> and its 6<m>^{th}</m> degree Taylor polynomial at <m>x=1</m>.</caption>
           <!-- START figures/fig_taypoly2b.tex -->
-              <image xml:id="img_taypoly2b">
+              <image xml:id="img_taypoly2b" width="47%">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -519,7 +519,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_taypoly2b.tex END -->
@@ -546,14 +546,14 @@
               as shown in <xref ref="fig_taypoly2c">Figure</xref>.
               We'll soon discuss why this is.
             </p>
-          
+
             <figure xml:id="fig_taypoly2c">
               <caption>A plot of <m>y=\ln(x)</m> and its 20<m>^{th} </m> degree Taylor polynomial at <m>x=1</m>.</caption>
           <!-- START figures/fig_taypoly2c.tex -->
-              <image xml:id="img_taypoly2c">
+              <image xml:id="img_taypoly2c" width="47%">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -575,7 +575,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_taypoly2c.tex END -->
@@ -921,10 +921,10 @@
       <figure xml:id="fig_taypoly4b">
         <caption>A graph of <m>f(x)= \cos(x)</m> and its degree 8 Maclaurin polynomial.</caption>
         <!-- START figures/fig_taypoly4.tex -->
-        <image xml:id="img_taypoly4b">
+        <image xml:id="img_taypoly4b" width="47%">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}
 
           \begin{axis}[
@@ -949,7 +949,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_taypoly4.tex END -->
@@ -991,7 +991,7 @@
               We begin by evaluating the derivatives of <m>f</m> at <m>x=4</m>.
               This is done in <xref ref="fig_taypoly5a">Figure</xref>.
             </p>
-          
+
             <table xml:id="fig_taypoly5a">
               <title>A table of the derivatives of <m>f(x)=\sqrt{x}</m> evaluated at <m>x=4</m>.</title>
               <tabular>
@@ -1057,14 +1057,14 @@
               A graph of <m>f(x)=\sqrt x</m> and <m>p_4(x)</m> is given in <xref ref="fig_taypoly5b">Figure</xref>.
               Note how the two functions are nearly indistinguishable on <m>(2,7)</m>.
             </p>
-          
+
             <figure xml:id="fig_taypoly5b">
               <caption>A graph of <m>f(x)=\sqrt{x}</m> and its degree 4 Taylor polynomial at <m>x=4</m>.</caption>
           <!-- START figures/fig_taypoly5.tex -->
-              <image xml:id="img_taypoly5b">
+              <image xml:id="img_taypoly5b" width="47%">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1086,7 +1086,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_taypoly5.tex END -->
@@ -1195,10 +1195,10 @@
       <figure xml:id="fig_taypoly6">
         <caption>A graph of <m>y=-1/(x-1)</m> and <m>y=p_3(x)</m> from <xref ref="ex_taypoly6">Example</xref>.</caption>
         <!-- START figures/fig_taypoly6.tex -->
-        <image xml:id="img_taypoly6">
+        <image xml:id="img_taypoly6" width="47%">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}
 
           \begin{axis}[
@@ -1212,7 +1212,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_taypoly6.tex END -->
@@ -1258,7 +1258,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1280,7 +1280,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1301,7 +1301,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1323,7 +1323,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1355,7 +1355,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1375,7 +1375,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1395,7 +1395,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1415,7 +1415,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1435,7 +1435,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1455,7 +1455,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1475,7 +1475,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1495,7 +1495,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1522,11 +1522,11 @@
           at <m>x=c</m>, for the given function.
         </p>
       </introduction>
-      
+
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1547,7 +1547,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1568,7 +1568,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1594,7 +1594,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1619,7 +1619,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1640,7 +1640,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1661,7 +1661,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1681,7 +1681,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1712,7 +1712,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1734,7 +1734,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1756,7 +1756,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1779,7 +1779,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1811,7 +1811,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1835,7 +1835,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1860,7 +1860,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1886,7 +1886,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1922,7 +1922,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1942,7 +1942,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1964,7 +1964,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1984,7 +1984,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2004,7 +2004,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2034,7 +2034,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2054,7 +2054,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2074,7 +2074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
