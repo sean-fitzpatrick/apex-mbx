@@ -498,7 +498,7 @@
               label("$y$",(0,ybounds.y+0.05*(ybounds.y-ybounds.x),0));
               label("$z$",(0,0,zbounds.y+0.05*(zbounds.y-zbounds.x)));
 
-              //Draw the faces of the cube 
+              //Draw the faces of the cube
               pen p=rgb(0,0,.7);
 
               triple f(pair t) {
@@ -1118,8 +1118,10 @@
           which also conforms to the right<ndash/>hand rule with regard to the orientation of <m>C</m>.
           With <m>\curl \vec F = \langle 2y,0,-1\rangle</m> as before, we have
           <md>
-            \iint_\surfaceS (\curl\vec F)\cdot \vec n\, dS = \\ \int_0^1\int_0^{2\pi} \la 2v\sin u+2,0,-1\ra\cdot \la 2v\big(v\cos u+1\big), 2v\big(v\sin u+1\big),v\ra\, du\, dv =\\ 3\pi.
-          </md>
+            <mrow>\amp\iint_\surfaceS (\curl\vec F)\cdot \vec n\, dS</mrow>
+            <mrow>\quad\quad\amp = \int_0^1\int_0^{2\pi} \la 2v\sin u+2,0,-1\ra\cdot \la 2v\big(v\cos u+1\big), 2v\big(v\sin u+1\big),v\ra\, du\, dv </mrow>
+            <mrow>\quad\quad\amp =3\pi</mrow>
+          </md>.
         </p>
 
         <p>
@@ -1426,7 +1428,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -1561,7 +1563,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -1689,7 +1691,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -1823,7 +1825,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2053,7 +2055,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2173,7 +2175,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2296,7 +2298,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2415,7 +2417,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2528,7 +2530,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2664,7 +2666,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2806,7 +2808,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -2924,7 +2926,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -3042,7 +3044,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -3162,7 +3164,7 @@
         </p>
 
         <sidebyside width="47%">
-          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick, 
+          <!-- \apexincludemedia{width=90pt,3Dmenu,activate=onclick,deactivate=onclick,
           3Droll=0,
           3Dortho=0.004999519791454077,
           3Dc2c=0.7375360131263733 -0.6143473982810974 0.2803889811038971,
@@ -3298,21 +3300,23 @@
 
     <exercise>
       <statement>
-        <ol>
-          <li>
-            <p>
-              Green's Theorem can be used to find the area of a region enclosed by a curve by evaluating a line integral with the appropriate choice of vector field <m>\vec F</m>.
-              What condition on <m>\vec F</m> makes this possible?
-            </p>
-          </li>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Green's Theorem can be used to find the area of a region enclosed by a curve by evaluating a line integral with the appropriate choice of vector field <m>\vec F</m>.
+                What condition on <m>\vec F</m> makes this possible?
+              </p>
+            </li>
 
-          <li>
-            <p>
-              Likewise, Stokes' Theorem can be used to find the surface area of a region enclosed by a curve in space by evaluating a line integral with the appropriate choice of vector field <m>\vec F</m>.
-              What condition on <m>\vec F</m> makes this possible?
-            </p>
-          </li>
-        </ol>
+            <li>
+              <p>
+                Likewise, Stokes' Theorem can be used to find the surface area of a region enclosed by a curve in space by evaluating a line integral with the appropriate choice of vector field <m>\vec F</m>.
+                What condition on <m>\vec F</m> makes this possible?
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <answer>
         <ol>
