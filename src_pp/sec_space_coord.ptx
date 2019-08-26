@@ -5503,8 +5503,6 @@
 
     </exercisegroup>
 
-    <!-- ToDo: None of the questions below (except a small group in the middle) use 3D graphs in the webwork and are not supported at this time. -->
-
     <exercisegroup>
 
       <introduction>
@@ -5514,18 +5512,18 @@
       </introduction>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>z=x^3</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -5636,23 +5634,23 @@
                 </image>
             <!-- figures/fig10_01_ex_15_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>y=\cos(z)</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -5745,23 +5743,23 @@
                 </image>
                <!-- figures/fig10_01_ex_16_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds \frac{x^2}{4}+\frac{y^2}{9}=1</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -5865,23 +5863,23 @@
                 </image>
             <!-- figures/fig10_01_ex_17_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds y=\frac1x</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -5993,8 +5991,8 @@
                 </image>
             <!-- figures/fig10_01_ex_18_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
     </exercisegroup>
@@ -6107,12 +6105,12 @@
       </introduction>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <sidebyside width="47%">
               <!--
@@ -6204,21 +6202,21 @@
                 </p>
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 (a)<m>\ds x=y^2+\frac{z^2}{9}</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <sidebyside width="47%">
               <!--
@@ -6317,21 +6315,21 @@
                 </p>
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 (b)<m>x^2-y^2+z^2=0</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <sidebyside width="47%">
               <!--
@@ -6423,21 +6421,21 @@
                 </p> 
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 (b)<m>\ds x^2+\frac{y^2}9+\frac{z^2}4=1</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <sidebyside width="47%">
               <!--
@@ -6536,12 +6534,12 @@
                 </p>
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 (a)<m>y^2-x^2-z^2=1</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
     </exercisegroup>
@@ -6554,18 +6552,18 @@
       </introduction>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds z-y^2+x^2=0</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -6645,23 +6643,23 @@
                 </image>
             <!-- figures/fig10_01_ex_28_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds z^2=x^2+\frac{y^2}4</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -6740,23 +6738,23 @@
                 </image>
             <!-- figures/fig10_01_ex_24_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>x=-y^2-z^2</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -6835,23 +6833,23 @@
                 </image>
             <!-- figures/fig10_01_ex_23_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds 16x^2-16y^2-16z^2=1</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -6937,23 +6935,23 @@
                 </image>
             <!-- figures/fig10_01_ex_27_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds \frac{x^2}9-y^2+\frac{z^2}{25}=1</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -7032,23 +7030,23 @@
                 </image>
             <!-- figures/fig10_01_ex_26_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds 4x^2+2y^2+z^2=4</m>
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
               <!--
               \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
@@ -7127,8 +7125,8 @@
                 </image>
             <!-- figures/fig10_01_ex_25_3D.asy END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
     </exercisegroup>

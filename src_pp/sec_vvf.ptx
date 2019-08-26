@@ -1314,21 +1314,19 @@
         </webwork>
       </exercise>
 
-      <!-- ToDo: The 3 problems below use 3D graphs which are not supported at this time. -->
-
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\vec r(t) = \la 3\cos(t) , \sin(t) , t/\pi\ra</m> on <m>[0,2\pi]</m>.
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
                 <!-- START figures/fig_11_01_ex_12.tex -->
                 <image xml:id="img_11_01_ex_12X">
@@ -1362,23 +1360,23 @@
                 </image>
                 <!-- figures/fig_11_01_ex_12.tex END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\vec r(t) = \la \cos(t) , \sin(t) ,\sin(t) \ra</m> on <m>[0,2\pi]</m>.
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
                 <!-- START figures/fig_11_01_ex_13.tex -->
                 <image xml:id="img_11_01_ex_13X">
@@ -1412,23 +1410,23 @@
                 </image>
                 <!-- figures/fig_11_01_ex_13.tex END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\vec r(t) = \la \cos(t) , \sin(t) ,\sin(2t)\ra</m> on <m>[0,2\pi]</m>.
               </p>
             </statement>
-            <solution>
+            <answer>
               <sidebyside width="47%">
                 <!-- START figures/fig_11_01_ex_14.tex -->
                 <image xml:id="img_11_01_ex_14X">
@@ -1462,8 +1460,8 @@
                 </image>
                 <!-- figures/fig_11_01_ex_14.tex END -->
               </sidebyside>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
     </exercisegroup>

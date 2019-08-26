@@ -1048,9 +1048,6 @@
       </exercise>
 
     </exercisegroup>
-
-    <!-- The 4 problems below use 3D graphs in the webwork and are no longer supported at this time. -->
-
     <exercisegroup>
 
       <introduction>
@@ -1061,12 +1058,12 @@
       </introduction>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>f(x,y) = \sin(x) \cos(y)</m>;<m>R</m> is the rectangle with bounds
@@ -1168,21 +1165,21 @@
                 <!-- figures/fig13_05_ex_05_3D.asy END -->
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 <m>\ds SA = \int_0^{2\pi}\int_0^{2\pi} \sqrt{1+ \cos^2(x) \cos^2(y) +\sin^2(x) \sin^2(y) }\ dx\ dy</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds f(x,y) = \frac{1}{x^2+y^2+1}</m>;<m>R</m> is the circle <m>x^2+y^2=9</m>.
@@ -1278,7 +1275,7 @@
                 <!-- figures/fig13_05_ex_06_3D.asy END -->
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 <m>\ds SA = \int_{-3}^{3}\int_{-\sqrt{9-x^2}}^{\sqrt{9-x^2}} \sqrt{1+ \frac{4x^2+4y^2}{(1+x^2+y^2)^4}}\ dx\ dy</m>
               </p>
@@ -1290,17 +1287,17 @@
               <p>
                 <m>\ds SA = \int_0^{2\pi}\int_0^3 r\sqrt{1+\frac{4r^2}{(1+r^2)^4}}\ dr\ d\theta</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds f(x,y) = x^2-y^2</m>;<m>R</m> is the rectangle with opposite corners <m>(-1,-1)</m> and <m>(1,1)</m>.
@@ -1401,21 +1398,21 @@
                 <!-- figures/fig13_05_ex_07_3D.asy END -->
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 <m>\ds SA = \int_{-1}^{1}\int_{-1}^{1} \sqrt{1+ 4x^2+4y^2}\ dx\ dy</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\ds f(x,y) = \frac{1}{e^{x^2}+1}</m>;<m>R</m> is the rectangle bounded by
@@ -1518,12 +1515,12 @@
                 <!-- figures/fig13_05_ex_08_3D.asy END -->
               </sidebyside>
             </statement>
-            <solution>
+            <answer>
               <p>
                 <m>\ds SA = \int_{-5}^{5}\int_{0}^{1} \sqrt{1+ \frac{4x^2e^{2x^2}}{\big(1+e^{x^2}\big)^4}}\ dy\ dx</m>
               </p>
-            </solution>
-        </webwork>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
     </exercisegroup>
