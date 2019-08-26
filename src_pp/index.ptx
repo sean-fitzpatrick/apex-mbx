@@ -97,13 +97,13 @@
     \newcommand{\pz}{\partial z}
     \newcommand{\pf}{\partial f}
     \newcommand{\mathN}{\mathbb{N}}
-    <!-- \newcommand{\zerooverzero}{\ds \raisebox{8pt}{\text{``\ }}\frac{0}{0}\raisebox{8pt}{\textit{ ''}}} -->
-    <!-- \newcommand{\deriv}[2]{\myds\frac{d}{dx}\left(#1\right)=#2} -->
-    <!-- \newcommand{\myint}[2]{\myds\int #1\ dx= {\ds #2}} -->
-    %\DeclareMathOperator{\sech}{sech}
-    %\DeclareMathOperator{\csch}{csch}
-    %\DeclareMathOperator{\curl}{curl}
-    %\DeclareMathOperator{\divv}{div}
+    %\newcommand{\zerooverzero}{\ds \raisebox{8pt}{\text{``\ }}\frac{0}{0}\raisebox{8pt}{\textit{ ''}}}
+    %\newcommand{\deriv}[2]{\myds\frac{d}{dx}\left(#1\right)=#2}
+    %\newcommand{\myint}[2]{\myds\int #1\ dx= {\ds #2}}
+    \DeclareMathOperator{\sech}{sech}
+    \DeclareMathOperator{\csch}{csch}
+    \DeclareMathOperator{\curl}{curl}
+    \DeclareMathOperator{\divv}{div}
     \newcommand{\primeskip}{\hskip.75pt}
     \newcommand{\plotlinecolor}{blue}
     \newcommand{\colorone}{blue}
@@ -271,38 +271,36 @@
       </preface>
     </frontmatter>
 
-    <!-- <xi:include href="./chapter_limits.ptx" /> -->
+    <xi:include href="./chapter_limits.ptx" />
 
-    <!-- <xi:include href="./chapter_derivatives.ptx" /> -->
+    <xi:include href="./chapter_derivatives.ptx" />
 
-    <!-- <xi:include href="./chapter_graphbehavior.ptx" /> -->
+    <xi:include href="./chapter_graphbehavior.ptx" />
 
-    <!-- <xi:include href="./chapter_deriv_apps.ptx" /> -->
+    <xi:include href="./chapter_deriv_apps.ptx" />
 
-    <!-- <xi:include href="./chapter_integration.ptx" /> -->
+    <xi:include href="./chapter_integration.ptx" />
 
-    <!-- <xi:include href="./chapter_anti_tech.ptx" /> -->
+    <xi:include href="./chapter_anti_tech.ptx" />
 
-    <!-- <xi:include href="./chapter_app_of_int.ptx" /> -->
+    <xi:include href="./chapter_app_of_int.ptx" />
 
-    <!-- <xi:include href="./chapter_sequences_series.ptx" /> -->
+    <xi:include href="./chapter_sequences_series.ptx" />
 
     <xi:include href="./chapter9.ptx" />
 
     <xi:include href="./chapter10.ptx" />
 
-    <!-- <xi:include href="./chap_vvf.ptx" /> -->
+    <xi:include href="./chap_vvf.ptx" />
 
-    <!-- <xi:include href="./chap_multi.ptx" /> -->
+    <xi:include href="./chap_multi.ptx" />
 
-    <!-- <xi:include href="./chapter13.ptx" /> -->
+    <xi:include href="./chapter13.ptx" />
 
     <xi:include href="./chapter_vector_calc.ptx" />
 
-    <!-- ToDo: Fix back reference -->
-
     <backmatter>
-      <!-- <xi:include href="./appendix_back_reference.ptx"/> -->
+      <xi:include href="./appendix_back_reference.ptx"/>
       <index>
       <title>Index</title>
       <index-list />
