@@ -1303,7 +1303,7 @@
                     zlabel={\scriptsize $z$}
                   ]
 
-                  \addplot+ [-,domain=0:6.28,samples y=0] ({2*cos(deg(x))},{x},{2*sin(deg(x))});
+                  \addplot3 [-,domain=0:6.28,samples y=0] ({2*cos(deg(x))},{x},{2*sin(deg(x))});
 
                   \end{axis}
 
