@@ -110,20 +110,20 @@
                   y=(-2\sqrt{2}-1)\big(x-(1+\sqrt{2}/2)\big)+1+\sqrt{2}/2 \approx  -3.83 x+8.24
                 </me>.
                 The limaçon and the tangent line are graphed in <xref ref="fig_polcalc1">Figure</xref>.
-  
+
                 The normal line has the opposite<ndash/>reciprocal slope as the tangent line, so its equation is
                 <me>
                   y \approx \frac{1}{3.83}x+1.26
                 </me>.
               </p>
-            
+
               <figure xml:id="fig_polcalc1">
                 <caption>The limaçon in <xref ref="ex_polcalc1">Example</xref> with its tangent line at <m>\theta=\pi/4</m> and points of vertical and horizontal tangency.</caption>
             <!-- START figures/fig_polcalc1.tex -->
                 <image xml:id="img_polcalc1">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -152,7 +152,7 @@
                   \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_polcalc1.tex END -->
@@ -250,7 +250,7 @@
           <image xml:id="img_polcalc2">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -269,7 +269,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_polcalc2.tex END -->
@@ -321,14 +321,15 @@
     </p>
 
     <p>
-      Consider <xref ref="fig_polararea">Figure</xref>
-      (a) where a region defined by
+      Consider <xref ref="fig_polarea1">Figure</xref>
+      where a region defined by
       <m>r=f(\theta)</m> on <m>[\alpha,\beta]</m> is given.
       (Note how the <q>sides</q> of the region are the lines
       <m>\theta=\alpha</m> and <m>\theta=\beta</m>,
       whereas in rectangular coordinates the <q>sides</q>
       of regions were often the vertical lines <m>x=a</m> and <m>x=b</m>.)
     </p>
+
     <aside>
       <p>
         Recall that the area of a sector of a circle with radius <m>r</m> subtended by an angle <m>\theta</m> is <m>A = \frac12\theta r^2</m>.
@@ -337,13 +338,13 @@
       <image xml:id="img_polcalc2X">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[x=30pt,y=30pt,thick]
 
         \draw (2,0) arc (0:50:2) -- (0,0);
         \draw (0,0) -- (2,0) node [pos=.5,below] {\(r\)};
         \draw [fill=black] (0,0) circle (1pt);
-  
+
         \draw (0,0) node [shift={(15pt,8pt)}] {\(\theta\)};
 
         \end{tikzpicture}
@@ -352,6 +353,7 @@
       </image>
 
     </aside>
+
     <p>
       Partition the interval <m>[\alpha,\beta]</m> into <m>n</m> equally spaced subintervals as <m>\alpha = \theta_1 \lt  \theta_2 \lt \cdots \lt \theta_{n+1}=\beta</m>.
       The length of each subinterval is <m>\Delta\theta = (\beta-\alpha)/n</m>,
@@ -360,7 +362,7 @@
       <m>[\theta_i,\theta_{i+1}]</m> can be approximated with a sector of a circle with radius <m>f(c_i)</m>,
       for some <m>c_i</m> in <m>[\theta_i,\theta_{i+1}]</m>.
       The area of this sector is <m>\frac12f(c_i)^2\Delta\theta</m>.
-      This is shown in part (b) of the figure,
+      This is shown in <xref ref="fig_polarea2">Figure</xref>,
       where <m>[\alpha,\beta]</m> has been divided into 4 subintervals.
       We approximate the area of the whole region by summing the areas of all sectors:
       <me>
@@ -383,7 +385,7 @@
           <image xml:id="img_polarea1">
             <description></description>
             <latex-image>
-            
+
 
             \begin{tikzpicture}
 
@@ -410,7 +412,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_polarea1.tex END -->
@@ -422,7 +424,7 @@
           <image xml:id="img_polarea2">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -461,7 +463,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_polarea2.tex END -->
@@ -550,7 +552,7 @@
           <image xml:id="img_polcalc4">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -571,7 +573,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_polcalc4.tex END -->
@@ -621,7 +623,7 @@
       <image xml:id="img_polarea3">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
 
         \begin{axis}[
@@ -660,7 +662,7 @@
         \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_polarea3.tex END -->
@@ -694,7 +696,7 @@
           <image xml:id="img_polcalc5">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -729,7 +731,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_polcalc5.tex END -->
@@ -768,7 +770,7 @@
       <statement>
         <p>
           Find the area bounded between the polar curves <m>r=1</m> and <m>r=2\cos(2\theta)</m>,
-          as shown in <xref ref="fig_polcalc6">Figure</xref> (a).
+          as shown in <xref ref="fig_polcalc6a">Figure</xref>.
         </p>
       </statement>
       <solution>
@@ -789,7 +791,7 @@
               <image xml:id="img_polcalc6">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -809,19 +811,19 @@
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_polcalc6.tex END -->
             <!-- START figures/fig_polcalc6a.tex -->
             </figure>
-          
+
             <figure xml:id="fig_polcalc6b">
               <caption/>
               <image xml:id="img_polcalc6a">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -844,7 +846,7 @@
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             </figure>
@@ -853,7 +855,7 @@
         </figure>
 
         <p>
-          In part (b) of the figure,
+          In <xref ref="fig_polcalc6b">Figure</xref>,
           we zoom in on the region and note that it is not really bounded
           <em>between</em> two polar curves,
           but rather <em>by</em> two polar curves,
@@ -971,7 +973,7 @@
           <image xml:id="img_polcalc7">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -988,7 +990,7 @@
             \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_polcalc7.tex END -->
@@ -1077,7 +1079,7 @@
               <image xml:id="img_polcalc8">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1097,12 +1099,12 @@
                 \node [above] at (myplot.above origin) {\scriptsize $\pi/2$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             </figure>
             <!-- figures/fig_polcalc8.tex END -->
-               
+
               <!--
                \includemedia[width=150pt,3Dmenu,activate=onclick,deactivate=pageinvisible,
               3Droll=0,
@@ -1118,7 +1120,7 @@
               <image xml:id="img_polcalc8a_3D">
                 <description></description>
                 <asymptote>
-                  
+
                   import graph3;
 
                   //ASY file for figparcalc8_3D.asy in Chapter 9
@@ -1128,11 +1130,7 @@
                   currentprojection=orthographic(4,-8,2);
                   defaultrender.merge=true;
 
-                  usepackage("mathspec");
-                  texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                  texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={1};
@@ -1194,7 +1192,7 @@
 
                   //pen p=rgb(0,0,1);
                   //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                  
+
                 </asymptote>
               </image>
             </figure>
@@ -1244,7 +1242,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1267,7 +1265,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1300,9 +1298,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $dydx=Formula("-cot(theta)");
@@ -1346,9 +1344,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $dydx=Formula("1/2(tan(theta)-cot(theta))");
@@ -1392,7 +1390,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1425,7 +1423,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1460,9 +1458,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $dydx=Formula("(theta cos(theta) + sin(theta))/(cos(theta)-theta sin(theta))");
@@ -1506,9 +1504,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $dydx=Formula("(cos(theta)cos(3theta)-3sin(theta)sin(3theta))/(-cos(3theta)sin(theta)-3cos(theta)sin(3theta))");
@@ -1552,9 +1550,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(theta=>['Real',TeX=>'\theta']);
               $dydx=Formula("(4sin(theta)cos(4theta)+sin(4theta)cos(theta))/(4cos(theta)cos(4theta)-sin(theta)sin(4theta))");
@@ -1598,7 +1596,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1640,7 +1638,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1664,7 +1662,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1688,7 +1686,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1712,8 +1710,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $hor=List(Formula("pi/3"), Formula("pi"), Formula("5pi/3"));
@@ -1767,7 +1765,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1791,7 +1789,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1825,7 +1823,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1845,7 +1843,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1865,7 +1863,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $area=Formula("pi/12");
@@ -1886,7 +1884,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $area=Formula("3pi/2");
@@ -1907,11 +1905,11 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
-          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
+            <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
             <statement>
               <p>
                 Enclosed by the inner loop of the limacon <m>\ds r=1+2\cos(\theta)</m>
@@ -1928,7 +1926,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $area=Formula("2pi+3sqrt(3)/2");
@@ -1951,13 +1949,13 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $area=Formula("pi+3sqrt(3)");
             </pg-code>
             </setup>
-          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
+          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->            
             <statement>
               <p>
                 Find the area enclosed between the inner and outer loop of the limacon <m>r=1+2\cos(\theta)</m>.
@@ -1973,7 +1971,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $area=Formula("1");
@@ -2020,7 +2018,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2042,7 +2040,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $area=Formula("1/32(4pi-3sqrt(3))");
@@ -2089,7 +2087,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2120,7 +2118,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2147,7 +2145,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $length=Formula("4pi");
@@ -2168,7 +2166,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFormulas=>0);
               $length=Formula("4pi");
@@ -2189,7 +2187,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $length=OneOf("2.2592,2.22748");
             </pg-code>
@@ -2210,7 +2208,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $length=OneOf("7.62933,8");
             </pg-code>
@@ -2240,7 +2238,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2261,7 +2259,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2283,7 +2281,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2304,7 +2302,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2325,7 +2323,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

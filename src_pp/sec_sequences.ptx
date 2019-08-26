@@ -160,14 +160,14 @@
             <figure xml:id="fig_seq1">
               <caption>Plotting sequences in <xref ref="ex_seq1">Example</xref>.</caption>
               <sidebyside widths="31% 31% 31%">
-              
+
                 <figure xml:id="fig_seq1a">
                   <caption/>
             <!-- START figures/fig_seq1a.tex -->
                   <image xml:id="img_seq1a">
                     <description></description>
                     <latex-image>
-                    
+
                     \begin{tikzpicture}
 
                     \begin{axis}[
@@ -187,7 +187,7 @@
                     \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                     \end{tikzpicture}
-                    
+
                     </latex-image>
                   </image>
             <!-- figures/fig_seq1a.tex END -->
@@ -199,7 +199,7 @@
                   <image xml:id="img_seq1b">
                     <description></description>
                     <latex-image>
-                    
+
                     \begin{tikzpicture}
 
                     \begin{axis}[
@@ -219,7 +219,7 @@
                     \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                     \end{tikzpicture}
-                    
+
                     </latex-image>
                   </image>
             <!-- figures/fig_seq1b.tex END -->
@@ -231,7 +231,7 @@
                   <image xml:id="img_seq1c">
                     <description></description>
                     <latex-image>
-                    
+
                     \begin{tikzpicture}
 
                     \begin{axis}[
@@ -253,7 +253,7 @@
                     \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                     \end{tikzpicture}
-                    
+
                     </latex-image>
                   </image>
             <!-- figures/fig_seq1c.tex END -->
@@ -617,16 +617,16 @@
       <figure xml:id="fig_seq4">
         <caption>Scatter plots of the sequences in <xref ref="ex_seq4">Example</xref>.</caption>
         <sidebyside widths="31% 31% 31%">
-        
+
           <figure xml:id="fig_seq4a">
             <caption/>
             <!-- START figures/fig_seq4a.tex -->
             <image xml:id="img_seq4a">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
-              
+
               \begin{axis}[
               axis on top,
               xtick={20,40,60,80,100},
@@ -643,7 +643,7 @@
               \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
             <!-- figures/fig_seq4a.tex END -->
@@ -655,7 +655,7 @@
             <image xml:id="img_seq4b">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -674,7 +674,7 @@
               \node at (myplot.north) {\scriptsize $\ds a_n = \cos(n) $};
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
             <!-- figures/fig_seq4b.tex END -->
@@ -686,7 +686,7 @@
             <image xml:id="img_seq4c">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -704,7 +704,7 @@
               \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
             <!-- figures/fig_seq4c.tex END -->
@@ -818,7 +818,7 @@
               <image xml:id="img_seq5" width="47%">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -837,7 +837,7 @@
                 \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
           <!-- figures/fig_seq5.tex END -->
@@ -1077,14 +1077,14 @@
       <figure xml:id="fig_seq3">
         <caption>A plot of <m>\{a_n\} = \{1/n\}</m> and <m>\{a_n\} = \{2^n\}</m> from <xref ref="ex_seq3">Example</xref>.</caption>
         <sidebyside widths="47% 47%">
-        
+
           <figure xml:id="fig_seq3a">
             <caption/>
             <!-- START figures/fig_seq3a.tex -->
             <image xml:id="img_seq3a">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -1106,7 +1106,7 @@
               \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
             <!-- figures/fig_seq3a.tex END -->
@@ -1118,7 +1118,7 @@
             <image xml:id="img_seq3b">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -1136,7 +1136,7 @@
               \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
             <!-- figures/fig_seq3b.tex END -->
@@ -1358,19 +1358,21 @@
 
           <li>
             <p>
-              We can clearly see in <xref ref="fig_seq7">Figure</xref> (c),
+              We can clearly see in <xref ref="fig_seq7c">Figure</xref>,
               where the sequence is plotted, that it is not monotonic.
               However, it does seem that after the first 4 terms it is decreasing.
               To understand why, perform the same analysis as done before:
 
               <m>
-                \ds \begin{aligned}a_{n+1}-a_n \amp = \frac{(n+1)^2-9}{(n+1)^2-10(n+1)+26} - \frac{n^2-9}{n^2-10n+26} \\ 
+                \ds \begin{aligned}a_{n+1}-a_n \amp = \frac{(n+1)^2-9}{(n+1)^2-10(n+1)+26} - \frac{n^2-9}{n^2-10n+26} \\
                 \amp = \frac{n^2+2n-8}{n^2-8n+17}-\frac{n^2-9}{n^2-10n+26}\\
                 \amp = \frac{(n^2+2n-8)(n^2-10n+26)-(n^2-9)(n^2-8n+17)}{(n^2-8n+17)(n^2-10n+26)}\\
                 \amp = \frac{-10n^2+60n-55}{(n^2-8n+17)(n^2-10n+26)}.
                 \end{aligned}
-              </m> 
+              </m>
+            </p>
 
+            <p>
               We want to know when this is greater than, or less than, 0.
               The denominator is always positive,
               therefore we are only concerned with the numerator.
@@ -1428,7 +1430,7 @@
               <image xml:id="img_seq7a">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1447,7 +1449,7 @@
                 \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_seq7a.tex END -->
@@ -1459,7 +1461,7 @@
               <image xml:id="img_seq7b">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1477,7 +1479,7 @@
                 \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_seq7b.tex END -->
@@ -1491,7 +1493,7 @@
               <image xml:id="img_seq7c">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1509,7 +1511,7 @@
                 \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_seq7c.tex END -->
@@ -1521,7 +1523,7 @@
               <image xml:id="img_seq7d">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1539,7 +1541,7 @@
                 \node [right] at (myplot.right of origin) {\scriptsize $n$};
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_seq7d.tex END -->
@@ -1645,7 +1647,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1665,7 +1667,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1685,7 +1687,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1706,7 +1708,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1735,7 +1737,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1755,7 +1757,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1776,7 +1778,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1796,7 +1798,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1826,7 +1828,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1846,7 +1848,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1866,7 +1868,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1886,7 +1888,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1941,7 +1943,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1961,7 +1963,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1981,7 +1983,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2001,7 +2003,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2032,7 +2034,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2052,7 +2054,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2072,7 +2074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2092,7 +2094,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2113,7 +2115,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2133,7 +2135,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2153,7 +2155,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2173,7 +2175,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2193,7 +2195,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2213,7 +2215,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2233,7 +2235,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2253,7 +2255,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2283,7 +2285,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2303,7 +2305,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2323,7 +2325,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2343,7 +2345,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2363,7 +2365,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2383,7 +2385,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2415,7 +2417,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2435,7 +2437,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2455,7 +2457,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2475,7 +2477,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2495,7 +2497,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2523,7 +2525,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2572,7 +2574,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

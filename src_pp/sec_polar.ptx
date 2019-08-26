@@ -311,7 +311,7 @@
               </p>
 
               <p>
-                These points are plotted in <xref ref="fig_polar2">Figure</xref> (a).
+                These points are plotted in <xref ref="fig_polar2a">Figure</xref>.
                 The rectangular coordinate system is drawn lightly under the polar coordinate system so that the relationship between the two can be seen.
               </p>
 
@@ -321,7 +321,7 @@
                   <figure xml:id="fig_polar2a">
                     <caption/>
               <!-- START figures/fig_polar2.tex -->
-                    <image xml:id="img_polar2">
+                    <image xml:id="img_polar2a">
                       <description></description>
                       <latex-image>
                       
@@ -440,7 +440,7 @@
               </p>
 
               <p>
-                These points are plotted in <xref ref="fig_polar2">Figure</xref> (b).
+                These points are plotted in <xref ref="fig_polar2b">Figure</xref>.
                 The polar system is drawn lightly under the rectangular grid with rays to demonstrate the angles used.
               </p>
             </li>
@@ -763,7 +763,7 @@
           We start by making a table of
           <m>\cos(2\theta)</m> evaluated at common angles <m>\theta</m>,
           as shown in <xref ref="fig_polar5table">Figure</xref>.
-          These points are then plotted in <xref ref="fig_polar5">Figure</xref> (a).
+          These points are then plotted in <xref ref="fig_polar5a">Figure</xref>.
           This particular graph <q>moves</q>
           around quite a bit and one can easily forget which points should be connected to each other.
           To help us with this,
@@ -809,7 +809,7 @@
         <p>
           \captionof{figure}{Tables of points for plotting a polar curve.} Using more points
           (and the aid of technology)
-          a smoother plot can be made as shown in <xref ref="fig_polar5">Figure</xref> (b).
+          a smoother plot can be made as shown in <xref ref="fig_polar5b">Figure</xref>.
           This plot is an example of a <em>rose curve</em>.
         </p>
 
@@ -819,7 +819,7 @@
             <figure xml:id="fig_polar5a">
               <caption/>
             <!-- START figures/fig_polar5.tex -->
-              <image xml:id="img_polar5">
+              <image xml:id="img_polar5a">
                 <description></description>
                 <latex-image>
                 
@@ -1577,7 +1577,7 @@
           <figure xml:id="fig_polar_special4">
             <caption>Eight Curve: <m>r^2=a^2\sec^4(\theta) \cos(2\theta)</m></caption>
             <!-- START figures/fig_polarspecial4.tex -->
-            <image xml:id="img_polar_special3">
+            <image xml:id="img_polar_special4">
               <description></description>
               <latex-image>
               
@@ -1619,9 +1619,9 @@
         <p>
           As technology is generally readily available,
           it is usually a good idea to start with a graph.
-          We have graphed the two functions in <xref ref="fig_polar7">Figure</xref>(a);
+          We have graphed the two functions in <xref ref="fig_polar7a">Figure</xref>;
           to better discern the intersection points,
-          part (b) of the figure zooms in around the origin.
+          <xref ref="fig_polar7b">Figure</xref> zooms in around the origin.
         </p>
 
         <figure xml:id="fig_polar7">
@@ -1898,28 +1898,30 @@
             </p>
           </statement>
           <solution>
-            <image xml:id="img_polar7bX1">
-              <description></description>
-              <latex-image>
-              
-              \begin{tikzpicture}
+            <sidebyside width="47%">
+              <image xml:id="img_polar7bX1">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-              \foreach \x in {1,2}
-              {
-                \draw (0,0) circle (\x);
-                \draw (\x,0) node [below right] {\(\x\)};
-              }
-              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (2.5,0);
+                \foreach \x in {1,2}
+                {
+                  \draw (0,0) circle (\x);
+                  \draw (\x,0) node [below right] {\(\x\)};
+                }
+                \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (2.5,0);
 
-              \filldraw (xyz polar cs: angle=0,radius=2) circle (2pt) node [above right] {\(A\)}
-                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] {\(B\)}
-                        (xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] {\(C\)}
-                        (xyz polar cs: angle=45,radius=1)circle (2pt) node [right] {\(D\)};
-                        
-              \end{tikzpicture}
+                \filldraw (xyz polar cs: angle=0,radius=2) circle (2pt) node [above right] {\(A\)}
+                          (xyz polar cs: angle=180,radius=1)circle (2pt) node [right] {\(B\)}
+                          (xyz polar cs: angle=90,radius=-2)circle (2pt) node [right] {\(C\)}
+                          (xyz polar cs: angle=45,radius=1)circle (2pt) node [right] {\(D\)};
+                          
+                \end{tikzpicture}
 
-              </latex-image>
-            </image>
+                </latex-image>
+              </image>
+            </sidebyside>
           </solution>
       </webwork>
     </exercise>
@@ -1965,28 +1967,30 @@
             </p>
           </statement>
           <solution>
-            <image xml:id="img_polar7bX3">
-              <description></description>
-              <latex-image>
-              
-              \begin{tikzpicture}
+            <sidebyside width="47%">
+              <image xml:id="img_polar7bX3">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-              \foreach \x in {1,2}
-              {
-                \draw (0,0) circle (\x);
-                \draw (\x,0) node [below right] {\(\x\)};
-              }
-              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (2.5,0);
+                \foreach \x in {1,2}
+                {
+                  \draw (0,0) circle (\x);
+                  \draw (\x,0) node [below right] {\(\x\)};
+                }
+                \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (2.5,0);
 
-              \filldraw (xyz polar cs: angle=180,radius=2) circle (2pt) node [above] {\(A\)}
-                        (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] {\(B\)}
-                        (xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] {\(C\)}
-                        (xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] {\(D\)};
-                        
-              \end{tikzpicture}
+                \filldraw (xyz polar cs: angle=180,radius=2) circle (2pt) node [above] {\(A\)}
+                          (xyz polar cs: angle=180,radius=1)circle (2pt) node [above] {\(B\)}
+                          (xyz polar cs: angle=114.6,radius=1)circle (2pt) node [right] {\(C\)}
+                          (xyz polar cs: angle=150,radius=.5)circle (2pt) node [right] {\(D\)};
+                          
+                \end{tikzpicture}
 
-              </latex-image>
-            </image>
+                </latex-image>
+              </image>
+            </sidebyside>
           </solution>
       </webwork>
     </exercise>
@@ -2004,37 +2008,39 @@
               where <m>0\leq \theta\leq 2\pi</m>.
             </p>
 
-            <image xml:id="img_polar7bX4">
-              <description></description>
-              <latex-image>
-              
-              \begin{tikzpicture}
+            <sidebyside width="47%">
+              <image xml:id="img_polar7bX4">
+                <description></description>
+                <latex-image>
+                
+                \begin{tikzpicture}
 
-              \draw [dashed,gray] (-3.1,0) -- (0,0);
-              \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (3.5,0);
+                \draw [dashed,gray] (-3.1,0) -- (0,0);
+                \draw [thick,-&gt;,&gt;=stealth] (0,0) node [below] {\(O\)} -- (3.5,0);
 
-              \filldraw (0,0) circle (1.5pt);
+                \filldraw (0,0) circle (1.5pt);
 
-              \foreach \x in {1,2,3}
-              {
-                \draw (0,0) circle (\x cm);
-                \draw (\x,0) node [below right] {\x};
-              }
+                \foreach \x in {1,2,3}
+                {
+                  \draw (0,0) circle (\x cm);
+                  \draw (\x,0) node [below right] {\x};
+                }
 
-              \foreach \x in {30,45,60,90,120,135,150}
-              {
-                \draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
-              }
+                \foreach \x in {30,45,60,90,120,135,150}
+                {
+                  \draw [rotate=\x,dashed,gray] (-3.1,0) -- (3.1,0);
+                }
 
-              \filldraw (xyz polar cs: angle=45,radius=2.5) circle (2pt) node [above] {\(A\)}
-                        (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] {\(B\)}
-                        (xyz polar cs: angle=240,radius=3)circle (2pt) node [right] {\(C\)}
-                        (xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] {\(D\)};
-                        
-              \end{tikzpicture}
+                \filldraw (xyz polar cs: angle=45,radius=2.5) circle (2pt) node [above] {\(A\)}
+                          (xyz polar cs: angle=-30,radius=1)circle (2pt) node [below] {\(B\)}
+                          (xyz polar cs: angle=240,radius=3)circle (2pt) node [right] {\(C\)}
+                          (xyz polar cs: angle=120,radius=1.5)circle (2pt) node [right] {\(D\)};
+                          
+                \end{tikzpicture}
 
-              </latex-image>
-            </image>
+                </latex-image>
+              </image>
+            </sidebyside>
 
           </statement>
           <solution>
@@ -2378,27 +2384,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_11.tex -->
-              <image xml:id="img_09_04_ex_11X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_11.tex -->
+                <image xml:id="img_09_04_ex_11X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-.5,ymax=2.1,
-                xmin=-.5,xmax=2.6
-                ]
+                  \begin{axis}[
+                  ymin=-.5,ymax=2.1,
+                  xmin=-.5,xmax=2.6
+                  ]
 
-                \addplot+ [-,domain=0:90] ({2*cos(x)},{2*sin(x)});
+                  \addplot+ [-,domain=0:90] ({2*cos(x)},{2*sin(x)});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_11.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_11.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2416,28 +2424,30 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_12.tex -->
-              <image xml:id="img_09_04_ex_12X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_12.tex -->
+                <image xml:id="img_09_04_ex_12X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                xtick={1,2,-1,-2},
-                ymin=-2.1,ymax=2.1,
-                xmin=-2.5,xmax=2.5
-                ]
+                  \begin{axis}[
+                  xtick={1,2,-1,-2},
+                  ymin=-2.1,ymax=2.1,
+                  xmin=-2.5,xmax=2.5
+                  ]
 
-                \addplot+ [-,domain=-.866:1.73] ({x},{.577*x});
+                  \addplot+ [-,domain=-.866:1.73] ({x},{.577*x});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_12.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_12.tex END -->
+            </sidebyside>
           </solution>
         </webwork>
       </exercise>
@@ -2455,27 +2465,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_13.tex -->
-              <image xml:id="img_09_04_ex_13X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_13.tex -->
+                <image xml:id="img_09_04_ex_13X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-2.1,ymax=2.1,
-                xmin=-2.5,xmax=2.5
-                ]
+                  \begin{axis}[
+                  ymin=-2.1,ymax=2.1,
+                  xmin=-2.5,xmax=2.5
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=80] ({cos(x)*(1-cos(x))},{sin(x)*(1-cos(x))});
+                  \addplot+ [-,domain=0:360,samples=80] ({cos(x)*(1-cos(x))},{sin(x)*(1-cos(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_13.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_13.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2493,27 +2505,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_14.tex -->
-              <image xml:id="img_09_04_ex_14X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_14.tex -->
+                <image xml:id="img_09_04_ex_14X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-2.6,ymax=3.6,
-                xmin=-3.7,xmax=3.7
-                ]
+                  \begin{axis}[
+                  ymin=-2.6,ymax=3.6,
+                  xmin=-3.7,xmax=3.7
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=80] ({cos(x)*(2+sin(x))},{sin(x)*(2+sin(x))});
+                  \addplot+ [-,domain=0:360,samples=80] ({cos(x)*(2+sin(x))},{sin(x)*(2+sin(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_14.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_14.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2531,27 +2545,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_15.tex -->
-              <image xml:id="img_09_04_ex_15X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_15.tex -->
+                <image xml:id="img_09_04_ex_15X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-3.6,ymax=2.6,
-                xmin=-3.7,xmax=3.7
-                ]
+                  \begin{axis}[
+                  ymin=-3.6,ymax=2.6,
+                  xmin=-3.7,xmax=3.7
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=70] ({cos(x)*(2-sin(x))},{sin(x)*(2-sin(x))});
+                  \addplot+ [-,domain=0:360,samples=70] ({cos(x)*(2-sin(x))},{sin(x)*(2-sin(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_15.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_15.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2569,27 +2585,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_16.tex -->
-              <image xml:id="img_09_04_ex_16X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_16.tex -->
+                <image xml:id="img_09_04_ex_16X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-3.6,ymax=2.6,
-                xmin=-3.7,xmax=3.7
-                ]
+                  \begin{axis}[
+                  ymin=-3.6,ymax=2.6,
+                  xmin=-3.7,xmax=3.7
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=90] ({cos(x)*(1-2*sin(x))},{sin(x)*(1-2*sin(x))});
+                  \addplot+ [-,domain=0:360,samples=90] ({cos(x)*(1-2*sin(x))},{sin(x)*(1-2*sin(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_16.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_16.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2607,27 +2625,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_17.tex -->
-              <image xml:id="img_09_04_ex_17X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_17.tex -->
+                <image xml:id="img_09_04_ex_17X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-2.6,ymax=3.6,
-                xmin=-3.7,xmax=3.7
-                ]
+                  \begin{axis}[
+                  ymin=-2.6,ymax=3.6,
+                  xmin=-3.7,xmax=3.7
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=90] ({cos(x)*(1+2*sin(x))},{sin(x)*(1+2*sin(x))});
+                  \addplot+ [-,domain=0:360,samples=90] ({cos(x)*(1+2*sin(x))},{sin(x)*(1+2*sin(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_17.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_17.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2645,29 +2665,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_18.tex -->
-              <image xml:id="img_09_04_ex_18X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_18.tex -->
+                <image xml:id="img_09_04_ex_18X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                axis on top,
-                ytick={-1,1},
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.3,xmax=1.3
-                ]
-            
-                \addplot+ [-,domain=0:360,samples=150] ({cos(x)*(cos(2*x))},{sin(x)*(cos(2*x))});
+                  \begin{axis}[
+                  axis on top,
+                  ytick={-1,1},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.3,xmax=1.3
+                  ]
+              
+                  \addplot+ [-,domain=0:360,samples=150] ({cos(x)*(cos(2*x))},{sin(x)*(cos(2*x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_18.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_18.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2685,28 +2707,30 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_19.tex -->
-              <image xml:id="img_09_04_ex_19X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_19.tex -->
+                <image xml:id="img_09_04_ex_19X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ytick={-1,1},
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.3,xmax=1.3
-                ]
+                  \begin{axis}[
+                  ytick={-1,1},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.3,xmax=1.3
+                  ]
 
-                \addplot+ [-,domain=0:180,samples=100] ({cos(x)*(sin(3*x))},{sin(x)*(sin(3*x))});
+                  \addplot+ [-,domain=0:180,samples=100] ({cos(x)*(sin(3*x))},{sin(x)*(sin(3*x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_19.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_19.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2724,29 +2748,31 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_20.tex -->
-              <image xml:id="img_09_04_ex_20X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_20.tex -->
+                <image xml:id="img_09_04_ex_20X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                axis on top,
-                ytick={-1,1},
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.3,xmax=1.3
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  ytick={-1,1},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.3,xmax=1.3
+                  ]
 
-                \addplot+ [-,domain=0:540,samples=120] ({cos(x)*(cos(x/3))},{sin(x)*(cos(x/3))});
+                  \addplot+ [-,domain=0:540,samples=120] ({cos(x)*(cos(x/3))},{sin(x)*(cos(x/3))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_20.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_20.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2764,28 +2790,30 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_21.tex -->
-              <image xml:id="img_09_04_ex_21X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_21.tex -->
+                <image xml:id="img_09_04_ex_21X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ytick={-1,1},
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.3,xmax=1.3
-                ]
+                  \begin{axis}[
+                  ytick={-1,1},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.3,xmax=1.3
+                  ]
 
-                \addplot+ [-,domain=0:1080,samples=300] ({cos(x)*(cos(2*x/3))},{sin(x)*(cos(2*x/3))});
+                  \addplot+ [-,domain=0:1080,samples=300] ({cos(x)*(cos(2*x/3))},{sin(x)*(cos(2*x/3))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_21.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_21.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2803,27 +2831,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_22.tex -->
-              <image xml:id="img_09_04_ex_22X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_22.tex -->
+                <image xml:id="img_09_04_ex_22X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-5.9,ymax=4.9,
-                xmin=-6.5,xmax=6.5
-                ]
+                  \begin{axis}[
+                  ymin=-5.9,ymax=4.9,
+                  xmin=-6.5,xmax=6.5
+                  ]
 
-                \addplot+ [-,domain=0:720,samples=150] ({cos(x)*(x*3.14/360)},{sin(x)*(x*3.14/360)});
+                  \addplot+ [-,domain=0:720,samples=150] ({cos(x)*(x*3.14/360)},{sin(x)*(x*3.14/360)});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_22.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_22.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2841,28 +2871,30 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_23.tex -->
-              <image xml:id="img_09_04_ex_23X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_23.tex -->
+                <image xml:id="img_09_04_ex_23X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ytick={2,3,1},
-                ymin=-.9,ymax=3.9,
-                xmin=-2.9,xmax=2.9
-                ]
+                  \begin{axis}[
+                  ytick={2,3,1},
+                  ymin=-.9,ymax=3.9,
+                  xmin=-2.9,xmax=2.9
+                  ]
 
-                \addplot+ [-,domain=0:180,samples=60] ({cos(x)*(3*sin(x))},{sin(x)*(3*sin(x))});
+                  \addplot+ [-,domain=0:180,samples=60] ({cos(x)*(3*sin(x))},{sin(x)*(3*sin(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_23.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_23.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2880,27 +2912,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_24.tex -->
-              <image xml:id="img_09_04_ex_24X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_24.tex -->
+                <image xml:id="img_09_04_ex_24X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.3,xmax=1.3
-                ]
+                  \begin{axis}[
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.3,xmax=1.3
+                  ]
 
-                \addplot+ [-,domain=0:360,samples=120] ({cos(x)*(cos(x)*sin(x))},{sin(x)*(cos(x)*sin(x))});
+                  \addplot+ [-,domain=0:360,samples=120] ({cos(x)*(cos(x)*sin(x))},{sin(x)*(cos(x)*sin(x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_24.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_24.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2918,27 +2952,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_25.tex -->
-              <image xml:id="img_09_04_ex_25X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_25.tex -->
+                <image xml:id="img_09_04_ex_25X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-3.75,ymax=3.75,
-                xmin=-8.1,xmax=.9
-                ]
+                  \begin{axis}[
+                  ymin=-3.75,ymax=3.75,
+                  xmin=-8.1,xmax=.9
+                  ]
 
-                \addplot+ [-,domain=-3.14:3.14,samples=120] ({cos(deg(x))*(x^2-2.4674)},{sin(deg(x))*(x^2-2.4674)});
+                  \addplot+ [-,domain=-3.14:3.14,samples=120] ({cos(deg(x))*(x^2-2.4674)},{sin(deg(x))*(x^2-2.4674)});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_25.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_25.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2956,27 +2992,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_26.tex -->
-              <image xml:id="img_09_04_ex_26X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_26.tex -->
+                <image xml:id="img_09_04_ex_26X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-4.9,ymax=4.96,
-                xmin=-5.9,xmax=5.9
-                ]
+                  \begin{axis}[
+                  ymin=-4.9,ymax=4.96,
+                  xmin=-5.9,xmax=5.9
+                  ]
 
-                \addplot+ [-,domain=.1:3] ({cos(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))},{sin(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))});
+                  \addplot+ [-,domain=.1:3] ({cos(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))},{sin(deg(x))*(3/(5*sin(deg(x))-cos(deg(x)))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_26.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_26.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -2994,27 +3032,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_27.tex -->
-              <image xml:id="img_09_04_ex_27X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_27.tex -->
+                <image xml:id="img_09_04_ex_27X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-4.9,ymax=4.96,
-                xmin=-5.9,xmax=5.9
-                ]
+                  \begin{axis}[
+                  ymin=-4.9,ymax=4.96,
+                  xmin=-5.9,xmax=5.9
+                  ]
 
-                \addplot+ [-,domain=.1:3] ({cos(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))},{sin(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))});
+                  \addplot+ [-,domain=.1:3] ({cos(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))},{sin(deg(x))*(-2/(3*cos(deg(x))-2*sin(deg(x)))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_27.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_27.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -3032,27 +3072,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_28.tex -->
-              <image xml:id="img_09_04_ex_28X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_28.tex -->
+                <image xml:id="img_09_04_ex_28X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-4.9,ymax=4.96,
-                xmin=-5.9,xmax=5.9
-                ]
+                  \begin{axis}[
+                  ymin=-4.9,ymax=4.96,
+                  xmin=-5.9,xmax=5.9
+                  ]
 
-                \addplot+ [-,domain=-5:5] ({3},{x});
+                  \addplot+ [-,domain=-5:5] ({3},{x});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_28.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_28.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -3070,27 +3112,29 @@
               </p>
             </statement>
             <solution>
-          <!-- START figures/fig_09_04_ex_29.tex -->
-              <image xml:id="img_09_04_ex_29X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+            <!-- START figures/fig_09_04_ex_29.tex -->
+                <image xml:id="img_09_04_ex_29X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-4.9,ymax=4.96,
-                xmin=-5.9,xmax=5.9
-                ]
+                  \begin{axis}[
+                  ymin=-4.9,ymax=4.96,
+                  xmin=-5.9,xmax=5.9
+                  ]
 
-                \addplot+ [-,domain=-5:5] ({x},{4});
+                  \addplot+ [-,domain=-5:5] ({x},{4});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-          <!-- figures/fig_09_04_ex_29.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+            <!-- figures/fig_09_04_ex_29.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>

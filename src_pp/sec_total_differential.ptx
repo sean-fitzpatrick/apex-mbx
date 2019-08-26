@@ -1022,19 +1022,21 @@
                 Is the measurement of the length of <m>\ell</m> more sensitive to errors in the measurement of <m>x</m> or in <m>\theta</m>?
               </p>
 
-              <image>
-                <description/>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <image xml:id="img_ex15">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(\ell=\)?}(1,1);
-                \draw [dashed] (1,1) -- (-1,-1) node [xshift=10pt,yshift=5pt] { \(\theta\)} -- node [pos=.5,below] { \(x\)} (1,-1);
-                
-                \end{tikzpicture}
+                  \draw [ultra thick] (1,-1) -- node [pos=.5,right] { \(\ell=\)?}(1,1);
+                  \draw [dashed] (1,1) -- (-1,-1) node [xshift=10pt,yshift=5pt] { \(\theta\)} -- node [pos=.5,below] { \(x\)} (1,-1);
+                  
+                  \end{tikzpicture}
 
-                </latex-image>
-              </image>
+                  </latex-image>
+                </image>
+              </sidebyside>
 
             </statement>
             <solution>

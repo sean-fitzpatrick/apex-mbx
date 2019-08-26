@@ -165,8 +165,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmultigraph_intro3D.asy in Chapter 12
@@ -175,6 +173,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8,8,1.5);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -260,8 +260,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figmultigraph_introb3D.asy in Chapter 12
@@ -270,6 +268,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8,8,1.5);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -333,11 +333,11 @@
 
     <p>
       One can begin sketching a graph by plotting points, but this has limitations.
-      Consider <xref ref="fig_multigraph_intro">Figure</xref>(a) where 25 points have been plotted of <m>\ds f(x,y) = \frac1{x^2+y^2+1}</m>.
+      Consider <xref ref="fig_multigraph_introa_3D">Figure</xref> where 25 points have been plotted of <m>\ds f(x,y) = \frac1{x^2+y^2+1}</m>.
       More points have been plotted than one would reasonably want to do by hand,
       yet it is not clear at all what the graph of the function looks like.
       Technology allows us to plot lots of points,
-      connect adjacent points with lines and add shading to create a graph like <xref ref="fig_multigraph_intro">Figure</xref>b which does a far better job of illustrating the behavior of <m>f</m>.
+      connect adjacent points with lines and add shading to create a graph like <xref ref="fig_multigraph_introb_3D">Figure</xref> which does a far better job of illustrating the behavior of <m>f</m>.
     </p>
 
     <p>
@@ -453,7 +453,7 @@
         </p>
 
         <p>
-          The level curves are shown in <xref ref="fig_levelcurves1">Figure</xref>(a).
+          The level curves are shown in <xref ref="fig_levelcurves1a">Figure</xref>.
           Note how the level curves for <m>c=0</m> and <m>c=0.2</m> are very,
           very close together:
           this indicates that <m>f</m> is growing rapidly along those curves.
@@ -513,8 +513,6 @@
                 <description></description>
                 <asymptote>
 
-                  usepackage("amsmath")
-                  
                   import graph3;
 
                   //ASY file for figlevelcurve13D.asy in Chapter 12
@@ -523,6 +521,8 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(9,9,2);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-2,2};
@@ -609,7 +609,7 @@
         </figure>
 
         <p>
-          In <xref ref="fig_levelcurves1">Figure</xref>(b),
+          In <xref ref="fig_levelcurves1b_3D">Figure</xref>,
           the curves are drawn on a graph of <m>f</m> in space.
           Note how the elevations are evenly spaced.
           Near the level curves of <m>c=0</m> and <m>c=0.2</m> we can see that <m>f</m> indeed is growing quickly.
@@ -636,7 +636,7 @@
           </md>,
           a circle centered at <m>\big(1/(2c),1/(2c)\big)</m> with radius <m>\sqrt{1/(2c^2)-1}</m>,
           where <m>\abs{c}\lt 1/\sqrt{2}</m>.
-          The level curves for <m>c=\pm 0.2,\ \pm 0.4</m> and <m>\pm0.6</m> are sketched in <xref ref="fig_levelcurves2">Figure</xref>(a).
+          The level curves for <m>c=\pm 0.2,\ \pm 0.4</m> and <m>\pm0.6</m> are sketched in <xref ref="fig_levelcurves2a">Figure</xref>.
           To help illustrate <q>elevation,</q>
           we use thicker lines for <m>c</m> values near 0, and dashed lines indicate where <m>c\lt 0</m>.
         </p>
@@ -647,8 +647,8 @@
         </p>
 
         <p>
-          In <xref ref="fig_levelcurves2">Figure</xref>(b) we see a graph of the surface.
-          Note how the <m>y</m>-axis is pointing away from the viewer to more closely resemble the orientation of the level curves in (a).
+          In <xref ref="fig_levelcurves2b_3D">Figure</xref> we see a graph of the surface.
+          Note how the <m>y</m>-axis is pointing away from the viewer to more closely resemble the orientation of the level curves in <xref ref="fig_levelcurves2a">Figure</xref>.
         </p>
 
         <figure xml:id="fig_levelcurves2">
@@ -706,8 +706,6 @@
                 <description></description>
                 <asymptote>
 
-                  usepackage("amsmath")
-                  
                   import graph3;
 
                   //ASY file for figlevelcurve23D.asy in Chapter 12
@@ -716,6 +714,8 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(16,-12,1.4);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-5,5};

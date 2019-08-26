@@ -35,11 +35,7 @@
           currentprojection=orthographic((-4,27,7),(.012,-0.002,0.015),(0,0,0),.9);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -169,6 +165,8 @@
       </md>.
     </p>
 
+    <!-- ToDo: Is eq1 below eq_plane_dist? Apparently there we 3 of them. -->
+
     <p>
       Equation (eq_planes3) is especially useful as many computer programs can graph functions in this form.
       Equations <xref ref="eq_planes1"/> and (eq_planes2) have specific names,
@@ -267,12 +265,8 @@
               currentprojection=orthographic((1.92,19.3,4),(0,-0.015,0.06),(0,0,0),1);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
+              usepackage("amsmath");
               usepackage("esvect");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
 
               // setup and draw the axes
               real[] myxchoice={-4,4};
@@ -460,11 +454,7 @@
               currentprojection=orthographic((-16,18.6,6.76),(0.014,-0.015,0077),(0,0,0),.99);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={5};
@@ -582,11 +572,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-3,3};
@@ -748,11 +734,7 @@
               currentprojection=orthographic(8,14.7,14);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -898,11 +880,7 @@
               currentprojection=orthographic(5,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1019,11 +997,7 @@
           currentprojection=orthographic(4.5,4.5,1.5);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-4,4};

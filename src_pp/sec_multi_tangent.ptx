@@ -34,8 +34,6 @@
         <description></description>
         <asymptote>
 
-          usepackage("amsmath")
-          
           import graph3;
 
           //ASY file for figspace_tangent_intro3D.asy in Chapter 12
@@ -45,6 +43,8 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(8,8,13);
           defaultrender.merge=true;
+
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={2};
@@ -242,7 +242,7 @@
         </p>
 
         <p>
-          The two lines are shown with the surface in <xref ref="fig_partial4">Figure</xref>(a).
+          The two lines are shown with the surface in <xref ref="fig_partial4a_3D">Figure</xref>.
         </p>
 
         <figure xml:id="fig_partial4">
@@ -264,8 +264,6 @@
                 <description></description>
                 <asymptote>
 
-                  usepackage("amsmath")
-                  
                   import graph3;
 
                   //ASY file for figpartial4a3D.asy in Chapter 12
@@ -275,6 +273,8 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={2,4};
@@ -366,8 +366,6 @@
                 <description></description>
                 <asymptote>
 
-                  usepackage("amsmath")
-                  
                   import graph3;
 
                   //ASY file for figpartial4b3D.asy in Chapter 12
@@ -377,6 +375,8 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
+
+                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={2,4};
@@ -476,7 +476,7 @@
         </p>
 
         <p>
-          The curve through <m>(\pi/2,\pi/2,0)</m> in the direction of <m>\vec v</m> is shown in <xref ref="fig_partial4">Figure</xref>(b) along with <m>\ell_{\vec u}(t)</m>.
+          The curve through <m>(\pi/2,\pi/2,0)</m> in the direction of <m>\vec v</m> is shown in <xref ref="fig_partial4b_3D">Figure</xref> along with <m>\ell_{\vec u}(t)</m>.
         </p>
       </solution>
     </example>
@@ -537,8 +537,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -548,6 +546,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8,2.6,4.7);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1,2};
@@ -768,8 +768,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -779,6 +777,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8,4.8,2.8);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -1017,8 +1017,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -1028,6 +1026,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(15,10,9);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -1190,8 +1190,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -1201,6 +1199,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(13,10,9);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1464,8 +1464,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figpartial4b3D.asy in Chapter 12
@@ -1475,6 +1473,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(14,11,4.7);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};

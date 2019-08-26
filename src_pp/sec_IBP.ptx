@@ -114,7 +114,7 @@
 
         <p>
           It is generally useful to make a small table of these values as done below.
-          Right now we only know <m>u</m> and <m>dv</m> as shown on the left of <xref ref="tab_ibp1">Figure</xref>;
+          Right now we only know <m>u</m> and <m>dv</m> as shown on the left of <xref ref="fig_ibp1">Figure</xref>;
           on the right we fill in the rest of what we need.
           If <m>u = x</m>, then <m>du = dx</m>.
           Since <m>dv = \cos(x) \ dx</m>,

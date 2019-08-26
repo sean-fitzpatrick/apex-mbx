@@ -43,8 +43,8 @@
       (and physicists and engineers)
       call such a sheet a <em>lamina</em>.
       So consider a lamina,
-      as shown in <xref ref="fig_mass_intro">Figure</xref>(a),
-      with the shape of some planar region <m>R</m>, as shown in part (b).
+      as shown in <xref ref="fig_mass_introa">Figure</xref>,
+      with the shape of some planar region <m>R</m>, as shown in <xref ref="fig_mass_introb">Figure</xref>.
 
       <idx>
         <h>lamina</h>
@@ -304,8 +304,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
               import labelpath3;
               //ASY file for figmass2.asy in Chapter 13
@@ -314,6 +312,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(2.9,-4.6,5.2);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1};
@@ -452,7 +452,7 @@
         </p>
  
         <figure xml:id="fig_mass3">
-          <caption>Graphing the density functions in Example \ref{ex_mass3}. In (a) is the density function <m>\delta(x,y) = x^2+y^2+1</m>; in (b) is <m>\delta(x,y) = 2\sqrt{x^2+y^2}+1</m>.</caption>
+          <caption>Graphing the density functions in <xref ref="ex_mass3">Example</xref>. In (a) is the density function <m>\delta(x,y) = x^2+y^2+1</m>; in (b) is <m>\delta(x,y) = 2\sqrt{x^2+y^2}+1</m>.</caption>
           <sidebyside>
             <figure xml:id="fig_mass3a_3D">
               <caption/>
@@ -469,8 +469,6 @@
               <image xml:id="img_mass3a_3D">
                 <description></description>
                 <asymptote>
-
-                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -481,6 +479,8 @@
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
 
+                  usepackage("amsmath");
+                  
                   // setup and draw the axes
                   real[] myxchoice={-2,2};
                   real[] myychoice={-2,2};
@@ -560,8 +560,6 @@
               <image xml:id="img_mass3b_3D">
                 <description></description>
                 <asymptote>
-
-                  usepackage("amsmath")
                   
                   import graph3;
 
@@ -572,6 +570,8 @@
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
 
+                  usepackage("amsmath");
+                  
                   // setup and draw the axes
                   real[] myxchoice={-2,2};
                   real[] myychoice={-2,2};
@@ -792,7 +792,7 @@
                   \overline{x}=\frac{2(-1) + 2(2)+2(3)}{2+2+2} = \frac43 = 1.\overline{3}
                 </me>.
                 So the system would balance on a point placed at <m>x=4/3</m>,
-                as illustrated in <xref ref="fig_mass4">Figure</xref>(a).
+                as illustrated in <xref ref="fig_mass4a">Figure</xref>.
               </p>
             
               <figure xml:id="fig_mass4">
@@ -807,7 +807,7 @@
                       
                       \begin{tikzpicture}
 
-                      \begin{axis}[%
+                      \begin{axis}[
                       axis on top,
                       axis y line=none,
                       xtick={-1,0,1,2,3},
@@ -875,7 +875,7 @@
                   \overline{x} = \frac{10(-1)+2(2)+1(3)}{10+2+1} = \frac{-3}{13} \approx -0.23
                 </me>.
                 Placing a large weight at the left hand side of the system moves the center of mass left,
-                as shown in <xref ref="fig_mass4">Figure</xref>(b).
+                as shown in <xref ref="fig_mass4b">Figure</xref>.
               </p>
             </li>
           </ol>

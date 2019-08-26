@@ -112,6 +112,7 @@
     \newcommand{\colortwofill}{red!15!white}
     \newcommand{\abs}[1]{\left\lvert #1\right\rvert}
     \newcommand{\surfaceS}{\mathcal{S}}
+    \newcommand{\vv}{\overrightarrow}
 
     </macros>
     <latex-image-preamble>
@@ -286,9 +287,9 @@
 
     <!-- <xi:include href="./chapter_sequences_series.ptx" /> -->
 
-    <!-- <xi:include href="./chapter9.ptx" /> -->
+    <xi:include href="./chapter9.ptx" />
 
-    <!-- <xi:include href="./chapter10.ptx" /> -->
+    <xi:include href="./chapter10.ptx" />
 
     <!-- <xi:include href="./chap_vvf.ptx" /> -->
 

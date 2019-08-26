@@ -603,7 +603,7 @@
           <ol>
             <li>
               <p>
-                If <m>\lim\limits_{n\to\infty} \fdrac{a_n}{b_n} = L</m>,
+                If <m>\lim\limits_{n\to\infty} \dfrac{a_n}{b_n} = L</m>,
                 where <m>L</m> is a positive real number,
                 then <m>\ds \infser a_n</m> and
                 <m>\ds \infser b_n</m> either both converge or both diverge.
@@ -784,7 +784,7 @@
               <p>
                 In order to apply the Integral Test to a sequence <m>\{a_n\}</m>,
                 the function <m>a(n) = a_n</m> must be
-                \underlinespace, \underlinespace<nbsp/>and \underlinespace.
+                <fillin/>, <fillin/><nbsp/>and <fillin/>.
               </p>
             </statement>
             <solution>

@@ -109,7 +109,7 @@
       we begin with:
     </p>
 
-    <image>
+    <image xml:id="img_intro1">
       <description></description>
       <latex-image>
       
@@ -127,7 +127,7 @@
       Now repeat the first two columns after the original three:
     </p>
 
-    <image>
+    <image xml:id="img_intro2">
       <description></description>
       <latex-image>
       
@@ -149,7 +149,7 @@
       then add the products on the right and subtract the products on the left:
     </p>
 
-    <image>
+    <image xml:id="img_intro3">
       <description></description>
       <latex-image>
       
@@ -397,7 +397,6 @@
         By such a definition,
         <m>\vec 0</m> would be both orthogonal and parallel to every vector.
         Apparent paradoxes such as this are not uncommon in mathematics and can be very useful.
-        (See also the marginal note on <xref ref="note_parallel">page</xref>.)
       </p>
     </aside>
     <p>
@@ -515,11 +514,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -608,10 +603,10 @@
     <p>
       It is a standard geometry fact that the area of a parallelogram is <m>A = bh</m>,
       where <m>b</m> is the length of the base and <m>h</m> is the height of the parallelogram,
-      as illustrated in <xref ref="fig_crossp_parallelogram">Figure</xref>(a).
+      as illustrated in <xref ref="fig_crossp_parallelograma">Figure</xref>.
       As shown when defining the Parallelogram Law of vector addition,
       two vectors <m>\vecu</m> and <m>\vecv</m> define a parallelogram when drawn from the same initial point,
-      as illustrated in <xref ref="fig_crossp_parallelogram">Figure</xref>(b).
+      as illustrated in <xref ref="fig_crossp_parallelogramb">Figure</xref>.
       Trigonometry tells us that <m>h = \vnorm u \sin(\theta)</m>,
       hence the area of the parallelogram is
       <men xml:id="eq_crossp1">
@@ -620,64 +615,53 @@
       where the second equality comes from <xref ref="thm_cross_product">Theorem</xref>.
     </p>
 
-    <table xml:id="fig_crossp_parallelogram">
-      <title>Using the cross product to find the area of a parallelogram.</title>
-      <tabular>
-        <row>
-          <cell>
-        <!-- START figures/fig_crossp_parallelogram1.tex -->
-            <image xml:id="img_crossp_parallelogram1">
-              <description></description>
-              <latex-image>
-              
-              \begin{tikzpicture}
+    <figure xml:id="fig_crossp_parallelogram">
+      <caption>Using the cross product to find the area of a parallelogram.</caption>
+      <sidebyside>
+        <figure xml:id="fig_crossp_parallelograma">
+          <caption/>
+          <!-- START figures/fig_crossp_parallelogram1.tex -->
+          <image xml:id="img_crossp_parallelograma">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}
 
-              \draw (0,0) -- node [below,pos=.5] {\scriptsize $b$} (2,0) -- (3,1.5) -- (1,1.5) -- (0,0);
-              \draw [dashed] (1,1.5) -- (1,0) node [pos=.5,right] {\scriptsize$h$};
-              \draw (.8,0) -- (.8,.2) -- (1,.2);
+            \draw (0,0) -- node [below,pos=.5] {\scriptsize $b$} (2,0) -- (3,1.5) -- (1,1.5) -- (0,0);
+            \draw [dashed] (1,1.5) -- (1,0) node [pos=.5,right] {\scriptsize$h$};
+            \draw (.8,0) -- (.8,.2) -- (1,.2);
 
-              \end{tikzpicture}
-              
-              </latex-image>
-            </image>
-        <!-- figures/fig_crossp_parallelogram1.tex END -->
-          </cell>
-        </row>
-        <row>
-          <cell>(a)</cell>
-        </row>
-        <row>
-          <cell>
-        <!-- START figures/fig_crossp_parallelogram2.tex -->
-            <image xml:id="img_crossp_parallelogram2">
-              <description></description>
-              <latex-image>
-              
-              \begin{tikzpicture}[&gt;=stealth] 
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+          <!-- figures/fig_crossp_parallelogram1.tex END -->
+        </figure>
 
-              \draw [-&gt;](0,0) -- node [below,pos=1]  {\scriptsize $\vec v$} (2,0);
-              \draw (2,0) -- (3,1.5) -- (1,1.5);
-              \draw (.3,.175) node {\scriptsize $\theta$};
-              \draw [-&gt;](0,0) -- (1,1.5) node [above] {\scriptsize $\vec u$};
-              \draw [dashed] (1,1.5) -- (1,0) node [pos=.5,right] {\scriptsize$h$};
-              \draw (.8,0) -- (.8,.2) -- (1,.2);
+        <figure xml:id="fig_crossp_parallelogramb">
+          <caption/>
+          <!-- START figures/fig_crossp_parallelogram2.tex -->
+          <image xml:id="img_crossp_parallelogramb">
+            <description></description>
+            <latex-image>
+            
+            \begin{tikzpicture}[&gt;=stealth] 
 
-              \end{tikzpicture}
-              
-              </latex-image>
-            </image>
-        <!-- figures/fig_crossp_parallelogram2.tex END -->
-          </cell>
-        </row>
-        <row>
-          <cell>(b)</cell>
-        </row>
-        <row>
-          <cell></cell>
-        </row>
-      </tabular>
+            \draw [-&gt;](0,0) -- node [below,pos=1]  {\scriptsize $\vec v$} (2,0);
+            \draw (2,0) -- (3,1.5) -- (1,1.5);
+            \draw (.3,.175) node {\scriptsize $\theta$};
+            \draw [-&gt;](0,0) -- (1,1.5) node [above] {\scriptsize $\vec u$};
+            \draw [dashed] (1,1.5) -- (1,0) node [pos=.5,right] {\scriptsize$h$};
+            \draw (.8,0) -- (.8,.2) -- (1,.2);
 
-    </table>
+            \end{tikzpicture}
+            
+            </latex-image>
+          </image>
+          <!-- figures/fig_crossp_parallelogram2.tex END -->
+        </figure>
+      </sidebyside>
+    </figure>
 
     <p>
       We illustrate using Equation <xref ref="eq_crossp1"/> in the following example.
@@ -715,7 +699,7 @@
           <ol>
             <li>
               <p>
-                <xref ref="fig_crossp4">Figure</xref>(a) sketches the parallelogram defined by the vectors <m>\vec u</m> and <m>\vec v</m>.
+                <xref ref="fig_crossp4a">Figure</xref> sketches the parallelogram defined by the vectors <m>\vec u</m> and <m>\vec v</m>.
                 We have a slight problem in that our vectors exist in
                 <m>\mathbb{R}^2</m>, not <m>\mathbb{R}^3</m>,
                 and the cross product is only defined on vectors in <m>\mathbb{R}^3</m>.
@@ -759,7 +743,7 @@
                   <!-- figures/fig_crossp4b.tex END -->
                   </figure>
 
-                  <figure xml:id="fig_crossp4a_3D">
+                  <figure xml:id="fig_crossp4b_3D">
                     <caption/>
                   <!--
                   \includemedia[width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
@@ -771,7 +755,7 @@
                   3Dlights=Headlamp,add3Djscript=asylabels.js]
                   -->
                   <!-- START figures/figcrossp4a_3D.asy -->
-                    <image xml:id="img_crossp4a_3D">
+                    <image xml:id="img_crossp4b_3D">
                       <description></description>
                       <asymptote>
                         
@@ -786,11 +770,7 @@
                         currentprojection=orthographic(7.5,14,4);
                         defaultrender.merge=true;
 
-                        usepackage("mathspec");
-                        texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-                        texpreamble("\setmathsfont(Greek){[cmmi10]}");
+                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={2,4};
@@ -856,7 +836,7 @@
 
             <li>
               <p>
-                To show that the quadrilateral <m>ABCD</m> is a parallelogram (shown in <xref ref="fig_crossp4">Figure</xref>(b)),
+                To show that the quadrilateral <m>ABCD</m> is a parallelogram (shown in <xref ref="fig_crossp4b_3D">Figure</xref>),
                 we need to show that the opposite sides are parallel.
                 We can quickly show that <m>\vv{AB} =\vv{DC} = \la 1,2,1\ra</m> and <m>\vv{BC} = \vv{AD} = \la 2,2,1\ra</m>.
                 We find the area by computing the magnitude of the cross product of <m>\vv{AB}</m> and <m>\vv{BC}</m>:
@@ -989,11 +969,7 @@
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
 
-          usepackage("mathspec");
-          texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-          texpreamble("\setmathsfont(Greek){[cmmi10]}");
+          usepackage("amsmath");
 
           // setup and draw the axes
           //real[] myxchoice={};
@@ -1160,11 +1136,7 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("mathspec");
-              texpreamble("\setallmainfonts[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmainfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setsansfont[Mapping=tex-text]{Calibri}");
-              texpreamble("\setmathsfont(Greek){[cmmi10]}");
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1};

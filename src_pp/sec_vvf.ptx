@@ -47,12 +47,12 @@
       For instance, if <m>\vec r(t) = \la t^2,t^2+t-1\ra</m>,
       then <m>\vec r(-2) = \la 4,1\ra</m>.
       We can sketch this vector,
-      as is done in <xref ref="fig_vvfintro1">Figure</xref>(a).
+      as is done in <xref ref="fig_vvfintro1a">Figure</xref>.
       Plotting lots of vectors is cumbersome, though,
       so generally we do not sketch the whole vector but just the terminal point.
       The <em>graph</em> of a vector-valued function is the set of all terminal points of <m>\vec r(t)</m>,
       where the initial point of each vector is always the origin.
-      In <xref ref="fig_vvfintro1">Figure</xref>(b) we sketch the graph of <m>\vec r</m> ; we can indicate individual points on the graph with their respective vector,
+      In <xref ref="fig_vvfintro1b">Figure</xref> we sketch the graph of <m>\vec r</m> ; we can indicate individual points on the graph with their respective vector,
       as shown.
 
       <idx>
@@ -145,9 +145,9 @@
       <solution>
         <p>
           We start by making a table of <m>t</m>,
-          <m>x</m> and <m>y</m> values as shown in <xref ref="fig_vvf1">Figure</xref>(a).
+          <m>x</m> and <m>y</m> values as shown in <xref ref="fig_vvf1a">Figure</xref>.
           Plotting these points gives an indication of what the graph looks like.
-          In <xref ref="fig_vvf1">Figure</xref>(b),
+          In <xref ref="fig_vvf1b">Figure</xref>,
           we indicate these points and sketch the full graph.
           We also highlight <m>\vec r(-1)</m> and <m>\vec r(2)</m> on the graph.
         </p>
@@ -155,83 +155,77 @@
         <figure xml:id="fig_vvf1">
           <caption>Sketching the vector-valued function of <xref ref="ex_vvf1">Example</xref>.</caption>
           <sidebyside widths="47% 47%">
-          <tabular>
-            <row>
-            <cell>
-              <tabular>
-                <row>
-                  <cell><m>t</m></cell>
-                  <cell><m>t^3-t</m></cell>
-                  <cell><m>\ds \frac{1}{t^2+1}</m></cell>
-                </row>
-                <row bottom="minor">
-                  <cell></cell>
-                  <cell></cell>
-                  <cell></cell>
-                </row>
-                <row>
-                  <cell><m>-2</m></cell>
-                  <cell><m>-6</m></cell>
-                  <cell>1/5</cell>
-                </row>
-                <row>
-                  <cell><m>-1</m></cell>
-                  <cell><m>0</m></cell>
-                  <cell>1/2</cell>
-                </row>
-                <row>
-                  <cell><m>0</m></cell>
-                  <cell><m>0</m></cell>
-                  <cell><m>1</m></cell>
-                </row>
-                <row>
-                  <cell><m>1</m></cell>
-                  <cell><m>0</m></cell>
-                  <cell>1/2</cell>
-                </row>
-                <row>
-                  <cell><m>2</m></cell>
-                  <cell><m>6</m></cell>
-                  <cell>1/5</cell>
-                </row>
-              </tabular>
-            </cell>
-            </row>
-            <row>
-              <cell>(a)</cell>
-            </row>
+            <tabular xml:id="fig_vvf1a">
+              <row>
+                <cell><m>t</m></cell>
+                <cell><m>t^3-t</m></cell>
+                <cell><m>\ds \frac{1}{t^2+1}</m></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>
+                <cell><m>-6</m></cell>
+                <cell>1/5</cell>
+              </row>
+              <row>
+                <cell><m>-1</m></cell>
+                <cell><m>0</m></cell>
+                <cell>1/2</cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>0</m></cell>
+                <cell>1/2</cell>
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+                <cell><m>6</m></cell>
+                <cell>1/5</cell>
+              </row>
             </tabular>
-            
-            <!-- START figures/fig_vvf1.tex -->
-            <image xml:id="img_vvf1">
-              <description></description>
-              <latex-image>
+          
+            <figure xml:id="fig_vvf1b">
+              <caption/>
+              <!-- START figures/fig_vvf1.tex -->
+              <image xml:id="img_vvf1b">
+                <description></description>
+                <latex-image>
 
-              \begin{tikzpicture}
+                \begin{tikzpicture}
 
-              \begin{axis}[%
-              xtick={-6,-4,-2,2,4,6},
-              ymin=-.1,ymax=1.1,%
-              xmin=-7,xmax=7%
-              ]
+                \begin{axis}[%
+                xtick={-6,-4,-2,2,4,6},
+                ymin=-.1,ymax=1.1,%
+                xmin=-7,xmax=7%
+                ]
 
-              \addplot+[domain=-2:2] ({x^3-x},{1/(x^2+1)});
+                \addplot+[domain=-2:2] ({x^3-x},{1/(x^2+1)});
 
-              \filldraw [black] (axis cs: -6,.2) circle (1.5pt);
-              \filldraw [black] (axis cs: 6,.2) circle (1.5pt);
-              \filldraw [black] (axis cs: 0,.5) circle (1.5pt);
-              \filldraw [black] (axis cs: 0.,1) circle (1.5pt);
+                \filldraw [black] (axis cs: -6,.2) circle (1.5pt);
+                \filldraw [black] (axis cs: 6,.2) circle (1.5pt);
+                \filldraw [black] (axis cs: 0,.5) circle (1.5pt);
+                \filldraw [black] (axis cs: 0.,1) circle (1.5pt);
 
-              \draw [-&gt;,thick,{\colortwo}] (axis cs:0,0)--(axis cs: 0,.5) node [,black,pos=.4,rotate=90,above] {\scriptsize $\vec r(-1)$};
-              \draw [-&gt;,thick,{\colortwo}] (axis cs:0,0)--(axis cs: 6,.2) node [black,pos=.4,above] {\scriptsize $\vec r(2)$};
+                \draw [-&gt;,thick,{\colortwo}] (axis cs:0,0)--(axis cs: 0,.5) node [,black,pos=.4,rotate=90,above] {\scriptsize $\vec r(-1)$};
+                \draw [-&gt;,thick,{\colortwo}] (axis cs:0,0)--(axis cs: 6,.2) node [black,pos=.4,above] {\scriptsize $\vec r(2)$};
 
-              \end{axis}
+                \end{axis}
 
-              \end{tikzpicture}
-                  
-              </latex-image>
-            </image>
+                \end{tikzpicture}
+                    
+                </latex-image>
+              </image>
               <!-- figures/fig_vvf1.tex END -->
+            </figure>
           </sidebyside>
         </figure>
       </solution>
@@ -274,8 +268,6 @@
             <description></description>
             <asymptote>
 
-              usepackage("amsmath")
-              
               import graph3;
 
               //ASY file for figvvf23D.asy in Chapter 11
@@ -284,6 +276,8 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4.5,4.5,20);
               defaultrender.merge=true;
+
+              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -418,14 +412,14 @@
         <p>
           We are familiar with <m>\vec r_2(t) = \la\, \cos(t) ,\sin(t) \,\ra</m>;
           it traces out a circle, centered at the origin, of radius 1.
-          <xref ref="fig_vvf3">Figure</xref>(a) graphs
+          <xref ref="fig_vvf3a">Figure</xref> graphs
           <m>\vec r_1(t)</m> and <m>\vec r_2(t)</m>.
         </p>
 
         <p>
           Adding <m>\vec r_1(t)</m> to
           <m>\vec r_2(t)</m> produces <m>\vec r(t) = \la\,\cos(t) + 0.2t,\sin(t) +0.3t\,\ra</m>,
-          graphed in <xref ref="fig_vvf3">Figure</xref>(b).
+          graphed in <xref ref="fig_vvf3b">Figure</xref>.
           The linear movement of the line combines with the circle to create loops that move in the direction of
           <m>\la 0.2,0.3\ra</m>. (We encourage the reader to experiment by changing
           <m>\vec r_1(t)</m> to <m>\la 2t,3t\ra</m>,
@@ -518,10 +512,10 @@
 
         <p>
           Multiplying <m>\vec r(t)</m> by 5 scales the function by 5, producing <m>5\vec r(t) = \langle 5\cos(t) +1,5\sin(t) +1.5\rangle</m>,
-          which is graphed in <xref ref="fig_vvf3">Figure</xref>(c) along with <m>\vec r(t)</m>.
+          which is graphed in <xref ref="fig_vvf3c">Figure</xref> along with <m>\vec r(t)</m>.
           The new function is <q>5 times bigger</q> than <m>\vec r(t)</m>.
-          Note how the graph of <m>5\vec r(t)</m> in (c) looks identical to the graph of <m>\vec r(t)</m> in <m>(b)</m>.
-          This is due to the fact that the <m>x</m> and <m>y</m> bounds of the plot in <m>(c)</m> are exactly 5 times larger than the bounds in (b).
+          Note how the graph of <m>5\vec r(t)</m> in <xref ref="fig_vvf3c">Figure</xref> looks identical to the graph of <m>\vec r(t)</m> in <xref ref="fig_vvf3b">Figure</xref>.
+          This is due to the fact that the <m>x</m> and <m>y</m> bounds of the plot in <xref ref="fig_vvf3c">Figure</xref> are exactly 5 times larger than the bounds in <xref ref="fig_vvf3b">Figure</xref>.
         </p>
       </solution>
     </example>
@@ -531,7 +525,7 @@
       <statement>
         <p>
           A <em>cycloid</em> is a graph traced by a point <m>p</m> on a rolling circle,
-          as shown in <xref ref="fig_vvf4">Figure</xref>.
+          as shown in <xref ref="fig_vvf4a">Figure</xref>.
           Find an equation describing the cycloid,
           where the circle has radius 1.
 
@@ -542,9 +536,9 @@
         </p>
 
         <!-- START figures/fig_vvf4.tex -->
-        <figure xml:id="fig_vvf4">
+        <figure xml:id="fig_vvf4a">
           <caption/>
-          <image xml:id="img_vvf4">
+          <image xml:id="img_vvf4a">
             <description></description>
             <latex-image>
             
@@ -601,7 +595,7 @@
         <p>
           We now combine <m>\vec p</m> and <m>\vec c</m> together to form the equation of the cycloid:
           <m>\vec r(t) = \vec p(t) + \vec c(t) = \la \cos(t) + t,-\sin(t) +1\ra</m>,
-          which is graphed in <xref ref="fig_vvf4">Figure</xref>.
+          which is graphed in <xref ref="fig_vvf4b">Figure</xref>.
         </p>
       </solution>
     </example>
@@ -609,10 +603,10 @@
 
   <subsection>
     <title>Displacement</title>
-    <figure xml:id="fig_vvf4">
+    <figure xml:id="fig_vvf4b">
       <caption>The cycloid in <xref ref="ex_vvf4">Example</xref>.</caption>
       <!-- START figures/fig_vvf4a.tex -->
-      <image xml:id="img_vvf4">
+      <image xml:id="img_vvf4b">
         <description></description>
         <latex-image>
         
@@ -919,29 +913,31 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_03.tex -->
-              <image xml:id="img_11_01_ex_03X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_03.tex -->
+                <image xml:id="img_11_01_ex_03X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                xtick={1,2,3,4},
-                ytick={-1,1,2,3,4},
-                ymin=-1.5,ymax=4.5,
-                xmin=-.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  xtick={1,2,3,4},
+                  ytick={-1,1,2,3,4},
+                  ymin=-1.5,ymax=4.5,
+                  xmin=-.5,xmax=4.5
+                  ]
 
-                \addplot+ [-,domain=-2:2] ({x^2},{x^2-1});
+                  \addplot+ [-,domain=-2:2] ({x^2},{x^2-1});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_03.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_03.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -960,31 +956,33 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_04.tex -->
-              <image xml:id="img_11_01_ex_04X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_04.tex -->
+                <image xml:id="img_11_01_ex_04X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                xtick={1,2,3,4},
-                ymin=-8.9,ymax=8.9,
-                xmin=-.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  xtick={1,2,3,4},
+                  ymin=-8.9,ymax=8.9,
+                  xmin=-.5,xmax=4.5
+                  ]
 
-                \addplot+ [-,domain=-2:2] ({x^2},{x^3});
+                  \addplot+ [-,domain=-2:2] ({x^2},{x^3});
 
-                \draw [-&gt;,thick,firstcolor] (axis cs: 1,-1) -- (axis cs:0.98,-.97);
-                \draw [-&gt;,thick,firstcolor] (axis cs: 0.98,.97) -- (axis cs: 1,1);
+                  \draw [-&gt;,thick,firstcolor] (axis cs: 1,-1) -- (axis cs:0.98,-.97);
+                  \draw [-&gt;,thick,firstcolor] (axis cs: 0.98,.97) -- (axis cs: 1,1);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_04.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_04.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1003,31 +1001,33 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_05.tex -->
-              <image xml:id="img_11_01_ex_05X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_05.tex -->
+                <image xml:id="img_11_01_ex_05X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                ymin=-.5,ymax=10.5,
-                xmin=-5.5,xmax=5.5
-                ]
+                  \begin{axis}[
+                  ymin=-.5,ymax=10.5,
+                  xmin=-5.5,xmax=5.5
+                  ]
 
-                \addplot+ [-,domain=-2:-.1,samples=40] ({1/x},{1/x^2});
-                \addplot+ [solid,-,domain=.1:2,samples=40] ({1/x},{1/x^2});
+                  \addplot+ [-,domain=-2:-.1,samples=40] ({1/x},{1/x^2});
+                  \addplot+ [solid,-,domain=.1:2,samples=40] ({1/x},{1/x^2});
 
-                \draw [-&gt;,thick,firstcolor] (axis cs: -1,1) -- (axis cs:-1.01,1.02);
-                \draw [-&gt;,thick,secondcolor] (axis cs: 1.01,1.02) -- (axis cs: 1,1);
+                  \draw [-&gt;,thick,firstcolor] (axis cs: -1,1) -- (axis cs:-1.01,1.02);
+                  \draw [-&gt;,thick,secondcolor] (axis cs: 1.01,1.02) -- (axis cs: 1,1);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_05.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_05.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1046,29 +1046,31 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_06.tex -->
-              <image xml:id="img_11_01_ex_06X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_06.tex -->
+                <image xml:id="img_11_01_ex_06X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                ymin=-1.1,ymax=1.1,
-                xmin=-.5,xmax=4.5
-                ]
+                  \begin{axis}[
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-.5,xmax=4.5
+                  ]
 
-                \addplot+ [-,domain=-6.28:6.28,samples=120] ({.1*x^2},{sin(deg(x))});
+                  \addplot+ [-,domain=-6.28:6.28,samples=120] ({.1*x^2},{sin(deg(x))});
 
-                \draw [-&gt;,thick,firstcolor,&gt;=stealth] (axis cs: 0.1, -0.841471) -- (axis cs:0.09801, -0.836026);
+                  \draw [-&gt;,thick,firstcolor,&gt;=stealth] (axis cs: 0.1, -0.841471) -- (axis cs:0.09801, -0.836026);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_06.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_06.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1087,31 +1089,33 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_07.tex -->
-              <image xml:id="img_11_01_ex_07X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_07.tex -->
+                <image xml:id="img_11_01_ex_07X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                xtick={-3,-2,-1,1,2,3},
-                ytick={-1,-2,1,2},
-                ymin=-2.5,ymax=2.5,
-                xmin=-3.5,xmax=3.5
-                ]
+                  \begin{axis}[
+                  xtick={-3,-2,-1,1,2,3},
+                  ytick={-1,-2,1,2},
+                  ymin=-2.5,ymax=2.5,
+                  xmin=-3.5,xmax=3.5
+                  ]
 
-                \addplot+ [-,domain=0:6.28,samples=70] ({3*cos(deg(x))},{2*sin(deg(x))});
+                  \addplot+ [-,domain=0:6.28,samples=70] ({3*cos(deg(x))},{2*sin(deg(x))});
 
-                \draw [-&gt;,thick,firstcolor,&gt;=stealth] (axis cs: 1.62091, -1.68294) -- (axis cs:1.64607, -1.67205);
+                  \draw [-&gt;,thick,firstcolor,&gt;=stealth] (axis cs: 1.62091, -1.68294) -- (axis cs:1.64607, -1.67205);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_07.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_07.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1129,31 +1133,33 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_08.tex -->
-              <image xml:id="img_11_01_ex_08X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_08.tex -->
+                <image xml:id="img_11_01_ex_08X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                xtick={-3,-2,-1,1,2,3},
-                ytick={-1,-2,1,2},
-                ymin=-2.5,ymax=2.5,
-                xmin=-3.5,xmax=3.5
-                ]
+                  \begin{axis}[
+                  xtick={-3,-2,-1,1,2,3},
+                  ytick={-1,-2,1,2},
+                  ymin=-2.5,ymax=2.5,
+                  xmin=-3.5,xmax=3.5
+                  ]
 
-                \addplot+ [-,domain=0:2,samples=70] ({3*sin(deg(3.14159*x))},{2*cos(deg(3.14159*x))});
+                  \addplot+ [-,domain=0:2,samples=70] ({3*sin(deg(3.14159*x))},{2*cos(deg(3.14159*x))});
 
-                \draw [-&gt;,thick,firstcolor,&gt;=stealth] (axis cs:1.64607, -1.67205)--(axis cs: 1.62091, -1.68294);
+                  \draw [-&gt;,thick,firstcolor,&gt;=stealth] (axis cs:1.64607, -1.67205)--(axis cs: 1.62091, -1.68294);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_08.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_08.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1171,31 +1177,33 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_09.tex -->
-              <image xml:id="img_11_01_ex_09X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_09.tex -->
+                <image xml:id="img_11_01_ex_09X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                xtick={-3,-2,-1,1,2,3},
-                ytick={-1,-2,1,2},
-                ymin=-2.5,ymax=2.5,
-                xmin=-3.5,xmax=3.5
-                ]
+                  \begin{axis}[
+                  xtick={-3,-2,-1,1,2,3},
+                  ytick={-1,-2,1,2},
+                  ymin=-2.5,ymax=2.5,
+                  xmin=-3.5,xmax=3.5
+                  ]
 
-                \addplot+ [-,domain=0:6.28,samples=120] ({3*cos(deg(x))},{2*sin(deg(2*x))});
+                  \addplot+ [-,domain=0:6.28,samples=120] ({3*cos(deg(x))},{2*sin(deg(2*x))});
 
-                \draw [-&gt;,thick,firstcolor] (axis cs:1.62091, -1.81859) -- (axis cs: 1.64607, -1.83488);
+                  \draw [-&gt;,thick,firstcolor] (axis cs:1.62091, -1.81859) -- (axis cs: 1.64607, -1.83488);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_09.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_09.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1213,31 +1221,33 @@
               </p>
             </statement>
             <solution>
-              <!-- START figures/fig_11_01_ex_10.tex -->
-              <image xml:id="img_11_01_ex_10X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}[&gt;=stealth]
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_10.tex -->
+                <image xml:id="img_11_01_ex_10X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}[&gt;=stealth]
 
-                \begin{axis}[
-                ymin=-5.5,ymax=5.5,
-                xmin=-11,xmax=11
-                ]
+                  \begin{axis}[
+                  ymin=-5.5,ymax=5.5,
+                  xmin=-11,xmax=11
+                  ]
 
-                \addplot+ [-,domain=-1.4708:1.4708,samples=40] ({2*sec(deg(x))},{tan(deg(x))});
-                \addplot+ [solid,-,domain=1.6708:4.61239,samples=40] ({2*sec(deg(x))},{tan(deg(x))});
+                  \addplot+ [-,domain=-1.4708:1.4708,samples=40] ({2*sec(deg(x))},{tan(deg(x))});
+                  \addplot+ [solid,-,domain=1.6708:4.61239,samples=40] ({2*sec(deg(x))},{tan(deg(x))});
 
-                \draw [-&gt;,thick,firstcolor] (axis cs:2.27899, 0.546302) -- (axis cs: 2.29162, 0.559359);
-                \draw [-&gt;,thick,secondcolor] (axis cs: -2.02022, -0.1425477) -- (axis cs: -2.01744, -0.132358);
+                  \draw [-&gt;,thick,firstcolor] (axis cs:2.27899, 0.546302) -- (axis cs: 2.29162, 0.559359);
+                  \draw [-&gt;,thick,secondcolor] (axis cs: -2.02022, -0.1425477) -- (axis cs: -2.01744, -0.132358);
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_10.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_10.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
@@ -1266,187 +1276,192 @@
               </p>
             </statement>
             <solution>
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_11.tex -->
+                <image xml:id="img_11_01_ex_11X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-            <!-- TODO: Figure out why a triple pair of coordinates won't allow for compilation for the last 4 images -->
+                  \begin{axis}[
+                  axis on top,
+                  axis lines=center,
+                  view={145}{25},
+                  xtick={1},
+                  ymin=-.1,ymax=6.5,
+                  xmin=-2.1,xmax=2.1,
+                  zmin=-2.1,zmax=2.1,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-              <!-- START figures/fig_11_01_ex_11.tex -->
-              <image xml:id="img_11_01_ex_11X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+                  \addplot+ [-,domain=0:6.28,samples y=0] ({2*cos(deg(x))},{x},{2*sin(deg(x))});
 
-                \begin{axis}[
-                axis on top,
-                axis lines=center,
-                view={145}{25},
-                xtick={1},
-                ymin=-.1,ymax=6.5,
-                xmin=-2.1,xmax=2.1,
-                zmin=-2.1,zmax=2.1,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \end{axis}
 
-                \addplot+ [-,domain=0:6.28,samples y=0] ({2*cos(deg(x))},{x},{2*sin(deg(x))});
-
-                \end{axis}
-
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_11.tex END -->
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_11.tex END -->
+              </sidebyside>
             </solution>
         </webwork>
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\vec r(t) = \la 3\cos(t) , \sin(t) , t/\pi\ra</m> on <m>[0,2\pi]</m>.
               </p>
             </statement>
-            <solution>
-              <!-- START figures/fig_11_01_ex_12.tex -->
-              <image xml:id="img_11_01_ex_12X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+            <answer>
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_12.tex -->
+                <image xml:id="img_11_01_ex_12X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                axis on top,
-                axis lines=center,
-                view={145}{25},
-                ymin=-1.1,ymax=1.1,
-                xmin=-3.5,xmax=3.5,
-                zmin=-0.1, zmax=2.1,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  axis lines=center,
+                  view={145}{25},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-3.5,xmax=3.5,
+                  zmin=-0.1, zmax=2.1,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({3*cos(deg(x))},{sin(deg(x))},{x/3.14159});
+                  \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({3*cos(deg(x))},{sin(deg(x))},{x/3.14159});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_12.tex END -->
-            </solution>
-        </webwork>
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_12.tex END -->
+              </sidebyside>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\vec r(t) = \la \cos(t) , \sin(t) ,\sin(t) \ra</m> on <m>[0,2\pi]</m>.
               </p>
             </statement>
-            <solution>
-              <!-- START figures/fig_11_01_ex_13.tex -->
-              <image xml:id="img_11_01_ex_13X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
+            <answer>
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_13.tex -->
+                <image xml:id="img_11_01_ex_13X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
 
-                \begin{axis}[
-                axis on top,
-                axis lines=center,
-                view={145}{25},
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.1,xmax=1.1,
-                zmin=-1.1, zmax=1.1,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+                  \begin{axis}[
+                  axis on top,
+                  axis lines=center,
+                  view={145}{25},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.1,xmax=1.1,
+                  zmin=-1.1, zmax=1.1,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({cos(deg(x))},{sin(deg(x))},{sin(deg(x))});
+                  \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=60] ({cos(deg(x))},{sin(deg(x))},{sin(deg(x))});
 
-                \end{axis}
-      
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_13.tex END -->
-            </solution>
-        </webwork>
+                  \end{axis}
+        
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_13.tex END -->
+              </sidebyside>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
       <exercise>
-        <webwork seed="1">
+        <!-- <webwork seed="1">
             <setup>
  
             <pg-code>
             </pg-code>
-            </setup>
+            </setup> -->
             <statement>
               <p>
                 <m>\vec r(t) = \la \cos(t) , \sin(t) ,\sin(2t)\ra</m> on <m>[0,2\pi]</m>.
               </p>
             </statement>
-            <solution>
-              <!-- START figures/fig_11_01_ex_14.tex -->
-              <image xml:id="img_11_01_ex_14X">
-                <description></description>
-                <latex-image>
-                
-                \begin{tikzpicture}
-                
-                \begin{axis}[
-                axis on top,
-                axis lines=center,
-                view={155}{25},
-                ymin=-1.1,ymax=1.1,
-                xmin=-1.1,xmax=1.1,
-                zmin=-1.1, zmax=1.1,
-                every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
-                  xlabel={\scriptsize $x$},
-                every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
-                  ylabel={\scriptsize $y$},
-                every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
-                  zlabel={\scriptsize $z$}
-                ]
+            <answer>
+              <sidebyside width="47%">
+                <!-- START figures/fig_11_01_ex_14.tex -->
+                <image xml:id="img_11_01_ex_14X">
+                  <description></description>
+                  <latex-image>
+                  
+                  \begin{tikzpicture}
+                  
+                  \begin{axis}[
+                  axis on top,
+                  axis lines=center,
+                  view={155}{25},
+                  ymin=-1.1,ymax=1.1,
+                  xmin=-1.1,xmax=1.1,
+                  zmin=-1.1, zmax=1.1,
+                  every axis x label/.style={at={(axis cs:\pgfkeysvalueof{/pgfplots/xmax},0,0)},xshift=-3pt,yshift=-3pt},
+                    xlabel={\scriptsize $x$},
+                  every axis y label/.style={at={(axis cs:0,\pgfkeysvalueof{/pgfplots/ymax},0)},xshift=5pt,yshift=-2pt},
+                    ylabel={\scriptsize $y$},
+                  every axis z label/.style={at={(axis cs:0,0,\pgfkeysvalueof{/pgfplots/zmax})},xshift=0pt,yshift=4pt},
+                    zlabel={\scriptsize $z$}
+                  ]
 
-                \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=120] ({cos(deg(x))},{sin(deg(x))},{sin(deg(2*x))});
+                  \addplot3 [firstcurvestyle,-,domain=0:6.28,samples y=0,samples=120] ({cos(deg(x))},{sin(deg(x))},{sin(deg(2*x))});
 
-                \end{axis}
+                  \end{axis}
 
-                \end{tikzpicture}
-                
-                </latex-image>
-              </image>
-              <!-- figures/fig_11_01_ex_14.tex END -->
-            </solution>
-        </webwork>
+                  \end{tikzpicture}
+                  
+                  </latex-image>
+                </image>
+                <!-- figures/fig_11_01_ex_14.tex END -->
+              </sidebyside>
+            </answer>
+        <!-- </webwork> -->
       </exercise>
 
     </exercisegroup>
