@@ -115,13 +115,13 @@
                 <m>\vec v(1) = \la 1,3\ra</m>,
                 <m>\vec a(1) = \la 2,2\ra</m>.
                 These are plotted with <m>\vrt</m> in <xref ref="fig_motion1a">Figure</xref>.
-  
-                We can think of acceleration as <q>pulling</q> the velocity vector in a certain direction. 
+
+                We can think of acceleration as <q>pulling</q> the velocity vector in a certain direction.
                 At <m>t=-1</m>, the velocity vector points down and to the left; at <m>t=1</m>,
-                the velocity vector has been pulled in the <m>\la 2,2\ra</m> direction and is now pointing up and to the right. 
+                the velocity vector has been pulled in the <m>\la 2,2\ra</m> direction and is now pointing up and to the right.
                 In <xref ref="fig_motion1b">Figure</xref> we plot more velocity/acceleration vectors, making more clear the effect acceleration has on velocity.
               </p>
-            
+
               <figure xml:id="fig_motion1">
                 <caption>Graphing the position, velocity and acceleration of an object in <xref ref="ex_motion1">Example</xref>.</caption>
                 <sidebyside>
@@ -131,7 +131,7 @@
                     <image xml:id="img_motion1a">
                       <description></description>
                       <latex-image>
-                      
+
                       \begin{tikzpicture}[&gt;=stealth]
 
                       \begin{axis}[
@@ -153,7 +153,7 @@
                       \end{axis}
 
                       \end{tikzpicture}
-                      
+
                       </latex-image>
                     </image>
                   <!-- figures/fig_motion1a.tex END -->
@@ -165,7 +165,7 @@
                     <image xml:id="img_motion1b">
                       <description></description>
                       <latex-image>
-                      
+
                       \begin{tikzpicture}[&gt;=stealth]
 
                       \begin{axis}[
@@ -200,7 +200,7 @@
                       \end{axis}
 
                       \end{tikzpicture}
-                      
+
                       </latex-image>
                     </image>
                   <!-- figures/fig_motion1b.tex END -->
@@ -229,7 +229,7 @@
                 Inside the square root we have a quadratic which is minimized when <m>t=0</m>.
                 Thus the speed is minimized at <m>t=0</m>,
                 with a speed of <m>\sqrt{2}</m> ft/s.
-  
+
                 The graph in <xref ref="fig_motion1b">Figure</xref> also implies speed is minimized here. The filled dots on the graph are located at integer values of <m>t</m> between <m>-3</m> and 3. Dots that are far apart imply the object traveled a far distance in 1 second, indicating high speed; dots that are close together imply the object did not travel far in 1 second, indicating a low speed. The dots are closest together near <m>t=0</m>, implying the speed is minimized near that value.
               </p>
             </li>
@@ -276,7 +276,7 @@
           <image xml:id="img_motion2a">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \begin{axis}[
@@ -309,7 +309,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_motion2a.tex END -->
@@ -348,7 +348,7 @@
               <image xml:id="img_motion2b1">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -369,14 +369,14 @@
                 \filldraw (axis cs:0.6,0.36) circle (1.5pt);
                 \filldraw (axis cs:0.8,0.64) circle (1.5pt);
                 \filldraw (axis cs:1.,1.) circle (1.5pt);
-               
+
                 \draw [thick,-&gt;,firstcolor,&gt;=stealth] (axis cs:-.9,.81) -- (axis cs: -.89,.7921);
                 \draw (axis cs: .5,.6) node {\scriptsize $\vec r_1(t)$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_motion2c.tex END -->
@@ -388,7 +388,7 @@
               <image xml:id="img_motion2b2">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -409,14 +409,14 @@
                 \filldraw (axis cs:0.216,0.046656) circle (1.5pt);
                 \filldraw (axis cs:0.512,0.262144) circle (1.5pt);
                 \filldraw (axis cs:1.,1.) circle (1.5pt);
-              
+
                 \draw [thick,-&gt;,firstcolor,&gt;=stealth] (axis cs:-.9,.81) -- (axis cs: -.89,.7921);
                 \draw (axis cs: .5,.6) node {\scriptsize $\vec r_2(t)$};
 
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_motion2b.tex END -->
@@ -514,9 +514,9 @@
                 Note how <m>\vat</m> is parallel to \vrt,
                 but has a different magnitude and points in the opposite direction.
                 Why is this?
-  
+
                 Recall the classic physics equation, <q>Force <m>=</m> mass <times/> acceleration.</q> A force acting on a mass induces acceleration (i.e., the mass moves); acceleration acting on a mass induces a force (gravity gives our mass a <em>weight</em>). Thus force and acceleration are closely related. A moving ball <q>wants</q> to travel in a straight line. Why does the ball in our example move in a circle? It is attached to the boy's hand by a string. The string applies a force to the ball, affecting it's motion: the string <em>accelerates</em> the ball. This is not acceleration in the sense of <q>it travels faster;</q> rather, this acceleration is changing the velocity of the ball. In what direction is this force/acceleration being applied? In the direction of the string, towards the boy's hand.
-  
+
                 The magnitude of the acceleration is related to the speed at which the ball is traveling. A ball whirling quickly is rapidly changing direction/velocity. When velocity is changing rapidly, the acceleration must be <q>large.</q>
               </p>
             </li>
@@ -526,7 +526,7 @@
                 When the boy releases the string,
                 the string no longer applies a force to the ball,
                 meaning acceleration is <m>\vec 0</m> and the ball can now move in a straight line in the direction of <m>\vec v(t)</m>.
-  
+
                 Let <m>t=t_0</m> be the time when the boy lets go of the string. The ball will be at <m>\vec r(t_0)</m>, traveling in the direction of <m>\vec v(t_0)</m>. We want to find <m>t_0</m> so that this line contains the point <m>(0,10)</m> (since the tree is 10ft directly in front of the boy).
               </p>
 
@@ -536,7 +536,7 @@
                 <image xml:id="img_motion3">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{scope}[scale=.5,shift={(0,10)}]
@@ -545,12 +545,12 @@
                     {\draw[ultra thick,fill=white]}
                     (.75,-1)
                     ..  controls (.5,.5)  and   (.5,3)    .. (0.5,4) -- (-0.5,4)
-                    ..  controls (-.5,3)  and (-.5,.5)    .. (-.75,-1) 
+                    ..  controls (-.5,3)  and (-.5,.5)    .. (-.75,-1)
                     ;
 
                     \ifthenelse{\boolean{colorprint}}{\draw[ultra thick,fill=green!50!black] }
                     {\draw[ultra thick,fill=white]}
-                    (0,10) 
+                    (0,10)
                     ..  controls  (0,8)    and   (1,7)    .. (1.5,7)
                     ..  controls (1,7)     and   (1,7)    .. (0.5,7.25)
                     ..  controls (1.5,5)   and   (2.5,4)  .. (3,4)
@@ -563,8 +563,8 @@
                     ..  controls  (-1,7)   and   (-1,7)   .. (-1.5,7)
                     ..  controls  (-1,7)   and   (0,8)    .. (0,10)
                     ;
-                    
-                  \end{scope} 
+
+                  \end{scope}
 
                   \begin{scope}[scale=.5]
 
@@ -583,7 +583,7 @@
                   \end{scope}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
               <!-- figures/fig_motion3.tex END -->
@@ -1079,8 +1079,6 @@
                     currentprojection=orthographic(5.6,10.7,4);
                     defaultrender.merge=true;
 
-                    usepackage("amsmath");
-
                     // setup and draw the axes
                     real[] myxchoice={-2,2};
                     real[] myychoice={2,4};
@@ -1132,7 +1130,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
               <!-- figures/figmotion6_3D.asy END -->
@@ -1144,7 +1142,7 @@
                 which says that the average value of a function <m>f</m> on <m>[a,b]</m> is <m>\frac{1}{b-a}\int_a^b f(x)\ dx</m>.
                 In our context, the average value of the speed is
                 <me>
-                  \text{ average speed }  = \frac{1}{2-(-2)}\int_{-2}^2 \norm{\vvt}\ dt \approx \frac14 12.88 = 3.22\text{ m/s } 
+                  \text{ average speed }  = \frac{1}{2-(-2)}\int_{-2}^2 \norm{\vvt}\ dt \approx \frac14 12.88 = 3.22\text{ m/s }
                 </me>.
                 Note how the physical context of a particle traveling gives meaning to a more abstract concept learned earlier.
               </p>
@@ -1220,7 +1218,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1242,7 +1240,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1266,7 +1264,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1288,7 +1286,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1308,7 +1306,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1333,7 +1331,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1364,7 +1362,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1384,8 +1382,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1412,7 +1410,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1433,8 +1431,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -1476,7 +1474,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1499,7 +1497,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1522,7 +1520,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1544,7 +1542,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1580,7 +1578,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1604,9 +1602,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               $speed=Formula("|t| sqrt(9t^2-12t+8)");
@@ -1646,7 +1644,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1670,7 +1668,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1695,9 +1693,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1738,7 +1736,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1762,7 +1760,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1786,9 +1784,9 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1829,7 +1827,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1854,7 +1852,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1910,7 +1908,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1951,7 +1949,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1994,7 +1992,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2036,7 +2034,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2089,7 +2087,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2110,7 +2108,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -2135,7 +2133,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2156,7 +2154,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -2191,7 +2189,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2216,10 +2214,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Vector2D");
               $disp=Compute("&lt;-10,0>");
@@ -2271,7 +2269,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2295,10 +2293,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2360,7 +2358,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2387,7 +2385,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2461,8 +2459,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context()->flags->set(tolerance=>0.005);
               $angle=NumberWithUnits("0.013 radians");
@@ -2508,7 +2506,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2571,7 +2569,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2598,7 +2596,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

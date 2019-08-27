@@ -117,8 +117,6 @@
               currentprojection=orthographic(16,12.5,14);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={1};
               real[] myychoice={2};
@@ -382,8 +380,6 @@
               currentprojection=orthographic(16,12.5,14);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={1};
               real[] myychoice={2};
@@ -560,8 +556,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(22.8,20,5.5);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1};
@@ -990,14 +984,12 @@
 
               import graph3;
 
-              //ASY file for 
+              //ASY file for
 
               size(200,200,IgnoreAspect);
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(19,17,1);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-5,5};
@@ -1093,14 +1085,12 @@
 
               import graph3;
 
-              //ASY file for 
+              //ASY file for
 
               size(200,200,IgnoreAspect);
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(17,17,11);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};

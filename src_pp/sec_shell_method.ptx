@@ -46,7 +46,7 @@
         <image xml:id="img_soupcana_3D">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -55,8 +55,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0,0));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={1};
@@ -117,7 +115,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            
+
           </asymptote>
         </image>
       <!-- figures/figshell_intro_b_3D.asy END -->
@@ -138,7 +136,7 @@
         <image xml:id="img_soupcanb_3D">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -147,8 +145,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0,0));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={1};
@@ -215,7 +211,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            
+
           </asymptote>
         </image>
       <!-- figures/figshell_intro_a_3D.asy END -->
@@ -236,7 +232,7 @@
         <image xml:id="img_soupcanc_3D">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -245,8 +241,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0,0));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={1};
@@ -357,7 +351,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            
+
           </asymptote>
         </image>
       <!-- figures/figshell_intro_d_3D.asy END -->
@@ -408,7 +402,7 @@
     <image xml:id="img_shell_soupcan">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}[scale=.75]
 
       \begin{scope}[xscale=1.5]
@@ -431,7 +425,7 @@
       \end{scope}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
 
@@ -443,7 +437,7 @@
     <image xml:id="img_shell_unwrapshell">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}[scale=.75]
 
       \begin{scope}[xscale=1.5]
@@ -471,7 +465,7 @@
       \end{scope}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
     <!-- figures/fig_shell_unwrapshell.tex END -->
@@ -546,7 +540,7 @@
         <image xml:id="img_shell1">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}
 
           \begin{axis}[
@@ -571,7 +565,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_shell1.tex END -->
@@ -633,7 +627,7 @@
             <image xml:id="img_shell2a">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -660,7 +654,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
           <!-- figures/fig_shell2a.tex END -->
@@ -681,7 +675,7 @@
             <image xml:id="img_shell2b_3D">
               <description></description>
               <asymptote>
-            
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -691,8 +685,6 @@
                 //currentprojection=orthographic((6.1,13,42.3),(0,1,0),(0,0,0),.95,(.005,-.024));
                 currentprojection=orthographic((2.6,4.6,47),(0,1,0),(0,0,0),.95,(0.004,0.004));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1,2,3,4,5,6};
@@ -784,7 +776,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figshell2c_3D.asy END -->
@@ -853,7 +845,7 @@
             <image xml:id="img_shell3a">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -876,7 +868,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
           <!-- figures/fig_shell3a.tex END -->
@@ -897,7 +889,7 @@
             <image xml:id="img_shell3b_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -906,8 +898,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((3.13,8.3,49),(0,1,0),(0,0,0),.95,(0.0148,0.00673));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1};
@@ -1001,7 +991,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figshell3b_3D.asy END -->
@@ -1022,7 +1012,7 @@
             <image xml:id="img_shell3c_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -1031,8 +1021,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((3.13,8.3,49),(0,1,0),(0,0,0),.95,(0.0148,0.00673));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1};
@@ -1126,7 +1114,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figshell3c_3D.asy END -->
@@ -1134,7 +1122,7 @@
         </sidebyside>
 
       </figure>
-      
+
       <p>
         <md>
           <mrow>V \amp = 2\pi\int_1^3\left[y\left(-\frac12y+\frac32\right)\right]\ dy</mrow>
@@ -1178,7 +1166,7 @@
             <image xml:id="img_shell4a">
               <description></description>
               <latex-image>
-              
+
               \begin{tikzpicture}
 
               \begin{axis}[
@@ -1201,7 +1189,7 @@
               \end{axis}
 
               \end{tikzpicture}
-              
+
               </latex-image>
             </image>
           <!-- figures/fig_shell4a.tex END -->
@@ -1222,7 +1210,7 @@
             <image xml:id="img_shell4b_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -1231,8 +1219,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((23.8,4.1,64),(0,1,0),(0,0,0),1,(-.00343,0.004889));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={};
@@ -1319,7 +1305,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figshell4c_3D.asy END -->
@@ -1340,7 +1326,7 @@
             <image xml:id="img_shell4c_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -1349,8 +1335,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((23.8,4.1,64),(0,1,0),(0,0,0),1,(-.00343,0.004889));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={};
@@ -1437,7 +1421,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figshell4b_3D.asy END -->
@@ -1566,7 +1550,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1586,7 +1570,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1606,7 +1590,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1626,7 +1610,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1657,7 +1641,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1667,7 +1651,7 @@
                 <image xml:id="img_07_02_ex_09X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1682,7 +1666,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_09.tex END -->
@@ -1699,7 +1683,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1724,7 +1708,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_06.tex END -->
@@ -1741,7 +1725,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1751,7 +1735,7 @@
                 <image xml:id="img_07_02_ex_11X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1766,7 +1750,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_11.tex END -->
@@ -1783,7 +1767,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1793,7 +1777,7 @@
                 <image xml:id="img_07_02_ex_08XX">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1812,7 +1796,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_08.tex END -->
@@ -1839,7 +1823,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1849,7 +1833,7 @@
                 <image xml:id="img_07_02_ex_05X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1864,7 +1848,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_05.tex END -->
@@ -1881,7 +1865,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1891,7 +1875,7 @@
                 <image xml:id="img_07_02_ex_10X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1906,7 +1890,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_10.tex END -->
@@ -1923,7 +1907,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1933,7 +1917,7 @@
                 <image xml:id="img_07_02_ex_07X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1948,7 +1932,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_07.tex END -->
@@ -1965,7 +1949,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1975,7 +1959,7 @@
                 <image xml:id="img_07_02_ex_04X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1994,7 +1978,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_04.tex END -->
@@ -2021,7 +2005,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2098,7 +2082,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2174,7 +2158,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2251,7 +2235,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2315,7 +2299,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2368,7 +2352,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

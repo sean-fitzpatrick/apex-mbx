@@ -22,8 +22,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ 1,0 ⟩
 
               defaultpen(fontsize(8));
@@ -34,7 +32,7 @@
               pen colorone;
               pen colortwo;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 } else
@@ -42,7 +40,7 @@
                 colorone = black+1.5pt+linejoin(0);
                 colortwo = gray+1.5pt+linejoin(0);
                 };
-                
+
               pair xbounds=(-.2,1.2);
               pair ybounds=(-.2,1.2);
               real[] myxchoice={1};
@@ -170,8 +168,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ 1,0 ⟩
 
               defaultpen(fontsize(8));
@@ -182,7 +178,7 @@
               pen colorone;
               pen colortwo;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+.8pt+linejoin(0);
                 colortwo = red+.8pt+linejoin(0);
                 } else
@@ -190,7 +186,7 @@
                 colorone = black+.8pt+linejoin(0);
                 colortwo = gray+.8pt+linejoin(0);
                 };
-                
+
               pair xbounds=(-1.2,1.2);
               pair ybounds=(-1.2,1.2);
               real[] myxchoice={-1,1};
@@ -331,8 +327,6 @@
                   import graph;
                   size(150,150);
 
-                  usepackage("amsmath");
-
                   // vector field F = ⟨ y,-x+1 ⟩
 
                   defaultpen(fontsize(8));
@@ -345,7 +339,7 @@
                   pen mainvect;
                   pen bgvect;
 
-                  if(incolor) { 
+                  if(incolor) {
                     colorone = blue+1.5pt+linejoin(0);
                     colortwo = red+1.5pt+linejoin(0);
                     mainvect = blue + linejoin(0);
@@ -356,7 +350,7 @@
                     colortwo = gray+1.5pt+linejoin(0);
                     mainvect = black + linejoin(0);
                     bgvect = rgb(.6,.6,.6)+linejoin(0);
-                    };	
+                    };
                   pair xbounds=(-.2,1.2);
                   pair ybounds=(-.2,1.2);
                   real[] myxchoice={1};
@@ -407,8 +401,6 @@
                   import graph;
                   size(150,150);
 
-                  usepackage("amsmath");
-
                   // vector field F = ⟨ -x, 2y-x ⟩
 
                   defaultpen(fontsize(8));
@@ -421,7 +413,7 @@
                   pen mainvect;
                   pen bgvect;
 
-                  if(incolor) { 
+                  if(incolor) {
                     colorone = blue+1.5pt+linejoin(0);
                     colortwo = red+1.5pt+linejoin(0);
                     mainvect = blue + linejoin(0);
@@ -433,7 +425,7 @@
                     mainvect = black + linejoin(0);
                     bgvect = rgb(.6,.6,.6)+linejoin(0);
                     };
-                    
+
                   pair xbounds=(-.2,1.2);
                   pair ybounds=(-.2,1.2);
                   real[] myxchoice={1};
@@ -633,9 +625,7 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
-              // vector field F = ⟨ -y,x^2+1 ⟩ 
+              // vector field F = ⟨ -y,x^2+1 ⟩
 
               defaultpen(fontsize(8));
 
@@ -647,7 +637,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -658,7 +648,7 @@
                 colortwo = gray+1.5pt+linejoin(0);
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
               pair xbounds=(-1.2,1.2);
               pair ybounds=(-.2,2.2);
               real[] myxchoice={-1,1};
@@ -788,9 +778,7 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
-              // vector field F = ⟨ sin x, cos y ⟩ 
+              // vector field F = ⟨ sin x, cos y ⟩
 
               defaultpen(fontsize(8));
 
@@ -802,7 +790,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -813,7 +801,7 @@
                 colortwo = gray+1.5pt+linejoin(0);
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
 
               pair xbounds=(-2.8,2.8);
               pair ybounds=(-2.8,2.8);
@@ -1008,8 +996,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ x-y,x+y ⟩
 
               defaultpen(fontsize(8));
@@ -1022,7 +1008,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -1033,7 +1019,7 @@
                 colortwo = gray+1.5pt+linejoin(0);
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
 
               pair xbounds=(-2.8,2.8);
               pair ybounds=(-2.8,2.8);
@@ -1142,8 +1128,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ y+2,-2x+1 ⟩
 
               defaultpen(fontsize(8));
@@ -1156,7 +1140,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -1167,7 +1151,7 @@
                 colortwo = gray+1.5pt+linejoin(0);
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
               pair xbounds=(-.2,1.2);
               pair ybounds=(-.2,1.2);
               real[] myxchoice={1};

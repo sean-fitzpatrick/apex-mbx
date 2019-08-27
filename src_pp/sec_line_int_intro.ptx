@@ -56,8 +56,6 @@
               //currentprojection=orthographic(2.5,4.6,1.9);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={1};
@@ -142,8 +140,6 @@
               currentprojection=orthographic(1.17,4.69,2.35);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={1};
@@ -201,7 +197,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-            
+
             </asymptote>
           </image>
         </figure>
@@ -227,8 +223,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(1.17,4.69,2.35);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -613,8 +607,6 @@
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
 
-                  usepackage("amsmath");
-
                   // setup and draw the axes
                   real[] myxchoice={-1,3};
                   real[] myychoice={-1,3};
@@ -702,8 +694,6 @@
                   currentprojection=orthographic(10,7.25,3.75);
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,3};
@@ -822,7 +812,7 @@
 
                   // ASY file for figlinescalarfield2_3D.asy in Chapter 10
                   // The surface is z=x^2-y^2+3; the path is the unit circle.
-                  // 
+                  //
                   // This draws the path, the curve in space, and the surface.
 
                   size(200,200,IgnoreAspect);
@@ -831,8 +821,6 @@
                   //(7.63,8.65,5);
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,1};
@@ -913,7 +901,7 @@
 
                   // ASY file for figlinescalarfield2_3D.asy in Chapter 10
                   // The surface is z=x^2-y^2+3; the path is the unit circle.
-                  // 
+                  //
                   // This draws the  surface of the area we seek.
 
                   size(200,200,IgnoreAspect);
@@ -922,8 +910,6 @@
                   //(7.63,8.65,5);
                   //currentprojection=orthographic(2.5,4.6,1.9);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-1,1};
@@ -1087,12 +1073,12 @@
           <image xml:id="img_linescalarfield4_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               // ASY file for figlinescalarfield2_3D.asy in Chapter 10
               // The path is an elliptical helix ⟨ cos t, 2sin t, t/pi ⟩; no specific surface.
-              // 
+              //
               // This draws the  surface of the area we seek.
 
               size(200,200,IgnoreAspect);
@@ -1101,8 +1087,6 @@
               //(7.63,8.65,5);
               //currentprojection=orthographic(2.5,4.6,1.9);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1428,10 +1412,10 @@
 
               import graph3;
               import palette;
-              
+
               // ASY file for figlinescalarfield2_3D.asy in Chapter 10
               // The path is an elliptical helix ⟨ cos t, 2sin t, t/pi ⟩; no specific surface.
-              // 
+              //
               // This draws the  surface of the area we seek.
 
               size(200,200,IgnoreAspect);
@@ -1440,8 +1424,6 @@
               //(7.63,8.65,5);
               //currentprojection=orthographic(2.5,4.6,1.9);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -1520,7 +1502,7 @@
         <p>
           Thus the mass is
           <me>
-            M = \oint_C \delta(s)\, ds = \int_0^{2\pi} \big(2+\sin t+\sin(2t)\big)\sqrt{1+4\cos^2(2t)}\, dt \approx 21.08\text{ gm } 
+            M = \oint_C \delta(s)\, ds = \int_0^{2\pi} \big(2+\sin t+\sin(2t)\big)\sqrt{1+4\cos^2(2t)}\, dt \approx 21.08\text{ gm }
           </me>.
         </p>
 

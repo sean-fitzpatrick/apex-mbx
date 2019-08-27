@@ -44,8 +44,6 @@
           currentprojection=orthographic(8,8,13);
           defaultrender.merge=true;
 
-          usepackage("amsmath");
-
           // setup and draw the axes
           real[] myxchoice={2};
           real[] myychoice={2};
@@ -124,7 +122,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figspace_tangent_intro_3D.asy END -->
@@ -274,8 +272,6 @@
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
 
-                  usepackage("amsmath");
-
                   // setup and draw the axes
                   real[] myxchoice={2,4};
                   real[] myychoice={2,4};
@@ -344,7 +340,7 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figpartial4a_3D.asy END -->
@@ -375,8 +371,6 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={2,4};
@@ -448,7 +442,7 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figpartial4b_3D.asy END -->
@@ -471,7 +465,7 @@
           Thus the directional tangent line is
           <me>
             \ell_{\vec u}(t) = \left\{\begin{array}{l} x= \pi/2 -t/\sqrt{2}\\ y = \pi/2 + t/\sqrt{2} \\ z= -t/\sqrt{2}
-            \end{array} \right. 
+            \end{array} \right.
           </me>.
         </p>
 
@@ -546,8 +540,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(8,2.6,4.7);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1,2};
@@ -627,7 +619,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtpl2_3D.asy END -->
@@ -778,8 +770,6 @@
               currentprojection=orthographic(8,4.8,2.8);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={2};
               real[] myychoice={2};
@@ -864,7 +854,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtpl3_3D.asy END -->
@@ -1027,8 +1017,6 @@
               currentprojection=orthographic(15,10,9);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={2,4};
               real[] myychoice={2,4};
@@ -1103,7 +1091,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtpl5_3D.asy END -->
@@ -1200,8 +1188,6 @@
               currentprojection=orthographic(13,10,9);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -1277,7 +1263,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtpl6_3D.asy END -->
@@ -1474,8 +1460,6 @@
               currentprojection=orthographic(14,11,4.7);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -1554,7 +1538,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtpl8_3D.asy END -->
@@ -1597,7 +1581,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1623,7 +1607,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1649,8 +1633,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1671,7 +1655,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1736,7 +1720,7 @@
       <exercise xml:id="x12_06_ex_05">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1779,9 +1763,9 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context("Vector");
               Context()->variables->add(t=>"Real");
@@ -1831,7 +1815,7 @@
                  $tch=(($sp==$cp) or $dc->isParallel($sp-$cp));
                  return (3*($par and $tch),@err);
                 });
-              }; 
+              };
             </pg-code>
             </setup>
             <statement>
@@ -1880,7 +1864,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1922,9 +1906,9 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
- 
- 
+
+
+
             <pg-code>
               Context("Vector");
               Context()->variables->add(t=>"Real");
@@ -1974,7 +1958,7 @@
                  $tch=(($sp==$cp) or $dc->isParallel($sp-$cp));
                  return (3*($par and $tch),@err);
                 });
-              }; 
+              };
             </pg-code>
             </setup>
             <statement>
@@ -2036,7 +2020,7 @@
       <exercise xml:id="x12_06_ex_09">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2058,7 +2042,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");
@@ -2125,7 +2109,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2147,7 +2131,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");
@@ -2226,7 +2210,7 @@
       <exercise xml:id="x12_06_ex_13">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2247,7 +2231,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2267,7 +2251,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2287,7 +2271,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2319,7 +2303,7 @@
       <exercise xml:id="x12_06_ex_17">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2339,7 +2323,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitPlane");
               $t=Compute("-3sqrt(3)/4(x-pi/3)+3sqrt(3)/4(y-pi/6)-(z-3/4)=0");
@@ -2361,7 +2345,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2382,7 +2366,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitPlane");
               $t=Compute("z=3");
@@ -2428,7 +2412,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2468,8 +2452,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");
@@ -2556,7 +2540,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2594,8 +2578,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>"Real");

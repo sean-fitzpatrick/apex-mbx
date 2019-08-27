@@ -228,9 +228,9 @@
           <image xml:id="img_vvfderiv_introa">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
-    
+
             \draw [thick,firstcolor] (2,1) arc [x radius=4,y radius=3,start angle=145,end angle=135] node (A) {};
             \draw [thick,firstcolor] (A.center) arc [x radius=4,y radius=3,start angle=135,end angle=70] node (B) {};
             \draw [thick,firstcolor] (B.center) arc [x radius=4,y radius=3,start angle=70,end angle=60];
@@ -240,7 +240,7 @@
             \draw [-&gt;,thick,secondcolor] (A) -- (B) node [above,black,pos=.5,sloped] {\scriptsize $\vec r(t_1)-\vec r(t_0)$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_vvfderiv_intro.tex END -->
@@ -252,9 +252,9 @@
           <image xml:id="img_vvfderiv_introb">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
-    
+
             \draw [thick,firstcolor] (2,1) arc [x radius=4,y radius=3,start angle=145,end angle=135] node (A) {};
             \draw [thick,firstcolor] (A.center) arc [x radius=4,y radius=3,start angle=135,end angle=70] node (B) {};
             \draw [thick,firstcolor] (B.center) arc [x radius=4,y radius=3,start angle=70,end angle=60];
@@ -266,7 +266,7 @@
             \draw [-&gt;,thick,secondcolor] (A.center)--($(A)!.4!29:(B)$) node [above,black] {\scriptsize $\vec r\,'(t_0)$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_vvfderiv_introb.tex END -->
@@ -450,7 +450,7 @@
                     <image xml:id="img_vvflimit3a">
                       <description></description>
                       <latex-image>
-                      
+
                       \begin{tikzpicture}[&gt;=stealth]
 
                       \begin{axis}[
@@ -461,7 +461,7 @@
                       \addplot+ [-,domain=-2:2,samples=40] ({x^2},{x});
 
                       \draw (axis cs:2,1.7) node {\scriptsize $\vec r(t)$};
-                      
+
                       \draw [thick,secondcolor] (axis cs: -4,1) -- (axis cs:4,1) node [below,pos=.9,black]{\scriptsize $\vec r\,'(t)$};
                       \draw [thick,-&gt;,secondcolor] (axis cs: -2,1) -- (axis cs:-1.99,1);
 
@@ -470,7 +470,7 @@
                       \end{axis}
 
                       \end{tikzpicture}
-                      
+
                       </latex-image>
                     </image>
                   <!-- figures/fig_vvflimit3a.tex END -->
@@ -482,8 +482,8 @@
                     <image xml:id="img_vvflimit3b">
                       <description></description>
                       <latex-image>
-                      
-                      \begin{tikzpicture}[&gt;=stealth] 
+
+                      \begin{tikzpicture}[&gt;=stealth]
 
                       \begin{axis}[
                       ymin=-2.2,ymax=2.2,
@@ -500,7 +500,7 @@
                       \end{axis}
 
                       \end{tikzpicture}
-                      
+
                       </latex-image>
                     </image>
                   <!-- figures/fig_vvflimit3.tex END -->
@@ -556,8 +556,6 @@
               //currentprojection=orthographic(-5.6,3.8,9.5);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myzchoice={0,2,4,6};
@@ -585,7 +583,7 @@
               draw(g(pi/2)--g(pi/2)+(-1,0,1),red,Arrow3(size=4mm));
 
               draw(mypath,blue,Arrow3(size=4mm));
-              
+
             </asymptote>
           </image>
           <!-- figures/figvvflimit4_3D.asy END -->
@@ -697,8 +695,6 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -750,7 +746,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figvvfderiv1_3D.asy END -->
@@ -794,7 +790,7 @@
           <image xml:id="img_vvfderiv3">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \begin{axis}[
@@ -814,7 +810,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_vvfderiv3.tex END -->
@@ -983,7 +979,7 @@
                 <image xml:id="img_vvfderiv2a">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -996,14 +992,14 @@
 
                   \draw (axis cs:-2,1.5) node {\scriptsize $\vec r(t)$};
                   \draw (axis cs:.7,1.1) node {\scriptsize $\vec u(t)$};
-                
-                  \draw [thick,-&gt;,secondcolor] (axis cs: -0.768,.64) -- (axis cs:-.7737,.633);              
+
+                  \draw [thick,-&gt;,secondcolor] (axis cs: -0.768,.64) -- (axis cs:-.7737,.633);
                   \draw [thick,-&gt;,firstcolor] (axis cs:-1.5,1.25) -- (axis cs:-1.49,1.22);
 
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
               <!-- figures/fig_vvfderiv2a.tex END -->
@@ -1024,7 +1020,7 @@
                 and then take the derivative.
                 It is a matter of preference;
                 this latter method requires two applications of the Quotient Rule where our method uses the Product and Chain Rules.)
-  
+
                 We find <m>\fp(t)</m> using the Chain Rule:
                 <md>
                   <mrow>\fp(t) \amp = -\frac12\big(t^2+(t^2-1)^2\big)^{-3/2}\big(2t+2(t^2-1)(2t)\big)</mrow>
@@ -1046,14 +1042,14 @@
                   <mrow>\vec u\,(0) \amp = \la 1,0\ra</mrow>
                 </md>
               </p>
-            
+
               <figure xml:id="fig_vvfderiv2b">
                 <caption>Graphing some of the derivatives of <m>\vec u(t)</m> in <xref ref="ex_vvfderiv2">Example</xref>.</caption>
               <!-- START figures/fig_vvfderiv2b.tex -->
                 <image xml:id="img_vvfderiv2b">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -1073,7 +1069,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
               <!-- figures/fig_vvfderiv2b.tex END -->
@@ -1354,7 +1350,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1374,7 +1370,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1394,7 +1390,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1425,7 +1421,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1443,7 +1439,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1463,7 +1459,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1481,7 +1477,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1512,7 +1508,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Interval");
               $dom=Compute("(-inf,0)U(0,inf)");
@@ -1533,7 +1529,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1562,7 +1558,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -1585,7 +1581,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1605,7 +1601,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1628,7 +1624,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Numeric");
               Context()->variables->are(t=>'Real');
@@ -1651,7 +1647,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -1685,7 +1681,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1700,7 +1696,7 @@
                 <image xml:id="img_11_02_ex_15X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1715,7 +1711,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_02_ex_15.tex END -->
@@ -1731,7 +1727,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1746,7 +1742,7 @@
                 <image xml:id="img_11_02_ex_16X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1761,7 +1757,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_02_ex_16.tex END -->
@@ -1777,7 +1773,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1792,7 +1788,7 @@
                 <image xml:id="img_11_02_ex_17X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1807,7 +1803,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_02_ex_17.tex END -->
@@ -1823,7 +1819,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1838,7 +1834,7 @@
                 <image xml:id="img_11_02_ex_18X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -1853,7 +1849,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
                 <!-- figures/fig_11_02_ex_18.tex END -->
@@ -1881,7 +1877,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1904,7 +1900,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1927,7 +1923,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1948,7 +1944,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserParametricLine.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1981,7 +1977,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2002,7 +1998,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $notsmooth=List("1");
             </pg-code>
@@ -2022,7 +2018,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2043,7 +2039,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $notsmooth=List("1,-1");
             </pg-code>
@@ -2075,7 +2071,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2096,7 +2092,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2117,7 +2113,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2148,7 +2144,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2168,7 +2164,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2188,7 +2184,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               $int=Compute("&lt;-2,0>");
@@ -2205,7 +2201,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2234,7 +2230,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -2257,7 +2253,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2282,7 +2278,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -2305,7 +2301,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2340,7 +2336,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstatnFunctions=>0);
               $l=Formula("2sqrt(13)pi");
@@ -2361,7 +2357,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2381,7 +2377,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstatnFunctions=>0);
               $l=Formula("1/54(22^(3/2)-8)");
@@ -2402,7 +2398,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2424,7 +2420,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>

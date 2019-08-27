@@ -86,8 +86,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               defaultpen(fontsize(8));
 
               bool incolor;
@@ -96,7 +94,7 @@
               pen colorone;
               pen colortwo;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 } else
@@ -149,8 +147,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               defaultpen(fontsize(8));
 
               bool incolor;
@@ -159,7 +155,7 @@
               pen colorone;
               pen colortwo;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 } else
@@ -258,8 +254,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               defaultpen(fontsize(8));
 
               bool incolor;
@@ -268,7 +262,7 @@
               pen colorone;
               pen colortwo;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 } else
@@ -314,8 +308,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               defaultpen(fontsize(8));
 
               bool incolor;
@@ -326,7 +318,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -423,8 +415,6 @@
           size(200,200,IgnoreAspect);
           currentprojection=orthographic(13.5,-13,10);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={1};
@@ -536,7 +526,7 @@
 
     <p>
       Another item of notation will become useful:
-      the <q>del operator.</q> 
+      the <q>del operator.</q>
           <idx><h>del operator</h></idx>
       Recall in <xref ref="sec_directional_derivative">Section</xref>
       how we used the symbol <m>\nabla</m>
@@ -784,8 +774,6 @@
                         import graph;
                         size(150,150);
 
-                        usepackage("amsmath");
-
                         // vector field F = ⟨ y, 0 ⟩
 
                         defaultpen(fontsize(8));
@@ -798,7 +786,7 @@
                         pen mainvect;
                         pen bgvect;
 
-                        if(incolor) { 
+                        if(incolor) {
                           colorone = blue+1.5pt+linejoin(0);
                           colortwo = red+1.5pt+linejoin(0);
                           mainvect = blue + linejoin(0);
@@ -848,8 +836,6 @@
                         import graph;
                         size(150,150);
 
-                        usepackage("amsmath");
-
                         // vector field F = ⟨ -y, x ⟩
 
                         defaultpen(fontsize(8));
@@ -862,7 +848,7 @@
                         pen mainvect;
                         pen bgvect;
 
-                        if(incolor) { 
+                        if(incolor) {
                           colorone = blue+1.5pt+linejoin(0);
                           colortwo = red+1.5pt+linejoin(0);
                           mainvect = blue + linejoin(0);
@@ -973,7 +959,7 @@
                   \curl \vec F = \nabla\times\vec F = N_x-M_y = \frac{\partial}{\partial x}(y) - \frac{\partial}{\partial y}(x) = 0
                 </me>.
               </p>
-            
+
               <figure xml:id="fig_vectorfield1b">
                 <caption>The vector fields in parts 3 and 4 in <xref ref="ex_vectorfield1">Example</xref>.</caption>
                 <sidebyside>
@@ -985,8 +971,6 @@
 
                         import graph;
                         size(150,150);
-
-                        usepackage("amsmath");
 
                         // vector field F = ⟨ x,y ⟩
 
@@ -1000,7 +984,7 @@
                         pen mainvect;
                         pen bgvect;
 
-                        if(incolor) { 
+                        if(incolor) {
                           colorone = blue+1.5pt+linejoin(0);
                           colortwo = red+1.5pt+linejoin(0);
                           mainvect = blue + linejoin(0);
@@ -1050,8 +1034,6 @@
                         import graph;
                         size(150,150);
 
-                        usepackage("amsmath");
-
                         // vector field F = ⟨ cos y, sin x ⟩
 
                         defaultpen(fontsize(8));
@@ -1064,7 +1046,7 @@
                         pen mainvect;
                         pen bgvect;
 
-                        if(incolor) { 
+                        if(incolor) {
                           colorone = blue+1.5pt+linejoin(0);
                           colortwo = red+1.5pt+linejoin(0);
                           mainvect = blue + linejoin(0);
@@ -1234,8 +1216,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ cos y, sin x ⟩
 
               defaultpen(fontsize(8));
@@ -1342,8 +1322,6 @@
                   import graph;
                   size(150,150);
 
-                  usepackage("amsmath");
-
                   // vector field F = ⟨ cos y, sin x ⟩
 
                   defaultpen(fontsize(8));
@@ -1356,7 +1334,7 @@
                   pen mainvect;
                   pen bgvect;
 
-                  if(incolor) { 
+                  if(incolor) {
                     colorone = blue+1.5pt+linejoin(0);
                     colortwo = red+1.5pt+linejoin(0);
                     mainvect = blue + linejoin(0);
@@ -1414,7 +1392,7 @@
 
                   // ASY file for figlinescalarfield2_3D.asy in Chapter 10
                   // The path is an elliptical helix ⟨ cos t, 2sin t, t/pi ⟩; no specific surface.
-                  // 
+                  //
                   // This draws the  surface of the area we seek.
 
                   size(200,200,IgnoreAspect);
@@ -1423,8 +1401,6 @@
                   //(7.63,8.65,5);
                   //currentprojection=orthographic(10.5,-9,18.3);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={1};
@@ -1624,8 +1600,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ x,0 ⟩
 
               defaultpen(fontsize(8));
@@ -1639,7 +1613,7 @@
               pen bgvect;
               pen fgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -1652,7 +1626,7 @@
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
                 fgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
               pair xbounds=(-2.8,2.8);
               pair ybounds=(-2.8,2.8);
               real[] myxchoice={-2,2};
@@ -1716,8 +1690,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ 0,x ⟩
 
               defaultpen(fontsize(8));
@@ -1731,7 +1703,7 @@
               pen bgvect;
               pen fgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -1744,7 +1716,7 @@
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
                 fgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
               pair xbounds=(-2.8,2.8);
               pair ybounds=(-2.8,2.8);
               real[] myxchoice={-2,2};
@@ -1808,8 +1780,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ 1,-1 ⟩
 
               defaultpen(fontsize(8));
@@ -1823,7 +1793,7 @@
               pen bgvect;
               pen fgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -1836,7 +1806,7 @@
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
                 fgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
               pair xbounds=(-2.8,2.8);
               pair ybounds=(-2.8,2.8);
               real[] myxchoice={-2,2};
@@ -1900,8 +1870,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ y^2,1 ⟩
 
               defaultpen(fontsize(8));
@@ -1915,7 +1883,7 @@
               pen bgvect;
               pen fgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -1928,7 +1896,7 @@
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
                 fgvect = rgb(.6,.6,.6)+linejoin(0);
-                };	
+                };
               pair xbounds=(-2.8,2.8);
               pair ybounds=(-2.8,2.8);
               real[] myxchoice={-2,2};

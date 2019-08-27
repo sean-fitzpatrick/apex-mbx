@@ -102,7 +102,7 @@
     <image xml:id="img_vectintro1">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}[&gt;=stealth]
 
       \begin{axis}[
@@ -119,7 +119,7 @@
       \end{axis}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
     <!-- figures/fig_vectintro1.tex END -->
@@ -145,7 +145,7 @@
     <image xml:id="img_vectintro2">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}[&gt;=stealth]
 
       \begin{axis}[
@@ -160,7 +160,7 @@
       \end{axis}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
     <!-- figures/fig_vectintro2.tex END -->
@@ -294,7 +294,7 @@
                   <image xml:id="img_vect1a">
                     <description></description>
                     <latex-image>
-                    
+
                     \begin{tikzpicture}[&gt;=stealth]
 
                     \begin{axis}[
@@ -311,7 +311,7 @@
                     \end{axis}
 
                     \end{tikzpicture}
-                    
+
                     </latex-image>
                   </image>
               <!-- figures/fig_vectintro3.tex END -->
@@ -332,7 +332,7 @@
                   <image xml:id="img_vect1b_3D">
                     <description></description>
                     <asymptote>
-                      
+
                       import graph3;
 
                       //ASY file for figvectintro3b.pdf in Chapter 10.1
@@ -341,8 +341,6 @@
                       //currentprojection=perspective(7,2,1);
                       currentprojection=orthographic(5,9,2);
                       defaultrender.merge=true;
-
-                      usepackage("amsmath");
 
                       // setup and draw the axes
                       real[] myxchoice={2};
@@ -405,7 +403,7 @@
 
                       //pen p=rgb(0,0,1);
                       //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                      
+
                     </asymptote>
                   </image>
                 <!-- figures/figvectintro3b_3D.asy END -->
@@ -556,7 +554,7 @@
         <image xml:id="img_vect2">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}[&gt;=stealth]
 
           \begin{axis}[
@@ -572,7 +570,7 @@
           \end{axis}
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_vect2.tex END -->
@@ -639,7 +637,7 @@
     <image xml:id="img_vect2b">
       <description></description>
       <latex-image>
-      
+
       \begin{tikzpicture}[&gt;=stealth]
 
       \begin{axis}[
@@ -653,13 +651,13 @@
 
       \draw [very thick,-&gt;,gray] (axis cs:1,3) -- (axis cs:3,4) node [pos=.5,above,rotate=30] {\scriptsize $\vec v$};
       \draw [very thick,-&gt;,gray] (axis cs:2,1) -- (axis cs:3,4) node [pos=.4,above,rotate=70] {\scriptsize $\vec u$};
- 
+
       \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,4) node [pos=.5,above,rotate=50] {\scriptsize $\vec u+\vec v$};
-      
+
       \end{axis}
 
       \end{tikzpicture}
-      
+
       </latex-image>
     </image>
     <!-- figures/fig_vect2b.tex END -->
@@ -722,7 +720,7 @@
         <image xml:id="img_vect4">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}[&gt;=stealth]
 
           \begin{axis}[
@@ -734,14 +732,14 @@
           \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:3,1) node [pos=.5,above,rotate=20] {\scriptsize $\vec u$};
           \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:1,2) node [pos=.5,above,rotate=60] {\scriptsize $\vec v$};
           \draw [very thick,-&gt;] (axis cs:0,0) -- (axis cs:2,-1) node [pos=.5,below,rotate=-20] {\scriptsize $\vec u-\vec v$};
-           
+
           \draw [very thick,-&gt;,gray] (axis cs:3,1) -- (axis cs:2,-1) node [black,pos=.7,below,rotate=60] {\scriptsize $-\vec v$};
           \draw [very thick,-&gt;,gray] (axis cs:1,2) -- (axis cs:3,1) node [black,pos=.5,above,rotate=-20] {\scriptsize $\vec u-\vec v$};
 
           \end{axis}
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_vect4.tex END -->
@@ -795,7 +793,7 @@
               <image xml:id="img_vect3">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}[&gt;=stealth]
 
                 \begin{axis}[
@@ -811,7 +809,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_vect3.tex END -->
@@ -1050,14 +1048,14 @@
               Thus <m>5\vec u = \la 15/\sqrt{10},5/\sqrt{10}\ra</m> is the vector we seek.
               This is sketched in <xref ref="fig_vect5">Figure</xref>.
             </p>
-          
+
             <figure xml:id="fig_vect5">
               <caption>Graphing vectors in <xref ref="ex_vect5">Example</xref>. All vectors shown have their initial point at the origin.</caption>
             <!-- START figures/fig_vect5.tex -->
               <image xml:id="img_vect5">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}[&gt;=stealth]
 
                 \begin{axis}[
@@ -1075,7 +1073,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_vect5.tex END -->
@@ -1245,7 +1243,7 @@
         <image xml:id="img_vect6">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}[&gt;=stealth]
 
           \filldraw[thick,black,fill=gray!30] (-.5,0) -- (.5,0) -- (1,-1) -- (-1,-1) -- cycle;
@@ -1253,7 +1251,7 @@
 
           \draw [thick] (-1.5,1.5) -- (2,1.5);
           \clip (-1.5,1.5) rectangle (2,-1.25);
-          
+
           \draw [thick,rotate=120] (0,0) -- (3,0);
           \draw [thick,rotate=45] (0,0) -- (3,0);
           \draw [dashed] (0,0) -- (0,2);
@@ -1263,7 +1261,7 @@
           \draw [rotate=105] (1.2,0) node {\scriptsize $30^\circ$};
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_vect6.tex END -->
@@ -1313,7 +1311,7 @@
         <image xml:id="img_vect6b">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}[&gt;=stealth]
 
           \draw [thick,rotate=120,-&gt;] (0,0) -- (1.5,0) node [left] {\scriptsize $\vec F_1$};
@@ -1331,7 +1329,7 @@
           \draw [rotate=15] (1.8,0) node {\scriptsize $45^\circ$};
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_vect6b.tex END -->
@@ -1480,7 +1478,7 @@
         <image xml:id="img_vect8">
           <description></description>
           <latex-image>
-          
+
           \begin{tikzpicture}[&gt;=stealth]
 
           \draw [dashed] (-1.5,-.2) -- (2,-.2);
@@ -1492,7 +1490,7 @@
 
           \draw [thick] (-1.5,1.5) -- (2,1.5);
           \clip (-1.5,1.5) rectangle (2,-1.25);
-          
+
           \draw [thick,rotate=110] (0,0) -- (3,0);
           \draw [dashed] (0,0) -- (0,2);
           \draw [rotate=90,-&gt;] (1,0) arc (0:20:1);
@@ -1502,7 +1500,7 @@
           \draw [thick,-&gt;] (-1.45,-.5) -- (-.8,-.5) node [pos=.15,below] {\scriptsize $\vec F_w$};
 
           \end{tikzpicture}
-          
+
           </latex-image>
         </image>
         <!-- figures/fig_vect8.tex END -->
@@ -1547,7 +1545,7 @@
         Thus <m>F_c = \la -5,25\ra</m>.
         We can use this to find the magnitude <m>m</m>:
         <me>
-          m = \sqrt{(-5)^2+25^2} = 5\sqrt{26}\approx 25.5\text{ lb } 
+          m = \sqrt{(-5)^2+25^2} = 5\sqrt{26}\approx 25.5\text{ lb }
         </me>.
       </p>
 
@@ -1593,7 +1591,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1614,7 +1612,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1635,7 +1633,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1655,7 +1653,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1677,7 +1675,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1707,8 +1705,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector2D");
               Context()->constants->undefine(i,j);
@@ -1748,8 +1746,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector2D");
               Context()->constants->undefine(i,j);
@@ -1789,8 +1787,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector");
               Context()->constants->undefine(i,j,k);
@@ -1830,8 +1828,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector");
               Context()->constants->undefine(i,j,k);
@@ -1873,7 +1871,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -1931,7 +1929,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -1998,7 +1996,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2008,7 +2006,7 @@
                 <image xml:id="img_10_02_ex_11">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2025,7 +2023,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_11.tex END -->
@@ -2037,7 +2035,7 @@
                 <image xml:id="img_10_02_ex_11ansX">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2057,7 +2055,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_11ans.tex END -->
@@ -2069,7 +2067,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2079,7 +2077,7 @@
                 <image xml:id="img_10_02_ex_13">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2096,7 +2094,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_13.tex END -->
@@ -2108,7 +2106,7 @@
                 <image xml:id="img_10_02_ex_13ansX">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2128,7 +2126,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_13ans.tex END -->
@@ -2143,7 +2141,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2153,7 +2151,7 @@
                 <image xml:id="img_10_02_ex_14">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2180,7 +2178,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
               <!-- figures/fig_10_02_ex_14.tex END -->
@@ -2192,7 +2190,7 @@
                 <image xml:id="img_10_02_ex_14ansX">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2223,7 +2221,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_14ans.tex END -->
@@ -2235,7 +2233,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2245,7 +2243,7 @@
                 <image xml:id="img_10_02_ex_15">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2272,7 +2270,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
               <!-- figures/fig_10_02_ex_15.tex END -->
@@ -2284,7 +2282,7 @@
                 <image xml:id="img_10_02_ex_15ansX">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[&gt;=stealth]
 
                   \begin{axis}[
@@ -2314,7 +2312,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_10_02_ex_15ans.tex END -->
@@ -2337,10 +2335,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("sqrt(5)");
@@ -2376,10 +2374,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("sqrt(17)");
@@ -2415,10 +2413,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("sqrt(5)");
@@ -2454,10 +2452,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstantFunctions=>0);
               $normu=Formula("7");
@@ -2495,7 +2493,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2525,7 +2523,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -2547,7 +2545,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0);
@@ -2569,7 +2567,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2591,7 +2589,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2615,7 +2613,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2638,7 +2636,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
               Context("Vector2D");
               Context()->flags->set(reduceConstantFunctions=>0,reduceConstants=>0);
@@ -2661,7 +2659,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2701,7 +2699,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2721,7 +2719,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2741,7 +2739,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2764,7 +2762,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2800,7 +2798,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2821,7 +2819,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2842,7 +2840,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2862,7 +2860,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

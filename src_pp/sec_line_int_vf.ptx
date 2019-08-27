@@ -201,8 +201,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ x, x+y ⟩
 
               defaultpen(fontsize(8));
@@ -215,7 +213,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -234,7 +232,7 @@
               pen colorone;
               pen colortwo;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt;
                 colortwo = red+1.5pt;
                 } else
@@ -242,7 +240,7 @@
                 colorone = black+1.5pt;
                 colortwo = gray+1.5pt;
                 };
-                
+
               real f(real x) {return x;}
               pair F(real x) {return (x,f(x));}
 
@@ -321,8 +319,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ y, x ⟩
 
               defaultpen(fontsize(8));
@@ -335,7 +331,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -347,7 +343,7 @@
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
                 };
-                
+
               real f(real x) {return 2*x^2-1;}
               pair F(real x) {return (x,f(x));}
 
@@ -511,8 +507,6 @@
               import graph;
               size(150,150);
 
-              usepackage("amsmath");
-
               // vector field F = ⟨ 3(y-.5), 1 ⟩
 
               defaultpen(fontsize(8));
@@ -525,7 +519,7 @@
               pen mainvect;
               pen bgvect;
 
-              if(incolor) { 
+              if(incolor) {
                 colorone = blue+1.5pt+linejoin(0);
                 colortwo = red+1.5pt+linejoin(0);
                 mainvect = blue + linejoin(0);
@@ -537,7 +531,7 @@
                 mainvect = black + linejoin(0);
                 bgvect = rgb(.6,.6,.6)+linejoin(0);
                 };
-                
+
               pair xbounds=(-.2,1.2);
               pair ybounds=(-.2,1.2);
               real[] myxchoice={1};
@@ -662,8 +656,6 @@
               size(200,200,IgnoreAspect);
               currentprojection=orthographic(16.8,9.4,8.6);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={1};
@@ -852,7 +844,7 @@
           \draw (axis cs: -1.6,1.4) node {$R_1$}
                 (axis cs: 1.6,1.1) node {$R_2$}
                 (axis cs: 0,.6) node {$R_3$};
-                
+
           \addplot [firstcurvestyle,areastyle] coordinates {(-0.45,2.)(-0.4429,2.07)(-0.4788,2.134)(-0.5466,2.18)(-0.6142,2.212)(-0.6552,2.251)(-0.6695,2.31)(-0.6802,2.387)(-0.7106,2.456)(-0.766,2.497)(-0.8346,2.509)(-0.9034,2.506)(-0.9684,2.502)(-1.031,2.496)(-1.091,2.476)(-1.144,2.442)(-1.192,2.407)(-1.246,2.388)(-1.318,2.384)(-1.399,2.374)(-1.464,2.337)(-1.49,2.27)(-1.476,2.189)(-1.447,2.115)(-1.435,2.055)(-1.45,2.)(-1.477,1.94)(-1.491,1.874)(-1.482,1.809)(-1.457,1.749)(-1.426,1.691)(-1.389,1.634)(-1.339,1.59)(-1.273,1.57)(-1.2,1.576)(-1.135,1.586)(-1.081,1.573)(-1.03,1.528)(-0.9669,1.474)(-0.8941,1.445)(-0.8255,1.463)(-0.7738,1.519)(-0.737,1.586)(-0.702,1.64)(-0.6605,1.681)(-0.6167,1.722)(-0.5804,1.769)(-0.5524,1.823)(-0.5227,1.877)(-0.4848,1.935)(-0.45,2.)};
           \addplot [firstcurvestyle,-,smooth] coordinates {(-0.45,2.)(-0.4429,2.07)(-0.4788,2.134)(-0.5466,2.18)(-0.6142,2.212)(-0.6552,2.251)(-0.6695,2.31)(-0.6802,2.387)(-0.7106,2.456)(-0.766,2.497)(-0.8346,2.509)(-0.9034,2.506)(-0.9684,2.502)(-1.031,2.496)(-1.091,2.476)(-1.144,2.442)(-1.192,2.407)(-1.246,2.388)(-1.318,2.384)(-1.399,2.374)(-1.464,2.337)(-1.49,2.27)(-1.476,2.189)(-1.447,2.115)(-1.435,2.055)(-1.45,2.)(-1.477,1.94)(-1.491,1.874)(-1.482,1.809)(-1.457,1.749)(-1.426,1.691)(-1.389,1.634)(-1.339,1.59)(-1.273,1.57)(-1.2,1.576)(-1.135,1.586)(-1.081,1.573)(-1.03,1.528)(-0.9669,1.474)(-0.8941,1.445)(-0.8255,1.463)(-0.7738,1.519)(-0.737,1.586)(-0.702,1.64)(-0.6605,1.681)(-0.6167,1.722)(-0.5804,1.769)(-0.5524,1.823)(-0.5227,1.877)(-0.4848,1.935)(-0.45,2.)};
 
@@ -900,8 +892,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(0,-5,3);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -1006,8 +996,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(0,-5,3);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};

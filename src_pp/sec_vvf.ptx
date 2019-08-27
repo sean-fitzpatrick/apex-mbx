@@ -280,8 +280,6 @@
               currentprojection=orthographic(4.5,4.5,20);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={-1,1};

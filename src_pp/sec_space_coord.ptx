@@ -72,7 +72,7 @@
       <image xml:id="img_cartcoord1">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figcartcoord1.pdf in Chapter 10.1
@@ -81,8 +81,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(11,5,2.8);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-1,1,2,3};
@@ -132,7 +130,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          
+
         </asymptote>
       </image>
       <!-- figures/figcartcoord1_3D.asy END -->
@@ -175,7 +173,7 @@
       <image xml:id="img_cartcoord2">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figcartcoord2.pdf in Chapter 10
@@ -184,8 +182,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-2,2};
@@ -238,7 +234,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          
+
         </asymptote>
       </image>
       <!-- figures/figcartcoord2_3D.asy END -->
@@ -315,7 +311,7 @@
           <image xml:id="img_space1">
             <description></description>
             <asymptote>
-                          
+
               import graph3;
 
               //ASY file for figspace1.pdf in Chapter 10.1
@@ -324,8 +320,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,1);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2};
@@ -389,7 +383,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
           <!-- figures/figspace1_3D.asy END -->
@@ -513,7 +507,7 @@
           <image xml:id="img_spacexy_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figspacexy.pdf in Chapter 10
@@ -522,8 +516,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -572,7 +564,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
         <!-- figures/figspacexy_3D.asy END -->
@@ -593,7 +585,7 @@
           <image xml:id="img_spaceyz_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figspaceyz.pdf in Chapter 10
@@ -602,8 +594,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -652,7 +642,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
           <!-- figures/figspaceyz_3D.asy END -->
@@ -673,7 +663,7 @@
           <image xml:id="img_spacexz_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figspacexz.pdf in Chapter 10
@@ -682,8 +672,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -732,7 +720,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
         <!-- figures/figspacexz_3D.asy END -->
@@ -762,7 +750,7 @@
       <image xml:id="img_space2">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figspace2.pdf in Chapter 10.1
@@ -771,8 +759,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={-2,2};
@@ -821,7 +807,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          
+
         </asymptote>
       </image>
       <!-- figures/figspace2_3D.asy END -->
@@ -858,7 +844,7 @@
           <image xml:id="img_space3">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figspace3.pdf in Chapter 10.1
@@ -867,8 +853,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,2.5,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -924,7 +908,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figspace3_3D.asy END -->
@@ -973,7 +957,7 @@
           <image xml:id="img_spacecylinder1a_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figspacecylinder1.pdf in Chapter 10.1
@@ -982,8 +966,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-2,2};
@@ -1036,7 +1018,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
         <!-- figures/figspacecylinder1_3D.asy END -->
@@ -1057,7 +1039,7 @@
           <image xml:id="img_spacecylinder1b_3D">
             <description></description>
             <asymptote>
-            
+
             import graph3;
 
             //ASY file for figspacecylinder1b.pdf in Chapter 10
@@ -1066,8 +1048,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic(4,4,2);
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={-2,2};
@@ -1128,7 +1108,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            
+
           </asymptote>
           </image>
         <!-- figures/figspacecylinder1b_3D.asy END -->
@@ -1220,7 +1200,7 @@
                     <image xml:id="img_space4a1_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace4a.pdf in Chapter 10
@@ -1229,8 +1209,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1283,7 +1261,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                     <!-- figures/figspace4a_3D.asy END -->
@@ -1304,7 +1282,7 @@
                     <image xml:id="img_space4a2_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace4b.pdf in Chapter 10.1
@@ -1313,8 +1291,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1411,7 +1387,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace4b_3D.asy END -->
@@ -1432,7 +1408,7 @@
                     <image xml:id="img_space4a3_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace4c.pdf in Chapter 10.1
@@ -1441,8 +1417,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1495,7 +1469,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace4c_3D.asy END -->
@@ -1532,7 +1506,7 @@
                     <image xml:id="img_space4b1_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace4d.pdf in Chapter 10.1
@@ -1541,8 +1515,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(5,5,13);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1601,7 +1573,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                       <!-- figures/figspace4d_3D.asy END -->
@@ -1622,7 +1594,7 @@
                     <image xml:id="img_space4b2_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace4e.pdf in Chapter 10.1
@@ -1631,8 +1603,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(5,5,13);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1691,7 +1661,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                       <!-- figures/figspace4e_3D.asy END -->
@@ -1712,7 +1682,7 @@
                     <image xml:id="img_space4b3_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace4f.pdf in Chapter 10.1
@@ -1721,8 +1691,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(5,5,13);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -1775,7 +1743,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace4f_3D.asy END -->
@@ -1826,7 +1794,7 @@
         <image xml:id="img_surf_rev_introa_3D">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for figsurf_rev_intro.pdf in Chapter 10
@@ -1835,8 +1803,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic(4,5,2);
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={2,4};
@@ -1903,7 +1869,7 @@
             //draw(s,paleblue);
             //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
             //draw(mypath,2bp+blue);
-            
+
           </asymptote>
           </image>
         <!-- figures/figsurf_rev_intro_3D.asy END -->
@@ -1924,7 +1890,7 @@
           <image xml:id="img_surf_rev_introb_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figsurf_rev_introb.pdf in Chapter 10
@@ -1933,8 +1899,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,5,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={2,4};
@@ -1988,7 +1952,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
         <!-- figures/figsurf_rev_introb_3D.asy END -->
@@ -2077,7 +2041,7 @@
           <image xml:id="img_surfrev1a_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figsurfrev1a.pdf in Chapter 10
@@ -2086,8 +2050,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -2138,7 +2100,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
         <!-- figures/figsurfrev1a_3D.asy END -->
@@ -2159,7 +2121,7 @@
           <image xml:id="img_surfrev1b_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figsurfrev1b.pdf in Chapter 10
@@ -2168,8 +2130,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={-1,1};
@@ -2222,7 +2182,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
         <!-- figures/figsurfrev1b_3D.asy END -->
@@ -2306,7 +2266,7 @@
               <image xml:id="img_surfrev2a_3D">
                 <description></description>
                 <asymptote>
-                  
+
                   import graph3;
 
                   //ASY file for figsurfrev2a.pdf in Chapter 10
@@ -2315,8 +2275,6 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(4,4,.5);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-5,5};
@@ -2361,7 +2319,7 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figsurfrev2a_3D.asy END -->
@@ -2382,7 +2340,7 @@
               <image xml:id="img_surfrev2b_3D">
                 <description></description>
                 <asymptote>
-                  
+
                   import graph3;
 
                   //ASY file for figsurfrev2b.pdf in Chapter 10
@@ -2391,8 +2349,6 @@
                   //currentprojection=perspective(7,2,1);
                   currentprojection=orthographic(4,4,.5);
                   defaultrender.merge=true;
-
-                  usepackage("amsmath");
 
                   // setup and draw the axes
                   real[] myxchoice={-5,5};
@@ -2445,7 +2401,7 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figsurfrev2b_3D.asy END -->
@@ -2510,7 +2466,7 @@
       <image xml:id="img_quadric1">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_parb.pdf in Chapter 10.1
@@ -2519,8 +2475,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2587,7 +2541,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_parb_3D.asy END -->
@@ -2661,7 +2615,7 @@
       <image xml:id="img_quadric_par_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_par.pdf in Chapter 10
@@ -2670,8 +2624,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2724,7 +2676,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_par_3D.asy END -->
@@ -2768,7 +2720,7 @@
       <image xml:id="img_quadric_parb_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_parb.pdf in Chapter 10.1
@@ -2777,8 +2729,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2845,7 +2795,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_parb_3D.asy END -->
@@ -2884,7 +2834,7 @@
       <image xml:id="img_quadric_cone_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_cone.pdf in Chapter 10
@@ -2893,8 +2843,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,1);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -2947,7 +2895,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_cone_3D.asy END -->
@@ -3004,7 +2952,7 @@
       <image xml:id="img_quadric_coneb_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_coneb.pdf in Chapter 10.1
@@ -3013,8 +2961,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,1);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3081,7 +3027,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_coneb_3D.asy END -->
@@ -3098,7 +3044,7 @@
       <image xml:id="img_quadric_conec_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_conec.pdf in Chapter 10.1
@@ -3107,8 +3053,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,1);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3172,7 +3116,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_conec_3D.asy END -->
@@ -3205,7 +3149,7 @@
       <image xml:id="img_quadric_ellipsoid_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_ellipsoid.pdf in Chapter 10.1
@@ -3215,8 +3159,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3281,7 +3223,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_ellipsoid_3D.asy END -->
@@ -3325,7 +3267,7 @@
       <image xml:id="img_quadric_ellipsoidb_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_ellipsoidb.pdf in Chapter 10
@@ -3335,8 +3277,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3408,7 +3348,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_ellipsoidb_3D.asy END -->
@@ -3445,7 +3385,7 @@
       <image xml:id="img_quadric_hyp_one_sheet_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_one_sheet.pdf in Chapter 10.1
@@ -3456,8 +3396,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3524,7 +3462,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_one_sheet_3D.asy END -->
@@ -3568,7 +3506,7 @@
       <image xml:id="img_quadric_hyp_one_sheetb_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_one_sheetb.pdf in Chapter 10.1
@@ -3579,8 +3517,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3657,7 +3593,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_one_sheetb_3D.asy END -->
@@ -3690,7 +3626,7 @@
       <image xml:id="img_quadric_hyp_two_sheet_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_two_sheetb.pdf in Chapter 10.1
@@ -3701,8 +3637,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3781,7 +3715,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_two_sheet_3D.asy END -->
@@ -3825,7 +3759,7 @@
       <image xml:id="img_quadric_hyp_two_sheetb_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_two_sheetb.pdf in Chapter 10.1
@@ -3836,8 +3770,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(4,4,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -3917,7 +3849,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_two_sheetb_3D.asy END -->
@@ -3949,7 +3881,7 @@
       <image xml:id="img_quadric_hyp_par_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_par.pdf in Chapter 10.1
@@ -3960,8 +3892,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(2,5,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4033,7 +3963,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_par_3D.asy END -->
@@ -4077,7 +4007,7 @@
       <image xml:id="img_quadric_hyp_parb_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_parb.pdf in Chapter 10.1
@@ -4088,8 +4018,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(2,5,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4155,7 +4083,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_parb_3D.asy END -->
@@ -4172,7 +4100,7 @@
       <image xml:id="img_quadric_hyp_parc_3D">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figquadric_hyp_parb.pdf in Chapter 10.1
@@ -4183,8 +4111,6 @@
           //currentprojection=perspective(7,2,1);
           currentprojection=orthographic(2,5,2);
           defaultrender.merge=true;
-
-          usepackage("amsmath");
 
           // setup and draw the axes
           real[] myxchoice={};
@@ -4258,7 +4184,7 @@
           //draw(s,paleblue);
           //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
           //draw(mypath,2bp+blue);
-          
+
         </asymptote>
       </image>
       <!-- figures/figquadric_hyp_parc_3D.asy END -->
@@ -4297,16 +4223,16 @@
                 <m>\ds y=\frac{x^2}{4}+\frac{z^2}{16}</m>:
 
                 We first identify the quadric by pattern<ndash/>matching with the equations given previously. Only two surfaces have equations where one variable is raised to the first power, the elliptic paraboloid and the hyperbolic paraboloid. In the latter case, the other variables have different signs, so we conclude that this describes a hyperbolic paraboloid. As the variable with the first power is <m>y</m>, we note the paraboloid opens along the <m>y</m>-axis.
-              
+
                 To make a decent sketch by hand, we need only draw a few traces. In this case, the traces <m>x=0</m> and <m>z=0</m> form parabolas that outline the shape.
-              
+
                 <m>x=0</m>:	The trace is the parabola <m>y=z^2/16</m>
-              
+
                 <m>z=0</m>: 	The trace is the parabola <m>y=x^2/4</m>.
-              
+
                 Graphing each trace in the respective plane creates a sketch as shown in <xref ref="fig_space5a1_3D">Figure</xref>. This is enough to give an idea of what the paraboloid looks like. The surface is filled in <xref ref="fig_space5a2_3D">Figure</xref>.
               </p>
-              
+
               <figure xml:id="fig_space5a">
                 <caption>Sketching an elliptic paraboloid.</caption>
                 <sidebyside>
@@ -4325,7 +4251,7 @@
                     <image xml:id="img_space5a1_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace5ab.pdf in Chapter 10.1
@@ -4334,8 +4260,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(15,5,4.5);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={-4,4};
@@ -4399,7 +4323,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace5ab_3D.asy END -->
@@ -4420,7 +4344,7 @@
                     <image xml:id="img_space5a2_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace5a.pdf in Chapter 10.1
@@ -4429,8 +4353,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(15,5,4.5);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -4494,7 +4416,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace5a_3D.asy END -->
@@ -4509,13 +4431,13 @@
                 <m>\ds x^2+\frac{y^2}{9}+\frac{z^2}{4}=1:</m>
 
                 This is an ellipsoid. We can get a good idea of its shape by drawing the traces in the coordinate planes.
-              
+
                 <m>x=0</m>: 	The trace is the ellipse <m>\ds\frac{y^2}{9}+\frac{z^2}{4}=1</m>. The major axis is along the <m>y</m><ndash/>axis with length 6 (as <m>b=3</m>, the length of the axis is 6); the minor axis is along the <m>z</m>-axis with length 4.
-              
+
                 <m>y=0</m>:	The trace is the ellipse <m>\ds x^2+\frac{z^2}{4}=1</m>. The major axis is along the <m>z</m>-axis, and the minor axis has length 2 along the <m>x</m>-axis.
-              
+
                 <m>z=0</m>:	The trace is the ellipse <m>\ds x^2+\frac{y^2}{9}=1</m>, with major axis along the <m>y</m>-axis.
-              
+
                 Graphing each trace in the respective plane creates a sketch as shown in <xref ref="fig_space5b1_3D">Figure</xref>. Filling in the surface gives <xref ref="fig_space5b2_3D">Figure</xref>.
               </p>
 
@@ -4537,7 +4459,7 @@
                     <image xml:id="img_space5b1_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace5b.pdf in Chapter 10.1
@@ -4546,8 +4468,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={-3,3};
@@ -4615,7 +4535,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace5b_3D.asy END -->
@@ -4636,7 +4556,7 @@
                     <image xml:id="img_space5b2_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace5bb.pdf in Chapter 10.1
@@ -4645,8 +4565,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4,4,2);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -4714,7 +4632,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                 <!-- figures/figspace5bb_3D.asy END -->
@@ -4728,11 +4646,11 @@
                 <m>\ds z=y^2-x^2</m>:
 
                 This defines a hyperbolic paraboloid, very similar to the one shown in the gallery of quadric sections. Consider the traces in the <m>y-z</m> and <m>x-z</m> planes:
-              
+
                 <m>x=0</m>: 	The trace is <m>z=y^2</m>, a parabola opening up in the <m>y-z</m> plane.
-              
+
                 <m>y=0</m>: 	The trace is <m>z=-x^2</m>, a parabola opening down in the <m>x-z</m> plane.
-              
+
                 Sketching these two parabolas gives a sketch like that in <xref ref="fig_space5c1_3D">Figure</xref>, and filling in the surface gives a sketch like <xref ref="fig_space5c2_3D">Figure</xref>.
               </p>
 
@@ -4754,7 +4672,7 @@
                     <image xml:id="img_space5c1_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace5c.pdf in Chapter 10.1
@@ -4763,8 +4681,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4.5,3,2.7);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={-1,1};
@@ -4828,7 +4744,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace5c_3D.asy END -->
@@ -4849,7 +4765,7 @@
                     <image xml:id="img_space5c2_3D">
                       <description></description>
                       <asymptote>
-                        
+
                         import graph3;
 
                         //ASY file for figspace5cb.pdf in Chapter 10.1
@@ -4858,8 +4774,6 @@
                         //currentprojection=perspective(7,2,1);
                         currentprojection=orthographic(4.5,3,2.7);
                         defaultrender.merge=true;
-
-                        usepackage("amsmath");
 
                         // setup and draw the axes
                         real[] myxchoice={};
@@ -4923,7 +4837,7 @@
                         //draw(s,paleblue);
                         //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                         //draw(mypath,2bp+blue);
-                        
+
                       </asymptote>
                     </image>
                   <!-- figures/figspace5cb_3D.asy END -->
@@ -4960,7 +4874,7 @@
             <image xml:id="img_space6">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figspace6.pdf in Chapter 10.1
@@ -4969,8 +4883,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic(4,9.5,5.7);
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-1,1};
@@ -5032,7 +4944,7 @@
                 //draw(s,paleblue);
                 //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                 //draw(mypath,2bp+blue);
-                
+
               </asymptote>
             </image>
             <!-- figures/figspace6_3D.asy END -->
@@ -5118,7 +5030,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5139,8 +5051,8 @@
         <webwork seed="1">
             <pg-macros><macro-file>contextArbitraryString.pl</macro-file></pg-macros>
             <setup>
- 
- 
+
+
             <pg-code>
               Context("ArbitraryString");
               $line=Compute("line");
@@ -5177,7 +5089,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5198,7 +5110,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               $surfaces=PopUp(['?','Elliptic Paraboloid','Elliptic Cone','Ellipsoid','Hyperboloid of One Sheet','Hyperboloid of Two Sheets','Hyperbolic Paraboloid'],6);
             </pg-code>
@@ -5215,7 +5127,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5237,7 +5149,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5261,10 +5173,10 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
- 
- 
- 
+
+
+
+
           <pg-code>
             Context("Point");
             $A=Point("(1,4,2)");
@@ -5322,7 +5234,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -5346,8 +5258,8 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
- 
+
+
           <pg-code>
             Context("Point");
             $center=Point("(4,-1,0)");
@@ -5376,8 +5288,8 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
- 
+
+
           <pg-code>
             Context("Point");
             $center=Point("(-2,1,2)");
@@ -5416,7 +5328,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5436,7 +5348,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5458,7 +5370,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5481,7 +5393,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -5514,7 +5426,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5538,7 +5450,7 @@
                 <image xml:id="img_10_01_ex_15_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_153D.asy in Chapter 10
@@ -5547,8 +5459,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -5629,7 +5539,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_15_3D.asy END -->
@@ -5641,7 +5551,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5665,7 +5575,7 @@
                 <image xml:id="img_10_01_ex_16_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_173D.pdf in Chapter 10
@@ -5674,8 +5584,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={};
@@ -5738,7 +5646,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
                <!-- figures/fig10_01_ex_16_3D.asy END -->
@@ -5750,7 +5658,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5774,7 +5682,7 @@
                 <image xml:id="img_10_01_ex_17_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_173D.pdf in Chapter 10
@@ -5783,8 +5691,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-2,2};
@@ -5858,7 +5764,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_17_3D.asy END -->
@@ -5870,7 +5776,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -5894,7 +5800,7 @@
                 <image xml:id="img_10_01_ex_18_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_20.pdf in Chapter 10.1
@@ -5903,8 +5809,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(-8,41,2.5);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-10,10};
@@ -5986,7 +5890,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_18_3D.asy END -->
@@ -6008,7 +5912,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(x=>'Real',y=>'Real',z=>'Real');
@@ -6031,7 +5935,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(x=>'Real',y=>'Real',z=>'Real');
@@ -6053,7 +5957,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(x=>'Real',y=>'Real',z=>'Real');
@@ -6075,7 +5979,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->are(x=>'Real',y=>'Real',z=>'Real');
@@ -6107,7 +6011,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6126,7 +6030,7 @@
                 <image xml:id="img_10_01_ex_19_3D">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_19.pdf in Chapter 10.1
@@ -6135,8 +6039,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(3,12,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={1};
@@ -6193,10 +6095,10 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
-              <!-- figures/fig10_01_ex_19_3D.asy END -->        
+              <!-- figures/fig10_01_ex_19_3D.asy END -->
                 <p>
                   (a)  <m>\ds x=y^2+\frac{z^2}{9}</m>    (b)  <m>\ds x=y^2+\frac{z^2}{3}</m>
                 </p>
@@ -6213,7 +6115,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6232,7 +6134,7 @@
                 <image xml:id="img_10_01_ex_20_3D">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_20.pdf in Chapter 10.1
@@ -6241,8 +6143,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(5,3,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6306,7 +6206,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
               <!-- figures/fig10_01_ex_20_3D.asy END -->
@@ -6326,7 +6226,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6345,7 +6245,7 @@
                 <image xml:id="img_10_01_ex_21_3D">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_21.pdf in Chapter 10.1
@@ -6354,8 +6254,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6412,13 +6310,13 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
               <!-- figures/fig10_01_ex_21_3D.asy END -->
                 <p>
                   (a)  <m>\ds x^2+\frac{y^2}3+\frac{z^2}2=1</m>    (b)  <m>\ds x^2+\frac{y^2}9+\frac{z^2}4=1</m>
-                </p> 
+                </p>
               </sidebyside>
             </statement>
             <answer>
@@ -6432,7 +6330,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6451,7 +6349,7 @@
                 <image xml:id="img_10_01_ex_22_3D">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_22.pdf in Chapter 10.1
@@ -6460,8 +6358,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-2,2};
@@ -6525,7 +6421,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
               <!-- figures/fig10_01_ex_22_3D.asy END -->
@@ -6554,7 +6450,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6578,7 +6474,7 @@
                 <image xml:id="img_10_01_ex_28_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_283D.asy in Chapter 10
@@ -6587,8 +6483,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(5,3,1);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6638,7 +6532,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_28_3D.asy END -->
@@ -6650,7 +6544,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6674,7 +6568,7 @@
                 <image xml:id="img_10_01_ex_24_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -6683,8 +6577,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(5,5,1);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6733,7 +6625,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_24_3D.asy END -->
@@ -6745,7 +6637,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6769,7 +6661,7 @@
                 <image xml:id="img_10_01_ex_23_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_233D.asy in Chapter 10
@@ -6778,8 +6670,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(4,4,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -6828,7 +6718,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_23_3D.asy END -->
@@ -6840,7 +6730,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6864,7 +6754,7 @@
                 <image xml:id="img_10_01_ex_27_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -6873,8 +6763,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(5,5,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-.25,.25};
@@ -6930,7 +6818,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_27_3D.asy END -->
@@ -6942,7 +6830,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -6966,7 +6854,7 @@
                 <image xml:id="img_10_01_ex_26_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -6975,8 +6863,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(13,5,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-3,3};
@@ -7025,7 +6911,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_26_3D.asy END -->
@@ -7037,7 +6923,7 @@
       <exercise>
         <!-- <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup> -->
@@ -7061,7 +6947,7 @@
                 <image xml:id="img_10_01_ex_25_3DX">
                   <description></description>
                   <asymptote>
-                    
+
                     import graph3;
 
                     //ASY file for fig10_01_ex_263D.asy in Chapter 10
@@ -7070,8 +6956,6 @@
                     //currentprojection=perspective(7,2,1);
                     currentprojection=orthographic(5,5,2);
                     defaultrender.merge=true;
-
-                    usepackage("amsmath");
 
                     // setup and draw the axes
                     real[] myxchoice={-1,1};
@@ -7120,7 +7004,7 @@
                     //draw(s,paleblue);
                     //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                     //draw(mypath,2bp+blue);
-                    
+
                   </asymptote>
                 </image>
             <!-- figures/fig10_01_ex_25_3D.asy END -->

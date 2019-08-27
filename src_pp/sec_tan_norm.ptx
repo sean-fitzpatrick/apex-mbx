@@ -96,8 +96,6 @@
               currentprojection=orthographic(10,10,43);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -148,7 +146,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtannorm1_3D.asy END -->
@@ -217,7 +215,7 @@
           <image xml:id="img_tannorm2">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \begin{axis}[
@@ -234,7 +232,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_tannorm2.tex END -->
@@ -263,7 +261,7 @@
       <image xml:id="img_tannorm_intro1">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[&gt;=stealth]
 
         \begin{axis}[
@@ -282,7 +280,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_tannorm_intro1.tex END -->
@@ -405,8 +403,6 @@
               currentprojection=orthographic(10,10,34);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-3,3};
               real[] myychoice={-3,3};
@@ -464,7 +460,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figtannorm3_3D.asy END -->
@@ -536,7 +532,7 @@
           <image xml:id="img_tannorm4">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \begin{axis}[
@@ -559,7 +555,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_tannorm4.tex END -->
@@ -825,7 +821,7 @@
           <image xml:id="img_tannorm6">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -844,7 +840,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_tannorm6.tex END -->
@@ -889,12 +885,12 @@
           <image xml:id="img_tannorm7b">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
             ymin=-10,ymax=260,
-            xmin=-10,xmax=310 
+            xmin=-10,xmax=310
             ]
 
             \addplot+ [-,domain=0:5,samples=40] ({64*cos(30)*x},{-16*x^2+64*sin(30)*x+240});
@@ -914,7 +910,7 @@
             \draw (B) node [shift={(-16pt,8pt)}] {\scriptsize $t=5$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_tannorm7b.tex END -->
@@ -1078,7 +1074,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1098,7 +1094,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1128,7 +1124,7 @@
       <exercise xml:id="x11_04_ex_05">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1149,8 +1145,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1192,7 +1188,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1216,8 +1212,8 @@
       <exercise xml:id="x11_04_ex_08">
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1271,7 +1267,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1294,7 +1290,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1317,7 +1313,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1343,7 +1339,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(t=>'Real');
@@ -1377,7 +1373,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1398,7 +1394,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1419,7 +1415,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1440,7 +1436,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1490,7 +1486,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1522,7 +1518,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1554,7 +1550,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1586,7 +1582,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1627,7 +1623,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1648,7 +1644,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real');
@@ -1672,7 +1668,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1693,7 +1689,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(t=>'Real',a=>'Real');
@@ -1729,7 +1725,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1767,12 +1763,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1857,7 +1853,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1896,12 +1892,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1986,7 +1982,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2027,12 +2023,12 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
             <pg-code>
               Context()->variables->are(t=>'Real');
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);

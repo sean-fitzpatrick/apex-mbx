@@ -31,7 +31,7 @@
           <image xml:id="img_vvfarc_intro1a">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -50,7 +50,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_vvfarc_intro1.tex END -->
@@ -62,7 +62,7 @@
           <image xml:id="img_vvfarc_intro1b">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -85,7 +85,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_vvfarc_intro1b.tex END -->
@@ -195,7 +195,7 @@
           <image xml:id="img_vvfarc1">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -213,13 +213,13 @@
                       (axis cs: .8,4.4) circle (1.5pt) node [right,secondcolor] {\scriptsize $s=3$}
                       (axis cs: 1.4,5.2) circle (1.5pt) node [right,secondcolor] {\scriptsize $s=4$}
                       (axis cs: 2,6) circle (1.5pt) node [right,secondcolor] {\scriptsize $s=5$};
- 
+
             \draw (axis cs:-1,2) node [secondcolor,shift={(10pt,-5pt)}]  {\scriptsize $s=0$};
 
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_vvfarc1.tex END -->
@@ -323,7 +323,7 @@
           <image xml:id="img_curvature_introa">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
@@ -341,7 +341,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_curvature_intro.tex END -->
@@ -353,7 +353,7 @@
           <image xml:id="img_curvature_introb">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \begin{axis}[
@@ -377,7 +377,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_curvature_introb.tex END -->
@@ -666,7 +666,7 @@
       <image xml:id="img_curvature_osculate">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}
 
         \begin{axis}[
@@ -686,7 +686,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_curvature_introc.tex END -->
@@ -721,14 +721,14 @@
           <image xml:id="img_curvature3">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}
 
             \begin{axis}[
             ymin=-2.5,ymax=10.1,
             xmin=-10.2,xmax=4.9
             ]
-           
+
             \addplot+ [-,domain=-3.2:3.2,samples=40] ({x},{x^2});
             \addplot [secondcurvestyle,-,solid,domain=0:360] ({.5*cos(x)},{.5*sin(x)+.5});
             \addplot [secondcurvestyle,-,solid,domain=0:360,samples=70] ({5.6*cos(x)-4},{5.6*sin(x)+3.5});
@@ -736,7 +736,7 @@
             \end{axis}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_curvature3.tex END -->
@@ -783,7 +783,7 @@
               <image xml:id="img_curvature4a">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -796,7 +796,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_curvature4a.tex END -->
@@ -817,7 +817,7 @@
               <image xml:id="img_curvature4b_3D">
                 <description></description>
                 <asymptote>
-                  
+
                   import graph3;
 
                   //ASY file for figcurvature43D.asy in Chapter 11
@@ -827,8 +827,6 @@
                   currentprojection=orthographic(4,4,2);
                   defaultrender.merge=true;
 
-                  usepackage("amsmath");
-                  
                   // setup and draw the axes
                   real[] myxchoice={};
                   real[] myychoice={};
@@ -886,7 +884,7 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figcurvature4_3D.asy END -->
@@ -991,7 +989,7 @@
       Now compare the formula for
       <m>a_\text{N}</m> above to the formula for curvature in <xref ref="thm_curvature_formulas">Theorem</xref>:
       <me>
-        a_\text{N}  = \frac{\norm{\vvt\times \vat}}{\norm{\vvt}} \text{ and }  \kappa = \frac{\norm{\vrp(t)\times\vrp'(t)}}{\norm{\vrp(t)}^3}=\frac{\norm{\vvt\times \vat}}{\norm{\vvt}^3} 
+        a_\text{N}  = \frac{\norm{\vvt\times \vat}}{\norm{\vvt}} \text{ and }  \kappa = \frac{\norm{\vrp(t)\times\vrp'(t)}}{\norm{\vrp(t)}^3}=\frac{\norm{\vvt\times \vat}}{\norm{\vvt}^3}
       </me>.
     </p>
 
@@ -1142,7 +1140,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1162,7 +1160,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1183,7 +1181,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1203,7 +1201,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1225,7 +1223,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1245,7 +1243,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1281,7 +1279,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1301,8 +1299,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector2D");
               Context()->variables->are(s=>'Real',t=>'Real');
@@ -1334,7 +1332,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1355,8 +1353,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               Context("Vector");
               Context()->variables->are(s=>'Real',t=>'Real');
@@ -1416,7 +1414,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1442,10 +1440,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $comp=PopUp(['?','greater than', 'equal to', 'less than'],1);
@@ -1476,7 +1474,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1501,7 +1499,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1526,10 +1524,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1561,7 +1559,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1586,7 +1584,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1612,10 +1610,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1647,7 +1645,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1672,10 +1670,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1707,7 +1705,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1732,10 +1730,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               Context()->variables->are(t=>'Real');
@@ -1778,7 +1776,7 @@
         <webwork seed="1">
             <pg-macros><macro-file>parserRoot.pl</macro-file></pg-macros>
             <setup>
- 
+
             <pg-code>
               parser::Root->Enable;
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -1800,7 +1798,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1820,7 +1818,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $max=Formula("1/4");
@@ -1841,7 +1839,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $max=List(Formula("sqrt(5)"),Formula("-sqrt(5)"));
@@ -1872,7 +1870,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1892,7 +1890,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $radius=Formula("5sqrt(10)");
@@ -1913,7 +1911,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1933,7 +1931,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $radius=Formula("1/45");
@@ -1965,7 +1963,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1986,7 +1984,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->set(x=>{limits=>[2,4]});
@@ -2010,7 +2008,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2031,7 +2029,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("ImplicitEquation");
               Context()->variables->set(x=>{limits=>[-1,2]});

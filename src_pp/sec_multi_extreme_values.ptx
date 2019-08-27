@@ -202,8 +202,6 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={2};
               real[] myychoice={2};
@@ -266,7 +264,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme1_3D.asy END -->
@@ -333,8 +331,6 @@
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-2,2};
               real[] myychoice={-2,2};
@@ -397,7 +393,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme2_3D.asy END -->
@@ -479,8 +475,6 @@
               currentprojection=orthographic(3,10,9);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-1,1};
               real[] myychoice={2};
@@ -544,7 +538,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme3_3D.asy END -->
@@ -876,8 +870,6 @@
               currentprojection=orthographic(24,.7,11.5);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-2};
               real[] myychoice={-0.2,0.2,0.4};
@@ -940,7 +932,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figmulti_extreme5_3D.asy END -->
@@ -1052,8 +1044,6 @@
                   currentprojection=orthographic(5.6,-7.8,20.3);
                   defaultrender.merge=true;
 
-                  usepackage("amsmath");
-
                   // setup and draw the axes
                   real[] myxchoice={-1,2};
                   real[] myychoice={-2,1,2};
@@ -1124,7 +1114,7 @@
                   //draw(s,paleblue);
                   //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
                   //draw(mypath,2bp+blue);
-                  
+
                 </asymptote>
               </image>
             <!-- figures/figconopt1_3D.asy END -->
@@ -1136,7 +1126,7 @@
               <image xml:id="img_conopt1b">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}
 
                 \begin{axis}[
@@ -1157,7 +1147,7 @@
                 \end{axis}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_conopt1b.tex END -->
@@ -1296,8 +1286,6 @@
               currentprojection=orthographic(2.6,-7.,24);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={-1,2};
               real[] myychoice={-2,1,2};
@@ -1375,7 +1363,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figconopt1c_3D.asy END -->
@@ -1505,8 +1493,6 @@
               currentprojection=orthographic(176,-2075,580);
               defaultrender.merge=true;
 
-              usepackage("amsmath");
-
               // setup and draw the axes
               real[] myxchoice={20};
               real[] myychoice={50,100};
@@ -1578,7 +1564,7 @@
               //draw(s,paleblue);
               //draw(s,lightblue,meshpen=black+thick(),nolight,render(merge=true));
               //draw(mypath,2bp+blue);
-              
+
             </asymptote>
           </image>
           <!-- figures/figconopt2_3D.asy END -->
@@ -1624,8 +1610,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1646,8 +1632,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1666,8 +1652,8 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
+
+
             <pg-code>
               $true=PopUp(['?','True','False'],1);
               $false=PopUp(['?','True','False'],2);
@@ -1686,7 +1672,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1721,7 +1707,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1743,10 +1729,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $max=List("None");
@@ -1811,7 +1797,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1832,10 +1818,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $max=List("(0,0)");
@@ -1900,7 +1886,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1927,10 +1913,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $max=List("(-1,-2)");
@@ -1995,7 +1981,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2018,10 +2004,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $max=List("(0,-3)");
@@ -2086,7 +2072,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2116,10 +2102,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $max=List("None");
@@ -2194,10 +2180,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $maxout = Compute("3");
@@ -2256,10 +2242,10 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
- 
- 
- 
+
+
+
+
             <pg-code>
               Context("Point");
               $maxout = Compute("25/28");
@@ -2311,7 +2297,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2364,7 +2350,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>

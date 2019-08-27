@@ -25,7 +25,7 @@
     <image xml:id="img_cross1">
       <description></description>
       <asymptote>
-        
+
         import graph3;
 
         //ASY file for figcross1.asy in Chapter 7
@@ -34,8 +34,6 @@
         //currentprojection=perspective(7,2,1);
         currentprojection=orthographic(3.4,5.4,.9);
         defaultrender.merge=true;
-
-        usepackage("amsmath");
 
         // setup and draw the axes
         real[] myxchoice={1,2};
@@ -115,7 +113,7 @@
 
         //pen p=rgb(0,0,1);
         //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-        
+
       </asymptote>
     </image>
     <!-- figures/figcross1_3D.asy END -->
@@ -202,7 +200,7 @@
         <image xml:id="img_disk0">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for fig13_06_ex_143D.asy in Chapter 13
@@ -211,8 +209,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((8.1,15.5,23.4),(0,1,0),(0,0,0),1,(-0.13,0.0046));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             //(-0.01,0.061,-0.029)
 
@@ -292,7 +288,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          
+
           </asymptote>
         </image>
         <!-- figures/figcross_area1_3D.asy END -->
@@ -338,7 +334,7 @@
         <image xml:id="img_disk0a">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for fig13_06_ex_143D.asy in Chapter 13
@@ -347,8 +343,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((8.1,15.5,23.4),(0,1,0),(0,0,0),1,(-0.13,0.0046));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             //(-0.01,0.061,-0.029)
 
@@ -467,7 +461,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            
+
           </asymptote>
         </image>
         <!-- figures/figcross_area1a_3D.asy END -->
@@ -593,7 +587,7 @@
             <image xml:id="img_disk1a_3D">
               <description></description>
               <asymptote>
-            
+
                 import graph3;
 
                 //ASY file for figdisk1.asy in Chapter 7
@@ -602,8 +596,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((18,7.7,21.1),(0,1,0),(0,0,0),1,(-0.088,.0039));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
 
                 //(-0.01,0.061,-0.029)
@@ -679,7 +671,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
               </asymptote>
             </image>
           <!-- figures/figdisk1_3D.asy END -->
@@ -700,7 +692,7 @@
             <image xml:id="img_disk1b_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figdisk1b.asy in Chapter 7
@@ -709,8 +701,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((18,7.7,21.1),(0,1,0),(0,0,0),1,(-0.088,.0039));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 //(-0.01,0.061,-0.029)
 
@@ -784,7 +774,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
             <!-- figures/figdisk1b_3D.asy END -->
@@ -871,7 +861,7 @@
             <image xml:id="img_disk2a_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figdisk1a.asy in Chapter 7
@@ -880,8 +870,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((24.2,2.9,24.5),(0,1,0),(0,0,0),.95,(0.011,0.0033));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-2,-1,1,2};
@@ -958,7 +946,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figdisk1a_3D.asy END -->
@@ -979,7 +967,7 @@
             <image xml:id="img_disk2b_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figdisk2a.asy in Chapter 7
@@ -988,8 +976,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((24.2,2.9,24.5),(0,1,0),(0,0,0),.95,(0.011,0.0033));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-2,-1,1,2};
@@ -1066,7 +1052,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figdisk2a_3D.asy END -->
@@ -1117,7 +1103,7 @@
         <image xml:id="img_washeridea1a_3D">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -1126,8 +1112,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((10.17,5.3,46),(0,1,0),(0,0,0),1,(-0.0999,0.0072));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={};
@@ -1219,7 +1203,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            
+
           </asymptote>
         </image>
         <!-- figures/figwasher_idea_a_3D.asy END -->
@@ -1240,7 +1224,7 @@
         <image xml:id="img_washeridea1b_3D">
           <description></description>
           <asymptote>
-            
+
             import graph3;
 
             //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -1249,8 +1233,6 @@
             //currentprojection=perspective(7,2,1);
             currentprojection=orthographic((10.17,5.3,46),(0,1,0),(0,0,0),1,(-0.0999,0.0072));
             defaultrender.merge=true;
-
-            usepackage("amsmath");
 
             // setup and draw the axes
             real[] myxchoice={};
@@ -1373,7 +1355,7 @@
 
             //pen p=rgb(0,0,1);
             //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-            
+
           </asymptote>
         </image>
         <!-- figures/figwasher_idea_b_3D.asy END -->
@@ -1408,7 +1390,7 @@
     <image xml:id="img_washeridea2_3D">
       <description></description>
       <asymptote>
-        
+
         import graph3;
 
         //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -1417,8 +1399,6 @@
         //currentprojection=perspective(7,2,1);
         currentprojection=orthographic((10.17,5.3,46),(0,1,0),(0,0,0),1,(-0.0999,0.0072));
         defaultrender.merge=true;
-
-        usepackage("amsmath");
 
         // setup and draw the axes
         real[] myxchoice={};
@@ -1524,7 +1504,7 @@
 
         //pen p=rgb(0,0,1);
         //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-        
+
       </asymptote>
     </image>
     <!-- figures/figwasher_idea_c_3D.asy END -->
@@ -1603,7 +1583,7 @@
             <image xml:id="img_wash1a_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -1612,8 +1592,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((10.17,5.3,46),(0,1,0),(0,0,0),1,(-0.0999,0.0072));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1,2,3};
@@ -1674,7 +1652,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figwash1_3D.asy END -->
@@ -1695,7 +1673,7 @@
             <image xml:id="img_wash1b_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -1704,8 +1682,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((10.17,5.3,46),(0,1,0),(0,0,0),1,(-0.0999,0.0072));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1,2,3};
@@ -1780,7 +1756,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figwash1c_3D.asy END -->
@@ -1801,7 +1777,7 @@
             <image xml:id="img_wash1c_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwash1_3D.asy in Chapter 7
@@ -1810,8 +1786,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((10.17,5.3,46),(0,1,0),(0,0,0),1,(-0.0999,0.0072));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={1,2,3};
@@ -1891,7 +1865,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           <!-- figures/figwash1b_3D.asy END -->
@@ -1948,7 +1922,7 @@
             <image xml:id="img_wash2a_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -1957,8 +1931,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0.029,-0.015));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-1,-2,1,2};
@@ -2042,7 +2014,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           </figure>
@@ -2062,7 +2034,7 @@
             <image xml:id="img_wash2b_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -2071,8 +2043,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0.029,-0.015));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-1,-2,1,2};
@@ -2153,7 +2123,7 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
           </figure>
@@ -2173,7 +2143,7 @@
             <image xml:id="img_wash2c_3D">
               <description></description>
               <asymptote>
-                
+
                 import graph3;
 
                 //ASY file for figwasher_idea_a_3D.asy in Chapter 7
@@ -2182,8 +2152,6 @@
                 //currentprojection=perspective(7,2,1);
                 currentprojection=orthographic((13.6,14.55,43),(0,1,0),(0,0,0),1,(0.029,-0.015));
                 defaultrender.merge=true;
-
-                usepackage("amsmath");
 
                 // setup and draw the axes
                 real[] myxchoice={-1,-2,1,2};
@@ -2273,11 +2241,11 @@
 
                 //pen p=rgb(0,0,1);
                 //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                
+
               </asymptote>
             </image>
             </figure>
-          <!-- figures/figwash2c_3D.asy END -->    
+          <!-- figures/figwash2c_3D.asy END -->
         </sidebyside>
       </figure>
 
@@ -2356,7 +2324,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2376,7 +2344,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2397,7 +2365,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2432,7 +2400,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2442,7 +2410,7 @@
                 <image xml:id="img_07_02_ex_05">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2457,7 +2425,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_05.tex END -->
@@ -2474,7 +2442,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2484,7 +2452,7 @@
                 <image xml:id="img_07_02_ex_06">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2499,7 +2467,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_06.tex END -->
@@ -2516,7 +2484,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2526,7 +2494,7 @@
                 <image xml:id="img_07_02_ex_07">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2541,7 +2509,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_07.tex END -->
@@ -2558,7 +2526,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2568,7 +2536,7 @@
                 <image xml:id="img_07_02_ex_04">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2587,7 +2555,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_04.tex END -->
@@ -2614,7 +2582,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2624,7 +2592,7 @@
                 <image xml:id="img_07_02_ex_09">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2639,7 +2607,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_09.tex END -->
@@ -2656,7 +2624,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2666,7 +2634,7 @@
                 <image xml:id="img_07_02_ex_10">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2681,7 +2649,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_10.tex END -->
@@ -2698,7 +2666,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2708,7 +2676,7 @@
                 <image xml:id="img_07_02_ex_11">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2723,7 +2691,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_11.tex END -->
@@ -2745,7 +2713,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2755,7 +2723,7 @@
                 <image xml:id="img_07_02_ex_08">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}
 
                   \begin{axis}[
@@ -2774,7 +2742,7 @@
                   \end{axis}
 
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
             <!-- figures/fig_07_02_ex_08.tex END -->
@@ -2801,7 +2769,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2878,7 +2846,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -2954,7 +2922,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3031,7 +2999,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3095,7 +3063,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3160,7 +3128,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3249,7 +3217,7 @@
       <exercise xml:id="ex_07_02_ex_18">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3262,7 +3230,7 @@
                 <image xml:id="img_07_02_ex_08X">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[scale=.5]
 
                   \begin{scope}[xscale=2]
@@ -3296,7 +3264,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3310,7 +3278,7 @@
                 <image xml:id="img_07_02_ex_08X1">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[scale=.5]
 
                   \begin{scope}[xscale=2]
@@ -3323,7 +3291,7 @@
 
                   \draw [fill=black] (0,0) circle (1pt) -- node [pos=.5,above] { 5} (2,0);
                   \draw [thick] (-2,0.2) -- (2,4)-- node [pos=.5,rotate=-90,above] { 10}(2,0);
-                  
+
                   \end{tikzpicture}
 
                   </latex-image>
@@ -3343,7 +3311,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3357,7 +3325,7 @@
                 <image xml:id="img_07_02_ex_08X2">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[scale=.75]
 
                   \draw [thick](-1,0) -- (1,0) -- (0,3)--cycle;
@@ -3387,7 +3355,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -3401,17 +3369,17 @@
                 <image xml:id="img_07_02_ex_08X3">
                   <description></description>
                   <latex-image>
-                  
+
                   \begin{tikzpicture}[x={(1,0)},z={(0,1)},y={(.5,.87)},scale=.4]
 
                   \draw [thick] (0,0,0) -- node[pos=.5,below] {10} (10,0,0) -- (10,2.5,5) -- (10,5,0) -- node [pos=.5,below right] { 5} (10,0,0)
                                 (0,0,0) -- node [pos=.5,left] {5} (0,0,5) -- (10,2.5,5) -- (0,5,5) -- node [pos=.5,left] { 5} (0,0,5);
-  
+
                   \draw [thick,dashed] (0,0,0) -- (0,5,0) -- (0,5,5)
                                       (0,5,0) -- (10,5,0);
-                        
+
                   \end{tikzpicture}
-                  
+
                   </latex-image>
                 </image>
               </sidebyside>

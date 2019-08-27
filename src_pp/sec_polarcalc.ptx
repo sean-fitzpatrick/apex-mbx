@@ -1130,8 +1130,6 @@
                   currentprojection=orthographic(4,-8,2);
                   defaultrender.merge=true;
 
-                  usepackage("amsmath");
-
                   // setup and draw the axes
                   real[] myxchoice={1};
                   real[] myychoice={};
@@ -1955,7 +1953,7 @@
               $area=Formula("pi+3sqrt(3)");
             </pg-code>
             </setup>
-          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->            
+          <!-- can't use &#xe7; in a WW. It leads to ç, which is not in the base64 charset -->
             <statement>
               <p>
                 Find the area enclosed between the inner and outer loop of the limacon <m>r=1+2\cos(\theta)</m>.

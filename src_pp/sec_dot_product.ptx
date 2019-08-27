@@ -192,7 +192,7 @@
           <image xml:id="img_dotpanglea">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \draw [rotate=-15,-&gt;] (0,0) -- (2,0) node (A) [right] {\scriptsize $\vec u$};
@@ -201,7 +201,7 @@
             \draw [rotate=10] (.9,0) node {\scriptsize $\theta$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_dotpangle.tex END -->
@@ -222,7 +222,7 @@
           <image xml:id="img_dotpangleb_3D">
             <description></description>
             <asymptote>
-              
+
               import graph3;
 
               //ASY file for figdotpangle3D.asy in Chapter 10
@@ -231,8 +231,6 @@
               //currentprojection=perspective(7,2,1);
               currentprojection=orthographic(4,4,2);
               defaultrender.merge=true;
-
-              usepackage("amsmath");
 
               // setup and draw the axes
               real[] myxchoice={};
@@ -292,7 +290,7 @@
 
               //pen p=rgb(0,0,1);
               //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-              
+
             </asymptote>
           </image>
         <!-- figures/figdotpangle3D_3D.asy END -->
@@ -325,7 +323,7 @@
           <m>\mathbb{R}^2</m> or <m>\mathbb{R}^3</m>.
           Then
           <me>
-            \dotp uv = \norm{\vec u}\,\norm{\vec v} \cos(\theta) 
+            \dotp uv = \norm{\vec u}\,\norm{\vec v} \cos(\theta)
           </me>,
           where <m>\theta</m>, <m>0\leq\theta\leq \pi</m>,
           is the angle between <m>\vec u</m> and <m>\vec v</m>.
@@ -358,7 +356,7 @@
       <image xml:id="img_dotpanglesign">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[scale=1.25,&gt;=stealth]
 
         \begin{scope}
@@ -367,14 +365,14 @@
           \draw[-&gt;] (.3,0) arc (0:60:.3);
           \draw[rotate=30] (.45,0) node {\scriptsize $\theta$};
         \end{scope}
-      
+
         \begin{scope}[shift={(3cm,0)}]
           \draw[-&gt;] (0,0) -- (1,0) node [pos=.5,below] {\scriptsize $\vec u\cdot \vec v =0$}node [right] {\scriptsize $\vec u$};
           \draw[-&gt;] (0,0) -- (0,1) node [above ] {\scriptsize $\vec v$};
           \draw[-&gt;] (.3,0) arc (0:90:.3);
           \draw[rotate=22.5] (.7,0) node {\scriptsize $\theta=\pi/2$};
         \end{scope}
-      
+
         \begin{scope}[shift={(6.5cm,0)}]
           \draw[-&gt;] (0,0) -- (1,0) node [pos=.5,below] {\scriptsize $\vec u\cdot \vec v &lt;0$}node [right] {\scriptsize $\vec u$};
           \draw[-&gt;] (0,0) -- (-.707,.707) node [above left] {\scriptsize $\vec v$};
@@ -383,11 +381,11 @@
         \end{scope}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
     </figure>
-    
+
     <p>
       <!-- figures/fig_dotpanglesign.tex END -->
       We <em>can</em> use <xref ref="thm_dot_product">Theorem</xref> to compute the dot product,
@@ -409,7 +407,7 @@
       <image xml:id="img_dotp2">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[&gt;=stealth]
 
         \begin{axis}[
@@ -435,7 +433,7 @@
         \end{axis}
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_dotp2.tex END -->
@@ -504,7 +502,7 @@
       <image xml:id="img_dotp3">
         <description></description>
         <asymptote>
-          
+
           import graph3;
 
           //ASY file for figdotp3.asy in Chapter 10
@@ -514,8 +512,6 @@
           currentprojection=orthographic(23,7.4,3.8);
           defaultrender.merge=true;
 
-          usepackage("amsmath");
-                                                  
           // setup and draw the axes
           real[] myxchoice={-5,5};
           real[] myychoice={2,4};
@@ -583,7 +579,7 @@
 
           //pen p=rgb(0,0,1);
           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-          
+
         </asymptote>
       </image>
       <!-- figures/figdotp3_3D.asy END -->
@@ -743,14 +739,14 @@
                 There are infinite directions in space orthogonal to any given direction,
                 so there are an infinite number of non<ndash/>parallel vectors orthogonal to <m>\vec v</m>.
                 Since there are so many, we have great leeway in finding some.
-  
+
                 One way is to arbitrarily pick values for the first two components, leaving the third unknown. For instance, let <m>\vec v_1 = \la 2,7,z\ra</m>. If <m>\vec v_1</m> is to be orthogonal to <m>\vec v</m>, then <m>\vec v_1\cdot\vec v = 0</m>, so
                 <me>
                   2+14+3z=0  \Rightarrow z = \frac{-16}{3}
                 </me>.
                 So <m>\vec v_1 = \la 2, 7, -16/3\ra</m> is orthogonal to <m>\vec v</m>.
                 We can apply a similar technique by leaving the first or second component unknown.
-  
+
                 Another method of finding a vector orthogonal to <m>\vec v</m> mirrors what we did in part 1. Let <m>\vec v_2 = \la-2,1,0\ra</m>. Here we switched the first two components of <m>\vec v</m>, changing the sign of one of them (similar to the <q>opposite reciprocal</q> concept before). Letting the third component be 0 effectively ignores the third component of <m>\vec v</m>, and it is easy to see that
                 <me>
                   \vec v_2\cdot\vec v = \la -2,1,0\ra\cdot\la 1,2,3\ra = 0
@@ -791,7 +787,7 @@
     <p>
       Using trigonometry, we can state that
       <men xml:id="eq_proj1">
-        \norm{\vec w} = \norm{\vec u}\cos(\theta) 
+        \norm{\vec w} = \norm{\vec u}\cos(\theta)
       </men>.
     </p>
 
@@ -804,7 +800,7 @@
           <image xml:id="img_dotpproja">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \draw [thick,-&gt;] (0,0) -- (4,2) node [right] {\scriptsize $\vec v$};
@@ -815,7 +811,7 @@
             \draw [rotate=49] (.6,0) node {\scriptsize $\theta$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_dotpproja.tex END -->
@@ -827,7 +823,7 @@
           <image xml:id="img_dotpprojb">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth]
 
             \draw [thick,-&gt;] (2,1) -- (4,2) node [right] {\scriptsize $\vec v$};
@@ -839,7 +835,7 @@
             \draw [rotate=49] (.6,0) node {\scriptsize $\theta$};
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
         <!-- figures/fig_dotpprojb.tex END -->
@@ -942,9 +938,9 @@
                       <image xml:id="img_dotp4a">
                         <description></description>
                         <latex-image>
-                        
+
                         \begin{tikzpicture}[&gt;=stealth]
-                        
+
                         \begin{axis}[
                         axis on top,
                         xtick={-3,-2,-1,1,2,3},
@@ -962,11 +958,11 @@
                         \end{axis}
 
                         \end{tikzpicture}
-                        
+
                         </latex-image>
                       </image>
                   </figure>
-                  
+
                   <figure xml:id="figdotp4b_3D">
                     <caption/>
                     <!--
@@ -981,7 +977,7 @@
                       <image xml:id="img_dotp4b_3D">
                         <description></description>
                         <asymptote>
-                          
+
                           import graph3;
 
                           //ASY file for figdotp4b.asy in Chapter 10
@@ -998,8 +994,6 @@
                           //currentprojection=orthographic(2,8,6);
                           defaultrender.merge=true;
 
-                          usepackage("amsmath");
-
                           // setup and draw the axes
                           real[] myxchoice={2};
                           real[] myychoice={2};
@@ -1067,12 +1061,12 @@
 
                           //pen p=rgb(0,0,1);
                           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                          
+
                         </asymptote>
                       </image>
                   <!-- figures/figdotp4b_3D.asy END -->
                     </figure>
-                  
+
                     <figure xml:id="figdotp4c_3D">
                       <caption/>
                   <!--
@@ -1088,7 +1082,7 @@
                       <image xml:id="img_dotp4c_3D">
                         <description></description>
                         <asymptote>
-                          
+
                           import graph3;
 
                           //ASY file for figdotp4b.asy in Chapter 10
@@ -1105,8 +1099,6 @@
                           currentprojection=orthographic(2,8,6);
                           defaultrender.merge=true;
 
-                          usepackage("amsmath");
-
                           // setup and draw the axes
                           real[] myxchoice={2};
                           real[] myychoice={2};
@@ -1174,7 +1166,7 @@
 
                           //pen p=rgb(0,0,1);
                           //draw(s,paleblue+opacity(.5),meshpen=p,render(merge=true));
-                          
+
                         </asymptote>
                       </image>
                     <!-- figures/figdotp4c_3D.asy END -->
@@ -1210,7 +1202,7 @@
       <image xml:id="img_dotpprojc">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[&gt;=stealth]
 
         \draw [thick,-&gt;] (2,1) -- (4,2) node [below] {\scriptsize $\vec v$};
@@ -1220,7 +1212,7 @@
         \draw (1.82111, 0.910557) -- ({1.73167, 1.08944}) -- (1.91056, 1.17889);
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_dotpprojc.tex END -->
@@ -1388,7 +1380,7 @@
               <image xml:id="img_dotp6a">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}[&gt;=stealth]
 
                 \begin{scope}[scale=.25]
@@ -1398,7 +1390,7 @@
                 \end{scope}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_dotp6.tex END -->
@@ -1410,7 +1402,7 @@
               <image xml:id="img_dotp6b">
                 <description></description>
                 <latex-image>
-                
+
                 \begin{tikzpicture}[&gt;=stealth]
 
                 \begin{scope}[scale=.25]
@@ -1422,7 +1414,7 @@
                 \end{scope}
 
                 \end{tikzpicture}
-                
+
                 </latex-image>
               </image>
             <!-- figures/fig_dotp6b.tex END -->
@@ -1507,7 +1499,7 @@
       <image xml:id="img_dotpwork">
         <description></description>
         <latex-image>
-        
+
         \begin{tikzpicture}[&gt;=stealth]
 
         \draw [thick] (0,0) rectangle (2,2);
@@ -1516,7 +1508,7 @@
         \draw [thick,gray,-&gt;] (1,1) -- (3,1) node [right,black] {\scriptsize $\proj Fd$};
 
         \end{tikzpicture}
-        
+
         </latex-image>
       </image>
       <!-- figures/fig_dotpwork.tex END -->
@@ -1578,7 +1570,7 @@
           The ramp is represented by <m>\vec d  = \la 15,3\ra</m>.
           The work done is simply
           <me>
-            \dotp Fd = 50\la \cos(30^\circ) ,\sin(30^\circ) \ra \cdot \la 15,3\ra \approx 724.5 \text{ ft--lb } 
+            \dotp Fd = 50\la \cos(30^\circ) ,\sin(30^\circ) \ra \cdot \la 15,3\ra \approx 724.5 \text{ ft--lb }
           </me>.
         </p>
 
@@ -1588,7 +1580,7 @@
           <image xml:id="img_dotp7">
             <description></description>
             <latex-image>
-            
+
             \begin{tikzpicture}[&gt;=stealth,scale=.5]
 
             \draw [thick] (0,0) -- node [below,pos=.5] {\scriptsize 15} (15,0) -- node [right, pos=.5] {\scriptsize 3} (15,3) -- cycle;
@@ -1602,7 +1594,7 @@
             \end{scope}
 
             \end{tikzpicture}
-            
+
             </latex-image>
           </image>
           <!-- figures/fig_dotp7.tex END -->
@@ -1638,7 +1630,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1658,7 +1650,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1679,7 +1671,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1701,7 +1693,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1730,7 +1722,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("-22");
@@ -1751,7 +1743,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("33");
@@ -1772,7 +1764,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("3");
@@ -1794,7 +1786,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("0");
@@ -1816,7 +1808,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
             </pg-code>
             </setup>
@@ -1836,7 +1828,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("LimitedNumeric");
               $dot=Real("0");
@@ -1860,7 +1852,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -1882,7 +1874,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -1912,7 +1904,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("arccos(3/sqrt(10))");
@@ -1930,7 +1922,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("arccos(-1/sqrt(170))");
@@ -1948,7 +1940,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("pi/4");
@@ -1966,7 +1958,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
               $theta=Formula("pi/2");
@@ -1994,7 +1986,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;4,7>");
@@ -2033,7 +2025,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;-3,5>");
@@ -2072,7 +2064,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;1,1,1>");
@@ -2111,7 +2103,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               $v=Vector("&lt;1,-2,3>");
@@ -2162,7 +2154,7 @@
       <exercise xml:id="ex_10_03_ex_21">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2191,7 +2183,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2220,7 +2212,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2249,7 +2241,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2278,7 +2270,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2307,7 +2299,7 @@
       <exercise xml:id="ex_10_03_ex_24">
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2351,7 +2343,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2423,7 +2415,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2495,7 +2487,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2567,7 +2559,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2639,7 +2631,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2711,7 +2703,7 @@
       <exercise>
         <webwork seed="1">
             <setup>
- 
+
             <pg-code>
               Context("Vector");
               Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
@@ -2785,7 +2777,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2806,7 +2798,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2828,7 +2820,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2848,7 +2840,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2868,7 +2860,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2889,7 +2881,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
@@ -2910,7 +2902,7 @@
     <exercise>
       <webwork seed="1">
           <setup>
- 
+
           <pg-code>
           </pg-code>
           </setup>
